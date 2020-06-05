@@ -1,0 +1,73 @@
+
+# Background
+```{r Backgroundsettings, echo = FALSE, warning=FALSE, message=FALSE}
+source("./R/libraries.R"); source("./R/themes.R")
+
+
+
+```
+## Exercise training variables affecting training outcomes
+
+## Exercise volume
+
+### Meta-analysis of exercise volume 
+
+## Molecular determinants of training-induced muscle hypertrophy
+
+### Protein synthesis
+
+
+
+```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from Millward et al. 1973. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein."}
+
+millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
+
+millward %>%
+        mutate(group = if_else(group == "A", "Protein fed", "Protein starved")) %>%
+        ggplot(aes(RNA, proteinSynthesis, fill = group, color = group)) +
+        geom_smooth(method = "lm", se = FALSE) + 
+        geom_point(color = "black", shape = 21) +
+        scale_x_continuous(name = TeX("$RNA\\;(\\mu g \\; mg^{-1} \\, protein)$"), 
+                           breaks = c(0, 4, 8, 12, 16),
+                           minor_breaks = c(2, 6, 10, 14),
+                           limits = c(0, 16), 
+                           expand = c(0, 0)) +
+        scale_y_continuous(name = TeX("$Protein\\,synthesis\\,rate\\;(days^{-1})"), 
+                           breaks = c(0, 0.05, 0.1, 0.15, 0.20, 0.25),
+                           minor_breaks = c(0.02, 0.06, 0.10, 0.14, 0.18, 0.22),
+                           limits = c(0, 0.25), 
+                           expand = c(0, 0)) + 
+        
+
+        dissertation_theme() +
+                theme(legend.position = c(0.2, 0.8), 
+                      legend.title = element_blank()) +
+        scale_fill_manual(values = wes_palettes[[5]]) +
+        scale_color_manual(values = wes_palettes[[5]])
+        
+
+
+
+```
+
+### The mammalian target of rapamycin (mTOR) and translational efficiency
+The mammalian target of rapamycin (mTOR) is a large serine-threonine protein kinase wich in complex with oyher regulatory proteins forms a signaling hub responsible for responses to environmental cues such as nutrients and mechanical stress.
+
+mTOR has several phosphorylation sites 
+
+Phosphorylation of Ser2448 is mediated by S6K1 to reduce mTOR activity in a negative feedback loop [@RN1902]. 
+
+Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted [@RN1902]
+
+
+When the C-terminal is deleted, mTOR gets constitutively active
+
+
+
+### Ribsome biogenesis 
+
+#### Transcription of ribsomal RNA (rRNA)
+
+## Transcriptional activity related to muscle hypertrophy
+
+### Methods for studying transcriptional regulation

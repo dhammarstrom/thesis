@@ -1,0 +1,93 @@
+---
+author: 'Daniel Hammarström'
+date: 'May 20xx'
+year: '2019'
+isbn: 'Provided by the library'
+place: 'Stockholm'
+printedby: 'Printer service, Stockholm, 2019'
+coverinfo: ' '
+sernr: '999' # Add number in "Avhandlingsserie" 
+title: 'Determinants of intra-individual variation in adaptability to resistance training of different volumes with special reference to skeletal muscle phenotypes'
+subtitle: 'Subtitle of my thesis' # currently not in use ##
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: 
+  thesisdowngih::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: default # The word and e-pub versions are not tested.
+#  thesisdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab is 
+# needed on the line after the |.
+dedication: |
+  You can have a dedication here if you wish. 
+#preface: | # If you wish to add a preface, remove comments on these lines
+#  This is an example of a thesis setup to use the reed thesis document class
+#  (for LaTeX) and the R bookdown package, in general.
+defence: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-defence.Rmd"), collapse = '\n  ')`
+bibliography: 
+        - bib/thesis.bib
+        - bib/packages.bib
+# Download your specific bibliography database file and refer to it in the line above.
+csl: csl/apa.csl
+# Download your specific csl file and refer to it in the line above.
+lot: true
+lof: true
+#space_between_paragraphs: true
+# Delete the # at the beginning of the previous line if you'd like
+# to have a blank new line between each paragraph
+#header-includes:
+#- \usepackage{tikz}
+---
+
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete lines 27 and 28 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+-->
+
+
+```{r include_packages, include = FALSE}
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+library(devtools)
+library(thesisdowngih)
+```
+
+
+```{r create_package_bib, include = FALSE}
+knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bibfile for R packages
+```
+
+
+
+# Introduction
+
+<!-- Why study muscle functioning and health? -->
+
+[@RN2184] <!-- Excess health care costs associated with muscle weakness was estimated to 1.3 billion punds in UK in population above 70 yrs   --> 
+
+
+<!-- Muscle mass and strength, multiple components contribute to muscle health -->
+
+
+
+<!-- Pharmacological/nutritional/exercise interventions to maintain muscle mass --->
+
+<!-- Problem with prescribing the right dose ---> 
+
+<!-- Manipulation of exercise variables may overcome non-responders -->
+
+<!-- Aim loosely defined -->
+
+

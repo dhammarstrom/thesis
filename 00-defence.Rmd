@@ -1,0 +1,35 @@
+[comment]: <> (Edit this document to produce information about the defence, remember to knit it!)
+THESIS FOR DOCTORAL DEGREE (Ph.D.)
+\
+\
+\
+**The title of your thesis**
+\
+\
+by  
+**Your name**
+\
+\
+\
+Thesis for Philosophy of Doctoral Degree in Sport Sciences, at The Swedish School of Sport and Health Sciences (GIH), which, according to the decision of the dean, will be publicly defended on *DATE*. The thesis defense will be held at the auditorium at The Swedish School of Sport and Health Sciences (GIH), Stockholm.
+\
+\
+\
+**Opponent**  
+Profesor ....
+\
+\
+**Principal supervisor**  
+Profesor...
+\
+\
+**Co-supervisor(s)**  
+-Professor...  
+-Professor...  
+-Professor... 
+\
+\
+**Examination board**  
+-Associate professor...  
+-Professor ...  
+-Professor ...  
