@@ -10,6 +10,6 @@ library(latex2exp)
 
 library(devtools)
 
-devtools::install_github("dhammarstrom/thesisdowngih")
+# devtools::install_github("dhammarstrom/thesisdowngih")
 
 library(thesisdowngih)

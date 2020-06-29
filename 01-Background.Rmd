@@ -41,9 +41,8 @@ millward %>%
 
         dissertation_theme() +
                 theme(legend.position = c(0.2, 0.8), 
-                      legend.title = element_blank()) +
-        scale_fill_manual(values = wes_palettes[[5]]) +
-        scale_color_manual(values = wes_palettes[[5]])
+                      legend.title = element_blank()) 
+
         
 
 
@@ -55,9 +54,9 @@ The mammalian target of rapamycin (mTOR) is a large serine-threonine protein kin
 
 mTOR has several phosphorylation sites 
 
-Phosphorylation of Ser2448 is mediated by S6K1 to reduce mTOR activity in a negative feedback loop [@RN1902]. 
+Phosphorylation of Ser2448 is mediated by S6K1 to reduce mTOR activity in a negative feedback loop <!--[@RN1902]-->. 
 
-Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted [@RN1902]
+Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted <!--[@RN1902]-->
 
 
 When the C-terminal is deleted, mTOR gets constitutively active

@@ -106,3 +106,155 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 <!-- Aim loosely defined -->
 
 
+
+<!--chapter:end:index.Rmd-->
+
+
+# Background
+```{r Backgroundsettings, echo = FALSE, warning=FALSE, message=FALSE}
+source("./R/libraries.R"); source("./R/themes.R")
+
+
+
+```
+## Exercise training variables affecting training outcomes
+
+## Exercise volume
+
+### Meta-analysis of exercise volume 
+
+## Molecular determinants of training-induced muscle hypertrophy
+
+### Protein synthesis
+
+
+
+```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from Millward et al. 1973. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein."}
+
+millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
+
+millward %>%
+        mutate(group = if_else(group == "A", "Protein fed", "Protein starved")) %>%
+        ggplot(aes(RNA, proteinSynthesis, fill = group, color = group)) +
+        geom_smooth(method = "lm", se = FALSE) + 
+        geom_point(color = "black", shape = 21) +
+        scale_x_continuous(name = TeX("$RNA\\;(\\mu g \\; mg^{-1} \\, protein)$"), 
+                           breaks = c(0, 4, 8, 12, 16),
+                           minor_breaks = c(2, 6, 10, 14),
+                           limits = c(0, 16), 
+                           expand = c(0, 0)) +
+        scale_y_continuous(name = TeX("$Protein\\,synthesis\\,rate\\;(days^{-1})"), 
+                           breaks = c(0, 0.05, 0.1, 0.15, 0.20, 0.25),
+                           minor_breaks = c(0.02, 0.06, 0.10, 0.14, 0.18, 0.22),
+                           limits = c(0, 0.25), 
+                           expand = c(0, 0)) + 
+        
+
+        dissertation_theme() +
+                theme(legend.position = c(0.2, 0.8), 
+                      legend.title = element_blank()) 
+
+        
+
+
+
+```
+
+### The mammalian target of rapamycin (mTOR) and translational efficiency
+The mammalian target of rapamycin (mTOR) is a large serine-threonine protein kinase wich in complex with oyher regulatory proteins forms a signaling hub responsible for responses to environmental cues such as nutrients and mechanical stress.
+
+mTOR has several phosphorylation sites 
+
+Phosphorylation of Ser2448 is mediated by S6K1 to reduce mTOR activity in a negative feedback loop <!--[@RN1902]-->. 
+
+Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted <!--[@RN1902]-->
+
+
+When the C-terminal is deleted, mTOR gets constitutively active
+
+
+
+### Ribsome biogenesis 
+
+#### Transcription of ribsomal RNA (rRNA)
+
+## Transcriptional activity related to muscle hypertrophy
+
+### Methods for studying transcriptional regulation
+
+<!--chapter:end:01-Background.Rmd-->
+
+# Aims and hypotheses
+
+
+<!--chapter:end:02-Aims.Rmd-->
+
+# Methods
+
+
+TO DO:
+
+- For methods discussion, compare product length, efficiencies and ct values in relation to RQI-values. See Fleige 2006 for reference.
+
+
+
+## Training protocols
+
+A full body protocol was used in study I including 
+
+<!--chapter:end:03-Methods.Rmd-->
+
+
+# Results
+
+<!--chapter:end:04-results.Rmd-->
+
+
+# Discussion
+
+<!--chapter:end:05-Discussion.Rmd-->
+
+# Conclusion {-}
+
+If we don't want Conclusion to have a chapter number next to it, we can add the `{-}` attribute.
+
+**More info**
+
+And here's some other random info: the first paragraph after a chapter title or section head _shouldn't be_ indented, because indents are to tell the reader that you're starting a new paragraph. Since that's obvious after a chapter or section title, proper typesetting doesn't add an indent there.
+
+
+<!--chapter:end:06-conclusion.Rmd-->
+
+<!--
+The bib chunk below must go last in this document according to how R Markdown renders.  More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+-->
+
+\backmatter
+
+<!-- 
+If you'd like to change the name of the bibliography to something else,
+delete "References" and replace it.
+-->
+
+# References {-}
+<!--
+This manually sets the header for this unnumbered chapter.
+-->
+\markboth{References}{References}
+<!--
+To remove the indentation of the first entry.
+-->
+\noindent
+
+<!--
+To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
+-->
+
+\setlength{\parindent}{-0.20in}
+\setlength{\leftskip}{0.20in}
+\setlength{\parskip}{8pt}
+
+
+
+<!--chapter:end:99-references.Rmd-->
+

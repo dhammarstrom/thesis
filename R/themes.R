@@ -5,8 +5,6 @@
 library(ggplot2)
 
 
-color_palette <-  
-
 
 
 line.size <- 0.3
