@@ -13,7 +13,9 @@ TO DO:
 
 ## Gene expression analysis 
 
-## External reference gene 
+### Normalization
+
+
 
 - An external reference gene was added at a constant amount in Trizol preps
 - A normalization factor was used to express relative target gene abundance per-weight tissue.
