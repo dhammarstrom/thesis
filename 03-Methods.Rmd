@@ -1,9 +1,69 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Methods
 
 
 TO DO:
 
 - For methods discussion, compare product length, efficiencies and ct values in relation to RQI-values. See Fleige 2006 for reference.
+
+
+## Gene expression analysis 
+
+### Normalization
+
+
+
+- An external reference gene was added at a constant amount in Trizol preps
+- A normalization factor was used to express relative target gene abundance per-weight tissue.
+- In qPCR the linearised expression (effectivety ^cq) was used to express the fraction of external reference per total RNA. 
+- In RNA-seq the external reference gene was sequenced and counts were used to express external RNA as a fraction of total RNA.
+- In both cases the normalization factor was calculated as mw * counts.
+
+A simulation to see that this is equivalent to tissue used in prep when no measurement errors exists.
+
+```{r}
+
+library(tidyverse)
+
+expand_grid(mg = seq(from = 5, to = 100, by = 5), 
+            rna.mg = seq(from = 250, to = 600, by = 25),
+            ext = 0.04) %>%
+  mutate(tot.rna = mg * rna.mg, 
+         ext.frac = ext / (ext + tot.rna), 
+         mg.inprep = 1000 / ((ext + tot.rna) / mg), 
+         nf = ext.frac * mg) 
+
+
+
+expand_grid(mg = seq(from = 5, to = 100, by = 5), 
+            rna.mg = seq(from = 50, to = 600, by = 25),
+            ext = 0.04) %>%
+  mutate(tot.rna = mg * rna.mg, 
+         ext.frac = ext / (ext + tot.rna), 
+         mg.inprep = 1000 / ((ext + tot.rna) / mg), 
+         nf = ext.frac * mg) %>%
+         ggplot(aes(rna.mg, mg.inprep,  color = mg)) + geom_point(size = 2)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
