@@ -52,7 +52,7 @@ header-includes:
 - \usepackage{libertine}
 - \usepackage{lettrine}
 
-- \usepackage[svgnames]{xcolor}
+- \usepackage[svgnames]
 #- \usepackage{GoudyIn}
 #- \usepackage{xcolor}
 ---
@@ -85,13 +85,28 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 
 # Introduction
 
-\lettrine[findent=3pt, nindent=0pt, ante=\rlap{\color{LightSalmon!50}\rule[-0.55\LettrineHeight]{\LettrineWidth}{0.65\LettrineHeight}} ]{P}{roper} former days -- that is to say, once upon a time, there lived in the Land of Gramblamble, Seven Families. They lived by the side of the great Lake Pipple-popple (one of the Seven Families, indeed, lived in the Lake), and on the outskirts of the City of Tosh, which, excepting when it was quite dark, they could see plainly. The names of all these places you have probably heard of, and you have only not to look in your Geography books to find out all about them.
+\lettrine[findent=3pt, nindent=0pt, ante=\rlap{\color{LightSalmon!50}\rule[-0.55\LettrineHeight]{\LettrineWidth}{0.65\LettrineHeight}} ]{P}{roper} 
  skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise  of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.    
 
+Functional independence
+
+
+
+
 <!-- Why study muscle functioning and health? -->
+[@RN2512]<!-- Ran 2018 Low muscle strength was independently associated with all cause mortality -->
 
 [@RN2184] <!-- Excess health care costs associated with muscle weakness was estimated to 1.3 billion punds in UK in population above 70 yrs   --> 
 
+[@RN2513] <!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality-->
+
+[@RN2514] <!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2 -->
+
+[@RN2515] <!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly -->
+
+[@RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
+
+[@RN2517]<!-- Janssen 2002 Low muscle mass associated with disabilities -->
 
 <!-- Muscle mass and strength, multiple components contribute to muscle health -->
 
