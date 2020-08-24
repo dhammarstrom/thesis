@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.29)  29 JUN 2020 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.29)  12 AUG 2020 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,18 +931,14 @@ Loading lettrine.cfg
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine
 .cfg))
-
-! LaTeX Error: Option clash for package xcolor.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.163 \begin
-            {document} 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \def 
+l.163 \begin{
+             document} 
 Here is how much of TeX's memory you used:
- 14648 strings out of 482419
- 233609 string characters out of 5946262
+ 14647 strings out of 482419
+ 233469 string characters out of 5946262
  589150 words of memory out of 5000000
  30148 multiletter control sequences out of 15000+600000
  538708 words of font info for 27 fonts, out of 8000000 for 9000
