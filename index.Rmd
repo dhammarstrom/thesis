@@ -24,11 +24,13 @@ abstract: |
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
 # needed on the line after the |.
+listofpapers: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-listofpapers.Rmd"), collapse = '\n  ')`
 dedication: |
   You can have a dedication here if you wish. 
-#preface: | # If you wish to add a preface, remove comments on these lines
-#  This is an example of a thesis setup to use the reed thesis document class
-#  (for LaTeX) and the R bookdown package, in general.
+# preface: | # If you wish to add a preface, remove comments on these lines
+#   This is an example of a thesis setup to use the reed thesis document class
+#   (for LaTeX) and the R bookdown package, in general.
 defence: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-defence.Rmd"), collapse = '\n  ')`
 bibliography: 
@@ -46,13 +48,10 @@ header-includes:
 #- \usepackage[utf8]{inputenc}
 #- \usepackage{erewhon}
 #- \usepackage{lipsum}
-- \usepackage[utf8]{inputenc}
-- \usepackage[T1]{fontenc}
-
-- \usepackage{libertine}
-- \usepackage{lettrine}
-
-- \usepackage[svgnames]
+#  \usepackage[utf8]{inputenc}
+#  \usepackage[T1]{fontenc}
+#  \usepackage{libertine}
+#  \usepackage[svgnames]
 #- \usepackage{GoudyIn}
 #- \usepackage{xcolor}
 ---
@@ -80,13 +79,11 @@ library(thesisdowngih)
 knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bibfile for R packages
 ```
 
-\setcounter{DefaultLines}{3}
+<!-- \setcounter{DefaultLines}{3}-->
 
 
 # Introduction
-
-\lettrine[findent=3pt, nindent=0pt, ante=\rlap{\color{LightSalmon!50}\rule[-0.55\LettrineHeight]{\LettrineWidth}{0.65\LettrineHeight}} ]{P}{roper} 
- skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise  of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.    
+Proper skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise  of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.    
 
 Functional independence
 

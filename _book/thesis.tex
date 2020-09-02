@@ -75,6 +75,46 @@
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 % Syntax highlighting #22
+  \usepackage{color}
+  \usepackage{fancyvrb}
+  \newcommand{\VerbBar}{|}
+  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+  % Add ',fontsize=\small' for more characters per line
+  \usepackage{framed}
+  \definecolor{shadecolor}{RGB}{248,248,248}
+  \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+  \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\BuiltInTok}[1]{#1}
+  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\ExtensionTok}[1]{#1}
+  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ImportTok}[1]{#1}
+  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\NormalTok}[1]{#1}
+  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\RegionMarkerTok}[1]{#1}
+  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
 
@@ -150,8 +190,21 @@ The preface pretty much says it all.
 Second paragraph of abstract starts here.
 }
 
-	\usepackage{xcolor}
-\usepackage{lettrine}
+\Listofpapers{
+\begin{enumerate}
+\def\labelenumi{\Roman{enumi}.}
+\item
+  \textbf{Hammarström D}, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, Blomstrand E, Rønnestad B, Ellefsen S Benefits of higher resistance-training volume are related to ribosome biogenesis. The \emph{Journal of physiology}. 2020;598(3):543-65.
+\item
+  Khan Y, \textbf{Hammarström D}, Rønnestad B, Ellefsen S, Ahmad R Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline. \emph{Submitted.}
+\item
+  \textbf{Hammarström D}, Øfsteng S, Koll L, Jacobsen N, Flobergseter K, Rønnestad B, Ellefsen S Ribosome accumulation during early phase resistance training. \emph{Manuscript}
+\item
+  \textbf{Hammarström D}, Ellefsen S. generefer: A R package for unbiased selection of reference genes for qPCR in repeated measures designs. \emph{Manuscript}
+\end{enumerate}
+}
+
+
 % End of CII addition
 %%
 %% End Preamble
@@ -211,8 +264,19 @@ Second paragraph of abstract starts here.
     
     Second paragraph of abstract starts here.
   \end{abstract}
-
-
+  \begin{listofpapers}
+    \begin{enumerate}
+    \def\labelenumi{\Roman{enumi}.}
+    \item
+      \textbf{Hammarström D}, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, Blomstrand E, Rønnestad B, Ellefsen S Benefits of higher resistance-training volume are related to ribosome biogenesis. The \emph{Journal of physiology}. 2020;598(3):543-65.
+    \item
+      Khan Y, \textbf{Hammarström D}, Rønnestad B, Ellefsen S, Ahmad R Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline. \emph{Submitted.}
+    \item
+      \textbf{Hammarström D}, Øfsteng S, Koll L, Jacobsen N, Flobergseter K, Rønnestad B, Ellefsen S Ribosome accumulation during early phase resistance training. \emph{Manuscript}
+    \item
+      \textbf{Hammarström D}, Ellefsen S. generefer: A R package for unbiased selection of reference genes for qPCR in repeated measures designs. \emph{Manuscript}
+    \end{enumerate}
+  \end{listofpapers}
 
   \hypersetup{linkcolor=black}
   \setcounter{tocdepth}{2}
@@ -228,18 +292,26 @@ Second paragraph of abstract starts here.
 \mainmatter % here the regular arabic numbering starts
 \pagestyle{fancyplain} % turns page numbering back on
 
-\setcounter{DefaultLines}{4}
-\setlength{\DefaultFindent}{0.5em}
-\setlength{\DefaultNindent}{0em}
-\renewcommand{\LettrineFontHook}{\usefont{U}{yinit}{m}{n}}
-\renewcommand{\DefaultLoversize}{2}
-
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
 
-\lettrine{\color{purple}P}\{oper\} skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.
+Proper skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.
+
+Functional independence
+
+({\textbf{???}})
 
 (Pinedo-Villanueva et al., 2019)
+
+({\textbf{???}})
+
+({\textbf{???}})
+
+({\textbf{???}})
+
+({\textbf{???}})
+
+({\textbf{???}})
 
 \hypertarget{background}{%
 \chapter{Background}\label{background}}
@@ -288,11 +360,24 @@ When the C-terminal is deleted, mTOR gets constitutively active
 \hypertarget{methods-for-studying-transcriptional-regulation}{%
 \subsection{Methods for studying transcriptional regulation}\label{methods-for-studying-transcriptional-regulation}}
 
-\hypertarget{aims-and-hypotheses}{%
-\chapter{Aims and hypotheses}\label{aims-and-hypotheses}}
+\hypertarget{aims}{%
+\chapter{Aims}\label{aims}}
 
+The primary aim of this thesis was to relate the adaptive response to resistance training with low- and moderate-volume to skeletal-muscle characteristics in previously untrained individuals. The key question was whether manipulation of exercise-volume will have diverse effects in different individuals related to muscular intrinsic characteristics. A further aim was to characterize exercise-volume dependence and time course profiles of molecular mechanism thought to control resistance training-induced muscle growth. Based on these aims, the objectives of the present thesis were;
+\begin{itemize}
+\tightlist
+\item
+  to relate skeletal muscle and systemic characteristics to benefit of moderate- compared to low-volume resistance training;
+\item
+  To determine volume-dependence in molecular networks related to muscle growth and remodelling in response to mechanical stress
+\item
+  To determine a time course of markers related to ribosome biogenesis in the early phase of resistance training.
+\end{itemize}
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}
+
+\hypertarget{participants}{%
+\section{Participants}\label{participants}}
 
 TO DO:
 \begin{itemize}
@@ -300,6 +385,68 @@ TO DO:
 \item
   For methods discussion, compare product length, efficiencies and ct values in relation to RQI-values. See Fleige 2006 for reference.
 \end{itemize}
+\hypertarget{gene-expression-analysis}{%
+\section{Gene expression analysis}\label{gene-expression-analysis}}
+
+\hypertarget{normalization}{%
+\subsection{Normalization}\label{normalization}}
+\begin{itemize}
+\tightlist
+\item
+  An external reference gene was added at a constant amount in Trizol preps
+\item
+  A normalization factor was used to express relative target gene abundance per-weight tissue.
+\item
+  In qPCR the linearised expression (effectivety \^{}cq) was used to express the fraction of external reference per total RNA.
+\item
+  In RNA-seq the external reference gene was sequenced and counts were used to express external RNA as a fraction of total RNA.
+\item
+  In both cases the normalization factor was calculated as mw * counts.
+\end{itemize}
+A simulation to see that this is equivalent to tissue used in prep when no measurement errors exists.
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\KeywordTok{expand_grid}\NormalTok{(}\DataTypeTok{mg =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \DecValTok{5}\NormalTok{, }\DataTypeTok{to =} \DecValTok{100}\NormalTok{, }\DataTypeTok{by =} \DecValTok{5}\NormalTok{), }
+            \DataTypeTok{rna.mg =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \DecValTok{250}\NormalTok{, }\DataTypeTok{to =} \DecValTok{600}\NormalTok{, }\DataTypeTok{by =} \DecValTok{25}\NormalTok{),}
+            \DataTypeTok{ext =} \FloatTok{0.04}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{tot.rna =}\NormalTok{ mg }\OperatorTok{*}\StringTok{ }\NormalTok{rna.mg, }
+         \DataTypeTok{ext.frac =}\NormalTok{ ext }\OperatorTok{/}\StringTok{ }\NormalTok{(ext }\OperatorTok{+}\StringTok{ }\NormalTok{tot.rna), }
+         \DataTypeTok{mg.inprep =} \DecValTok{1000} \OperatorTok{/}\StringTok{ }\NormalTok{((ext }\OperatorTok{+}\StringTok{ }\NormalTok{tot.rna) }\OperatorTok{/}\StringTok{ }\NormalTok{mg), }
+         \DataTypeTok{nf =}\NormalTok{ ext.frac }\OperatorTok{*}\StringTok{ }\NormalTok{mg) }
+\end{Highlighting}
+\end{Shaded}
+\begin{verbatim}
+# A tibble: 300 x 7
+      mg rna.mg   ext tot.rna  ext.frac mg.inprep        nf
+   <dbl>  <dbl> <dbl>   <dbl>     <dbl>     <dbl>     <dbl>
+ 1     5    250  0.04    1250 0.0000320      4.00 0.000160 
+ 2     5    275  0.04    1375 0.0000291      3.64 0.000145 
+ 3     5    300  0.04    1500 0.0000267      3.33 0.000133 
+ 4     5    325  0.04    1625 0.0000246      3.08 0.000123 
+ 5     5    350  0.04    1750 0.0000229      2.86 0.000114 
+ 6     5    375  0.04    1875 0.0000213      2.67 0.000107 
+ 7     5    400  0.04    2000 0.0000200      2.50 0.000100 
+ 8     5    425  0.04    2125 0.0000188      2.35 0.0000941
+ 9     5    450  0.04    2250 0.0000178      2.22 0.0000889
+10     5    475  0.04    2375 0.0000168      2.11 0.0000842
+# ... with 290 more rows
+\end{verbatim}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{expand_grid}\NormalTok{(}\DataTypeTok{mg =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \DecValTok{5}\NormalTok{, }\DataTypeTok{to =} \DecValTok{100}\NormalTok{, }\DataTypeTok{by =} \DecValTok{5}\NormalTok{), }
+            \DataTypeTok{rna.mg =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \DecValTok{50}\NormalTok{, }\DataTypeTok{to =} \DecValTok{600}\NormalTok{, }\DataTypeTok{by =} \DecValTok{25}\NormalTok{),}
+            \DataTypeTok{ext =} \FloatTok{0.04}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{tot.rna =}\NormalTok{ mg }\OperatorTok{*}\StringTok{ }\NormalTok{rna.mg, }
+         \DataTypeTok{ext.frac =}\NormalTok{ ext }\OperatorTok{/}\StringTok{ }\NormalTok{(ext }\OperatorTok{+}\StringTok{ }\NormalTok{tot.rna), }
+         \DataTypeTok{mg.inprep =} \DecValTok{1000} \OperatorTok{/}\StringTok{ }\NormalTok{((ext }\OperatorTok{+}\StringTok{ }\NormalTok{tot.rna) }\OperatorTok{/}\StringTok{ }\NormalTok{mg), }
+         \DataTypeTok{nf =}\NormalTok{ ext.frac }\OperatorTok{*}\StringTok{ }\NormalTok{mg) }\OperatorTok{%>%}
+\StringTok{         }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(rna.mg, mg.inprep,  }\DataTypeTok{color =}\NormalTok{ mg)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{size =} \DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\includegraphics{thesis_files/figure-latex/unnamed-chunk-1-1.pdf}
+
 \hypertarget{training-protocols}{%
 \section{Training protocols}\label{training-protocols}}
 

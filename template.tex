@@ -153,6 +153,11 @@ $preface$
 $abstract$
 }
 
+\Listofpapers{
+$listofpapers$
+}
+
+
 $for(header-includes)$
 	$header-includes$
 $endfor$
@@ -205,7 +210,11 @@ $if(abstract)$
   \end{abstract}
 $endif$
 
-
+$if(listofpapers)$
+  \begin{listofpapers}
+    $listofpapers$
+  \end{listofpapers}
+$endif$
 
 
 $if(toc)$

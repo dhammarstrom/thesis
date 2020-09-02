@@ -356,8 +356,22 @@
 \@restonecolfalse
 \fi
 \chapter*{Abstract}
-\fontsize{12}{14}\selectfont
+\fontsize{10}{12}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
+
+
+\newenvironment{listofpapers}{%
+\if@twocolumn
+\@restonecoltrue\onecolumn
+\else
+\@restonecolfalse
+\fi
+\chapter*{List of scientific papers}
+\fontsize{10}{12}\selectfont
+}{\clearpage \if@restonecol\twocolumn\fi}%
+
+
+
 
 \newenvironment{dedication}{%
 \thispagestyle{empty}
@@ -481,6 +495,7 @@ Distributor: Gymnastik- och idtrottsh\"{o}gskolan  %name of department
 %\newcommand{\Shorttitle}[1]{\def\@Shorttitle{#1}}
 \newcommand{\Plainauthor}[1]{\def\@Plainauthor{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
+\newcommand{\Listofpapers}[1]{\def\@Listofpapers{#1}}
 %\newcommand{\Keywords}[1]{\def\@Keywords{#1}}
 %\newcommand{\Plainkeywords}[1]{\def\@Plainkeywords{#1}}
 \newcommand{\Acknowledgements}[1]{\def\@Acknowledgements{#1}}
