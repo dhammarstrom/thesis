@@ -83,33 +83,50 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 
 
 # Introduction
-Proper skeletal muscle functioning is essential in everyday life by enabling movement and thus complex interaction with our environment. Nutrition and pharmacological agents can have substantial effects on skeletal muscle mass and function. However, resistance exercise  of sufficient volume, intensity and frequency is the most potent stimuli to promote morphological and functional changes in the human neuromuscular system. Exercise training can be modulated indefinitely by combining different variations of training variables and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.    
+Proper skeletal muscle functioning is essential in everyday life by enabling movement and thus independent interaction with the environment. In a lifespan perspective, measures of muscle mass and/or strength are inversely associated with mortality
+[@RN2512;<!-- Ran 2018 Low muscle strength was independently associated with all cause mortality -->
+@RN2513; <!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality-->
+@RN2514; <!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2 -->
+@RN2376;<!-- Ruiz n ~ 8000, strength inversely related to all cause and cancer  mortality in men -->
+@RN2515; <!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly -->
+@RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
+and disability
+[@RN2517].<!-- Janssen 2002 Low muscle mass associated with disabilities -->
+Besides adverse individual consequences of low muscle mass and strength and associated clinical conditions, muscle weakness accounts for increased health care costs in patient populations
+[@RN2532;<!-- Sousa 2016 --> 
+@RN2184].<!-- Pinedo-Villanuev Excess health care costs associated with muscle weakness was estimated to 1.3 billion punds in UK in population above 70 yrs   -->
+Causal links between muscle mass and functioning on the one hand and adverse health outcomes on the other hand are diverse and related to e.g., age and primary  illness or injury
+[@RN763].<!-- Wolfe 2006 amino acid availability in acute illness and injury, link between metabolic functioning of mm.-->
+This highlights that interventions designed to increase muscle mass and strength are likely to prevent adverse health outcomes across the lifespan. A higher level of muscle mass and functional capacity would e.g., counteract the effects of muscle loss due to illness (cachexia), age (sarcopenia) or inactivity (athrophy).
 
-Functional independence
+Although a large degree of the observed variations in lean mass and strength are attributed to genetic components 
+[@RN2526; <!-- Arden genetic factors explain leg extensor strength (60%), lean body mass (52%) and grip strength (36%) -->
+@RN2527],<!-- Roth review, > 50% genetic component in muscle mass -->
+environmental factors also contribute leaving a window of opportunity increase muscle mass and functional capacity. Among factors possibly affecting muscle mass and functioning are nutrition and pharmacological agents. However, physical activity and specifically resistance training of sufficient volume, intensity and frequency provides a stimulus that promote morphological and functional changes to the human neuromuscular system without adverse side-effects. Irrespective of age, resistance training generally leads to increased muscle muss and strength
+[@RN1741;<!-- Ahtiainen 2016 pooled analysis including controls   -->
+@RN2534]<!-- Grgic 2020 > 75 of age increase strength and muscle mass relative to control and training is safe -->
+and is considered safe
+[@RN2534]<!-- Grgic safety in elderly -->.
+
+Exercise training can be modulated indefinitely by combining different variations of training variables [@RN1]<!-- ACSM guidelines -->
+
+and in addition, adaptation to exercise training is a phenomenon characterized by great inter-individual variability. The purpose of the present project is therefore to explore potential determinants of variation in adaptability to resistance-exercise modulated by selected exercise-training variables.    
 
 
 
 
 <!-- Why study muscle functioning and health? -->
-[@RN2512]<!-- Ran 2018 Low muscle strength was independently associated with all cause mortality -->
 
-[@RN2184] <!-- Excess health care costs associated with muscle weakness was estimated to 1.3 billion punds in UK in population above 70 yrs   --> 
-
-[@RN2513] <!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality-->
-
-[@RN2514] <!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2 -->
-
-[@RN2515] <!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly -->
-
-[@RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
-
-[@RN2517]<!-- Janssen 2002 Low muscle mass associated with disabilities -->
 
 <!-- Muscle mass and strength, multiple components contribute to muscle health -->
 
 
 
 <!-- Pharmacological/nutritional/exercise interventions to maintain muscle mass --->
+
+
+
+
 
 <!-- Problem with prescribing the right dose ---> 
 
