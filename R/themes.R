@@ -6,7 +6,7 @@ library(ggplot2)
 
 
 
-
+label.size <- 12
 line.size <- 0.3
 
 

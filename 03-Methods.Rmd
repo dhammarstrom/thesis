@@ -5,7 +5,42 @@ editor_options:
 ---
 # Methods
 
-## Participants
+## Study protocols, participants and training interventions
+
+For this thesis two studies were completed consisting of traini
+
+
+## Measures of muscle mass
+
+```{r body-comp-measures, fig.cap="Long caption.", fig.scap="Short caption", out.extra='',fig.height=4, fig.width=4, echo=FALSE}
+
+mr_dxa_fig <- readRDS("./figures/methods/mr-dxa.RDS")
+
+mr_dxa_fig
+
+
+```
+
+In Study I muscle mass was measured by magnetic resonance imaging (MRI) and dual energy X-ray absorptiometry (DXA) prior to and after the intervention. Both MRI and DXA measurements were completed during the same visit to the laboratory. Participants were instructed to refrain from strenuous physical activity during the last 48 h leading up to the measurements. The post-training measurements were completed at least 48 h after the last strength testing session. Participants were asked to refrain from food consumption during 2 h leading up to the measurements. 
+
+MRI images were obtained from the mid-thigh and analyzed by the same investigator blinded for time (pre- and post-training) and condition (low- and moderate-volume). Multiple images were used to estimate the cross-sectional area of the extensor muscles at the same distance from the knee-joint. 
+
+See figure \@ref(fig:body-comp-measures)
+
+Dallin et al. recently estimated the [@RN2541]
+<!-- MRI has shown better agreement with cadaver... see ref in Dallin -->
+
+## Muscle strength assessments
+
+## Blood variables
+
+## Muscle tissue sampling and preparations for downstream analyses
+
+## Gene expression analysis
+
+## Determination of protein abundance
+
+## Statistics and data analysis
 
 
 

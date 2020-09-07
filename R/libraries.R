@@ -13,3 +13,7 @@ library(devtools)
 # devtools::install_github("dhammarstrom/thesisdowngih")
 
 library(thesisdowngih)
+
+
+### PLotting 
+library(cowplot)
