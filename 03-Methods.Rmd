@@ -4,15 +4,174 @@ editor_options:
   chunk_output_type: console
 ---
 # Methods
+```{r libs, echo=FALSE, warning=FALSE, message=FALSE}
+source("./R/libraries.R")
+```
 
-## Study protocols, participants and training interventions
+## Study participants, protocols and training interventions
 
-For this thesis two studies were completed consisting of traini
+Study I was designed to examine effects of low- and moderate-volume on responses to acute exercise and long-term training within participants. Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n = *5) and non-adherence to the study protocol. There were no differences in characteristics between participants included in or excluded from data analysis in Study I. Study II was designed to study the effects of resistance training *per se* and effects of variable volume on selected markers related to ribosome biogenesis. Participants were therefore recruited to a training group (*n =* 11) and a non-training control group (*n =* 8). Eligible for participation were young (Study I 18-40; Study II 18-35), non-smoking men and women. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medication or supplements with known effects on adaptations to training. Participant characteristics for both studies are shown in Table \@ref(tab:characteristics-table). 
+
+```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
+
+### Read data on included/excluded, body composition and cybex data
+characteristics <- read_excel("./data/study-1/body-composition/bodycomp_DXA.xlsx") 
+participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", sep=";")
+load("./data/study-1/strength/cybex.rda")
+
+library(knitr); library(kableExtra)
+
+# Study 1 characteristics
+cybex.temp <- data.frame(cybex) %>%
+  filter(timepoint %in% c("pre", "session1"), type=="Isom")%>%
+  group_by(subject)%>%
+  summarise(trq=max(torque.max))
+
+studyI <- participants %>%
+  inner_join(characteristics) %>%
+  filter(subject!="FP10") %>% # removes participant excluded prior to comecing the study
+  filter(timepoint=="pre") %>%
+  inner_join(cybex.temp) %>%
+  dplyr::select(subject, sex, include, age, height, weight, fat.whole, lean.whole,BMC.whole, trq)%>%
+  mutate(fat=((fat.whole/1000)/weight)*100,
+         trq.lean=trq/(lean.whole/1000)) %>%
+  inner_join(participants) %>%
+        mutate(group = if_else(include == "incl", "Included", "Excluded"), 
+               sex = factor(sex, levels = c("female", "male"), 
+                            labels = c("Female", "Male")), 
+               study = "Study I", 
+               bmi = weight/(height/100)^2) %>%
+        dplyr::select(participant = subject, 
+                      study,
+                      sex,group, age, height, weight,bmi,
+                      fat.whole, 
+                      lean.whole,
+                      BMC.whole) 
+
+# 
+# age.m1 <- lme(age ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
+# weight <- lme(weight ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
+# height <- lme(height ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
+# fat    <- lme(fat ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
+# mvc    <- lme(trq.lean ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
+# 
+# summary(age.m1)
+
+# summary(weight)
+
+# summary(height)
+
+# summary(fat)
+
+# summary(mvc)
+  
+### No differences between included not included.
+
+# Study 2 characteristics 
+
+
+
+dxa_whole <- read_excel("./data/study-2/body-composition/tr010_dxa_standarddefinitions.xlsx") %>%
+  dplyr::select(Etternavn, Kjønn,Målingsdato,Alder, Vekt:`HeleVev%fett`) %>%
+  pivot_longer(names_to = "variable", values_to = "value", cols = Vekt:`HeleVev%fett`) %>%
+  mutate(value = gsub("kg", "", value), 
+         value = gsub("[[:space:]]", "", value, fixed = FALSE), 
+         value = as.numeric(value)) %>%
+
+  separate(Etternavn, into = c("Study", "participant")) %>%
+  dplyr::select(participant, Date = Målingsdato, variable, value) %>%
+  filter(!(participant %in% c("P08", "P20", "P17"))) %>%
+  group_by(participant) %>%
+  mutate(time = if_else(Date == min(Date), "S0", 
+                        if_else(Date == max(Date), "post1w", 
+                                "S12")), 
+         leg = if_else(variable == "BeinhøyreMagermasse", "R", "L")) %>%
+  filter(variable %in% c("HeleBeinmasse", 
+                         "HeleFettmasse", 
+                         "HeleVevmasse", 
+                         "HeleMagermasse" ,
+                         "Vekt", 
+                         "HeleTotalmasse")) %>%
+  pivot_wider(names_from = variable, values_from = value) %>%
+  mutate(fat_rel = 100*(HeleFettmasse/HeleTotalmasse)) %>%
+          filter(time == "S0") 
+
+
+
+
+studyII <- read_excel("./data/study-2/body-composition/tr010_age_participant.xlsx") %>%
+  inner_join(dxa_whole) %>%
+  mutate(age = as.numeric(difftime(recruited, dob)/365.2425), 
+         bmi = weight/(height/100)^2, 
+         study = "Study II") %>%
+          dplyr::select(participant, 
+                        study,
+                        sex,
+                        group,
+                        age,
+                        height, 
+                weight = Vekt,
+                bmi,
+
+                fat.whole = HeleFettmasse,
+                lean.whole = HeleMagermasse,
+                BMC.whole = HeleBeinmasse) %>%
+        mutate(sex = factor(sex, levels = c("F", "M"), 
+                            labels = c("Female", "Male"))) 
+        
+
+# Combine both studies and make table
+rbind(studyI, studyII) %>%
+
+        mutate(rel_lean = ((lean.whole/1000) / weight) * 100, 
+               rel_fat =  ((fat.whole/1000) / weight) * 100) %>%
+        dplyr::select(participant:bmi, rel_lean:rel_fat) %>%
+        pivot_longer(names_to = "variable", values_to = "values", cols = age:rel_fat ) %>%
+
+        
+        group_by(study, group, sex, variable) %>%
+        summarise(m = mean(values), 
+                  sd = sd(values)) %>% 
+        ungroup() %>%
+        mutate(m.sd = if_else(variable == "age", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
+                              if_else(variable == "bmi", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
+                                      if_else(variable == "height", paste0(sprintf("%.0f", m), " (", sprintf("%.0f", sd), ")"), 
+                                              if_else(variable == "rel_fat", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
+                                                      if_else(variable == "rel_lean", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
+                                                              paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")")))))),
+               group = factor(group, levels = c("Included", "Excluded", "experiment", "control"), 
+                              labels = c("Included", "Excluded", "Training", "Control"))) %>%
+        dplyr::select(study:variable, m.sd) %>%
+        pivot_wider(names_from = variable, values_from = m.sd) %>%
+        arrange(study, group) %>%
+        dplyr::select(study, group, sex, age, height, weight, rel_fat, rel_lean) %>%
+
+  kable(format = "latex", 
+        booktabs = TRUE, 
+        caption = "Participant characteristics", 
+        escape = FALSE, 
+        col.names = c(" ", " ", "Sex", "Age (years)", "Stature\n(cm)", "Mass (kg)", "Fat mass (\\%)", "Lean mass (\\%)")) %>%
+        
+        kable_styling(font_size = 7) %>%
+        collapse_rows(1:2) %>%
+
+  footnote(general = "Data are means and (SD)",
+           general_title = "", 
+           footnote_as_chunk = TRUE)
+
+
+```
+
+In both studies each training session started with a light standardized warm-up
+
+
+### Ethical considerations
+Both studies were approved by the local ethics committee Lillehammer University College/Inland Norway University of Applied Sciences and the Norwegian Centre for Research Data. In accordance with the *Declaration of Helsinki*[@RN2548] the studies were pre-registered in publicly accessible databases (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, https://osf.io/wa96y). Participants were informed of the study design, potential risks and sources of discomfort prior to giving their informed consent.    
 
 
 ## Measures of muscle mass
-
-```{r body-comp-measures, fig.cap="Long caption.", fig.scap="Short caption", out.extra='',fig.height=4, fig.width=4, echo=FALSE}
+<!-- 
+```{r body-comp-measures, fig.cap="Long caption.", fig.scap="Short caption", out.extra='',fig.height=4, fig.width=4, echo=FALSE, cache=TRUE}
 
 mr_dxa_fig <- readRDS("./figures/methods/mr-dxa.RDS")
 
@@ -20,12 +179,12 @@ mr_dxa_fig
 
 
 ```
-
+-->
 In Study I muscle mass was measured by magnetic resonance imaging (MRI) and dual energy X-ray absorptiometry (DXA) prior to and after the intervention. Both MRI and DXA measurements were completed during the same visit to the laboratory. Participants were instructed to refrain from strenuous physical activity during the last 48 h leading up to the measurements. The post-training measurements were completed at least 48 h after the last strength testing session. Participants were asked to refrain from food consumption during 2 h leading up to the measurements. 
 
 MRI images were obtained from the mid-thigh and analyzed by the same investigator blinded for time (pre- and post-training) and condition (low- and moderate-volume). Multiple images were used to estimate the cross-sectional area of the extensor muscles at the same distance from the knee-joint. 
 
-See figure \@ref(fig:body-comp-measures)
+See figure <!-- \@ref(fig:body-comp-measures)-->
 
 Dallin et al. recently estimated the [@RN2541]
 <!-- MRI has shown better agreement with cadaver... see ref in Dallin -->
