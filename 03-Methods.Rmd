@@ -162,7 +162,11 @@ rbind(studyI, studyII) %>%
 
 ```
 
-In both studies each training session started with a light standardized warm-up
+Both studies were fully or partially performed as within-participant studies as each participant had their legs assigned to different training conditions (not including the control group in Study II). Allocation was performed after enrollment where each participant had their legs randomized to either low- or moderate volume (Study I), or variable or constant volume (Study II). 
+
+In Study I, the low-volume protocol consisted of a single set of each exercise and the moderate-volume consisted of three sets per exercise. Three unilateral leg exercises were used (leg press, leg curl and knee extension). The moderate volume-leg commenced all sessions and the low volume-leg performed a single set of each exercise in the rest between second and third set of the moderate volume training protocol. Each training session started with a light standardized warm-up (5 min ergometer cycling and 10 repetitions each of push-ups, sit-ups, back-extensions and squats). Before each exercise in the main program one set of 10 repetitions were performed with approximately 50% of 1RM.  
+
+In Study II, only unilateral knee-extension was performed in an effort to concentrate the stimulus to the quadriceps muscles.<!-- Check this --> The constant-volume leg performed six sets of 10RM throught the study and variable leg perfomed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelwe with same intensity (10RM).      
 
 
 ### Ethical considerations
@@ -191,9 +195,14 @@ Dallin et al. recently estimated the [@RN2541]
 
 ## Muscle strength assessments
 
+Muscle strength was with  
+
+
 ## Blood variables
 
 ## Muscle tissue sampling and preparations for downstream analyses
+Muscle samples were obtained under local anesthesia ()   with a fine needle (12-14 gauge; Universal-plus, Medax, San Possidonio, Italy) operated with a spring loaded instrument (Bard Magnum, Bard Norway AS). 
+
 
 ## Gene expression analysis
 
