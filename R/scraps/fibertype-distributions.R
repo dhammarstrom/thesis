@@ -46,24 +46,33 @@ corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
         inner_join(legs) %>%
         filter(include == "incl") %>%
         mutate(total  = type1 + type2a + type2ax + type2x, 
+               
+               typeI = (type1 / total)*100,
+               typeII = ((type2a + type2ax +type2x)/total) *100,
+               
                type1  =(type1 / total)*100, 
                type2a =(type2a / total)*100, 
                type2ax=(type2ax / total)*100, 
-               type2x =(type2x / total)*100) %>%  
+               type2x =(type2x / total)*100 ) %>% 
+    
         filter(timepoint %in% c(2, 3)) %>%
-        dplyr::select(subject, timepoint, leg,total, type1:type2x) %>%
-        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2x) %>%
+        dplyr::select(subject, timepoint, leg,total, type1:typeII) %>%
+        pivot_longer(names_to = "type", values_to = "percentage", cols = c(type1:type2x, typeI:typeII)) %>%
         mutate(timepoint = paste0("t", timepoint)) %>%
         pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
 
         mutate(type = factor(type, levels = c("type1", 
                                               "type2a", 
                                               "type2ax", 
-                                              "type2x"), 
+                                              "type2x", 
+                                              "typeI", 
+                                              "typeII"), 
                              labels = c("Type I", 
                                         "Type IIA", 
                                         "Type IIAX", 
-                                        "Type IIX"))) %>%
+                                        "Type IIX", 
+                                        "Type I_tot", 
+                                        "Type II_tot"))) %>%
         
         
         ggplot(aes(percentage_t2, percentage_t3)) +  geom_point(alpha = 0.4, 
@@ -92,35 +101,44 @@ plot_grid(total_histogram, corr_plot_fiber_types, ncol = 1, rel_heights = c(1, 2
 
 
 
- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
-        inner_join(legs) %>%
-        filter(include == "incl") %>%
-        mutate(total  = type1 + type2a + type2ax + type2x, 
-               type1  =(type1 / total)*100, 
-               type2a =(type2a / total)*100, 
-               type2ax=(type2ax / total)*100, 
-               type2x =(type2x / total)*100) %>%  
-        filter(timepoint %in% c(2, 3)) %>%
-        dplyr::select(subject, timepoint, leg,total, type1:type2x) %>%
-        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2x) %>%
-        mutate(timepoint = paste0("t", timepoint)) %>%
-        pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
-        
-        mutate(type = factor(type, levels = c("type1", 
-                                              "type2a", 
-                                              "type2ax", 
-                                              "type2x"), 
-                             labels = c("Type I", 
-                                        "Type IIA", 
-                                        "Type IIAX", 
-                                        "Type IIX"))) %>%
+read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+    inner_join(legs) %>%
+    filter(include == "incl") %>%
+    mutate(total  = type1 + type2a + type2ax + type2x, 
+           
+           typeI = (type1 / total)*100,
+           typeII = ((type2a + type2ax +type2x)/total) *100,
+           
+           type1  =(type1 / total)*100, 
+           type2a =(type2a / total)*100, 
+           type2ax=(type2ax / total)*100, 
+           type2x =(type2x / total)*100 ) %>% 
+    
+    filter(timepoint %in% c(1)) %>%
+    dplyr::select(subject, timepoint, leg,total, type1:type2x, typeI:typeII) %>%
+    pivot_longer(names_to = "type", values_to = "percentage", cols = c(type1:type2x, typeI:typeII)) %>%
+    mutate(timepoint = paste0("t", timepoint)) %>%
+    pivot_wider(names_from = leg, values_from = c(percentage, total)) %>%
+    
+    mutate(type = factor(type, levels = c("type1", 
+                                          "type2a", 
+                                          "type2ax", 
+                                          "type2x", 
+                                          "typeI", 
+                                          "typeII"), 
+                         labels = c("Type I", 
+                                    "Type IIA", 
+                                    "Type IIAX", 
+                                    "Type IIX", 
+                                    "Type I_tot", 
+                                    "Type II_tot"))) %>%
 
         rowwise() %>%
-        mutate(mean.perc = mean(c(percentage_t2, percentage_t3)), 
-               diff.perc = percentage_t2 - percentage_t3, 
-               diff.sq = (percentage_t2 - percentage_t3)^2,
+        mutate(mean.perc = mean(c(percentage_L, percentage_R)), 
+               diff.perc = percentage_L - percentage_R, 
+               diff.sq = (percentage_L - percentage_R)^2,
                diff.mean.sq = (diff.perc/mean.perc)^2,
-               min.count = min(c(total_t2, total_t3))) %>%
+               min.count = min(c(total_L, total_R))) %>%
         filter(mean.perc > 0) %>%
         
         group_by(type) %>%

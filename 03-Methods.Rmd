@@ -218,7 +218,17 @@ Any reported differences in fiber type distributions between sampling techniques
 @RN2552]. <!-- Hayot -->    
 For determination of fiber type distributions, a threshold of 200-300 fibers has been suggested as a suitable sample size per specimen as more fibers does not reduce the variation between dupliacte samples
 [@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-In Study I one or several pieces of muscle were chosen for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens 
+In Study I one or several pieces of muscle (total weight $\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens (Figure ref fig). Using an average of fibers from the first sampling time point the between leg coefficient of variation was determined to 14% for Type I fibers and 11.3 for type II fibers. The between leg variation in Type I fibers is similar to what has been previously reported [Blomstrand Ekblom]  
+
+Latest paper on variability between samples from the same leg and due to number of fibers counted
+Appl Physiol Nutr Metab
+. 2020 Apr;45(4):368-375. doi: 10.1139/apnm-2019-0263. Epub 2020 Mar 24.
+
+The within-leg was similar to between leg comparison in our samples. This might highlight sampling depth variation in microbiopsy technique in immunohistochemistry ?
+
+
+
+
 
 ```{r immuno-methods, fig.cap="Number of fibres in immunohistochemistry analyses", fig.scap="Fiber counts", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4, fig.heigh = 6, fig.align='center'}
 
