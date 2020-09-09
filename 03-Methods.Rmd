@@ -162,11 +162,15 @@ rbind(studyI, studyII) %>%
 
 ```
 
+
+
+Each training session started with a light standardized warm-up (5 min ergometer cycling and 10 repetitions each of push-ups, sit-ups, back-extensions and squats). Before each exercise in the main program, one set of 10 repetitions were performed in the specific exercise with approximately 50% of 1RM. 
+
 Both studies were fully or partially performed as within-participant studies as each participant had their legs assigned to different training conditions (not including the control group in Study II). Allocation was performed after enrollment where each participant had their legs randomized to either low- or moderate volume (Study I), or variable or constant volume (Study II). 
 
-In Study I, the low-volume protocol consisted of a single set of each exercise and the moderate-volume consisted of three sets per exercise. Three unilateral leg exercises were used (leg press, leg curl and knee extension). The moderate volume-leg commenced all sessions and the low volume-leg performed a single set of each exercise in the rest between second and third set of the moderate volume training protocol. Each training session started with a light standardized warm-up (5 min ergometer cycling and 10 repetitions each of push-ups, sit-ups, back-extensions and squats). Before each exercise in the main program one set of 10 repetitions were performed with approximately 50% of 1RM.  
+In Study I, the low-volume protocol consisted of a single set of each exercise and the moderate-volume consisted of three sets per exercise. Three unilateral leg exercises were used (leg press, leg curl and knee extension). The moderate volume-leg commenced all sessions and the low volume-leg performed a single set of each exercise in the rest between second and third set of the moderate volume training protocol.  
 
-In Study II, only unilateral knee-extension was performed in an effort to concentrate the stimulus to the quadriceps muscles.<!-- Check this --> The constant-volume leg performed six sets of 10RM throught the study and variable leg perfomed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelwe with same intensity (10RM).      
+In Study II, only unilateral knee-extension was performed in an effort to concentrate the stimulus to the quadriceps muscles.<!-- Check this --> The constant-volume leg performed six sets of 10RM throughout the study and variable leg performed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelve with same intensity (10RM).      
 
 
 ### Ethical considerations
@@ -201,7 +205,113 @@ Muscle strength was with
 ## Blood variables
 
 ## Muscle tissue sampling and preparations for downstream analyses
-Muscle samples were obtained under local anesthesia ()   with a fine needle (12-14 gauge; Universal-plus, Medax, San Possidonio, Italy) operated with a spring loaded instrument (Bard Magnum, Bard Norway AS). 
+Muscle samples were obtained under local anesthesia (Study I, Xylocaine, \SI{10}{\mg\per\ml} with adrenalin \SI{5}{\micro\gram\per\ml}, AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan, \SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle (12-14 gauge; Universal-plus, Medax, Italy) operated with a spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling was performed as previously described
+[@RN824],<!-- Hayot 2005 relible micriboiopsy technique -->
+with modifications. Anestheisa was injected in the subcutanous tissue with care taken not to inject anesthesia into the muscle itself. Following a short period (5 min) the effect of the anesthesia was confirmed using an injection needle. Following pilot experiments we decided not to use an insertion cannula as described in [@RN824] as the biopsy needle itself could be used to puncture the skin and muscle fascia. This also resulted in less discomfort. Several passes through the same skin puncture was made to obtain sufficient material for downstream analyses. A smaller needle (14 vs. 12 gauge) was used to further minimized discomfort in Study II where more biopsies were sampled over a shorter time span, with exception from when material was used for immunhistochemistry. The first biopsy was sampled at one third of the distance between the patella to the *anterior superior iliac spinae* with subsequent biopsies sampled $\sim$\SI{2}{cm} proximal to previous samples. In Study II samples obtained more than one week apart were sampled with closer proximity and distally from previous samples but never at previous sampling sites. 
+
+The microbiopsy technique produces smaller samples compared to other biopsy techniques
+[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus requires several passes to produce sufficient material for multiple downstream experiments. However, reports confirms that the microbiopsy technique is comparable to the traditionally used Bergström technique in several measures of muscle characteristics at the same time as being well tolerated
+[@RN824; 
+@RN2553]. 
+Any reported differences in fiber type distributions between sampling techniques have been suggested relating to differences in  sampling depth 
+[@RN2553;
+@RN2552]. <!-- Hayot -->    
+For determination of fiber type distributions, a threshold of 200-300 fibers has been suggested as a suitable sample size per specimen as more fibers does not reduce the variation between dupliacte samples
+[@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
+In Study I one or several pieces of muscle were chosen for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens 
+
+```{r immuno-methods, fig.cap="Number of fibres in immunohistochemistry analyses", fig.scap="Fiber counts", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4, fig.heigh = 6, fig.align='center'}
+
+
+source("./R/libraries.R")
+source("./R/themes.R")
+
+# Sample set up (included samples)
+
+legs <- read_csv2("./data/study-1/body-composition/oneThreeSetLeg.csv") %>%
+        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) 
+
+
+# Total number of fibers per sample
+
+low_fiber_counts <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total = type1 + type2a + type2ax + type2x) %>%
+        filter(total < 200)
+        
+total_histogram <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total = type1 + type2a + type2ax + type2x) %>%        
+        
+        ggplot(aes(total)) + geom_histogram(binwidth = 30, 
+                                            fill = "blue", alpha = 0.4) + 
+        dissertation_theme() + 
+        scale_x_continuous(limits = c(0, 1600),
+                           expand = c(0,0),
+                           breaks = c(0, 200, 400, 600, 800, 1000, 1200, 1400, 1600), 
+                           labels = c(0, "", 400, "", 800, "", 1200, "", 1600)) + 
+        scale_y_continuous(limits = c(0, 20), 
+                           breaks = c(0, 5, 10, 15, 20), 
+                           expand = c(0,0)) +
+        
+        labs(x = "Total number of fibers per sample", 
+             y = "Counts") + 
+        theme(axis.text.x = element_text(hjust = c(0, rep(0.5, 7), 1)))
+        
+### Comparison between "duplicate samples"
+
+corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total  = type1 + type2a + type2ax + type2x, 
+               type1  =(type1 / total)*100, 
+               type2a =(type2a / total)*100, 
+               type2ax=(type2ax / total)*100, 
+               type2x =(type2x / total)*100) %>%  
+        filter(timepoint %in% c(2, 3)) %>%
+        dplyr::select(subject, timepoint, leg,total, type1:type2x) %>%
+        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2x) %>%
+        mutate(timepoint = paste0("t", timepoint)) %>%
+        pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
+
+        mutate(type = factor(type, levels = c("type1", 
+                                              "type2a", 
+                                              "type2ax", 
+                                              "type2x"), 
+                             labels = c("Type I", 
+                                        "Type IIA", 
+                                        "Type IIAX", 
+                                        "Type IIX"))) %>%
+        
+        
+        ggplot(aes(percentage_t2, percentage_t3)) +  geom_point(alpha = 0.4, 
+                                                                 color = "blue") + 
+        facet_wrap(~type, ncol = 2, strip.position = "top")  +
+
+        scale_x_continuous(limits = c(0, 100)) + 
+        scale_y_continuous(limits = c(0, 100)) + 
+        
+        geom_abline(intercept = 0, slope = 1) + 
+        dissertation_theme() + 
+        theme(strip.background = element_blank(), 
+              panel.border = element_rect(color = "black", fill = NA))
+        
+
+
+plot_grid(total_histogram, corr_plot_fiber_types, ncol = 1, rel_heights = c(1, 2)) + 
+        draw_plot_label(label=c("A", "B"),
+                        x = c(0.02, 0.02), 
+                        y = c(0.98, 0.6),
+                        hjust=.5, vjust=.5, 
+                        size = label.size)
+
+
+
+
+```
+
 
 
 ## Gene expression analysis
