@@ -16,7 +16,20 @@ source("./R/libraries.R"); source("./R/themes.R")
 
 ### Protein synthesis
 
+A single exercise session promotes protein synthesis <!-- Kumar 2009 10.1152/japplphysiol.91481.2008 -->
+<!-- Philips 1997? -->
+Positive net protein balance in responce to exercise <!-- Tipton 10.1152/ajpendo.00234.2002.-->
 
+<!-- Coordinated mTOR 10.1038/nature13492. -->
+
+Inhibition of RNA synthesis restrict protein synthesis <!-- Goldspink 1977 -->
+
+Indicated in Goldspink 1977 and 1976 RNA reflects ribosomal availability <!-- Goldspink 1977-->
+
+Protein synthesis is proportional to RNA content <!-- Millward 1973 -->
+
+
+Increase loading leads to increased RNA <!-- Goldberg 1975 Mechanism of work-induced hypertrophy of skeletal muscle --> 
 
 ```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from Millward et al. 1973. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein."}
 
@@ -63,6 +76,7 @@ When the C-terminal is deleted, mTOR gets constitutively active
 
 
 
+<<<<<<< HEAD
 ## Ribsome biogenesisand muscle growth
 
 <!-- Stec 2016 growth factor induced hypertrophy is abolished when ribo biog is inhibited with the specific CX-5461  -->
@@ -80,12 +94,18 @@ Figueriedo 2015
 Millward 1973 correlation between RNA and protein synthesis
 
 
+=======
+>>>>>>> 03261371c0ce23074e5f42ac588b7606632afb28
 
 
 
 
 
 
+<<<<<<< HEAD
+=======
+### Ribsome biogenesis 
+>>>>>>> 03261371c0ce23074e5f42ac588b7606632afb28
 
 #### Transcription of ribsomal RNA (rRNA)
 
