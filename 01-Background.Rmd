@@ -63,7 +63,29 @@ When the C-terminal is deleted, mTOR gets constitutively active
 
 
 
-### Ribsome biogenesis 
+## Ribsome biogenesisand muscle growth
+
+<!-- Stec 2016 growth factor induced hypertrophy is abolished when ribo biog is inhibited with the specific CX-5461  -->
+<!-- Crossland 2017 in contrasts, IGF-1 induced growth was not impaired when ribo biog was inhibited by CX-5461 -->
+Crossland et al. noted that using IGF-1 induces specific growth related effects in muscle cells. These may be different than the effects induced by sreum as in Stec et al. 
+
+<!-- Studies showing correlation between growth and ribo biogenesis -->
+
+Brook 2016 
+Stec 2016
+Nakada 2016
+Figueriedo 2015
+
+<!-- Older studies -->
+Millward 1973 correlation between RNA and protein synthesis
+
+
+
+
+
+
+
+
 
 #### Transcription of ribsomal RNA (rRNA)
 
