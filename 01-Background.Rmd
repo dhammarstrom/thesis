@@ -76,7 +76,7 @@ When the C-terminal is deleted, mTOR gets constitutively active
 
 
 
-<<<<<<< HEAD
+
 ## Ribsome biogenesisand muscle growth
 
 <!-- Stec 2016 growth factor induced hypertrophy is abolished when ribo biog is inhibited with the specific CX-5461  -->
@@ -94,18 +94,15 @@ Figueriedo 2015
 Millward 1973 correlation between RNA and protein synthesis
 
 
-=======
->>>>>>> 03261371c0ce23074e5f42ac588b7606632afb28
 
 
 
 
 
 
-<<<<<<< HEAD
-=======
+
 ### Ribsome biogenesis 
->>>>>>> 03261371c0ce23074e5f42ac588b7606632afb28
+
 
 #### Transcription of ribsomal RNA (rRNA)
 
