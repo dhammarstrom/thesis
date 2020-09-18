@@ -3,6 +3,8 @@
 #### Figure theme/color/settings for dissertation  ####
 
 library(ggplot2)
+library(cowplot)
+library(ggtext)
 
 
 

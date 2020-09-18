@@ -1,2 +1,20 @@
 
-# Results
+# Results and Discussion
+
+## Effects of different training volume on changes in muscle size and function
+
+Average within participant differences in responses to low- and moderate volume were consistent across measures of muscle hypertrophy and strength gains. Taken together these indicate that MOD was more efficient than LOW in increasing muscle size and strength (Figure \@ref(fig:comb-fig-s1)).  
+
+
+
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=3, fig.width=5, fig.align='center'}
+
+library(ggplot2); library(ggtext)
+
+# The figure and estimates are from ./R/study-1/muscle-strength-size.R
+muscle_strength_fig <- readRDS("./data/derivedData/study1_muscle-strength-size/muscle-strength-fig.RDS")
+
+muscle_strength_fig
+```
+
+
