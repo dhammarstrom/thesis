@@ -28,12 +28,15 @@ Together with additional studies, Carpinelli and Otto instead arrived to the con
 @RN2201] and sparked considerable scientific activity. The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant results in single studies [@RN2568; @RN2538]. A second argument against additional volume in strength training recommendation has been the cost/benefit relationship of adding training volume without meaningful additional gains
 [@RN2538;<!-- Feigenbaum 1999 questions the analysis and the practical utility of volume -->
 @RN2568].<!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
-As benefits of maintaining or increasing functional capacity and muscle mass have been shown to be important for general health and sport performance, attempts has been made to synthesize evidence from literature to challenge the hypothesis that training volume is not important for training induced gains in strength
+As benefits of maintaining or increasing functional capacity and muscle mass have been shown to be important for general health
+[@RN2523]<!-- Newman 2006 Muscle strength stronger predictor than muscle mass for survival but CSA from CT sig predictor in male and almost in male female combined  -->
+and sport performance, attempts has been made to synthesize evidence from the literature to challenge the hypothesis that training volume is not important for training induced gains in strength
 [@RN793;<!-- Krieger 2009 meta analysis multiple more effective than single sets  -->
 @RN2492]<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
 and muscle mass
 [@RN789; 
-@RN1767].  
+@RN1767].
+The 
  
 
 
@@ -42,11 +45,6 @@ As acute training variables are inevitably inter-connected, changing one will af
 Higher strength gains are seen as a result of the external resistance [@RN2576] 
 
 
-The practical significance of increased muscular strength and mass on health can be appreciated from epideminological studies 
-[@RN2523]<!-- Newman 2006 Muscle strength stronger predictor than muscle mass for survival but CSA from CT sig predictor in male and almost in male female combined  -->
-
-
-Kraemer [@RN1473] noted that multiple sets are more effective than single sets in producing strength gains as well as favorable changes in body composition in american football players. 
 
 
 ## The relationship between muscle mass and strength
@@ -55,7 +53,12 @@ Kraemer [@RN1473] noted that multiple sets are more effective than single sets i
 ### Meta-analysis of exercise volume 
 
 ## Molecular determinants of training-induced muscle hypertrophy
-Muscle mass change as a consequence of muscle protein synthesis and breakdown. When the net balance is positive the muscle mass increases and vice versa. 
+Muscle mass change as a consequence of muscle protein synthesis and breakdown. When a net positive balance is achieved the muscle increase in mass. Resistance exercise leads ta acute blunting of muscle protein synthesis followed by an increase over resting levels in the post exercise period
+<!-- Dreyer 10.1113/jphysiol.2006.113175 -->
+<!-- Philips 1997? -->.
+
+
+
 
 The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
 [@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
@@ -67,8 +70,7 @@ Also in humans, administration of rapamycin, hindering the activity of mTOR lead
 
 ### Protein synthesis
 
-A single exercise session promotes protein synthesis <!-- Kumar 2009 10.1152/japplphysiol.91481.2008 -->
-<!-- Philips 1997? -->
+
 Positive net protein balance in responce to exercise <!-- Tipton 10.1152/ajpendo.00234.2002.-->
 
 <!-- Coordinated mTOR 10.1038/nature13492. -->
@@ -106,8 +108,6 @@ millward %>%
         dissertation_theme() +
                 theme(legend.position = c(0.2, 0.8), 
                       legend.title = element_blank()) 
-
-        
 
 
 
