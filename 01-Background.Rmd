@@ -6,13 +6,64 @@ source("./R/libraries.R"); source("./R/themes.R")
 
 
 ```
-## Exercise training variables affecting training outcomes
 
-## Exercise volume
+## Effects of resistance exercise volume on muscle strength and mass
+Precise exercise-training^[Exercise is herein defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. Resistance-exercise is defined as an acute strength-promoting program requiring the neuromuscular system to exert force against resistance. Resistance training is defined as a long-term process of multiple resistance exercise-sessions performed over a defined period of time.]
+prescription contains information on exercises, their sequential order, intensity and volume at which exercises should be performed, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
+[@RN789].<!-- Bird designing resistance training programs -->
+By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
+The relative importance of exercise-training variables for training outcomes has been examined in numerous studies including (but not limited to) the overall organization of exercise sessions,
+[@RN2570;<!-- Evans mini review on periodization --> 
+@RN2573]<!-- Grgic 2017 No effect of linear and daily unduluting periodization on muscle hypertrophy -->
+training frequency 
+[@RN2574;<!-- Schoenfeld 2016 training frequency twice per week better in volume equated studies for hypertrophy -->,
+@RN2575]<!-- Higher frequencies gives higher gains in strength but not when volume equated -->
+and intensity
+[@RN2576].<!-- Schoenfeld, no difference between high vs low load strength training in hypertrophy but 1rm favors high loads -->
+Concerning effects of resistance exercise volume, Berger conducted an early study central to the debate with the goal to determine what method most efficiently produced strength gains (in healthy young males) [@RN1476]. Berger compared one, two and three sets performed with two, six or ten repetition maximum (RM) in the bench press, three times per week, over twelve weeks. As the combined effect of three sets per session was superior regardless of the number of repetitions performed Berger concluded in favor of three sets. This conclusion was later challenged on the basis of the interpretation of the analysis
+[@RN794;
+@RN2538]<!-- Carpenelli and Otto questions the analysis-->
+Together with additional studies, Carpinelli and Otto instead arrived to the conclusion that there was "insufficient evidence to support the prevalent belief that a greater volume of exercise (through multiple sets) will elicit superior muscular strength or hypertrophy" [@RN794]. This stand has since been repeatedly put forward as a criticism of higher volume training programs 
+[@RN2568; 
+@RN2201] and sparked considerable scientific activity. The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant results in single studies [@RN2568; @RN2538]. A second argument against additional volume in strength training recommendation has been the cost/benefit relationship of adding training volume without meaningful additional gains
+[@RN2538;<!-- Feigenbaum 1999 questions the analysis and the practical utility of volume -->
+@RN2568].<!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
+As benefits of maintaining or increasing functional capacity and muscle mass have been shown to be important for general health and sport performance, attempts has been made to synthesize evidence from literature to challenge the hypothesis that training volume is not important for training induced gains in strength
+[@RN793;<!-- Krieger 2009 meta analysis multiple more effective than single sets  -->
+@RN2492]<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
+and muscle mass
+[@RN789; 
+@RN1767].  
+ 
+
+
+As acute training variables are inevitably inter-connected, changing one will affect another. Larger exercise volumes per set may for example be achieved when applying lower external resistance. When the total load (repetitions $\times$ sets $\times$ external load) is equated by manipulating the external resistance and number of sets greater resistance (and fewer number of sets) leads to similar hypertrophy but higher strength gains
+[@RN1612].<!-- Schoenfeld 3*10RM vs 7*3RM similar hypertrophy higher str in 7*3RM --> 
+Higher strength gains are seen as a result of the external resistance [@RN2576] 
+
+
+The practical significance of increased muscular strength and mass on health can be appreciated from epideminological studies 
+[@RN2523]<!-- Newman 2006 Muscle strength stronger predictor than muscle mass for survival but CSA from CT sig predictor in male and almost in male female combined  -->
+
+
+Kraemer [@RN1473] noted that multiple sets are more effective than single sets in producing strength gains as well as favorable changes in body composition in american football players. 
+
+
+## The relationship between muscle mass and strength
+
 
 ### Meta-analysis of exercise volume 
 
 ## Molecular determinants of training-induced muscle hypertrophy
+Muscle mass change as a consequence of muscle protein synthesis and breakdown. When the net balance is positive the muscle mass increases and vice versa. 
+
+The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
+[@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
+Also in humans, administration of rapamycin, hindering the activity of mTOR leads to an abolished exercise-induced increase in protein synthesis
+[@RN780]<!-- Drummond rapamycin blocks protein synthesis in humans -->. Furthermore, observational evidence linking mTOR to load-induced hypertrophy comes from human and rodent studies correlating acute phosphorylation the downstream target of mTOR, ribosomal protein S6 kinase (S6K) in response to acute mechanical loading and hypertrophic responses following a subsequent training period
+[@RN785;<!-- Terzis 2008 mTOR activity correlate with subsequent adaptation -->
+@RN866]
+
 
 ### Protein synthesis
 

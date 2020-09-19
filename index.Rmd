@@ -35,7 +35,7 @@ defence: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-defence.Rmd"), collapse = '\n  ')`
 bibliography: 
         - bib/thesis.bib
-        - bib/packages.bib
+        - bib/complete-bib.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/vancouver.csl
 # Download your specific csl file and refer to it in the line above.
