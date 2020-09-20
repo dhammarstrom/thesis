@@ -1,9 +1,448 @@
 
 # Results and Discussion
 
+```{r settings, include=FALSE}
+
+library(nlme); library(kableExtra)
+
+
+```
+
+
 ## Effects of different training volume on changes in muscle size and function
 
-Average within participant differences in responses to low- and moderate volume were consistent across measures of muscle hypertrophy and strength gains. Taken together these indicate that MOD was more efficient than LOW in increasing muscle size and strength (Figure \@ref(fig:comb-fig-s1)).  
+
+
+
+
+
+```{r comparing-avg-strength-csa, echo=FALSE, warning=FALSE, message=FALSE}
+
+
+source("./R/study-1/mr-and-dxa-data.R")
+
+
+participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", sep=";") %>%
+        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) 
+
+
+### Overall % increase in CSA (not corrected for baseline values)
+over.all.csa <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+  spread(timepoint, CSA.avg) %>%
+  mutate(change = ((post/pre)-1)*100) %>%
+  group_by(subject) %>%
+  summarise(mean.csa = mean(change, na.rm = TRUE)) %>%
+  ungroup() %>%
+  summarise(m.csa = mean(mean.csa),
+            s.csa = sd(mean.csa))
+
+sets.csa <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+  spread(timepoint, CSA.avg) %>%
+  mutate(change = ((post/pre)-1)*100) %>%
+  group_by(sets) %>%
+  summarise(m.csa = mean(change),
+            s.csa = sd(change))
+
+
+
+### Baseline corrected % increase
+csa.corrected.data <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+  spread(timepoint, CSA.avg) %>%
+  mutate(change = ((post/pre)-1)*100) %>% # Calculates % change
+  group_by(sex) %>%
+  mutate(pre = pre-mean(pre)) %>% # Mean centered baseline 
+  # (no need for sex-diff in model)
+  group_by(subject, sex) %>% # Keeps sex for test in model
+  summarise(mean.csa = mean(change, na.rm = TRUE),
+            mean.baseline = mean(pre)) # Average over both conditions 
+
+
+
+## Anocova with baseline values as co-variate
+csa.corr.m1 <- lm(mean.csa ~  mean.baseline,
+                  data = csa.corrected.data)
+
+csa.m1 <- lm(mean.csa ~  1,
+                  data = csa.corrected.data)
+
+
+
+csa.corr.confint  <- round(confint(csa.corr.m1)[1,],1)
+csa.corr.estimate <- round(summary(csa.corr.m1)$coef[1,1],1)
+
+
+
+
+csa <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+  group_by(timepoint, sets, sex) %>%
+  summarise(m=sprintf("%.1f", round(mean(CSA.avg),1)),
+            s=sprintf("%.1f", round(sd(CSA.avg),1)))
+
+
+csa.r <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+  spread(timepoint, CSA.avg) %>%
+  mutate(csa.change=((post/pre)-1)*100) %>%
+  dplyr::select(subject, sex, sets, csa.change) %>%
+  spread(sets, csa.change)
+
+csa.r.model <- mr.results %>%
+
+  inner_join(participants) %>%
+  filter(include=="incl") %>%
+  dplyr::select(subject,leg, timepoint, sex, sets, CSA.avg) %>%
+  spread(timepoint, CSA.avg) %>%
+  mutate(csa.change=((post/pre)-1)*100) %>%
+  dplyr::select(subject,leg, sex, sets, pre, csa.change) %>%
+  group_by(sex) %>%
+  mutate(pre.m = pre-mean(pre, na.rm = TRUE), 
+         sets = factor(sets, levels = c("single", "multiple"))) 
+
+#### Change to ancova ###
+
+
+csa.m0 <-nlme::lme(csa.change ~ sets +  pre.m,
+                random = list(subject = ~1),
+                na.action = na.omit, 
+                data = csa.r.model, method = "ML", 
+                control=list(msMaxIter=120,
+                             opt = "nloptwrap", msVerbose = FALSE))
+
+
+
+
+csa.estimate <- sprintf("%.2f",round(coef(summary(csa.m0))[2,1], 2))
+csa.confint <- intervals(csa.m0)$fixed[2, c(1,3)]
+
+### t-test Does not change the conclusion 
+# csa.ttest <- with(csa.r, t.test(multiple,single, paired=T))
+# csa.estimate <- sprintf("%.2f",round(csa.ttest$estimate, 2))
+# csa.confint <- csa.ttest$conf.int
+
+
+csa.corr <- cor.test(csa.r$multiple, csa.r$single)
+
+
+female.t <- with(csa.r[csa.r$sex=="female",], t.test(multiple,single, paired=T))
+female.estimate <- sprintf("%.2f",round(female.t$estimate, 2))
+female.confint <- female.t$conf.int
+
+
+male.t <- with(csa.r[csa.r$sex=="male",], t.test(multiple,single, paired=T))
+male.estimate <- sprintf("%.2f",round(male.t$estimate, 2))
+male.confint <- male.t$conf.int
+
+#### Strength data for overall stats
+
+
+
+rm_str <- read_excel("./data/study-1/strength/strengthTests.xlsx") %>%
+        filter(!(exercise %in% c("benchpress", "legcurl"))) %>%
+        inner_join(participants) %>%
+        filter(include == "incl") %>%
+
+  dplyr::select(subject, sex, sets, exercise, timepoint, load)%>%
+  mutate(load = as.numeric(load),
+         sets = factor(sets, levels = c("single", "multiple"))) %>%
+  spread(timepoint, load) %>%
+  mutate(baseline = pmax(pre, session1)) %>%
+  dplyr::select(subject, sex, sets, exercise, baseline, week2, week5, week9, post) %>%
+  gather(week, load, baseline:post) %>%
+  mutate(week = factor(week, levels = c("baseline", "week2", "week5", "week9", "week12", "post"))) %>%
+  group_by(exercise) %>%
+  mutate(str = load / max(load, na.rm = TRUE)) %>%
+  dplyr::select(-load) %>%
+  filter(week %in% c("baseline", "post")) 
+
+# load cybex data 
+load("./data/study-1/strength/cybex.rda")
+
+
+cybex <- data.frame(cybex) %>%
+        mutate(leg = if_else(leg == "Left", "L", "R")) %>%
+        inner_join(participants) %>%
+        filter(include == "incl", 
+               timepoint %in% c("pre","session1", "post")) %>%
+
+        filter(!(subject=="FP6" & timepoint == "post" & speed == 240))  # This removes one record, exclusion due to error in measurement, see protocol FP6
+
+
+# Clean cybex data set and combine with 1RM 
+total_strength <- cybex %>%
+  ungroup() %>%
+  dplyr::select(subject, timepoint, sets,speed, sex, torque.max) %>%
+  spread(timepoint, torque.max) %>%
+  rowwise()%>%
+  mutate(baseline = max(pre, session1, na.rm=T)) %>%
+  ungroup() %>%
+  dplyr::select(subject, sex, sets, exercise = speed, baseline,  post) %>%
+  gather(week, load, baseline:post) %>%
+  group_by(exercise) %>%
+  mutate(str = load/max(load, na.rm = TRUE)) %>%
+  dplyr::select(-load) %>%
+  filter(week %in% c("baseline", "post")) %>%
+  rbind(rm_str) %>% # This includes all strength tests
+  mutate(ex_fam = if_else(exercise %in% c("legext", "legpress"), 
+                          "rm", if_else(exercise == 0, "isom", "isok"))) %>%
+  group_by(subject, sex, sets, week, ex_fam) %>%
+  summarise(str = mean(str, na.rm = TRUE)) %>%
+  group_by(subject, sex, sets, week) %>%
+  summarise(str = mean(str, na.rm = TRUE)) 
+
+
+strength.stats <- total_strength %>%
+  spread(week, str) %>%
+  mutate(increase = 100 * ((post/baseline)-1)) %>%
+  group_by(sex) %>%
+  mutate(BASELINE = baseline - mean(baseline)) %>%
+    group_by(sex, subject) %>%
+    summarise(increase = mean(increase, na.rm = TRUE),
+              BASELINE = mean(BASELINE, na.rm = TRUE)) 
+
+
+
+
+## ANCOVA for the strength 1RM
+strength.m1 <- lm(increase ~ sex + BASELINE,
+                  data = strength.stats)
+
+strength.corr.confint  <- round(confint(strength.m1)[1,],0)
+strength.corr.estimate <- round(summary(strength.m1)$coef[1,1],0)
+
+
+
+### Correlation in strength gains ###
+
+str.corr.data <-  total_strength %>%
+  spread(week, str) %>%
+  mutate(increase = 100 * ((post/baseline)-1)) %>%
+  dplyr::select(subject, sex, sets, increase) %>%
+  spread(sets, increase) 
+
+str.corr <- cor.test(str.corr.data$single,
+                          str.corr.data$multiple)
+
+#### Correlation strength and csa increases
+
+# Average increases
+
+csa.str.corr.data <- total_strength %>%
+  spread(week, str) %>%
+  mutate(str.rel.change = 100 * ((post/baseline)-1)) %>%
+  dplyr::select(subject,  sets, sex, sets,baseline, str.rel.change) %>%
+
+  inner_join(mr.results %>%
+                mutate(condition=leg) %>%
+                inner_join(participants) %>%
+                filter(include=="incl") %>%
+                dplyr::select(subject, timepoint, sex, sets, CSA.avg) %>%
+                spread(timepoint, CSA.avg) %>%
+                mutate(csa.rel.change = 100 * ((post/pre)-1)) %>%
+                dplyr::select(subject, sets, csa.rel.change)) %>%
+        ungroup() 
+
+
+
+
+
+# The code below could possibly be used to calculate the relative contribution of 
+# csa increase to muscle strength increases
+
+
+# m <- lme4::lmer(str.rel.change ~ csa.rel.change + sets + (1|subject), 
+#                 data = csa.str.corr.data)
+# 
+# 
+# 
+# mx.null <- lme4::lmer(str.rel.change ~ 1 + (1|subject), data = csa.str.corr.data)
+# mx.csa <- lme4::lmer(str.rel.change ~ csa.rel.change  + (1|subject), data = csa.str.corr.data)
+# mx.sets <- lme4::lmer(str.rel.change ~ sets + (1|subject), data = csa.str.corr.data)
+# 
+# 
+# 
+# boot.fun <- function(x) {
+#         data.frame(nlme::VarCorr(x))[2, 4]
+# }
+# 
+# 
+# null.boot <- lme4::bootMer(mx.null, boot.fun, nsim = 500, parallel = "snow", cl = 12)
+# csa.boot <- lme4::bootMer(mx.csa, boot.fun, nsim = 500)
+# sets.boot <- lme4::bootMer(mx.sets, boot.fun, nsim = 500)
+# 
+# 
+# 
+# qt.null <- quantile(null.boot$t, c(0.025, 0.975))
+# qt.csa <- quantile(csa.boot$t, c(0.025, 0.975))
+# qt.sets <- quantile(sets.boot$t, c(0.025, 0.975))
+# 
+# 
+# results <- data.frame(variable = c("sets", "csa"),
+#                            m = c(1-  data.frame(nlme::VarCorr(mx.sets))[2, 4] / # data.frame(nlme::VarCorr(mx.null))[2, 4],
+#                                  1-  data.frame(nlme::VarCorr(mx.csa))[2, 4] / # data.frame(nlme::VarCorr(mx.null))[2, 4]),
+#                            lwr = c(1- qt.sets[1] / qt.null[1],
+#                                    1- qt.csa[1] / qt.null[1]),
+#                            upr = c(1- qt.sets[2] / qt.null[2],
+#                                    1- qt.csa[2] / qt.null[2]))
+# 
+# 
+# 
+# 
+# 
+# csa <- 1-  data.frame(nlme::VarCorr(mx.csa))[2, 4] / data.frame(nlme::VarCorr(mx.null))[2, 4]
+# 
+# sets <- 1-  data.frame(nlme::VarCorr(mx.sets))[2, 4] / data.frame(nlme::VarCorr(mx.null))[2, 4]
+# 
+# exp <- 1 - data.frame(nlme::VarCorr(mx.exp))[2, 4] / data.frame(nlme::VarCorr(mx.null))[2, 4]
+# 
+# 
+
+# Average csa and strength gains
+
+avg.str.csa <- csa.str.corr.data %>%
+        group_by(subject) %>%
+        summarise(str = mean(str.rel.change), 
+                  csa = mean(csa.rel.change))
+
+
+csa.str_corr <- cor.test(avg.str.csa$csa, avg.str.csa$str)
+
+## Comparisons with other published studies on per session gains in csa and strength
+
+### Per session ##
+per.session <- read_excel("./data/study-1/trainingdata.xlsx", sheet = 1) %>%
+  filter(!is.na(date)) %>%
+  group_by(subject) %>%
+  summarise(sessions = n()) %>%
+        
+inner_join(csa.str.corr.data) %>%
+
+  mutate(str.change.day = str.rel.change/((sessions/31) * 12*7),
+         csa.change.day = csa.rel.change/((sessions/31) * 12*7), 
+         str.session = str.rel.change/sessions,
+          csa.session = csa.rel.change/sessions ) %>%
+   dplyr::select(-baseline) %>%
+  ungroup() %>%
+        pivot_longer(names_to = "variable", values_to = "gain", cols = str.rel.change:csa.session) 
+       
+
+sum.stats <- cbind(per.session %>%
+        group_by(sets, variable, sex) %>%
+        summarise(mean = mean(gain), 
+                  sd = sd(gain)) %>%
+        arrange(variable) %>%
+        data.frame(), 
+        data.frame(reference.mean = c(0.11, 0.11, 0.11, 0.11,
+                              NA, NA, NA, NA, 
+                              0.0825, 0.1375,0.0825, 0.1375, 
+                              NA, NA, NA, NA, 
+                               NA, NA, NA, NA,
+                              0.6675, 0.475, 0.6675, 0.475), 
+           reference.range = c("[0.04-0.26]a", 
+                               "[0.04-0.26]a", 
+                               "[0.04-0.26]a", 
+                               "[0.04-0.26]a", 
+                               "", "", "", "",
+                               "(0.22)b", "(0.14)b",  "(0.22)b", "(0.14)b", 
+                               "", "", "", "",
+                              "", "", "", "",
+                               "(0.35)b", "(0.22)b","(0.35)b", "(0.22)b" ))) %>%
+        mutate(m.sd = if_else(mean > 6, paste0(sprintf("%.1f",mean), " (", sprintf("%.1f",sd), ")"), 
+                              paste0(sprintf("%.2f", mean), " (", sprintf("%.2f",sd), ")")), 
+               reference = if_else(is.na(reference.mean), "",
+                                   paste0(sprintf("%.2f",reference.mean), " ", reference.range))) %>%
+        filter(!(variable %in% c("str.change.day") )) %>%
+                       dplyr::select(variable, sex, sets, m.sd, reference) %>%
+        
+        mutate(variable = factor(variable, levels = c("csa.rel.change", 
+                                                      "csa.change.day", 
+                                                      "csa.session", 
+                                                      "str.rel.change", 
+                                                      "str.session"), 
+                                 labels = c("CSA %-change", 
+                                            "CSA %-change day", 
+                                            "CSA %-change session", 
+                                            "Average strength %-change", 
+                                            "Average strength %-session")), 
+               sex = factor(sex, levels = c("female", 
+                                            "male"), 
+                            labels = c("Female", "Male")), 
+               sets = factor(sets, levels = c("single", "multiple"), 
+                             labels = c("LOW", "MOD"))) 
+
+## Ahtiaianen on average  20 weeks with 2 sessions per week = 40 sessions
+
+## Muscle hypertrophy
+## In the younger cohorts, male average 5.5% (5.6) = 5.5/40 ~ 0.1375 per session
+# in females 3.3 (8.6)% = 0.825
+# 8.6/3.3 * 3.3/40
+# 5.6/5.5 * 5.5/40
+# Muscle strength in younger cohorts
+#  male    19% (8.6)/40 sessions ~  0.5 % per session
+#  female  26.7% (13.9)/40 ~ 
+# 8.6/19 * (19/40)
+# 13.9/26.7 * 26.7/40
+
+# Wernbom increase per day in quadriceps CSA per day was 0.06%
+
+
+
+
+
+
+
+```
+
+
+In Study I, the average increases (Table \@ref(tab:csa-str-tab)) in muscle strength and mass in each volume condition corresponded to what could be expected based on previous studies
+[@RN2007;<!-- Wernbom 2007 -->
+@RN1741].<!-- Ahtiainen  -->
+
+(ref:wernbom-citation) @RN2007
+
+(ref:ahtiainen-citation) @RN1741
+
+```{r csa-str-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
+
+sum.stats %>%
+        arrange(variable, sex, sets) %>%
+        kable(format = "latex", booktabs = TRUE, linesep = "", 
+              col.names = c("", "Sex", "Volume condition", "Mean (SD)", "Reference"), 
+              caption = "Training induced changes in muscle CSA and average strength in Study I")  %>%
+        collapse_rows()  %>%
+        kable_styling(font_size = 7) %>%
+        add_footnote(label = c(paste0("Estimates from Wernbom et al. ", "(ref:wernbom-citation)"),
+                               paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation")), 
+                     notation = "alphabet")
+
+```
+
+Average within participant differences in responses between LOW and MOD were consistent across measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)). These differences were in agreement to what could be expected based on published meta-analyses
+[@RN2492;<!-- Ralston weekly sets volume, medium/higher volume better than low volume for strength gains  -->
+@RN789;<!-- Krieger muscle hypertrophy -->
+@RN793;<!-- Kriger muscle strength -->
+@RN1767].<!-- Schoenfeld  -->
+Taken together, these observations confirmed the efficacy of the training program in general and a dose-response with regard to within-session exercise volume.
+
+In Study II, training efficacy was assessed by comparing outcomes to a non-training control group. The training group displayed increases compared to the control group for both strength muscle thickness measures.
 
 
 
