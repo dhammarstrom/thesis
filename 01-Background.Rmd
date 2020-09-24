@@ -101,6 +101,7 @@ No attempts were made to relate any measured characteristic to differences in re
 [@RN2563] <!-- Lin 2007 Phosphorylation at Ser389 is needed for interaction with SL1, but ser584 do not, non of these phosphorylation sites leads to location to nucleolar   -->
 [@RN2602]<!-- UBF is a target for cyclin d1 and cyclin E NIH 3T3 fibroblasts,Mutation of Ser484 impairs rDNA transcription  -->
 
+[@RN2604]<!-- Stefanovsky 2001 ERK inhibition through MEK specifik inhibitor blocks EGF induced rRNA transcription in vitro. Direct Raf activation -> ERK activity stimulated rRNA transcription. UBF is a target of ERK signalling  -->
 
 <!-- OUTLINE 
 
