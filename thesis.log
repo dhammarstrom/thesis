@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.20)  20 SEP 2020 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.20)  23 SEP 2020 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -841,14 +841,6 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rot@float@box=\box103
 \rot@mess@toks=\toks39
 )
-(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip80
-\fb@frw=\dimen260
-\fb@frh=\dimen261
-\FrameRule=\dimen262
-\FrameSep=\dimen263
-)
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine
 .sty
 File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
@@ -861,29 +853,29 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 )
 \c@DefaultLines=\count323
 \c@DefaultDepth=\count324
-\DefaultFindent=\dimen264
-\DefaultNindent=\dimen265
-\DefaultSlope=\dimen266
-\DiscardVskip=\dimen267
+\DefaultFindent=\dimen260
+\DefaultNindent=\dimen261
+\DefaultSlope=\dimen262
+\DiscardVskip=\dimen263
 \L@lbox=\box104
 \L@tbox=\box105
 \c@L@lines=\count325
 \c@L@depth=\count326
-\L@Pindent=\dimen268
-\L@Findent=\dimen269
-\L@Nindent=\dimen270
-\L@lraise=\dimen271
-\L@first=\dimen272
-\L@next=\dimen273
-\L@slope=\dimen274
-\L@height=\dimen275
-\L@novskip=\dimen276
-\L@target@ht=\dimen277
-\L@target@dp=\dimen278
-\L@target@tht=\dimen279
-\LettrineWidth=\dimen280
-\LettrineHeight=\dimen281
-\LettrineDepth=\dimen282
+\L@Pindent=\dimen264
+\L@Findent=\dimen265
+\L@Nindent=\dimen266
+\L@lraise=\dimen267
+\L@first=\dimen268
+\L@next=\dimen269
+\L@slope=\dimen270
+\L@height=\dimen271
+\L@novskip=\dimen272
+\L@target@ht=\dimen273
+\L@target@dp=\dimen274
+\L@target@tht=\dimen275
+\LettrineWidth=\dimen276
+\LettrineHeight=\dimen277
+\LettrineDepth=\dimen278
 \Llist@everypar=\toks40
 Loading lettrine.cfg
 
@@ -891,26 +883,26 @@ Loading lettrine.cfg
 .cfg)) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/arra
 y.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen283
+\col@sep=\dimen279
 \ar@mcellbox=\box106
-\extrarowheight=\dimen284
+\extrarowheight=\dimen280
 \NC@list=\toks41
-\extratabsurround=\skip81
-\backup@length=\skip82
+\extratabsurround=\skip80
+\backup@length=\skip81
 \ar@cellbox=\box107
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
 .sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip83
+\multirow@colwidth=\skip82
 \multirow@cntb=\count327
-\multirow@dima=\skip84
-\bigstrutjot=\dimen285
+\multirow@dima=\skip83
+\bigstrutjot=\dimen281
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
 ty
-\wrapoverhang=\dimen286
-\WF@size=\dimen287
+\wrapoverhang=\dimen282
+\WF@size=\dimen283
 \c@WF@wrappedlines=\count328
 \WF@box=\box108
 \WF@everypar=\toks42
@@ -920,7 +912,7 @@ Package: wrapfig 2003/01/31  v 3.6
 .sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks43
-\minrowclearance=\skip85
+\minrowclearance=\skip84
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsca
 pe.sty
@@ -939,8 +931,8 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box109
 \sift@deathcycles=\count329
-\@vwid@loff=\dimen288
-\@vwid@roff=\dimen289
+\@vwid@loff=\dimen284
+\@vwid@roff=\dimen285
 )
 \c@taburow=\count330
 \tabu@nbcols=\count331
@@ -948,22 +940,22 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count333
 \tabu@alloc=\count334
 \tabu@nested=\count335
-\tabu@target=\dimen290
-\tabu@spreadtarget=\dimen291
-\tabu@naturalX=\dimen292
-\tabucolX=\dimen293
-\tabu@Xsum=\dimen294
-\extrarowdepth=\dimen295
-\abovetabulinesep=\dimen296
-\belowtabulinesep=\dimen297
-\tabustrutrule=\dimen298
+\tabu@target=\dimen286
+\tabu@spreadtarget=\dimen287
+\tabu@naturalX=\dimen288
+\tabucolX=\dimen289
+\tabu@Xsum=\dimen290
+\extrarowdepth=\dimen291
+\abovetabulinesep=\dimen292
+\belowtabulinesep=\dimen293
+\tabustrutrule=\dimen294
 \tabu@thebody=\toks44
 \tabu@footnotes=\toks45
 \tabu@box=\box110
 \tabu@arstrutbox=\box111
 \tabu@hleads=\box112
 \tabu@vleads=\box113
-\tabu@cellskip=\skip86
+\tabu@cellskip=\skip85
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
 reeparttable.sty
@@ -982,23 +974,23 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 aces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip87
+\TPTL@width=\skip86
 ) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box115
 \UL@hyphenbox=\box116
-\UL@skip=\skip88
+\UL@skip=\skip87
 \UL@hook=\toks46
-\UL@height=\dimen299
+\UL@height=\dimen295
 \UL@pe=\count336
-\UL@pixel=\dimen300
+\UL@pixel=\dimen296
 \ULC@box=\box117
 Package: ulem 2019/11/18
-\ULdepth=\dimen301
+\ULdepth=\dimen297
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
 .sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen302
+\rotheadsize=\dimen298
 \c@nlinenum=\count337
 \TeXr@lab=\toks47
 )
@@ -1032,7 +1024,7 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box119
-\l__siunitx_tmp_dim=\dimen303
+\l__siunitx_tmp_dim=\dimen299
 \l__siunitx_tmp_int=\count343
 \l__siunitx_number_mantissa_length_int=\count344
 \l__siunitx_number_uncert_length_int=\count345
@@ -1045,8 +1037,8 @@ Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_group_min_int=\count352
 \l__siunitx_angle_marker_box=\box120
 \l__siunitx_angle_unit_box=\box121
-\l__siunitx_angle_marker_dim=\dimen304
-\l__siunitx_angle_unit_dim=\dimen305
+\l__siunitx_angle_marker_dim=\dimen300
+\l__siunitx_angle_unit_dim=\dimen301
 \l__siunitx_unit_int=\count353
 \l__siunitx_unit_denominator_int=\count354
 \l__siunitx_unit_numerator_int=\count355
@@ -1054,55 +1046,55 @@ Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_unit_prefix_base_int=\count357
 \l__siunitx_unit_prefix_gram_int=\count358
 \l__siunitx_number_product_int=\count359
-\c__siunitx_one_fill_skip=\skip89
-\l__siunitx_table_unit_align_skip=\skip90
-\l__siunitx_table_exponent_dim=\dimen306
-\l__siunitx_table_integer_dim=\dimen307
-\l__siunitx_table_mantissa_dim=\dimen308
-\l__siunitx_table_marker_dim=\dimen309
-\l__siunitx_table_result_dim=\dimen310
-\l__siunitx_table_uncert_dim=\dimen311
-\l__siunitx_table_fill_pre_dim=\dimen312
-\l__siunitx_table_fill_post_dim=\dimen313
-\l__siunitx_table_fill_mid_dim=\dimen314
+\c__siunitx_one_fill_skip=\skip88
+\l__siunitx_table_unit_align_skip=\skip89
+\l__siunitx_table_exponent_dim=\dimen302
+\l__siunitx_table_integer_dim=\dimen303
+\l__siunitx_table_mantissa_dim=\dimen304
+\l__siunitx_table_marker_dim=\dimen305
+\l__siunitx_table_result_dim=\dimen306
+\l__siunitx_table_uncert_dim=\dimen307
+\l__siunitx_table_fill_pre_dim=\dimen308
+\l__siunitx_table_fill_post_dim=\dimen309
+\l__siunitx_table_fill_mid_dim=\dimen310
 \l__siunitx_table_pre_box=\box122
 \l__siunitx_table_post_box=\box123
 \l__siunitx_table_mantissa_box=\box124
 \l__siunitx_table_result_box=\box125
-\l__siunitx_table_number_align_skip=\skip91
-\l__siunitx_table_text_align_skip=\skip92
+\l__siunitx_table_number_align_skip=\skip90
+\l__siunitx_table_text_align_skip=\skip91
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 18
+5.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 227.
+LaTeX Info: Redefining \microtypecontext on input line 185.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 227.
+LaTeX Info: Redefining \showhyphens on input line 185.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1148,8 +1140,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen315
-\caption@adjustwidth@linewidth=\dimen316
+\caption@adjustwidth@hsize=\dimen311
+\caption@adjustwidth@linewidth=\dimen312
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1163,7 +1155,7 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box126
-Package hyperref Info: Link coloring OFF on input line 227.
+Package hyperref Info: Link coloring OFF on input line 185.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -1179,9 +1171,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 227.
-LaTeX Info: Redefining \pageref on input line 227.
-LaTeX Info: Redefining \nameref on input line 227.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1191,48 +1183,48 @@ LaTeX Info: Redefining \nameref on input line 227.
 bbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-27.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+85.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-27.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+85.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-227.
+185.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-227.
+185.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 227.
+(Font)              <10> on input line 185.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 227.
+(Font)              <7.4> on input line 185.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 227.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-27.
+(Font)              <6> on input line 185.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+85.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.
 cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.
 cfg
@@ -1242,13 +1234,13 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
-7.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 18
+5.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-227.
+185.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1257,7 +1249,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-227.
+185.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1266,17 +1258,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 238.
+(Font)              <12> on input line 196.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 238.
+(Font)              <9> on input line 196.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 238.
+(Font)              <7> on input line 196.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
 [1
 Non-PDF special ignored!
 <special> !% Reed College LaTeX Thesis Class 2001/12/04 SN
@@ -1299,77 +1291,77 @@ Package epstopdf Info: Source file: <artwork/eng_logoGIH_tryck.eps>
 (epstopdf)                    size: 25458 bytes
 (epstopdf)             Command: <repstopdf --outfile=artwork/eng_logoGIH_tryck-
 eps-converted-to.pdf artwork/eng_logoGIH_tryck.eps>
-(epstopdf)             \includegraphics on input line 238.
+(epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
-<artwork/eng_logoGIH_tryck-eps-converted-to.pdf, id=151, 675.52374pt x 191.7162
-5pt>
+<artwork/eng_logoGIH_tryck-eps-converted-to.pdf, id=83, 675.52374pt x 191.71625
+pt>
 File: artwork/eng_logoGIH_tryck-eps-converted-to.pdf Graphic file (type pdf)
 <use artwork/eng_logoGIH_tryck-eps-converted-to.pdf>
 Package pdftex.def Info: artwork/eng_logoGIH_tryck-eps-converted-to.pdf  used o
-n input line 238.
+n input line 196.
 (pdftex.def)             Requested size: 170.71652pt x 48.44965pt.
 
-Underfull \hbox (badness 8000) in paragraph at lines 238--238
+Underfull \hbox (badness 8000) in paragraph at lines 196--196
 \T1/lmr/m/n/24.88 Determinants of intra-individual
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 238--238
+Underfull \hbox (badness 1082) in paragraph at lines 196--196
 \T1/lmr/m/n/24.88 with spe-cial ref-er-ence to skele-tal
  []
 
 [3 <./artwork/eng_logoGIH_tryck-eps-converted-to.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-38.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+96.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--272
+Underfull \hbox (badness 10000) in paragraph at lines 203--230
 
  []
 
@@ -1377,7 +1369,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--272
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-74.
+32.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1394,20 +1386,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 ] [9] [10
 
 
-] (./thesis.toc [11])
+] (./thesis.toc)
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-[12] (./thesis.lot)
+[11] [12
+
+] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-[13
-
-] [14
+[13] [14
 
 ] (./thesis.lof)
 \tf@lof=\write8
@@ -1417,10 +1406,13 @@ Package microtype Info: Character `029' is missing
 
 ]
 Chapter 1.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
 Package lettrine.sty Info: Targeted height = 35.26949pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 35.26964pt (S);
-(lettrine.sty)             reported on input line 314.
+(lettrine.sty)             reported on input line 270.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1429,62 +1421,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [2]
 Chapter 2.
 
-Underfull \hbox (badness 1590) in paragraph at lines 352--352
+Underfull \hbox (badness 1590) in paragraph at lines 308--308
 []\T1/lmr/m/n/14.4 Effects of re-sis-tance ex-er-cise vol-ume on mus-cle
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 354.
+(Font)              <8> on input line 310.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 354.
+(Font)              <5> on input line 310.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 354.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 310.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 354.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 310.
 [3
 
-] [4]
-<thesis_files/figure-latex/Millward1973-1.pdf, id=308, 180.675pt x 180.675pt>
-File: thesis_files/figure-latex/Millward1973-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/Millward1973-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/Millward1973-1.pdf  used on 
-input line 413.
-(pdftex.def)             Requested size: 180.67455pt x 180.67455pt.
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 414--414
-[] [] 
- []
-
+[4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 22.48878pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[5 <./thesis_files/figure-latex/Millward1973-1.pdf>] [6]
-Chapter 3.
-[7
+[5] [6
 
-] [8
+]
+Chapter 3.
+[7] [8
 
 ]
 Chapter 4.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 475--475
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 404--404
 [] [] 
  []
 
 
-Overfull \hbox (47.39523pt too wide) in paragraph at lines 478--501
+Overfull \hbox (47.39523pt too wide) in paragraph at lines 407--430
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [9]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-13.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+45.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1492,126 +1473,89 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10] [11]
-Overfull \hbox (65.9143pt too wide) in paragraph at lines 561--561
-[]\T1/lmtt/m/n/10 Using ',' as decimal and '.' as grouping mark. Use read_delim
-() for more control.[] 
- []
-
-[12]
-<thesis_files/figure-latex/immuno-methods-1.pdf, id=374, 289.08pt x 325.215pt>
-File: thesis_files/figure-latex/immuno-methods-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/immuno-methods-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/immuno-methods-1.pdf  used o
-n input line 579.
-(pdftex.def)             Requested size: 289.07928pt x 325.2142pt.
-
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 583--583
-[] [] 
- []
-
-
-Underfull \vbox (badness 4467) has occurred while \output is active []
-
-[13 <./thesis_files/figure-latex/immuno-methods-1.pdf>]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 621.
-[14]
-<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=399, 469.755pt x 325.215pt
->
-File: thesis_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/unnamed-chunk-1-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-1-1.pdf  used 
-on input line 660.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Overfull \hbox (114.0944pt too wide) in paragraph at lines 660--661
-[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15] [16 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>]
+[10] [11] [12]
 Chapter 5.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 681--681
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 480--480
 [] [] 
  []
 
-<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=420, 361.35pt x 216.81pt>
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=263, 361.35pt x 216.81pt>
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 739.
+nput line 538.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 
-Overfull \hbox (5.68967pt too wide) in paragraph at lines 739--740
+Overfull \hbox (5.68967pt too wide) in paragraph at lines 538--539
  [][] 
  []
 
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 743--743
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 542--542
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17
+[13
 
-] [18] [19 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [20
+] [14] [15 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [16
 
 ]
 Chapter 6.
-[21] [22
+[17] [18
 
-] [23] [24
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[25
+] [19] [20
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[26]
+[21
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[27]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 926.
-[29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 926.
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[26] [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 926.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 926.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3625C5C650B68B1B47F75ADA9B5B28EB;2613.
+(rerunfilecheck)             Checksum: 87D202FB5FA3E8455570314E3F5C8ED1;1213.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33597pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 926.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  ) 
 Here is how much of TeX's memory you used:
- 19631 strings out of 482824
- 348307 string characters out of 5954449
- 705681 words of memory out of 5000000
- 34175 multiletter control sequences out of 15000+600000
- 712315 words of font info for 252 fonts, out of 8000000 for 9000
+ 19460 strings out of 482824
+ 344531 string characters out of 5954449
+ 701663 words of memory out of 5000000
+ 34027 multiletter control sequences out of 15000+600000
+ 712636 words of font info for 257 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,13n,56p,1576b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,56p,1092b,816s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
-enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-r
-m.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm
--mathsy.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
+enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
+athsy.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
+m/lm-rm.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
 /lm/lm-ts1.enc}<c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
 public/lm/lmbx10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/
 type1/public/lm/lmbx9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/f
@@ -1629,12 +1573,11 @@ sers/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss17.pfb
 ><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy
 10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmsy7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
-lic/lm/lmtk10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
-e1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (45 pages, 513957 bytes).
+lic/lm/lmtt10.pfb>
+Output written on thesis.pdf (43 pages, 439479 bytes).
 PDF statistics:
- 636 PDF objects out of 1000 (max. 8388607)
- 555 compressed objects within 6 object streams
- 174 named destinations out of 1000 (max. 500000)
- 71466 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 70803 words of extra memory for PDF output out of 74296 (max. 10000000)
 

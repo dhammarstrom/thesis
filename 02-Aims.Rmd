@@ -1,9 +1,9 @@
 # Aims
 <!-- Aim = what you hope to achieve; Objectives the action you will take to achieve the aims --> 
-The primary aim of this thesis was to relate the adaptive response to resistance training with low- and moderate-volume to skeletal-muscle characteristics in previously untrained individuals. The key question was whether manipulation of exercise-volume will have diverse effects in different individuals related to muscular intrinsic characteristics. A further aim was to characterize exercise-volume dependence and time course profiles of molecular mechanism thought to control resistance training-induced muscle growth. <!-- A final aim of the present thesis was to develop an implementation of unbiased reference gene selection to aid gene expression analysis in repeated measures designs   --> Based on these aims, the objectives of the present thesis were;
+The primary aim of this thesis was to relate the adaptive response to resistance training with low- and moderate-volume to skeletal-muscle characteristics in previously untrained individuals. The key question was whether manipulation of exercise-volume will have diverse effects in different individuals related to muscular intrinsic characteristics. A further aim was to characterize exercise-volume dependence in muscle molecular characteristics and determine a time course profile of markers of ribosomal biogenesis in response to resistance training. <!-- A final aim of the present thesis was to develop an implementation of unbiased reference gene selection to aid gene expression analysis in repeated measures designs   --> Based on these aims, the objectives of the present thesis were;
 
 - to relate skeletal muscle and systemic characteristics to benefit of moderate- compared to low-volume resistance training;
-- To determine volume-dependence in molecular networks related to muscle growth and remodelling in response to mechanical stress
+- To determine volume-dependence in molecular networks related to muscle growth and remodeling in response to resistance training
 - To determine a time course of markers related to ribosome biogenesis in the early phase of resistance training.
 
 <!-- To create a software implementation of reference gene selection algorithms -->

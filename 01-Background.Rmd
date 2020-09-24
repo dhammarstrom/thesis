@@ -2,9 +2,6 @@
 # Background
 ```{r Backgroundsettings, echo = FALSE, warning=FALSE, message=FALSE}
 source("./R/libraries.R"); source("./R/themes.R")
-
-
-
 ```
 
 ## Effects of resistance exercise volume on muscle strength and mass
@@ -20,56 +17,129 @@ training frequency
 <!-- Higher frequencies gives higher gains in strength but not when volume equated -->
 and intensity
 [@RN2569].<!-- Schoenfeld, no difference between high vs low load strength training in hypertrophy but 1rm favors high loads -->
-It could be argued that training volume is of importance as when this variable is held constant, manipulation of other variables has little or no effect
-[@RN]
-Berger conducted an early study concerning effects of resistance exercise volume with the goal to determine what method most efficiently produced strength gains (in healthy young males) [@RN1476]. Berger compared one, two and three sets performed with two, six or ten repetition maximum (RM) in the bench press, three times per week, over twelve weeks. As the combined effect of three sets per session was superior regardless of the number of repetitions performed Berger concluded in favor of three sets. This conclusion was later challenged on the basis of the interpretation of the analysis
+It could be argued that training volume is of particular importance for muscle growth as when this variable is held constant, manipulation of other variables has little or no effect hypertrophy
+[@RN1612;<!-- Schoenfeld 2014 7*3Rm vs 3*10RM equal muscle hypertrophy but dissimilar strength -->
+@RN2569].<!-- Meta analysis high vs low resistance has little effect on muscle mass gains but strength is affected positively with higher intensities. --> 
+For development of strength, factors such as intensity and within session organization of exercises is of importance 
+[@RN2570;<!-- Frequency has little effect on strength when volume is equated -->
+@RN2591],<!-- Exercise order influences strength but not hypertrophy -->
+however, when other factors are held constant, increased training volume generally leads to increased strength
+[@RN2570;
+@RN2492;<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
+@RN793],
+similarly to effects of training volume on muscle growth
+[@RN1767;
+@RN789].
+
+Exercise volume can be prescribed as the within session number of sets performed per muscle group. This unit is practical as it comparable between individuals and muscle groups [@RN2130].<!-- Baz-Valle 2018 sets per exercise better than mechanical load times rep or total work -->
+Berger conducted an early study concerning effects of resistance exercise volume with the goal to determine what method most efficiently produced strength gains (in healthy young males) [@RN1476]. Berger compared one, two and three sets performed with two, six or ten repetition maximum (RM) in the bench press, three times per week, over twelve weeks. As the combined effect of three sets per session was superior regardless of the number of repetitions performed Berger concluded in favor of three sets. This conclusion was later challenged on the basis of data interpretation
 [@RN794;<!-- Carpenelli and Otto questions the analysis-->
-@RN2538]<!-- Feigenbaum -->
-Carpinelli and Otto arrived to the conclusion that there was "insufficient evidence to support the prevalent belief that a greater volume of exercise (through multiple sets) will elicit superior muscular strength or hypertrophy" [@RN794]. This stand has since been repeatedly put forward as a criticism of higher volume training programs 
+@RN2538].<!-- Feigenbaum -->
+Reveiwing the study by Berger and others, Carpinelli and Otto arrived to the conclusion that there was "insufficient evidence to support the prevalent belief that a greater volume of exercise (through multiple sets) will elicit superior muscular strength or hypertrophy" [@RN794]. This stand has since been repeatedly put forward as a criticism of higher volume training programs 
 [@RN2568; 
-@RN2201] and sparked considerable scientific activity. The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant results in single studies [@RN2568; @RN2538]. A second argument against additional volume in strength training recommendation has been the cost/benefit relationship of adding training volume without meaningful additional gains
+@RN2201] and sparked considerable scientific activity. The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant results in single studies [@RN2568; @RN2538]. 
+Indeed, individual studies do not generally agree on dose-dependent effects of training volume on muscle mass and strength gains
+[@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
+@RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
+@RN2463;<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
+@RN1570; <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
+@RN1518;<!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains -->
+@RN1474;<!-- McBride 1474 Men and women DXA no diff but strength increase more in multiple sets -->
+@RN1472; <!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
+@RN1456;<!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains -->
+@RN1454;<!-- Ostrowski 1997 trained young med, low volume decrease from previous levels no difference between groups -->
+@RN1384; <!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->
+@RN1382; <!-- Cannon 2010, Older women and younger women, muscle volume and strength increased similarly irrespective of age or training volume and without interaction -->
+@RN776],<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
+including studies performed within participants, where different training volumes are allocated to either extremity 
+[@RN834;<!-- Mitchell 2012 young men no sig difference in strength or mass gains between 1 and 3 sets knee extension -->
+@RN1607].<!-- Sooneste 2013 young men p=0.076 on strength gains in favor of three sets, CSA increased more in 3 sets leg exercise -->
+For example, differences in strength are between volume conditions are found in older individuals 
+[@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
+@RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
+@RN1472] <!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
+but not confirmed in another study
+@RN1518].<!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains -->
+Studies shows that more volume does not lead to increased muscle gains in young individuals
+[@RN1384; <!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->
+@RN1456;<!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains -->
+@RN2463]<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
+a conclusion challenged by others 
+[@RN776;<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
+@RN1570]. <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
+
+As previously noted, combining the above results and additional studies, meta-analyses concluded that training volume dose-dependency exists for the development of muscle mass and strength
+[@RN2570;
+@RN2492;<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
+@RN793;
+[@RN1767;
+@RN789].
+As a second argument against additional volume in resistance training recommendation has been the cost/benefit relationship of adding training volume without meaningful or substantial additional gains
 [@RN2538;<!-- Feigenbaum 1999 questions the analysis and the practical utility of volume -->
-@RN2568].<!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
-As benefits of maintaining or increasing functional capacity and muscle mass have been shown to be important for general health
-[@RN2523]<!-- Newman 2006 Muscle strength stronger predictor than muscle mass for survival but CSA from CT sig predictor in male and almost in male female combined  -->
-and sport performance, attempts has been made to synthesize evidence from the literature to challenge the hypothesis that training volume is not important for training induced gains in strength
-[@RN793;<!-- Krieger 2009 meta analysis multiple more effective than single sets  -->
-@RN2492]<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
-and muscle mass
-[@RN789; 
-@RN1767].
-The 
- 
+@RN2568],<!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
+a subsequent question is, whom would benefit from greater volumes and whom would not?
+Schoenfeld *et al.* combined data from published studies to explore if participant characteristics of the above mentioned studies interacted with training volume in explaining study outcomes. Neither sex, muscle groups nor age interacted with volume prescription indicating that no such factor would be able refine training prescription guidelines
+[@RN1767].<!-- Schoenfeld 2016 meta-->
+As the number of studies used to synthesis the meta-analysis was relatively low (*n* = 15) and the studies were heterogeneous in terms of e.g. outcome measurements, it may have lacked in power to detect any meaningful interactions. Additionally, included studies may not have been reporting relevant characteristics for such analysis.
+
+Collectively, the available evidence suggest that there is overlap between training outcomes in studies were different volume has been utilized.
+The overlap cannot, with available data, be explained by general population characteristics such as age or sex.
+Studying the effect of different training volumes within participants could potentially help to define determinants of training outcomes in response to different volume conditions.
+Two within-participant studies have investigated the effects of training volume on strength and hypertrophy outcomes.
+Sooneste *et al.* compared strength outcomes in response to three- and one-set elbow flexor training for 12 weeks in young males using a whitin-participant protocol (arms allocated to either volume condition).
+The results showed general benefit of three- over one-set training for muscle hypertrophy and tended to do so also for strength gains [@RN1607].
+No attempts were made to relate baseline characteristics to the magnitude of differences between volume conditions, presumably due to the small sample size (*n* = 8).
+Mitchell *et al.* compared muscle hypertrophy and strength gains in response to three- and one-set of knee-extension exercise performed three times per week for ten weeks.
+The study contained an additional training condition (low intensity, 30% of 1RM performed with three sets) with participants legs assigned to either of the three conditions in a random fashion.
+No significant differences were reported between volume conditions for muscle mass or strength gains [@RN834].
+However, the analyses were performed without taking the correlation between individuals into account due to the mixed design [@RN834].
+No attempts were made to relate any measured characteristic to differences in responses.
 
 
-As acute training variables are inevitably inter-connected, changing one will affect another. Larger exercise volumes per set may for example be achieved when applying lower external resistance. When the total load (repetitions $\times$ sets $\times$ external load) is equated by manipulating the external resistance and number of sets greater resistance (and fewer number of sets) leads to similar hypertrophy but higher strength gains
-[@RN1612].<!-- Schoenfeld 3*10RM vs 7*3RM similar hypertrophy higher str in 7*3RM --> 
-Higher strength gains are seen as a result of the external resistance [@RN2576] 
+## Ribosomal biogenesis 
+
+[@RN2563] <!-- Lin 2007 Phosphorylation at Ser389 is needed for interaction with SL1, but ser584 do not, non of these phosphorylation sites leads to location to nucleolar   -->
+[@RN2602]<!-- UBF is a target for cyclin d1 and cyclin E NIH 3T3 fibroblasts,Mutation of Ser484 impairs rDNA transcription  -->
+
+
+<!-- OUTLINE 
 
 
 
+
+
+
+
+
+
+
+
+
+## Effects of resistance training and resistance training volume on muscle molecular characteristics
+
+Training leads to changes 
 
 ## The relationship between muscle mass and strength
-
-
-### Meta-analysis of exercise volume 
 
 ## Molecular determinants of training-induced muscle hypertrophy
 Muscle mass change as a consequence of muscle protein synthesis and breakdown. When a net positive balance is achieved the muscle increase in mass. Resistance exercise leads ta acute blunting of muscle protein synthesis followed by an increase over resting levels in the post exercise period
 <!-- Dreyer 10.1113/jphysiol.2006.113175 -->
 <!-- Philips 1997? -->.
-
-
-
-
+<!-- 
 The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
 [@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
+
+<!-- 
 Also in humans, administration of rapamycin, hindering the activity of mTOR leads to an abolished exercise-induced increase in protein synthesis
-[@RN780]<!-- Drummond rapamycin blocks protein synthesis in humans -->. Furthermore, observational evidence linking mTOR to load-induced hypertrophy comes from human and rodent studies correlating acute phosphorylation the downstream target of mTOR, ribosomal protein S6 kinase (S6K) in response to acute mechanical loading and hypertrophic responses following a subsequent training period
-[@RN785;<!-- Terzis 2008 mTOR activity correlate with subsequent adaptation -->
+[@RN780]<!-- Drummond rapamycin blocks protein synthesis in humans -->. 
+
+<!-- 
+Furthermore, observational evidence linking mTOR to load-induced hypertrophy comes from human and rodent studies correlating acute phosphorylation the downstream target of mTOR, ribosomal protein S6 kinase (S6K) in response to acute mechanical loading and hypertrophic responses following a subsequent training period
+[@RN785;<!-- Terzis 2008 mTOR activity correlate with subsequent adaptation 
 @RN866]
+--> 
 
-
+<!-- 
 ### Protein synthesis
 
 
@@ -77,15 +147,14 @@ Positive net protein balance in responce to exercise <!-- Tipton 10.1152/ajpendo
 
 <!-- Coordinated mTOR 10.1038/nature13492. -->
 
-Inhibition of RNA synthesis restrict protein synthesis <!-- Goldspink 1977 -->
+<!-- Inhibition of RNA synthesis restrict protein synthesis Goldspink 1977 -->
 
-Indicated in Goldspink 1977 and 1976 RNA reflects ribosomal availability <!-- Goldspink 1977-->
+<!--Indicated in Goldspink 1977 and 1976 RNA reflects ribosomal availability  Goldspink 1977-->
 
-Protein synthesis is proportional to RNA content <!-- Millward 1973 -->
+<!--Protein synthesis is proportional to RNA content  Millward 1973 -->
 
 
-Increase loading leads to increased RNA <!-- Goldberg 1975 Mechanism of work-induced hypertrophy of skeletal muscle --> 
-
+<!-- Increase loading leads to increased RNA Goldberg 1975 Mechanism of work-induced hypertrophy of skeletal muscle 
 ```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from Millward et al. 1973. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein."}
 
 millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
@@ -122,9 +191,9 @@ mTOR has several phosphorylation sites
 
 Phosphorylation of Ser2448 is mediated by S6K1 to reduce mTOR activity in a negative feedback loop <!--[@RN1902]-->. 
 
-Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted <!--[@RN1902]-->
+<!--Ser2448 is phosphorylated by S6K1, changes in nutrient avaliability modifies S6K1 and Ser2448, Ser2448 phosphorylation is abolished when S6K1 is depleted [@RN1902]-->
 
-
+<!--
 When the C-terminal is deleted, mTOR gets constitutively active
 
 
@@ -134,31 +203,7 @@ When the C-terminal is deleted, mTOR gets constitutively active
 
 <!-- Stec 2016 growth factor induced hypertrophy is abolished when ribo biog is inhibited with the specific CX-5461  -->
 <!-- Crossland 2017 in contrasts, IGF-1 induced growth was not impaired when ribo biog was inhibited by CX-5461 -->
-Crossland et al. noted that using IGF-1 induces specific growth related effects in muscle cells. These may be different than the effects induced by sreum as in Stec et al. 
+<!--Crossland et al. noted that using IGF-1 induces specific growth related effects in muscle cells. These may be different than the effects induced by sreum as in Stec et al. 
 
-<!-- Studies showing correlation between growth and ribo biogenesis -->
+ Studies showing correlation between growth and ribo biogenesis -->
 
-Brook 2016 
-Stec 2016
-Nakada 2016
-Figueriedo 2015
-
-<!-- Older studies -->
-Millward 1973 correlation between RNA and protein synthesis
-
-
-
-
-
-
-
-
-
-### Ribsome biogenesis 
-
-
-#### Transcription of ribsomal RNA (rRNA)
-
-## Transcriptional activity related to muscle hypertrophy
-
-### Methods for studying transcriptional regulation

@@ -2,6 +2,6 @@ I.  **Hammarstr&ouml;m D**, &Oslash;fsteng S, Koll L, Hanestadhaugen M, Hollan I
 
 II. Khan Y, **Hammarstr&ouml;m D**, R&oslash;nnestad B, Ellefsen S, Ahmad R Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline. *Submitted.* 
 
-III. **Hammarstr&ouml;m D**, &Oslash;fsteng S, Koll L, Jacobsen N, Flobergseter K, R&oslash;nnestad B, Ellefsen S Ribosome accumulation during early phase resistance training. *Manuscript*
-
-IV. **Hammarstr&ouml;m D**, Ellefsen S. generefer: A R package for unbiased selection of reference genes for qPCR in repeated measures designs. *Manuscript*
+III. **Hammarstr&ouml;m D**, &Oslash;fsteng S, Jacobsen N, Flobergseter K, R&oslash;nnestad B, Ellefsen S Ribosome accumulation during early phase resistance training. *Manuscript*
+<!--
+IV. **Hammarstr&ouml;m D**, Ellefsen S. generefer: A R package for unbiased selection of reference genes for qPCR in repeated measures designs. *Manuscript* -->

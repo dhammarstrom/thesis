@@ -1,4 +1,3 @@
-
 # Results and Discussion
 
 ```{r settings, include=FALSE}
@@ -10,11 +9,6 @@ library(nlme); library(kableExtra)
 
 
 ## Effects of different training volume on changes in muscle size and function
-
-
-
-
-
 
 ```{r comparing-avg-strength-csa, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -444,8 +438,6 @@ Taken together, these observations confirmed the efficacy of the training progra
 
 In Study II, training efficacy was assessed by comparing outcomes to a non-training control group. The training group displayed increases compared to the control group for both strength muscle thickness measures.
 
-
-
 ```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=3, fig.width=5, fig.align='center'}
 
 library(ggplot2); library(ggtext)
@@ -457,24 +449,15 @@ muscle_strength_fig
 ```
 
 ## Acute effects of diffrent training volume on determinants of muscle protein synthesis
-
+<!--
 Higher volume of acute resistance exercise led to increased phosphorylation of S6K1, ribosomal protein S6 and mTOR. These phosphorylation sites are indicative of activity along the mTORC1 pathway but mechanistic studies show that multiple sites exists for signal redundancy 
 Inhibiting mTOR by Torin1 after electrically stimulated muscle contractions still led to S6K1 phsophorylation<!-- doi: 10.1016/j.cellsig.2013.05.005. -->
 
-
+<!--
 Regardless of upstream paralell signaling patterns the present result confirm volume dependency in a pathway controlling protein synthesis and ribosome biogenesis.
 
 A limitation in the present study is that the limited panel of antibodies and time-points used to capture volume 
-
-
-
-
-
-```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, }
-
-
-```
-
+-->
 
 
 

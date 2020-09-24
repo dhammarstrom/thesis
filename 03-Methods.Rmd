@@ -10,7 +10,10 @@ source("./R/libraries.R")
 
 ## Study participants, protocols and training interventions
 
-Study I was designed to examine effects of low- and moderate-volume on responses to acute exercise and long-term training within participants. Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n = *5) and non-adherence to the study protocol. There were no differences in characteristics between participants included in or excluded from data analysis in Study I. Study II was designed to study the effects of resistance training *per se* and effects of variable volume on selected markers related to ribosome biogenesis. Participants were therefore recruited to a training group (*n =* 11) and a non-training control group (*n =* 8). Eligible for participation were young (Study I 18-40; Study II 18-35), non-smoking men and women. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medication or supplements with known effects on adaptations to training. Participant characteristics for both studies are shown in Table \@ref(tab:characteristics-table). 
+Study I was designed to examine effects of low- and moderate-volume on responses to acute exercise and long-term training within participants. Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n = *5) and non-adherence to the study protocol. There were no differences in characteristics between participants included in or excluded from data analysis in Study I.
+
+Study II was designed to study the effects of resistance training *per se*, and effects of variable volume on selected markers related to ribosome biogenesis. Participants were therefore recruited to a training group (*n =* 11) and a non-training control group (*n =* 8).
+Eligible for participation in both studies were young (Study I age 18-40; Study II 18-35), non-smoking men and women. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medication or supplements with known effects on adaptations to training. Participant characteristics for both studies are shown in Table \@ref(tab:characteristics-table). 
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -163,10 +166,10 @@ rbind(studyI, studyII) %>%
 ```
 
 
-
+## Resistance training interventions
 Each training session started with a light standardized warm-up (5 min ergometer cycling and 10 repetitions each of push-ups, sit-ups, back-extensions and squats). Before each exercise in the main program, one set of 10 repetitions were performed in the specific exercise with approximately 50% of 1RM. 
 
-Both studies were fully or partially performed as within-participant studies as each participant had their legs assigned to different training conditions (not including the control group in Study II). Allocation was performed after enrollment where each participant had their legs randomized to either low- or moderate volume (Study I), or variable or constant volume (Study II). 
+Studies were fully or partially performed as within-participant studies as each participant had their legs assigned to different training conditions (not including the control group in Study II). Allocation was performed after enrollment where each participant had their legs randomized to either low- or moderate volume (Study I), or variable or constant volume (Study II). 
 
 In Study I, the low-volume protocol consisted of a single set of each exercise and the moderate-volume consisted of three sets per exercise. Three unilateral leg exercises were used (leg press, leg curl and knee extension). The moderate volume-leg commenced all sessions and the low volume-leg performed a single set of each exercise in the rest between second and third set of the moderate volume training protocol.  
 
@@ -177,8 +180,8 @@ In Study II, only unilateral knee-extension was performed in an effort to concen
 Both studies were approved by the local ethics committee Lillehammer University College/Inland Norway University of Applied Sciences and the Norwegian Centre for Research Data. In accordance with the *Declaration of Helsinki*[@RN2548] the studies were pre-registered in publicly accessible databases (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, https://osf.io/wa96y). Participants were informed of the study design, potential risks and sources of discomfort prior to giving their informed consent.    
 
 
-## Measures of muscle mass
-<!-- 
+<!--  ## Measures of muscle mass
+
 ```{r body-comp-measures, fig.cap="Long caption.", fig.scap="Short caption", out.extra='',fig.height=4, fig.width=4, echo=FALSE, cache=TRUE}
 
 mr_dxa_fig <- readRDS("./figures/methods/mr-dxa.RDS")
@@ -187,40 +190,39 @@ mr_dxa_fig
 
 
 ```
--->
+
 In Study I muscle mass was measured by magnetic resonance imaging (MRI) and dual energy X-ray absorptiometry (DXA) prior to and after the intervention. Both MRI and DXA measurements were completed during the same visit to the laboratory. Participants were instructed to refrain from strenuous physical activity during the last 48 h leading up to the measurements. The post-training measurements were completed at least 48 h after the last strength testing session. Participants were asked to refrain from food consumption during 2 h leading up to the measurements. 
 
 MRI images were obtained from the mid-thigh and analyzed by the same investigator blinded for time (pre- and post-training) and condition (low- and moderate-volume). Multiple images were used to estimate the cross-sectional area of the extensor muscles at the same distance from the knee-joint. 
 
 See figure <!-- \@ref(fig:body-comp-measures)-->
 
-Dallin et al. recently estimated the [@RN2541]
-<!-- MRI has shown better agreement with cadaver... see ref in Dallin -->
+<!--Dallin et al. recently estimated the [@RN2541]
+ MRI has shown better agreement with cadaver... see ref in Dallin 
 
 ## Muscle strength assessments
 
-Muscle strength was with  
+Muscle strength was with  -->
 
-
-## Blood variables
 
 ## Muscle tissue sampling and preparations for downstream analyses
 Muscle samples were obtained under local anesthesia (Study I, Xylocaine, \SI{10}{\mg\per\ml} with adrenalin \SI{5}{\micro\gram\per\ml}, AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan, \SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle (12-14 gauge; Universal-plus, Medax, Italy) operated with a spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling was performed as previously described
 [@RN824],<!-- Hayot 2005 relible micriboiopsy technique -->
-with modifications. Anestheisa was injected in the subcutanous tissue with care taken not to inject anesthesia into the muscle itself. Following a short period (5 min) the effect of the anesthesia was confirmed using an injection needle. Following pilot experiments we decided not to use an insertion cannula as described in [@RN824] as the biopsy needle itself could be used to puncture the skin and muscle fascia. This also resulted in less discomfort. Several passes through the same skin puncture was made to obtain sufficient material for downstream analyses. A smaller needle (14 vs. 12 gauge) was used to further minimized discomfort in Study II where more biopsies were sampled over a shorter time span, with exception from when material was used for immunhistochemistry. The first biopsy was sampled at one third of the distance between the patella to the *anterior superior iliac spinae* with subsequent biopsies sampled $\sim$\SI{2}{cm} proximal to previous samples. In Study II samples obtained more than one week apart were sampled with closer proximity and distally from previous samples but never at previous sampling sites. 
+with modifications. Anesthesia was injected in the subcutaneous tissue with care taken not to inject anesthesia into the muscle itself. Following pilot experiments we decided not to use an insertion cannula as described in [@RN824] as the biopsy needle itself could be used to puncture the skin and muscle fascia. This also resulted in less discomfort. Several passes through the same skin puncture was made to obtain sufficient material for downstream analyses. A smaller needle (14 vs. 12 gauge) was used to further minimize discomfort in Study II where more biopsies were sampled over a shorter time span, with exception from when material was used for immunohistochemistry. The first biopsy was sampled at one third of the distance between the patella to the *anterior superior iliac spinae* with subsequent biopsies sampled $\sim$\SI{2}{cm} proximal to previous samples. In Study II, samples obtained more than one week apart were sampled with closer proximity and distally from previous samples but never at previous sampling sites. 
 
-The microbiopsy technique produces smaller samples compared to other biopsy techniques
-[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus requires several passes to produce sufficient material for multiple downstream experiments. However, reports confirms that the microbiopsy technique is comparable to the traditionally used Bergström technique in several measures of muscle characteristics at the same time as being well tolerated
+The micro biopsy technique produces smaller samples compared to other biopsy techniques
+[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus requires several passes to produce sufficient material for multiple downstream experiments. However, reports confirms that the micro biopsy technique is comparable to the traditionally used Bergström technique in several measures of muscle characteristics at the same time as being well tolerated
 [@RN824; 
 @RN2553]. 
-Any reported differences in fiber type distributions between sampling techniques have been suggested relating to differences in  sampling depth 
+Any reported differences in fiber type distributions between sampling techniques have been suggested relating to differences in sampling depth 
 [@RN2553;
-@RN2552]. <!-- Hayot -->    
+@RN2552].<!-- Hayot -->    
+
 For determination of fiber type distributions, a threshold of 200-300 fibers has been suggested as a suitable sample size per specimen as more fibers does not reduce the variation between dupliacte samples
 [@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-In Study I one or several pieces of muscle (total weight $\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens (Figure ref fig). Using an average of fibers from the first sampling time point the between leg coefficient of variation was determined to 14% for Type I fibers and 11.3 for type II fibers. The between leg variation in Type I fibers is similar to what has been previously reported [Blomstrand Ekblom]  
+In Study I, one or several pieces of muscle (total weight $\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens (Figure ref fig). Using an average of fibers from the first sampling time point the between leg coefficient of variation was determined to 14% for Type I fibers and 11.3 for type II fibers. The between leg variation in Type I fibers is similar to what has been previously reported... 
 
-Latest paper on variability between samples from the same leg and due to number of fibers counted
+<!-- Latest paper on variability between samples from the same leg and due to number of fibers counted
 Appl Physiol Nutr Metab
 . 2020 Apr;45(4):368-375. doi: 10.1139/apnm-2019-0263. Epub 2020 Mar 24.
 
@@ -385,19 +387,4 @@ expand_grid(mg = seq(from = 5, to = 100, by = 5),
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Training protocols
-
-A full body protocol was used in study I including 
+-->
