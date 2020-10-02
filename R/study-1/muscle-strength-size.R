@@ -68,6 +68,30 @@ cybex2 <- data.frame(cybex) %>%
                speed = paste0("s", speed)) %>%
         print()
         
+### Temporary for meta analysis
+temp.iso <- data.frame(cybex) %>%
+  mutate(leg = if_else(leg == "Left", "L", "R")) %>%
+  inner_join(participants) %>%
+  filter(include == "incl", 
+         timepoint %in% c("pre","session1", "post")) %>%
+  
+  filter(!(subject=="FP6" & timepoint == "post" & speed == 240)) %>% # This removes one record, exclusion due to error in measurement, see protocol FP6
+
+  
+  dplyr::select(subject:leg, sex, sets, speed, torque.max) %>%
+  pivot_wider(names_from = timepoint, values_from = torque.max) %>%
+  rowwise() %>%
+  mutate(pre = max(c(pre, session1), na.rm = TRUE)) %>%
+  dplyr::select(subject:leg, sex, sets, speed, pre, post) %>%
+  pivot_longer(names_to = "timepoint", values_to = "torque.max", cols = pre:post) %>%
+  group_by(timepoint, sets,sex, speed) %>%
+  summarise(m = mean(torque.max, na.rm = TRUE), 
+            s = sd(torque.max, na.rm = TRUE)) %>%
+  pivot_wider(names_from = timepoint, values_from = c(m, s)) %>%
+  dplyr::select(sets, sex, speed, m_pre, s_pre, m_post, s_post) %>%
+  print()
+  
+
 
 # mr data 
 source("./R/study-1/mr-and-dxa-data.R")
@@ -103,8 +127,20 @@ rm <- read_excel("./data/study-1/strength/strengthTests.xlsx") %>%
         mutate(sets = factor(sets, levels = c("single", "multiple"))) %>%
  
         print()
-                
 
+# For meta                
+rm %>%
+  dplyr::select(subject:post) %>%
+  pivot_longer(names_to = "timepoint", values_to = "kg", cols = pre:post) %>%
+  group_by(timepoint, sets,sex, exercise) %>%
+  summarise(m = mean(kg, na.rm = TRUE), 
+            s = sd(kg, na.rm = TRUE)) %>%
+  pivot_wider(names_from = timepoint, values_from = c(m, s)) %>%
+  dplyr::select(sets, sex, exercise, m_pre, s_pre, m_post, s_post) %>%
+  print()
+ # write_csv(path = "./temp.csv")
+  
+  
 
 # Fit models 
 # In study 1, there were no interaction effects between gain and sex. 

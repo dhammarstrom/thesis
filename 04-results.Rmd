@@ -434,7 +434,7 @@ Average within participant differences in responses between LOW and MOD were con
 @RN789;<!-- Krieger muscle hypertrophy -->
 @RN793;<!-- Kriger muscle strength -->
 @RN1767].<!-- Schoenfeld  -->
-Taken together, these observations confirmed the efficacy of the training program in general and a dose-response with regard to within-session exercise volume.
+Taken together, these observations confirmed the efficacy of training programs in general and a dose-response with regard to within-session exercise volume.
 
 In Study II, training efficacy was assessed by comparing outcomes to a non-training control group. The training group displayed increases compared to the control group for both strength muscle thickness measures.
 
