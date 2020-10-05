@@ -388,3 +388,12 @@ expand_grid(mg = seq(from = 5, to = 100, by = 5),
 
 
 -->
+
+## Meta-analysis of inter-session training volume
+
+### Inclusion criteria and literature search
+Studies that compared within-session training volume, with all other acute training variables kept constant between study groups were included in the meta-analysis. 
+
+### Calculations of effect sizes
+Group-wise effect sizes were calculated for each outcome measure based on the within-group change score pre- to post-training divided by the pre-training standard deviation (SD). Pre-training SD's were calculated as a pooled SD within outcome and study. Variances of the effect size were calculated using an average effect size across all outcomes within muscle strength or mass, and correlations specific to each measurement type (isokinetic-, isometric- or repetition maximum strength tests; muscle thickness, magnetic resonance imaging, dual energy X‐ray absorptiometry) estimated from previous studies.         
+A correction factor () was applied to both effect sizes and their variances  
