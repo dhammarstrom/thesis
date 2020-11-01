@@ -1,19 +1,44 @@
 ---
 output: html_document
+bibliography: bib/complete-bib.bib
 editor_options: 
   chunk_output_type: console
+  markdown: 
+    wrap: 72
 ---
+
 # Methods
+
 ```{r libs, echo=FALSE, warning=FALSE, message=FALSE}
 source("./R/libraries.R")
 ```
 
 ## Study participants, protocols and training interventions
 
-Study I was designed to examine effects of low- and moderate-volume on responses to acute exercise and long-term training within participants. Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n = *5) and non-adherence to the study protocol. There were no differences in characteristics between participants included in or excluded from data analysis in Study I.
+Study I was designed to examine effects of low- and moderate-volume on
+responses to acute exercise and long-term training within participants.
+Forty-one healthy individuals were recruited and 34 of these completed
+at least 85% of the prescribed sessions and were thus included in
+subsequent data analyses. Reasons for not completing the trial included
+injury not related to the study (*n =* 1), pain or discomfort during
+exercises (*n =* 5) and non-adherence to the study protocol. There were
+no differences in characteristics between participants included in or
+excluded from data analysis in Study I.
 
-Study II was designed to study the effects of resistance training *per se*, and effects of variable volume on selected markers related to ribosome biogenesis. Participants were therefore recruited to a training group (*n =* 11) and a non-training control group (*n =* 8).
-Eligible for participation in both studies were young (Study I age 18-40; Study II 18-35), non-smoking men and women. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medication or supplements with known effects on adaptations to training. Participant characteristics for both studies are shown in Table \@ref(tab:characteristics-table). 
+Study II was designed to study the effects of resistance training *per
+se*, and effects of variable volume on selected markers related to
+ribosome biogenesis. Participants were therefore recruited to a training
+group (*n =* 11) and a non-training control group (*n =* 8). Eligible
+for participation in both studies were young (Study I age 18-40; Study
+II 18-35), non-smoking men and women. Exclusion criteria included a
+training history of more than one weekly session during the last 12
+(Study I) or six (Study II) months leading up to the study. Participants
+were also screened for intolerance to local anesthetic, current or
+previous injuries affecting their ability to perform resistance
+training, self-reported symptoms or history of disease, intake of
+medication or supplements with known effects on adaptations to training.
+Participant characteristics for both studies are shown in Table
+\@ref(tab:characteristics-table).
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -165,63 +190,128 @@ rbind(studyI, studyII) %>%
 
 ```
 
-
 ## Resistance training interventions
-Each training session started with a light standardized warm-up (5 min ergometer cycling and 10 repetitions each of push-ups, sit-ups, back-extensions and squats). Before each exercise in the main program, one set of 10 repetitions were performed in the specific exercise with approximately 50% of 1RM. 
 
-Studies were fully or partially performed as within-participant studies as each participant had their legs assigned to different training conditions (not including the control group in Study II). Allocation was performed after enrollment where each participant had their legs randomized to either low- or moderate volume (Study I), or variable or constant volume (Study II). 
+Each training session started with a light standardized warm-up (5 min
+ergometer cycling and 10 repetitions each of push-ups, sit-ups,
+back-extensions and squats). Before each exercise in the main program,
+one set of 10 repetitions were performed in the specific exercise with
+approximately 50% of 1RM.
 
-In Study I, the low-volume protocol consisted of a single set of each exercise and the moderate-volume consisted of three sets per exercise. Three unilateral leg exercises were used (leg press, leg curl and knee extension). The moderate volume-leg commenced all sessions and the low volume-leg performed a single set of each exercise in the rest between second and third set of the moderate volume training protocol.  
+Studies were fully or partially performed as within-participant studies
+as each participant had their legs assigned to different training
+conditions (not including the control group in Study II). Allocation was
+performed after enrollment where each participant had their legs
+randomized to either low- or moderate volume (Study I), or variable or
+constant volume (Study II).
 
-In Study II, only unilateral knee-extension was performed in an effort to concentrate the stimulus to the quadriceps muscles.<!-- Check this --> The constant-volume leg performed six sets of 10RM throughout the study and variable leg performed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelve with same intensity (10RM).      
+In Study I, the low-volume protocol consisted of a single set of each
+exercise and the moderate-volume consisted of three sets per exercise.
+Three unilateral leg exercises were used (leg press, leg curl and knee
+extension). The moderate volume-leg commenced all sessions and the low
+volume-leg performed a single set of each exercise in the rest between
+second and third set of the moderate volume training protocol.
 
+In Study II, only unilateral knee-extension was performed in an effort
+to concentrate the stimulus to the quadriceps
+muscles.<!-- Check this --> The constant-volume leg performed six sets
+of 10RM throughout the study and variable leg performed six sets in
+session one to four, three sets in session five to eight and nine sets
+in session nine to twelve with same intensity (10RM).
 
 ### Ethical considerations
-Both studies were approved by the local ethics committee Lillehammer University College/Inland Norway University of Applied Sciences and the Norwegian Centre for Research Data. In accordance with the *Declaration of Helsinki*[@RN2548] the studies were pre-registered in publicly accessible databases (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, https://osf.io/wa96y). Participants were informed of the study design, potential risks and sources of discomfort prior to giving their informed consent.    
 
+Both studies were approved by the local ethics committee Lillehammer
+University College/Inland Norway University of Applied Sciences and the
+Norwegian Centre for Research Data. In accordance with the *Declaration
+of Helsinki*[@RN2548] the studies were pre-registered in publicly
+accessible databases (Study I, ClinicalTrials.gov Identifier:
+NCT02179307; Study II, <https://osf.io/wa96y>). Participants were
+informed of the study design, potential risks and sources of discomfort
+prior to giving their informed consent.
 
+```{=html}
 <!--  ## Measures of muscle mass
 
-```{r body-comp-measures, fig.cap="Long caption.", fig.scap="Short caption", out.extra='',fig.height=4, fig.width=4, echo=FALSE, cache=TRUE}
-
-mr_dxa_fig <- readRDS("./figures/methods/mr-dxa.RDS")
-
-mr_dxa_fig
-
-
+```f3175f2a-e8a0-4436-be12-b33925b6d220
+31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AFoAZwBBAHoAQQBEAEUAQQBOAHcAQQAxAEEARwBZAEEATQBnAEIAaABBAEMAMABBAFoAUQBBADQAQQBHAEUAQQBNAEEAQQB0AEEARABRAEEATgBBAEEAegBBAEQAWQBBAEwAUQBCAGkAQQBHAFUAQQBNAFEAQQB5AEEAQwAwAEEAWQBnAEEAegBBAEQATQBBAE8AUQBBAHkAQQBEAFUAQQBZAGcAQQAyAEEARwBRAEEATQBnAEEAeQBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAdwBBAEQATQBBAE0AdwBBAHcAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFkAQQBCAGcAQQBHAEEAQQBlAHcAQgB5AEEAQwBBAEEAWQBnAEIAdgBBAEcAUQBBAGUAUQBBAHQAQQBHAE0AQQBiAHcAQgB0AEEASABBAEEATABRAEIAdABBAEcAVQBBAFkAUQBCAHoAQQBIAFUAQQBjAGcAQgBsAEEASABNAEEATABBAEEAZwBBAEcAWQBBAGEAUQBCAG4AQQBDADQAQQBZAHcAQgBoAEEASABBAEEAUABRAEEAaQBBAEUAdwBBAGIAdwBCAHUAQQBHAGMAQQBJAEEAQgBqAEEARwBFAEEAYwBBAEIAMABBAEcAawBBAGIAdwBCAHUAQQBDADQAQQBJAGcAQQBzAEEAQwBBAEEAWgBnAEIAcABBAEcAYwBBAEwAZwBCAHoAQQBHAE0AQQBZAFEAQgB3AEEARAAwAEEASQBnAEIAVABBAEcAZwBBAGIAdwBCAHkAQQBIAFEAQQBJAEEAQgBqAEEARwBFAEEAYwBBAEIAMABBAEcAawBBAGIAdwBCAHUAQQBDAEkAQQBMAEEAQQBnAEEARwA4AEEAZABRAEIAMABBAEMANABBAFoAUQBCADQAQQBIAFEAQQBjAGcAQgBoAEEARAAwAEEASgB3AEEAbgBBAEMAdwBBAFoAZwBCAHAAQQBHAGMAQQBMAGcAQgBvAEEARwBVAEEAYQBRAEIAbgBBAEcAZwBBAGQAQQBBADkAQQBEAFEAQQBMAEEAQQBnAEEARwBZAEEAYQBRAEIAbgBBAEMANABBAGQAdwBCAHAAQQBHAFEAQQBkAEEAQgBvAEEARAAwAEEATgBBAEEAcwBBAEMAQQBBAFoAUQBCAGoAQQBHAGcAQQBiAHcAQQA5AEEARQBZAEEAUQBRAEIATQBBAEYATQBBAFIAUQBBAHMAQQBDAEEAQQBZAHcAQgBoAEEARwBNAEEAYQBBAEIAbABBAEQAMABBAFYAQQBCAFMAQQBGAFUAQQBSAFEAQgA5AEEAQQBvAEEAQwBnAEIAdABBAEgASQBBAFgAdwBCAGsAQQBIAGcAQQBZAFEAQgBmAEEARwBZAEEAYQBRAEIAbgBBAEMAQQBBAFAAQQBBAHQAQQBDAEEAQQBjAGcAQgBsAEEARwBFAEEAWgBBAEIAUwBBAEUAUQBBAFUAdwBBAG8AQQBDAEkAQQBMAGcAQQB2AEEARwBZAEEAYQBRAEIAbgBBAEgAVQBBAGMAZwBCAGwAQQBIAE0AQQBMAHcAQgB0AEEARwBVAEEAZABBAEIAbwBBAEcAOABBAFoAQQBCAHoAQQBDADgAQQBiAFEAQgB5AEEAQwAwAEEAWgBBAEIANABBAEcARQBBAEwAZwBCAFMAQQBFAFEAQQBVAHcAQQBpAEEAQwBrAEEAQwBnAEEASwBBAEcAMABBAGMAZwBCAGYAQQBHAFEAQQBlAEEAQgBoAEEARgA4AEEAWgBnAEIAcABBAEcAYwBBAEMAZwBBAEsAQQBBAG8AQQBZAEEAQgBnAEEARwBBAEEACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602
 ```
+In Study I muscle mass was measured by magnetic resonance imaging (MRI)
+and dual energy X-ray absorptiometry (DXA) prior to and after the
+intervention. Both MRI and DXA measurements were completed during the
+same visit to the laboratory. Participants were instructed to refrain
+from strenuous physical activity during the last 48 h leading up to the
+measurements. The post-training measurements were completed at least 48
+h after the last strength testing session. Participants were asked to
+refrain from food consumption during 2 h leading up to the measurements.
 
-In Study I muscle mass was measured by magnetic resonance imaging (MRI) and dual energy X-ray absorptiometry (DXA) prior to and after the intervention. Both MRI and DXA measurements were completed during the same visit to the laboratory. Participants were instructed to refrain from strenuous physical activity during the last 48 h leading up to the measurements. The post-training measurements were completed at least 48 h after the last strength testing session. Participants were asked to refrain from food consumption during 2 h leading up to the measurements. 
+MRI images were obtained from the mid-thigh and analyzed by the same
+investigator blinded for time (pre- and post-training) and condition
+(low- and moderate-volume). Multiple images were used to estimate the
+cross-sectional area of the extensor muscles at the same distance from
+the knee-joint.
 
-MRI images were obtained from the mid-thigh and analyzed by the same investigator blinded for time (pre- and post-training) and condition (low- and moderate-volume). Multiple images were used to estimate the cross-sectional area of the extensor muscles at the same distance from the knee-joint. 
+See figure <!-- @ref(fig:body-comp-measures)-->
 
-See figure <!-- \@ref(fig:body-comp-measures)-->
+    ```{=html}
+    <!--Dallin et al. recently estimated the [@RN2541]
+     MRI has shown better agreement with cadaver... see ref in Dallin 
 
-<!--Dallin et al. recently estimated the [@RN2541]
- MRI has shown better agreement with cadaver... see ref in Dallin 
+    ## Muscle strength assessments
 
-## Muscle strength assessments
-
-Muscle strength was with  -->
-
+    Muscle strength was with  -->
 
 ## Muscle tissue sampling and preparations for downstream analyses
-Muscle samples were obtained under local anesthesia (Study I, Xylocaine, \SI{10}{\mg\per\ml} with adrenalin \SI{5}{\micro\gram\per\ml}, AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan, \SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle (12-14 gauge; Universal-plus, Medax, Italy) operated with a spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling was performed as previously described
-[@RN824],<!-- Hayot 2005 relible micriboiopsy technique -->
-with modifications. Anesthesia was injected in the subcutaneous tissue with care taken not to inject anesthesia into the muscle itself. Following pilot experiments we decided not to use an insertion cannula as described in [@RN824] as the biopsy needle itself could be used to puncture the skin and muscle fascia. This also resulted in less discomfort. Several passes through the same skin puncture was made to obtain sufficient material for downstream analyses. A smaller needle (14 vs. 12 gauge) was used to further minimize discomfort in Study II where more biopsies were sampled over a shorter time span, with exception from when material was used for immunohistochemistry. The first biopsy was sampled at one third of the distance between the patella to the *anterior superior iliac spinae* with subsequent biopsies sampled $\sim$\SI{2}{cm} proximal to previous samples. In Study II, samples obtained more than one week apart were sampled with closer proximity and distally from previous samples but never at previous sampling sites. 
 
-The micro biopsy technique produces smaller samples compared to other biopsy techniques
-[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus requires several passes to produce sufficient material for multiple downstream experiments. However, reports confirms that the micro biopsy technique is comparable to the traditionally used Bergström technique in several measures of muscle characteristics at the same time as being well tolerated
-[@RN824; 
-@RN2553]. 
-Any reported differences in fiber type distributions between sampling techniques have been suggested relating to differences in sampling depth 
-[@RN2553;
-@RN2552].<!-- Hayot -->    
+Muscle samples were obtained under local anesthesia (Study I, Xylocaine,
+\SI{10}{\mg\per\ml} with adrenalin \SI{5}{\micro\gram\per\ml},
+AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan,
+\SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle
+(12-14 gauge; Universal-plus, Medax, Italy) operated with a
+spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling
+was performed as previously described
+[@RN824],<!-- Hayot 2005 relible micriboiopsy technique --> with
+modifications. Anesthesia was injected in the subcutaneous tissue with
+care taken not to inject anesthesia into the muscle itself. Following
+pilot experiments we decided not to use an insertion cannula as
+described in [@RN824] as the biopsy needle itself could be used to
+puncture the skin and muscle fascia. This also resulted in less
+discomfort. Several passes through the same skin puncture was made to
+obtain sufficient material for downstream analyses. A smaller needle (14
+vs. 12 gauge) was used to further minimize discomfort in Study II where
+more biopsies were sampled over a shorter time span, with exception from
+when material was used for immunohistochemistry. The first biopsy was
+sampled at one third of the distance between the patella to the
+*anterior superior iliac spinae* with subsequent biopsies sampled
+$\sim$\SI{2}{cm} proximal to previous samples. In Study II, samples
+obtained more than one week apart were sampled with closer proximity and
+distally from previous samples but never at previous sampling sites.
 
-For determination of fiber type distributions, a threshold of 200-300 fibers has been suggested as a suitable sample size per specimen as more fibers does not reduce the variation between dupliacte samples
+The micro biopsy technique produces smaller samples compared to other
+biopsy techniques
+[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus
+requires several passes to produce sufficient material for multiple
+downstream experiments. However, reports confirms that the micro biopsy
+technique is comparable to the traditionally used Bergström technique in
+several measures of muscle characteristics at the same time as being
+well tolerated [@RN824; @RN2553]. Any reported differences in fiber type
+distributions between sampling techniques have been suggested relating
+to differences in sampling depth [@RN2553; @RN2552].<!-- Hayot -->
+
+For determination of fiber type distributions, a threshold of 200-300
+fibers has been suggested as a suitable sample size per specimen as more
+fibers does not reduce the variation between dupliacte samples
 [@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-In Study I, one or several pieces of muscle (total weight $\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type distributions (described in detail below). The total number of fibers were counted from these specimens (Figure ref fig). Using an average of fibers from the first sampling time point the between leg coefficient of variation was determined to 14% for Type I fibers and 11.3 for type II fibers. The between leg variation in Type I fibers is similar to what has been previously reported... 
+In Study I, one or several pieces of muscle (total weight
+$\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type
+distributions (described in detail below). The total number of fibers
+were counted from these specimens (Figure ref fig). Using an average of
+fibers from the first sampling time point the between leg coefficient of
+variation was determined to 14% for Type I fibers and 11.3 for type II
+fibers. The between leg variation in Type I fibers is similar to what
+has been previously reported...
 
+```{=html}
 <!-- Latest paper on variability between samples from the same leg and due to number of fibers counted
 Appl Physiol Nutr Metab
 . 2020 Apr;45(4):368-375. doi: 10.1139/apnm-2019-0263. Epub 2020 Mar 24.
@@ -234,129 +324,37 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875499/
 
 
 
-```{r immuno-methods, fig.cap="Number of fibres in immunohistochemistry analyses", fig.scap="Fiber counts", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4, fig.heigh = 6, fig.align='center'}
-
-
-source("./R/libraries.R")
-source("./R/themes.R")
-
-# Sample set up (included samples)
-
-legs <- read_csv2("./data/study-1/body-composition/oneThreeSetLeg.csv") %>%
-        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) 
-
-
-# Total number of fibers per sample
-
-low_fiber_counts <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
-        inner_join(legs) %>%
-        filter(include == "incl") %>%
-        mutate(total = type1 + type2a + type2ax + type2x) %>%
-        filter(total < 200)
-        
-total_histogram <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
-        inner_join(legs) %>%
-        filter(include == "incl") %>%
-        mutate(total = type1 + type2a + type2ax + type2x) %>%        
-        
-        ggplot(aes(total)) + geom_histogram(binwidth = 30, 
-                                            fill = "blue", alpha = 0.4) + 
-        dissertation_theme() + 
-        scale_x_continuous(limits = c(0, 1600),
-                           expand = c(0,0),
-                           breaks = c(0, 200, 400, 600, 800, 1000, 1200, 1400, 1600), 
-                           labels = c(0, "", 400, "", 800, "", 1200, "", 1600)) + 
-        scale_y_continuous(limits = c(0, 20), 
-                           breaks = c(0, 5, 10, 15, 20), 
-                           expand = c(0,0)) +
-        
-        labs(x = "Total number of fibers per sample", 
-             y = "Counts") + 
-        theme(axis.text.x = element_text(hjust = c(0, rep(0.5, 7), 1)))
-        
-### Comparison between "duplicate samples"
-
-corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
-        inner_join(legs) %>%
-        filter(include == "incl") %>%
-        mutate(total  = type1 + type2a + type2ax + type2x, 
-               type1  =(type1 / total)*100, 
-               type2a =(type2a / total)*100, 
-               type2ax=(type2ax / total)*100, 
-               type2x =(type2x / total)*100) %>%  
-        filter(timepoint %in% c(2, 3)) %>%
-        dplyr::select(subject, timepoint, leg,total, type1:type2x) %>%
-        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2x) %>%
-        mutate(timepoint = paste0("t", timepoint)) %>%
-        pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
-
-        mutate(type = factor(type, levels = c("type1", 
-                                              "type2a", 
-                                              "type2ax", 
-                                              "type2x"), 
-                             labels = c("Type I", 
-                                        "Type IIA", 
-                                        "Type IIAX", 
-                                        "Type IIX"))) %>%
-        
-        
-        ggplot(aes(percentage_t2, percentage_t3)) +  geom_point(alpha = 0.4, 
-                                                                 color = "blue") + 
-        facet_wrap(~type, ncol = 2, strip.position = "top")  +
-
-        scale_x_continuous(limits = c(0, 100)) + 
-        scale_y_continuous(limits = c(0, 100)) + 
-        
-        geom_abline(intercept = 0, slope = 1) + 
-        dissertation_theme() + 
-        theme(strip.background = element_blank(), 
-              panel.border = element_rect(color = "black", fill = NA))
-        
-
-
-plot_grid(total_histogram, corr_plot_fiber_types, ncol = 1, rel_heights = c(1, 2)) + 
-        draw_plot_label(label=c("A", "B"),
-                        x = c(0.02, 0.02), 
-                        y = c(0.98, 0.6),
-                        hjust=.5, vjust=.5, 
-                        size = label.size)
-
-
-
-
+```f3175f2a-e8a0-4436-be12-b33925b6d220
+31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AFoAZwBBAHoAQQBEAEUAQQBOAHcAQQAxAEEARwBZAEEATQBnAEIAaABBAEMAMABBAFoAUQBBADQAQQBHAEUAQQBNAEEAQQB0AEEARABRAEEATgBBAEEAegBBAEQAWQBBAEwAUQBCAGkAQQBHAFUAQQBNAFEAQQB5AEEAQwAwAEEAWQBnAEEAegBBAEQATQBBAE8AUQBBAHkAQQBEAFUAQQBZAGcAQQAyAEEARwBRAEEATQBnAEEAeQBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAMQBBAEQASQBBAE0AZwBBADUAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFkAQQBCAGcAQQBHAEEAQQBlAHcAQgB5AEEAQwBBAEEAYQBRAEIAdABBAEcAMABBAGQAUQBCAHUAQQBHADgAQQBMAFEAQgB0AEEARwBVAEEAZABBAEIAbwBBAEcAOABBAFoAQQBCAHoAQQBDAHcAQQBJAEEAQgBtAEEARwBrAEEAWgB3AEEAdQBBAEcATQBBAFkAUQBCAHcAQQBEADAAQQBJAGcAQgBPAEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHADgAQQBaAGcAQQBnAEEARwBZAEEAYQBRAEIAaQBBAEgASQBBAFoAUQBCAHoAQQBDAEEAQQBhAFEAQgB1AEEAQwBBAEEAYQBRAEIAdABBAEcAMABBAGQAUQBCAHUAQQBHADgAQQBhAEEAQgBwAEEASABNAEEAZABBAEIAdgBBAEcATQBBAGEAQQBCAGwAQQBHADAAQQBhAFEAQgB6AEEASABRAEEAYwBnAEIANQBBAEMAQQBBAFkAUQBCAHUAQQBHAEUAQQBiAEEAQgA1AEEASABNAEEAWgBRAEIAegBBAEMASQBBAEwAQQBBAGcAQQBHAFkAQQBhAFEAQgBuAEEAQwA0AEEAYwB3AEIAagBBAEcARQBBAGMAQQBBADkAQQBDAEkAQQBSAGcAQgBwAEEARwBJAEEAWgBRAEIAeQBBAEMAQQBBAFkAdwBCAHYAQQBIAFUAQQBiAGcAQgAwAEEASABNAEEASQBnAEEAcwBBAEMAQQBBAGQAdwBCAGgAQQBIAEkAQQBiAGcAQgBwAEEARwA0AEEAWgB3AEEAOQBBAEUAWQBBAFEAUQBCAE0AQQBGAE0AQQBSAFEAQQBzAEEAQwBBAEEAWgBRAEIAagBBAEcAZwBBAGIAdwBBAGcAQQBEADAAQQBJAEEAQgBHAEEARQBFAEEAVABBAEIAVABBAEUAVQBBAEwAQQBBAGcAQQBIAGMAQQBZAFEAQgB5AEEARwA0AEEAYQBRAEIAdQBBAEcAYwBBAFAAUQBCAEcAQQBFAEUAQQBUAEEAQgBUAEEARQBVAEEATABBAEEAZwBBAEcAWQBBAGEAUQBCAG4AQQBDADQAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEMAQQBBAFAAUQBBAGcAQQBEAFEAQQBMAEEAQQBnAEEARwBZAEEAYQBRAEIAbgBBAEMANABBAGEAQQBCAGwAQQBHAGsAQQBaAHcAQgBvAEEAQwBBAEEAUABRAEEAZwBBAEQAWQBBAEwAQQBBAGcAQQBHAFkAQQBhAFEAQgBuAEEAQwA0AEEAWQBRAEIAcwBBAEcAawBBAFoAdwBCAHUAQQBEADAAQQBKAHcAQgBqAEEARwBVAEEAYgBnAEIAMABBAEcAVQBBAGMAZwBBAG4AQQBIADAAQQBDAGcAQQBLAEEAQQBvAEEAYwB3AEIAdgBBAEgAVQBBAGMAZwBCAGoAQQBHAFUAQQBLAEEAQQBpAEEAQwA0AEEATAB3AEIAUwBBAEMAOABBAGIAQQBCAHAAQQBHAEkAQQBjAGcAQgBoAEEASABJAEEAYQBRAEIAbABBAEgATQBBAEwAZwBCAFMAQQBDAEkAQQBLAFEAQQBLAEEASABNAEEAYgB3AEIAMQBBAEgASQBBAFkAdwBCAGwAQQBDAGcAQQBJAGcAQQB1AEEAQwA4AEEAVQBnAEEAdgBBAEgAUQBBAGEAQQBCAGwAQQBHADAAQQBaAFEAQgB6AEEAQwA0AEEAVQBnAEEAaQBBAEMAawBBAEMAZwBBAEsAQQBDAE0AQQBJAEEAQgBUAEEARwBFAEEAYgBRAEIAdwBBAEcAdwBBAFoAUQBBAGcAQQBIAE0AQQBaAFEAQgAwAEEAQwBBAEEAZABRAEIAdwBBAEMAQQBBAEsAQQBCAHAAQQBHADQAQQBZAHcAQgBzAEEASABVAEEAWgBBAEIAbABBAEcAUQBBAEkAQQBCAHoAQQBHAEUAQQBiAFEAQgB3AEEARwB3AEEAWgBRAEIAegBBAEMAawBBAEMAZwBBAEsAQQBHAHcAQQBaAFEAQgBuAEEASABNAEEASQBBAEEAOABBAEMAMABBAEkAQQBCAHkAQQBHAFUAQQBZAFEAQgBrAEEARgA4AEEAWQB3AEIAegBBAEgAWQBBAE0AZwBBAG8AQQBDAEkAQQBMAGcAQQB2AEEARwBRAEEAWQBRAEIAMABBAEcARQBBAEwAdwBCAHoAQQBIAFEAQQBkAFEAQgBrAEEASABrAEEATABRAEEAeABBAEMAOABBAFkAZwBCAHYAQQBHAFEAQQBlAFEAQQB0AEEARwBNAEEAYgB3AEIAdABBAEgAQQBBAGIAdwBCAHoAQQBHAGsAQQBkAEEAQgBwAEEARwA4AEEAYgBnAEEAdgBBAEcAOABBAGIAZwBCAGwAQQBGAFEAQQBhAEEAQgB5AEEARwBVAEEAWgBRAEIAVABBAEcAVQBBAGQAQQBCAE0AQQBHAFUAQQBaAHcAQQB1AEEARwBNAEEAYwB3AEIAMgBBAEMASQBBAEsAUQBBAGcAQQBDAFUAQQBQAGcAQQBsAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEASABBAEEAYQBRAEIAMgBBAEcAOABBAGQAQQBCAGYAQQBHAHcAQQBiAHcAQgB1AEEARwBjAEEAWgBRAEIAeQBBAEMAZwBBAGIAZwBCAGgAQQBHADAAQQBaAFEAQgB6AEEARgA4AEEAZABBAEIAdgBBAEMAQQBBAFAAUQBBAGcAQQBDAEkAQQBjAHcAQgBsAEEASABRAEEAYwB3AEEAaQBBAEMAdwBBAEkAQQBCADIAQQBHAEUAQQBiAEEAQgAxAEEARwBVAEEAYwB3AEIAZgBBAEgAUQBBAGIAdwBBAGcAQQBEADAAQQBJAEEAQQBpAEEARwB3AEEAWgBRAEIAbgBBAEMASQBBAEwAQQBBAGcAQQBHAE0AQQBiAHcAQgBzAEEASABNAEEASQBBAEEAOQBBAEMAQQBBAGIAUQBCADEAQQBHAHcAQQBkAEEAQgBwAEEASABBAEEAYgBBAEIAbABBAEQAbwBBAGMAdwBCAHAAQQBHADQAQQBaAHcAQgBzAEEARwBVAEEASwBRAEEAZwBBAEEAbwBBAEMAZwBBAEsAQQBDAE0AQQBJAEEAQgBVAEEARwA4AEEAZABBAEIAaABBAEcAdwBBAEkAQQBCAHUAQQBIAFUAQQBiAFEAQgBpAEEARwBVAEEAYwBnAEEAZwBBAEcAOABBAFoAZwBBAGcAQQBHAFkAQQBhAFEAQgBpAEEARwBVAEEAYwBnAEIAegBBAEMAQQBBAGMAQQBCAGwAQQBIAEkAQQBJAEEAQgB6AEEARwBFAEEAYgBRAEIAdwBBAEcAdwBBAFoAUQBBAEsAQQBBAG8AQQBiAEEAQgB2AEEASABjAEEAWAB3AEIAbQBBAEcAawBBAFkAZwBCAGwAQQBIAEkAQQBYAHcAQgBqAEEARwA4AEEAZABRAEIAdQBBAEgAUQBBAGMAdwBBAGcAQQBEAHcAQQBMAFEAQQBnAEEASABJAEEAWgBRAEIAaABBAEcAUQBBAFgAdwBCAGwAQQBIAGcAQQBZAHcAQgBsAEEARwB3AEEASwBBAEEAaQBBAEMANABBAEwAdwBCAGsAQQBHAEUAQQBkAEEAQgBoAEEAQwA4AEEAYwB3AEIAMABBAEgAVQBBAFoAQQBCADUAQQBDADAAQQBNAFEAQQB2AEEARwBZAEEAYQBRAEIAaQBBAEcAVQBBAGMAZwBBAHQAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATAB3AEIAbQBBAEcAawBBAFkAZwBCAGwAQQBIAEkAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAdQBBAEgAZwBBAGIAQQBCAHoAQQBIAGcAQQBJAGcAQQBwAEEAQwBBAEEASgBRAEEAKwBBAEMAVQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGEAUQBCAHUAQQBHADQAQQBaAFEAQgB5AEEARgA4AEEAYQBnAEIAdgBBAEcAawBBAGIAZwBBAG8AQQBHAHcAQQBaAFEAQgBuAEEASABNAEEASwBRAEEAZwBBAEMAVQBBAFAAZwBBAGwAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBHAFkAQQBhAFEAQgBzAEEASABRAEEAWgBRAEIAeQBBAEMAZwBBAGEAUQBCAHUAQQBHAE0AQQBiAEEAQgAxAEEARwBRAEEAWgBRAEEAZwBBAEQAMABBAFAAUQBBAGcAQQBDAEkAQQBhAFEAQgB1AEEARwBNAEEAYgBBAEEAaQBBAEMAawBBAEkAQQBBAGwAQQBEADQAQQBKAFEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgB0AEEASABVAEEAZABBAEIAaABBAEgAUQBBAFoAUQBBAG8AQQBIAFEAQQBiAHcAQgAwAEEARwBFAEEAYgBBAEEAZwBBAEQAMABBAEkAQQBCADAAQQBIAGsAQQBjAEEAQgBsAEEARABFAEEASQBBAEEAcgBBAEMAQQBBAGQAQQBCADUAQQBIAEEAQQBaAFEAQQB5AEEARwBFAEEASQBBAEEAcgBBAEMAQQBBAGQAQQBCADUAQQBIAEEAQQBaAFEAQQB5AEEARwBFAEEAZQBBAEEAZwBBAEMAcwBBAEkAQQBCADAAQQBIAGsAQQBjAEEAQgBsAEEARABJAEEAZQBBAEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAGcAQgBwAEEARwB3AEEAZABBAEIAbABBAEgASQBBAEsAQQBCADAAQQBHADgAQQBkAEEAQgBoAEEARwB3AEEASQBBAEEAOABBAEMAQQBBAE0AZwBBAHcAQQBEAEEAQQBLAFEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBLAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBCAGYAQQBHAGcAQQBhAFEAQgB6AEEASABRAEEAYgB3AEIAbgBBAEgASQBBAFkAUQBCAHQAQQBDAEEAQQBQAEEAQQB0AEEAQwBBAEEAYwBnAEIAbABBAEcARQBBAFoAQQBCAGYAQQBHAFUAQQBlAEEAQgBqAEEARwBVAEEAYgBBAEEAbwBBAEMASQBBAEwAZwBBAHYAQQBHAFEAQQBZAFEAQgAwAEEARwBFAEEATAB3AEIAegBBAEgAUQBBAGQAUQBCAGsAQQBIAGsAQQBMAFEAQQB4AEEAQwA4AEEAWgBnAEIAcABBAEcASQBBAFoAUQBCAHkAQQBDADAAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAdgBBAEcAWQBBAGEAUQBCAGkAQQBHAFUAQQBjAGcAQgAwAEEASABrAEEAYwBBAEIAbABBAEMANABBAGUAQQBCAHMAQQBIAE0AQQBlAEEAQQBpAEEAQwBrAEEASQBBAEEAbABBAEQANABBAEoAUQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBCAHAAQQBHADQAQQBiAGcAQgBsAEEASABJAEEAWAB3AEIAcQBBAEcAOABBAGEAUQBCAHUAQQBDAGcAQQBiAEEAQgBsAEEARwBjAEEAYwB3AEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAGcAQgBwAEEARwB3AEEAZABBAEIAbABBAEgASQBBAEsAQQBCAHAAQQBHADQAQQBZAHcAQgBzAEEASABVAEEAWgBBAEIAbABBAEMAQQBBAFAAUQBBADkAQQBDAEEAQQBJAGcAQgBwAEEARwA0AEEAWQB3AEIAcwBBAEMASQBBAEsAUQBBAGcAQQBDAFUAQQBQAGcAQQBsAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwAwAEEAZABRAEIAMABBAEcARQBBAGQAQQBCAGwAQQBDAGcAQQBkAEEAQgB2AEEASABRAEEAWQBRAEIAcwBBAEMAQQBBAFAAUQBBAGcAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATQBRAEEAZwBBAEMAcwBBAEkAQQBCADAAQQBIAGsAQQBjAEEAQgBsAEEARABJAEEAWQBRAEEAZwBBAEMAcwBBAEkAQQBCADAAQQBIAGsAQQBjAEEAQgBsAEEARABJAEEAWQBRAEIANABBAEMAQQBBAEsAdwBBAGcAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATQBnAEIANABBAEMAawBBAEkAQQBBAGwAQQBEADQAQQBKAFEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAHcAQgBuAEEASABBAEEAYgBBAEIAdgBBAEgAUQBBAEsAQQBCAGgAQQBHAFUAQQBjAHcAQQBvAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBBAHAAQQBDAGsAQQBJAEEAQQByAEEAQwBBAEEAWgB3AEIAbABBAEcAOABBAGIAUQBCAGYAQQBHAGcAQQBhAFEAQgB6AEEASABRAEEAYgB3AEIAbgBBAEgASQBBAFkAUQBCAHQAQQBDAGcAQQBZAGcAQgBwAEEARwA0AEEAZAB3AEIAcABBAEcAUQBBAGQAQQBCAG8AQQBDAEEAQQBQAFEAQQBnAEEARABNAEEATQBBAEEAcwBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAFoAZwBCAHAAQQBHAHcAQQBiAEEAQQBnAEEARAAwAEEASQBBAEEAaQBBAEcASQBBAGIAQQBCADEAQQBHAFUAQQBJAGcAQQBzAEEAQwBBAEEAWQBRAEIAcwBBAEgAQQBBAGEAQQBCAGgAQQBDAEEAQQBQAFEAQQBnAEEARABBAEEATABnAEEAMABBAEMAawBBAEkAQQBBAHIAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAEEAQgBwAEEASABNAEEAYwB3AEIAbABBAEgASQBBAGQAQQBCAGgAQQBIAFEAQQBhAFEAQgB2AEEARwA0AEEAWAB3AEIAMABBAEcAZwBBAFoAUQBCAHQAQQBHAFUAQQBLAEEAQQBwAEEAQwBBAEEASwB3AEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEgATQBBAFkAdwBCAGgAQQBHAHcAQQBaAFEAQgBmAEEASABnAEEAWAB3AEIAagBBAEcAOABBAGIAZwBCADAAQQBHAGsAQQBiAGcAQgAxAEEARwA4AEEAZABRAEIAegBBAEMAZwBBAGIAQQBCAHAAQQBHADAAQQBhAFEAQgAwAEEASABNAEEASQBBAEEAOQBBAEMAQQBBAFkAdwBBAG8AQQBEAEEAQQBMAEEAQQBnAEEARABFAEEATgBnAEEAdwBBAEQAQQBBAEsAUQBBAHMAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAFEAQgA0AEEASABBAEEAWQBRAEIAdQBBAEcAUQBBAEkAQQBBADkAQQBDAEEAQQBZAHcAQQBvAEEARABBAEEATABBAEEAdwBBAEMAawBBAEwAQQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBHAEkAQQBjAGcAQgBsAEEARwBFAEEAYQB3AEIAegBBAEMAQQBBAFAAUQBBAGcAQQBHAE0AQQBLAEEAQQB3AEEAQwB3AEEASQBBAEEAeQBBAEQAQQBBAE0AQQBBAHMAQQBDAEEAQQBOAEEAQQB3AEEARABBAEEATABBAEEAZwBBAEQAWQBBAE0AQQBBAHcAQQBDAHcAQQBJAEEAQQA0AEEARABBAEEATQBBAEEAcwBBAEMAQQBBAE0AUQBBAHcAQQBEAEEAQQBNAEEAQQBzAEEAQwBBAEEATQBRAEEAeQBBAEQAQQBBAE0AQQBBAHMAQQBDAEEAQQBNAFEAQQAwAEEARABBAEEATQBBAEEAcwBBAEMAQQBBAE0AUQBBADIAQQBEAEEAQQBNAEEAQQBwAEEAQwB3AEEASQBBAEEASwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEcAdwBBAFkAUQBCAGkAQQBHAFUAQQBiAEEAQgB6AEEAQwBBAEEAUABRAEEAZwBBAEcATQBBAEsAQQBBAHcAQQBDAHcAQQBJAEEAQQBpAEEAQwBJAEEATABBAEEAZwBBAEQAUQBBAE0AQQBBAHcAQQBDAHcAQQBJAEEAQQBpAEEAQwBJAEEATABBAEEAZwBBAEQAZwBBAE0AQQBBAHcAQQBDAHcAQQBJAEEAQQBpAEEAQwBJAEEATABBAEEAZwBBAEQARQBBAE0AZwBBAHcAQQBEAEEAQQBMAEEAQQBnAEEAQwBJAEEASQBnAEEAcwBBAEMAQQBBAE0AUQBBADIAQQBEAEEAQQBNAEEAQQBwAEEAQwBrAEEASQBBAEEAcgBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGMAdwBCAGoAQQBHAEUAQQBiAEEAQgBsAEEARgA4AEEAZQBRAEIAZgBBAEcATQBBAGIAdwBCAHUAQQBIAFEAQQBhAFEAQgB1AEEASABVAEEAYgB3AEIAMQBBAEgATQBBAEsAQQBCAHMAQQBHAGsAQQBiAFEAQgBwAEEASABRAEEAYwB3AEEAZwBBAEQAMABBAEkAQQBCAGoAQQBDAGcAQQBNAEEAQQBzAEEAQwBBAEEATQBnAEEAdwBBAEMAawBBAEwAQQBBAGcAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBZAGcAQgB5AEEARwBVAEEAWQBRAEIAcgBBAEgATQBBAEkAQQBBADkAQQBDAEEAQQBZAHcAQQBvAEEARABBAEEATABBAEEAZwBBAEQAVQBBAEwAQQBBAGcAQQBEAEUAQQBNAEEAQQBzAEEAQwBBAEEATQBRAEEAMQBBAEMAdwBBAEkAQQBBAHkAQQBEAEEAQQBLAFEAQQBzAEEAQwBBAEEAQwBnAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAbABBAEgAZwBBAGMAQQBCAGgAQQBHADQAQQBaAEEAQQBnAEEARAAwAEEASQBBAEIAagBBAEMAZwBBAE0AQQBBAHMAQQBEAEEAQQBLAFEAQQBwAEEAQwBBAEEASwB3AEEASwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEASwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEIAcwBBAEcARQBBAFkAZwBCAHoAQQBDAGcAQQBlAEEAQQBnAEEARAAwAEEASQBBAEEAaQBBAEYAUQBBAGIAdwBCADAAQQBHAEUAQQBiAEEAQQBnAEEARwA0AEEAZABRAEIAdABBAEcASQBBAFoAUQBCAHkAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWgBnAEIAcABBAEcASQBBAFoAUQBCAHkAQQBIAE0AQQBJAEEAQgB3AEEARwBVAEEAYwBnAEEAZwBBAEgATQBBAFkAUQBCAHQAQQBIAEEAQQBiAEEAQgBsAEEAQwBJAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgA1AEEAQwBBAEEAUABRAEEAZwBBAEMASQBBAFEAdwBCAHYAQQBIAFUAQQBiAGcAQgAwAEEASABNAEEASQBnAEEAcABBAEMAQQBBAEsAdwBBAGcAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBIAFEAQQBhAEEAQgBsAEEARwAwAEEAWgBRAEEAbwBBAEcARQBBAGUAQQBCAHAAQQBIAE0AQQBMAGcAQgAwAEEARwBVAEEAZQBBAEIAMABBAEMANABBAGUAQQBBAGcAQQBEADAAQQBJAEEAQgBsAEEARwB3AEEAWgBRAEIAdABBAEcAVQBBAGIAZwBCADAAQQBGADgAQQBkAEEAQgBsAEEASABnAEEAZABBAEEAbwBBAEcAZwBBAGEAZwBCADEAQQBIAE0AQQBkAEEAQQBnAEEARAAwAEEASQBBAEIAagBBAEMAZwBBAE0AQQBBAHMAQQBDAEEAQQBjAGcAQgBsAEEASABBAEEASwBBAEEAdwBBAEMANABBAE4AUQBBAHMAQQBDAEEAQQBOAHcAQQBwAEEAQwB3AEEASQBBAEEAeABBAEMAawBBAEsAUQBBAHAAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBBAG8AQQBJAHcAQQBqAEEAQwBNAEEASQBBAEIARABBAEcAOABBAGIAUQBCAHcAQQBHAEUAQQBjAGcAQgBwAEEASABNAEEAYgB3AEIAdQBBAEMAQQBBAFkAZwBCAGwAQQBIAFEAQQBkAHcAQgBsAEEARwBVAEEAYgBnAEEAZwBBAEMASQBBAFoAQQBCADEAQQBIAEEAQQBiAEEAQgBwAEEARwBNAEEAWQBRAEIAMABBAEcAVQBBAEkAQQBCAHoAQQBHAEUAQQBiAFEAQgB3AEEARwB3AEEAWgBRAEIAegBBAEMASQBBAEMAZwBBAEsAQQBHAE0AQQBiAHcAQgB5AEEASABJAEEAWAB3AEIAdwBBAEcAdwBBAGIAdwBCADAAQQBGADgAQQBaAGcAQgBwAEEARwBJAEEAWgBRAEIAeQBBAEYAOABBAGQAQQBCADUAQQBIAEEAQQBaAFEAQgB6AEEAQwBBAEEAUABBAEEAdABBAEMAQQBBAGMAZwBCAGwAQQBHAEUAQQBaAEEAQgBmAEEARwBVAEEAZQBBAEIAagBBAEcAVQBBAGIAQQBBAG8AQQBDAEkAQQBMAGcAQQB2AEEARwBRAEEAWQBRAEIAMABBAEcARQBBAEwAdwBCAHoAQQBIAFEAQQBkAFEAQgBrAEEASABrAEEATABRAEEAeABBAEMAOABBAFoAZwBCAHAAQQBHAEkAQQBaAFEAQgB5AEEAQwAwAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHYAQQBHAFkAQQBhAFEAQgBpAEEARwBVAEEAYwBnAEIAMABBAEgAawBBAGMAQQBCAGwAQQBDADQAQQBlAEEAQgBzAEEASABNAEEAZQBBAEEAaQBBAEMAawBBAEkAQQBBAGwAQQBEADQAQQBKAFEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgBwAEEARwA0AEEAYgBnAEIAbABBAEgASQBBAFgAdwBCAHEAQQBHADgAQQBhAFEAQgB1AEEAQwBnAEEAYgBBAEIAbABBAEcAYwBBAGMAdwBBAHAAQQBDAEEAQQBKAFEAQQArAEEAQwBVAEEAQwBnAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEAWgBnAEIAcABBAEcAdwBBAGQAQQBCAGwAQQBIAEkAQQBLAEEAQgBwAEEARwA0AEEAWQB3AEIAcwBBAEgAVQBBAFoAQQBCAGwAQQBDAEEAQQBQAFEAQQA5AEEAQwBBAEEASQBnAEIAcABBAEcANABBAFkAdwBCAHMAQQBDAEkAQQBLAFEAQQBnAEEAQwBVAEEAUABnAEEAbABBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEcAMABBAGQAUQBCADAAQQBHAEUAQQBkAEEAQgBsAEEAQwBnAEEAZABBAEIAdgBBAEgAUQBBAFkAUQBCAHMAQQBDAEEAQQBJAEEAQQA5AEEAQwBBAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHgAQQBDAEEAQQBLAHcAQQBnAEEASABRAEEAZQBRAEIAdwBBAEcAVQBBAE0AZwBCAGgAQQBDAEEAQQBLAHcAQQBnAEEASABRAEEAZQBRAEIAdwBBAEcAVQBBAE0AZwBCAGgAQQBIAGcAQQBJAEEAQQByAEEAQwBBAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHkAQQBIAGcAQQBMAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAeABBAEMAQQBBAEkAQQBBADkAQQBDAGcAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAeABBAEMAQQBBAEwAdwBBAGcAQQBIAFEAQQBiAHcAQgAwAEEARwBFAEEAYgBBAEEAcABBAEMAbwBBAE0AUQBBAHcAQQBEAEEAQQBMAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAeQBBAEcARQBBAEkAQQBBADkAQQBDAGcAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAeQBBAEcARQBBAEkAQQBBAHYAQQBDAEEAQQBkAEEAQgB2AEEASABRAEEAWQBRAEIAcwBBAEMAawBBAEsAZwBBAHgAQQBEAEEAQQBNAEEAQQBzAEEAQwBBAEEAQwBnAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgAwAEEASABrAEEAYwBBAEIAbABBAEQASQBBAFkAUQBCADQAQQBEADAAQQBLAEEAQgAwAEEASABrAEEAYwBBAEIAbABBAEQASQBBAFkAUQBCADQAQQBDAEEAQQBMAHcAQQBnAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBBAHAAQQBDAG8AQQBNAFEAQQB3AEEARABBAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHkAQQBIAGcAQQBJAEEAQQA5AEEAQwBnAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHkAQQBIAGcAQQBJAEEAQQB2AEEAQwBBAEEAZABBAEIAdgBBAEgAUQBBAFkAUQBCAHMAQQBDAGsAQQBLAGcAQQB4AEEARABBAEEATQBBAEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBJAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwBZAEEAYQBRAEIAcwBBAEgAUQBBAFoAUQBCAHkAQQBDAGcAQQBkAEEAQgBwAEEARwAwAEEAWgBRAEIAdwBBAEcAOABBAGEAUQBCAHUAQQBIAFEAQQBJAEEAQQBsAEEARwBrAEEAYgBnAEEAbABBAEMAQQBBAFkAdwBBAG8AQQBEAEkAQQBMAEEAQQBnAEEARABNAEEASwBRAEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAEEAQgB3AEEARwB3AEEAZQBRAEIAeQBBAEQAbwBBAE8AZwBCAHoAQQBHAFUAQQBiAEEAQgBsAEEARwBNAEEAZABBAEEAbwBBAEgATQBBAGQAUQBCAGkAQQBHAG8AQQBaAFEAQgBqAEEASABRAEEATABBAEEAZwBBAEgAUQBBAGEAUQBCAHQAQQBHAFUAQQBjAEEAQgB2AEEARwBrAEEAYgBnAEIAMABBAEMAdwBBAEkAQQBCAHMAQQBHAFUAQQBaAHcAQQBzAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBBAHMAQQBDAEEAQQBkAEEAQgA1AEEASABBAEEAWgBRAEEAeABBAEQAbwBBAGQAQQBCADUAQQBIAEEAQQBaAFEAQQB5AEEASABnAEEASwBRAEEAZwBBAEMAVQBBAFAAZwBBAGwAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBIAEEAQQBhAFEAQgAyAEEARwA4AEEAZABBAEIAZgBBAEcAdwBBAGIAdwBCAHUAQQBHAGMAQQBaAFEAQgB5AEEAQwBnAEEAYgBnAEIAaABBAEcAMABBAFoAUQBCAHoAQQBGADgAQQBkAEEAQgB2AEEAQwBBAEEAUABRAEEAZwBBAEMASQBBAGQAQQBCADUAQQBIAEEAQQBaAFEAQQBpAEEAQwB3AEEASQBBAEIAMgBBAEcARQBBAGIAQQBCADEAQQBHAFUAQQBjAHcAQgBmAEEASABRAEEAYgB3AEEAZwBBAEQAMABBAEkAQQBBAGkAQQBIAEEAQQBaAFEAQgB5AEEARwBNAEEAWgBRAEIAdQBBAEgAUQBBAFkAUQBCAG4AQQBHAFUAQQBJAGcAQQBzAEEAQwBBAEEAWQB3AEIAdgBBAEcAdwBBAGMAdwBBAGcAQQBEADAAQQBJAEEAQgAwAEEASABrAEEAYwBBAEIAbABBAEQARQBBAE8AZwBCADAAQQBIAGsAQQBjAEEAQgBsAEEARABJAEEAZQBBAEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBiAFEAQgAxAEEASABRAEEAWQBRAEIAMABBAEcAVQBBAEsAQQBCADAAQQBHAGsAQQBiAFEAQgBsAEEASABBAEEAYgB3AEIAcABBAEcANABBAGQAQQBBAGcAQQBEADAAQQBJAEEAQgB3AEEARwBFAEEAYwB3AEIAMABBAEcAVQBBAE0AQQBBAG8AQQBDAEkAQQBkAEEAQQBpAEEAQwB3AEEASQBBAEIAMABBAEcAawBBAGIAUQBCAGwAQQBIAEEAQQBiAHcAQgBwAEEARwA0AEEAZABBAEEAcABBAEMAawBBAEkAQQBBAGwAQQBEADQAQQBKAFEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgB3AEEARwBrAEEAZABnAEIAdgBBAEgAUQBBAFgAdwBCADMAQQBHAGsAQQBaAEEAQgBsAEEASABJAEEASwBBAEIAdQBBAEcARQBBAGIAUQBCAGwAQQBIAE0AQQBYAHcAQgBtAEEASABJAEEAYgB3AEIAdABBAEMAQQBBAFAAUQBBAGcAQQBIAFEAQQBhAFEAQgB0AEEARwBVAEEAYwBBAEIAdgBBAEcAawBBAGIAZwBCADAAQQBDAHcAQQBJAEEAQgAyAEEARwBFAEEAYgBBAEIAMQBBAEcAVQBBAGMAdwBCAGYAQQBHAFkAQQBjAGcAQgB2AEEARwAwAEEASQBBAEEAOQBBAEMAQQBBAFkAdwBBAG8AQQBIAEEAQQBaAFEAQgB5AEEARwBNAEEAWgBRAEIAdQBBAEgAUQBBAFkAUQBCAG4AQQBHAFUAQQBMAEEAQQBnAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBBAHAAQQBDAGsAQQBJAEEAQQBsAEEARAA0AEEASgBRAEEASwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEcAMABBAGQAUQBCADAAQQBHAEUAQQBkAEEAQgBsAEEAQwBnAEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAGcAQQBEADAAQQBJAEEAQgBtAEEARwBFAEEAWQB3AEIAMABBAEcAOABBAGMAZwBBAG8AQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATABBAEEAZwBBAEcAdwBBAFoAUQBCADIAQQBHAFUAQQBiAEEAQgB6AEEAQwBBAEEAUABRAEEAZwBBAEcATQBBAEsAQQBBAGkAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATQBRAEEAaQBBAEMAdwBBAEkAQQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAGcAQgAwAEEASABrAEEAYwBBAEIAbABBAEQASQBBAFkAUQBBAGkAQQBDAHcAQQBJAEEAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBnAEIAMABBAEgAawBBAGMAQQBCAGwAQQBEAEkAQQBZAFEAQgA0AEEAQwBJAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGkAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEATQBnAEIANABBAEMASQBBAEsAUQBBAHMAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEAYgBBAEIAaABBAEcASQBBAFoAUQBCAHMAQQBIAE0AQQBJAEEAQQA5AEEAQwBBAEEAWQB3AEEAbwBBAEMASQBBAFYAQQBCADUAQQBIAEEAQQBaAFEAQQBnAEEARQBrAEEASQBnAEEAcwBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBJAEEAVgBBAEIANQBBAEgAQQBBAFoAUQBBAGcAQQBFAGsAQQBTAFEAQgBCAEEAQwBJAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBpAEEARgBRAEEAZQBRAEIAdwBBAEcAVQBBAEkAQQBCAEoAQQBFAGsAQQBRAFEAQgBZAEEAQwBJAEEATABBAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBpAEEARgBRAEEAZQBRAEIAdwBBAEcAVQBBAEkAQQBCAEoAQQBFAGsAQQBXAEEAQQBpAEEAQwBrAEEASwBRAEEAcABBAEMAQQBBAEoAUQBBACsAQQBDAFUAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAHcAQgBuAEEASABBAEEAYgBBAEIAdgBBAEgAUQBBAEsAQQBCAGgAQQBHAFUAQQBjAHcAQQBvAEEASABBAEEAWgBRAEIAeQBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBZAFEAQgBuAEEARwBVAEEAWAB3AEIAMABBAEQASQBBAEwAQQBBAGcAQQBIAEEAQQBaAFEAQgB5AEEARwBNAEEAWgBRAEIAdQBBAEgAUQBBAFkAUQBCAG4AQQBHAFUAQQBYAHcAQgAwAEEARABNAEEASwBRAEEAcABBAEMAQQBBAEsAdwBBAGcAQQBDAEEAQQBaAHcAQgBsAEEARwA4AEEAYgBRAEIAZgBBAEgAQQBBAGIAdwBCAHAAQQBHADQAQQBkAEEAQQBvAEEARwBFAEEAYgBBAEIAdwBBAEcAZwBBAFkAUQBBAGcAQQBEADAAQQBJAEEAQQB3AEEAQwA0AEEATgBBAEEAcwBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBZAHcAQgB2AEEARwB3AEEAYgB3AEIAeQBBAEMAQQBBAFAAUQBBAGcAQQBDAEkAQQBZAGcAQgBzAEEASABVAEEAWgBRAEEAaQBBAEMAawBBAEkAQQBBAHIAQQBDAEEAQQBDAGcAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBaAGcAQgBoAEEARwBNAEEAWgBRAEIAMABBAEYAOABBAGQAdwBCAHkAQQBHAEUAQQBjAEEAQQBvAEEASAA0AEEAZABBAEIANQBBAEgAQQBBAFoAUQBBAHMAQQBDAEEAQQBiAGcAQgBqAEEARwA4AEEAYgBBAEEAZwBBAEQAMABBAEkAQQBBAHkAQQBDAHcAQQBJAEEAQgB6AEEASABRAEEAYwBnAEIAcABBAEgAQQBBAEwAZwBCAHcAQQBHADgAQQBjAHcAQgBwAEEASABRAEEAYQBRAEIAdgBBAEcANABBAEkAQQBBADkAQQBDAEEAQQBJAGcAQgAwAEEARwA4AEEAYwBBAEEAaQBBAEMAawBBAEkAQQBBAGcAQQBDAHMAQQBDAGcAQQBLAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgB6AEEARwBNAEEAWQBRAEIAcwBBAEcAVQBBAFgAdwBCADQAQQBGADgAQQBZAHcAQgB2AEEARwA0AEEAZABBAEIAcABBAEcANABBAGQAUQBCAHYAQQBIAFUAQQBjAHcAQQBvAEEARwB3AEEAYQBRAEIAdABBAEcAawBBAGQAQQBCAHoAQQBDAEEAQQBQAFEAQQBnAEEARwBNAEEASwBBAEEAdwBBAEMAdwBBAEkAQQBBAHgAQQBEAEEAQQBNAEEAQQBwAEEAQwBrAEEASQBBAEEAcgBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGMAdwBCAGoAQQBHAEUAQQBiAEEAQgBsAEEARgA4AEEAZQBRAEIAZgBBAEcATQBBAGIAdwBCAHUAQQBIAFEAQQBhAFEAQgB1AEEASABVAEEAYgB3AEIAMQBBAEgATQBBAEsAQQBCAHMAQQBHAGsAQQBiAFEAQgBwAEEASABRAEEAYwB3AEEAZwBBAEQAMABBAEkAQQBCAGoAQQBDAGcAQQBNAEEAQQBzAEEAQwBBAEEATQBRAEEAdwBBAEQAQQBBAEsAUQBBAHAAQQBDAEEAQQBLAHcAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEARwBjAEEAWgBRAEIAdgBBAEcAMABBAFgAdwBCAGgAQQBHAEkAQQBiAEEAQgBwAEEARwA0AEEAWgBRAEEAbwBBAEcAawBBAGIAZwBCADAAQQBHAFUAQQBjAGcAQgBqAEEARwBVAEEAYwBBAEIAMABBAEMAQQBBAFAAUQBBAGcAQQBEAEEAQQBMAEEAQQBnAEEASABNAEEAYgBBAEIAdgBBAEgAQQBBAFoAUQBBAGcAQQBEADAAQQBJAEEAQQB4AEEAQwBrAEEASQBBAEEAcgBBAEMAQQBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAFoAQQBCAHAAQQBIAE0AQQBjAHcAQgBsAEEASABJAEEAZABBAEIAaABBAEgAUQBBAGEAUQBCAHYAQQBHADQAQQBYAHcAQgAwAEEARwBnAEEAWgBRAEIAdABBAEcAVQBBAEsAQQBBAHAAQQBDAEEAQQBLAHcAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEASABRAEEAYQBBAEIAbABBAEcAMABBAFoAUQBBAG8AQQBIAE0AQQBkAEEAQgB5AEEARwBrAEEAYwBBAEEAdQBBAEcASQBBAFkAUQBCAGoAQQBHAHMAQQBaAHcAQgB5AEEARwA4AEEAZABRAEIAdQBBAEcAUQBBAEkAQQBBADkAQQBDAEEAQQBaAFEAQgBzAEEARwBVAEEAYgBRAEIAbABBAEcANABBAGQAQQBCAGYAQQBHAEkAQQBiAEEAQgBoAEEARwA0AEEAYQB3AEEAbwBBAEMAawBBAEwAQQBBAGcAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEgAQQBBAFkAUQBCAHUAQQBHAFUAQQBiAEEAQQB1AEEARwBJAEEAYgB3AEIAeQBBAEcAUQBBAFoAUQBCAHkAQQBDAEEAQQBQAFEAQQBnAEEARwBVAEEAYgBBAEIAbABBAEcAMABBAFoAUQBCAHUAQQBIAFEAQQBYAHcAQgB5AEEARwBVAEEAWQB3AEIAMABBAEMAZwBBAFkAdwBCAHYAQQBHAHcAQQBiAHcAQgB5AEEAQwBBAEEAUABRAEEAZwBBAEMASQBBAFkAZwBCAHMAQQBHAEUAQQBZAHcAQgByAEEAQwBJAEEATABBAEEAZwBBAEcAWQBBAGEAUQBCAHMAQQBHAHcAQQBJAEEAQQA5AEEAQwBBAEEAVABnAEIAQgBBAEMAawBBAEsAUQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAEsAQQBBAG8AQQBDAGcAQgB3AEEARwB3AEEAYgB3AEIAMABBAEYAOABBAFoAdwBCAHkAQQBHAGsAQQBaAEEAQQBvAEEASABRAEEAYgB3AEIAMABBAEcARQBBAGIAQQBCAGYAQQBHAGcAQQBhAFEAQgB6AEEASABRAEEAYgB3AEIAbgBBAEgASQBBAFkAUQBCAHQAQQBDAHcAQQBJAEEAQgBqAEEARwA4AEEAYwBnAEIAeQBBAEYAOABBAGMAQQBCAHMAQQBHADgAQQBkAEEAQgBmAEEARwBZAEEAYQBRAEIAaQBBAEcAVQBBAGMAZwBCAGYAQQBIAFEAQQBlAFEAQgB3AEEARwBVAEEAYwB3AEEAcwBBAEMAQQBBAGIAZwBCAGoAQQBHADgAQQBiAEEAQQBnAEEARAAwAEEASQBBAEEAeABBAEMAdwBBAEkAQQBCAHkAQQBHAFUAQQBiAEEAQgBmAEEARwBnAEEAWgBRAEIAcABBAEcAYwBBAGEAQQBCADAAQQBIAE0AQQBJAEEAQQA5AEEAQwBBAEEAWQB3AEEAbwBBAEQARQBBAEwAQQBBAGcAQQBEAEkAQQBLAFEAQQBwAEEAQwBBAEEASwB3AEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEcAUQBBAGMAZwBCAGgAQQBIAGMAQQBYAHcAQgB3AEEARwB3AEEAYgB3AEIAMABBAEYAOABBAGIAQQBCAGgAQQBHAEkAQQBaAFEAQgBzAEEAQwBnAEEAYgBBAEIAaABBAEcASQBBAFoAUQBCAHMAQQBEADAAQQBZAHcAQQBvAEEAQwBJAEEAUQBRAEEAaQBBAEMAdwBBAEkAQQBBAGkAQQBFAEkAQQBJAGcAQQBwAEEAQwB3AEEAQwBnAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgA0AEEAQwBBAEEAUABRAEEAZwBBAEcATQBBAEsAQQBBAHcAQQBDADQAQQBNAEEAQQB5AEEAQwB3AEEASQBBAEEAdwBBAEMANABBAE0AQQBBAHkAQQBDAGsAQQBMAEEAQQBnAEEAQQBvAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBlAFEAQQBnAEEARAAwAEEASQBBAEIAagBBAEMAZwBBAE0AQQBBAHUAQQBEAGsAQQBPAEEAQQBzAEEAQwBBAEEATQBBAEEAdQBBAEQAWQBBAEsAUQBBAHMAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGEAQQBCAHEAQQBIAFUAQQBjAHcAQgAwAEEARAAwAEEATABnAEEAMQBBAEMAdwBBAEkAQQBCADIAQQBHAG8AQQBkAFEAQgB6AEEASABRAEEAUABRAEEAdQBBAEQAVQBBAEwAQQBBAGcAQQBBAG8AQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEASQBBAEEAZwBBAEMAQQBBAGMAdwBCAHAAQQBIAG8AQQBaAFEAQQBnAEEARAAwAEEASQBBAEIAcwBBAEcARQBBAFkAZwBCAGwAQQBHAHcAQQBMAGcAQgB6AEEARwBrAEEAZQBnAEIAbABBAEMAawBBAEMAZwBBAEsAQQBBAG8AQQBDAGcAQQBLAEEARwBBAEEAWQBBAEIAZwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
 ```
-
-
-
 ## Gene expression analysis
 
 ## Determination of protein abundance
 
 ## Statistics and data analysis
 
-
-
-
-
-
 TO DO:
 
-- For methods discussion, compare product length, efficiencies and ct values in relation to RQI-values. See Fleige 2006 for reference.
+-   For methods discussion, compare product length, efficiencies and ct
+    values in relation to RQI-values. See Fleige 2006 for reference.
 
-
-## Gene expression analysis 
+## Gene expression analysis
 
 ### Normalization
 
+-   An external reference gene was added at a constant amount in Trizol
+    preps
+-   A normalization factor was used to express relative target gene
+    abundance per-weight tissue.
+-   In qPCR the linearised expression (effectivety \^cq) was used to
+    express the fraction of external reference per total RNA.
+-   In RNA-seq the external reference gene was sequenced and counts were
+    used to express external RNA as a fraction of total RNA.
+-   In both cases the normalization factor was calculated as mw \*
+    counts.
 
-
-- An external reference gene was added at a constant amount in Trizol preps
-- A normalization factor was used to express relative target gene abundance per-weight tissue.
-- In qPCR the linearised expression (effectivety ^cq) was used to express the fraction of external reference per total RNA. 
-- In RNA-seq the external reference gene was sequenced and counts were used to express external RNA as a fraction of total RNA.
-- In both cases the normalization factor was calculated as mw * counts.
-
-A simulation to see that this is equivalent to tissue used in prep when no measurement errors exists.
+A simulation to see that this is equivalent to tissue used in prep when
+no measurement errors exists.
 
 ```{r}
 
@@ -386,5 +384,59 @@ expand_grid(mg = seq(from = 5, to = 100, by = 5),
 
 ```
 
+--\> \`\`\` \#\# Meta-analysis of within-session training volume
 
--->
+### Literature search, inclusion criteria and coding of studies
+
+A first set of studies were coded based previously published
+meta-analyses [@RN1767; @RN789]. For more recent studies, PubMed, Google
+Scholar and SportDiscuss searches were made with search terms being
+"training volume", "resistance training", "strength training", "set",
+"muscle strength", "muscle hypertrophy" used in different combinations.
+Studies examining the effect of within-session training volume on muscle
+strength and mass, with all other training variables kept constant
+between study groups were considered for inclusion in the meta-analysis.
+Studies were further assessed for inclusion based on criteria being; (i)
+participants described as healthy without medications affecting muscle
+metabolism, (ii) interventions lasting at least 6 weeks and (iii) RT
+performed without additional stimuli (e.g. blood flow restriction) at
+intensities above 65% of 1RM or 20RM.
+
+All available outcome measures of muscle mass and strength gains in
+response to RT were extracted from each study with exception of outcomes
+reported both as summaries and individual measures (e.g. muscle
+thickness reported as individual muscles and summarized for the whole
+muscle group). In such cases the summary was used as outcome. Weekly
+training volume was calculated as product of weekly sessions, number of
+sets and exercises for each muscle group assessed for muscle hypertrophy
+or strength gains. An intervention average of weekly sessions was used
+when the number of sessions per week differed over the course of the
+intervention. An exercise was assumed to influence an outcome when it
+targeted prime movers also assessed for strength or muscle hypertrophy
+measures. Participant characteristics were coded based on sex (male,
+female or mixed when a study failed to discern between male and
+females), age (young, middle-aged, old or mixed), body-mass index (BMI,
+calculated from average body mass and height when BMI values were not
+available), training status (trained, \> 1 session per week during the
+last 6 months leading up to the intervention; untrained \< 1 session).
+Study groups were considered independent also in studies utilizing
+within-participant models.
+
+### Calculations of effect sizes and statistical analysis
+
+Group-wise effect sizes were calculated for each outcome measure based
+on the within-group change score pre- to post-training divided by the
+pre-training standard deviation (SD). Pre-training SD's were calculated
+as a pooled SD within outcome and study. Variances of the effect size
+were calculated using an average effect size across all outcomes within
+muscle strength or mass, and correlations specific to each measurement
+type (isokinetic-, isometric- or repetition maximum strength tests;
+muscle thickness, magnetic resonance imaging, dual energy X‐ray
+absorptiometry) estimated from previous studies.\
+A correction factor () was applied to both effect sizes and their
+variances.
+
+Mixed-effects meta-regression models were used to model the effect of
+weekly number of sets on RT-induced muscle mass and strength gains.
+Models were fitted in a Bayesian framework using the brms-package
+[@RN2562].
