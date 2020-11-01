@@ -31,7 +31,7 @@ participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", s
 
 
 # Fat free mass 
-dxa <- dxa1 %>%
+dxa1 <- dxa1 %>%
         dplyr::select(subject, timepoint, L = lean.left_leg, R = lean.right_leg) %>%
         pivot_longer(names_to = "leg", values_to = "ffm", cols = L:R) %>%
         pivot_wider(names_from = timepoint, values_from = ffm) %>%
@@ -110,7 +110,7 @@ mr <- mr.results %>%
 
 
 # Full data sets for use in pre-post analysis
-rm <- read_excel("./data/study-1/strength/strengthTests.xlsx") %>%
+rm <- read_excel("./data/study-1/strength/strengthTests.xlsx", na = "NA") %>%
         filter(!(exercise %in% c("benchpress", "legcurl"))) %>%
         inner_join(participants) %>%
         filter(include == "incl") %>%
@@ -149,7 +149,7 @@ rm %>%
 
 # muscle size
 dxa.m1 <- lmer(change ~ sets + scale(pre) + sex + (1|subject), 
-               data = dxa)
+               data = dxa1)
 mr.m1 <- lmer(change ~ sets + scale(pre) + sex + (1|subject), 
                data = mr)
 
@@ -225,8 +225,8 @@ muscle_strength_fig <- comd.df %>%
                                             "s60", 
                                             "s120", 
                                             "s240"), 
-                                 labels = c("Cross sectional area", 
-                                            "Fat free mass", 
+                                 labels = c("Cross sectional area (MRI)", 
+                                            "Fat free mass (DXA)", 
                                             "Knee-extension 1RM", 
                                             "Leg-press 1RM", 
                                             "Knee extension isometric torque<br>(60&deg;)", 
@@ -243,6 +243,7 @@ muscle_strength_fig <- comd.df %>%
         geom_errorbarh(aes(xmin = lwr, xmax = upr), height = 0.2) +
         geom_point() +
         scale_x_continuous(limits = c(-2.5, 15), 
+                           expand = c(0, 0),
                            breaks = c(-2.5, 0, 2.5, 5, 7.5, 10, 12.5, 15), 
                            labels = c("", 0, "", 5, "", 10, "", 15)) +
         labs(x = "Difference between volume conditions (%MOD - %LOW &#x00B1;95%CI)") +
