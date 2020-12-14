@@ -4,8 +4,24 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
+Systematic physical exercise with the purpose to improve health or develop functional capacity has a long history, dating back to ancient Greek. Todays exercise-training prescription still bears traces of ideas from this era, further developed during renaissance, formalized in systems like Ling gymnastics
+[@RN2636]<!-- Ling 1834 gymnastikens grunder -->
+from which twentieth century exercise prescription developed
+[@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
+With the introduction of heavy-resistance exercises for the muscle mass and strength after injury, DeLorme outlined a system on which modern exercise-prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
+In contrast to previous recommendation
+[@RN2634],<!-- Nicoll 1943 -->
+DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance as opposed to endurance-like exercise where progression was to be achieved through increased number of repetitions
+[@RN2634].<!-- Nicoll 1943 -->
+
+
+[@RN2632].<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
+
+
 
 ## Functional and morphological adaptations to resistance training
+
+
 
 ### Muscle hypertrophy
 A well characterized response to systematic resistance training in humans is muscle growth. 
@@ -22,7 +38,7 @@ PMID:158694 Reduced mitochondrial density per fiber area in reponse to RT
 
 ## Effects of resistance exercise volume on muscle strength and mass
 Precise exercise-training^[Exercise is herein defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. Resistance-exercise is defined as an acute strength-promoting program requiring the neuromuscular system to exert force against resistance. Resistance training is defined as a long-term process of multiple resistance exercise-sessions performed over a defined period of time.]
-prescription gives information on exercises, their sequential order, intensity and volume at which exercises should be performed, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
+prescription gives information on exercises, their sequential order, intensity and volume, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
 [@RN789].<!-- Bird designing resistance training programs -->
 By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
 The relative importance of exercise-training variables for training outcomes has been examined in numerous studies including (but not limited to) the overall organization of exercise sessions,
@@ -110,6 +126,18 @@ The study contained an additional training condition (low intensity, 30% of 1RM 
 No significant differences were reported between volume conditions for muscle mass or strength gains [@RN834].
 However, the analyses were performed without taking the correlation between individuals into account due to the mixed design [@RN834].
 No attempts were made to relate any measured characteristic to differences in responses.
+
+
+
+[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
+
+
+
+
+
+
+
+
 
 
 ## Ribosomal biogenesis 
