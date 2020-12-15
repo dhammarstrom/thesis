@@ -4,6 +4,7 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
+## Exercise prescription
 Systematic physical exercise with the purpose to improve health or physical performance has been shown to be part of many early civilizations
 [@RN2640]<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like Ling gymnastics during the nineteenth century 
@@ -21,16 +22,17 @@ DeLorme originally prescribed sessions of up to 100 repetitions performed in set
 [@RN2641; <!-- DeLorme 1948 Technics of progressive resistance exercise -->
 @RN2639]. 
 
+## Adaptations to resistance training
+
+### Muscle hypertrophy and strength
+A well characterized response to systematic resistance training in humans is muscle growth. On the whole muscle level, resistance training can be expected to result in increases of 6-9% 
+
+[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
 
 
-## Functional and morphological adaptations to resistance training
+On the muscle fiber level 
 
-
-
-### Muscle hypertrophy
-A well characterized response to systematic resistance training in humans is muscle growth. 
-
-
+### Muscle fiber-type transitions
 
 ### Mitochondrial function
 
@@ -40,7 +42,7 @@ Fiber type distributions do not predict muscle mitochondrial density in enduranc
 
 PMID:158694 Reduced mitochondrial density per fiber area in reponse to RT
 
-## Effects of resistance exercise volume on muscle strength and mass
+## Effects of exercise prescription on muscle mass and strength
 Precise exercise-training^[Exercise is herein defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. Resistance-exercise is defined as an acute strength-promoting program requiring the neuromuscular system to exert force against resistance. Resistance training is defined as a long-term process of multiple resistance exercise-sessions performed over a defined period of time.]
 prescription gives information on exercises, their sequential order, intensity and volume, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
 [@RN789].<!-- Bird designing resistance training programs -->
@@ -67,6 +69,7 @@ similarly to effects of training volume on muscle growth
 [@RN1767;
 @RN789].
 
+### Effects of resistance exercise volume on muscle strength and mass
 Exercise volume can be prescribed as the within session number of sets performed per muscle group. This unit is practical as it comparable between individuals and muscle groups [@RN2130].<!-- Baz-Valle 2018 sets per exercise better than mechanical load times rep or total work -->
 Berger conducted an early study concerning effects of resistance exercise volume with the goal to determine what method most efficiently produced strength gains (in healthy young males) [@RN1476]. Berger compared one, two and three sets performed with two, six or ten repetition maximum (RM) in the bench press, three times per week, over twelve weeks. As the combined effect of three sets per session was superior regardless of the number of repetitions performed Berger concluded in favor of three sets. This conclusion was later challenged on the basis of data interpretation
 [@RN794;<!-- Carpenelli and Otto questions the analysis-->
@@ -131,20 +134,17 @@ No significant differences were reported between volume conditions for muscle ma
 However, the analyses were performed without taking the correlation between individuals into account due to the mixed design [@RN834].
 No attempts were made to relate any measured characteristic to differences in responses.
 
+## Molecular determinants of training-induced muscle hypertrophy
+
+Muscle mass change as a consequence of muscle protein synthesis and breakdown. When a net positive balance is achieved the muscle increase in mass. Resistance exercise leads ta acute blunting of muscle protein synthesis followed by an increase over resting levels in the post exercise period
+<!-- Dreyer 10.1113/jphysiol.2006.113175 -->
+<!-- Philips 1997? -->.
+<!-- 
+The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
+[@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
 
 
-[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
-
-
-
-
-
-
-
-
-
-
-## Ribosomal biogenesis 
+### Ribosomal biogenesis 
 
 [@RN2563] <!-- Lin 2007 Phosphorylation at Ser389 is needed for interaction with SL1, but ser584 do not, non of these phosphorylation sites leads to location to nucleolar   -->
 [@RN2602]<!-- UBF is a target for cyclin d1 and cyclin E NIH 3T3 fibroblasts,Mutation of Ser484 impairs rDNA transcription  -->
@@ -152,8 +152,7 @@ No attempts were made to relate any measured characteristic to differences in re
 [@RN2604]<!-- Stefanovsky 2001 ERK inhibition through MEK specifik inhibitor blocks EGF induced rRNA transcription in vitro. Direct Raf activation -> ERK activity stimulated rRNA transcription. UBF is a target of ERK signalling  -->
 
 
-## Transcriptional regulation of muscle mass
-
+### Transcriptional regulation of muscle mass
 
 [@RN2618]<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
 
@@ -166,24 +165,6 @@ No attempts were made to relate any measured characteristic to differences in re
 
 
 
-
-
-
-
-
-## Effects of resistance training and resistance training volume on muscle molecular characteristics
-
-Training leads to changes 
-
-## The relationship between muscle mass and strength
-
-## Molecular determinants of training-induced muscle hypertrophy
-Muscle mass change as a consequence of muscle protein synthesis and breakdown. When a net positive balance is achieved the muscle increase in mass. Resistance exercise leads ta acute blunting of muscle protein synthesis followed by an increase over resting levels in the post exercise period
-<!-- Dreyer 10.1113/jphysiol.2006.113175 -->
-<!-- Philips 1997? -->.
-<!-- 
-The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
-[@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
 
 <!-- 
 Also in humans, administration of rapamycin, hindering the activity of mTOR leads to an abolished exercise-induced increase in protein synthesis
