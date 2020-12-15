@@ -82,6 +82,8 @@
 \usepackage{changepage}
 
 
+
+
 \renewcommand\boldsymbol[1]{\pmb{#1}}
 
  \DeclareFixedFont{\timesEightteen}{\encodingdefault}{\sfdefault}{\seriesdefault}{\shapedefault}{17\p@}
@@ -502,3 +504,7 @@ Distributor: Gymnastik- och idtrottsh\"{o}gskolan  %name of department
 \newcommand{\Dedication}[1]{\def\@Dedication{#1}}
 \newcommand{\Preface}[1]{\def\@Preface{#1}}
 % End of CII add
+
+
+
+

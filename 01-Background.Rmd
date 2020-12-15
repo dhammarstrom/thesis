@@ -4,18 +4,22 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
-Systematic physical exercise with the purpose to improve health or develop functional capacity has a long history, dating back to ancient Greek. Todays exercise-training prescription still bears traces of ideas from this era, further developed during renaissance, formalized in systems like Ling gymnastics
+Systematic physical exercise with the purpose to improve health or physical performance has been shown to be part of many early civilizations
+[@RN2640]<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
+Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like Ling gymnastics during the nineteenth century 
 [@RN2636]<!-- Ling 1834 gymnastikens grunder -->
-from which twentieth century exercise prescription developed
+which in turn is referenced in twentieth century texts on exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
-With the introduction of heavy-resistance exercises for the muscle mass and strength after injury, DeLorme outlined a system on which modern exercise-prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
+With the introduction of heavy-resistance exercises for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-training (RT) exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
 In contrast to previous recommendation
 [@RN2634],<!-- Nicoll 1943 -->
-DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance as opposed to endurance-like exercise where progression was to be achieved through increased number of repetitions
+DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance as opposed to endurance-like exercise where progression was achieved through increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
-
-
+The concept of repetition maximum (RM) as a way of prescribing and individual dosage and monitoring progress was introduced from case reports [@RN2633] and verified as a efficient way of improwing muscular strength
 [@RN2632].<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
+DeLorme originally prescribed sessions of up to 100 repetitions performed in sets of 10 [@RN2633] but later revised this recommendation to three sets of 10 repetitions performed with increasing intensities
+[@RN2641; <!-- DeLorme 1948 Technics of progressive resistance exercise -->
+@RN2639]. 
 
 
 
