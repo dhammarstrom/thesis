@@ -5,22 +5,45 @@ source("./R/libraries.R"); source("./R/themes.R")
 ```
 
 ## Exercise prescription
-Systematic physical exercise with the purpose to improve health or physical performance has been shown to be part of many early civilizations
-[@RN2640]<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
+Systematic physical exercise with the purpose to improve health or physical performance has been documented in many early civilizations
+[@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like Ling gymnastics during the nineteenth century 
-[@RN2636]<!-- Ling 1834 gymnastikens grunder -->
+[@RN2636],<!-- Ling 1834 gymnastikens grunder -->
 which in turn is referenced in twentieth century texts on exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
 With the introduction of heavy-resistance exercises for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-training (RT) exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
-In contrast to previous recommendation
-[@RN2634],<!-- Nicoll 1943 -->
-DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance as opposed to endurance-like exercise where progression was achieved through increased number of repetitions
+Inspired by practitioners of weight training [@RN2639],<!-- Todd 2012 DeLorme biography --> 
+DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendation of endurance-like exercise where progression was achieved through increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
-The concept of repetition maximum (RM) as a way of prescribing and individual dosage and monitoring progress was introduced from case reports [@RN2633] and verified as a efficient way of improwing muscular strength
-[@RN2632].<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
-DeLorme originally prescribed sessions of up to 100 repetitions performed in sets of 10 [@RN2633] but later revised this recommendation to three sets of 10 repetitions performed with increasing intensities
+The concept of repetition maximum as a way of prescribing an individual dosage and monitoring progress was introduced by DeLorme [@RN2633].
+DeLorme originally prescribed sessions of up to 100 repetitions performed in sets of 10 repetitions [@RN2633] but later revised this recommendation to three sets of 10 repetitions performed with increasing intensities
 [@RN2641; <!-- DeLorme 1948 Technics of progressive resistance exercise -->
-@RN2639]. 
+@RN2639].
+Scientific inquiries into prescription of resistance training from the first part of the twentieth century concerned its therapeutic use
+[e.g. @RN2633;<!-- DeLorme case report -->
+@RN2646]<!-- DeLorme controlled trial of RT vs. traditional conservative (low-resistance) treatment -->
+but also came to be introduced as a means of improving strength and physical performance in healthy populations
+[e.g. @RN2632;<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
+@RN2644; <!-- Chui 1950 Effect of strength training vs. control on physical performance in college stud -->
+@RN2642]. <!-- Capen 1950 Effect of strength training in college stud.   -->
+
+Scientific contributions soon moved from questions regarding the effectiveness of resistance training *per se* to comparing outcomes from different modes of resistance training 
+[@RN2645;<!-- Hettinger 1953 comparing different loading patterns for isometric RT--> 
+@RN1477;<!-- Capen 1956 Four different variations on the DeLorme system -->
+@RN1472;<!-- Berger 1962 effect of varied weight training program on strength -->
+@RN2659;<!-- Berger 1965 Increased %of 1RM increases strength gains -->
+@RN2658;<!-- Berger 1967 Supra-maximal efforts (max of each rep) more efficient than 10RM loads   -->
+@RN2656].<!-- O'Shea 1966 3 sets of 10, 5 or 3 reps on muscle strength and girth squat -->
+A vocabulary for resistance exercise-training developed through these investigations and parallell practice
+the introduction of repetition maximum by DeLorme being one example. These established as modern definitions of exercise variables enabling precise prescription of training loads for a variety of populations and training goals
+[@RN2537<!-- Fleck & Kraemer 2014 Textbook ch 5 : based on a needs analysis acute variables are selected   -->
+@RN798].<!-- Bird 2005: Acute training variables leads to different training outcomes -->
+Although this development started after the second world war, resistance training was not part of general exercise guidelines until much later.
+The American College of Sports Medicine position statement on exercise for healthy individuals from 1978 [@RN2655]<!-- ACSM 1978 guidelines -->
+primarily concerned physical fitness in terms of cardio-respiratory fitness.
+The updated 1990 statement 
+
+
 
 ## Adaptations to resistance training
 
