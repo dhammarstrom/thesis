@@ -4,14 +4,15 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
-## Exercise prescription
-Systematic physical exercise with the purpose to improve health or physical performance has been documented in many early civilizations
+## Resistance-exercise prescription, a brief historical note and current challenges
+Recommendation of systematic physical exercise with the purpose to improve health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
-Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like Ling gymnastics during the nineteenth century 
-[@RN2636],<!-- Ling 1834 gymnastikens grunder -->
-which in turn is referenced in twentieth century texts on exercise prescription
+Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
+[@RN2663].<!-- Pfister 2003 describes differences and common ancestry of gymnastics and sports during 1700-1800 -->
+Especially Ling gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the then current physiological and medical understanding [@RN2663].
+Development of a medical gymnastics during the nineteenth century in turn is referenced in twentieth century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
-With the introduction of heavy-resistance exercises for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-training (RT) exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
+With the introduction of heavy-resistance exercises for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-training exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM,  -->
 Inspired by practitioners of weight training [@RN2639],<!-- Todd 2012 DeLorme biography --> 
 DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendation of endurance-like exercise where progression was achieved through increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
@@ -34,26 +35,48 @@ Scientific contributions soon moved from questions regarding the effectiveness o
 @RN2659;<!-- Berger 1965 Increased %of 1RM increases strength gains -->
 @RN2658;<!-- Berger 1967 Supra-maximal efforts (max of each rep) more efficient than 10RM loads   -->
 @RN2656].<!-- O'Shea 1966 3 sets of 10, 5 or 3 reps on muscle strength and girth squat -->
-A vocabulary for resistance exercise-training developed through these investigations and parallell practice
-the introduction of repetition maximum by DeLorme being one example. These established as modern definitions of exercise variables enabling precise prescription of training loads for a variety of populations and training goals
+A vocabulary for resistance exercise-training developed through these investigations and parallell practice,
+the introduction of repetition maximum by DeLorme being one example. These concepts established as modern definitions of exercise variables enabling precise prescription of training loads for a variety of populations and training goals
 [@RN2537<!-- Fleck & Kraemer 2014 Textbook ch 5 : based on a needs analysis acute variables are selected   -->
 @RN798].<!-- Bird 2005: Acute training variables leads to different training outcomes -->
 Although this development started after the second world war, resistance training was not part of general exercise guidelines until much later.
-The American College of Sports Medicine position statement on exercise for healthy individuals from 1978 [@RN2655]<!-- ACSM 1978 guidelines -->
+The American College of Sports Medicine (ACSM) position statement on exercise for healthy individuals from 1978 [@RN2655]<!-- ACSM 1978 guidelines -->
 primarily concerned physical fitness in terms of cardio-respiratory fitness.
-The updated 1990 statement 
+Since the updated 1990 ACSM statement, resistance training is recommended to be included as part of a sensible, general training program [@RN2654].<!-- ACSM 1990 guidelines --> 
+The introduction of resistance-training as part of the ACSM recommendation also marks the start of specific recommendations on resistance training being part of other consensus statements
+[@RN2666, Ch. 2].<!-- Physical Activity and Health: A Report of the Surgeon General provides an overview of recommendation guidelines evolution  -->
+Consequently, informed by epidemiological data, the most recent general guidelines for physical activity do include resistance training [@RN2667].<!-- WHO guidelines -->
 
-
+As pointed out by e.g. O'Shea, who stated that "[t]he problem [regarding resistance-exercise prescription] is to find the program that is most productive for a particular situation or individual"
+[@RN2656].<!-- O'Shea 1966 -->
+Modern exercise science has adopted two basic approaches to address this issue. By exploring effects of different variations of resistance training (reviewed below) in different populations one hope to further increase effectiveness in specific target groups. A second approach has been to further investigate the individual perspective by relating e.g. genotype to training responses
+[@RN1263].<!-- Pescatello review of the famuss data set -->
+The observed interindividual variation in responses to standardized exercise programs
+[@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
+@RN1741]<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
+is indeed intriguing but does provide limited information regarding exercise prescription for a given individual.
+By manipulating exercise variables in within-participant models we could potentially further our understanding of whom would benefit from a specific manipulation in addition to exploring possible mechanism behind such variability.
 
 ## Adaptations to resistance training
 
 ### Muscle hypertrophy and strength
-A well characterized response to systematic resistance training in humans is muscle growth. On the whole muscle level, resistance training can be expected to result in increases of 6-9% 
+A well characterized response to systematic resistance training in humans is muscle growth. In healthy, untrained individuals regardless of age, resistance training can be expected to result in increases of ~ 5-20% when training is conducted over two weeks to 6 months
+[@RN1741; <!-- Ahtianen -->
+@RN346;<!-- Wernbom  -->
+@RN764].<!-- Hubal 2005 elbow flexor 18.9% increase -->
+Responses can be expected to be more pronounced in upper- compared to the lower-body muscles
+[@RN346]<!-- Wernbom  -->
+
+
+[@RN752]<!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
+
+[@RN2669]<!-- Straight 2020 muscle fiber size increases with RT, in midlle age old, age inversely related to training effects -->
+
 
 [@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
 
+[@RN1710]<!-- Straight 2015 resistance training increases muscle power in middle age and older adults, training volume influences the magnitude of change -->
 
-On the muscle fiber level 
 
 ### Muscle fiber-type transitions
 
