@@ -11,6 +11,7 @@ editor_options:
 
 ```{r libs, echo=FALSE, warning=FALSE, message=FALSE}
 source("./R/libraries.R")
+source("./R/themes.R")
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
@@ -330,12 +331,14 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875499/
 
 ### Total RNA extraction
 ```{r rna-muscle-weight}
+
+# Descriptive data on total RNA extractions from both studies
+
 study1_sample <- read_excel("./data/study-1/sample_weight.xlsx") %>%
   mutate(rna = (conc1.5 * 5) * elution.volume, 
          sample = paste(subject, leg, timepoint, sep = "_")) %>%
   dplyr::select(sample, weight, rna) %>%
-    mutate(study = "Study1") %>%
-  print()
+    mutate(study = "Study1") 
 
 
 complete_sample <- readRDS("./data/derivedData/study-2/tot-rna.RDS") %>%
@@ -345,13 +348,11 @@ complete_sample <- readRDS("./data/derivedData/study-2/tot-rna.RDS") %>%
   summarise(weight = mean(tissue_weight, na.rm = TRUE), 
             rna = mean(rna, na.rm = TRUE)) %>%
   mutate(study = "Study2") %>%
-  rbind(study1_sample) %>%
-  
-  print()
+  rbind(study1_sample) 
 
 ## Calculate mean weights and rna per weight ##
 
-complete_sample %>%
+desc_to_rna <- complete_sample %>%
   group_by(study) %>%
   summarise(m.weight = mean(weight, na.rm = TRUE), 
             s.weight = sd(weight, na.rm = TRUE), 
@@ -361,20 +362,80 @@ complete_sample %>%
 
 
 
+## Figure on RNA descriptives
+
+rna_fig_a <- complete_sample %>%
+  ggplot(aes(weight, rna, fill = study)) + 
+  geom_point(shape = 21, alpha = 0.2) +
+    scale_x_continuous(limits = c(0, 80), 
+                     expand = c(0,0), 
+                     breaks = c(0, 20, 40, 60, 80)) +
+      scale_y_continuous(limits = c(0, 25000), 
+                     expand = c(0,0), 
+                     breaks = c(0, 5000, 10000, 15000, 20000, 25000)) +
+  dissertation_theme() + 
+  theme(axis.title.x = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.line.x = element_blank(), 
+        axis.ticks.x = element_blank(), 
+        legend.position = "none") + 
+  labs(y = "RNA (ng)")
+
+
+rna_fig_b <- complete_sample %>%
+  ggplot(aes(weight, fill = study)) + geom_histogram() +
+  facet_grid(study ~ .) +
+  dissertation_theme() + 
+  scale_x_continuous(limits = c(0, 80), 
+                     expand = c(0,0), 
+                     breaks = c(0, 20, 40, 60, 80)) +
+  theme(legend.position = "none", 
+        strip.background = element_blank(),
+        strip.text = element_blank()) +
+
+  labs(y = "Counts", 
+       x = "Weight (mg)")
+
+plot_grid(rna_fig_a, rna_fig_b,
+          ncol = 1,
+         rel_heights = c(1, 0.75), 
+         align = "v", 
+         axis = "trbl")
+
+
+
+### Calculate RNA per tissue at baseline
+
 complete_sample %>%
-  ggplot(aes(weight, rna, color = study)) + geom_point() 
+  separate(sample, into = c("subject", "leg", "timepoint")) %>%
+  filter(timepoint %in% c("S0", "w0")) %>%
+  mutate(rna_corrected = if_else(study == "Study1", rna * 1.125, rna)) %>%
+  lmer(rna ~ study + weight + (1|subject),
+      
+      data = .) %>%
+  summary()
+  
+  ggplot(aes(rna_corrected / weight, fill = study)) + geom_histogram()
+  
+  
+  group_by(study) %>%
+  summarise(rna_weight = mean(rna/weight), 
+            rna_corrected = mean(rna_corrected/weight)) %>%
+  print()
+
+
 
 
 ```
 
 
 
-Total-RNA was extracted from pre-weighed, frozen muscle samples using a protocol modified from
+Total-RNA was extracted from pre-weighed, frozen muscle samples with a protocol modified from
 [@RN2672]<!-- Chomczynski and Sacchi -->
 using Trizol reagent (Life Technologies).
-Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption achieved using Zirconium Oxide Beads (0.5 mm, Next Advance, Inc., New York, USA) and a bead mill (Bullet blender, Next Advance). External, non-mammalian RNA (Lambda PolyA External Standard Kit, Takara Bio Europe, Saint-Germain-en-Laye, France) was added with the initial volume of Trizol to enable per-weight normalization in subsequent analyses. After homogenization, additional Trizol was added to a total volume of \SI{1}{ml}. Phase separation was achieved by centrifugation after addition of chloroform (\SI{200}{ul}). The upper phase (\SI{400}{ul} in Study I; \SI{450}{ul} in Study II) was transferred to a fresh tube and RNA was precipitated using isopropanol (\SI{500}{ul}). After incubation (10 min, room-temperature) and centrifugation (12000 g, 10 min at 4$^{\circ}$C) the resulting RNA pellet was washed in chilled 75% ethanol.
+Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption achieved by Zirconium Oxide Beads (0.5 mm, Next Advance, Inc., New York, USA) and a bead mill (Bullet blender, Next Advance). External, non-mammalian RNA (Lambda PolyA External Standard Kit, Takara Bio Europe, Saint-Germain-en-Laye, France) was added with the initial volume of Trizol to enable per-weight normalization in subsequent analyses. After homogenization, additional Trizol was added to a total volume of \SI{1}{ml}. Phase separation was achieved by centrifugation after addition of chloroform (\SI{200}{ul}). The upper phase (\SI{400}{ul} in Study I; \SI{450}{ul} in Study II) was transferred to a fresh tube and RNA was precipitated using isopropanol (\SI{500}{ul}). After incubation (10 min, room-temperature) and centrifugation (12000 g, 10 min at 4$^{\circ}$C) the resulting RNA pellet was washed three times in chilled 75% ethanol.
 
-As mentioned above, to minimize discomfort with a larger number of biopsies sampled over a short time in Study II, a smaller needle was used. This generally led to a less tissue used for RNA extractions.
+As previously mentioned, to minimize discomfort with a larger number of biopsies sampled over a short time, a smaller needle was used for most biopsies in Study II. This generally led to a less tissue used for RNA extractions (Figure XX).  
 
 
 
