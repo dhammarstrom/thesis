@@ -1,6 +1,6 @@
-I.  **Hammarstr&ouml;m D**, &Oslash;fsteng S, Koll L, Hanestadhaugen M, Hollan I, Apr&oacute; W, Blomstrand E, R&oslash;nnestad B, Ellefsen S  Benefits of higher resistance-training volume are related to ribosome biogenesis. The *Journal of physiology*. 2020;598(3):543-65.
+I.  **Hammarstr&ouml;m D**, &Oslash;fsteng S, Koll L, Hanestadhaugen M, Hollan I, Apr&oacute; W, Blomstrand E, R&oslash;nnestad B, Ellefsen S  Benefits of higher resistance-training volume are related to ribosome biogenesis. The *Journal of physiology*. 2020 Feb;598(3):543-565. doi: 10.1113/JP278455.
 
-II. Khan Y, **Hammarstr&ouml;m D**, R&oslash;nnestad B, Ellefsen S, Ahmad R Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline. *Submitted.* 
+II. Khan Y, **Hammarstr&ouml;m D**, R&oslash;nnestad B, Ellefsen S, Ahmad R Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline. *BMC Bioinformatics*. 2020 Nov 30;21(1):548. doi: 10.1186/s12859-020-03866-y
 
 III. **Hammarstr&ouml;m D**, &Oslash;fsteng S, Jacobsen N, Flobergseter K, R&oslash;nnestad B, Ellefsen S Ribosome accumulation during early phase resistance training. *Manuscript*
 <!--

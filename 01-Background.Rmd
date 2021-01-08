@@ -53,27 +53,34 @@ The introduction of resistance-training as part of the ACSM recommendation also 
 [@RN2666, Ch. 2].<!-- Physical Activity and Health: A Report of the Surgeon General provides an overview of recommendation guidelines evolution  -->
 Consequently, informed by epidemiological data, the most recent general guidelines for physical activity do include resistance training [@RN2667].<!-- WHO guidelines -->
 
-It could be argued that the above account reflects the fact that development of common understandings of *why* and *how* to exercise are influenced by societal norms and historic events such as nationalism in the nineteenth century or war injuries in the twentieth century
+It could be argued that the above account reflects the fact that development of common understandings of *why* and *how to* exercise are influenced by societal norms and historic events such as the search of national identity in the nineteenth century or war injuries in the twentieth century
 [@RN2663;
 @RN2639].
 A current influence on exercise science is the development of cheap techniques to collect large amount of biological data, something that could be exemplified with the continuously decreasing cost of a sequenced human genome
 [@Wetterstrand2020].
-The development of such molecular techniques has enabled efforts to describe mechanisms by which training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of large scale efforts to develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked [@RN2678]. 
-Advanced biomedical technologies are enablers of this enterprise and the quest to individualize exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
+The development of such molecular techniques has enabled efforts to describe mechanisms by which training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of a large scale effort to develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked [@RN2678]. 
+Advances in bio-medical technologies are enablers of this enterprise and the quest to individualize exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
 [@RN2678;<!-- MToPAC explicitly stating diagnostics is a goal -->
 @RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
-Results from standardized progressive resistance training programs are highly variable
+A challenge facing this enterprise is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized progressive resistance training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes from negative to (-11%) to impressively large (+59%)
 [@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
 @RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
-This is true for both increases in strength and muscle mass. 
+By relating such variations to genetic material (DNA)
+[@RN1263],<!-- Pescatello review of the famuss data set -->
+and messenger RNA (mRNA) profiles
+[@RN826;<!-- Thalacker-Mercer, Cluster analysis, non-responders pro-inflammatory mRNA profile at baseline -->
+@RN2684]<!-- Stokes  -->
+we are beginning to gain knowledge about the genetic influence on training responses.
 
-
+ 
+[@RN2683]<!-- Transcriptome is associated with epigentic changes in response to RE -->
+Although successful attempts to exploit genetic information in training prescription has been made
+[@RN2685],<!-- Jones 2016 mismatch between gene/ex prescription leads to worse outcome than matched -->  
 
 As pointed out by e.g. O'Shea, who stated that "[t]he problem [regarding progressive resistance-exercise prescription] is to find the program that is most productive for a particular situation or individual"
 [@RN2656].<!-- O'Shea 1966 -->
 Although this evidently 
-Modern exercise science has adopted two basic approaches to address this issue. By exploring effects of different variations of resistance training (reviewed below) in different populations one hope to further increase effectiveness in specific target groups. A second approach has been to further investigate the individual perspective by relating e.g. genotypes to training responses
-[@RN1263].<!-- Pescatello review of the famuss data set -->
+Modern exercise science has adopted two basic approaches to address this issue. By exploring effects of different variations of resistance training (reviewed below) in different populations one hope to further increase effectiveness in specific target groups. A second approach has been to further investigate the individual perspective by relating e.g. 
 The observed interindividual variation in responses to standardized exercise programs
 
 is indeed intriguing but does provide limited information regarding exercise prescription for a given individual.

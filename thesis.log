@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.15)  17 DEC 2020 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.15)  8 JAN 2021 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,14 +930,6 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rot@float@box=\box105
 \rot@mess@toks=\toks39
 )
-(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip80
-\fb@frw=\dimen263
-\fb@frh=\dimen264
-\FrameRule=\dimen265
-\FrameSep=\dimen266
-)
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine
 .sty
 File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
@@ -950,29 +942,29 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 )
 \c@DefaultLines=\count332
 \c@DefaultDepth=\count333
-\DefaultFindent=\dimen267
-\DefaultNindent=\dimen268
-\DefaultSlope=\dimen269
-\DiscardVskip=\dimen270
+\DefaultFindent=\dimen263
+\DefaultNindent=\dimen264
+\DefaultSlope=\dimen265
+\DiscardVskip=\dimen266
 \L@lbox=\box106
 \L@tbox=\box107
 \c@L@lines=\count334
 \c@L@depth=\count335
-\L@Pindent=\dimen271
-\L@Findent=\dimen272
-\L@Nindent=\dimen273
-\L@lraise=\dimen274
-\L@first=\dimen275
-\L@next=\dimen276
-\L@slope=\dimen277
-\L@height=\dimen278
-\L@novskip=\dimen279
-\L@target@ht=\dimen280
-\L@target@dp=\dimen281
-\L@target@tht=\dimen282
-\LettrineWidth=\dimen283
-\LettrineHeight=\dimen284
-\LettrineDepth=\dimen285
+\L@Pindent=\dimen267
+\L@Findent=\dimen268
+\L@Nindent=\dimen269
+\L@lraise=\dimen270
+\L@first=\dimen271
+\L@next=\dimen272
+\L@slope=\dimen273
+\L@height=\dimen274
+\L@novskip=\dimen275
+\L@target@ht=\dimen276
+\L@target@dp=\dimen277
+\L@target@tht=\dimen278
+\LettrineWidth=\dimen279
+\LettrineHeight=\dimen280
+\LettrineDepth=\dimen281
 \Llist@everypar=\toks40
 Loading lettrine.cfg
 
@@ -980,26 +972,26 @@ Loading lettrine.cfg
 .cfg)) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/arra
 y.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen286
+\col@sep=\dimen282
 \ar@mcellbox=\box108
-\extrarowheight=\dimen287
+\extrarowheight=\dimen283
 \NC@list=\toks41
-\extratabsurround=\skip81
-\backup@length=\skip82
+\extratabsurround=\skip80
+\backup@length=\skip81
 \ar@cellbox=\box109
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
 .sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip83
+\multirow@colwidth=\skip82
 \multirow@cntb=\count336
-\multirow@dima=\skip84
-\bigstrutjot=\dimen288
+\multirow@dima=\skip83
+\bigstrutjot=\dimen284
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
 ty
-\wrapoverhang=\dimen289
-\WF@size=\dimen290
+\wrapoverhang=\dimen285
+\WF@size=\dimen286
 \c@WF@wrappedlines=\count337
 \WF@box=\box110
 \WF@everypar=\toks42
@@ -1009,7 +1001,7 @@ Package: wrapfig 2003/01/31  v 3.6
 .sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks43
-\minrowclearance=\skip85
+\minrowclearance=\skip84
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsca
 pe.sty
@@ -1028,8 +1020,8 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box111
 \sift@deathcycles=\count338
-\@vwid@loff=\dimen291
-\@vwid@roff=\dimen292
+\@vwid@loff=\dimen287
+\@vwid@roff=\dimen288
 )
 \c@taburow=\count339
 \tabu@nbcols=\count340
@@ -1037,22 +1029,22 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count342
 \tabu@alloc=\count343
 \tabu@nested=\count344
-\tabu@target=\dimen293
-\tabu@spreadtarget=\dimen294
-\tabu@naturalX=\dimen295
-\tabucolX=\dimen296
-\tabu@Xsum=\dimen297
-\extrarowdepth=\dimen298
-\abovetabulinesep=\dimen299
-\belowtabulinesep=\dimen300
-\tabustrutrule=\dimen301
+\tabu@target=\dimen289
+\tabu@spreadtarget=\dimen290
+\tabu@naturalX=\dimen291
+\tabucolX=\dimen292
+\tabu@Xsum=\dimen293
+\extrarowdepth=\dimen294
+\abovetabulinesep=\dimen295
+\belowtabulinesep=\dimen296
+\tabustrutrule=\dimen297
 \tabu@thebody=\toks44
 \tabu@footnotes=\toks45
 \tabu@box=\box112
 \tabu@arstrutbox=\box113
 \tabu@hleads=\box114
 \tabu@vleads=\box115
-\tabu@cellskip=\skip86
+\tabu@cellskip=\skip85
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
 reeparttable.sty
@@ -1071,23 +1063,23 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 aces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip87
+\TPTL@width=\skip86
 ) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box117
 \UL@hyphenbox=\box118
-\UL@skip=\skip88
+\UL@skip=\skip87
 \UL@hook=\toks46
-\UL@height=\dimen302
+\UL@height=\dimen298
 \UL@pe=\count345
-\UL@pixel=\dimen303
+\UL@pixel=\dimen299
 \ULC@box=\box119
 Package: ulem 2019/11/18
-\ULdepth=\dimen304
+\ULdepth=\dimen300
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
 .sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen305
+\rotheadsize=\dimen301
 \c@nlinenum=\count346
 \TeXr@lab=\toks47
 )
@@ -1116,7 +1108,7 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box121
-\l__siunitx_tmp_dim=\dimen306
+\l__siunitx_tmp_dim=\dimen302
 \l__siunitx_tmp_int=\count348
 \l__siunitx_number_mantissa_length_int=\count349
 \l__siunitx_number_uncert_length_int=\count350
@@ -1129,8 +1121,8 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_group_min_int=\count357
 \l__siunitx_angle_marker_box=\box122
 \l__siunitx_angle_unit_box=\box123
-\l__siunitx_angle_marker_dim=\dimen307
-\l__siunitx_angle_unit_dim=\dimen308
+\l__siunitx_angle_marker_dim=\dimen303
+\l__siunitx_angle_unit_dim=\dimen304
 \l__siunitx_unit_int=\count358
 \l__siunitx_unit_denominator_int=\count359
 \l__siunitx_unit_numerator_int=\count360
@@ -1138,74 +1130,74 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_unit_prefix_base_int=\count362
 \l__siunitx_unit_prefix_gram_int=\count363
 \l__siunitx_number_product_int=\count364
-\c__siunitx_one_fill_skip=\skip89
-\l__siunitx_table_unit_align_skip=\skip90
-\l__siunitx_table_exponent_dim=\dimen309
-\l__siunitx_table_integer_dim=\dimen310
-\l__siunitx_table_mantissa_dim=\dimen311
-\l__siunitx_table_marker_dim=\dimen312
-\l__siunitx_table_result_dim=\dimen313
-\l__siunitx_table_uncert_dim=\dimen314
-\l__siunitx_table_fill_pre_dim=\dimen315
-\l__siunitx_table_fill_post_dim=\dimen316
-\l__siunitx_table_fill_mid_dim=\dimen317
+\c__siunitx_one_fill_skip=\skip88
+\l__siunitx_table_unit_align_skip=\skip89
+\l__siunitx_table_exponent_dim=\dimen305
+\l__siunitx_table_integer_dim=\dimen306
+\l__siunitx_table_mantissa_dim=\dimen307
+\l__siunitx_table_marker_dim=\dimen308
+\l__siunitx_table_result_dim=\dimen309
+\l__siunitx_table_uncert_dim=\dimen310
+\l__siunitx_table_fill_pre_dim=\dimen311
+\l__siunitx_table_fill_post_dim=\dimen312
+\l__siunitx_table_fill_mid_dim=\dimen313
 \l__siunitx_table_pre_box=\box124
 \l__siunitx_table_post_box=\box125
 \l__siunitx_table_mantissa_box=\box126
 \l__siunitx_table_result_box=\box127
-\l__siunitx_table_number_align_skip=\skip91
-\l__siunitx_table_text_align_skip=\skip92
+\l__siunitx_table_number_align_skip=\skip90
+\l__siunitx_table_text_align_skip=\skip91
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/transl
 ator.sty
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ))
-\cslhangindent=\skip93
-\csllabelwidth=\skip94
+\cslhangindent=\skip92
+\csllabelwidth=\skip93
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count365
 \calc@Bcount=\count366
-\calc@Adimen=\dimen318
-\calc@Bdimen=\dimen319
-\calc@Askip=\skip95
-\calc@Bskip=\skip96
+\calc@Adimen=\dimen314
+\calc@Bdimen=\dimen315
+\calc@Askip=\skip94
+\calc@Bskip=\skip95
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count367
-\calc@Cskip=\skip97
+\calc@Cskip=\skip96
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
 1.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 251.
-LaTeX Font Info:    ... okay on input line 251.
-LaTeX Info: Redefining \microtypecontext on input line 251.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Info: Redefining \microtypecontext on input line 211.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 251.
+LaTeX Info: Redefining \showhyphens on input line 211.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1251,8 +1243,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen320
-\caption@adjustwidth@linewidth=\dimen321
+\caption@adjustwidth@hsize=\dimen316
+\caption@adjustwidth@linewidth=\dimen317
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1265,7 +1257,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 251.
+Package hyperref Info: Link coloring OFF on input line 211.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -1281,9 +1273,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count368
 )
-LaTeX Info: Redefining \ref on input line 251.
-LaTeX Info: Redefining \pageref on input line 251.
-LaTeX Info: Redefining \nameref on input line 251.
+LaTeX Info: Redefining \ref on input line 211.
+LaTeX Info: Redefining \pageref on input line 211.
+LaTeX Info: Redefining \nameref on input line 211.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1298,47 +1290,47 @@ ator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-51.
+11.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-51.
+11.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-251.
+211.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-251.
+211.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 251.
+(Font)              <10> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 251.
+(Font)              <7.4> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 251.
+(Font)              <6> on input line 211.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-51.
+11.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.
 cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.
 cfg
@@ -1348,13 +1340,13 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 21
 1.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-251.
+211.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1363,7 +1355,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-251.
+211.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1372,17 +1364,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 262.
+(Font)              <12> on input line 222.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 262.
+(Font)              <9> on input line 222.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 262.
+(Font)              <7> on input line 222.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
 [1
 Non-PDF special ignored!
 <special> !% Reed College LaTeX Thesis Class 2001/12/04 SN
@@ -1405,72 +1397,72 @@ o.pdf>
 (epstopdf)                    size: 25458 bytes
 (epstopdf)             Command: <repstopdf --outfile=artwork//eng_logoGIH_tryck
 -eps-converted-to.pdf artwork//eng_logoGIH_tryck.eps>
-(epstopdf)             \includegraphics on input line 262.
+(epstopdf)             \includegraphics on input line 222.
 Package epstopdf Info: Output file is already uptodate.
-<artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=147, 675.52374pt x 191.716
+<artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=151, 675.52374pt x 191.716
 25pt>
 File: artwork//eng_logoGIH_tryck-eps-converted-to.pdf Graphic file (type pdf)
 <use artwork//eng_logoGIH_tryck-eps-converted-to.pdf>
 Package pdftex.def Info: artwork//eng_logoGIH_tryck-eps-converted-to.pdf  used 
-on input line 262.
+on input line 222.
 (pdftex.def)             Requested size: 170.71652pt x 48.44965pt.
 
-Underfull \hbox (badness 4353) in paragraph at lines 262--262
+Underfull \hbox (badness 4353) in paragraph at lines 222--222
 \T1/lmr/m/n/24.88 (+20) Determinants of intra-individual
  []
 
 [3 <./artwork//eng_logoGIH_tryck-eps-converted-to.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-62.
+22.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--296
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
 
  []
 
@@ -1478,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--296
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-98.
+58.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1521,7 +1513,7 @@ Chapter 1.
 Package lettrine.sty Info: Targeted height = 35.26949pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 35.26964pt (S);
-(lettrine.sty)             reported on input line 336.
+(lettrine.sty)             reported on input line 296.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1534,9 +1526,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [3
 
-] [4]
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[5]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-48.
+24.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1545,344 +1543,194 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 453.
+(Font)              <8> on input line 429.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 453.
+(Font)              <5> on input line 429.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 453.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 453.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 22.48878pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[5] [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[7]
+Underfull \vbox (badness 2941) has occurred while \output is active []
 
-[7] [8]
+[8] [9] [10
+
+]
 Chapter 3.
-[9
-
-] [10
+[11] [12
 
 ]
 Chapter 4.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 589--589
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 565--565
 [] [] 
  []
 
 
-Overfull \hbox (47.39523pt too wide) in paragraph at lines 592--615
+Overfull \hbox (47.39523pt too wide) in paragraph at lines 568--591
  [][] 
  []
 
-[11] [12] [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[14] [15]
-<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=371, 469.755pt x 325.215pt
+[13] [14] [15] [16] [17]
+<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=384, 469.755pt x 325.215pt
 >
 File: thesis_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/unnamed-chunk-1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-1-1.pdf  used 
-on input line 816.
+on input line 770.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (114.0944pt too wide) in paragraph at lines 816--817
+Overfull \hbox (114.0944pt too wide) in paragraph at lines 770--771
 [] 
  []
 
+[18 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>] [19] [20
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[16 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>] [17] [18]
+]
 Chapter 5.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 891--891
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 846--846
 [] [] 
  []
 
-<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=395, 361.35pt x 216.81pt>
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=409, 361.35pt x 216.81pt>
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 949.
+nput line 904.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 
-Overfull \hbox (5.68967pt too wide) in paragraph at lines 949--950
+Overfull \hbox (5.68967pt too wide) in paragraph at lines 904--905
  [][] 
  []
 
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 953--953
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 908--908
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19
-
-] [20] [21 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [22
+[21] [22] [23 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [24
 
 ]
 Chapter 6.
-[23] [24
+[25] [26
 
-] [25] [26
+] [27] [28
 
 ]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 988--990
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 943--945
  [][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 991--994
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 946--949
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 995--998
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 950--953
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 999--1002
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 954--957
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1003--1006
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 958--961
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1007--1010
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 962--965
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1011--1014
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 966--969
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1015--1018
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 970--973
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1019--1022
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 974--977
  [][][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[27
+[29
 
 ]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 978--981
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1027--1030
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 982--985
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1031--1034
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 986--989
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1035--1038
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 990--993
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1039--1042
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 994--997
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1043--1046
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 998--1001
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1047--1050
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1002--1005
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1051--1054
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1006--1009
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1055--1058
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1010--1013
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1059--1062
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1014--1017
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1063--1066
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[28]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1067--1070
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1071--1074
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1075--1078
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1079--1082
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1083--1086
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1087--1090
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1091--1094
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1095--1098
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1099--1102
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1103--1106
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1107--1110
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1111--1114
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1115--1118
- [][][] [] 
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 1121--1121
-[]\T1/lmr/m/n/10 (+20) Delorme TL, West FE, Shriber WJ. IN-FLU-ENCE OF PROGRESS
-IVE-
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1119--1122
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[29]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1123--1126
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1127--1130
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1131--1134
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1135--1138
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1139--1142
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1143--1146
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1147--1150
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1151--1154
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1155--1158
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1159--1162
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1163--1166
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1167--1170
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1171--1174
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1018--1021
  [][][] [] 
  []
 
@@ -1890,57 +1738,78 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1171--1174
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [30]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1175--1178
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1022--1025
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1179--1182
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1026--1029
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1183--1186
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1030--1033
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1187--1190
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1034--1037
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1191--1194
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1038--1041
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1195--1198
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1042--1045
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1199--1202
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1046--1049
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1203--1206
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1050--1053
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1207--1210
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1054--1057
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1211--1214
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1058--1061
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1215--1218
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1062--1065
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1066--1069
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1070--1073
+ [][][] [] 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 1076--1076
+[]\T1/lmr/m/n/10 (+20) Delorme TL, West FE, Shriber WJ. IN-FLU-ENCE OF PROGRESS
+IVE-
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1074--1077
  [][][] [] 
  []
 
@@ -1948,57 +1817,67 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1215--1218
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [31]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1219--1222
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1078--1081
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1223--1226
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1082--1085
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1227--1230
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1086--1089
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1231--1234
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1090--1093
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1235--1238
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1094--1097
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1239--1242
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1098--1101
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1243--1246
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1102--1105
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1247--1250
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1106--1109
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1251--1254
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1110--1113
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1255--1258
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1114--1117
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1259--1262
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1118--1121
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1122--1125
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1126--1129
  [][][] [] 
  []
 
@@ -2006,57 +1885,57 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1259--1262
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [32]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1263--1266
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1130--1133
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1267--1270
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1134--1137
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1271--1274
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1138--1141
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1275--1278
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1142--1145
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1279--1282
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1146--1149
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1283--1286
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1150--1153
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1287--1290
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1154--1157
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1291--1294
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1158--1161
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1295--1298
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1162--1165
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1299--1302
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1166--1169
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1303--1306
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1170--1173
  [][][] [] 
  []
 
@@ -2064,57 +1943,57 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1303--1306
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [33]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1307--1310
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1174--1177
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1311--1314
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1178--1181
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1315--1318
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1182--1185
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1319--1322
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1186--1189
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1323--1326
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1190--1193
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1327--1330
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1194--1197
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1331--1334
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1198--1201
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1335--1338
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1202--1205
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1339--1342
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1206--1209
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1343--1346
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1210--1213
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1347--1350
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1214--1217
  [][][] [] 
  []
 
@@ -2122,41 +2001,157 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1347--1350
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [34]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1351--1354
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1218--1221
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1355--1358
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1222--1225
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1359--1362
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1226--1229
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1363--1366
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1230--1233
  [][][] [] 
  []
 
-[35] (./thesis.aux)
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1234--1237
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1238--1241
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1242--1245
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1246--1249
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1250--1253
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1254--1257
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1258--1261
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[35]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1262--1265
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1266--1269
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1270--1273
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1274--1277
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1278--1281
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1282--1285
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1286--1289
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1290--1293
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1294--1297
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1298--1301
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1302--1305
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1306--1309
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1310--1313
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1314--1317
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1318--1321
+ [][][] [] 
+ []
+
+[37] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4D3FB2343361265813F52C0977CDAAE6;2641.
+(rerunfilecheck)             Checksum: 3C1CB6E34FB044DA452F8BBDC34A31FE;2738.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33597pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 19682 strings out of 481331
- 345328 string characters out of 5916143
- 744881 words of memory out of 5000000
- 35499 multiletter control sequences out of 15000+600000
- 586991 words of font info for 325 fonts, out of 8000000 for 9000
+ 19604 strings out of 481331
+ 344332 string characters out of 5916143
+ 742899 words of memory out of 5000000
+ 35413 multiletter control sequences out of 15000+600000
+ 587475 words of font info for 329 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 122i,13n,124p,632b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,13n,124p,981b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
 enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athsy.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
@@ -2179,10 +2174,10 @@ sers/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss17.pfb
 10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmsy7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
 lic/lm/lmtt10.pfb>
-Output written on thesis.pdf (51 pages, 482995 bytes).
+Output written on thesis.pdf (53 pages, 485924 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 222 named destinations out of 1000 (max. 500000)
- 121624 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 226 named destinations out of 1000 (max. 500000)
+ 121632 words of extra memory for PDF output out of 128383 (max. 10000000)
 

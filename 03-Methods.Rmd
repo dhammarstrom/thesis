@@ -396,35 +396,35 @@ rna_fig_b <- complete_sample %>%
   labs(y = "Counts", 
        x = "Weight (mg)")
 
-plot_grid(rna_fig_a, rna_fig_b,
-          ncol = 1,
-         rel_heights = c(1, 0.75), 
-         align = "v", 
-         axis = "trbl")
-
+# plot_grid(rna_fig_a, rna_fig_b,
+#           ncol = 1,
+#          rel_heights = c(1, 0.75), 
+#          align = "v", 
+#          axis = "trbl")
+# 
 
 
 ### Calculate RNA per tissue at baseline
-
-complete_sample %>%
-  separate(sample, into = c("subject", "leg", "timepoint")) %>%
-  filter(timepoint %in% c("S0", "w0")) %>%
-  mutate(rna_corrected = if_else(study == "Study1", rna * 1.125, rna)) %>%
-  lmer(rna ~ study + weight + (1|subject),
-      
-      data = .) %>%
-  summary()
-  
-  ggplot(aes(rna_corrected / weight, fill = study)) + geom_histogram()
-  
-  
-  group_by(study) %>%
-  summarise(rna_weight = mean(rna/weight), 
-            rna_corrected = mean(rna_corrected/weight)) %>%
-  print()
-
-
-
+# 
+# complete_sample %>%
+#   separate(sample, into = c("subject", "leg", "timepoint")) %>%
+#   filter(timepoint %in% c("S0", "w0")) %>%
+#   mutate(rna_corrected = if_else(study == "Study1", rna * 1.125, rna)) %>%
+#   lmer(rna ~ study + weight + (1|subject),
+#       
+#       data = .) %>%
+#   summary()
+#   
+#   ggplot(aes(rna_corrected / weight, fill = study)) + geom_histogram()
+#   
+#   
+#   group_by(study) %>%
+#   summarise(rna_weight = mean(rna/weight), 
+#             rna_corrected = mean(rna_corrected/weight)) %>%
+#   print()
+# 
+# 
+# 
 
 ```
 
