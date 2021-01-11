@@ -4,20 +4,21 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
-## Resistance-exercise prescription, a brief historical note and current challenges
-Recommendation of systematic physical exercise with the purpose to improve health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
+## Progressive resistance exercise prescription, a brief historical note and current challenges
+Recommendations of systematic physical exercise with the purpose to improve health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bears traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
 [@RN2663].<!-- Pfister 2003 describes differences and common ancestry of gymnastics and sports during 1700-1800 -->
 Especially Ling gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the then current physiological and medical understanding [@RN2663].
 Development of a medical gymnastics during the nineteenth century in turn is referenced in twentieth century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
+
 With the introduction of "heavy resistance exercises" for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-training exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM -->
 DeLorme published his system short after the Second World War [@RN2633]
-during which he, as a newly graduated physician, had been working with rehabilitation of war injuries
+during which he, as a newly graduated physician, had been working with war injury rehabilitation
 [@RN2639]<!-- Todd 2012 DeLorme biography -->.
 Inspired by practitioners of weight training [@RN2639],<!-- Todd 2012 DeLorme biography --> 
-DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendation of endurance-like exercise where progression was achieved through increased number of repetitions
+DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendations of endurance-like exercise where progression was achieved through increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
 DeLorme originally used the term "heavy resistance exercises" in contrasts to low-resistance exercises [@RN2633], but as this could be perceived as exercises performed only with heavy weights, the system was renamed *progressive resistance exercise* to better reflect the method
 [@RN2641].<!-- DeLorme and Watkins 1948 -->
@@ -56,24 +57,36 @@ Consequently, informed by epidemiological data, the most recent general guidelin
 It could be argued that the above account reflects the fact that development of common understandings of *why* and *how to* exercise are influenced by societal norms and historic events such as the search of national identity in the nineteenth century or war injuries in the twentieth century
 [@RN2663;
 @RN2639].
-A current influence on exercise science is the development of cheap techniques to collect large amount of biological data, something that could be exemplified with the continuously decreasing cost of a sequenced human genome
-[@Wetterstrand2020].
-The development of such molecular techniques has enabled efforts to describe mechanisms by which training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of a large scale effort to develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked [@RN2678]. 
-Advances in bio-medical technologies are enablers of this enterprise and the quest to individualize exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
+The development of such molecular techniques has enabled efforts to describe mechanisms by which training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of a large scale effort to explicitly develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked [@RN2678]. 
+Advances in bio-medical technologies are enablers of this enterprise and the quest to *individualize* exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
 [@RN2678;<!-- MToPAC explicitly stating diagnostics is a goal -->
 @RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
-A challenge facing this enterprise is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized progressive resistance training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes from negative to (-11%) to impressively large (+59%)
+
+A challenge facing this enterprise is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized progressive resistance training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes varies from negative to (-11%) to impressively large (+59%)
 [@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
 @RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
-By relating such variations to genetic material (DNA)
+By relating such variations to individuals genome (DNA)
 [@RN1263],<!-- Pescatello review of the famuss data set -->
 and messenger RNA (mRNA) profiles
 [@RN826;<!-- Thalacker-Mercer, Cluster analysis, non-responders pro-inflammatory mRNA profile at baseline -->
-@RN2684]<!-- Stokes  -->
+@RN2684]<!-- Stokes co-relation between mRNA profiles and LMM changes  -->
 we are beginning to gain knowledge about the genetic influence on training responses.
 
- 
-[@RN2683]<!-- Transcriptome is associated with epigentic changes in response to RE -->
+The rise of data intensive techniques also highlights the complexity associated with "molecular exercise prescription". In simplistic terms, genetic information is transferred from DNA to RNA through transcription and from RNA to protein through translation. This flow of information, known as the central dogma of molecular biology
+[@RN2692]<!-- Crick 1970 central dogma of molecular biology -->
+indicates a deterministic role of DNA in controlling the characteristics of an organism. It is however apparent that the transcription of specific genes are under tight control of several mechanisms including a group of non-genetic modifications to the DNA-protein organization of each cell known as epigenetic modifications
+[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes -->
+@RN2691].<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
+Such control determines gene expression in response to progressive resistance training with modifications persisting after a period of de-training
+[@RN2683;<!-- Transcriptome is associated with epigentic changes in response to RE -->
+@RN2012].<!-- Seaborn 2018 epigenetic changes persist after de-training, epigenetic memory of training -->
+Regulation of gene expression is thus related to modifiable variables such as exercise and diet
+[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes -->
+@RN2691;<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
+@RN2694;<!-- Yoshie 2020 13 mo old mice have epigenetic changes in skm due to childhood diet -->
+@RN2695]<!-- Godfrey 2016 review childhood environmental conditions affects epigenetics -->
+linking environmental factors to the complexity of gene expression.
+
 Although successful attempts to exploit genetic information in training prescription has been made
 [@RN2685],<!-- Jones 2016 mismatch between gene/ex prescription leads to worse outcome than matched -->  
 
