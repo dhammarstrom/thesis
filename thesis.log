@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.15)  18 JAN 2021 08:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.19)  19 JAN 2021 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-07> xparse <2020-03-03> (./gihclass.cls
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03> (./gihclass.cls
 Document Class: gihclass 2019/01/05 GIH thesis class
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
@@ -27,8 +27,8 @@ File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr
 .sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
 \f@nch@O@erh=\skip51
@@ -360,10 +360,10 @@ LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/10/27 3.51 The Babel package
+Package: babel 2020/12/16 3.52 The Babel package
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/10/27 3.51 Babel common definitions
+File: babel.def 2020/12/16 3.52 Babel common definitions
 \babel@savecnt=\count292
 \U@D=\dimen171
 \l@babelnohyphens=\language3
@@ -552,7 +552,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/nomencl/nomencl.s
 ty
-Package: nomencl 2020/03/01 v5.4 Nomenclature package
+Package: nomencl 2020/12/29 v5.5 Nomenclature package
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.s
 ty
@@ -671,8 +671,8 @@ Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
 \scr@dte@tocline@numberwidth=\skip68
 \scr@dte@tocline@numbox=\box98
 )
-Package tocbasic Info: setting babel extension for `nlo' on input line 179.
-Package tocbasic Info: setting babel extension for `nls' on input line 180.
+Package tocbasic Info: setting babel extension for `nlo' on input line 187.
+Package tocbasic Info: setting babel extension for `nls' on input line 188.
 \nomlabelwidth=\dimen187
 \nom@tempdim=\dimen188
 \nomitemsep=\skip69
@@ -982,7 +982,7 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 )
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
 .sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+Package: multirow 2021/01/02 v2.6 Span multiple rows of a table
 \multirow@colwidth=\skip82
 \multirow@cntb=\count336
 \multirow@dima=\skip83
@@ -1087,11 +1087,11 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 ty
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.st
 y
-Package: expl3 2020-12-07 L3 programming layer (loader) 
+Package: expl3 2021-01-09 L3 programming layer (loader) 
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
 nd-pdftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count347
 \l__pdf_internal_box=\box120
 ))
@@ -1399,7 +1399,7 @@ o.pdf>
 -eps-converted-to.pdf artwork//eng_logoGIH_tryck.eps>
 (epstopdf)             \includegraphics on input line 222.
 Package epstopdf Info: Output file is already uptodate.
-<artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=151, 675.52374pt x 191.716
+<artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=171, 675.52374pt x 191.716
 25pt>
 File: artwork//eng_logoGIH_tryck-eps-converted-to.pdf Graphic file (type pdf)
 <use artwork//eng_logoGIH_tryck-eps-converted-to.pdf>
@@ -1533,14 +1533,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 22.48878pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
 [5]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-45.
+51.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1549,577 +1551,238 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 450.
+(Font)              <8> on input line 456.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 450.
+(Font)              <5> on input line 456.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 450.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 456.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 450.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 456.
+[6]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
+
+[7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[6] [7]
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
+
+[9] [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8] [9] [10
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
+
+[11] [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[14] [15] [16
 
 ]
 Chapter 3.
-[11] [12
+[17] [18
 
 ]
 Chapter 4.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 586--586
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 737--737
 [] [] 
  []
 
 
-Overfull \hbox (47.39523pt too wide) in paragraph at lines 589--612
+Overfull \hbox (47.39523pt too wide) in paragraph at lines 740--763
  [][] 
  []
 
-[13] [14] [15] [16] [17]
-<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=384, 469.755pt x 325.215pt
+[19] [20]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
+
+[21] [22] [23]
+<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=441, 469.755pt x 325.215pt
 >
 File: thesis_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/unnamed-chunk-1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-1-1.pdf  used 
-on input line 791.
+on input line 942.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (114.0944pt too wide) in paragraph at lines 791--792
+Overfull \hbox (114.0944pt too wide) in paragraph at lines 942--943
 [] 
  []
 
-[18 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>] [19] [20
+[24 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>] [25] [26
 
 ]
 Chapter 5.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 867--867
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1018--1018
 [] [] 
  []
 
-<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=409, 361.35pt x 216.81pt>
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=466, 361.35pt x 216.81pt>
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 925.
+nput line 1076.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 
-Overfull \hbox (5.68967pt too wide) in paragraph at lines 925--926
+Overfull \hbox (5.68967pt too wide) in paragraph at lines 1076--1077
  [][] 
  []
 
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 929--929
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1080--1080
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21] [22] [23 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [24
+[27] [28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
+
+[29 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [30
 
 ]
 Chapter 6.
-[25] [26
+[31] [32
 
-] [27] [28
+] [33] [34
 
 ]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 964--966
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1115--1117
  [][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 967--970
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1118--1121
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 971--974
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1122--1125
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 975--978
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1126--1129
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 979--982
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1130--1133
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 983--986
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1134--1137
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 987--990
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1138--1141
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 991--994
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1142--1145
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 995--998
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1146--1149
  [][][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[29
+[35
 
 ]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 999--1002
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1150--1153
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1003--1006
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1154--1157
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1007--1010
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1158--1161
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1011--1014
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1162--1165
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1015--1018
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1166--1169
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1019--1022
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1170--1173
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1174--1177
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1027--1030
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1178--1181
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1031--1034
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1182--1185
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1035--1038
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1186--1189
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1039--1042
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[30]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1043--1046
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1047--1050
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1051--1054
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1055--1058
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1059--1062
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1063--1066
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1067--1070
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1071--1074
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1075--1078
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1079--1082
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1083--1086
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1087--1090
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1091--1094
- [][][] [] 
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 1097--1097
-[]\T1/lmr/m/n/10 (+20) Delorme TL, West FE, Shriber WJ. IN-FLU-ENCE OF PROGRESS
-IVE-
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1095--1098
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[31]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1099--1102
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1103--1106
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1107--1110
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1111--1114
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1115--1118
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1119--1122
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1123--1126
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1127--1130
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1131--1134
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1135--1138
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1139--1142
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1143--1146
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1147--1150
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[32]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1151--1154
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1155--1158
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1159--1162
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1163--1166
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1167--1170
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1171--1174
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1175--1178
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1179--1182
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1183--1186
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1187--1190
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1191--1194
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1195--1198
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1199--1202
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[33]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1203--1206
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1207--1210
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1211--1214
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1215--1218
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1219--1222
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1223--1226
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1227--1230
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1231--1234
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1235--1238
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1239--1242
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1243--1246
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[34]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1247--1250
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1251--1254
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1255--1258
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1259--1262
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1263--1266
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1267--1270
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1271--1274
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1275--1278
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1279--1282
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1283--1286
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1287--1290
- [][][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[35]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1291--1294
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1295--1298
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1299--1302
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1303--1306
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1307--1310
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1311--1314
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1315--1318
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1319--1322
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1323--1326
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1327--1330
- [][][] [] 
- []
-
-
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1331--1334
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1190--1193
  [][][] [] 
  []
 
@@ -2127,52 +1790,78 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1331--1334
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [36]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1335--1338
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1194--1197
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1339--1342
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1198--1201
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1343--1346
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1202--1205
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1347--1350
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1206--1209
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1351--1354
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1210--1213
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1355--1358
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1214--1217
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1359--1362
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1218--1221
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1363--1366
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1222--1225
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1367--1370
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1226--1229
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1371--1374
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1230--1233
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1234--1237
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1238--1241
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1242--1245
+ [][][] [] 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 1248--1248
+[]\T1/lmr/m/n/10 (+20) Delorme TL, West FE, Shriber WJ. IN-FLU-ENCE OF PROGRESS
+IVE-
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1246--1249
  [][][] [] 
  []
 
@@ -2180,82 +1869,828 @@ Overfull \hbox (46.67598pt too wide) in paragraph at lines 1371--1374
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [37]
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1375--1378
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1250--1253
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1379--1382
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1254--1257
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1383--1386
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1258--1261
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1387--1390
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1262--1265
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1391--1394
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1266--1269
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1395--1398
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1270--1273
  [][][] [] 
  []
 
 
-Overfull \hbox (46.67598pt too wide) in paragraph at lines 1399--1402
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1274--1277
  [][][] [] 
  []
 
-[38] (./thesis.aux)
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 36CAAFA13BF24295DB8227108DFF53A8;2750.
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1278--1281
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1282--1285
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1286--1289
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1290--1293
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1294--1297
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1298--1301
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[38]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1302--1305
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1306--1309
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1310--1313
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1314--1317
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1318--1321
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1322--1325
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1326--1329
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1330--1333
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1334--1337
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1338--1341
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1342--1345
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1346--1349
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1350--1353
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1354--1357
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[39]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1358--1361
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1362--1365
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1366--1369
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1370--1373
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1374--1377
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1378--1381
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1382--1385
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1386--1389
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1390--1393
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1394--1397
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1398--1401
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1402--1405
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1406--1409
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1410--1413
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1414--1417
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1418--1421
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1422--1425
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1426--1429
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1430--1433
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1434--1437
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1438--1441
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1442--1445
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1446--1449
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1450--1453
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1454--1457
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1458--1461
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1462--1465
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1466--1469
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1470--1473
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1474--1477
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1478--1481
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1482--1485
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1486--1489
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[42]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1490--1493
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1494--1497
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1498--1501
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1502--1505
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1506--1509
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1510--1513
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1514--1517
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1518--1521
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1522--1525
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1526--1529
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1530--1533
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[43]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1534--1537
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1538--1541
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1542--1545
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1546--1549
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1550--1553
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1554--1557
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1558--1561
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1562--1565
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1566--1569
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1570--1573
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[44]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1574--1577
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1578--1581
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1582--1585
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1586--1589
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1590--1593
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1594--1597
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1598--1601
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1602--1605
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1606--1609
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1610--1613
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[45]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1614--1617
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1618--1621
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1622--1625
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1626--1629
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1630--1633
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1634--1637
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1638--1641
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1642--1645
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1646--1649
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1650--1653
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[46]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1654--1657
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1658--1661
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1662--1665
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1666--1669
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1670--1673
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1674--1677
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1678--1681
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1682--1685
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1686--1689
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1690--1693
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[47]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1694--1697
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1698--1701
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1702--1705
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1706--1709
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1710--1713
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1714--1717
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1718--1721
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1722--1725
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1726--1729
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1730--1733
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1734--1737
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[48]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1738--1741
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1742--1745
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1746--1749
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1750--1753
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1754--1757
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1758--1761
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1762--1765
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1766--1769
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1770--1773
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1774--1777
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1778--1781
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[49]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1782--1785
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1786--1789
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1790--1793
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1794--1797
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1798--1801
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1802--1805
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1806--1809
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1810--1813
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1814--1817
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1818--1821
+ [][][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[50]
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1822--1825
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1826--1829
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1830--1833
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1834--1837
+ [][][] [] 
+ []
+
+
+Overfull \hbox (46.67598pt too wide) in paragraph at lines 1838--1841
+ [][][] [] 
+ []
+
+[51] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33597pt have occurred.
 
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: ABD8A998B89C2E93ED0A126BC858BC76;3103.
  ) 
 Here is how much of TeX's memory you used:
- 19616 strings out of 481331
- 344461 string characters out of 5916143
- 742481 words of memory out of 5000000
- 35413 multiletter control sequences out of 15000+600000
- 587251 words of font info for 327 fonts, out of 8000000 for 9000
+ 19869 strings out of 481252
+ 347960 string characters out of 5914037
+ 749538 words of memory out of 5000000
+ 35644 multiletter control sequences out of 15000+600000
+ 587591 words of font info for 330 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 122i,13n,124p,981b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,130p,1252b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
 enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athsy.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
 m/lm-rm.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
-/lm/lm-ts1.enc}<c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
-public/lm/lmbx10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/
-type1/public/lm/lmbx9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/f
-onts/type1/public/lm/lmcsc10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf
--dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/
-texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/706194/AppData/Roaming/Tin
-yTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/706194/AppData/Roamin
-g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/706194/AppData/Ro
-aming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/706194/AppDat
-a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/706194/Ap
-pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/70619
-4/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/7
-06194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/U
-sers/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss17.pfb
-><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy
+/lm/lm-ts1.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dv
+ips/lm/lm-mathit.enc}<c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmbx10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmbx9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmcsc10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/706194/AppData/Roaming/T
+inyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/706194/AppData/Roam
+ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/706194/AppData
+/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/706194/Ap
+pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/70619
+4/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/7
+06194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Use
+rs/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:
+/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb
+><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri
 10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
-m/lmsy7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
-lic/lm/lmtt10.pfb>
-Output written on thesis.pdf (54 pages, 490877 bytes).
+m/lmss17.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
+blic/lm/lmsy10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/ty
+pe1/public/lm/lmsy7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/type1/public/lm/lmtt10.pfb>
+Output written on thesis.pdf (67 pages, 531126 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 242 named destinations out of 1000 (max. 500000)
- 121632 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 908 PDF objects out of 1000 (max. 8388607)
+ 806 compressed objects within 9 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 121672 words of extra memory for PDF output out of 128383 (max. 10000000)
 
