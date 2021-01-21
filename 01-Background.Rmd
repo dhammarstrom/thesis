@@ -4,16 +4,16 @@
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
-## Resistance-exercise prescription, a brief historical note and current challenges
-Recommendations of systematic physical exercise with the purpose to improve health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
+## Resistance-exercise prescription, influences and challenges
+Recommendations of systematic physical exercise for the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bear traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
 [@RN2663].<!-- Pfister 2003 describes differences and common ancestry of gymnastics and sports during 1700-1800 -->
 German Turnen as a system of physical activities was established in a time when Germany developed from aristocracy to a unified nation.
 Turnen not only served as a system of preparing men to fight for the developing nation but also as a way of establishing a national identity.
-Ling gymnastics, developed by Per Henrik Ling, shared common origins with German Turnen and also served as a system of military preparation.
+Ling gymnastics shared common origins with German Turnen and also served as a system of military preparation.
 However, Ling also established systems for medical, pedagogical and aesthetic gymnastics.
-Especially Lings medical gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the then current physiological and medical understanding [@RN2663].
+Especially Lings medical gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the physiological and medical understanding of that time [@RN2663].
 The medical gymnastics of the nineteenth century is referenced in twentieth century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
 
@@ -27,14 +27,15 @@ DeLorme specifically emphasized high-resistance, low-repetition exercise where p
 DeLorme originally used the term "heavy resistance exercises" in contrasts to low-resistance exercises [@RN2633], but as this could be perceived as exercises performed only with heavy weights, the system was renamed *progressive resistance exercise* to better reflect the method
 [@RN2641].<!-- DeLorme and Watkins 1948 -->
 Indeed, central to the system was the concept of repetition maximum [@RN2633].
-Repetition maximum refers to the external resistance that can be overcome with a given number of repetitions. By adjusting external resistance to each individuals progression over the course of a training program, exercises are both individualized and progress is monitored [@RN2633].
+Repetition maximum refers to the external resistance that can be overcome with a given number of repetitions.
+By adjusting external resistance to each individuals progression over the course of a training program, exercises are both individualized and progress is monitored [@RN2633].
 DeLorme originally prescribed sessions of up to 100 repetitions performed in sets of 10 repetitions [@RN2633] but later revised this recommendation to three sets of 10 repetitions performed with increasing intensities
 [@RN2641]. <!-- DeLorme 1948 Technics of progressive resistance exercise -->
 
 Scientific inquiries into prescription of resistance training from the first part of the twentieth century concerned its therapeutic use
 [e.g. @RN2633;<!-- DeLorme case report -->
 @RN2646]<!-- DeLorme controlled trial of RT vs. traditional conservative (low-resistance) treatment -->
-but also came to be introduced as a means of improving strength and physical performance in healthy populations
+but was also evaluated in the context of improving strength and physical performance in healthy populations
 [e.g. @RN2632;<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
 @RN2644; <!-- Chui 1950 Effect of strength training vs. control on physical performance in college stud -->
 @RN2642]. <!-- Capen 1950 Effect of strength training in college stud.   -->
@@ -51,10 +52,11 @@ the introduction of repetition maximum by DeLorme being one example. These conce
 @RN798].<!-- Bird 2005: Acute training variables leads to different training outcomes -->
 
 Although this development started after the Second World War, resistance training was not part of general exercise guidelines until much later.
-The American College of Sports Medicine (ACSM) position statement on exercise for healthy individuals from 1978 [@RN2655]<!-- ACSM 1978 guidelines -->
-primarily concerned physical fitness in terms of cardio-respiratory fitness.
-Since the updated 1990 ACSM statement, resistance training is recommended to be included as part of a sensible, general training program [@RN2654].<!-- ACSM 1990 guidelines --> 
-The introduction of resistance-training as part of the ACSM recommendation also marks the start of specific recommendations on resistance training being part of other consensus statements
+The American College of Sports Medicine (ACSM) position statement on exercise for healthy individuals from 1978 primarily concerned physical fitness in terms of cardio-respiratory fitness
+[@RN2655]<!-- ACSM 1978 guidelines -->.
+Since the updated 1990 ACSM statement, resistance training is recommended to be included as part of a sensible, general training program
+[@RN2654].<!-- ACSM 1990 guidelines --> 
+The introduction of resistance-training as part of the ACSM recommendation also coincides with specific recommendations on resistance training being part of other consensus statements
 [@RN2666, Ch. 2].<!-- Physical Activity and Health: A Report of the Surgeon General provides an overview of recommendation guidelines evolution  -->
 Consequently, informed by epidemiological data, the most recent general guidelines for physical activity do include resistance training [@RN2667].<!-- WHO guidelines -->
 
@@ -63,13 +65,14 @@ It could be argued that the above account reflects the fact that common understa
 @RN2639].
 In attempting to outline contemporary influences on exercise prescription, one could argue that the development of techniques to collect large amount of biological data is one such influence. The continuously decreasing cost of a sequenced human genome
 [@RN2696] can serve as an example of this development.<!-- Wetterstrand webpage genome sequence costs -->
-Such molecular techniques has enabled efforts to describe mechanisms by which exercise training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of a large scale effort, explicitly initiated to develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked [@RN2678]. 
+Such molecular techniques has enabled efforts to describe mechanisms by which exercise training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of a large scale effort, explicitly initiated to develop personalized exercise recommendations and identify molecular targets through which effects of exercised may be mimicked
+[@RN2678].<!-- MToPAC explicitly stating diagnostics is a goal --> 
 Advances in bio-medical technologies are enablers of this enterprise and the quest to *individualize* exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
 [@RN2678;<!-- MToPAC explicitly stating diagnostics is a goal -->
 @RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
-Contemporary exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
+Scientific research into contemporary exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
 
-A challenge facing this enterprise is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized resistance-training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes varies from negative to (-11%) to impressively large (+59%)
+A challenge facing this program is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized resistance-training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes varies from negative to (-11%) to impressively large (+59%)
 [@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
 @RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
 By relating such variations to individuals genome (DNA)
@@ -85,51 +88,87 @@ The existence of non-responders would have large implications regarding exercise
 [@RN758],<!-- Timmons 2011  -->
 and for any given individual as it, if properly diagnosed, would guide clinical decision-making.
 
-Although "molecular exercise prescription" as a mean of eliminating adverse responses to a given training regime shows potential for future applications
-[@RN2698; <!-- Roth viewpoint 3 scenarios for genomic screening -->
-@RN2547], the rise of data intensive techniques has also highlighted its complexity.
-In simplistic terms, genetic information is transferred from DNA to RNA through transcription and from RNA to protein through translation. This flow of information, known as the central dogma of molecular biology
-[@RN2692]<!-- Crick 1970 central dogma of molecular biology -->
-indicates a deterministic role of DNA in controlling the characteristics of an organism. It is however apparent that the transcription of specific genes are under tight control of several mechanisms including a group of non-genetic modifications to the DNA organization of each cell, known as epigenetic modifications
-[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes -->
-@RN2691].<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
-Such control determines gene expression in response to progressive resistance training with modifications persisting after a period of de-training
-[@RN2683;<!-- Transcriptome is associated with epigentic changes in response to RE -->
-@RN2012].<!-- Seaborn 2018 epigenetic changes persist after de-training, epigenetic memory of training -->
-Regulation of gene expression is thus related to modifiable variables such as exercise and diet
-[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes -->
-@RN2691;<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
-@RN2694;<!-- Yoshie 2020 13 mo old mice have epigenetic changes in skm due to childhood diet -->
-@RN2695]<!-- Godfrey 2016 review childhood environmental conditions affects epigenetics -->
-linking environmental factors to the complexity of gene expression.
+<!-- Although "molecular exercise prescription" as a mean of eliminating adverse responses to a given training regime shows potential for future applications
+[@RN2698; <!-- Roth viewpoint 3 scenarios for genomic screening 
+@RN2547],
+the rise of data intensive techniques has also highlighted its complexity.
 
-A key aspect of successful exercise diagnostics would be to map the relationship between exercise variables (i.e. modality, intensity, volume etc.) and exercise response for a given individual.
-It seems for example that an individual classified as non-responsive to a specific exercise modality (e.g. endurance training) may be classified as a responder to another (e.g. resistance training)
+In simplistic terms, genetic information is transferred from DNA to RNA through transcription and from RNA to protein through translation.
+This flow of information, indicates a deterministic role of DNA in controlling the characteristics of an organism. It is however apparent that the transcription of specific genes are under tight control of several mechanisms including a group of non-genetic modifications to the DNA organization of each cell, known as epigenetic modifications
+[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes 
+@RN2691].<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification 
+Such control determines gene expression in response to progressive resistance training with modifications persisting after a period of de-training
+[@RN2683;<!-- Transcriptome is associated with epigentic changes in response to RE 
+@RN2012].<!-- Seaborn 2018 epigenetic changes persist after de-training, epigenetic memory of training 
+Regulation of gene expression is thus related to modifiable variables such as exercise and diet
+[@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes 
+@RN2691;<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
+@RN2694;<!-- Yoshie 2020 13 mo old mice have epigenetic changes in skm due to childhood diet 
+@RN2695]<!-- Godfrey 2016 review childhood environmental conditions affects epigenetics 
+linking environmental factors to the complexity of gene expression.
+-->
+A key aspect of successful exercise diagnostics would be to take advantage of the relationship between exercise variables (i.e. modality, intensity, volume etc.) and exercise response for a given individual.
+By adapting an individuals training program based on some prior knowledge about the individual, it is possible that the response could be positively affected. 
+Observations supporting such notion exists as an individual classified as non-responsive to a specific exercise modality (e.g. endurance training) may be classified as a responder to another (e.g. resistance training)
 [@RN2681].<!-- Changing from end to res training removed non responsiveness --> 
 Even changing training variables within a specific modality have been shown to convert non-responders to responders as endurance training volume was increased
 [@RN2699].<!-- Lundby increasing training volume improved non-responders -->
 
+Although apparent reversal of non-response to exercise training has been observed by manipulating training variables, decisive indications for such manipulations are still lacking.
 
 
-By manipulating exercise variables in within-participant models we could potentially further our understanding of whom would benefit from a specific manipulation in addition to exploring possible mechanism behind such variability.
 
 ## Adaptations to resistance training
 
 ### Muscle hypertrophy and strength
-A well characterized response to systematic resistance training in humans is muscle growth. In healthy, untrained individuals regardless of age, resistance training can be expected to result in increases of ~ 5-20% when training is conducted over two weeks to 6 months
+Systematic resistance training typically increases muscle mass and strength and thereby convey many of its beneficial effects on health (increased amino acid storage physical independence) and athletic performance. 
+Muscle growth is a well characterized response to resistance training.
+On the whole muscle level, healthy untrained individuals can be expected to increases their muscle mass ~ 5-20% when training is conducted over two weeks to 6 months
 [@RN1741; <!-- Ahtianen -->
 @RN346;<!-- Wernbom  -->
 @RN764].<!-- Hubal 2005 elbow flexor 18.9% increase -->
-Responses can be expected to be more pronounced in upper- compared to the lower-body muscles
-[@RN346]<!-- Wernbom  -->
+Relative responses can be expected to be more pronounced in upper- compared to the lower-body muscles
+[@RN346;<!-- Wernbom  -->
+@RN2739],<!-- Welle 1996 larger incr in csa in upper body --> 
+and more so in males compared to females
+[@RN764]
+
+but negatively affected by age
+[@2739; <!-- Welle 1996 larger incr in csa in upper body --> 
+@RN752]<!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
+
+Although the number of fibers per muscle changes as a consequence of age
+[@RN2193] (decrease with age)<!-- Lexell 1988 number of fibers reduced with age -->
+and activity
+[@RN2742] (increase with activity),<!-- Sjöström 1991 Increase in left/right tibialis anterior -->
+whole muscles growth in response to short term resistance training occurs primarily as a consequence of growth of single muscle fibers.
+This can be assumed as training induced fiber splitting or myogenesis is likely a slow process and any increase in the number of fibers would represent a relatively small addition to the whole muscle  
+[@RN2741;<!-- Murach 2019 review on hyperplasia  -->
+@RN2742; <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
+@RN767].<!-- Folland 2007 reviwe on mechanism for hypertrophy and strength gains -->
+Muscle fiber types and sizes varies across the muscle and are therefore difficult to study from biopsy specimens
+[@RN2742] <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
 
 
-[@RN752]<!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
+
+[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
+[@RN2737]<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
+
+[@RN2736]<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
+[@RN2735]<!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->  
+
+[@RN2731]<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->
+[@RN787]<!-- MacDougall 1980 increases in fiber are in response to training and immobilization fiber areas affected pos and neg in resp condition (small n one-tailed tests) -->
+
+[@RN2734]<!-- Alway 1988 larger fiber area but not stat sig myofibrill larger in strength trained (n=6) than endurance trained (n=6), active (n=6) and sedentary controls (n=6). -->
+
+
+
 
 [@RN2669]<!-- Straight 2020 muscle fiber size increases with RT, in midlle age old, age inversely related to training effects -->
 
 
-[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
+
 
 [@RN1710]<!-- Straight 2015 resistance training increases muscle power in middle age and older adults, training volume influences the magnitude of change -->
 
@@ -296,6 +335,7 @@ The discovery of an immunosuppressant organic compound called rapamycin in the 1
 
 [@RN2717]<!-- Chesley 1992 increase in FSR in response to re-ex i biceps, no change in RNA content, increase in "RNA activity" prot synth/RNA -->
 
+[@RN2155]<!-- Welle 1999 No increase in mRNA or total RNA after 7 days in older subjects but 30% increase in myofibrillar protein synthesis -->
 
 ### Transcriptional regulation of muscle mass
 
