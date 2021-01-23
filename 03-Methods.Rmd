@@ -232,7 +232,7 @@ NCT02179307; Study II, <https://osf.io/wa96y>). Participants were
 informed of the study design, potential risks and sources of discomfort
 prior to giving their informed consent.
 
- ## Measures of muscle mass
+## Measures of muscle mass
 
 In Study I muscle mass was measured by magnetic resonance imaging (MRI)
 and dual energy X-ray absorptiometry (DXA) prior to and after the
@@ -258,8 +258,9 @@ See figure <!-- @ref(fig:body-comp-measures)-->
 
     Muscle strength was with  -->
 
-In Study II
+In Study II, m. vastus lateralis muscle thickness was measured by B-mode ultrasonography (SmartUs EXT-1M, Telemed, Vilnius, Lithuania) using a 39 mm 12 MHz, linear array probe. At least three images were captured for each leg per time-point. Between each image acquisition the probe was relocated to the same position where on the skin and subsequently marked on a soft transparent plastic sheet superimposed on the thigh.  
 
+Muscle thickness of m. vastus lateralis and m. rectus femoris were measured using  Transverse images were obtained ∼60 % distally from the trochanter major towards the femoral lateral epicondyle. Landmarks such as moles and scars were also marked on the plastic sheet for relocation of the scanned areas during post-training measurements. During analysis, pre and post images from the same participant were analyzed consecutively using the Fiji software,66 and by two independent researchers. The average muscle thickness of the three images captured per muscle was used for further analyses.
 
 ## Muscle tissue sampling and preparations for downstream analyses
 
