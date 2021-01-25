@@ -205,6 +205,8 @@
 \geometry{left=22.5mm,right=22.5mm}
 \geometry{top=22.5mm,bottom=22.5mm}
 
+\setlength{\headheight}{22.49pt} % fixes warning?
+
 
 %Make al headlines non-fat
 \def\section{\@startsection {section}{1}{\z@}{-3.5ex plus -1ex minus 
