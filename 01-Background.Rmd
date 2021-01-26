@@ -204,7 +204,7 @@ In addition to effects that mainly can be attributed to motor learning, resistan
 Such changes could be attributed to morphological and functional changes of motoroneurons
 [@RN2764].<!-- Gardiner aplha motorneuron changes with RT -->
 
-#### Connective tissue
+### Connective tissue
 In addition to changes in the contracting apparatus of single muscle fibers and neural mechanism regulating their activity, resistance training modulates connective tissue, tendon and bone.
 
 
