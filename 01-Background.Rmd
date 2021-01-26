@@ -142,69 +142,72 @@ Relative muscle growth can be expected to be more pronounced in upper- compared 
 @RN2739].<!-- Welle 1996 larger incr in csa in upper body -->
 This possibly relates to greater every day activity levels of lower-body muscles requiring a larger stimuli for adaptation
 [@RN767].<!-- Folland review -->
-Small, but detectable differences in muscle growth can be expected between sexes for training induced muscle growth in the upper-body
+Small, but detectable differences in muscle growth is typically seen between sexes for training induced muscle growth in the upper-body
 [@RN764]<!-- Hubal CSA men: 20.4% vs 17.9% -->
 but not for lower-body muscles
 [@RN2740].<!-- Roberts 2020, meta analysis when all muscles combined no diff between sexes in within sex effects sizes -->
-Hypertrophic responses can be expected to be reduced with increasing age 
+Furthermore can hypertrophic responses be expected to be reduced with increasing age 
 [@RN2739; <!-- Welle 1996 larger incr in csa in upper body --> 
 @RN752]<!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
 but increased with sufficient addition of dietary protein
-[@RN2199]<!-- Morton meta Dietary protein supplementation significantly enhanced changes in muscle strength and size during prolonged RET in healthy adults. Increasing age reduces and training experience increases the efficacy of protein supplementation during RET. -->
+[@RN2199].<!-- Morton meta Dietary protein supplementation significantly enhanced changes in muscle strength and size during prolonged RET in healthy adults. Increasing age reduces and training experience increases the efficacy of protein supplementation during RET. -->
 Additionally, training variables such as intensity, volume, frequency (reviewed below) together with other training aids, e.g. manipulation of blood flow through pressure cuffs
 [@RN2745]<!-- Lixandrao BFR meta analysis hypertrophy similar between low load BFR and high load -->
 can effectively modulate resistance training induced hypertrophy.
 Together, this underlines that both non-modifiable (e.g. sexual dimorphism and age) and modifiable factors (e.g. training variables and protein supplementation) affects training induced muscle hypertrophy.
 
-An increased muscle mass transfers to muscle strength trough an increase of contractile elements in parallel.
-The muscle cell is to a large degree (about 80% of the cell volume 
-[@RN2731]<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->)
-occupied by these contractile elements, called myofibrils, where the interaction between actin and myosin determines force production
-[@RN2756].
-With resistance training, the number of myofibrils and thus the muscles force generating capacity increases
-[@RN2731].<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->
-<!-- Although the number of fibers per muscle changes as a consequence of age
-[@RN2193] (decrease with age) Lexell 1988 number of fibers reduced with age 
-and activity
-[@RN2742] (increase with activity), Sjöström 1991 Increase in left/right tibialis anterior -->
-Whole muscles growth in response to short term resistance training occurs primarily through addition of myofibrils in a set number of muscle fibers.
-This can be assumed as training-induced fiber splitting or myogenesis is likely a slow process and any increase in the number of fibers would only represent a small addition to the whole muscle  
+Whole muscles growth in response to short term resistance training occurs primarily through growth of individual muscle fibers (muscle cells).
+This can be assumed as training-induced splitting of existing fibers and/or myogenesis, formation of new muscle cells are likely slow processes and any increase in the number of fibers by such mechanisms would only represent a small addition to the whole muscle mass 
 [@RN2741;<!-- Murach 2019 review on hyperplasia  -->
 @RN2742; <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
 @RN2754;<!-- MacDougall no diff between body builders and untrained in number of fibers, equal relative amounts of collagen -->
 @RN767].<!-- Folland 2007 review on mechanism for hypertrophy and strength gains -->
+Growth of muscle fibers transfers to greater muscle strength trough an expansion of the fibers contractile elements.
+The muscle cell is to a large degree occupied by myofibrils
+(about 80% of the cell volume 
+[@RN2731]<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->),
+which in turn contain sarcomeres, arranged in series.
+Upon neural activation and subsequent Ca\textsuperscript{2+} release, the sarcomere shortens through interaction between actin and myosin resulting in force generation
+[@RN2756].<!-- Sweenney review on muscle contraction -->
+With resistance training, the number of parallel myofibrils increases with the growth of individual fibers
+[@RN2669]<!-- Straight 2020 muscle fiber size increases with RT, in midlle age old, age inversely related to training effects -->
+leading to a greater force generating capacity of the whole muscle
+[@RN2731].<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->
+
+Measures of whole muscle size corresponds well with strength, particularly when a measure of muscle size reflects the muscles cross-sectional area
+[@RN2758;<!-- Bamman 2000 Anatomical and estimates physiological cross section better prediction for strength on whole muscle level in vivo in humans -->
+@RN1142].<!-- Erskin 2013 muscle volume and CSA to strength r = 0.812 and 0.806  -->
+However, in response to resistance training, increases in strength are typically greater in magnitude than muscle growth
+[@RN2629;<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
+@RN2737;<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
+@RN2736;<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
+@RN2735].<!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->
+When relationships between resistance-training induced change in muscle size and strength in previously untrained individuals are analyzed, only a small portion of the variation in muscle strength can be accounted for by changes in muscle size ($\sim$ 2.5-28\%)
+[@RN1142;<!-- Erskine 2013 23% and 28% muscle volume and mvf/1rm  -->
+@RN1741;<!-- Ahtiainen r = 0.157, r2 = 0.025 -->
+@RN2158]<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
+depending on type of measurements and statistical models used
+[@RN2158]<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
+This underlines that muscle hypertrophy is one contributing factor to muscle strength gains, but not the only one.
+
+Different experimental models have shown that strength can increase without concomitant muscle hypertrophy.
+Getting acquainted to the actual strength test through repeated training of maximal performance produces similar gains in strength without concomitant hypertrophy 
+[@RN2760].<!-- Mattocks 2017 Practicing 1RM leads to similar strength increases as RT  -->
+If resistance training is performed unilaterally and the contralateral limb act as a control, strength gains are typically also seen here
+[@RN2219;<!-- Carroll 2006 contralateral effects review -->
+@RN2766].<!-- Green 2018 training has contralateral effects both for strength and skill -->
+Additionally, systematic imagery training, without muscle activation produces greater strength gains than control and low-intensity training conditions 
+[@RN2767].<!-- Plantar flexion imaginary more effective than control in strength gains -->
+Together these observations indirectly points to the central nervous system and motor learning as important factors for strength gains.
+In addition to effects that mainly can be attributed to motor learning, resistance training leads to changed behavior of motor units, estimated from surface electromyograms 
+[@RN2763].<!-- Del Vechchio 2019 rt changes fiering rates in motor units   -->
+Such changes could be attributed to morphological and functional changes of motoroneurons
+[@RN2764].<!-- Gardiner aplha motorneuron changes with RT -->
+
+#### Connective tissue
+In addition to changes in the contracting apparatus of single muscle fibers and neural mechanism regulating their activity, resistance training modulates connective tissue, tendon and bone.
 
 
-[@RN2669].<!-- Straight 2020 muscle fiber size increases with RT, in midlle age old, age inversely related to training effects -->
-
-
-
-Muscle fiber hypertrophy is difficult to study in humans as such studies are restricted to small biopsy samples.
-Muscle fiber characteristics varies across the muscle biopsy specimens
-[@RN2742] <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
-
-
-
-[@RN2629]<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
-[@RN2737]<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
-
-[@RN2736]<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
-[@RN2735]<!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->  
-
-
-[@RN787]<!-- MacDougall 1980 increases in fiber are in response to training and immobilization fiber areas affected pos and neg in resp condition (small n one-tailed tests) -->
-
-[@RN2734]<!-- Alway 1988 larger fiber area but not stat sig myofibrill larger in strength trained (n=6) than endurance trained (n=6), active (n=6) and sedentary controls (n=6). -->
-
-
-
-
-
-
-
-
-
-[@RN1710]<!-- Straight 2015 resistance training increases muscle power in middle age and older adults, training volume influences the magnitude of change -->
 
 
 ### Muscle fiber-type transitions
