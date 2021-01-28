@@ -205,13 +205,75 @@ Such changes could be attributed to morphological and functional changes of moto
 [@RN2764].<!-- Gardiner aplha motorneuron changes with RT -->
 
 ### Connective tissue
-In addition to changes in the contracting apparatus of single muscle fibers and neural mechanism regulating their activity, resistance training modulates connective tissue, tendon and bone.
+In addition to adaptive changes to the contracting apparatus of single muscle fibers and neural mechanisms regulating their activity, resistance training modulates bone, tendon and connective tissue.
+From a general perspective, tissues enabling e.g. locomotion by conveying forces produced by contracting muscles stabilizing body segments adapts in an activity specific manner
+[@RN2775;<!-- greendale 2003 activity patterns affect bone mineral density, sporting activities more effective than active living home activities -->
+@RN2771]<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
+Specifically, short term resistance training leads to changes in mechanical properties of bone without increases in bone mineral content or density suggesting qualitative changes
+[@RN2774]<!-- Miller 2009 rt increases tibial bending stiffness without changes in bobne mineral content 20 weeks, 3 sessions/week con and ecc, females 18-26 years-->
+Similarly, tendons respond to short term resistance training by increasing stiffness at high mechanical stress levels without increased cross sectional area
+[@RN2772].<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group -->
+Interestingly, these adaptations seem to reach a plateau as no additional change in this characteristic is seen in individuals who have exercised over four years. However increased stiffness at lower mechanical stress levels have been documented
+@RN2771].<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
+Changes in tendon properties in response to resistance training may thus primarily be associated with qualitative changes
+[@RN2771]<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
+as consequence of exercise and training-induced increased turnover of collagen in tendons, indicating remodelling
+[@RN2771;<!-- Magnusson review -->
+@RN2770].<!-- Kjaer review, focus on collagen metabolism in  -->
 
+Muscle fibers are embedded in connective tissue, observed as surrounding the whole muscle (epimysium), muscle fasicles (perimysium) and muscle fibers (endomysium)
+[@RN2783].<!-- Borg Rat skeletal muscle electron micropscopy  -->
+Connective tissue structures constituting the endomysium connects muscle fibers to adjacent fibers, capillaries and nerves which together with higher order structures make up the extracellular matrix enabeling mechanical and biochemical interaction between cell types
+[@RN2783;<!-- Rat skeletal muscle  -->
+@RN2421].<!-- Kjaer review -->
+Together with the myotendinous junction, intramuscular structures (primarily perimysium) transmits forces originating from contracting muscle fibers and to tendon and bone and act as an elastic energy storage during e.g. locomotion
+[@RN2421].<!-- Kjaer review -->
+The mechanical properties of the extracellular matrix also allows for mechanical stimuli to be converted to biochemical signaling initiating e.g. responses to exercise.
 
+There is a general coordination between connective tissue and muscle cell remodeling in response to loading, evident coordinated responses from different cell types in response to exercise
+[@RN2421].<!-- Kjaer review -->
+The major constituent of the extracellular matrix is collagen, produced in fibroblasts.
+In response to acute endurenace-type exercise, collagen synthesis and muscle cell specific protein synthesis (myofibrillar and sarcoplasmic fractions) rise in in a coordinated fashion
+[@RN2788].<!-- Miller coordinated prot synthesis response to exercise (not RT) -->
+Also, in response to short- and long-term resistance training with subsequent muscle hypertrophy, relative collagen content of muscle tissue remains stable
+[@RN2754].<!-- Macdougall Similal relative collagen content and non contracting tissue in untrained and trained human skm  -->
+However, fine tuning of such coordination could exist as contraction mode has shown to differentially affect myofibrillar protein but not collagen synthesis after acute exercise
+[@RN2454].<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load -->
 
+Increased remodeling of components of the extracellular matrix is a typical response to resistance training evident from gene expression studies
+[@RN2298;<!-- Damas long term training ECM up gene -->
+@RN774],<!-- Raue, upregulation of ECM after long term exercise -->
+and studies of acute protein synthesis
+[@RN2457;<!-- Moore 2005 Collagen synthesis up irrespective of ecc or conc 6 * 10 maximal contractions -->
+@RN2454].<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load -->
+Such remodeling may contribute to increases in specific force (force generated per muscle cross section) seen after resistance training through improved lateral force transfer
+[@RN1504].<!-- Erskine 2011 Hypothesized increased lateral force transfer increase specific tension in vivo in response to strength training in humans as single fiber specific tension nor mhc composition could explain -->
 
 ### Muscle fiber-type transitions
-Skeletal muscle tissue is heterogeneous in terms 
+In adult human skeletal muscles, fiber types can be identified based on their myosin heavy chain isoform composition. Pure fiber type express a single mysoin heavy chain isoform whereas hybrid fibers co-espress isoforms.
+Protein isoform expression is determined transcriptionally  
+Expression of the different isoforms are controlled 
+*MYH7*
+*MYH2* myosin heavy chain IIA
+*MYH1* myosin IIX
+
+Different fiber types have specific contractile 
+[@RN846]<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
+and metabolic characteristics
+
+effectively matching the demands and activity patterns of segments of the same muscle and different muscle groups
+[@RN]
+
+
+
+
+[@RN285]<!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
+
+In response to mechanical loading fiber type transitions occur. 
+
+However in response to resistance training, designed for muscle hypertrophy and strength gains, fiber types identified as Type IIX are less nomerous after training.
+
+
 
 
 Muscle fibre composition is another potential determinant of muscular responses to resistance training. Type II fibres have greater growth potential compared to type I fibres

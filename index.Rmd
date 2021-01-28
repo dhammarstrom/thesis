@@ -14,7 +14,6 @@ site: bookdown::bookdown_site
 output: 
   thesisdowngih::thesis_pdf: default
   latex_engine: xelatex
-  toc_depth: 4
 #  thesisdown::thesis_gitbook: default
 #  thesisdown::thesis_word: default # The word and e-pub versions are not tested.
 #  thesisdown::thesis_epub: default
