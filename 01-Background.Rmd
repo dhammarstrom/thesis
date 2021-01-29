@@ -298,15 +298,6 @@ Hypertrophic response to resistance training are different between fiber types w
 @RN2208].<!-- Jespersen Type II fibers larger fluctuations in CSA higher hypertrophy and atrophy rates-->
 
 
-
-### Mitochondrial function
-
-Increased mitochondrial respiration after 12 weeks of RT in young men [@RN2608]
-
-Fiber type distributions do not predict muscle mitochondrial density in endurance trained individuals [@RN2615]
-
-PMID:158694 Reduced mitochondrial density per fiber area in reponse to RT
-
 ## Effects of exercise prescription on muscle mass and strength
 Precise exercise-training^[Exercise is herein defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. Resistance-exercise is defined as an acute strength-promoting program requiring the neuromuscular system to exert force against resistance. Resistance training is defined as a long-term process of multiple resistance exercise-sessions performed over a defined period of time.]
 prescription gives information on exercises, their sequential order, intensity and volume, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
