@@ -250,39 +250,52 @@ Such remodeling may contribute to increases in specific force (force generated p
 [@RN1504].<!-- Erskine 2011 Hypothesized increased lateral force transfer increase specific tension in vivo in response to strength training in humans as single fiber specific tension nor mhc composition could explain -->
 
 ### Muscle fiber-type transitions
-In adult human skeletal muscles, fiber types can be identified based on their myosin heavy chain isoform composition. Pure fiber type express a single mysoin heavy chain isoform whereas hybrid fibers co-espress isoforms.
-Protein isoform expression is determined transcriptionally  
-Expression of the different isoforms are controlled 
-*MYH7*
-*MYH2* myosin heavy chain IIA
-*MYH1* myosin IIX
+In adult human skeletal muscles, muscle fiber types can be identified based on their myosin heavy chain isoform composition. Pure fibers express a single mysoin heavy chain isoform whereas hybrid fibers co-express isoforms.
+Primarily three myosin heavy chain protein isoform are expressed in adult human skeletal muscle, determined transcriptionally through expression of the genes *MYH7*, *MYH2* and *MYH1* corresponding to myosin heavy chain I, IIA and IIX
+[@RN819]<!-- -->
 
-Different fiber types have specific contractile 
-[@RN846]<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
-and metabolic characteristics
+Single fibers of different fiber types have specific contractile properties regardless of muscular origin
+[@RN846],<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
+with type II fibers displaying greater force-generating capacity and shortening velocities than type I fibers when normalized to fiber cross sectional area
+[@RN2169;<!-- Widrick IIx > IIa > I in force/power unloaded shortening, training alters these charecteristics in proportion to hypertrophy -->
+@RN846]<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
+These differences directly relates to the myosin heavy chain proteins displaying different characteristics when interacting with actin
+[@RN849].<!-- Larsson diffrenet motility speeds of different myosin isoforms -->
+Importantly, in vitro assays performed at physiological temperatures shows that myosin heavy chain isoforms extracted from type II fibers are two-fold faster compared to type I fibers with no difference between type IIX and IIA
+[@RN849].<!-- Larsson diffrenet motility speeds of different myosin isoforms -->
 
-effectively matching the demands and activity patterns of segments of the same muscle and different muscle groups
-[@RN]
+In addition to contractile characteristics, fiber types identified on the basis of their myosin heavy chain content also differs in metabolic profiles.
+Type I fibers are characterized as having lower glycolytic but higher oxidative potential compared to type II fibers
+@RN1885].<!-- Essen 1975 Type II fibers lower oxidative potential compared to type I assumed from activity of oxidative enzymes -->
+Differences in metabolic profiles relates to fatigue resistance were type I fibers can maintain power output as well as ATP levels during intense exercise but type II and especially type IIX fibers fail to do so 
+[@RN819;<!-- -->
+@RN2801].<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
 
+Fiber type characteristics effectively modulates the muscles ability to perform specific activities. Differences in fiber type composition within individuals,  between different muscles reflects this as anti-gravity muscle typically express more type I fibers compared to upper-body muscles
+[@RN819;<!-- -->
+@RN846].<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
+Differences in fiber type composition between individuals is however to some degree genetically determined
+[@RN2798],<!-- Simoneau 1995 40% variation in type I fibers can be attributed to genetic factors, 15% to sampling error and 45 to environment -->
+as well as different between men and women
+[@RN2795;<!-- Differences between men and women more type i in women -->
+@RN285].<!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
+Among non-genetic factors influencing fiber-type composition are resistance training. Short term resistance training, designed for muscle hypertrophy and strength gains specifically converts type IIX fibers to more fatigue resistant type IIA fibers with unaltered type I fiber proportions
+[@RN2220;<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining -->
+@RN2799;<!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa -->
+@RN2056;<!-- Andersen 2018 type IIx to 2a most prominent switch-->
+@RN1489].<!-- Ellefsen 2014, training induced switch from 2A to 2X -->
+Such conversion is apparent both when measured on the protein and mRNA level
+[@RN1489;<!-- Ellefsen  -->
+@RN2056].<!-- 2x gene swithoff Anderssen --> 
+In contrast, reduced activity or inactivity readily increases the proportion of type IIX expressing fibers 
+@RN2057<!-- Andersen 2x overshoot after de training -->
+@RN2108].<!-- Bed rest increases type IIx -->
+Resistance-training induced changes in fiber type composition coincides with increased mitochondrial respiration
+[@RN2608].
 
-
-
-[@RN285]<!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
-
-In response to mechanical loading fiber type transitions occur. 
-
-However in response to resistance training, designed for muscle hypertrophy and strength gains, fiber types identified as Type IIX are less nomerous after training.
-
-
-
-
-Muscle fibre composition is another potential determinant of muscular responses to resistance training. Type II fibres have greater growth potential compared to type I fibres
+Hypertrophic response to resistance training are different between fiber types with type II fibers typically responding with greater hypertrophy compared to type I fibers
 [@RN1755;<!-- Stec 2016 8 (type I) vs 21% (type II) and 44 vs 83% CSA change in mo and xtr responders --> 
-@RN2208]<!-- Jespersen Type II fibers larger fluctuations in CSA higher hypertrophy and atrophy rates-->, and readily switch from IIX to IIA phenotypes in response to mechanical loading
-[@RN2056;<!-- Andersen 2018 type IIx to 2a most prominent switch-->
-@RN2169;<!-- Widrick 2002 2a to 2x switch; quantitative changes related to contractile proteins-->
-@RN1489]<!-- Ellefsen 2014, training induced switch from 2A to 2X -->,
-suggesting that these fibres display greater plasticity in response to resistance training.
+@RN2208].<!-- Jespersen Type II fibers larger fluctuations in CSA higher hypertrophy and atrophy rates-->
 
 
 
