@@ -14,6 +14,7 @@ site: bookdown::bookdown_site
 output: 
   thesisdowngih::thesis_pdf: default
   latex_engine: xelatex
+  citation_package: natbib
 #  thesisdown::thesis_gitbook: default
 #  thesisdown::thesis_word: default # The word and e-pub versions are not tested.
 #  thesisdown::thesis_epub: default
@@ -35,7 +36,6 @@ dedication: |
 defence: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-defence.Rmd"), collapse = '\n  ')`
 bibliography: 
-        - bib/thesis.bib
         - bib/complete-bib.bib
 # Download your specific bibliography database file and refer to it in the line above.
 csl: csl/vancouver.csl

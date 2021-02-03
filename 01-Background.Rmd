@@ -5,7 +5,7 @@ source("./R/libraries.R"); source("./R/themes.R")
 ```
 
 ## Resistance-exercise prescription, influences and challenges
-Recommendations of systematic physical exercise for the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
+Recommendations of systematic physical exercise with the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bear traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
 [@RN2663].<!-- Pfister 2003 describes differences and common ancestry of gymnastics and sports during 1700-1800 -->
@@ -13,7 +13,7 @@ German Turnen as a system of physical activities was established in a time when 
 Turnen not only served as a system of preparing men to fight for the developing nation but also as a way of establishing a national identity.
 Ling gymnastics shared common origins with German Turnen and also served as a system of military preparation.
 However, Ling also established systems for medical, pedagogical and aesthetic gymnastics.
-Especially Lings medical gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the physiological and medical understanding of that time [@RN2663].
+Especially Ling's medical gymnastics was important for the development of modern exercise prescription as it was scientifically oriented, based on the physiological and medical understanding of that time [@RN2663].
 The medical gymnastics of the nineteenth century is referenced in twentieth century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
 
@@ -22,10 +22,12 @@ DeLorme published his system short after the Second World War [@RN2633]
 during which he, as a newly graduated physician, had been working with war injury rehabilitation
 [@RN2639]<!-- Todd 2012 DeLorme biography -->.
 Inspired by practitioners of weight training [@RN2639],<!-- Todd 2012 DeLorme biography --> 
-DeLorme specifically emphasized high-resistance, low-repetition exercise where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendations of endurance-like exercise where progression was achieved through increased number of repetitions
+DeLorme specifically emphasized high-resistance, low-repetition exercises where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendations of endurance-like exercise where progression was achieved through increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
 DeLorme originally used the term "heavy resistance exercises" in contrasts to low-resistance exercises [@RN2633], but as this could be perceived as exercises performed only with heavy weights, the system was renamed *progressive resistance exercise* to better reflect the method
-[@RN2641].<!-- DeLorme and Watkins 1948 -->
+[@RN2641]
+^[In the current text, exercise is defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. DeLorme first used the adjective *heavy* to describe the resistance prescribed to overcome during exercises but later changed this adjective to *progressive*. In modern texts, the adjective is commonly omitted from the description and *resistance exercise/training* is used to describe strength-promoting exercises and training regimes requiring the neuromuscular system to exert force against resistance. Omitting the adjective has led to many heated debates among exercise physiologists as "endurance exercises are also performed against a[n] (external) resistance". With no ambition to resolve any conflict in the area, *resistance exercise/training* will be used synonymous with *progressive* or *heavy* *resistance exercise/training*.]
+.<!-- DeLorme and Watkins 1948 -->
 Indeed, central to the system was the concept of repetition maximum [@RN2633].
 Repetition maximum refers to the external resistance that can be overcome with a given number of repetitions.
 By adjusting external resistance to each individuals progression over the course of a training program, exercises are both individualized and progress is monitored [@RN2633].
@@ -313,10 +315,8 @@ Such remodeling may contribute to increases in specific force (force generated p
 [@RN1504].<!-- Erskine 2011 Hypothesized increased lateral force transfer increase specific tension in vivo in response to strength training in humans as single fiber specific tension nor mhc composition could explain -->
 
 
-
 ## Effects of exercise prescription on muscle mass and strength
-Precise exercise-training^[Exercise is herein defined as an acute bout of physical activity designed to affect physical characteristics such as strength, speed or endurance. Training is defined as the systematic process of combining multiple exercise-sessions performed in sequence over time. Resistance-exercise is defined as an acute strength-promoting program requiring the neuromuscular system to exert force against resistance. Resistance training is defined as a long-term process of multiple resistance exercise-sessions performed over a defined period of time.]
-prescription gives information on exercises, their sequential order, intensity and volume, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
+Precise exercise-training prescription gives information on exercises, their sequential order, intensity and volume, rest periods between efforts or sessions and the frequency at which exercise sessions are to be performed
 [@RN789].<!-- Bird designing resistance training programs -->
 By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
 The relative importance of exercise-training variables for training outcomes has been examined in numerous studies including (but not limited to) the overall organization of exercise sessions,
@@ -408,7 +408,6 @@ No attempts were made to relate any measured characteristic to differences in re
 
 ## Molecular determinants of training-induced muscle hypertrophy
 Muscle mass fluctuates as a consequence of the balance between muscle protein synthesis and breakdown. When a net-positive balance is achieved, muscle protein accumulates and muscle mass increases.
-This is a scenario observed in response increased mechanical stress.
 Following a single bout of resistance exercise, muscle protein synthesis increases
 over resting levels up to 48-h post-exercise 
 [@RN2710;<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex -->
@@ -419,25 +418,20 @@ over resting levels up to 48-h post-exercise
 @RN1521]<!-- Kim, increase after exercise in mixed and myofibrillar prot synth in trained and untrained state, lower mixed after training, higher basal protein synt rate after training period 8 weeks 2-4set 8RM 8 weeks biopsy 12 h after ex Same absolute intensity -->
 after being blunted during exercise
 [@RN2710].<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex -->
-Mixed muscle protein synthesis and breakdown are highly correlated
-[@RN2713]<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-[@RN786]<!-- Phillips 1997, correlation between fbr and fsr-->
-indicating that these processes are mechanistically coupled.
-And similarly to muscle protein synthesis, acute resistance exercise also stimulates protein breakdown but to a lesser extent than protein synthesis leading to an increase in the net protein balance from baseline
-[@RN2713]<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-[@RN786].<!-- Phillips 1997, correlation between fbr and fsr-->
+Muscle protein synthesis and breakdown rates are highly correlated
+[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
+@RN786]<!-- Phillips 1997, correlation between fbr and fsr-->
+indicating that these processes are mechanistically coupled and fluctuates together.
+While acute resistance exercise also stimulates protein breakdown, it does so to a lesser extent, leading to an increase in the net protein balance from baseline under favorable conditions (with sufficient addition of dietary protein)
+[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
+@RN786;<!-- Phillips 1997, correlation between fbr and fsr-->
+@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
+@RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
 When resistance exercise is performed in the fasted state, post exercise net protein balance can be expected to be negative
-[@RN2713]<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-[@RN786],<!-- Phillips 1997, correlation between fbr and fsr-->
-in contrast when performed in the fed state where net balances are positive
-[@RN2714]<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
-[@RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
-This indicates an additive effect of 
+[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
+[@RN786].<!-- Phillips 1997, correlation between fbr and fsr-->
 
-Measurement of protein synthesis (and breakdown) rates in response to a single resistance exercise session has been given a lot of attention
-
-
-In recent years, this view has been supplemented<!-- supported? --> by evidence suggesting that chronic RT leads to increased resting synthetic rate of muscle protein
+The available data from acute studies suggests that resistance training leads to muscle hypertrophy through the accumulative effect of repeated bouts of anabolic stimuli. In recent years, this view has been supplemented by evidence suggesting that chronic RT leads to increased resting synthetic rate of muscle protein
 [@RN1521;<!-- Kim 2005 Fasted state skeletal muscle PS altered with training  --> 
 @RN1866;<!-- Wilkingson 2008 -->
 @RN1897],<!-- Reidy 2017 Increased rested state protein synthesis -->
@@ -447,10 +441,45 @@ which has been postulated to be associated with increased translational capacity
 This notion is supported by exercise-induced increases in total RNA, a proxy marker of ribosome abundance, which is closely connected to protein synthesis
 [@RN1754;<!-- West 2016 correlation between total RNA and protein synthesis in C2C12-->
 @RN2145]<!-- Millward 1973 relationship between RNA and protein synthesis in rat in rats in vivo constant infusion -->
+See Figure \@ref(fig:Millward1973).
+
 and muscle hypertrophy
 [@RN1644;<!-- Figueiredo 2015 Correlation between total RNA fold change and CSA hyp -->
 @RN1755; <!-- Stec Ribosome bio higher in high responders -->
 @RN2358].<!-- Volume dependent RNA accum relates to volume depend hyper -->
+
+```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from \\citep{@RN2145}. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein.", fig.scap="Relationship between RNA content and protein synthesis in rat skeletal muscle, data from \\citep{@RN2145}"}
+
+millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
+
+millward %>%
+        mutate(group = if_else(group == "A", "Protein fed", "Protein starved")) %>%
+        ggplot(aes(RNA, proteinSynthesis, fill = group, color = group)) +
+        geom_smooth(method = "lm", se = FALSE) + 
+        geom_point(color = "black", shape = 21) +
+        scale_x_continuous(name = TeX("$RNA\\;(\\mu g \\; mg^{-1} \\, protein)$"), 
+                           breaks = c(0, 4, 8, 12, 16),
+                           minor_breaks = c(2, 6, 10, 14),
+                           limits = c(0, 16), 
+                           expand = c(0, 0)) +
+        scale_y_continuous(name = TeX("$Protein\\,synthesis\\,rate\\;(days^{-1})"), 
+                           breaks = c(0, 0.05, 0.1, 0.15, 0.20, 0.25),
+                           minor_breaks = c(0.02, 0.06, 0.10, 0.14, 0.18, 0.22),
+                           limits = c(0, 0.25), 
+                           expand = c(0, 0)) + 
+        
+
+        dissertation_theme() +
+                theme(legend.position = c(0.2, 0.8), 
+                      legend.title = element_blank()) 
+
+
+
+```
+
+
+
+
 Conversely, inhibition of ribosomal RNA (rRNA) transcription and inhibition of its up-stream transcription factors act to diminish muscle cell growth
 [@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
 @RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
@@ -614,34 +643,6 @@ Positive net protein balance in responce to exercise <!-- Tipton 10.1152/ajpendo
 
 
 <!-- Increase loading leads to increased RNA Goldberg 1975 Mechanism of work-induced hypertrophy of skeletal muscle 
-```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from Millward et al. 1973. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein."}
-
-millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
-
-millward %>%
-        mutate(group = if_else(group == "A", "Protein fed", "Protein starved")) %>%
-        ggplot(aes(RNA, proteinSynthesis, fill = group, color = group)) +
-        geom_smooth(method = "lm", se = FALSE) + 
-        geom_point(color = "black", shape = 21) +
-        scale_x_continuous(name = TeX("$RNA\\;(\\mu g \\; mg^{-1} \\, protein)$"), 
-                           breaks = c(0, 4, 8, 12, 16),
-                           minor_breaks = c(2, 6, 10, 14),
-                           limits = c(0, 16), 
-                           expand = c(0, 0)) +
-        scale_y_continuous(name = TeX("$Protein\\,synthesis\\,rate\\;(days^{-1})"), 
-                           breaks = c(0, 0.05, 0.1, 0.15, 0.20, 0.25),
-                           minor_breaks = c(0.02, 0.06, 0.10, 0.14, 0.18, 0.22),
-                           limits = c(0, 0.25), 
-                           expand = c(0, 0)) + 
-        
-
-        dissertation_theme() +
-                theme(legend.position = c(0.2, 0.8), 
-                      legend.title = element_blank()) 
-
-
-
-```
 
 ### The mammalian target of rapamycin (mTOR) and translational efficiency
 The mammalian target of rapamycin (mTOR) is a large serine-threonine protein kinase wich in complex with oyher regulatory proteins forms a signaling hub responsible for responses to environmental cues such as nutrients and mechanical stress.
