@@ -11,6 +11,32 @@ library(ggtext)
 label.size <- 12
 line.size <- 0.3
 
+# Within figures texts
+text.size <- 2.5
+
+
+## Color themes 
+
+# Study/Groups colors 
+
+group.study.color <- c("#b2182b", # Dark red
+                       "#ef8a62", # Orange
+                       "#fddbc7", # Pink ish
+                       "#d1e5f0", # Light blue
+                       "#67a9cf", # Blue
+                       "#2166ac") # Navy blue
+
+# Alternative "purple"
+# group.study.color <- c("#762a83", # Purple, dark
+#   "#af8dc3", # Purple light
+#   "#e7d4e8", #
+#   "#d9f0d3", #
+#   "#7fbf7b", #
+#   "#1b7837") #
+
+
+
+
 
 dissertation_theme <- function() {
         theme_bw() +
