@@ -406,7 +406,7 @@ sum.stats <- cbind(per.session %>%
 ```
 
 
-In Study I, the average increases (Table \@ref(tab:csa-str-tab)) in muscle strength and mass in each volume condition corresponded to what could be expected based on previous studies
+In Study I, the average increases (Table \@ref(tab:csa-str-tab)) in muscle strength and mass in each volume condition corresponded to what could be expected
 [@RN2007;<!-- Wernbom 2007 -->
 @RN1741].<!-- Ahtiainen  -->
 
@@ -424,7 +424,7 @@ sum.stats %>%
         collapse_rows()  %>%
         kable_styling(font_size = 7) %>%
         add_footnote(label = c(paste0("Estimates from Wernbom et al. ", "(ref:wernbom-citation)"),
-                               paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation")), 
+                               paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation)")), 
                      notation = "alphabet")
 
 ```
@@ -434,11 +434,19 @@ Average within participant differences in responses between LOW and MOD were con
 @RN789;<!-- Krieger muscle hypertrophy -->
 @RN793;<!-- Kriger muscle strength -->
 @RN1767].<!-- Schoenfeld  -->
-Taken together, these observations confirmed the efficacy of training programs in general and a dose-response with regard to within-session exercise volume.
+Furthermore, by combining data from more recent studies indicates that a higher training volume is generally associated with increased muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1) and \@ref(fig:comb-fig-s1).   
+
+```{r}
+
+```
+
+
+
+
 
 In Study II, training efficacy was assessed by comparing outcomes to a non-training control group. The training group displayed increases compared to the control group for both strength muscle thickness measures.
 
-```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=3, fig.width=5, fig.align='center'}
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.8, fig.width=4.72, fig.align='center'}
 
 library(ggplot2); library(ggtext)
 

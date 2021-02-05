@@ -15,40 +15,15 @@ source("./R/themes.R")
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-## Study participants, protocols and training interventions
+## Study protocols and participants
 
 Study I was designed to examine effects of low- and moderate-volume on
 responses to acute exercise and long-term training within participants.
-Forty-one healthy individuals were recruited and 34 of these completed
-at least 85% of the prescribed sessions and were thus included in
-subsequent data analyses. Reasons for not completing the trial included
-injury not related to the study (*n =* 1), pain or discomfort during
-exercises (*n =* 5) and non-adherence to the study protocol. There were
-no systematic differences in characteristics between participants included in or
-excluded from data analysis in Study I.
-
-Prior to the study, all participants reported that they previously had been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week.  
-
-A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview). Prior to the start of the training intervention, participants reported to the laboratory, on different occasions for a baseline muscle biopsy from both legs (vastus lateralis).
-Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session and after the intervention.
-Measurements of muscle strength were collected twice at baseline and further assessed in weeks 3, 5, 9 and after the intervention.
-Body composition assessments were performed at baseline and after the intervention.
-
-Study II was designed to study the effects of resistance training *per
-se*, and effects of variable volume on selected markers related to
-ribosome biogenesis. Participants were therefore recruited to a training
-group (*n =* 11) and a non-training control group (*n =* 8).
-Eligible for participation in both studies were young (Study I age 18-40; Study
-II 18-35), non-smoking men and women. Exclusion criteria included a
-training history of more than one weekly session during the last 12
-(Study I) or six (Study II) months leading up to the study. Participants
-were also screened for intolerance to local anesthetic, current or
-previous injuries affecting their ability to perform resistance
-training, self-reported symptoms or history of disease, intake of
-medications or supplements with known effects on adaptations to training.
-Participant characteristics for both studies are shown in Table
-\@ref(tab:characteristics-table).
-
+A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
+Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsis (*m. vastus lateralis*).
+Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session as well as after the intervention (Figure \@ref(fig:study1-overview)).
+Assessments of muscle strength (isokinetic and isometric knee extension torque as well as one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
+Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
 
 ```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.  ", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
 
@@ -183,6 +158,14 @@ data.frame(x = c(-8, 13),
 
 ```
 
+Study II was designed to study the effects of resistance training *per se* and effects of variable vs. constant inter-session volume on selected markers related to ribosome biogenesis.
+Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
+An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
+Muscle strength (isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
+Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study, two and eight days after the last training session in the experimental group.
+Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
+The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
+Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
 
 ```{r study2-overview, fig.cap="Schematic representation of Study II, see text for details.  ", fig.scap="Study II, schematic overview", fig.height=3.2, fig.width=4.72, fig.align = "center"}
 
@@ -339,6 +322,73 @@ data.frame(x = c(-8, 16),
 ```
 
 
+```{r pwr_calc, echo=FALSE, warning=FALSE, message=FALSE}
+library(pwr)
+# Approximate power calculations that reproduce power calculations made in GPower
+
+# To be able to detect a training-induced 5-unit change (...) given a within-group standard 
+# deviation of 12, an alpha-level of 0.05 and a desired power of 0.8, 40 subjects needs to be
+# recruited to the experiment in study B.
+
+
+# Ronnestad 2007
+# Isokinetic testing 
+sd.iso <- 4 * sqrt(10)
+diff.isok <- 6
+
+d.ronnestad.isokinetic <- diff.isok/sd.iso
+
+# pwr.t.test(d = d.ronnestad.isokinetic, power = 0.8, type = "paired")
+
+### Knee extensor CSA
+sd.csa <- 2 * sqrt(10)
+diff.csa <- 3
+d.ronnestad.csa <- diff.csa/sd.csa 
+
+# pwr.t.test(d = d.ronnestad.csa, power = 0.8, type = "paired")
+
+# Mitchell MVC
+# This comparison is between 80%, 1-set and 80%1RM 3-set in MVC 
+single.pre <- 192
+single.post <- 248
+  
+multiple.pre <- 188
+multiple.post <- 255
+
+diff.mvc.mitchell <- (((multiple.post/multiple.pre)-1) - ((single.post / single.pre)-1))*100
+d.mitchell.mvc <- diff.mvc.mitchell/sd.iso # Standard deviations borrowed from Rønnestad
+# pwr.t.test(d = d.mitchell.mvc, power = 0.8, type = "paired")
+
+# Mitchell CSA
+
+diff.csa <- 3.5
+sd.csa <- 2 * sqrt(12)
+d.mitchell.csa <- diff.csa/sd.csa
+# pwr.t.test(d = 0.47, power = 0.8, type = "paired")
+
+
+es.min <- round(min(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d.mitchell.csa)),2)
+es.max <- round(max(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d.mitchell.csa)),2)
+```
+
+Recruitment was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study prior to giving their informed consent.
+
+To be eligible for participation in both studies, participants had to be young (Study I age 18-40; Study II 18-35) and non-smoking. Both men and women were considered for participation. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medications or supplements with known effects on adaptations to training.
+Participant characteristics for both studies are shown in Table
+\@ref(tab:characteristics-table).
+
+
+Forty-one healthy individuals were recruited and 34 of these completed
+at least 85% of the prescribed sessions and were thus included in
+subsequent data analyses. Reasons for not completing the trial included
+injury not related to the study (*n =* 1), pain or discomfort during
+exercises (*n =* 5) and non-adherence to the study protocol. There were
+no systematic differences in characteristics between participants included in or
+excluded from data analysis in Study I.
+
+Prior to the study, all participants reported that they previously had been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week.  
+
+
 
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
@@ -491,16 +541,7 @@ rbind(studyI, studyII) %>%
 
 ```
 
-### Ethical considerations
 
-Both studies were approved by the local ethics committee Lillehammer
-University College/Inland Norway University of Applied Sciences and the
-Norwegian Centre for Research Data. In accordance with the *Declaration
-of Helsinki*[@RN2548], the studies were pre-registered in publicly
-accessible databases (Study I, ClinicalTrials.gov Identifier:
-NCT02179307; Study II, <https://osf.io/wa96y>). Participants were
-informed of the study design, potential risks and sources of discomfort
-prior to giving their informed consent.
 
 
 
@@ -772,7 +813,7 @@ rna_fig_b <- complete_sample %>%
 
 ```
 
-Total-RNA was extracted from pre-weighed, frozen muscle samples with a protocol modified from
+Total-RNA was extracted from frozen muscle samples with weights measured at collection using a protocol modified from
 [@RN2672]<!-- Chomczynski and Sacchi -->
 using Trizol reagent (Life Technologies).
 Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption achieved by Zirconium Oxide Beads (0.5 mm, Next Advance, Inc., New York, USA) and a bead mill (Bullet blender, Next Advance). External, non-mammalian RNA (Lambda PolyA External Standard Kit, Takara Bio Europe, Saint-Germain-en-Laye, France) was added with the initial volume of Trizol to enable per-weight normalization in subsequent analyses. After homogenization, additional Trizol was added to a total volume of \SI{1}{ml}. Phase separation was achieved by centrifugation after addition of chloroform (\SI{200}{ul}). The upper phase (\SI{400}{ul} in Study I; \SI{450}{ul} in Study II) was transferred to a fresh tube and RNA was precipitated using isopropanol (\SI{500}{ul}). After incubation (10 min, room-temperature) and centrifugation (12000 g, 10 min at 4$^{\circ}$C) the resulting RNA pellet was washed three times in chilled 75% ethanol.
@@ -829,6 +870,15 @@ Hormone analyses were performed on blood samples collected at five time points: 
 
 
 ## Statistics and data analysis
+
+
+
+In Study I, an *a priori* sample-size calculations ($\beta=20\%$, $\alpha=5\%$) indicated that 40 participants was sufficient to detect $\sim$ 3\% and 5\%-point differences between volume conditions in primary outcomes, training induced changes in muscle cross-sectional area and maximal voluntary strength respectively. Sample-size calculations were based on assumed differences between volume condition corresponding to effect sizes of `r es.min`-`r es.max`, as estimated from previous studies [@RN834; @RN776].
+
+In Study II, an initial sample size calculation was made based on a best case scenario. Data from Brook et al. [@RN1642] indicated that a within-participant differences in RNA per tissue weight of $15\%$ could be detected with seven participants in the experimental group (e.g. 2.79 (0.65) to 3.21 (0.74) \SI{}{\micro\gram\per\micro\litre}, $\alpha<0.05$, $\beta<0.2$, effect size=1.2). The control group was included in the study as a negative control primarily for the sake of systems validation of experimental procedures regarding measures of e.g. ribosomal biogenesis. With a balanced design, accounting for drop-outs eight participants were required in each group. After a preliminary analysis of the experiment (experimental group *n = *7, control group *n = *7)[@RN2822], additional participants (experimental group *n =* 4, control group *n = *1) were recruited to the study to increase the precision of estimates, primarily in analyses within the experimental group.
+
+
+
 
 TO DO:
 
