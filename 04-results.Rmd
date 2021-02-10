@@ -446,15 +446,60 @@ In an attempt to explain differences in training outcomes between volume-conditi
 First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
 [@RN866;<!-- Baar Esser correlation in rats  -->
 @RN785;<!--Terzis et al., 2008-->
-@RN788].<!-- Mitchell et al., 2013-->
-A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6).
-In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig)).
-It is recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and MEK/ERK converges here
-[@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
-It is also recognized that phosphorylation of mTOR it self at Ser\textsuperscript{2448} primarily should be regarded as a indicative for negative feedback as this site is phosphorylated due to S6K1 activity
+@RN788],<!-- Mitchell et al., 2013-->
+presumably trough increased translation indicated by greater ribosomal association with mRNA
+[@RN866]<!-- Baar Esser correlation in rats larger polysomal pool  -->
+A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig) a).
+In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
+It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
 [@RN2309] (Figure \@ref(fig:mtor-fig) a).<!-- Figueriedo mTOR and ser2448 signalling review -->
+It is also recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and extracellular signal-regulated kinases (ERK)-signalling converges here
+[@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
+Interestingly, albeit circumstantial, Terzis et al., did not find any clear volume dependency in exercise induced activation of either ERK 1/2 nor p38
+[@RN785]<!--Terzis et al., 2008-->
+suggesting that mTORC1, partly through S6K1 drives volume-dependent rpS6\textsuperscript{Ser\textsuperscript{235/236}} phosphorylation.
+
+The importance of mTORC1 signalling in protein synthesis in the acute phase after resistance exercise is well established.
+In humans, administration of rapamycin, a selective inhibitor of mTORC1, prior to resistance exercise leads to delayed or blunted activation of mTORC1 effectors such as
+S6K1\textsuperscript{Thr\textsuperscript{389}},
+S6K1\textsuperscript{Thr\textsuperscript{421}/Ser\textsuperscript{424}}, 
+rpS6\textsuperscript{Ser\textsuperscript{235/236}} and
+rpS6\textsuperscript{Ser\textsuperscript{240/244}} as well as
+unchanged levels of phopshorylation of 4E-BP1 and eEF2
+concomitantly with abolished exercise-induced increase in protein synthesis
+[@RN780].<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
+As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume is associated with increased potential acute-phase protein synthesis.
+However, an increased signalling through this pathway could also be interpreted as indicative for increased ribosomal biogenesis. 
+Indeed, mTORC1 affects ribosomal biogenesis through multiple mechanisms including activation of transcriptional programs related to ribosomal biogenesis (mediated through S6K1)
+[@RN2321],<!-- Chauvin S6K1/S6K2 null mice does not respond with ribosomal biogenesis transcription after feeding -->
+selective translation of specific mRNA related to ribosomal biogenesis
+[@RN2320]<!-- Goodman mRNA with "weak" complicated 5'-UTR translation is facilitated by mTORC1/eIF4E  -->
+which in turn stimulates to increased ribosomal RNA transcription, mediated by cyclin D1 abundance and UBF avaliability
+[@RN1632].<!-- Nader 2005 -->
 
 
+
+
+Additionally, results from genetically modified mice lacking the mTORC1 effector S6K1 confirms its specific importance for maintenance of skeletal muscle size as these mice 
+[@RN2828].<!-- Ohanna deleting S6K1 leads to reduced cell size and myofiber csa similarly to rapamycin treatment  -->
+Particularly S6K1 
+
+
+mTORC controls protein synthesis trough multiple mechanisms
+4E-BP1 and S6K1-rpS6
+
+mTORC1 enhance translation of specific mRNA, including ribosoma biogenesis genes
+
+
+
+
+[@RN2827]<!-- Pende S6K1/S6K2 null mice still have ser235/235 phosphorylation,  -->
+
+
+
+
+
+[@RN2829]<!-- rpS6 is an effector of mTOR, determines cell size --> 
 
 ```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr\\textsuperscript{389} (p70) Thr\\textsuperscript{412} (p85), rpS6 at Ser\\textsuperscript{235/236} and mTOR at Ser\\textsuperscript{2448} induced by acute exercise expressed as fold-changes(b). Estimates are derived from ANCOVA models controling for baseline values. Non-adjusted estimates of differences in fold-changes between volume conditions are displayed with transparent points and wiskers. Values in b are point estimates with 95% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
 
@@ -468,7 +513,10 @@ western_fig
 These results are in agreement with previous studies showing exercise-volume dependency of mTORC1 related signaling  
 [@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
 @RN784;<!-- Terzis volume affect activation -->
-@RN1837].<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
+@RN1837],<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
+coinciding with volume dependent protein synthesis
+[@RN791].<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+Together
 
 
 

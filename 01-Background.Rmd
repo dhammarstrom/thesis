@@ -519,6 +519,9 @@ The discovery of an immunosuppressant organic compound called rapamycin in the 1
 [@RN860]<!-- Kubica 2004, rapamycin prevents increases in ex induced protein synthesis trough eukaryotic initiation factor 2B mRNA translation (rats) -->
 
 
+[@RN780]<!-- Drummond 2009 rapamycin blocks exercise induced increase in muscle protein synthesis in humans -->
+[@RN2826]<!-- Gundermann 2014 inhibition of mTORC with rapamycin in humans, exercise induced-->
+
 
 In this context, molecular signatures conveyed by the mechanistic target of rapamycin complex 1 (mTORC1) has been in particular focus. Inhibition of mTORC1 impairs protein synthesis in humans [@RN780] and activation of its associated downstream target S6 kinase 1 (S6K1) correlates with increases in muscle protein synthesis and subsequent muscle growth</span>
 [@RN791;<!-- Burd Correlation in single session between p70 and  -->

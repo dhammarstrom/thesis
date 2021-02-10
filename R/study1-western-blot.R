@@ -1,0 +1,351 @@
+##-------------------------------------
+## study1-western-blot.R
+##
+## Title: Western blot analysis in study I
+## Purpose: Display results from western blot analysis in study I
+## Author:
+##
+##
+##
+##-------------------------------------
+## Notes:
+# Western blot data are presented in the thesis as diffs between conditions with 95% CI
+#
+#
+#
+#
+#
+#
+#
+## ------------------------------------
+
+
+# Load libraries and functions
+
+source("./R/libraries.R")
+source("./R/themes.R")
+
+#### Read data and combine data frames ####
+# read western data
+west <- read_excel("./data/study-1/westernResults.xlsx", sheet="run1")
+west2 <- read_excel("./data/study-1/westernResults.xlsx", sheet="run2")
+
+# sample setups
+sample <- read_excel("./data/study-1/westernResults.xlsx", sheet="samples")%>%
+        filter(include=="incl")
+
+# leg training load-partitioning
+leg <- read.csv("./data/study-1/oneThreeSetLeg.csv", sep=";")
+
+leg <- leg %>%
+        gather(sets, leg, multiple:single)%>%
+        filter(include=="incl")
+
+# combine sample and leg sets
+sl <- inner_join(sample, leg)
+
+
+#### Mean center expression data and collect data from all runs ####
+
+# West acute only contains w2pre and w2post
+
+### Extract pan p70 values for normalisation 
+west <- west %>%
+        mutate(totalprotein=(mean.gray1 + mean.gray2)/2 - (mean.graybg1+ mean.graybg2)/2) %>%
+        inner_join(sl) %>%
+        dplyr::select(run, gel, well, subject, leg, sets, timepoint, date, 
+                      totalprotein, p.p70, t.p70, p.mTOR, t.mTOR, p.s6, t.s6, p.4EBP1, t.4EBP1) %>%
+        group_by(date, gel) %>%
+        mutate(totalprotein = totalprotein / max(totalprotein, na.rm = TRUE)) %>%
+        gather(target, expression, p.p70:t.4EBP1) %>%
+        mutate(expression=expression,
+               run = "west1") %>%
+        ungroup()
+
+
+
+west2 <- west2 %>%
+        mutate(totalprotein=(mean.gray1+mean.gray2)/2 - (mean.graybg1+ mean.graybg2)/2) %>%
+        inner_join(sl) %>%
+        dplyr::select(run, gel, well, subject, leg, sets, timepoint, date, 
+                      totalprotein, t.mTOR, p.s6, t.s6) %>%
+        group_by(date, gel) %>%
+        mutate(totalprotein = totalprotein / max(totalprotein, na.rm = TRUE)) %>%
+        gather(target, expression, t.mTOR:t.s6) %>%
+        mutate(expression=expression,
+               run = "west2") %>%
+        # This removes bad gels from analysis
+        filter(!(subject %in% c("FP21", "FP22", "FP24", "FP25", "FP27", "FP28", "FP29", "FP30", "FP31") & target == "t.mTOR")) %>%
+        ungroup()
+
+
+## Comnbine data from full runs
+wb.raw <- rbind(west, west2) 
+
+
+wb.raw.acute <- wb.raw %>% 
+        filter(timepoint %in% c("w2pre", "w2post")) %>%
+        spread(target, expression) %>%
+        mutate(p.mTOR = p.mTOR/t.mTOR, 
+               p.mTOR.tp = p.mTOR/totalprotein,
+               t.mTOR = t.mTOR/totalprotein,
+               p.p85.tp = p.p70/totalprotein, 
+               p.p85 = p.p70/t.p70,
+               p.s6.tp = p.s6/totalprotein, 
+               p.s6 = p.s6/t.s6,
+               t.s6 = t.s6/totalprotein,
+               t.p70 = t.p70/totalprotein) %>%
+        dplyr::select(run, gel, well, subject, sets, timepoint, 
+                      p.mTOR, 
+                      p.mTOR.tp,
+                      t.mTOR,
+                      p.p85.tp, 
+                      p.p85,
+                      p.s6.tp,
+                      p.s6,
+                      t.p70,
+                      t.s6) %>%
+        gather(target, expression, p.mTOR:t.s6) %>%
+        mutate(sample = paste0(subject, sets, timepoint, gel, well), 
+               timepoint = factor(timepoint, levels = c("w2pre", "w2post")), 
+               sets = factor(sets, levels = c("single", "multiple"))) %>%
+        dplyr::select(subject, target, sets, timepoint, expression) %>%
+        ungroup() %>%
+        print()
+
+
+west.acute <-   read_excel("./data/study-1/westernResults.xlsx", sheet="runAcute") %>%
+        mutate(totalprotein=(mean.gray1+mean.gray2)/2 - (mean.graybg1+ mean.graybg2)/2)%>%
+        inner_join(sl)%>%
+        dplyr::select(run, gel, well, subject, leg, sets, timepoint, date, 
+                      totalprotein, p.p70 = p.p70.new, t.p70, t.mTOR, p.mTOR)%>%
+        group_by(date, gel)%>%
+        mutate(totalprotein = totalprotein / max(totalprotein, na.rm = TRUE)) %>%
+        ungroup() %>%
+        mutate(p.p70 = p.p70/totalprotein,
+               p.mTOR = p.mTOR/t.mTOR, 
+               p.mTOR.tp = p.mTOR/totalprotein,
+               t.mTOR = t.mTOR/totalprotein) %>%
+        gather(target, expression, p.p70:p.mTOR.tp)%>%
+        mutate(run = "westacute")%>%
+        ungroup() %>%
+        filter(target %in% c("p.p70", "t.mTOR", "p.mTOR")) %>%
+        mutate(timepoint = factor(timepoint, levels=c("w2pre", "w2post")),
+               sets = factor(sets, levels = c("single", "multiple")),
+               leg = factor(paste0(subject, sets))) %>%
+        data.frame() %>%
+        dplyr::select(subject, target, sets, timepoint, expression) %>%
+        ungroup() %>%
+        print()
+
+
+wb.raw.acute <- rbind(wb.raw.acute, west.acute) %>%
+        group_by(subject, sets, timepoint, target) %>%
+        summarise(expression = log(mean(expression, na.rm = TRUE))) %>%
+        print()
+
+
+
+temp <- wb.raw.acute %>%
+        pivot_wider(names_from = timepoint, values_from = expression) %>%
+        mutate(change = w2post - w2pre) %>%
+        print()
+
+
+
+########### Raw data plot for each target
+
+
+wb.raw.acute %>%
+        filter(target %in% c("p.p70", 
+                             "p.p85", 
+                             "p.mTOR", 
+                             "p.s6.tp")) %>%
+        group_by(target, timepoint) %>%
+        summarise(m = mean(expression), 
+                  )
+
+
+
+
+
+wb.raw.acute %>%
+        filter(target %in% c("p.p70", 
+                             "p.p85", 
+                             "p.mTOR", 
+                             "p.s6.tp")) %>%
+        ggplot(aes(timepoint, expression, color = sets)) + 
+        
+        geom_boxplot(position = position_dodge(width = 0.2), 
+                     width = 0.2) +
+        
+        geom_point(position = position_jitterdodge(dodge.width = 0.2, 
+                                                   jitter.width = 0.1), 
+                   shape = 21, alpha = 0.3) +
+        
+        facet_grid(target ~ ., scales = "free")
+
+
+
+
+
+
+p.p70 <- lmer(change ~ w2pre + sets + (1|subject), 
+              data = temp[temp$target == "p.p70", ]) 
+
+p.p85 <- lmer(change ~ w2pre + sets + (1|subject), 
+              data = temp[temp$target == "p.p85", ]) 
+
+p.mTOR <- lmer(change ~ w2pre + sets + (1|subject), 
+               data = temp[temp$target == "p.mTOR", ]) 
+
+p.s6.tp <- lmer(change ~ w2pre + sets + (1|subject), 
+                data = temp[temp$target == "p.s6.tp", ]) 
+
+
+p.p70.unadjusted <- lmer(change ~  sets + (1|subject), 
+              data = temp[temp$target == "p.p70", ]) 
+
+p.p85.unadjusted  <- lmer(change ~  sets + (1|subject), 
+              data = temp[temp$target == "p.p85", ]) 
+
+p.mTOR.unadjusted  <- lmer(change ~  sets + (1|subject), 
+               data = temp[temp$target == "p.mTOR", ]) 
+
+p.s6.tp.unadjusted  <- lmer(change ~  sets + (1|subject), 
+                data = temp[temp$target == "p.s6.tp", ]) 
+
+
+
+
+
+
+
+
+
+
+fold_changes_diffs <- rbind( data.frame(exp(confint(p.p70))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.p70", 
+                                            est = exp(coef(summary(p.p70))[3, 1]), 
+                                            adjust = "baseline") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.p85))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.p85", 
+                                            est = exp(coef(summary(p.p85))[3, 1]), 
+                                            adjust = "baseline") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.mTOR))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.mTOR", 
+                                            est = exp(coef(summary(p.mTOR))[3, 1]), 
+                                            adjust = "baseline") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.s6.tp))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.s6.tp", 
+                                            est = exp(coef(summary(p.s6.tp))[3, 1]), 
+                                            adjust = "baseline") %>%
+                                     filter(coef == "setsmultiple"), 
+                       ##### Unadjusted data ##########################################  
+                             data.frame(exp(confint(p.p70.unadjusted))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.p70", 
+                                            est = exp(coef(summary(p.p70.unadjusted))[2, 1]), 
+                                            adjust = "non") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.p85.unadjusted))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.p85", 
+                                            est = exp(coef(summary(p.p85.unadjusted))[2, 1]), 
+                                            adjust = "non") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.mTOR.unadjusted))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.mTOR", 
+                                            est = exp(coef(summary(p.mTOR.unadjusted))[2, 1]), 
+                                            adjust = "non") %>%
+                                     filter(coef == "setsmultiple"), 
+                             
+                             data.frame(exp(confint(p.s6.tp.unadjusted))) %>%
+                                     mutate(coef = rownames(.), 
+                                            target = "p.s6.tp", 
+                                            est = exp(coef(summary(p.s6.tp.unadjusted))[2, 1]), 
+                                            adjust = "non") %>%
+                                     filter(coef == "setsmultiple") ) %>%
+        print()
+
+
+fold_change_fig <- fold_changes_diffs %>%
+        
+        mutate(target = factor(target, levels = c("p.p85", 
+                                                  "p.p70", 
+                                                  "p.mTOR", 
+                                                  "p.s6.tp"), 
+                               labels = c("p85-S6K1<sup>Thr412</sup>", 
+                                          "p70-S6K1<sup>Thr389</sup>", 
+                                          "mTOR<sup>Ser2448</sup>", 
+                                          "rpS6<sup>Ser235/236</sup>")), 
+               target = fct_rev(target)) %>%
+        
+        ggplot(aes(target, est, alpha = adjust)) + 
+        geom_errorbar(aes(ymin = X2.5.., ymax = X97.5..), 
+                       width = 0, 
+                       position = position_dodge(width = 0.2 )) +
+        geom_point(shape = 21, 
+                   fill = "blue", 
+                   size = 2.5, 
+                   position = position_dodge(width = 0.2 )) +
+        
+        scale_y_continuous(limits = c(0.8, 2.4), 
+                           expand = c(0,0), 
+                           breaks = c(0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4)) +
+       
+         geom_hline(yintercept = 1, lty = 2, color = "grey85") +
+        
+        scale_alpha_manual(values = c(1, 0.2)) +
+        
+
+        labs(y = expression(paste(Delta, "MOD / ", Delta,  "LOW"))) + 
+        theme_bw() +
+        theme(panel.grid = element_blank(), 
+              panel.border = element_blank(), 
+              axis.line.x  = element_line(size = line.size), 
+              axis.line.y = element_blank(), 
+              axis.ticks.x = element_line(size = line.size), 
+              axis.ticks.y = element_blank(), 
+              axis.text.y =  element_markdown(color = "black", size = 7), 
+              axis.title.y = element_blank(),
+              axis.text.x =  element_text(color = "black", size = 7), 
+              axis.title.x = element_text(color = "black", size = 7), 
+              legend.title = element_blank(), 
+              legend.background = element_rect(fill = "white"),
+              legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
+              legend.key = element_rect(fill = "white"),
+              legend.position = "none") + 
+        coord_flip()
+
+
+?TeX
+
+
+
+west.img <- ggdraw() + draw_image("./data/study-1/westernImages/signalling_context.png")
+
+
+western_fig <- plot_grid(west.img, fold_change_fig, labels = "auto")
+
+
+
+saveRDS(western_fig, "./figures/results/study1-western-blot.RDS")
+
+
+
+
+
