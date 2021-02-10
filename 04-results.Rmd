@@ -431,19 +431,44 @@ sum.stats %>%
 
 ```
 
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.6, fig.width=4.72, fig.align='center'}
+
+library(ggplot2); library(ggtext)
+
+# The figure and estimates are from ./R/study-1/muscle-strength-size.R
+muscle_strength_fig <- readRDS("./data/derivedData/study1_muscle-strength-size/muscle-strength-fig.RDS")
+
+muscle_strength_fig
+```
+
 The moderate-volume condition consistently showed favorable adaptations when compared to the low-volume condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)).
 In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers with known influence on adaptations to resistance training were investigated for volume-dependency.
-First, activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
+First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
 [@RN866;<!-- Baar Esser correlation in rats  -->
 @RN785;<!--Terzis et al., 2008-->
 @RN788].<!-- Mitchell et al., 2013-->
 A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6).
-In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} \@ref(fig:mtor-fig)).
+In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig)).
 It is recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and MEK/ERK converges here
 [@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
 It is also recognized that phosphorylation of mTOR it self at Ser\textsuperscript{2448} primarily should be regarded as a indicative for negative feedback as this site is phosphorylated due to S6K1 activity
-[@RN2309].<!-- Figueriedo mTOR and ser2448 signalling review -->
+[@RN2309] (Figure \@ref(fig:mtor-fig) a).<!-- Figueriedo mTOR and ser2448 signalling review -->
 
+
+
+```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr\\textsuperscript{389} (p70) Thr\\textsuperscript{412} (p85), rpS6 at Ser\\textsuperscript{235/236} and mTOR at Ser\\textsuperscript{2448} induced by acute exercise expressed as fold-changes(b). Estimates are derived from ANCOVA models controling for baseline values. Non-adjusted estimates of differences in fold-changes between volume conditions are displayed with transparent points and wiskers. Values in b are point estimates with 95% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+
+western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
+
+western_fig
+
+
+```
+
+These results are in agreement with previous studies showing exercise-volume dependency of mTORC1 related signaling  
+[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+@RN784;<!-- Terzis volume affect activation -->
+@RN1837].<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
 
 
 
@@ -486,15 +511,6 @@ Furthermore, when a  combining data from more recent studies indicates that a hi
 
 In Study II, training efficacy was assessed by comparing outcomes to a non-training control group. The training group displayed increases compared to the control group for both strength muscle thickness measures.
 
-```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.6, fig.width=4.72, fig.align='center'}
-
-library(ggplot2); library(ggtext)
-
-# The figure and estimates are from ./R/study-1/muscle-strength-size.R
-muscle_strength_fig <- readRDS("./data/derivedData/study1_muscle-strength-size/muscle-strength-fig.RDS")
-
-muscle_strength_fig
-```
 
 ## Acute effects of diffrent training volume on determinants of muscle protein synthesis
 <!--

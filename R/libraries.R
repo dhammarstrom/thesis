@@ -5,8 +5,8 @@ library(readxl)
 library(latex2exp)
 
 library(lme4)
-
-
+library(ggtext)
+library(latex2exp)
 
 library(devtools)
 
