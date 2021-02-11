@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.5)  9 FEB 2021 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.5)  11 FEB 2021 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1572,7 +1572,7 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [12]
-<thesis_files/figure-latex/Millward1973-1.pdf, id=391, 180.675pt x 180.675pt>
+<thesis_files/figure-latex/Millward1973-1.pdf, id=390, 180.675pt x 180.675pt>
 File: thesis_files/figure-latex/Millward1973-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/Millward1973-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/Millward1973-1.pdf  used on 
@@ -1608,27 +1608,27 @@ Chapter 3.
 
 ]
 Chapter 4.
-<thesis_files/figure-latex/study1-overview-1.pdf, id=460, 340.27126pt x 201.753
+<thesis_files/figure-latex/study1-overview-1.pdf, id=459, 340.27126pt x 201.753
 75pt>
 File: thesis_files/figure-latex/study1-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study1-overview-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study1-overview-1.pdf  used 
-on input line 854.
+on input line 857.
 (pdftex.def)             Requested size: 340.27042pt x 201.75325pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 858--858
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 861--861
 [] [] 
  []
 
-<thesis_files/figure-latex/study2-overview-1.pdf, id=463, 340.27126pt x 230.862
+<thesis_files/figure-latex/study2-overview-1.pdf, id=462, 340.27126pt x 230.862
 5pt>
 File: thesis_files/figure-latex/study2-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study2-overview-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-overview-1.pdf  used 
-on input line 870.
+on input line 873.
 (pdftex.def)             Requested size: 340.27042pt x 230.86192pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 874--874
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 877--877
 [] [] 
  []
 
@@ -1637,12 +1637,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [23 <./thesis_files/figure-latex/study1-overview-1.pdf>] [24 <./thesis_files/fi
 gure-latex/study2-overview-1.pdf>]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 893--893
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 896--896
 [] [] 
  []
 
 
-Overfull \hbox (47.39523pt too wide) in paragraph at lines 896--919
+Overfull \hbox (47.39523pt too wide) in paragraph at lines 899--922
  [][] 
  []
 
@@ -1660,7 +1660,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [34] [35]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-152.
+155.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1669,15 +1669,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 [36]
-<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=557, 469.755pt x 325.215pt
+<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=556, 469.755pt x 325.215pt
 >
 File: thesis_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/unnamed-chunk-1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-1-1.pdf  used 
-on input line 1168.
+on input line 1171.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (114.0944pt too wide) in paragraph at lines 1168--1169
+Overfull \hbox (114.0944pt too wide) in paragraph at lines 1171--1172
 [] 
  []
 
@@ -1689,1767 +1689,1832 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
 ]
 Chapter 5.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1245--1245
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1248--1248
 [] [] 
  []
 
 
-Overfull \hbox (19.99744pt too wide) in paragraph at lines 1248--1295
+Overfull \hbox (19.99744pt too wide) in paragraph at lines 1251--1298
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:mtor-fig' on page 41 undefined on input line 1301
-.
-
-<thesis_files/figure-latex/mtor-fig, -1.pdf, id=587, 340.27126pt x 252.945pt>
-File: thesis_files/figure-latex/mtor-fig, -1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/mtor-fig, -1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/mtor-fig, -1.pdf  used on in
-put line 1308.
-(pdftex.def)             Requested size: 340.27042pt x 252.94438pt.
-
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1312--1312
-[] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[41] [42]
-<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=600, 340.27126pt x 187.70125pt
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=585, 340.27126pt x 187.70125pt
 >
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 1334.
+nput line 1301.
 (pdftex.def)             Requested size: 340.27042pt x 187.70079pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1338--1338
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1305--1305
+[] [] 
+ []
+
+[41 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>] [42]
+<thesis_files/figure-latex/mtor-fig-1.pdf, id=605, 340.27126pt x 252.945pt>
+File: thesis_files/figure-latex/mtor-fig-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/mtor-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/mtor-fig-1.pdf  used on inpu
+t line 1337.
+(pdftex.def)             Requested size: 340.27042pt x 252.94438pt.
+
+Overfull \hbox (4.51096pt too wide) in paragraph at lines 1337--1338
+ []\T1/lmr/m/n/10 (-20) {[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[43]
+<thesis_files/figure-latex/rrna-fig-1.pdf, id=610, 340.27126pt x 180.675pt>
+File: thesis_files/figure-latex/rrna-fig-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/rrna-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/rrna-fig-1.pdf  used on inpu
+t line 1352.
+(pdftex.def)             Requested size: 340.27042pt x 180.67455pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1356--1356
 [] [] 
  []
 
 
-Underfull \vbox (badness 5667) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[43 <./thesis_files/figure-latex/mtor-fig, -1.pdf>] [44 <./thesis_files/figure-
-latex/comb-fig-s1-1.pdf>]
+[44 <./thesis_files/figure-latex/mtor-fig-1.pdf>]
+
+LaTeX Warning: Reference `fig:rna-fig' on page 45 undefined on input line 1360.
+
+
+[45 <./thesis_files/figure-latex/rrna-fig-1.pdf>] [46]
 Chapter 6.
-[45
+[47
 
-] [46
+] [48
 
-] [47] [48
+] [49] [50
 
-] [49
+] [51
 
 ]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1374--1376
-[][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1434--1436
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1379
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\T1/lmr/m/n/8 (+20) García-Hermoso A, Cavero-Redondo I,
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 1379--1379
+Underfull \hbox (badness 3260) in paragraph at lines 1439--1439
 \T1/lmr/m/n/8 (+20) of all-cause mor-tal-ity in an ap-par-ently
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 1379--1379
+Underfull \hbox (badness 1371) in paragraph at lines 1439--1439
 \T1/lmr/m/n/8 (+20) and meta-analysis of data from ap-prox-i-
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 1379--1379
+Underfull \hbox (badness 2269) in paragraph at lines 1439--1439
 \T1/lmr/m/n/8 (+20) of Phys-i-cal Medicine and Re-ha-bil-i-ta-tion
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1377--1380
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1437--1440
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1381--1384
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1441--1444
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1385--1388
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1445--1448
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1389--1392
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1449--1452
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1393--1396
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1397--1400
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1453--1456
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1401--1404
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1457--1460
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1405--1408
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1461--1464
+ [] 
  []
 
 
-Overfull \hbox (0.59076pt too wide) in paragraph at lines 1411--1411
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1465--1468
+ [] 
+ []
+
+
+Overfull \hbox (0.59076pt too wide) in paragraph at lines 1471--1471
 \T1/lmr/m/n/8 (-20) based es-ti-mate. Cal-cif Tis-sue Int 2019;104:137--
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1409--1412
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1469--1472
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1413--1416
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1473--1476
+ [] 
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 1419--1419
+Underfull \hbox (badness 1953) in paragraph at lines 1479--1479
 \T1/lmr/m/n/8 (+20) 81. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1359 / j
 bmr . 1997 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1417--1420
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1477--1480
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1421--1424
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1481--1484
+ [] 
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 1427--1427
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[52
+
+]
+Underfull \hbox (badness 4132) in paragraph at lines 1487--1487
 \T1/lmr/m/n/8 (+20) ero-gene-ity in re-sis-tance training-induced
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 1427--1427
+Underfull \hbox (badness 2913) in paragraph at lines 1487--1487
 \T1/lmr/m/n/8 (+20) mus-cle strength and mass re-sponses in
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 1427--1427
+Underfull \hbox (badness 1281) in paragraph at lines 1487--1487
 \T1/lmr/m/n/8 (+20) (Dordr) 2016;38:10. []$\T1/lmtt/m/n/8 https : / / doi . org
  / 10 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1425--1428
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1485--1488
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1429--1432
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1489--1492
+ [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[50
-
-]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1433--1436
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1493--1496
+ [] 
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 1439--1439
+Underfull \hbox (badness 1152) in paragraph at lines 1499--1499
 \T1/lmr/m/n/8 (+20) Pro-gres-sion mod-els in re-sis-tance train-ing
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1437--1440
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1497--1500
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1441--1444
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1501--1504
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1445--1448
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1505--1508
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1449--1452
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1453--1456
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1457--1460
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1509--1512
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1461--1464
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1513--1516
+ [] 
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 1467--1467
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1517--1520
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1521--1524
+ [] 
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 1527--1527
 \T1/lmr/m/n/8 (+20) A meta-analysis. J Strength Cond Res
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1465--1468
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1525--1528
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1469--1472
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1529--1532
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1473--1476
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1477--1480
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 1483--1483
-\T1/lmr/m/n/8 (+20) 7. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1007 / s4
-0279 -[] 018 -[]
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1481--1484
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 1487--1487
-[]\T1/lmr/m/n/8 (+20) Tipton CM. The his-tory of "ex-er-cise is
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1485--1488
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1489--1492
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1493--1496
-[][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[51]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1497--1500
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1501--1504
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1505--1508
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1509--1512
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1513--1516
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 1519--1519
-[]\T1/lmr/m/n/8 (+20) Chui E. The ef-fect of sys-tem-atic weight
- []
-
-
-Underfull \hbox (badness 5036) in paragraph at lines 1519--1519
-\T1/lmr/m/n/8 (+20) 94. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1080 / 1
-0671188 .
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1517--1520
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1521--1524
-[][][] []  
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 1527--1527
-[]\T1/lmr/m/n/8 (+20) Hettinger T, Müller EA. Muskelleis-tung
- []
-
-
-Underfull \hbox (badness 3884) in paragraph at lines 1527--1527
-\T1/lmr/m/n/8 (+20) und muskel-train-ing. Ar-beit-sphys-i-olo-gie
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1525--1528
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1529--1532
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1533--1536
-[][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1537--1540
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1541--1544
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1545--1548
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1549--1552
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1553--1556
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1557--1560
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1561--1564
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1565--1568
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1569--1572
-[][][] []  
- []
-
-
-Underfull \hbox (badness 3895) in paragraph at lines 1575--1575
-\T1/lmr/m/n/8 (+20) 74. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
- / 10 .
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1573--1576
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1577--1580
-[][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[52]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1581--1584
-[][][] []  
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 1587--1587
-[]\T1/lmr/m/n/8 (+20) Pescatello LS, De-vaney JM, Hubal MJ,
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 1587--1587
-\T1/lmr/m/n/8 (+20) the func-tional sin-gle nu-cleotide poly-mor-
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1585--1588
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1589--1592
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1593--1596
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1597--1600
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1601--1604
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1605--1608
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1609--1612
-[][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1613--1616
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1617--1620
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1621--1624
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1625--1628
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1629--1632
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1633--1636
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1637--1640
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1641--1644
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1533--1536
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [53]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1645--1648
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1537--1540
+ [] 
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 1651--1651
-[]\T1/lmr/m/n/8 (+20) Morton RW, Mur-phy KT, McKel-lar SR,
+Underfull \hbox (badness 1259) in paragraph at lines 1543--1543
+\T1/lmr/m/n/8 (+20) 7. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1007 / s4
+0279 -[] 018 -[]
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1649--1652
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1541--1544
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1653--1656
-[][][] []  
+Underfull \hbox (badness 1721) in paragraph at lines 1547--1547
+[]\T1/lmr/m/n/8 (+20) Tipton CM. The his-tory of "ex-er-cise is
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1657--1660
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1545--1548
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1661--1664
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1549--1552
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1665--1668
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1553--1556
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1669--1672
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1557--1560
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1561--1564
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1565--1568
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1569--1572
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 1675--1675
-\T1/lmr/m/n/8 (+20) trac-tion. Cold Spring Harb Per-spect
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1573--1576
+ [] 
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1675--1675
-\T1/lmr/m/n/8 (+20) Biol 2018;10. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 
-. 1101 /
+Underfull \hbox (badness 1005) in paragraph at lines 1579--1579
+[]\T1/lmr/m/n/8 (+20) Chui E. The ef-fect of sys-tem-atic weight
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1673--1676
-[][][] []  
+Underfull \hbox (badness 5036) in paragraph at lines 1579--1579
+\T1/lmr/m/n/8 (+20) 94. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1080 / 1
+0671188 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1677--1680
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1577--1580
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1681--1684
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1581--1584
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1685--1688
-[][][] []  
+Underfull \hbox (badness 2302) in paragraph at lines 1587--1587
+[]\T1/lmr/m/n/8 (+20) Hettinger T, Müller EA. Muskelleis-tung
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1689--1692
-[][][] []  
+Underfull \hbox (badness 3884) in paragraph at lines 1587--1587
+\T1/lmr/m/n/8 (+20) und muskel-train-ing. Ar-beit-sphys-i-olo-gie
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1693--1696
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1585--1588
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1697--1700
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1589--1592
+ [] 
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 1703--1703
-\T1/lmr/m/n/8 (+20) tween strength and hy-per-tro-phy de-pends
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1593--1596
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1701--1704
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1597--1600
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [54]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1705--1708
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1601--1604
+ [] 
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 1711--1711
-\T1/lmr/m/n/8 (+20) lat-eral strength train-ing: Ev-i-dence and
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1605--1608
+ [] 
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 1711--1711
-\T1/lmr/m/n/8 (+20) pos-si-ble mech-a-nisms. J Appl Phys-iol
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1609--1612
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1709--1712
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1613--1616
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1713--1716
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1617--1620
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1717--1720
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1621--1624
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1721--1724
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1625--1628
+ [] 
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 1727--1727
-\T1/lmr/m/n/8 (+20) J Appl Phys-iol (1985) 2006;101:1228--36.
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1629--1632
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1727--1727
-[]$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1152 / japplphysiol .
+Underfull \hbox (badness 3895) in paragraph at lines 1635--1635
+\T1/lmr/m/n/8 (+20) 74. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1725--1728
-[][][] []  
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 1731--1731
-\T1/lmr/m/n/8 (+20) mam-malian skele-tal mus-cles. Phys-iol
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1729--1732
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1733--1736
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1633--1636
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1737--1740
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1637--1640
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1741--1744
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1641--1644
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1745--1748
-[][][] []  
+Underfull \hbox (badness 2269) in paragraph at lines 1647--1647
+[]\T1/lmr/m/n/8 (+20) Pescatello LS, De-vaney JM, Hubal MJ,
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1749--1752
-[][][] []  
+Underfull \hbox (badness 1609) in paragraph at lines 1647--1647
+\T1/lmr/m/n/8 (+20) the func-tional sin-gle nu-cleotide poly-mor-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1753--1756
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1645--1648
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1757--1760
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1649--1652
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1761--1764
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1653--1656
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1765--1768
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1657--1660
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1769--1772
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1661--1664
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [55]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1773--1776
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1665--1668
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1777--1780
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1669--1672
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1781--1784
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1673--1676
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1785--1788
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1677--1680
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1789--1792
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1681--1684
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1793--1796
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1685--1688
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1797--1800
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1801--1804
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1689--1692
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1805--1808
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1693--1696
+ [] 
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1811--1811
-\T1/lmr/m/n/8 (+20) Flier E, Le-brasseur NK, et al. Skele-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1697--1700
+ [] 
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 1811--1811
-\T1/lmr/m/n/8 (+20) tol-er-ance, and my-opa-thy in PGC-1alpha
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1701--1704
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1809--1812
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1705--1708
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1813--1816
-[][][] []  
+Underfull \hbox (badness 1127) in paragraph at lines 1711--1711
+[]\T1/lmr/m/n/8 (+20) Morton RW, Mur-phy KT, McKel-lar SR,
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 1819--1819
-\T1/lmr/m/n/8 (+20) Kjaer M. Hu-man ten-don be-haviour and
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1709--1712
+ [] 
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 1819--1819
-\T1/lmr/m/n/8 (+20) 81. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1113 / j
-physiol .
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1817--1820
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1821--1824
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1825--1828
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1829--1832
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1713--1716
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [56]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1833--1836
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1717--1720
+ [] 
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 1839--1839
-\T1/lmr/m/n/8 (+20) adap-ta-tion of ten-don and skele-tal mus-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1721--1724
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1837--1840
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1725--1728
+ [] 
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 1843--1843
-[]\T1/lmr/m/n/8 (+20) Miller BF, Ole-sen JL, Hansen M, Døss-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1729--1732
+ [] 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 1843--1843
-\T1/lmr/m/n/8 (+20) ing S, Crameri RM, Welling RJ, et al.
+Underfull \hbox (badness 4229) in paragraph at lines 1735--1735
+\T1/lmr/m/n/8 (+20) trac-tion. Cold Spring Harb Per-spect
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 1843--1843
-\T1/lmr/m/n/8 (+20) Co-or-di-nated col-la-gen and mus-cle pro-tein
+Underfull \hbox (badness 1490) in paragraph at lines 1735--1735
+\T1/lmr/m/n/8 (+20) Biol 2018;10. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 
+. 1101 /
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 1843--1843
-\T1/lmr/m/n/8 (+20) syn-the-sis in hu-man patella ten-don and
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1733--1736
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1841--1844
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1845--1848
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1849--1852
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1853--1856
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1857--1860
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1737--1740
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1861--1864
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1741--1744
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1865--1868
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1745--1748
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1869--1872
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1749--1752
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1873--1876
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1753--1756
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1877--1880
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1757--1760
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1881--1884
-[][][] []  
+Underfull \hbox (badness 1033) in paragraph at lines 1763--1763
+\T1/lmr/m/n/8 (+20) tween strength and hy-per-tro-phy de-pends
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1885--1888
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1761--1764
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [57]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1889--1892
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1765--1768
+ [] 
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 1895--1895
-\T1/lmr/m/n/8 (+20) JS. The ef-fect of weekly set vol-ume on
+Underfull \hbox (badness 2173) in paragraph at lines 1771--1771
+\T1/lmr/m/n/8 (+20) lat-eral strength train-ing: Ev-i-dence and
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1893--1896
-[][][] []  
+Underfull \hbox (badness 3449) in paragraph at lines 1771--1771
+\T1/lmr/m/n/8 (+20) pos-si-ble mech-a-nisms. J Appl Phys-iol
  []
 
 
-Underfull \hbox (badness 3471) in paragraph at lines 1899--1899
-[]\T1/lmr/m/n/8 (+20) Baz-Valle E, Fontes-Villalba M, Santos-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1769--1772
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1897--1900
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1773--1776
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1901--1904
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1777--1780
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1905--1908
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1781--1784
+ [] 
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 1911--1911
-\T1/lmr/m/n/8 (+20) Jour-nal of Sports Medicine 2004;38:240--
+Underfull \hbox (badness 2142) in paragraph at lines 1787--1787
+\T1/lmr/m/n/8 (+20) J Appl Phys-iol (1985) 2006;101:1228--36.
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 1911--1911
-\T1/lmr/m/n/8 (+20) 2. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1136 / bj
-sm . 2003 .
+Underfull \hbox (badness 10000) in paragraph at lines 1787--1787
+[]$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1152 / japplphysiol .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1909--1912
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1785--1788
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1913--1916
-[][][] []  
+Underfull \hbox (badness 5711) in paragraph at lines 1791--1791
+\T1/lmr/m/n/8 (+20) mam-malian skele-tal mus-cles. Phys-iol
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1789--1792
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1917--1920
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1793--1796
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1921--1924
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1797--1800
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1925--1928
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1801--1804
+ [] 
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 1931--1931
-\T1/lmr/m/n/8 (+20) A, Bot-taro M, Brown LE, et al. Ef-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1805--1808
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1929--1932
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1809--1812
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1933--1936
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1813--1816
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1937--1940
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 1943--1943
-\T1/lmr/m/n/8 (+20) Mur-phy PW, Lyt-tle AD. The ef-fect of
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1941--1944
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1817--1820
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [58]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1945--1948
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1821--1824
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1949--1952
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1825--1828
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1953--1956
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1829--1832
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1957--1960
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1833--1836
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1961--1964
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1837--1840
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1965--1968
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1841--1844
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1969--1972
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1845--1848
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1973--1976
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1849--1852
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1977--1980
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1853--1856
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1981--1984
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1857--1860
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1985--1988
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1861--1864
+ [] 
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 1991--1991
-[]\T1/lmr/m/n/8 (+20) Phillips SM, Tip-ton KD, Fer-rando AA,
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1865--1868
+ [] 
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 1991--1991
-\T1/lmr/m/n/8 (+20) acute exercise-induced in-crease in mus-
+Underfull \hbox (badness 1931) in paragraph at lines 1871--1871
+\T1/lmr/m/n/8 (+20) Flier E, Le-brasseur NK, et al. Skele-
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 1991--1991
-\T1/lmr/m/n/8 (+20) cle pro-tein turnover. Am J Phys-iol
+Underfull \hbox (badness 1377) in paragraph at lines 1871--1871
+\T1/lmr/m/n/8 (+20) tol-er-ance, and my-opa-thy in PGC-1alpha
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 1991--1991
-\T1/lmr/m/n/8 (+20) 1999;276:E118--24. []$\T1/lmtt/m/n/8 https : / / doi . org 
-/ 10 .
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1989--1992
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1993--1996
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 1999--1999
-\T1/lmr/m/n/8 (+20) Jr D., Wolfe RR. Pos-tex-er-cise net pro-
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 1999--1999
-\T1/lmr/m/n/8 (+20) ad-min-is-tered amino acids. Am J Phys-
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 1997--2000
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2001--2004
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1869--1872
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [59]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2005--2008
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1873--1876
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2009--2012
-[][][] []  
+Underfull \hbox (badness 1466) in paragraph at lines 1879--1879
+\T1/lmr/m/n/8 (+20) Kjaer M. Hu-man ten-don be-haviour and
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2013--2016
-[][][] []  
+Underfull \hbox (badness 5036) in paragraph at lines 1879--1879
+\T1/lmr/m/n/8 (+20) 81. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1113 / j
+physiol .
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 2019--2019
-[]\T1/lmr/m/n/8 (+20) Millward DJ, Gar-lick PJ, James WPT,
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1877--1880
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2017--2020
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1881--1884
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2021--2024
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1885--1888
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2025--2028
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1889--1892
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2029--2032
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1893--1896
+ [] 
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 1899--1899
+\T1/lmr/m/n/8 (+20) adap-ta-tion of ten-don and skele-tal mus-
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1897--1900
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2033--2036
-[][][] []  
+Underfull \hbox (badness 1205) in paragraph at lines 1903--1903
+[]\T1/lmr/m/n/8 (+20) Miller BF, Ole-sen JL, Hansen M, Døss-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 2039--2039
-[]\T1/lmr/m/n/8 (+20) Warner JR. The eco-nomics of ri-bo-some
+Underfull \hbox (badness 1648) in paragraph at lines 1903--1903
+\T1/lmr/m/n/8 (+20) ing S, Crameri RM, Welling RJ, et al.
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2037--2040
-[][][] []  
+Underfull \hbox (badness 1173) in paragraph at lines 1903--1903
+\T1/lmr/m/n/8 (+20) Co-or-di-nated col-la-gen and mus-cle pro-tein
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2041--2044
-[][][] []  
+Underfull \hbox (badness 2707) in paragraph at lines 1903--1903
+\T1/lmr/m/n/8 (+20) syn-the-sis in hu-man patella ten-don and
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2045--2048
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1901--1904
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2049--2052
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1905--1908
+ [] 
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 2055--2055
-[]\T1/lmr/m/n/8 (+20) Nader GA, McLough-lin TJ, Esser KA.
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1909--1912
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2053--2056
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1913--1916
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2057--2060
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1917--1920
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [60]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2061--2064
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1921--1924
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2065--2068
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1925--1928
+ [] 
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 2071--2071
-[]\T1/lmr/m/n/8 (+20) Phillips SM, Parise G, Roy BD, Tip-ton
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1929--1932
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2069--2072
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1933--1936
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2073--2076
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1937--1940
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2077--2080
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2081--2084
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1941--1944
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2085--2088
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1945--1948
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2089--2092
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1949--1952
+ [] 
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 2095--2095
-\T1/lmr/m/n/8 (+20) the contraction-induced in-crease in skele-
+Underfull \hbox (badness 1173) in paragraph at lines 1955--1955
+\T1/lmr/m/n/8 (+20) JS. The ef-fect of weekly set vol-ume on
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 2095--2095
-\T1/lmr/m/n/8 (+20) tal mus-cle pro-tein syn-the-sis. J Phys-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1953--1956
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2093--2096
-[][][] []  
+Underfull \hbox (badness 3471) in paragraph at lines 1959--1959
+[]\T1/lmr/m/n/8 (+20) Baz-Valle E, Fontes-Villalba M, Santos-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2097--2100
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1957--1960
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2101--2104
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1961--1964
+ [] 
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 2107--2107
-[]\T1/lmr/m/n/8 (+20) Stefanovsky VY, Pel-letier G, Han-nan R,
- []
-
-
-Underfull \hbox (badness 3895) in paragraph at lines 2107--2107
-\T1/lmr/m/n/8 (+20) 73. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
- / 10 .
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2105--2108
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2109--2112
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1965--1968
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [61]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2113--2116
-[][][] []  
+Underfull \hbox (badness 2237) in paragraph at lines 1971--1971
+\T1/lmr/m/n/8 (+20) Jour-nal of Sports Medicine 2004;38:240--
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2117--2120
-[][][] []  
+Underfull \hbox (badness 5316) in paragraph at lines 1971--1971
+\T1/lmr/m/n/8 (+20) 2. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1136 / bj
+sm . 2003 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2121--2124
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1969--1972
+ [] 
  []
 
 
-Underfull \hbox (badness 6188) in paragraph at lines 2127--2127
-\T1/lmr/m/n/8 (+20) gene ex-pres-sion dur-ing hu-man skele-tal
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1973--1976
+ [] 
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 2127--2127
-\T1/lmr/m/n/8 (+20) mus-cle hy-per-tro-phy. J Appl Phys-iol
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1977--1980
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2125--2128
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1981--1984
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2129--2132
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1985--1988
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2133--2136
-[][][] []  
+Underfull \hbox (badness 1902) in paragraph at lines 1991--1991
+\T1/lmr/m/n/8 (+20) A, Bot-taro M, Brown LE, et al. Ef-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2137--2140
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1989--1992
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2141--2144
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1993--1996
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2145--2148
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 1997--2000
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2149--2152
-[][][] []  
+Underfull \hbox (badness 1997) in paragraph at lines 2003--2003
+\T1/lmr/m/n/8 (+20) Mur-phy PW, Lyt-tle AD. The ef-fect of
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2153--2156
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2001--2004
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2157--2160
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2005--2008
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2161--2164
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2009--2012
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2165--2168
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2013--2016
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2017--2020
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [62]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2169--2172
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2021--2024
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2173--2176
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2025--2028
+ [] 
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 2179--2179
-\T1/lmr/m/n/8 (+20) ray anal-y-sis. J Appl Phys-iol (1985)
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2029--2032
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2177--2180
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2033--2036
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2181--2184
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2037--2040
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2185--2188
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 2191--2191
-[]\T1/lmr/m/n/8 (+20) Melov S, Tarnopol-sky MA, Beck-man K,
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 2191--2191
-\T1/lmr/m/n/8 (+20) re-verses ag-ing in hu-man skele-tal mus-cle.
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2189--2192
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2193--2196
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2041--2044
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 2199--2199
-[]\T1/lmr/m/n/8 (+20) Phillips BE, Williams JP, Gustafs-son T,
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2045--2048
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2197--2200
-[][][] []  
+Underfull \hbox (badness 2269) in paragraph at lines 2051--2051
+[]\T1/lmr/m/n/8 (+20) Phillips SM, Tip-ton KD, Fer-rando AA,
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2201--2204
-[][][] []  
+Underfull \hbox (badness 5050) in paragraph at lines 2051--2051
+\T1/lmr/m/n/8 (+20) acute exercise-induced in-crease in mus-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2205--2208
-[][][] []  
+Underfull \hbox (badness 4531) in paragraph at lines 2051--2051
+\T1/lmr/m/n/8 (+20) cle pro-tein turnover. Am J Phys-iol
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2209--2212
-[][][] []  
+Underfull \hbox (badness 6641) in paragraph at lines 2051--2051
+\T1/lmr/m/n/8 (+20) 1999;276:E118--24. []$\T1/lmtt/m/n/8 https : / / doi . org 
+/ 10 .
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2213--2216
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2049--2052
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2217--2220
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2053--2056
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2221--2224
-[][][] []  
+Underfull \hbox (badness 1783) in paragraph at lines 2059--2059
+\T1/lmr/m/n/8 (+20) Jr D., Wolfe RR. Pos-tex-er-cise net pro-
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 2059--2059
+\T1/lmr/m/n/8 (+20) ad-min-is-tered amino acids. Am J Phys-
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2057--2060
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2061--2064
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2065--2068
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [63]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2225--2228
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2069--2072
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2229--2232
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2073--2076
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2233--2236
-[][][] []  
+Underfull \hbox (badness 2460) in paragraph at lines 2079--2079
+[]\T1/lmr/m/n/8 (+20) Millward DJ, Gar-lick PJ, James WPT,
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2237--2240
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2077--2080
+ [] 
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 2243--2243
-\T1/lmr/m/n/8 (+20) in exercise-induced mus-cu-lar hy-per-tro-phy.
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2081--2084
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2241--2244
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2085--2088
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2245--2248
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2249--2252
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2253--2256
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2089--2092
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 2259--2259
-\T1/lmr/m/n/8 (+20) Scand J Med Sci Sports 2017;27:458--61.
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2093--2096
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2257--2260
-[][][] []  
+Underfull \hbox (badness 1888) in paragraph at lines 2099--2099
+[]\T1/lmr/m/n/8 (+20) Warner JR. The eco-nomics of ri-bo-some
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2261--2264
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2097--2100
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2265--2268
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2101--2104
+ [] 
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 2271--2271
-\T1/lmr/m/n/8 (+20) hu-man skele-tal muscle--a method-olog-i-cal
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2105--2108
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2269--2272
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2109--2112
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2275
-[]\T1/lmr/m/n/8 (+20) Chomczynski P, Sac-chi N. Single-step
+Underfull \hbox (badness 3354) in paragraph at lines 2115--2115
+[]\T1/lmr/m/n/8 (+20) Nader GA, McLough-lin TJ, Esser KA.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2275
-\T1/lmr/m/n/8 (+20) dinium thiocyanate-phenol-chloroform
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2275
-\T1/lmr/m/n/8 (+20) ex-trac-tion. An-a-lyt-i-cal Bio-chem-istry
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2275
-\T1/lmr/m/n/8 (+20) 1987;162:156--9. https://doi.org/[]$\T1/lmtt/m/n/8 https :
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2273--2276
-[][][] []  
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 2279--2279
-\T1/lmr/m/n/8 (+20) Sarre C, Legrand A, Mol-let LM. Mul-ti-
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2277--2280
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2281--2284
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2113--2116
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [64]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2285--2288
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2117--2120
+ [] 
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 2291--2291
-\T1/lmr/m/n/8 (+20) mal-iza-tion of real-time re-verse tran-scrip-
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2121--2124
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2289--2292
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2125--2128
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2293--2296
-[][][] []  
+Underfull \hbox (badness 1043) in paragraph at lines 2131--2131
+[]\T1/lmr/m/n/8 (+20) Phillips SM, Parise G, Roy BD, Tip-ton
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2297--2300
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2129--2132
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2301--2304
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2133--2136
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2305--2308
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2309--2312
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2137--2140
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2313--2316
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2141--2144
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2317--2320
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2145--2148
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2321--2324
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2149--2152
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2325--2328
-[][][] []  
+Underfull \hbox (badness 1215) in paragraph at lines 2155--2155
+\T1/lmr/m/n/8 (+20) the contraction-induced in-crease in skele-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2329--2332
-[][][] []  
+Underfull \hbox (badness 2653) in paragraph at lines 2155--2155
+\T1/lmr/m/n/8 (+20) tal mus-cle pro-tein syn-the-sis. J Phys-
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2333--2336
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2153--2156
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2337--2340
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2157--2160
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2341--2344
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2345--2348
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2161--2164
+ [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [65]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2349--2352
-[][][] []  
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2165--2168
+ [] 
  []
 
 
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2353--2356
-[][][] []  
+Underfull \hbox (badness 1057) in paragraph at lines 2171--2171
+[]\T1/lmr/m/n/8 (+20) Stefanovsky VY, Pel-letier G, Han-nan R,
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 2171--2171
+\T1/lmr/m/n/8 (+20) 73. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2169--2172
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2173--2176
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2177--2180
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2181--2184
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2185--2188
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 2191--2191
+\T1/lmr/m/n/8 (+20) gene ex-pres-sion dur-ing hu-man skele-tal
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 2191--2191
+\T1/lmr/m/n/8 (+20) mus-cle hy-per-tro-phy. J Appl Phys-iol
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2189--2192
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2193--2196
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2197--2200
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2201--2204
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2205--2208
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2209--2212
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[66]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2213--2216
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2217--2220
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2221--2224
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2225--2228
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2229--2232
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2233--2236
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2237--2240
+ [] 
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 2243--2243
+\T1/lmr/m/n/8 (+20) ray anal-y-sis. J Appl Phys-iol (1985)
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2241--2244
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2245--2248
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2249--2252
+ [] 
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 2255--2255
+[]\T1/lmr/m/n/8 (+20) Melov S, Tarnopol-sky MA, Beck-man K,
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 2255--2255
+\T1/lmr/m/n/8 (+20) re-verses ag-ing in hu-man skele-tal mus-cle.
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2253--2256
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2257--2260
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[67]
+Underfull \hbox (badness 1194) in paragraph at lines 2263--2263
+[]\T1/lmr/m/n/8 (+20) Phillips BE, Williams JP, Gustafs-son T,
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2261--2264
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2265--2268
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2269--2272
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2273--2276
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2277--2280
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2281--2284
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2285--2288
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2289--2292
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2293--2296
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2297--2300
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2301--2304
+ [] 
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 2307--2307
+\T1/lmr/m/n/8 (+20) in exercise-induced mus-cu-lar hy-per-tro-phy.
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2305--2308
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2309--2312
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[68]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2313--2316
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2317--2320
+ [] 
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 2323--2323
+\T1/lmr/m/n/8 (+20) Scand J Med Sci Sports 2017;27:458--61.
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2321--2324
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2325--2328
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2329--2332
+ [] 
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 2335--2335
+\T1/lmr/m/n/8 (+20) hu-man skele-tal muscle--a method-olog-i-cal
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2333--2336
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2339--2339
+[]\T1/lmr/m/n/8 (+20) Chomczynski P, Sac-chi N. Single-step
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2339--2339
+\T1/lmr/m/n/8 (+20) dinium thiocyanate-phenol-chloroform
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2339--2339
+\T1/lmr/m/n/8 (+20) ex-trac-tion. An-a-lyt-i-cal Bio-chem-istry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2339--2339
+\T1/lmr/m/n/8 (+20) 1987;162:156--9. https://doi.org/[]$\T1/lmtt/m/n/8 https :
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2337--2340
+ [] 
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 2343--2343
+\T1/lmr/m/n/8 (+20) Sarre C, Legrand A, Mol-let LM. Mul-ti-
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2341--2344
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2345--2348
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2349--2352
+ [] 
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 2355--2355
+\T1/lmr/m/n/8 (+20) mal-iza-tion of real-time re-verse tran-scrip-
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2353--2356
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2357--2360
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[69]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2361--2364
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2365--2368
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2369--2372
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2373--2376
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2377--2380
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2381--2384
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2385--2388
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2389--2392
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2393--2396
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2397--2400
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2401--2404
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2405--2408
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2409--2412
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2413--2416
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2417--2420
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2421--2424
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[70]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2425--2428
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2429--2432
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2433--2436
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2437--2440
+ [] 
+ []
+
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 2441--2444
+ [] 
  []
 
 
 Package natbib Warning: There were undefined citations.
 
-[66
+[71
 
 ] (./thesis.aux)
 
@@ -3463,11 +3528,11 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 115EFED424516DE631E8B6EA637A32C8;9692.
  ) 
 Here is how much of TeX's memory you used:
- 23262 strings out of 481251
- 393084 string characters out of 5914038
- 800964 words of memory out of 5000000
- 38818 multiletter control sequences out of 15000+600000
- 599957 words of font info for 388 fonts, out of 8000000 for 9000
+ 23277 strings out of 481251
+ 393427 string characters out of 5914038
+ 798109 words of memory out of 5000000
+ 38826 multiletter control sequences out of 15000+600000
+ 599635 words of font info for 385 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,13n,130p,2469b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
@@ -3497,10 +3562,10 @@ s/type1/public/lm/lmsy10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmsy7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/706194/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (82 pages, 810160 bytes).
+Output written on thesis.pdf (87 pages, 824779 bytes).
 PDF statistics:
- 1560 PDF objects out of 1728 (max. 8388607)
- 1425 compressed objects within 15 object streams
- 432 named destinations out of 1000 (max. 500000)
- 126324 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1614 PDF objects out of 1728 (max. 8388607)
+ 1472 compressed objects within 15 object streams
+ 444 named destinations out of 1000 (max. 500000)
+ 126329 words of extra memory for PDF output out of 128383 (max. 10000000)
 

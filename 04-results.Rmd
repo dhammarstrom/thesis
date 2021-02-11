@@ -406,10 +406,10 @@ sum.stats <- cbind(per.session %>%
 ```
 
 
-In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young healthy participants (Table \@ref(tab:csa-str-tab)) 
+In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
 [@RN2007;<!-- Wernbom 2007 -->
 @RN1741],<!-- Ahtiainen  -->
-indicating the general efficiency of the training program.
+indicating the general efficacy of the training program.
 
 
 (ref:wernbom-citation) @RN2007
@@ -431,7 +431,7 @@ sum.stats %>%
 
 ```
 
-```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values and sex.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.6, fig.width=4.72, fig.align='center'}
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.6, fig.width=4.72, fig.align='center'}
 
 library(ggplot2); library(ggtext)
 
@@ -441,14 +441,14 @@ muscle_strength_fig <- readRDS("./data/derivedData/study1_muscle-strength-size/m
 muscle_strength_fig
 ```
 
-The moderate-volume condition consistently showed favorable adaptations when compared to the low-volume condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)).
+The multiple-sets (moderate-volume) condition consistently showed favorable adaptations when compared to the single-set (low-volume) condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)).
 In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers with known influence on adaptations to resistance training were investigated for volume-dependency.
 First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
 [@RN866;<!-- Baar Esser correlation in rats  -->
 @RN785;<!--Terzis et al., 2008-->
 @RN788],<!-- Mitchell et al., 2013-->
 presumably trough increased translation indicated by greater ribosomal association with mRNA
-[@RN866]<!-- Baar Esser correlation in rats larger polysomal pool  -->
+[@RN866].<!-- Baar Esser correlation in rats larger polysomal pool  -->
 A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig) a).
 In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
 It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
@@ -468,14 +468,51 @@ rpS6\textsuperscript{Ser\textsuperscript{240/244}} as well as
 unchanged levels of phopshorylation of 4E-BP1 and eEF2
 concomitantly with abolished exercise-induced increase in protein synthesis
 [@RN780].<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
-As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume is associated with increased potential acute-phase protein synthesis.
+As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume is associated with increased potential for protein synthesis in the acute-phase after exercise.
 However, an increased signalling through this pathway could also be interpreted as indicative for increased ribosomal biogenesis. 
+
+```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise expressed as fold-changes(b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+
+western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
+
+western_fig
+
+
+```
+
 Indeed, mTORC1 affects ribosomal biogenesis through multiple mechanisms including activation of transcriptional programs related to ribosomal biogenesis (mediated through S6K1)
 [@RN2321],<!-- Chauvin S6K1/S6K2 null mice does not respond with ribosomal biogenesis transcription after feeding -->
 selective translation of specific mRNA related to ribosomal biogenesis
 [@RN2320]<!-- Goodman mRNA with "weak" complicated 5'-UTR translation is facilitated by mTORC1/eIF4E  -->
-which in turn stimulates to increased ribosomal RNA transcription, mediated by cyclin D1 abundance and UBF avaliability
+which in turn stimulates to increased ribosomal RNA transcription, mediated by cyclin D1 abundance and UBF availability
 [@RN1632].<!-- Nader 2005 -->
+
+```{r ribo-markers}
+
+descriptive_ribo_markers <- readRDS("./data/derivedData/study1-ribo-biogenesis/descriptive_ribo_markers.RDS")
+
+rrna <- descriptive_ribo_markers %>%
+  filter(target != "totalrna") %>%
+  summarise(min.w2pre = round(min(w2pre),0), 
+            max.w2pre = round(max(w2pre),0), 
+            min.w12 = round(min(w12),0), 
+            max.w12 = round(max(w12),0)) 
+
+```
+
+
+```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
+
+ribo_markers_fig <- readRDS("./figures/results/study1-ribo-markers.RDS")
+
+ribo_markers_fig
+
+```
+
+As ribosomal RNA is the most abundant constituent of muscle RNA it provides an estimate of muscle ribosomal abundance when expressed per unit tissue weight
+[@RN2054;<!-- Zak 1967 in heart muscle 85% of RNA is ribosomal RNA -->
+@RN2145].
+From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the single-set and multiple-sets condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, single-set $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; multiple-sets $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA using qPCR (single-set increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; multiple-sets $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in response to multiple-sets at Week 2 (Figure \@ref(fig:rna-fig)). At Week 12 differences between volume conditions were 
 
 
 
@@ -496,19 +533,8 @@ mTORC1 enhance translation of specific mRNA, including ribosoma biogenesis genes
 [@RN2827]<!-- Pende S6K1/S6K2 null mice still have ser235/235 phosphorylation,  -->
 
 
-
-
-
 [@RN2829]<!-- rpS6 is an effector of mTOR, determines cell size --> 
 
-```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr\\textsuperscript{389} (p70) Thr\\textsuperscript{412} (p85), rpS6 at Ser\\textsuperscript{235/236} and mTOR at Ser\\textsuperscript{2448} induced by acute exercise expressed as fold-changes(b). Estimates are derived from ANCOVA models controling for baseline values. Non-adjusted estimates of differences in fold-changes between volume conditions are displayed with transparent points and wiskers. Values in b are point estimates with 95% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
-
-western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
-
-western_fig
-
-
-```
 
 These results are in agreement with previous studies showing exercise-volume dependency of mTORC1 related signaling  
 [@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->

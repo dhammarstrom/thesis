@@ -4,7 +4,13 @@ library(tidyverse)
 library(readxl)
 library(latex2exp)
 
+
+library(emmeans)
 library(lme4)
+library(nlme)
+library(feather)
+
+
 library(ggtext)
 library(latex2exp)
 

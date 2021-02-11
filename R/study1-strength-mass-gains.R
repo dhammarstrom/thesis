@@ -241,13 +241,13 @@ muscle_strength_fig <- comd.df %>%
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
         
-        geom_errorbarh(aes(xmin = lwr, xmax = upr), height = 0.2, size = line.size) +
-        geom_point() +
+        geom_errorbarh(aes(xmin = lwr, xmax = upr), height = 0, size = line.size) +
+        geom_point(shape = 21, fill = group.study.color[5]) +
         scale_x_continuous(limits = c(-2.5, 15), 
                            expand = c(0, 0),
                            breaks = c(-2.5, 0, 2.5, 5, 7.5, 10, 12.5, 15), 
                            labels = c("", 0, "", 5, "", 10, "", 15)) +
-        labs(x = "Difference between volume conditions (%MOD - %LOW &#x00B1;95%CI)") +
+        labs(x = "Difference between volume conditions<br>(%-gain Multiple-sets - %-gain Single-set &#x00B1;95%CI)") +
         
         
         

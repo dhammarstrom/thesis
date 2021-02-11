@@ -218,6 +218,210 @@ p.s6.tp.unadjusted  <- lmer(change ~  sets + (1|subject),
 
 
 
+######### Small figures showing fold change in each group ################
+
+
+sets.fc <- rbind(data.frame(emmeans(p.p70, specs = ~ sets)) %>%
+        mutate(target = "p.p70"), 
+      data.frame(emmeans(p.p85, specs = ~ sets)) %>%
+              mutate(target = "p.p85"), 
+      data.frame(emmeans(p.mTOR, specs = ~ sets)) %>%
+              mutate(target = "p.mTOR"), 
+      data.frame(emmeans(p.s6.tp, specs = ~ sets)) %>%
+              mutate(target = "p.s6.tp")) %>%
+        mutate(fold.change = exp(emmean)) %>%
+        print()
+  
+
+
+# Settings for annotate in indiviual plots
+percent_from_bottom <- 90
+text_size_label <- 2.5
+
+      
+        
+ p.p70.fcfig <- sets.fc %>%
+         filter(target == "p.p70") %>%
+        ggplot(aes(sets, fold.change, fill = sets)) + 
+        geom_bar(stat = "identity", 
+                 width = 0.2) +
+         
+         annotate("richtext", label = "p70-S6K1<sup>Thr389</sup>", 
+                  y = (10/100) * percent_from_bottom, x = 0.5, hjust = 0, 
+                  size = text_size_label,
+                  label.color = NA, 
+                  fill = NA) +
+         
+         scale_y_continuous(limits = c(0,10), 
+                            expand = c(0,0), 
+                            breaks = c(0, 5, 10)) +
+         
+         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         
+         theme_bw() +
+         theme(panel.grid = element_blank(), 
+               panel.border = element_blank(), 
+               axis.line.x  = element_line(size = line.size), 
+               axis.line.y = element_line(size = line.size), 
+               axis.ticks.x = element_line(size = line.size), 
+               axis.ticks.y = element_line(size = line.size), 
+               axis.text.y =  element_markdown(color = "black", size = 7), 
+               
+               # Individual plots settings
+               axis.title.y = element_blank(),
+               axis.text.x =  element_blank(), 
+               axis.title.x = element_blank(),
+               legend.title = element_blank(), 
+               legend.background = element_rect(fill = "white"),
+               legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
+               legend.key = element_rect(fill = "white"),
+               legend.position = "none")
+
+ p.p85.fcfig <- sets.fc %>%
+         filter(target == "p.p85") %>%
+         ggplot(aes(sets, fold.change, fill = sets)) + 
+         geom_bar(stat = "identity", 
+                  width = 0.2) +
+         
+         annotate("richtext", label = "p85-S6K1<sup>Thr412</sup>", 
+                  y = (2/100) * percent_from_bottom, x = 0.5, hjust = 0, 
+                  size = text_size_label,
+                  label.color = NA, 
+                  fill = NA) +
+         
+         scale_y_continuous(limits = c(0,2), 
+                            expand = c(0,0), 
+                            breaks = c(0, 1, 2)) +
+         
+         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         
+         theme_bw() +
+         theme(panel.grid = element_blank(), 
+               panel.border = element_blank(), 
+               axis.line.x  = element_line(size = line.size), 
+               axis.line.y = element_line(size = line.size), 
+               axis.ticks.x = element_line(size = line.size), 
+               axis.ticks.y = element_line(size = line.size), 
+               axis.text.y =  element_markdown(color = "black", size = 7), 
+               
+               # Individual plots settings
+               axis.title.y = element_blank(),
+               axis.text.x =  element_blank(), 
+               axis.title.x = element_blank(),
+               legend.title = element_blank(), 
+               legend.background = element_rect(fill = "white"),
+               legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
+               legend.key = element_rect(fill = "white"),
+               legend.position = "none")
+
+ p.mtor.fcfig <- sets.fc %>%
+         filter(target == "p.mTOR") %>%
+         ggplot(aes(sets, fold.change, fill = sets)) + 
+         geom_bar(stat = "identity", 
+                  width = 0.2) +
+         
+         
+         annotate("richtext", label = "mTOR<sup>Ser2448</sup>", 
+                  y = (2/100) * percent_from_bottom, x = 0.5, hjust = 0, 
+                  size = text_size_label,
+                  label.color = NA, 
+                  fill = NA) +
+         scale_y_continuous(limits = c(0,2), 
+                            expand = c(0,0), 
+                            breaks = c(0, 1, 2)) +
+         
+         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         
+         theme_bw() +
+         theme(panel.grid = element_blank(), 
+               panel.border = element_blank(), 
+               axis.line.x  = element_line(size = line.size), 
+               axis.line.y = element_line(size = line.size), 
+               axis.ticks.x = element_line(size = line.size), 
+               axis.ticks.y = element_line(size = line.size), 
+               axis.text.y =  element_markdown(color = "black", size = 7), 
+               
+               # Individual plots settings
+               axis.title.y = element_blank(),
+               axis.text.x =  element_blank(), 
+               axis.title.x = element_blank(),
+               legend.title = element_blank(), 
+               legend.background = element_rect(fill = "white"),
+               legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
+               legend.key = element_rect(fill = "white"),
+               legend.position = "none")
+ 
+
+p.s6.fcfig <-  sets.fc %>%
+         filter(target == "p.s6.tp") %>%
+        
+        mutate(sets = factor(sets,  levels = c("single", "multiple"), 
+                             labels = c("Single-set", "Multiple-sets"))) %>%
+        
+         ggplot(aes(sets, fold.change, fill = sets)) + 
+         geom_bar(stat = "identity", 
+                  width = 0.2) +
+        
+        
+        annotate("richtext", label = "rpS6<sup>Ser235/236</sup>", 
+                 y = (6/100) * percent_from_bottom, x = 0.5, hjust = 0, 
+                 size = text_size_label, 
+                 label.color = NA, 
+                 fill = NA) +
+         
+         scale_y_continuous(limits = c(0,6), 
+                            expand = c(0,0), 
+                            breaks = c(0, 3, 6)) +
+         
+         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         
+        labs(x = "Sets per exercise") +
+        
+        
+         theme_bw() +
+         theme(panel.grid = element_blank(), 
+               panel.border = element_blank(), 
+               axis.line.x  = element_line(size = line.size), 
+               axis.line.y = element_line(size = line.size), 
+               axis.ticks.x = element_line(size = line.size), 
+               axis.ticks.y = element_line(size = line.size), 
+               axis.text.y =  element_markdown(color = "black", size = 7), 
+               
+               # Individual plots settings
+               axis.title.y = element_blank(),
+               axis.text.x =  element_text(color = "black", size = 7, angle = 45, 
+                                           hjust = 1), 
+               axis.title.x = element_text(color = "black", size = 7),
+               legend.title = element_blank(), 
+               legend.background = element_rect(fill = "white"),
+               legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
+               legend.key = element_rect(fill = "white"),
+               legend.position = "none")
+ 
+
+
+y_axis_label <- data.frame(x = 1, y = 1) %>%
+        ggplot(aes(x, y)) + 
+        theme_void() + 
+        annotate("text", x = 1, y = 0.5,  label = "Fold-change from Pre-Ex", 
+                 angle = 90, size = 2.4)
+
+
+
+fold_change_plot <- plot_grid(y_axis_label, 
+        
+        plot_grid( 
+          p.p85.fcfig, 
+          p.p70.fcfig,
+          p.mtor.fcfig,
+          p.s6.fcfig, 
+          nrow = 4, 
+          rel_heights = c(1, 1, 1, 1.7)), 
+        rel_widths = c(0.2, 1), 
+        nrow = 1)
+
+
+
 
 
 
@@ -283,7 +487,7 @@ fold_changes_diffs <- rbind( data.frame(exp(confint(p.p70))) %>%
 
 
 fold_change_fig <- fold_changes_diffs %>%
-        
+        filter(adjust == "baseline") %>%
         mutate(target = factor(target, levels = c("p.p85", 
                                                   "p.p70", 
                                                   "p.mTOR", 
@@ -294,25 +498,26 @@ fold_change_fig <- fold_changes_diffs %>%
                                           "rpS6<sup>Ser235/236</sup>")), 
                target = fct_rev(target)) %>%
         
-        ggplot(aes(target, est, alpha = adjust)) + 
+        ggplot(aes(target, est)) + 
         geom_errorbar(aes(ymin = X2.5.., ymax = X97.5..), 
                        width = 0, 
                        position = position_dodge(width = 0.2 )) +
         geom_point(shape = 21, 
-                   fill = "blue", 
+                   fill = group.study.color[5], 
                    size = 2.5, 
                    position = position_dodge(width = 0.2 )) +
         
         scale_y_continuous(limits = c(0.8, 2.4), 
                            expand = c(0,0), 
-                           breaks = c(0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4)) +
+                           breaks = c(0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4), 
+                           labels = c("",  1,  "", 1.4,  "", 1.8, "", 2.2, "")) +
        
          geom_hline(yintercept = 1, lty = 2, color = "grey85") +
         
-        scale_alpha_manual(values = c(1, 0.2)) +
+
         
 
-        labs(y = expression(paste(Delta, "MOD / ", Delta,  "LOW"))) + 
+        labs(y = expression(paste(Delta, "Multiple-sets / ", Delta,  "Single-sets"))) + 
         theme_bw() +
         theme(panel.grid = element_blank(), 
               panel.border = element_blank(), 
@@ -320,7 +525,7 @@ fold_change_fig <- fold_changes_diffs %>%
               axis.line.y = element_blank(), 
               axis.ticks.x = element_line(size = line.size), 
               axis.ticks.y = element_blank(), 
-              axis.text.y =  element_markdown(color = "black", size = 7), 
+              axis.text.y =  element_blank(),
               axis.title.y = element_blank(),
               axis.text.x =  element_text(color = "black", size = 7), 
               axis.title.x = element_text(color = "black", size = 7), 
@@ -332,14 +537,26 @@ fold_change_fig <- fold_changes_diffs %>%
         coord_flip()
 
 
-?TeX
+
+
+
+fc_plot <- plot_grid(fold_change_plot, 
+          plot_grid(fold_change_fig, NULL, nrow = 2, rel_heights = c(1, 0.07)),  
+          nrow = 1, rel_widths = c(0.7, 1))
+          
+
+
+
+
 
 
 
 west.img <- ggdraw() + draw_image("./data/study-1/westernImages/signalling_context.png")
 
 
-western_fig <- plot_grid(west.img, fold_change_fig, labels = "auto")
+western_fig <- plot_grid(west.img, fc_plot, 
+                         labels = "auto", 
+                         rel_widths = c(0.8, 1))
 
 
 
