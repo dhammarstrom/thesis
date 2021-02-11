@@ -239,6 +239,8 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
                                      group.study.color[5], 
                                      group.study.color[6])) +
        
+    
+        
          scale_y_continuous(limits = c(0.5, 1.5), 
                             expand = c(0, 0),
                            breaks = c(0.5, 0.75, 1, 1.25, 1.5), 
@@ -261,15 +263,54 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
               legend.margin = margin(t = 0, r = 1, b = 1, l = 1, unit = "pt"),
               legend.key = element_rect(fill = "white"),
               legend.position = "none") + 
-        coord_flip()
+        coord_flip() +
+        # Annotate time points
+        annotate("text", 
+                 x = c(5.2, 
+                       5.05,
+                       4.7), 
+                       
+                 y =  c(0.8, 
+                        1.35, 
+                        1.3),
+                 label = c("Week 0",
+                         "Week 2",
+                         "Week 12"), 
+                 color = "gray50",        
+                 size = 2.2) +
+        
+        # Legend arrow week 2
+        annotate("curve",
+                 x = 5.1,
+                 xend = 5.05,
+                 y = 1.25,
+                 yend = 1.15,
+                 curvature = 0.2,
+                 color = "gray50",
+                 arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
+        # legend arrow week 0
+        annotate("curve",
+                 x = 5.1,
+                 xend =  5.12,
+                 y =  0.86,
+                 yend =  0.97,
+                 curvature = 0.2,
+                 color = "gray50",
+                 arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
+        # legend arraw week 12
+        annotate("curve",
+                 x =  4.65,
+                 xend =  4.75,
+                 y = 1.2,
+                 yend = 1.07,
+                 curvature = -0.2,
+                 color = "gray50",
+                 arrow = arrow(length=unit(0.1,"cm"), type = "closed"))
 
 
 
 
-
-saveRDS(ribo_markers_fig, "./figures/results/study1-ribo-markers.RDS")
-
-
+training_ribo_markers
 
 
 
@@ -391,7 +432,7 @@ acute_estimates <- qpcr.model.estimates.acute %>%
                                          "c-Myc"))) %>%
         
         
-        ggplot(aes(exp(estimate), gene)) +
+        ggplot(aes(exp(estimate), gene, alpha = gene)) +
         geom_vline(xintercept = 1, lty = 2, color = "gray80") +
         geom_errorbarh(aes(xmin = exp(lower), xmax = exp(upper)), height = 0) +
         geom_point(fill = group.study.color[2], size = 3, shape = 21) +
@@ -400,6 +441,9 @@ acute_estimates <- qpcr.model.estimates.acute %>%
                            breaks = c(0.5, 1, 1.5, 2, 2.5), 
                            labels = c(0.5, 1, 1.5, 2, 2.5), 
                            expand = c(0, 0)) +
+        
+        scale_alpha_manual(values = c(0.4, 1)) +
+        
  
         theme_bw() +
         theme(panel.grid = element_blank(), 
@@ -452,6 +496,11 @@ ribo_markers_fig <- plot_grid(training_ribo_markers,
 
 
 saveRDS(ribo_markers_fig, "./figures/results/study1-ribo-markers.RDS")
+
+
+
+
+
 
 
 

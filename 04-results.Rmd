@@ -471,7 +471,8 @@ concomitantly with abolished exercise-induced increase in protein synthesis
 As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume is associated with increased potential for protein synthesis in the acute-phase after exercise.
 However, an increased signalling through this pathway could also be interpreted as indicative for increased ribosomal biogenesis. 
 
-```{r mtor-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise expressed as fold-changes(b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95\\% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+
 
 western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
 
@@ -501,7 +502,7 @@ rrna <- descriptive_ribo_markers %>%
 ```
 
 
-```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
+```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and errorbars signifies that the confidence interval contain 1.", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
 
 ribo_markers_fig <- readRDS("./figures/results/study1-ribo-markers.RDS")
 
@@ -512,8 +513,48 @@ ribo_markers_fig
 As ribosomal RNA is the most abundant constituent of muscle RNA it provides an estimate of muscle ribosomal abundance when expressed per unit tissue weight
 [@RN2054;<!-- Zak 1967 in heart muscle 85% of RNA is ribosomal RNA -->
 @RN2145].
-From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the single-set and multiple-sets condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, single-set $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; multiple-sets $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA using qPCR (single-set increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; multiple-sets $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in response to multiple-sets at Week 2 (Figure \@ref(fig:rna-fig)). At Week 12 differences between volume conditions were 
+From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the single-set and multiple-sets condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, single-set $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; multiple-sets $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA using qPCR (single-set increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; multiple-sets $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in the multiple-sets condition at Week 2 (Figure \@ref(fig:rrna-fig)a). At Week 12 differences between volume conditions were in total RNA less clear and ribosomal RNA 28S showing higher levels in the single-set leg (Figure \@ref(fig:rrna-fig)a).
 
+```{r rna-csa-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
+
+rna_csa_change_models <- readRDS("./data/derivedData/study1-rna-csa-cor/regression.RDS")
+
+rna_csa_change_models %>%
+  mutate(Estimate = round(Estimate, 2), 
+         SE = round(SE, 2), 
+         df = df, 
+         t.value = round(t.value, 2), 
+         ci = paste0("[", round(lower, 3), ", ", round(upper, 2), "]"), 
+         beta = paste0(sprintf('%#.2f',scaled.est), " [", sprintf('%#.2f', scaled.lower), ", ", round(scaled.upper, 2), "]"), 
+         beta = if_else(term %in% c("(Intercept)", "setssingle"), "", beta)) %>%
+  dplyr::select(term, Estimate, SE, df, t.value, ci, beta) %>%
+  mutate(term = factor(term, 
+                       levels = c("(Intercept)", 
+                                        "setssingle", 
+                                        "w0", 
+                                        "w2pre", 
+                                        "w12"), 
+                       labels = c("(Intercept)", 
+                                  "Single-set", 
+                                  "Week 0", 
+                                  "Week 2", 
+                                  "Week 12"))) %>%
+  kable(format = "latex", booktabs = TRUE) %>%
+  kable_styling()
+
+
+```
+
+
+
+```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent 'naive' relationship, solid line represent adjusted reliationship as seen in \\@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
+
+rna_csa_fig <- readRDS("./figures/study1-rna-csa.RDS")
+
+
+rna_csa_fig
+
+```
 
 
 
