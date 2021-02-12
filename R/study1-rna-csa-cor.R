@@ -96,8 +96,9 @@ temp <- tot.rna %>%
         inner_join(mr) %>%
         pivot_wider(names_from = timepoint, 
                     values_from = rna) %>%
-        
-        
+  
+  
+ 
         print()
         
         
@@ -107,22 +108,25 @@ tot.rna %>%
         facet_wrap(~ timepoint) + 
         geom_smooth(method = "lm")
 
-m.scaled0 <- lme(change ~  sets + scale(w0) +  scale(w2pre) + scale(w12), 
-                random = list(subject = ~ 1), 
-           
+m.scaled0 <- lme(change ~  scale(w0) +  scale(w2pre) + scale(w12), 
+                random = list(subject = ~ 1, 
+                              leg = ~ 1), 
                 data = temp, 
                 na.action = na.omit)
 
 plot(m.scaled0) # signs of heterogeneity, check if varExp helps
 
-m.scaled <- lme(change ~  sets + scale(w0) +  scale(w2pre) + scale(w12), 
-                    random = list(subject = ~ 1), 
+m.scaled <- lme(change ~   scale(w0) + scale(w2pre) + scale(w12), 
+                    random = list(subject = ~ 1, 
+                                  leg = ~ 1), 
                     weights = varExp(form = ~ fitted(.)), 
                     data = temp, 
                     na.action = na.omit)
 
 anova(m.scaled0, m.scaled) 
 plot(m.scaled)
+
+summary(m.scaled)
 # this removes the bad pattern in the residual plot and improves the fit
 
 ## Check if there is colinearity (rna measures could be correlated)
@@ -133,8 +137,9 @@ car::vif(m.scaled)
 
 
 # Unscaled estimates for the regression table
-m.unscaled <- lme(change ~  sets + w0 +  w2pre + w12, 
-                         random = list(subject = ~ 1), 
+m.unscaled <- lme(change ~  w0 +  w2pre + w12, 
+                         random = list(subject = ~ 1, 
+                                       leg = ~ 1), 
                          weights = varExp(form = ~ fitted(.)), 
                  data = temp, 
                  na.action = na.omit)
@@ -171,19 +176,19 @@ saveRDS(rna_csa_change_models, "./data/derivedData/study1-rna-csa-cor/regression
 
 ## For plotting, individual time/RNA must be unscaled, but other scaled (to simplify plotting) 
 # Refitting...
-w0.unscaled <- lme(change ~  sets + w0 +  scale(w2pre) + scale(w12), 
+w0.unscaled <- lme(change ~   w0 +  scale(w2pre) + scale(w12), 
                 random = list(subject = ~ 1), 
                 weights = varExp(form = ~ fitted(.)), 
                 data = temp, 
                 na.action = na.omit)
 
-w2pre.unscaled <- lme(change ~  sets + scale(w0) +  w2pre + scale(w12), 
+w2pre.unscaled <- lme(change ~   scale(w0) +  w2pre + scale(w12), 
                    random = list(subject = ~ 1), 
                    weights = varExp(form = ~ fitted(.)), 
                    data = temp, 
                    na.action = na.omit)
 
-w12.unscaled <- lme(change ~  sets + scale(w0) +  scale(w2pre) + w12, 
+w12.unscaled <- lme(change ~   scale(w0) +  scale(w2pre) + w12, 
                       random = list(subject = ~ 1), 
                       weights = varExp(form = ~ fitted(.)), 
                       data = temp, 
@@ -202,17 +207,20 @@ week0 <- tot.rna %>%
         geom_smooth(method = "lm", 
                     se = FALSE, 
                     color = "gray50", 
-                    lty = 2) +
+                    lty = 2, 
+                    size = line.size) +
         
         geom_segment(aes(x = 200, 
                          xend = 425, 
-                         y = coef(summary(w0.unscaled))[1,1] + (coef(summary(w0.unscaled))[2,1])/2 + coef(summary(w0.unscaled))[3,1] * 200  ,
-                         yend = coef(summary(w0.unscaled))[1,1] + (coef(summary(w0.unscaled))[2,1])/2 + coef(summary(w0.unscaled))[3,1] * 425), 
-                     color = "gray30") +
+                         y = coef(summary(w0.unscaled))[1,1] +  coef(summary(w0.unscaled))[2,1] * 200  ,
+                         yend = coef(summary(w0.unscaled))[1,1]  + coef(summary(w0.unscaled))[2,1] * 425), 
+                     color = "gray30", 
+                     size = line.size) +
         
         scale_x_continuous(limits = c(190, 700), 
                           expand = c(0,0),
-                          breaks = c(200, 300, 400, 500, 600, 700)) +
+                          breaks = c(200, 300, 400, 500, 600, 700), 
+                          labels = c("", 300, 400, 500, 600, "")) +
         labs(x = "", 
              y = "CSA change (%)", 
              title = "Week 2") +
@@ -243,18 +251,21 @@ week2 <- tot.rna %>%
         geom_smooth(method = "lm", 
                     se = FALSE, 
                     color = "gray50", 
-                    lty = 2) +
+                    lty = 2, 
+                    size = line.size) +
         
         geom_segment(aes(x = 300, 
                          xend = 690, 
-                         y = coef(summary(w2pre.unscaled))[1,1] + (coef(summary(w2pre.unscaled))[2,1])/2 + coef(summary(w2pre.unscaled))[4,1] * 300  ,
-                         yend = coef(summary(w2pre.unscaled))[1,1] + (coef(summary(w2pre.unscaled))[2,1])/2 + coef(summary(w2pre.unscaled))[4,1] * 690), 
-                     color = "gray30") +
+                         y = coef(summary(w2pre.unscaled))[1,1] +  coef(summary(w2pre.unscaled))[3,1] * 300  ,
+                         yend = coef(summary(w2pre.unscaled))[1,1] +  coef(summary(w2pre.unscaled))[3,1] * 690), 
+                     color = "gray30", 
+                     size = line.size) +
         
-        scale_x_continuous(limits = c(190, 700), 
-                           expand = c(0,0),
-                           breaks = c(200, 300, 400, 500, 600, 700)) +
-        labs(x = "RNA per muscle weight (ng mg<sup>-1</sup>", 
+  scale_x_continuous(limits = c(190, 700), 
+                     expand = c(0,0),
+                     breaks = c(200, 300, 400, 500, 600, 700), 
+                     labels = c("", 300, 400, 500, 600, "")) +
+        labs(x = "RNA per muscle weight (ng mg<sup>-1</sup>)", 
              title = "Week 2") +
         
         theme_bw() +
@@ -282,17 +293,20 @@ week12 <- tot.rna %>%
         geom_smooth(method = "lm", 
                     se = FALSE, 
                     color = "gray50", 
-                    lty = 2) +
+                    lty = 2, 
+                    size = line.size) +
         
         geom_segment(aes(x = 200, 
                          xend = 590, 
-                         y = coef(summary(w12.unscaled))[1,1] + (coef(summary(w12.unscaled))[2,1])/2 + coef(summary(w12.unscaled))[5,1] * 200  ,
-                         yend = coef(summary(w12.unscaled))[1,1] + (coef(summary(w12.unscaled))[2,1])/2 + coef(summary(w12.unscaled))[5,1] * 590), 
-                     color = "gray30") +
+                         y = coef(summary(w12.unscaled))[1,1] +  coef(summary(w12.unscaled))[4,1] * 200  ,
+                         yend = coef(summary(w12.unscaled))[1,1] +  coef(summary(w12.unscaled))[4,1] * 590), 
+                     color = "gray30", 
+                     size = line.size) +
         
-        scale_x_continuous(limits = c(190, 700), 
-                           expand = c(0,0),
-                           breaks = c(200, 300, 400, 500, 600, 700)) +
+  scale_x_continuous(limits = c(190, 700), 
+                     expand = c(0,0),
+                     breaks = c(200, 300, 400, 500, 600, 700), 
+                     labels = c("", 300, 400, 500, 600, "")) +
         labs(x = "", 
              title = "Week 12") +
         theme_bw() +
@@ -318,9 +332,22 @@ week12 <- tot.rna %>%
 
 rna_csa_fig  <- plot_grid(week0, week2, week12, nrow = 1, 
                           align = "h",
-          rel_widths = c(1, 0.95, 0.95))
+          rel_widths = c(1, 0.9, 0.9))
         
     
 
-saveRDS(rna_csa_fig, "./figures/study1-rna-csa.RDS")
+saveRDS(rna_csa_fig, "./figures/results/study1-rna-csa.RDS")
+
+
+
+#### Within correlations between RNA measures
+
+
+
+
+
+
+
+
+
 

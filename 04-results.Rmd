@@ -406,6 +406,7 @@ sum.stats <- cbind(per.session %>%
 ```
 
 
+
 In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
 [@RN2007;<!-- Wernbom 2007 -->
 @RN1741],<!-- Ahtiainen  -->
@@ -449,15 +450,20 @@ First, acute activation of signaling along the mechanosensitive mTORC1-pathway h
 @RN788],<!-- Mitchell et al., 2013-->
 presumably trough increased translation indicated by greater ribosomal association with mRNA
 [@RN866].<!-- Baar Esser correlation in rats larger polysomal pool  -->
-A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig) a).
+A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig)a).
 In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
 It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
 [@RN2309] (Figure \@ref(fig:mtor-fig) a).<!-- Figueriedo mTOR and ser2448 signalling review -->
 It is also recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and extracellular signal-regulated kinases (ERK)-signalling converges here
 [@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
-Interestingly, albeit circumstantial, Terzis et al., did not find any clear volume dependency in exercise induced activation of either ERK 1/2 nor p38
+Together these observations indicates larger perturbations along the mTORC1 signaling axis which confirms previous observations showing exercise-volume dependency of mTORC1 related signaling  
+[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+@RN784;<!-- Terzis volume affect activation -->
+@RN1837].<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
+Interestingly, albeit with limited resolution, Terzis et al., did not find any clear volume dependency in exercise induced activation of either ERK 1/2 nor p38
 [@RN785]<!--Terzis et al., 2008-->
-suggesting that mTORC1, partly through S6K1 drives volume-dependent rpS6\textsuperscript{Ser\textsuperscript{235/236}} phosphorylation.
+suggesting that the relative contribution of different pathways to activation of downstream effectors may differ depending on mechanical stimuli.
+It should however be noted that the present, and previous studies are limited in their temopral resolution and different patterns over time in different volume conditions cannot be ruled out.
 
 The importance of mTORC1 signalling in protein synthesis in the acute phase after resistance exercise is well established.
 In humans, administration of rapamycin, a selective inhibitor of mTORC1, prior to resistance exercise leads to delayed or blunted activation of mTORC1 effectors such as
@@ -468,16 +474,15 @@ rpS6\textsuperscript{Ser\textsuperscript{240/244}} as well as
 unchanged levels of phopshorylation of 4E-BP1 and eEF2
 concomitantly with abolished exercise-induced increase in protein synthesis
 [@RN780].<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
-As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume is associated with increased potential for protein synthesis in the acute-phase after exercise.
+Volume dependent increase in mTORC1 signalling also coincide with larger protein synthesis rates
+[@RN791].<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume can be regarded as leading to an increased potential for protein synthesis in the acute-phase after exercise.
 However, an increased signalling through this pathway could also be interpreted as indicative for increased ribosomal biogenesis. 
 
 ```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95\\% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
 
-
 western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
-
 western_fig
-
 
 ```
 
@@ -498,9 +503,7 @@ rrna <- descriptive_ribo_markers %>%
             max.w2pre = round(max(w2pre),0), 
             min.w12 = round(min(w12),0), 
             max.w12 = round(max(w12),0)) 
-
 ```
-
 
 ```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and errorbars signifies that the confidence interval contain 1.", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
 
@@ -515,6 +518,10 @@ As ribosomal RNA is the most abundant constituent of muscle RNA it provides an e
 @RN2145].
 From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the single-set and multiple-sets condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, single-set $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; multiple-sets $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA using qPCR (single-set increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; multiple-sets $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in the multiple-sets condition at Week 2 (Figure \@ref(fig:rrna-fig)a). At Week 12 differences between volume conditions were in total RNA less clear and ribosomal RNA 28S showing higher levels in the single-set leg (Figure \@ref(fig:rrna-fig)a).
 
+Together with indications of greater mTORC1 activation, analysis of c-Myc mRNA abundance in response to the fifth training session (Week 2) also showed volume-dependent regulation with exercise-induced increases being ~ 1.5-fold in response to the multiple-sets compared to the single-set condition (Figure \@ref(fig:rrna-fig)b). c-Myc represents a rapamycin-insesitive signalling pathway known to also stimulating ribosomal biogenesis 
+[]<!-- West -->
+[]<!-- cMyc driver of ribosomal biogenesis -->
+
 ```{r rna-csa-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
 
 rna_csa_change_models <- readRDS("./data/derivedData/study1-rna-csa-cor/regression.RDS")
@@ -525,22 +532,27 @@ rna_csa_change_models %>%
          df = df, 
          t.value = round(t.value, 2), 
          ci = paste0("[", round(lower, 3), ", ", round(upper, 2), "]"), 
-         beta = paste0(sprintf('%#.2f',scaled.est), " [", sprintf('%#.2f', scaled.lower), ", ", round(scaled.upper, 2), "]"), 
-         beta = if_else(term %in% c("(Intercept)", "setssingle"), "", beta)) %>%
+         beta = paste0(sprintf('%#.2f',scaled.est), " [", sprintf('%#.2f', scaled.lower), ", ", round(scaled.upper, 2), "]")) %>%
   dplyr::select(term, Estimate, SE, df, t.value, ci, beta) %>%
   mutate(term = factor(term, 
                        levels = c("(Intercept)", 
-                                        "setssingle", 
                                         "w0", 
                                         "w2pre", 
                                         "w12"), 
                        labels = c("(Intercept)", 
-                                  "Single-set", 
                                   "Week 0", 
                                   "Week 2", 
                                   "Week 12"))) %>%
-  kable(format = "latex", booktabs = TRUE) %>%
-  kable_styling()
+  kable(format = "latex", 
+        booktabs = TRUE, 
+        escape = FALSE,
+        caption = "Influence of RNA abundance on training-induced muscle growth measured with MRI", 
+        col.names = c("", "Estimate", "SE", "df", "\\textit{t}-value", "95\\% CI", "Estimate [95\\% CI]")) %>%
+  add_header_above(c(" " = 6, "Standardized coefficients" = 1), 
+                   escape = FALSE) %>%
+  pack_rows("RNA abundance (ng mg\\textsuperscript{-1})", 2, 4, escape = FALSE) %>%
+  kable_styling(font_size = 8) %>%
+  add_footnote("Standardized coefficients scaled by its SD")
 
 
 ```
@@ -549,7 +561,7 @@ rna_csa_change_models %>%
 
 ```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent 'naive' relationship, solid line represent adjusted reliationship as seen in \\@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
 
-rna_csa_fig <- readRDS("./figures/study1-rna-csa.RDS")
+rna_csa_fig <- readRDS("./figures/results/study1-rna-csa.RDS")
 
 
 rna_csa_fig
@@ -577,13 +589,7 @@ mTORC1 enhance translation of specific mRNA, including ribosoma biogenesis genes
 [@RN2829]<!-- rpS6 is an effector of mTOR, determines cell size --> 
 
 
-These results are in agreement with previous studies showing exercise-volume dependency of mTORC1 related signaling  
-[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
-@RN784;<!-- Terzis volume affect activation -->
-@RN1837],<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
-coinciding with volume dependent protein synthesis
-[@RN791].<!-- Burd in single session single and multiple sets phosphorylation p70   -->
-Together
+
 
 
 

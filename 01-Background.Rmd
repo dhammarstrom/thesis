@@ -1,10 +1,15 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 
 # Background
 ```{r Backgroundsettings, echo = FALSE, warning=FALSE, message=FALSE}
 source("./R/libraries.R"); source("./R/themes.R")
 ```
 
-## Resistance-exercise prescription, influences and challenges
+## Resistance-exercise prescription, a historical note and current challenges
 Recommendations of systematic physical exercise with the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bear traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
@@ -17,7 +22,7 @@ Especially Ling's medical gymnastics was important for the development of modern
 The medical gymnastics of the nineteenth century is referenced in twentieth century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
 
-With the introduction of "heavy resistance exercises" for the development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM -->
+With the introduction of "heavy resistance exercises" for development of muscle strength and mass after injury, DeLorme outlined a system on which modern resistance-exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM -->
 DeLorme published his system short after the Second World War [@RN2633]
 during which he, as a newly graduated physician, had been working with war injury rehabilitation
 [@RN2639]<!-- Todd 2012 DeLorme biography -->.
@@ -74,7 +79,7 @@ Advances in bio-medical technologies are enablers of this enterprise and the que
 @RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
 Scientific research into contemporary exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
 
-A challenge facing this program is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized resistance-training programs where measures of muscle strength-changes varies from -32 to +250% and muscle size-changes varies from negative to (-11%) to impressively large (+59%)
+A challenge facing this program is to accurately describe etiologies of response heterogeneity associated with physical training. A wide variation of individual responses are commonly observed after standardized resistance-training programs where measures of muscle strength-changes varies from -32 to +250\% and muscle size-changes varies from negative to (-11\%) to impressively large (+59\%)
 [@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
 @RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
 By relating such variations to individuals genome (DNA)
@@ -104,7 +109,7 @@ Such control determines gene expression in response to progressive resistance tr
 @RN2012].<!-- Seaborn 2018 epigenetic changes persist after de-training, epigenetic memory of training 
 Regulation of gene expression is thus related to modifiable variables such as exercise and diet
 [@RN2690;<!-- Seaborn sharples review 2020 exercise metabolism as a determinant for epigenetic changes 
-@RN2691;<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification -->
+@RN2691;<!-- McGee Hargreaves 2019 review, epigentics/metabolism/exercise and mention intergenerational trandmission thorugh epigentic modification 
 @RN2694;<!-- Yoshie 2020 13 mo old mice have epigenetic changes in skm due to childhood diet 
 @RN2695]<!-- Godfrey 2016 review childhood environmental conditions affects epigenetics 
 linking environmental factors to the complexity of gene expression.
@@ -118,14 +123,12 @@ Even changing training variables within a specific modality have been shown to c
 
 Although apparent reversal of non-response to exercise training has been observed by manipulating training variables, decisive indications for such manipulations are still lacking.
 
-
-
 ## Adaptations to resistance training
 
 ### Muscle hypertrophy and strength
-Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health (increased amino acid storage physical independence) and athletic performance are conveyed. 
+Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health (e.g. increased amino acid storage physical independence) and athletic performance are conveyed. 
 Muscle growth is a well characterized response to resistance training.
-On the whole muscle level, healthy untrained individuals can be expected to increases their muscle mass by $\sim$ 5-20% when training is conducted over two weeks to 6 months
+On the whole muscle level, healthy untrained individuals can be expected to increases their muscle mass by $\sim$ 5-20\% when training is conducted over two weeks to 6 months
 [@RN1741; <!-- Ahtianen -->
 @RN346;<!-- Wernbom  -->
 @RN764].<!-- Hubal 2005 elbow flexor 18.9% increase -->
@@ -155,11 +158,11 @@ but increased with sufficient addition of dietary protein
 [@RN2199].<!-- Morton meta Dietary protein supplementation significantly enhanced changes in muscle strength and size during prolonged RET in healthy adults. Increasing age reduces and training experience increases the efficacy of protein supplementation during RET. -->
 Additionally, training variables such as intensity, volume, frequency (reviewed below) together with other training aids, e.g. manipulation of blood flow through pressure cuffs
 [@RN2745]<!-- Lixandrao BFR meta analysis hypertrophy similar between low load BFR and high load -->
-can effectively modulate resistance training induced hypertrophy.
-Together, this underlines that both non-modifiable (e.g. sexual dimorphism and age) and modifiable factors (e.g. training variables and protein supplementation) affects training induced muscle hypertrophy.
+can effectively modulate resistance-training induced hypertrophy.
+Together, this underlines that both non-modifiable (e.g. sexual dimorphism and age) and modifiable factors (e.g. training variables and protein supplementation) affects training-induced muscle hypertrophy.
 
 Whole muscles growth in response to short term resistance training occurs primarily through growth of individual muscle fibers (muscle cells).
-This can be assumed as training-induced splitting of existing fibers and/or myogenesis, formation of new muscle cells are likely slow processes and any increase in the number of fibers by such mechanisms would only represent a small addition to the whole muscle mass 
+This can be assumed as training-induced splitting of existing fibers and/or myogenesis, formation of new muscle cells, are likely slow processes and any increase in the number of fibers by such mechanisms would only represent a small addition to the whole muscle mass 
 [@RN2741;<!-- Murach 2019 review on hyperplasia  -->
 @RN2742; <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
 @RN2754;<!-- MacDougall no diff between body builders and untrained in number of fibers, equal relative amounts of collagen -->
@@ -184,11 +187,11 @@ However, in response to resistance training, increases in strength are typically
 @RN2737;<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
 @RN2736;<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
 @RN2735].<!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->
-When relationships between resistance-training induced change in muscle size and strength in previously untrained individuals are analyzed, only a small portion of the variation in muscle strength can be accounted for by changes in muscle size ($\sim$ 2.5-28\%)
+When relationships between resistance-training induced change in muscle size and strength in previously untrained individuals are analyzed, only a portion of the variation in muscle strength can be accounted for by changes in muscle size ($\sim$ 2.5-28\%)
 [@RN1142;<!-- Erskine 2013 23% and 28% muscle volume and mvf/1rm  -->
 @RN1741;<!-- Ahtiainen r = 0.157, r2 = 0.025 -->
 @RN2158]<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
-depending on type of measurements and statistical models used
+depending on type of measurements and statistical model used
 [@RN2158]<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
 This underlines that muscle hypertrophy is one contributing factor to muscle strength gains, but not the only one.
 
@@ -229,14 +232,14 @@ Differences in metabolic profiles relates to fatigue resistance were type I fibe
 [@RN819;<!-- -->
 @RN2801].<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
 
-Fiber type characteristics effectively modulate the muscle's ability to perform specific activities. Differences in fiber type composition within individuals,  between different muscles, reflects this as anti-gravity muscle of the lower body typically express more type I fibers compared to upper-body muscles
+Fiber type characteristics effectively modulate the muscle's ability to perform specific activities. Differences in fiber type composition within individuals, between different muscles, reflects this as anti-gravity muscle of the lower body typically express more type I fibers compared to upper-body muscles
 [@RN819;<!-- -->
 @RN846].<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
-Differences in fiber type composition between individuals and sexes are however to some degree genetically determined
+Differences in fiber type composition between individuals and sexes are to some degree genetically determined
 [@RN2798;<!-- Simoneau 1995 40% variation in type I fibers can be attributed to genetic factors, 15% to sampling error and 45 to environment -->
 @RN2795;<!-- Differences between men and women more type i in women -->
 @RN285].<!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
-Among non-genetic factors influencing fiber-type composition is resistance training. Short term resistance training, designed for muscle hypertrophy and strength gains specifically converts type IIX fibers to more fatigue resistant type IIA fibers with unaltered type I fiber proportions
+Resistance training on the other hand is among non-genetic factors influencing fiber-type composition. Short term resistance training, designed for muscle hypertrophy and strength gains specifically converts type IIX fibers to more fatigue resistant type IIA fibers with unaltered type I fiber proportions
 [@RN2220;<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining -->
 @RN2799;<!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa -->
 @RN2056;<!-- Andersen 2018 type IIx to 2a most prominent switch-->
@@ -248,9 +251,9 @@ In contrast, reduced activity or inactivity readily increases the proportion of 
 @RN2057<!-- Andersen 2x overshoot after de training -->
 @RN2108].<!-- Bed rest increases type IIx -->
 
-Concomitant with resistance training-induced muscle hypertrophy, the relative mitochondrial density of the muscle decrease as myofibrilar protein fractions increases, evident from electron microscopy
+Concomitant with resistance training-induced muscle hypertrophy, and fiber type switch, the relative mitochondrial density of the muscle decrease as myofibrilar protein fractions increases, evident from electron microscopy
 [@RN2731].<!-- Lüthi  -->
-However, a single session of resistance training, albeit with low resistance (30% of 1RM), was shown to increase mitochondrial, as well as myfibrillar and sarcoplasmic protein synthesis rates. When exercise was performed with slower movement speeds (longer time under tension), the increase in mitochondrial protein synthesis was shown to be greater
+However, a single session of resistance training, albeit with low resistance (30\% of 1RM), was shown to increase mitochondrial, as well as myofibrilar and sarcoplasmic protein synthesis rates. When exercise was performed with slower movement speeds (longer time under tension), the increase in mitochondrial protein synthesis was shown to be greater
 [@RN1505].<!-- Burd 2012 A single session of resistance exercise (30%1RM) increases mitochondrial protein synthesis, more so with higher metabolic stress (6s repetitions compared to 1s reps). -->
 This indicates that the magnitude of metabolic stress induced by resistance training affects the subsequent mitochondrial remodeling.
 Such remodeling could explain improved mitochondrial function, measured as mitochondrial respiration in response to 12-weeks of resistance training with less pronounced changes seen in mitochondrial proteins
@@ -266,17 +269,15 @@ Such coordinated remodeling can be linked to common molecular mechanisms regulat
 [@RN2818;<!-- Lin 2002 PGC1a expression drives type II to type I characteristics-->
 @RN2819].<!-- PGC1a knock out shift from type I to type IIx and reduced endurance capacity -->
 
-I
-
 
 ### Connective tissue
 In addition to adaptive changes to the contracting apparatus of single muscle fibers and neural mechanisms regulating their activity, resistance training modulates bone, tendon and connective tissue.
-From a general perspective, tissues enabling e.g. locomotion by conveying forces produced by contracting muscles stabilizing body segments adapts in an activity specific manner
+From a general perspective, tissues enabling e.g. locomotion by conveying forces produced by contracting muscles and stabilizing body segments adapts in an activity-specific manner
 [@RN2775;<!-- greendale 2003 activity patterns affect bone mineral density, sporting activities more effective than active living home activities -->
 @RN2771]<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
 Specifically, short term resistance training leads to changes in mechanical properties of bone without increases in bone mineral content or density suggesting qualitative changes
 [@RN2774]<!-- Miller 2009 rt increases tibial bending stiffness without changes in bobne mineral content 20 weeks, 3 sessions/week con and ecc, females 18-26 years-->
-Similarly, tendons respond to short term resistance training by increasing stiffness at high mechanical stress levels without increased cross sectional area
+Similarly, tendons respond to short term resistance training by increasing stiffness at high mechanical stress-levels without increased cross sectional area
 [@RN2772].<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group -->
 Interestingly, these adaptations seem to reach a plateau as no additional change in this characteristic is seen in individuals who have exercised over four years. However increased stiffness at lower mechanical stress levels have been documented
 @RN2771].<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
@@ -291,14 +292,14 @@ Muscle fibers are embedded in connective tissue, observed as surrounding the who
 Connective tissue structures constituting the endomysium connects muscle fibers to adjacent fibers, capillaries and nerves which together with higher order structures make up the extracellular matrix enabeling mechanical and biochemical interaction between cell types
 [@RN2783;<!-- Rat skeletal muscle  -->
 @RN2421].<!-- Kjaer review -->
-Together with the myotendinous junction, intramuscular structures (primarily perimysium) transmits forces originating from contracting muscle fibers and to tendon and bone and act as an elastic energy storage during e.g. locomotion
+Together with the myotendinous junction, intramuscular structures (primarily perimysium) transmits forces originating from contracting muscle fibers to tendon and bone and act as an elastic energy storage during e.g. locomotion
 [@RN2421].<!-- Kjaer review -->
 The mechanical properties of the extracellular matrix also allows for mechanical stimuli to be converted to biochemical signaling initiating e.g. responses to exercise.
 
-There is a general coordination between connective tissue and muscle cell remodeling in response to loading, evident coordinated responses from different cell types in response to exercise
+There is a general coordination between connective tissue and muscle-cell remodeling in response to loading, evident coordinated responses from different cell types in response to exercise
 [@RN2421].<!-- Kjaer review -->
 The major constituent of the extracellular matrix is collagen, produced in fibroblasts.
-In response to acute endurenace-type exercise, collagen synthesis and muscle cell specific protein synthesis (myofibrillar and sarcoplasmic fractions) rise in in a coordinated fashion
+In response to acute endurance-type exercise, collagen synthesis and muscle cell specific protein synthesis (myofibrillar and sarcoplasmic fractions) rise in a coordinated fashion
 [@RN2788].<!-- Miller coordinated prot synthesis response to exercise (not RT) -->
 Also, in response to short- and long-term resistance training with subsequent muscle hypertrophy, relative collagen content of muscle tissue remains stable
 [@RN2754].<!-- Macdougall Similal relative collagen content and non contracting tissue in untrained and trained human skm  -->
@@ -429,7 +430,7 @@ While acute resistance exercise also stimulates protein breakdown, it does so to
 @RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
 When resistance exercise is performed in the fasted state, post exercise net protein balance can be expected to be negative
 [@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-[@RN786].<!-- Phillips 1997, correlation between fbr and fsr-->
+@RN786].<!-- Phillips 1997, correlation between fbr and fsr-->
 
 The available data from acute studies suggests that resistance training leads to muscle hypertrophy through the accumulative effect of repeated bouts of anabolic stimuli. In recent years, this view has been supplemented by evidence suggesting that chronic RT leads to increased resting synthetic rate of muscle protein
 [@RN1521;<!-- Kim 2005 Fasted state skeletal muscle PS altered with training  --> 
@@ -438,7 +439,13 @@ The available data from acute studies suggests that resistance training leads to
 which has been postulated to be associated with increased translational capacity, i.e. accumulation of ribosomes
 [@RN1897;<!-- Reidy 2017 -->
 @RN1912]<!-- Figueiredo 2017 Ribosome biogenesis review -->.
-This notion is supported by exercise-induced increases in total RNA, a proxy marker of ribosome abundance, which is closely connected to protein synthesis
+
+
+
+This notion is supported by exercise-induced increases in total RNA, a proxy marker of ribosome abundance, 
+[@RN2054;<!-- Zak 1967 85% of RNA is rRNA in heart muscle -->
+@RN2223]<!-- Young Ch 40 ~ 85% of RNA is ribosomal in rat skeletal muscle -->
+which is closely connected to protein synthesis
 [@RN1754;<!-- West 2016 correlation between total RNA and protein synthesis in C2C12-->
 @RN2145]<!-- Millward 1973 relationship between RNA and protein synthesis in rat in rats in vivo constant infusion -->
 See Figure \@ref(fig:Millward1973).
@@ -448,15 +455,20 @@ and muscle hypertrophy
 @RN1755; <!-- Stec Ribosome bio higher in high responders -->
 @RN2358].<!-- Volume dependent RNA accum relates to volume depend hyper -->
 
-```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Data from \\citep{@RN2145}. Group A were fed a diet containing protein, group B were starved or fed a diet not containing protein.", fig.scap="Relationship between RNA content and protein synthesis in rat skeletal muscle, data from \\citep{@RN2145}"}
+
+(ref:millward1973) [@RN2145]
+
+```{r Millward1973, echo=FALSE, message=FALSE, warning=FALSE, fig.height = 2.5, fig.width = 2.5, fig.cap="Relationship between RNA abundance and protein synthesis in rat skeletal muscle. Rats were either starved or fed a protein rich diet stimulating protein synthesis. Data from (ref:millward1973).", fig.scap="Relationship between RNA content and protein synthesis in rat skeletal muscle, data from (ref:millward1973)", fig.align='center'}
 
 millward <- read_excel("./data/litrev.xlsx", sheet = "millward1973") 
+
+source("./R/themes.R")
 
 millward %>%
         mutate(group = if_else(group == "A", "Protein fed", "Protein starved")) %>%
         ggplot(aes(RNA, proteinSynthesis, fill = group, color = group)) +
-        geom_smooth(method = "lm", se = FALSE) + 
-        geom_point(color = "black", shape = 21) +
+        geom_smooth(method = "lm", se = FALSE, show.legend = FALSE) + 
+        geom_point(color = "black", shape = 21, size = 2.5, alpha = 0.6) +
         scale_x_continuous(name = TeX("$RNA\\;(\\mu g \\; mg^{-1} \\, protein)$"), 
                            breaks = c(0, 4, 8, 12, 16),
                            minor_breaks = c(2, 6, 10, 14),
@@ -467,11 +479,14 @@ millward %>%
                            minor_breaks = c(0.02, 0.06, 0.10, 0.14, 0.18, 0.22),
                            limits = c(0, 0.25), 
                            expand = c(0, 0)) + 
+        scale_color_manual(values = c(group.study.color[2], group.study.color[5])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[5])) +
         
 
         dissertation_theme() +
-                theme(legend.position = c(0.2, 0.8), 
-                      legend.title = element_blank()) 
+                theme(legend.position = c(0.3, 0.9), 
+                      legend.title = element_blank(), 
+                      legend.text = element_text(size = 7)) 
 
 
 
