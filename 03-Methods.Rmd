@@ -17,10 +17,10 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ## Study protocols and participants
 
-Study I was designed to examine effects of low- and moderate-volume on
+Study I was designed to examine effects of low- (single-set per exercise) and moderate-volume (three sets per exercise, multiple-sets) on
 responses to acute exercise and long-term training within participants.
 A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
-Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsis (*m. vastus lateralis*).
+Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).
 Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session as well as after the intervention (Figure \@ref(fig:study1-overview)).
 Assessments of muscle strength (isokinetic and isometric knee extension torque as well as one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
 Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
@@ -158,11 +158,11 @@ data.frame(x = c(-8, 13),
 
 ```
 
-Study II was designed to study the effects of resistance training *per se* and effects of variable vs. constant inter-session volume on selected markers related to ribosome biogenesis.
+Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
 Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
 An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
-Muscle strength (isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
-Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study, two and eight days after the last training session in the experimental group.
+Baseline muscle strength (isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
+Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
 Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
 The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
 Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
@@ -371,12 +371,11 @@ es.min <- round(min(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d
 es.max <- round(max(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d.mitchell.csa)),2)
 ```
 
-Recruitment was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study prior to giving their informed consent.
+Recruitment to both studies was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study prior to giving their informed consent.
 
 To be eligible for participation in both studies, participants had to be young (Study I age 18-40; Study II 18-35) and non-smoking. Both men and women were considered for participation. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medications or supplements with known effects on adaptations to training.
 Participant characteristics for both studies are shown in Table
 \@ref(tab:characteristics-table).
-
 
 Forty-one healthy individuals were recruited and 34 of these completed
 at least 85% of the prescribed sessions and were thus included in
@@ -387,8 +386,6 @@ no systematic differences in characteristics between participants included in or
 excluded from data analysis in Study I.
 
 Prior to the study, all participants reported that they previously had been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week.  
-
-
 
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
@@ -543,8 +540,6 @@ rbind(studyI, studyII) %>%
 
 
 
-
-
 ## Resistance training interventions
 
 Each training session started with a light, standardized warm-up (5 min
@@ -557,8 +552,7 @@ Studies were fully or partially performed as within-participant studies
 as each participant had their legs assigned to different training
 conditions (not including the control group in Study II). Allocation was
 performed after enrollment where each participant had their legs
-randomized to either low- or moderate volume (Study I, see Figure \@ref(fig:study1-overview)), or variable or
-constant volume (Study II).
+randomized to either low- or moderate volume (Study I, see Figure \@ref(fig:study1-overview)), or variable or constant volume (Study II).
 
 In Study I, the low-volume protocol consisted of a single set of each
 exercise and the moderate-volume consisted of three sets per exercise.
@@ -572,17 +566,17 @@ to concentrate the stimulus to the quadriceps
 muscles.<!-- Check this --> The constant-volume leg performed six sets
 of 10RM throughout the study and variable leg performed six sets in
 session one to four, three sets in session five to eight and nine sets
-in session nine to twelve with same relative intensity (10RM).
+in session nine to twelve with same relative intensity (see Figure \@ref(fig:study2-overview)).
 
 
 ## Muscle strength assessments
 
 ### Isokinetic and isometric maximal torque
-Maximal isokinetic and isometric unilateral knee-extension strength was determined in a dynamometer (Study I, Cybex 6000, Cybex International, Medway USA; Study II Humac Norm, CSMi, Stoughton, MA, USA).
+Maximal isokinetic and isometric unilateral knee-extension strength was determined by use of a dynamometer (Study I: Cybex 6000, Cybex International, Medway USA; Study II: Humac Norm, CSMi, Stoughton, MA, USA).
 After a brief warm-up (5 min ergometer cycling, RPE 12-14), participants were secured at the hip and shoulders in the dynamometer with the knee joint aligned to its rotation axis.
 Individual settings were recorded and used in subsequent measurements.
 Participants were familiarized with the test protocol by performing three sub-maximal efforts at each angular speed. 
-In Study I, three angular velocities were used to determine isokinetic torque  (60$^{\circ}$, 120$^{\circ}$ and 240$^{\circ} ~\times$ sec$^{-1}$), in Study II an angular velocity of 90$^{\circ} ~\times$ sec$^{-1}$. 
+In Study I, three angular velocities were used to determine isokinetic torque (60$^{\circ}$, 120$^{\circ}$ and 240$^{\circ} ~\times$ sec$^{-1}$), in Study II an angular velocity of 90$^{\circ} ~\times$ sec$^{-1}$ was used for this purpose. 
 In Study I, participants performed two attempts at 60$^{\circ} ~\times$ sec$^{-1}$ and three attempts at 120 and 240$^{\circ}~\times$ sec$^{-1}$.
 In Study II, three attempts were made at the designated angular velocity.
 In both studies, attempts within each angular speed were performed in immediate succession.
@@ -590,9 +584,8 @@ After isokinetic testing, the lever was fixed at 30$^{\circ}$ (full extension $=
 Two attempts were made for maximal isometric torque in Study I and a single attempt was made in Study II.
 Sixty seconds of restitution was given between each measurement in both studies with the exception of between isometric contractions in Study I where a 30 second restitution period was used.     
 
-In subsequent assessments sessions, the first measurement was performed on alternate legs.
+In subsequent assessment sessions, the first measurement was performed on alternate legs.
 In Study II, the dynamometer allowed for participants to remain seated for assessments of both legs. This was not possible in Study I as the measurement system required participants to be re-seated for assessment of the contra-lateral leg.
-
 
 ### One-repetition maximum
 One repetition-maximum (1RM) was assessed in unilateral leg-press and knee-extension in Study I.
@@ -603,7 +596,7 @@ Each exercise was assessed after a specific warm-up (ten, six and three repetiti
 In Study I, maximal values from each assessment and time-point was used in statistical analyses including two separate assessments at baseline, separated by at least four days. Strength was determined 
 
 
-In Study II, all successful attempts were used in statistical analyses with unsuccessful attempts identified based on obvious misinterpretation of instructions or failure to reach maximal subjective effort.  
+In Study II, the maximal value from all successful attempts were used in statistical analyses with unsuccessful attempts identified based on obvious misinterpretation of instructions or failure to reach maximal subjective effort.  
 Strength assessments were separated by at least 48 hours from preceding training sessions. 
 
 At baseline, 1RM, isokinetic and isometric strength assessments were performed twice, separated by at least four days. The maximum value achieved for each of the tests was used in subsequent analysis. Strength tests were separated by at least 48 hours from preceeding training sessions. A combined measure of muscle strength was calculated as the average of all tests (1RM, isometric and isokinetic), wherein each test modality was given equal weight. A subset of the participants (n=18) performed strength assessment during the course of the study (at week two, five and nine). For the remaining participants, ordinary training sessions were prioritised when participants missed training or testing due to illness or scheduling difficulties. 
