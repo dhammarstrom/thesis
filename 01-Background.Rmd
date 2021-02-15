@@ -423,33 +423,43 @@ Muscle protein synthesis and breakdown rates are highly correlated
 [@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
 @RN786]<!-- Phillips 1997, correlation between fbr and fsr-->
 indicating that these processes are mechanistically coupled and fluctuates together.
-While acute resistance exercise also stimulates protein breakdown, it does so to a lesser extent, leading to an increase in the net protein balance from baseline under favorable conditions (with sufficient addition of dietary protein)
+While acute resistance exercise thus also stimulates protein breakdown, it does so to a lesser extent, leading to an increase in the net protein balance from baseline under favorable conditions
 [@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
 @RN786;<!-- Phillips 1997, correlation between fbr and fsr-->
 @RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
+@RN2715].
+When resistance training is performed under such favorable conditions, in the fed state with availability of dietary protein, a net positive protein balance can be expected after exercise
+[@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 @RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
-When resistance exercise is performed in the fasted state, post exercise net protein balance can be expected to be negative
-[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-@RN786].<!-- Phillips 1997, correlation between fbr and fsr-->
 
-The available data from acute studies suggests that resistance training leads to muscle hypertrophy through the accumulative effect of repeated bouts of anabolic stimuli. In recent years, this view has been supplemented by evidence suggesting that chronic RT leads to increased resting synthetic rate of muscle protein
+An essential component of protein synthesis is the ribosome, a cellular machine capable of translating genetic information in the form of messenger RNA (mRNA) to proteins.
+A synthesizing ribosome consists of four ribosomal RNA species (rRNA 18S, 5.8S, 28S and 5S) and about 80 proteins constructing two subunits. Translation of mRNA occurs at the ribosomal core as ribosomal RNA catalyzes binding of amino acids to form polypeptides corresponding to ribosomal bound mRNA sequence.
+The rate of translation per ribosome (i.e. translational efficiency) can be modified by specific stimulus, of which mechanical stress and nutrients are of importance to this discussion. 
+Mechanical stress (such as resistance exercise) or amino acid availability (as increased after ingestion of dietary protein) stimulates to protein synthesis through increased translational efficiency.
+This can be observed as the formation of polysomes through binding of functional ribosomes to mRNA in response to e.g. mechanical stress
+[@RN866;<!-- Baar/esser increased formation of polysomes after resistance exercise in rats  -->
+@RN860].<!-- Kubica formation of polysomes in response to resistance exercise are abolished with rapamycin in rats -->
+The available data from acute studies on protein synthesis in humans suggests that resistance training leads to muscle hypertrophy through the accumulative effect of repeated bouts of an anabolic stimuli. In recent years, this view has been supplemented by evidence suggesting that chronic resistance training also leads to increased rates protein synthesis at rest
 [@RN1521;<!-- Kim 2005 Fasted state skeletal muscle PS altered with training  --> 
 @RN1866;<!-- Wilkingson 2008 -->
 @RN1897],<!-- Reidy 2017 Increased rested state protein synthesis -->
-which has been postulated to be associated with increased translational capacity, i.e. accumulation of ribosomes
+which has been postulated to be associated with an accumulation of ribosomes, i.e. an increased translational capacity
 [@RN1897;<!-- Reidy 2017 -->
 @RN1912]<!-- Figueiredo 2017 Ribosome biogenesis review -->.
-
-
-
-This notion is supported by exercise-induced increases in total RNA, a proxy marker of ribosome abundance, 
+This notion is supported by training-induced increases in muscle RNA abundance.
+As the RNA pool to a large degree consists of ribosomal RNA
 [@RN2054;<!-- Zak 1967 85% of RNA is rRNA in heart muscle -->
-@RN2223]<!-- Young Ch 40 ~ 85% of RNA is ribosomal in rat skeletal muscle -->
+@RN2223]<!-- Young Ch 40 ~ 85% of RNA is ribosomal in rat skeletal muscle -->,
+total RNA can be used as a surrogate measure of ribosomal abundance. 
+
+Given the above discussion, the concepts of translational efficiency and capacity can be illustrated by data from Millward
+[@RN2145],
+wherein RNA concentrations and its association with protein synthesis rates were measured in rats starved or fed a diet containing protein.
+Protein feeding increased the rate of protein synthesis, but the relationship to RNA (ribosomal) abundance was largely maintained (Figure \@ref(fig:Millward1973)).
+
 which is closely connected to protein synthesis
 [@RN1754;<!-- West 2016 correlation between total RNA and protein synthesis in C2C12-->
 @RN2145]<!-- Millward 1973 relationship between RNA and protein synthesis in rat in rats in vivo constant infusion -->
-See Figure \@ref(fig:Millward1973).
-
 and muscle hypertrophy
 [@RN1644;<!-- Figueiredo 2015 Correlation between total RNA fold change and CSA hyp -->
 @RN1755; <!-- Stec Ribosome bio higher in high responders -->
@@ -493,17 +503,67 @@ millward %>%
 ```
 
 
+### mTORC1 a multifaceted coordinator of cell growth
+
+The discovery of an organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
+[@RN1049].<!-- Goodman review -->
+mTOR is found in two protein complexes (mTOR complex 1, mTORC1; mTOR complex 2, mTORC2) where primarily mTORC1 has been found to be sensitive to rapamycin treatment.
+[@RN1049].<!-- Goodman review -->
+Bodine *et al.* made a comprehensive characterization of mTORC1-mediated skeletal muscle hypertrophy using rodent models, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTORC1-dependent manner, confirmed with concurrent administration of rapamycin
+[@RN782].<!-- Bodine 2001 -->
+Further utilizing rapamycin in genetically modified mice where mTOR was made rapamycin-resistant specifically in skeletal muscle cells confirmed that muscle fiber-specific rapamycin-sensitive mTORC1 signalling was needed to induce muscle hypertrophy in response to mechanical overload
+[@RN1072].
+This characterization supported previous observational evidence connecting mTORC1 signaling to muscle growth in rats
+[@RN866],<!-- Baar Esser -->
+and more recent observations in humans
+[@RN791;<!-- Burd Correlation in single session between p70 and  -->
+@RN785].<!-- Terzis correlation between p70S6K and hypertrophy-->
+Administration of rapamycin in humans has also confirmed that mTORC1 signalling is important for protein synthesis in the acute phase after resistance training (2 hours) and in response to protein ingestion
+[@RN780;<!-- Drummond administration of rapamycin blocks protein synthesis induced by res ex -->
+@RN781].
+However, extending the time-frame (up to 24 hours), differences in responses to resistance exercise between rapamycin treatment and control conditions were less pronounced
+[@RN2826].
+This could in part be explained by the lower dosage of rapamycin administrated in human compared to animal trials but also indicate rapamycin-insensitive mechanisms controlling translational efficiency
+[@RN]
+A well characterized downstream target of mTORC1 is the eIF-4E (eukaryotic translation initiation factor 4E)-bining protein 1 (4E-BP1). Upon activation, 4E-BP1 releases eIF-4E
+[@RN2837]<!-- Akt dependent phosphorylation of 4e-bp1, upon activation eIF-4E no longer associated with 4E bp1 -->
+which enables formation of an "initiation complex" and subsequent recruitment of small ribosomal subunit to mRNA
+[@RN1049].<!-- Goodman review -->
+Although mTORC1 
 
 
-Conversely, inhibition of ribosomal RNA (rRNA) transcription and inhibition of its up-stream transcription factors act to diminish muscle cell growth
+[@RN860]<!-- Kubica 2004, rapamycin prevents increases in ex induced protein synthesis trough eukaryotic initiation factor 2B mRNA translation (rats) -->
+
+
+[@RN780]<!-- Drummond 2009 rapamycin blocks exercise induced increase in muscle protein synthesis in humans -->
+[@RN2826]<!-- Gundermann 2014 inhibition of mTORC with rapamycin in humans, exercise induced-->
+
+
+In this context, molecular signatures conveyed by the mechanistic target of rapamycin complex 1 (mTORC1) has been in particular focus. Inhibition of mTORC1 impairs protein synthesis in humans [@RN780] and activation of its associated downstream target S6 kinase 1 (S6K1) correlates with increases in muscle protein synthesis and subsequent muscle growth</span>
+
+In line with this, surplus <span custom-style="CHANGE">exercise</span> volume leads to greater phosphorylation of S6K1 
+[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+@RN784;<!-- Terzis volume affect activation -->
+@RN1837]<!-- Ahtiainen 5 vs 10 sets p70 and s6 different --> and <span custom-style="CHANGE">is accompanied by increases in </span>myofibrillar protein synthesis [@RN791]<!-- Burd -->,
+fitting the notion that increased training volume provides more pronounced adaptations<span custom-style="CHANGE"> through repeated episodes of increased protein synthesis</span>. 
+<!-- However, also from a cell biological perspective, present findings on effects of different training volumes are heterogeneous. For example, Mitchell *et al.* [-@RN834] failed to show differences in S6K1 phosphorylation between volume protocols, corroborating with similar effects of different volumes on muscle strength and mass. -->
+
+
+
+### Ribosomal biogenesis 
+Synthesis of new ribosomes is a highly coordinated, complex and energy demanding process. It involves the synthesis of both ribosomal proteins and the four mature rRNA as well as their assembly into functional ribosomal subunits
+[@RN1920;<!-- Warner review yeast -->
+@RN1820;<!-- Moss review -->
+@RN1810].<!-- Inhibition of Pol II affects trasncription at Pol I -->.
+The overall role of ribosomal abundance in determining protein synthesis and subsequent cellular and tissue size was briefly mentioned above. In addition to a tight relationship with protein synthesis in mice 
+[@RN2145]<!-- Millward -->
+and cell cultures
+[@RN1754]<!-- West correlation in cell culture -->
+inhibition of ribosomal RNA (rRNA) transcription and inhibition of its up-stream transcription factors act to diminish muscle cell growth
 [@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
 @RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
 @RN1810]<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->.  
 
-Biosynthesis of novel ribosomes is a complex, highly coordinated and energy demanding process that involves synthesis of both ribosomal proteins and the four mature rRNA transcripts
-[@RN1920;<!-- Warner review yeast -->
-@RN1820;<!-- Moss review -->
-@RN1810]<!-- Inhibition of Pol II affects trasncription at Pol I -->.
 Ribosomal accumulation is believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by coordinated assembly of a complex of transcription factors at the rDNA promoter
 [@RN1820]<!-- Moss review -->.
 Specifically, activation of the of the upstream binding factor (UBF) through phosphorylation is needed to initiate transcription
@@ -525,28 +585,6 @@ through control of rDNA gene activity
 
 [@RN2144]<!-- Damas 2016 Correlation between integrated MyoPS and CSA increase after muscle damage accounted for. Deuterium used for MyoPS as opposed to infused tracer -->
 
-### mTOR
-
-The discovery of an immunosuppressant organic compound called rapamycin in the 1960’s led to the characterization of a rapamycin sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
-[@RN1049]. This protein has since been shown play a key role in skeletal muscle hypertrophy in relation to mechanical loading. Bodine *et al.* made a comprehensive characterization of mTOR-mediated skeletal muscle hypertrophy using rodent models in 2001, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTOR-dependent manner, confirmed with concurrent administration of rapamycin [@RN782]<!-- Bodine 2001 -->.
-
-
-[@RN860]<!-- Kubica 2004, rapamycin prevents increases in ex induced protein synthesis trough eukaryotic initiation factor 2B mRNA translation (rats) -->
-
-
-[@RN780]<!-- Drummond 2009 rapamycin blocks exercise induced increase in muscle protein synthesis in humans -->
-[@RN2826]<!-- Gundermann 2014 inhibition of mTORC with rapamycin in humans, exercise induced-->
-
-
-In this context, molecular signatures conveyed by the mechanistic target of rapamycin complex 1 (mTORC1) has been in particular focus. Inhibition of mTORC1 impairs protein synthesis in humans [@RN780] and activation of its associated downstream target S6 kinase 1 (S6K1) correlates with increases in muscle protein synthesis and subsequent muscle growth</span>
-[@RN791;<!-- Burd Correlation in single session between p70 and  -->
-@RN785].<!-- Terzis correlation between p70S6K and hypertrophy-->
-In line with this, surplus <span custom-style="CHANGE">exercise</span> volume leads to greater phosphorylation of S6K1 
-[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
-@RN784;<!-- Terzis volume affect activation -->
-@RN1837]<!-- Ahtiainen 5 vs 10 sets p70 and s6 different --> and <span custom-style="CHANGE">is accompanied by increases in </span>myofibrillar protein synthesis [@RN791]<!-- Burd -->,
-fitting the notion that increased training volume provides more pronounced adaptations<span custom-style="CHANGE"> through repeated episodes of increased protein synthesis</span>. 
-<!-- However, also from a cell biological perspective, present findings on effects of different training volumes are heterogeneous. For example, Mitchell *et al.* [-@RN834] failed to show differences in S6K1 phosphorylation between volume protocols, corroborating with similar effects of different volumes on muscle strength and mass. -->
 
 
 Individual response patterns to resistance training, including muscle strength and mass, correlate closely with muscle cell characteristics, measured in both rested-state and acute training-phase conditions
