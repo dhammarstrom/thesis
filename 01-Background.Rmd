@@ -432,8 +432,8 @@ When resistance training is performed under such favorable conditions, in the fe
 [@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 @RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
 
-An essential component of protein synthesis is the ribosome, a cellular machine capable of translating genetic information in the form of messenger RNA (mRNA) to proteins.
-A synthesizing ribosome consists of four ribosomal RNA species (rRNA 18S, 5.8S, 28S and 5S) and about 80 proteins constructing two subunits. Translation of mRNA occurs at the ribosomal core as ribosomal RNA catalyzes binding of amino acids to form polypeptides corresponding to ribosomal bound mRNA sequence.
+Essential for protein synthesis is the ribosome, a cellular machine capable of translating genetic information in the form of messenger RNA (mRNA) to proteins.
+A synthesizing ribosome consists of four ribosomal RNA species (rRNA 18S, 5.8S, 28S and 5S) and about 80 proteins constructing two ribosomal subunits. Translation of mRNA occurs at the ribosomal core as ribosomal RNA catalyzes binding of amino acids to form a polypeptide chain corresponding to ribosome-bound mRNA sequence.
 The rate of translation per ribosome (i.e. translational efficiency) can be modified by specific stimulus, of which mechanical stress and nutrients are of importance to this discussion. 
 Mechanical stress (such as resistance exercise) or amino acid availability (as increased after ingestion of dietary protein) stimulates to protein synthesis through increased translational efficiency.
 This can be observed as the formation of polysomes through binding of functional ribosomes to mRNA in response to e.g. mechanical stress
@@ -455,15 +455,7 @@ total RNA can be used as a surrogate measure of ribosomal abundance.
 Given the above discussion, the concepts of translational efficiency and capacity can be illustrated by data from Millward
 [@RN2145],
 wherein RNA concentrations and its association with protein synthesis rates were measured in rats starved or fed a diet containing protein.
-Protein feeding increased the rate of protein synthesis, but the relationship to RNA (ribosomal) abundance was largely maintained (Figure \@ref(fig:Millward1973)).
-
-which is closely connected to protein synthesis
-[@RN1754;<!-- West 2016 correlation between total RNA and protein synthesis in C2C12-->
-@RN2145]<!-- Millward 1973 relationship between RNA and protein synthesis in rat in rats in vivo constant infusion -->
-and muscle hypertrophy
-[@RN1644;<!-- Figueiredo 2015 Correlation between total RNA fold change and CSA hyp -->
-@RN1755; <!-- Stec Ribosome bio higher in high responders -->
-@RN2358].<!-- Volume dependent RNA accum relates to volume depend hyper -->
+Protein feeding increased the rate of protein synthesis, but the relationship to RNA (ribosomal) abundance was largely maintained (Figure \@ref(fig:Millward1973)). This underlines the fundamental importance of ribosomal abundance and activity in determining protein synthesis. 
 
 
 (ref:millward1973) [@RN2145]
@@ -511,25 +503,76 @@ mTOR is found in two protein complexes (mTOR complex 1, mTORC1; mTOR complex 2, 
 [@RN1049].<!-- Goodman review -->
 Bodine *et al.* made a comprehensive characterization of mTORC1-mediated skeletal muscle hypertrophy using rodent models, showing that mTOR activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated Akt signaling led to hypertrophy in an mTORC1-dependent manner, confirmed with concurrent administration of rapamycin
 [@RN782].<!-- Bodine 2001 -->
-Further utilizing rapamycin in genetically modified mice where mTOR was made rapamycin-resistant specifically in skeletal muscle cells confirmed that muscle fiber-specific rapamycin-sensitive mTORC1 signalling was needed to induce muscle hypertrophy in response to mechanical overload
-[@RN1072].
-This characterization supported previous observational evidence connecting mTORC1 signaling to muscle growth in rats
+Further utilizing rapamycin in genetically modified mice where mTOR was made rapamycin-resistant, specifically in skeletal muscle cells, confirmed that muscle fiber-specific rapamycin-sensitive mTORC1 signaling was needed to induce muscle hypertrophy in response to mechanical loading
+[@RN1072].<!-- Goodman transgenic muscle-specific rapamycin insensitive mice confirm that skeletal muscle mTORC1 is responsible for the effect of rapamycin   -->
+These mechanistic studies supports previous observational evidence connecting mTORC1 signaling to muscle growth in rats
 [@RN866],<!-- Baar Esser -->
-and more recent observations in humans
+and more recently, in humans
 [@RN791;<!-- Burd Correlation in single session between p70 and  -->
 @RN785].<!-- Terzis correlation between p70S6K and hypertrophy-->
-Administration of rapamycin in humans has also confirmed that mTORC1 signalling is important for protein synthesis in the acute phase after resistance training (2 hours) and in response to protein ingestion
+
+Administration of rapamycin in humans has also confirmed that mTORC1 signaling is important for protein synthesis in the acute phase after resistance training (2 hours) and in response to protein ingestion
 [@RN780;<!-- Drummond administration of rapamycin blocks protein synthesis induced by res ex -->
 @RN781].
 However, extending the time-frame (up to 24 hours), differences in responses to resistance exercise between rapamycin treatment and control conditions were less pronounced
 [@RN2826].
 This could in part be explained by the lower dosage of rapamycin administrated in human compared to animal trials but also indicate rapamycin-insensitive mechanisms controlling translational efficiency
-[@RN]
+[@RN2839].<!-- Choo 2008 mTOR/raptor is needed but 4E-BP1 phosphorylation is recovered in spite of rapamycin treatment -->
+
+mTORC1 functions as a signaling hub by integrating multiple environmental cues to regulate cellular growth. Among such cues is mechanical stimulation which leads to accumulation of phosphatidic acid in muscle cells
+[@RN2844].<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
+Such activation was shown to be independent of mechanisms upstream of mTORC1 (phosphoinositide 3-kinase (PI3K)/AKT and ERK signaling)
+[@RN2844;<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
+@RN2119]<!-- ERK inhibition not inhibiting PA induced mTORC1 activation -->
+but still readily led to mTORC1 activation
+[@RN2844;<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
+@RN2119].<!-- ERK inhibition not inhibiting PA induced mTORC1 activation -->
+In cellular models, phosphatidic acid was shown to interact with mTORC1 on the same site that is targeted by rapamycin 
+[@RN2126]<!-- Fang PA leads to activation of mTOR, PA binds to FRB domain (same as rapamycin) -->
+indicating a more direct link between mechanical stimulation and mTORC1 activity.
+The enzyme primarily responsible for mechanically induced increases of phosphatidic acid has been shown to be diacylglycerol kinase $\zeta$
+[@RN1728].<!-- You 2014,   -->
+
+In addition to mechanical stimuli, amino acids and growth factors also stimulate mTORC1 activity and 
+
+
 A well characterized downstream target of mTORC1 is the eIF-4E (eukaryotic translation initiation factor 4E)-bining protein 1 (4E-BP1). Upon activation, 4E-BP1 releases eIF-4E
 [@RN2837]<!-- Akt dependent phosphorylation of 4e-bp1, upon activation eIF-4E no longer associated with 4E bp1 -->
-which enables formation of an "initiation complex" and subsequent recruitment of small ribosomal subunit to mRNA
-[@RN1049].<!-- Goodman review -->
-Although mTORC1 
+which enables formation of an preinitiation complex and subsequent recruitment of the small ribosomal subunit to mRNA
+[@RN2838].<!-- Gingras review 43S recruitment to mRNA is the rate limiting step in translation initiation mediated by eIF4E and thus 4E-BP1 -->
+eEIF-4E-dependent initiation of translation is believed to be rate limiting and thus a control point for protein synthesis.
+Interestingly, formation of the preinitiation complex, induced by mTORC1-4E-BP1-mediated release of eIF-4E results in enhanced translation of special classes of mRNAs, containing a 5' structures that does not permit efficient translation
+[@RN2838;
+@RN2840]
+Among the resulting gene products from such mRNA are growth factors cell cycle regulators such as cyclin D1 and c-Myc as well as ribosomal proteins
+[@RN2838;
+@RN1049].<!-- Goodman review --->
+
+Downstream of mTORC1 is also S6 kinase 1 (S6K1), present in two isoforms of about 70 and 85 kDa with different localization.
+S6K1 was named after its ability to phosphorylate ribosomal protein S6, but has since been shown to have multiple roles
+@RN1049].<!-- Goodman review --->
+
+S6K1 depletion in mice results in reduces muscle growth, but does not correlate with reduced rpS6 phosphorylation
+[@RN2828]<!-- Ohanna  -->
+
+S6K1 is needed for activation of rDNA transcription through phosphorylation of UBF
+[@RN2564]<!-- Hannan 2003  -->
+
+[@RN2843]<!-- Raught 2004 phosphorylation of eif4b affects translation initiation -->
+
+
+
+Indeed, mTORC1 affects ribosomal biogenesis through multiple mechanisms including activation of transcriptional programs related to ribosomal biogenesis (mediated through S6K1)
+[@RN2321],<!-- Chauvin S6K1/S6K2 null mice does not respond with ribosomal biogenesis transcription after feeding -->
+selective translation of specific mRNA related to ribosomal biogenesis
+[@RN2320]<!-- Goodman mRNA with "weak" complicated 5'-UTR translation is facilitated by mTORC1/eIF4E  -->
+which in turn stimulates to increased ribosomal RNA transcription, mediated by cyclin D1 abundance and UBF availability
+[@RN1632].<!-- Nader 2005 -->
+
+
+[@RN2842]<!-- Mieulet 2007 -->
+
+
 
 
 [@RN860]<!-- Kubica 2004, rapamycin prevents increases in ex induced protein synthesis trough eukaryotic initiation factor 2B mRNA translation (rats) -->
@@ -537,6 +580,12 @@ Although mTORC1
 
 [@RN780]<!-- Drummond 2009 rapamycin blocks exercise induced increase in muscle protein synthesis in humans -->
 [@RN2826]<!-- Gundermann 2014 inhibition of mTORC with rapamycin in humans, exercise induced-->
+
+
+#### Measuring mTORC1 activity
+
+
+
 
 
 In this context, molecular signatures conveyed by the mechanistic target of rapamycin complex 1 (mTORC1) has been in particular focus. Inhibition of mTORC1 impairs protein synthesis in humans [@RN780] and activation of its associated downstream target S6 kinase 1 (S6K1) correlates with increases in muscle protein synthesis and subsequent muscle growth</span>
