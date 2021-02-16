@@ -428,6 +428,7 @@ While acute resistance exercise thus also stimulates protein breakdown, it does 
 @RN786;<!-- Phillips 1997, correlation between fbr and fsr-->
 @RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 @RN2715].
+<!--[@RN1908] Millward 1979 Muscle protein mass is regulated primarily through alterations in protein synthesis in all except emergency conditions. --> 
 When resistance training is performed under such favorable conditions, in the fed state with availability of dietary protein, a net positive protein balance can be expected after exercise
 [@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 @RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
@@ -548,7 +549,7 @@ Among the resulting gene products from such mRNA are growth factors cell cycle r
 [@RN2838;
 @RN1049].<!-- Goodman review --->
 
-Downstream of mTORC1 is also S6 kinase 1 (S6K1), present in two isoforms of about 70 and 85 kDa with different localization.
+Parallell to 4E-BP1, is another well described downstream target of mTORC1 S6 kinase 1 (S6K1), present in two isoforms of about 70 and 85 kDa with different localization.
 S6K1 was named after its ability to phosphorylate ribosomal protein S6, but has since been shown to have multiple roles
 @RN1049].<!-- Goodman review --->
 
@@ -590,35 +591,61 @@ which in turn stimulates to increased ribosomal RNA transcription, mediated by c
 
 In this context, molecular signatures conveyed by the mechanistic target of rapamycin complex 1 (mTORC1) has been in particular focus. Inhibition of mTORC1 impairs protein synthesis in humans [@RN780] and activation of its associated downstream target S6 kinase 1 (S6K1) correlates with increases in muscle protein synthesis and subsequent muscle growth</span>
 
-In line with this, surplus <span custom-style="CHANGE">exercise</span> volume leads to greater phosphorylation of S6K1 
-[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
-@RN784;<!-- Terzis volume affect activation -->
-@RN1837]<!-- Ahtiainen 5 vs 10 sets p70 and s6 different --> and <span custom-style="CHANGE">is accompanied by increases in </span>myofibrillar protein synthesis [@RN791]<!-- Burd -->,
+and <span custom-style="CHANGE">is accompanied by increases in </span>myofibrillar protein synthesis [@RN791]<!-- Burd -->,
 fitting the notion that increased training volume provides more pronounced adaptations<span custom-style="CHANGE"> through repeated episodes of increased protein synthesis</span>. 
 <!-- However, also from a cell biological perspective, present findings on effects of different training volumes are heterogeneous. For example, Mitchell *et al.* [-@RN834] failed to show differences in S6K1 phosphorylation between volume protocols, corroborating with similar effects of different volumes on muscle strength and mass. -->
 
 
 
-### Ribosomal biogenesis 
-Synthesis of new ribosomes is a highly coordinated, complex and energy demanding process. It involves the synthesis of both ribosomal proteins and the four mature rRNA as well as their assembly into functional ribosomal subunits
+### Ribosomal biogenesis and resistance training induced muscle hypertrophy
+
+The overall role of ribosomal abundance in determining protein synthesis and subsequent cellular and tissue size was briefly mentioned above.
+In addition to correlations between RNA abundance and protein synthesis in mice 
+[@RN2145]<!-- Millward -->
+and cell culture
+[@RN1754],<!-- West correlation in cell culture -->
+inhibition of ribosomal RNA (rRNA) transcription or inhibition of up-stream transcription factors act to diminish muscle cell growth
+[@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
+@RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
+@RN1810].<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->
+Additional observational data from human resistance-training studies also indicates a relationship between increased ribosome abundance and magnitude of muscle growth
+[@RN1644;<!-- Figueriedo 2015 correlation between delta csa and fold change of total RNA -->
+@RN1755].<!-- Stec 2016 only high responders have increased total RNA and rRNA abundance after short training -->
+Together this underlines the importance of ribosomal abundance, and thus also ribosomal biogenesis in resistance training-induced muscle hypertrophy.
+Synthesis of ribosomes is indeed a hallmark of the early response to resistance training as a single resistance-exercise session leads to increases in precursor rRNA (pre-rRNA 45S)
+[@RN1656<!-- A single session upregulates 45 S 24 h post ex -->;
+@RN1037<!-- Nader 2014 45S up in response to 4 h after acute exercise -->]
+and repeated bouts lead to accumulation of rRNA and thus presumably functional ribosomes
+[@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->
+@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr-->
+@RN2358; <!-- Four sessions ~29 and 18 % in mod vs. low volume|31 sessions 18/12% young-->
+@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
+@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
+@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
+@RN1897<!-- 11% 36 sessions young -->].
+
+However, the true time course of ribosomal transcription and accumulation in response to RT remains largely unstudied, with a mere few studies having investigated exercise-induced changes in rRNA over multiple time-points, all of which are either limited to a selected few time-points or a limited time frame.
+For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout
+[@RN1520]<!-- Total RNA increase 72 h after a second bout -->. 
+Using voluntary contractions, peak values were reported after nine sessions, followed by a slight decrease to after 18 sessions [@RN1809],
+resembling data from our lab where five sessions of RT led to marked increase in total RNA levels (per-unit muscle tissue), whereby a numerical lowering occurred to after the last training session of the 12 wk interventions (31 sessions).
+[@RN2358].
+Interestingly, during the initial phase of RT, total RNA accumulation seems to be volume-dependent, as three sets per exercise in leg exercises led to augmented total RNA and rRNA levels compared to one set per exercise, coinciding with the differences in muscle hypertrophy seen after 12 weeks of RT.
+[@RN2358].
+These data suggest that ribosome accumulation reaches a plateau in the early phase of RT and that increases are sensitive to training volume in constant volume protocols. 
+
+
+
+Synthesis of new ribosomes is a complex and energy demanding process. It involves the synthesis of both ribosomal proteins and the four mature rRNA as well as their assembly into functional ribosomal subunits
 [@RN1920;<!-- Warner review yeast -->
 @RN1820;<!-- Moss review -->
 @RN1810].<!-- Inhibition of Pol II affects trasncription at Pol I -->.
-The overall role of ribosomal abundance in determining protein synthesis and subsequent cellular and tissue size was briefly mentioned above. In addition to a tight relationship with protein synthesis in mice 
-[@RN2145]<!-- Millward -->
-and cell cultures
-[@RN1754]<!-- West correlation in cell culture -->
-inhibition of ribosomal RNA (rRNA) transcription and inhibition of its up-stream transcription factors act to diminish muscle cell growth
-[@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
-@RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
-@RN1810]<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->.  
-
 Ribosomal accumulation is believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by coordinated assembly of a complex of transcription factors at the rDNA promoter
 [@RN1820]<!-- Moss review -->.
 Specifically, activation of the of the upstream binding factor (UBF) through phosphorylation is needed to initiate transcription
 [@RN2582; <!-- Tuan UBF phosphorylation important for SL1-UBF interaction -->
 @RN2563].<!--Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
-Such activation is at least partly controlled by the mechanosensitive mTOR pathway, with its inhibition being associated with blocked UBF phosphorylation and subsequent rRNA transcription
+Such activation is at least partly controlled by mTORC1 activity, with its inhibition being associated with blocked UBF phosphorylation and subsequent rRNA transcription
 [@RN1632; <!-- Nader rapamycin block UBF availability  -->
 @RN2564].<!-- Hannan mTOR  -->
 Interestingly the availability of UBF *per se* has been shown to be a determinant of rRNA transcription
@@ -629,37 +656,7 @@ through control of rDNA gene activity
 
 
 
-[@RN2724]<!-- Phillips 2002 fed state same absolute intensity, training attenuated ex induced FSR and FBR, FSR/FBR incr at rest after training   -->
-[@RN2723]<!-- Tang 2008 -->
-
-[@RN2144]<!-- Damas 2016 Correlation between integrated MyoPS and CSA increase after muscle damage accounted for. Deuterium used for MyoPS as opposed to infused tracer -->
-
-
-
-Individual response patterns to resistance training, including muscle strength and mass, correlate closely with muscle cell characteristics, measured in both rested-state and acute training-phase conditions
-[@RN826; <!-- Thalacker-Mercer 2013 differences between response cluster in gene expression -->
-@RN774; <!-- Raue 2012 Gene expression signatures correlate with strength and CSA gains -->
-@RN1755; <!-- Stec 2016 Differential ribosome biogenesis between responders and non responders -->
-@RN785]<!-- Terzis correlation between P70 and hypertrophy -->. <span custom-style="CHANGE">
-
-
-
 ### Ribosomal biogenesis 
-
-Conversely, inhibition of ribosomal RNA (rRNA) transcription and inhibition of its up-stream transcription factors act to diminish muscle cell growth
-[@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
-@RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
-@RN1810]<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->.  
-
-Biosynthesis of novel ribosomes is a complex, highly coordinated and energy demanding process that involves synthesis of both ribosomal proteins and the four mature rRNA transcripts
-[@RN1920;<!-- Warner review yeast -->
-@RN1820;<!-- Moss review -->
-@RN1810]<!-- Inhibition of Pol II affects trasncription at Pol I -->.
-Ribosomal accumulation is believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by coordinated assembly of a complex of transcription factors at the rDNA promoter
-[@RN1820]<!-- Moss review -->.
-Specifically, activation of the of the upstream binding factor (UBF) through phosphorylation is needed to initiate transcription
-[@RN2582; <!-- Tuan UBF phosphorylation important for SL1-UBF interaction -->
-@RN2563].<!--Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
 
 
 
@@ -679,43 +676,6 @@ Specifically, activation of the of the upstream binding factor (UBF) through pho
 [@RN2618]<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
 
 [@RN2616]<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
-
-
-#### Ribosomal biogensis as a determinant of RT-induced hypertrophy
-
-Resistance exercise is a potent stimuli for rRNA transcription as a single session leads to increases in pre-rRNA
-[@RN1656<!-- A single session upregulates 45 S 24 h post ex -->;
-@RN1037<!-- Nader 2014 45S up in response to 4 h after acute exercise -->]
-and repeated bouts lead to accumulation of mature rRNA thus also total RNA and presumably functional ribosomes
-[@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->
-@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr-->
-@RN2358; <!-- Four sessions ~29 and 18 % in mod vs. low volume|31 sessions 18/12% young-->
-@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
-@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
-@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-@RN1897<!-- 11% 36 sessions young -->].
-However, the true time course of ribosomal transcription and accumulation in response to RT remains largely unstudied, with a mere few studies having investigated exercise-induced changes in rRNA over multiple time-points, all of which are either limited to a selected few time-points or a limited time frame.
-For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout
-[@RN1520]<!-- Total RNA increase 72 h after a second bout -->. 
-Using voluntary contractions, peak values were reported after nine sessions, followed by a slight decrease to after 18 sessions [@RN1809],
-resembling data from our lab where five sessions of RT led to marked increase in total RNA levels (per-unit muscle tissue), whereby a numerical lowering occurred to after the last training session of the 12 wk interventions (31 sessions).
-[@RN2358].
-Interestingly, during the initial phase of RT, total RNA accumulation seems to be volume-dependent, as three sets per exercise in leg exercises led to augmented total RNA and rRNA levels compared to one set per exercise, coinciding with the differences in muscle hypertrophy seen after 12 weeks of RT.
-[@RN2358].
-These data suggest that ribosome accumulation reaches a plateau in the early phase of RT and that increases are sensitive to training volume in constant volume protocols. 
-
-
-Recent observations in humans are challenging this view by indicating that translational capacity is a limiting factor for training-induced muscle hypertrophy. First, increased abundances of <span custom-style="CHANGE">ribosomal RNA (rRNA)</span> in response to resistance training, measured as total RNA per-weight-unit muscle tissue, correlate with muscle hypertrophy [@RN1644]<!-- Figueiredo et al., 2015)-->.
-In accordance with this, training-induced increases in rRNA are larger in muscle hypertrophy high-responders than in low-responders
-[@RN1755;<!--Stec 2016 4 weeks rRNA and total RNA abundance larger in high responders -->
-@RN2055].<!-- Mobely 2018 Post-hoc comparisons at week 12 indicate weaker association -->
-Secondly, elderly participants typically show blunted ribosome biogenesis, coinciding with attenuated hypertrophic responses
-[@RN1656;<!-- Stec 2015 acute bout, blunted 45S induction --> 
-@RN1809]<!-- Brook 2016 blunted responses in elderly together with blunted rna induction-->.
-Collectively, these observations suggest that muscle growth depends at least in part on increased translational capacity, making it a prime candidate for explaining the diverse response patterns seen in resistance training with different volume in different individuals. To date, no study has investigated the association between training volume, ribosome biogenesis and regulation, and gross training adaptations.
-
-
-<!-- OUTLINE 
 
 
 
