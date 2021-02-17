@@ -421,11 +421,19 @@ indicating the general efficacy of the training program.
 
 sum.stats %>%
         arrange(variable, sex, sets) %>%
+  dplyr::select(-variable) %>%
         kable(format = "latex", booktabs = TRUE, linesep = "",
-              col.names = c("", "Sex", "Volume condition", "Mean (SD)", "Reference"), 
+              col.names = c("Sex", "Condition", "Mean (SD)", "Reference"), 
               caption = "Training induced changes in muscle CSA and average strength in Study I")  %>%
-        collapse_rows(c(1, 2, 5))  %>%
+        collapse_rows(c(1, 4))  %>%
         kable_styling(font_size = 7) %>%
+          
+          pack_rows("CSA %-change", 1, 4) %>%
+        pack_rows("CSA %-change per day", 5, 8) %>%
+          pack_rows("CSA %-change per session", 9, 12) %>%
+          pack_rows("Average strength %-change", 13, 16) %>%
+          pack_rows("Average strength %-change per session", 17, 20) %>%
+  
         add_footnote(label = c(paste0("Estimates from Wernbom et al. ", "(ref:wernbom-citation)"),
                                paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation)")), 
                      notation = "alphabet")
@@ -443,6 +451,7 @@ muscle_strength_fig
 ```
 
 The multiple-sets (moderate-volume) condition consistently showed favorable adaptations when compared to the single-set (low-volume) condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)).
+
 In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers with known influence on adaptations to resistance training were investigated for volume-dependency.
 First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
 [@RN866;<!-- Baar Esser correlation in rats  -->
