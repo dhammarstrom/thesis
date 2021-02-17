@@ -691,11 +691,24 @@ Ribosomal accumulation is believed to be determined by the rates of pre-rRNA tra
 Specifically, activation of the of the upstream binding factor (UBF) through phosphorylation is needed to initiate transcription
 [@RN2582; <!-- Tuan UBF phosphorylation important for SL1-UBF interaction -->
 @RN2563].<!--Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
-Such activation is at least partly controlled by mTORC1 activity, with its inhibition being associated with blocked UBF phosphorylation and subsequent rRNA transcription
+Such activation is at least partly controlled by mTORC1 activity, with its inhibition being associated with blocked UBF phosphorylation leading to inability to recruit secondary factors to the rDNA promotor and stimulate rRNA transcription
 [@RN1632; <!-- Nader rapamycin block UBF availability  -->
-@RN2564].<!-- Hannan mTOR  -->
+@RN2564].<!-- Hannan mTOR block in postmitotic cardimyocytes  -->
+S6K1 was shown to be important for rapamycin-induced inhibition of rRNA transcription 
+[@RN2564]
+but UBF was not a S6K1 substrate
+
+
+UBF phosphorylation 117 201 mediated by mitogen induced ERK signaling needed for rDNA bining
+[@RN2604]<!-- Stefanovsky 2001 MEK specific inhibition under mitogen activation inhibits rRNA transcription and UBF phosphorylation at 117 and 201 -->
+UBF is phosphorylated by mTOR at carboxy-terminal activation domain
+[@RN2564]<!-- Hannan rapamycin inhibits UBF phosphorylation and its ability to recruit RRn3 and other secondary transcription factors -->
+
+
+
 Interestingly the availability of UBF *per se* has been shown to be a determinant of rRNA transcription
-[@RN2566]<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->
+[@RN2566;<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->
+@RN2564]<!-- mTOR controls UBF availability, rapamycin block serum induced increase in UBF -->
 through control of rDNA gene activity
 [@RN2556].<!-- Sanij, UBF depleting leads to inactivation of rDNA genes -->
 
