@@ -11,8 +11,7 @@ library(nlme)
 library(feather)
 
 
-library(ggtext)
-library(latex2exp)
+
 
 library(devtools)
 
@@ -21,5 +20,9 @@ library(devtools)
 library(thesisdowngih)
 
 
-### PLotting 
+### Plotting, tables etc.
 library(cowplot)
+library(knitr)
+library(kableExtra)
+library(ggtext)
+library(latex2exp)
