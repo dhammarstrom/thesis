@@ -689,7 +689,37 @@ through control of rDNA gene activity
 
 In summary, ribosomal biogensis as well as the regulation of translation is under coordinated control of several pathways integrating multiple stressors and environmental cues to regulate cellular protein synthesis. 
 
-### Transcriptional regulation of training-induced muscle remodeling
+### Myonuclear addition and transcriptional regulation of training-induced muscle remodeling 
+
+Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei lack the ability to proliferate and are therefore relying on a dormant cell population located in muscle tissue to activate and supply the fiber with transcriptional capacity
+[@RN2080]<!-- Blaauw 2014 review satellite cells and hypertrophy -->
+These cells, called satellite cells can activate fuse with the fiber upon specific stimuli such as hormonal
+[@RN912]<!-- Egner 2013 steroid treatment leads to increased number of myonuclei -->
+mechanical stress
+[@RN2104].<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
+Satellite cells readily activates in humans in response to resistance-exercise, as assessed by markers of satellite cell state
+[@RN1048;<!-- Snijders 2012 using DLK -->
+@RN2081].<!-- Mackey using Pax7, Ki67 and CD56 -->
+
+
+
+
+
+[@RN1532]<!-- Addition of myonuclei preceds hypertrophy, gained myonuclei are retained during de-training, cellular memory?  -->
+
+
+
+
+McCarthy JJ, Mula J, Miyazaki M, Erfani R, Garrison K, Farooqui AB, Srikuea
+R, Lawson BA, Grimes B, Keller C, et al. (2011). Effective fiber hypertrophy
+in satellite cell-depleted skeletal muscle. Development 138, 3657–3666.
+
+During muscle hypertrophy 
+
+
+where fiber-specific nuclei contains the genetic material and thus supplies each fiber with transcriptional 
+
+
 
 
 
@@ -703,61 +733,8 @@ In summary, ribosomal biogensis as well as the regulation of translation is unde
 
 
 
-## Effects of exercise volume on molecular determinants of muscle growth
-Given that exercise-training variables can modify responses to resistance training, it is reasonable to assume that these effects are mediated through determinants of muscle growth.
-Exercise intensity has been evaluated with respect to protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
-Kumar *et al.* showed that maximal stimulation of fractional synthetic rate was achieved with intensities greater than 60\% of 1RM, coinciding with signaling events
-[@RN2720].<!-- Kumar 2009 increasing exercise intensities maximises post ex prot synthesis at 75% in young (plateau at 60-90% of 1RM)  -->
-The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal stimulation of protein synthesis (75% of 1RM).
-This analysis revealed a volume-dependent dose-response as six-sets of leg extension led to greater protein synthesis one hour after exercise and sustained S6K1 phsophorylation over up to four over after exercise
-[@RN2716].<!-- Kumar 2012 higher protein synthesis after 6 sets compared to 3 sets coinciding with sustained S6K1 phosphorylation -->
-Further extending the time fram, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24 and 29 hour after exercise. Both conditions led to increased myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
-However, volume-dependent regulation of S6K1 was only seen in 29 hours after exercise with possible earlier events (< 5 hours) missed due to the timing of biopsy sampling.
-No clear volume-dependency was seen in p90RSK1 (downstream of ERK) or rpS6, however eukaryotic initiation factor 2B (eIF2B$\epsilon$) phosphorylation was reduced only in the three set condition at five hours post exercise [@RN791], presumably mediating translation initiation, although its exact role is still unclear
-[@RN2853].<!-- Pavit eIF2B review -->
-A comprehensive analysis of the effect of resistance training volume in terms of molecular signaling was performed by Ahtiainen and collegues
-[@RN1837].
-Together with volume-dependent (five vs. ten sets of 10RM) regulation of S6K1 at Thr389, rpS6 at Ser235/236 and Ser240/244 30 minutes after exercise, they also found volume dependence in exercise induced phsophorylation of AMPK$\alpha$ at Thr172 and AS160 at Thr642 suggesting activation of pathways related to cellular energy status
-[@RN1837].
-   
 
 
-
-Using the same number of sets but manipulating time under tension with repetition speed (6 vs. 1 second) also showed a greater post exercise activation of protein synthesis (myofibrillar, mitochondrial and sarcoplasmic)
-[@RN1505]<!-- Burd 2012 -->
-
-
-
-
-### From Training response
-
-In humans, the biological adaptation to resistance training varies with exercise-training variables such as volume, intensity, rest between repetitions and sets, selection and order of exercises, repetition velocity and frequency of training sessions [@RN1].
-In addition, genetic and epigenetic disposition and environmental factors play a role in variations in adaptations
-[@RN758;<!-- Timmons 2011 reports gene polymorphism studies -->
-@RN2012;<!-- Seaborn 2018 methylation leads to increased gene expression relates to lean mass increase with exercise-->
-@RN2199]<!-- Morton 2018 Systematic review of protein supplementation i.e. protein availability as environmental factors -->.
-As time constraints often hinder participation in exercise training-programs [@RN2063], numerous studies have searched for the minimal required exercise dose to promote beneficial adaptations. Within-session volume has received particular attention, and although a handful of studies have shown that low-volume training provides similar gains in strength and muscular mass as moderate-volume training
-[@RN1382;<!-- Cannon et al 2010 No difference between volume conditions in strength or hypert in women  -->
-@RN1454;<!-- Ostrowski no diff between volumes in strength and hypert. in men -->
-@RN834]<!-- Mitchell no stat different between volume conditions -->, meta-analyses conclude in favor of moderate volume protocols [@RN793; @RN789; @RN1486; @RN1767].
-This apparent discrepancy of specific studies to demonstrate benefits of increased training volume is likely due to a combination of small sample sizes and substantial variation in training responses between individuals and experimental groups. In theory, within-participant designs should alleviate these limitations.
-
-
-## From RNA-seq
-
-Skeletal muscle is a highly adaptable tissue that responds to environmental stress by altering growth rates and differentiation processes. During resistance training, signaling cascades that stimulate muscle plasticity are triggered. Upon repeated exposures, this facilitates growth and a phenotypic shift in a metabolically active direction [@RN2364],<!-- Egan et al -->
-with the opposite happening during inactivity [@RN2365]<!-- Dirks 2016, one week of bed rest muscle loss reduxed ox-capacity and whole body insuline resistance -->.
-Despite this generalized view, muscle responsiveness and plasticity vary, both in response to different resistance-training protocols [@RN2358]<!-- Hammarstrom 2020 --> and, perhaps more importantly, between individuals [@RN764; ><!-- Hubal 2005 n=585, large variability reported -->
-@RN1741]<!-- Ahtiainen 2016 Heterogenity --->. 
-Selected individuals show a near-complete absence of muscle growth after prolonged resistance training, which markedly reduces the beneficial outcomes of such interventions for muscle function and overall health [@RN1741; <!-- Ahtiainen 2016 Heterogenity --->
-@RN764]<!-- Hubal 2005 n=585, large variability reported -->.
-Currently, little is known about the etiology of this variation. However, it is usually associated with phenotypic traits of skeletal muscle [@RN765;<!-- Bamann cluster analysis showes different expression profiles of e.g. MGF between resp groups -->
-@RN1755;  <!-- Stec et al, Ribosome biogenesis different between responders and nonresponders -->
-@RN755 <!-- Davidsen 2011 miRNA in response to RT different between responder groups --> 
-], which implies interactions with environmental factors, genetics, epigenetics, and composites of the intra physiological milieu [@RN2199;<!-- Morton systematic review showing extra benefit of protein on muscle mass--> 
-@RN1966].<!-- Brook 2016 rev. Anabolic resistance in age, nutritional and training variations to potimize outcomes -->
-This multifaceted origin makes the training-response-spectrum difficult to study directly, with each of the underlying factors offering limited explanatory value alone [@RN758].<!-- Timmons 2011 Review critique of "single gene master regulator" -->
-Instead, a more indirect approach is necessary, whereby the combined effects of the factors are targeted by studying global patterns of mRNA, protein expression, and skeletal muscle biology.
 
 Previous studies have investigated transcriptome responses to acute resistance exercise [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408]<!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
@@ -770,9 +747,13 @@ as well as described associations between transcriptome characteristics and degr
 @RN753],<!-- Phillips 2013 association with  -->
 and function [@RN2402;<!-- Hangelbroek 2018 gene cluster predicts 1RM, training induces expression of ECM/collagen -->
 @RN2398].<!-- Stepto 2009 Difference between trained (strength and endurance) and untrained controls. A gene clsuter correlated with strength -->
+
+
 Whereas these studies have merited interesting findings, they lack clear coherences in terms of differential expression events, even for classical exercise-inducible genes such as PGC1$\alpha$ [@RN2360].<!-- Pillon et al -->
-This lack of clear coherence is potentially due to a combination of issues such as differences in study design and methods for synthesis and analysis of transcriptome data. First, biologically founded variability can be attributed to differences in exercise protocols (e.g., differences in exercise-volume or intensity). This makes it difficult to discern a general transcriptome exercise response, as training variables are not standardized between studies. Biological heterogeneity is also caused by differences between research participants, affecting signal-to-noise ratios and making it difficult to discern the effects of single independent factors such as training variables. Design stage decisions such as the use of within-participant designs [@RN2358;<!-- Hammarstrom 2020 -->
-@RN2403]<!-- Tarnopolsky no diff (only 0.6% differentially expressed) between legs in rested state (small n=8) --> are likely to reduce this variation and to provide transcriptome data with increased biological meaningfulness. Second, technical variability can be attributed to decisions made during the bioinformatical treatment of data. As described by Concea *et al.*, there is no optimal pipeline for sequencing technology as new tools keep evolving and emerging, different tools should be explored to an optimum pipeline for the specific type of data [@RN2426].<!-- Conessa 2016 best practices fom RNA seq-->
+This lack of clear coherence is potentially due to a combination of issues such as differences in study design and methods for synthesis and analysis of transcriptome data. First, biologically founded variability can be attributed to differences in exercise protocols (e.g., differences in exercise-volume or intensity). This makes it difficult to discern a general transcriptome exercise response, as training variables are not standardized between studies. Biological heterogeneity is also caused by differences between research participants, affecting signal-to-noise ratios and making it difficult to discern the effects of single independent factors such as training variables. 
+
+[@RN2403]<!-- Tarnopolsky no diff (only 0.6% differentially expressed) between legs in rested state (small n=8) --> are likely to reduce this variation and to provide transcriptome data with increased biological meaningfulness. Second, technical variability can be attributed to decisions made during the bioinformatical treatment of data. 
+As described by Concea *et al.*, there is no optimal pipeline for sequencing technology as new tools keep evolving and emerging, different tools should be explored to an optimum pipeline for the specific type of data [@RN2426].<!-- Conessa 2016 best practices fom RNA seq-->
 To exploit the potential of any study design, there is a need for identifying an appropriate pipeline for transcriptome analyses to ensure a biologically valid interpretation of data. This entails identifying potential violations of common assumptions caused by the experimental model at hand, relating to, for example, data normalization [@RN2414;<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
 @RN2363]<!-- Dillies et al -->. 
 
@@ -783,8 +764,70 @@ as it aims to transform naïve transcript counts into biologically meaningful re
 For most experimental models, this is equivalent to providing transcript-to-total RNA ratios, given the fulfillment of the assumption that total RNA levels remain stable between conditions on a per-unit-cell or per-unit-tissue basis [@RN2359]<!-- Loven 2012 et al  -->.
 In cell models that exhibit high degrees of plasticity, gene expression events result in increased amounts of total RNA and mRNA transcripts per cell [@RN2430]<!-- Lin 2012 c-Myc induced gene amplification through -->, specifically violating the assumption that most genes are not differentially expressed [@RN2359;<!-- Loven 2012 et al  -->
 @RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
+
 We are not aware of any study that has addressed the need to account for such perspectives during transcriptome analyses of skeletal muscle subjected to mechanical stress, such as resistance training. Indeed, this assumption can be expected to be violated, as total RNA content increases markedly on a per-unit-weight basis [@RN2358]<!-- Hammarstrom 2020 -->, with potential global changes also occurring for the mRNA pool, though this remains unknown. The extent to which total RNA, and therefore ribosomal RNA, increases, coincides with the increase in muscle mass [@RN2358<!-- Hammarstrom 2020 -->;
 @RN1755]<!-- Stec -->, underlining its importance for cellular growth but also its inevitable presence as a potential confounding factor in RNA sequencing experiments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Effects of exercise volume on molecular determinants of muscle growth
+Given that exercise-training variables can modify responses to resistance training, it is reasonable to assume that these effects are mediated through determinants of muscle growth.
+Exercise intensity has been evaluated with respect to protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
+Kumar *et al.* showed that maximal stimulation of fractional synthetic rate was achieved with intensities greater than 60\% of 1RM, coinciding with signaling events
+[@RN2720].<!-- Kumar 2009 increasing exercise intensities maximises post ex prot synthesis at 75% in young (plateau at 60-90% of 1RM)  -->
+The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal stimulation of protein synthesis (75% of 1RM).
+This analysis revealed a volume-dependent dose-response as six-sets of leg extension led to greater protein synthesis one hour after exercise and sustained S6K1 phsophorylation over up to four hours after exercise
+[@RN2716].<!-- Kumar 2012 higher protein synthesis after 6 sets compared to 3 sets coinciding with sustained S6K1 phosphorylation -->
+Further extending the time frame, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24 and 29 hour after exercise. Both conditions led to increased myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
+However, volume-dependent regulation of S6K1 was only seen at 29 hours after exercise with earlier events (< 5 hours) possibly missed due to the timing of biopsy sampling.
+No clear volume-dependency was seen in p90RSK1 (downstream of ERK) or rpS6, however eukaryotic initiation factor 2B (eIF2B$\epsilon$) phosphorylation was reduced only in the three set condition at five hours post exercise [@RN791], presumably mediating translation initiation, although its exact role is still unclear
+[@RN2853].<!-- Pavit eIF2B review -->
+Volume dependent regulation of S6K1 at Thr389 and rpS6 at Ser235/236 were reported 30 minutes after exercise by Terzis *et al.* as six sets of 6RM bilateral legpress resulted in greater phosphorylation compared to three and one set
+[@RN784].
+No clear differences between volume conditions were seen in Akt at Ser473, mTOR at Ser2448, ERK 1/2 at Thr202/Tyr204, p38 ($\alpha$,$\alpha$ and $\delta$) at Thr180/Tyr182, p38$\gamma$ Thr180/Tyr182 or AMPK at Thr172
+[@RN784].
+Corroborating previous observations regarding exercise volume-dependence of the S6K1-rpS6-axis, Ahtiainen and colleagues also found greater phosphorylation of S6K1 at Thr389, rpS6 at Ser235/236 and Ser240/244 30 minutes after exercise with ten compared to five sets of 10RM legpress.
+Furthermore, ERK1/2 at Thr202/Tyr204 and p38 at Thr180/Tyr182 phosphorylations were not found to be volume dependent
+[@RN1837].
+However, in contrast to Terzis *et al.*, they reported volume-dependence in exercise-induced phsophorylation of AMPK$\alpha$ at Thr172, this together with AS160 at Thr642, IRS-I Ser636/639 and Akt at Ser473 together with a tendency in LKB1 at Ser428, all related to cellular energy status, glucose uptake and metabolism
+[@RN1837;
+@RN2856]<!-- Sano 2003 when unable to phosphorylate AS160 glut4 translocation to membrane is inhibited in  
+with relatively high exercise volumes.-->
+
+Collectively, although limited in precision due to small sample sizes (n = 8-19) and temporal resolution and 
+<!-- Mitchell n = 18, Burd n = 8, kumar n = 12, Ahtiainen n = 19, Terzis = 8 --> these studies points to volume dependency in exercise-induced S6K1\textsuperscript{Thr389} phosphorylation, potentially further augmented when increased number of sets are examined in the acute phase 
+(> 3 sets, < 5 hours; [@RN834; @RN791] vs. [@RN1837; @RN784; @RN2716]).
+Increased S6K1 phosophorylation coincides with rpS6\textsuperscript{Ser235/236} and \textsuperscript{Ser240/244} in the acute phase (< 5 hours) after exercise
+[@RN784; @RN1837] but not in the late phase (29 hours) [@RN791].
+Although rpS6\textsuperscript{Ser235/236} is a known substrate for both S6K1 and ERK1/2 and p90RSK1
+[@RN2311],
+ERK1/2\textsuperscript{Thr202/Tyr204} was not been found to be volume-sensitive in the acute phase
+[@RN784; @RN1837],
+nor was P90RSK1\textsuperscript{Thr573} in the late phase [@RN791]
+suggesting that signaling along the mTORC1-S6K1-rpS6-axis is more sensitive to variable volume than the parallell MEK/ERK-axis.
+The above signaling events suggest exercise volume-dependent activation of the translational machinery, and increased volume indeed leads to increased muscle protein synthesis
+[@RN791; @RN2716].
+However, relatively high exercise volumes may lead to signaling events inhibiting protein synthesis as AMPK\textsuperscript{Thr172} showed volume dependency, presumably relating to cellular energy stress and glucose metabolism
+[@RN1837;
+@RN2856;<!-- Sano 2003 when unable to phosphorylate AS160 glut4 translocation to membrane is inhibited in  
+with relatively high exercise volumes.-->
+@RN2858].<!-- Cork review of cross talk between AMPK and mTORC in nutrient signaling, AMPK can inhibit mTOR -->
+Interestingly, an increased AMPK-related signaling may be related to an accumulated effect due to short inter-set rest periods, coinciding with reduced proteins synthesis, at least in the acute phase after exercise
+[@RN2857].<!--McKendry 2016 short interset rest leads to increased AMPK and coincides with reduced protein synthesis 0-5 h post exercise -->
+
+In addition to signaling events and , training-induced lead to increased satellite cells 
+[@RN796]
+
 
 
 
