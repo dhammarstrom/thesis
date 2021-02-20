@@ -691,47 +691,54 @@ In summary, ribosomal biogensis as well as the regulation of translation is unde
 
 ### Myonuclear addition and transcriptional regulation of training-induced muscle remodeling 
 
-Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei lack the ability to proliferate and are therefore relying on a dormant cell population located in muscle tissue to activate and supply the fiber with transcriptional capacity
-[@RN2080]<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-These cells, called satellite cells can activate fuse with the fiber upon specific stimuli such as hormonal
+Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei (myonuclei) lack the ability to proliferate and are therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity
+[@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
+Among these cells, satellite cells are the primary source of additional myonuclei in adult skeletal muscle, however other cell types may also contribute
+[@RN2080;<!-- Blaauw 2014 review satellite cells and hypertrophy -->
+@RN2864].<!-- Mccarthy ablation of satellite cells still led to some new myonuclei, suggests other cell types contribute --> 
+Satellite cells can activate and fuse with the muscle fiber upon specific stimuli such as hormonal
 [@RN912]<!-- Egner 2013 steroid treatment leads to increased number of myonuclei -->
 mechanical stress
 [@RN2104].<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
-Satellite cells readily activates in humans in response to resistance-exercise, as assessed by markers of satellite cell state
-[@RN1048;<!-- Snijders 2012 using DLK -->
-@RN2081].<!-- Mackey using Pax7, Ki67 and CD56 -->
+Satellite cells readily activates in humans in response resistance exercise by exiting their quiescent state to proliferate
+[@RN2872;<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr -->
+@RN1048;<!-- Snijders 2012 using DLK -->
+@RN2081],<!-- Mackey using Pax7, Ki67 and CD56 -->
+leading to increased number of satellite cells after resistance training,
+[@RN2617].
 
+In the context of muscle hypertrophy, the role of satellite cells are somewhat unclear.
+Kadi *et al.* reported that although the number of satellite cells increased in response to training, the addition of myonuclei did not, 
+suggesting that the existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
+[@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
+Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or minimal concomitant enlargement of the myonuclei pool
+[@RN2112;<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
+@RN2874].
+In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest and non-responders
+[@RN2868].<!-- Petrella 2008 larger increase in myonuclei in high responders, confunded with the fact that high responders were to a large extent young males and low responders older women and men, see @RN765 -->
+However, this analysis may have been confunded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained 9 young (20-35 years) but only 2 elderly (60-75 years) male participants whereas the non-responder group contained 1 young man and 6 elderly
+[@RN765].<!-- description of the age/sex characteristics of clusters in 2868 -->
+This is of importance as satellite cell responses to exercise are different between young and elderly
+[@RN2872].<!-- McKay significant age effects in satellite cell response to exercise and at baseline -->
+A similar clustering-approach as performed in [@RN2868] did subsequently not find any difference in myonuclear addition between different response clusters in a homogeneous sample in terms of age (and sex)
+[@RN2055].<!-- Mobley increase in numbers of satellite cell content and myonuclei but no differences between responder clusters -->
+A further argument against the idea of a determining role of myonuclear addition in resistance-training induced hypertrophy comes from studies on depletion of satellite cells in mice where muscle growth induced by synergist ablation is unaffected
+[@RN2864].
+Myonuclei are thus able to maintain transcriptional requirements in, possibly relating to a large degree of reserve capacity
+[@RN2618].<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
 
+In addition to resistance exercise, satellite cells activate in response to a wide range of mechanical stimuli including endurance training, not leading to hypertrophy
+[@RN804]<!-- Differentiating satellite cells increased  -->
+suggesting roles in skeletal muscle remodeling other than by maintaining a transcriptional capacity in growing fibers.
+Indeed, satellite cells have been shown to have an important role indirect to muscle growth but vital to tissue remodeling 
+[@RN1880]
 
-
-
-[@RN1532]<!-- Addition of myonuclei preceds hypertrophy, gained myonuclei are retained during de-training, cellular memory?  -->
-
-
-
-
-McCarthy JJ, Mula J, Miyazaki M, Erfani R, Garrison K, Farooqui AB, Srikuea
-R, Lawson BA, Grimes B, Keller C, et al. (2011). Effective fiber hypertrophy
-in satellite cell-depleted skeletal muscle. Development 138, 3657–3666.
-
-During muscle hypertrophy 
-
-
-where fiber-specific nuclei contains the genetic material and thus supplies each fiber with transcriptional 
-
-
-
-
-
-
-[@RN2618]<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
 
 [@RN2616]<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
 
 [@RN2847]<!--  -->
 
-
-
+Transcriptional control is pivotal for the maintenance of skeletal muscle and the study of gene expression have and will be a vital tool to further map the biology of muscle.  
 
 
 
