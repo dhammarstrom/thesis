@@ -456,9 +456,8 @@ In an attempt to explain differences in training outcomes between volume-conditi
 First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
 [@RN866;<!-- Baar Esser correlation in rats  -->
 @RN785;<!--Terzis et al., 2008-->
-@RN788],<!-- Mitchell et al., 2013-->
-presumably trough increased translation indicated by greater ribosomal association with mRNA
-[@RN866].<!-- Baar Esser correlation in rats larger polysomal pool  -->
+@RN788].<!-- Mitchell et al., 2013-->
+
 A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig)a).
 In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
 It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
@@ -531,6 +530,9 @@ Together with indications of greater mTORC1 activation, analysis of c-Myc mRNA a
 []<!-- West -->
 []<!-- cMyc driver of ribosomal biogenesis -->
 
+
+
+
 ```{r rna-csa-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
 
 rna_csa_change_models <- readRDS("./data/derivedData/study1-rna-csa-cor/regression.RDS")
@@ -576,6 +578,31 @@ rna_csa_fig <- readRDS("./figures/results/study1-rna-csa.RDS")
 rna_csa_fig
 
 ```
+
+```{r}
+
+p70_csa <- readRDS("./data/derivedData/study1-western-blot/csa_p70.RDS")
+
+p70_csa %>%
+  summarise(cor.r = cor.test(fc, change)$estimate, 
+            cor.r.p = cor.test(fc, change)$p.value, 
+            cor.p = cor.test(fc, change, method = "spearman")$estimate, 
+            cor.p.p = cor.test(fc, change, method = "spearman")$p.value)
+
+
+m1 <- lme(change ~ scale(fc) + sets, 
+          random = list(subject = ~ 1),
+          weights = varExp(),
+          data = p70_csa)
+
+
+summary(m1)
+
+
+
+```
+
+
 
 
 

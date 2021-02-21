@@ -691,60 +691,74 @@ In summary, ribosomal biogensis as well as the regulation of translation is unde
 
 ### Myonuclear addition and transcriptional regulation of training-induced muscle remodeling 
 
-Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei (myonuclei) lack the ability to proliferate and are therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity
+Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei (myonuclei) lack the ability to proliferate and are therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity during growth or in response to injury
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-Among these cells, satellite cells are the primary source of additional myonuclei in adult skeletal muscle, however other cell types may also contribute
+Among these cells, satellite cells are the primary source of myonuclear accretion in adult skeletal muscle, however other cell types may also contribute
 [@RN2080;<!-- Blaauw 2014 review satellite cells and hypertrophy -->
 @RN2864].<!-- Mccarthy ablation of satellite cells still led to some new myonuclei, suggests other cell types contribute --> 
-Satellite cells can activate and fuse with the muscle fiber upon specific stimuli such as hormonal
+Satellite cells can activate, proliferate or differentiate and fuse with the muscle fiber upon specific stimuli such as hormonal activation
 [@RN912]<!-- Egner 2013 steroid treatment leads to increased number of myonuclei -->
-mechanical stress
-[@RN2104].<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
+or mechanical stress
+[@RN2104],<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
+or return to their quiescent state
+[@RN2080]<!-- Blaauw 2014 review satellite cells and hypertrophy -->
 Satellite cells readily activates in humans in response resistance exercise by exiting their quiescent state to proliferate
 [@RN2872;<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr -->
 @RN1048;<!-- Snijders 2012 using DLK -->
 @RN2081],<!-- Mackey using Pax7, Ki67 and CD56 -->
-leading to increased number of satellite cells after resistance training,
+leading to increased number of satellite cells after resistance training
 [@RN2617].
 
-In the context of muscle hypertrophy, the role of satellite cells are somewhat unclear.
-Kadi *et al.* reported that although the number of satellite cells increased in response to training, the addition of myonuclei did not, 
-suggesting that the existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
+A possible growth limiting role for satellite cells in the context of muscle hypertrophy is to maintain a fixed (minimum) number of myonuclei per muscle fiber volume through myonuclear accretion, in order to maintain transcriptional capacity
+[@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
+However, human studies are contradicting that such a role would be a determining factor for hypertrophy.
+Kadi *et al.* reported that although the number of satellite cells increased in response to training, the number of myonuclei did not, 
+suggesting that existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
 [@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
-Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or minimal concomitant enlargement of the myonuclei pool
+Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal concomitant enlargement of the myonuclei pool
 [@RN2112;<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
 @RN2874].
 In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest and non-responders
 [@RN2868].<!-- Petrella 2008 larger increase in myonuclei in high responders, confunded with the fact that high responders were to a large extent young males and low responders older women and men, see @RN765 -->
-However, this analysis may have been confunded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained 9 young (20-35 years) but only 2 elderly (60-75 years) male participants whereas the non-responder group contained 1 young man and 6 elderly
-[@RN765].<!-- description of the age/sex characteristics of clusters in 2868 -->
+However, this analysis may have been confounded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained 9 young (20-35 years) but only 2 elderly (60-75 years) male participants whereas the non-responder group contained 1 young man and 6 elderly
+[@RN765].<!-- description of the age/sex characteristics of clusters in RN2868 -->
 This is of importance as satellite cell responses to exercise are different between young and elderly
 [@RN2872].<!-- McKay significant age effects in satellite cell response to exercise and at baseline -->
-A similar clustering-approach as performed in [@RN2868] did subsequently not find any difference in myonuclear addition between different response clusters in a homogeneous sample in terms of age (and sex)
+Using a similar clustering-approach as performed in [@RN2868] did not result in differences in myonuclear addition between different response clusters in a homogeneous sample in terms of age (and sex)
 [@RN2055].<!-- Mobley increase in numbers of satellite cell content and myonuclei but no differences between responder clusters -->
-A further argument against the idea of a determining role of myonuclear addition in resistance-training induced hypertrophy comes from studies on depletion of satellite cells in mice where muscle growth induced by synergist ablation is unaffected
+A further argument against the idea of a determining role of myonuclear addition in resistance-training induced hypertrophy comes from studies on mice where initial muscle growth induced by synergist ablation is unaffected despite of specific depletion of satellite cells 
 [@RN2864].
-Myonuclei are thus able to maintain transcriptional requirements in, possibly relating to a large degree of reserve capacity
+
+In humans, addition of myonuclei paralleled with an increase in global transcription rates from existing myonuclei are likely both contributing to accumulation of total RNA seen after resistance training.
+Myonuclear accretion does not, however, seem to be a limiting factor for muscle growth
+[@RN2055;<!-- Mobley evidence for myonuclei addition, not different between responder groups  -->
+@RN2864].<!-- MacCarthy not a limiting factor for increased transcription in the initial phase of resistance training -->
+Existing myonuclei are thus able to maintain transcriptional requirements during hypertrophy, possibly relating to a large degree of transcriptional reserve capacity in muscle fibers
 [@RN2618].<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
+Indeed, this reserve capacity of existing myonuclei seems sufficient to induce a global shift in transcription in response to mechanical loading, including both mRNA and rRNA transcription
+[@RN2616].<!-- Kirby existing nuclei can increase transcription  -->
+Such a shift in global transcription is indeed a determinant of muscle growth as it sets the limit of ribosomal biogenesis and thus the muscle cells translational capacity (as reviewed above).
 
-In addition to resistance exercise, satellite cells activate in response to a wide range of mechanical stimuli including endurance training, not leading to hypertrophy
-[@RN804]<!-- Differentiating satellite cells increased  -->
-suggesting roles in skeletal muscle remodeling other than by maintaining a transcriptional capacity in growing fibers.
-Indeed, satellite cells have been shown to have an important role indirect to muscle growth but vital to tissue remodeling 
-[@RN1880]
+A change in transcription in response to mechanical loading is not only quantitative but also qualitative with multiple transcriptional programs enabling coordinated adaptation to the specific stimuli.
+Such "programming" in muscle tissue affects e.g. muscle fiber type composition where resistance training leads to "shut-down" of *MYH1*, coding for the myosin isoform represented in type IIX fibers
+[@RN2056].<!-- Anderssen  -->
+The changed, relative proportions of transcripts coding for myosin composition will after remodeling reflect the resulting phenotype
+[@RN1489].<!-- Ellefsen -->
+Furthermore, transcriptional remodeling of the extracellular matrix is readily affected by resistance training
+[@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
+@RN2298].<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9-->
+Revisiting the role of satellite cells, briefly touched upon in a previous paragraph, highlights that transcriptional regulation of muscle remodeling is a shared venture between multiple cell types when it comes to the extracellular matrix.
+If satellite cells are depleted from skeletal muscle of mice subjected to long-term mechanical overload through synergist ablation, a fibrous muscle phenotype is developed with accumulated extracellular matrix components
+[@RN1354].<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
+Balance between muscle satellite cells, their daughter cells and fibroblasts enables coordination between myofiber hypertrophy and extracellular matrix remodeling
+[@RN1354;<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
+@RN1888;<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
+@RN2421].<!--  Kjaer fibroblast are the main source of collagen biosynthesis-->
+Such coordinated remodeling occurs at least partly through direct exosome transfer of regulating RNA between differentiated satellite cells and fibroblasts
+[@RN1888].<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
 
-
-[@RN2616]<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
-
-[@RN2847]<!--  -->
-
-Transcriptional control is pivotal for the maintenance of skeletal muscle and the study of gene expression have and will be a vital tool to further map the biology of muscle.  
-
-
-
-
-Previous studies have investigated transcriptome responses to acute resistance exercise [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408]<!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
+Previous studies Using large-scale techniques to investigate transcriptome characteristics in response to resistance-exercise or training, studies have evaluated [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
+@RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408]<!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
 and chronic resistance training [@RN2400;<!-- Robinson 2017 differences on common regulation between exercise types in you and old--> 
 @RN2397;<!-- Melow 2007 Age was associated with DE of 596 genes, training in aged led to RNA profiles more like young. --> 
 @RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2299;<!-- Murton Exercise induced genes with no response in control group-->
@@ -753,7 +767,69 @@ and chronic resistance training [@RN2400;<!-- Robinson 2017 differences on commo
 as well as described associations between transcriptome characteristics and degrees of muscle growth [@RN774;<!--Raue 2012. 661 genes regulated by exercise and correlated with muscle size and strength--> 
 @RN753],<!-- Phillips 2013 association with  -->
 and function [@RN2402;<!-- Hangelbroek 2018 gene cluster predicts 1RM, training induces expression of ECM/collagen -->
-@RN2398].<!-- Stepto 2009 Difference between trained (strength and endurance) and untrained controls. A gene clsuter correlated with strength -->
+@RN2398].
+
+
+
+
+
+
+
+
+
+From a methodological point of view, skeletal muscle subjected to e.g. resistance training, concomitant with muscle hypertrophy thus both exhibit large global scale changes to the RNA pool as well as important *qualitative* changes to RNA sub-populations.
+
+
+
+
+
+
+
+A common assumption in studies of gene expression is the relative stability of most transcripts, as well as stability between sub-populations of RNA (mRNA vs. rRNA)
+[@RN2359;<!-- Loven 2012 et al  -->
+@RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
+<!-- Fix this -->
+Such assumptions may not be true in many situations, including during muscle hypertrophy
+[@RN2616;<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
+@RN2430;<!-- Lin 2012 c-Myc induced gene amplification through -->
+@RN1755;<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->
+@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
+@RN1809]. <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
+Depending on the technique used for evaluating RNA expression (e.g. qPCR or RNA-seq), data normalization during analysis aims to make experimental conditions comparable.
+
+In cell culture experiments, the common denominator for transcripis abundances [@RN2359]<!-- Loven 2012 et al  -->.
+
+
+To exploit the potential of any study design, there is a need for identifying an appropriate pipeline for transcriptome analyses to ensure a biologically valid interpretation of data. This entails identifying potential violations of common assumptions caused by the experimental model at hand, relating to, for example, data normalization [@RN2414;<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
+@RN2363]<!-- Dillies et al -->. 
+
+For transcriptome data to provide adequate biological information about a given experimental set-up, numerous bioinformatic steps need to be adopted in a customized manner [@RN2426;<!-- Conessa 2016 best practices fom RNA seq-->
+@RN2757].<!-- Arora 2020 differences between pipelines in gene abundance estimates --> 
+
+
+
+
+
+
+@RN
+ cell models that exhibit high degrees of plasticity, gene expression events result in increased amounts of total RNA and mRNA transcripts per cell 
+
+
+
+specifically violating the assumption that most genes are not differentially expressed 
+
+
+
+
+
+[@RN2847]<!--  -->
+
+Transcriptional control is pivotal for the maintenance of skeletal muscle and the study of gene expression have and will be a vital tool to further map the biology of muscle.  
+
+
+
+
+<!-- Stepto 2009 Difference between trained (strength and endurance) and untrained controls. A gene clsuter correlated with strength -->
 
 
 Whereas these studies have merited interesting findings, they lack clear coherences in terms of differential expression events, even for classical exercise-inducible genes such as PGC1$\alpha$ [@RN2360].<!-- Pillon et al -->
@@ -761,16 +837,8 @@ This lack of clear coherence is potentially due to a combination of issues such 
 
 [@RN2403]<!-- Tarnopolsky no diff (only 0.6% differentially expressed) between legs in rested state (small n=8) --> are likely to reduce this variation and to provide transcriptome data with increased biological meaningfulness. Second, technical variability can be attributed to decisions made during the bioinformatical treatment of data. 
 As described by Concea *et al.*, there is no optimal pipeline for sequencing technology as new tools keep evolving and emerging, different tools should be explored to an optimum pipeline for the specific type of data [@RN2426].<!-- Conessa 2016 best practices fom RNA seq-->
-To exploit the potential of any study design, there is a need for identifying an appropriate pipeline for transcriptome analyses to ensure a biologically valid interpretation of data. This entails identifying potential violations of common assumptions caused by the experimental model at hand, relating to, for example, data normalization [@RN2414;<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
-@RN2363]<!-- Dillies et al -->. 
 
-For transcriptome data to provide adequate biological information about a given experimental set-up, numerous bioinformatic steps need to be adopted in a customized manner [@RN2426;<!-- Conessa 2016 best practices fom RNA seq-->
-@RN2757].<!-- Arora 2020 differences between pipelines in gene abundance estimates --> 
-Of these steps, data normalization is particularly decisive [@RN2363]<!-- Dillies et al -->,
-as it aims to transform naïve transcript counts into biologically meaningful results. This essentially means expressing them as *per*-cell abundances [@RN2359]<!-- Loven 2012 et al  -->.
-For most experimental models, this is equivalent to providing transcript-to-total RNA ratios, given the fulfillment of the assumption that total RNA levels remain stable between conditions on a per-unit-cell or per-unit-tissue basis [@RN2359]<!-- Loven 2012 et al  -->.
-In cell models that exhibit high degrees of plasticity, gene expression events result in increased amounts of total RNA and mRNA transcripts per cell [@RN2430]<!-- Lin 2012 c-Myc induced gene amplification through -->, specifically violating the assumption that most genes are not differentially expressed [@RN2359;<!-- Loven 2012 et al  -->
-@RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
+
 
 We are not aware of any study that has addressed the need to account for such perspectives during transcriptome analyses of skeletal muscle subjected to mechanical stress, such as resistance training. Indeed, this assumption can be expected to be violated, as total RNA content increases markedly on a per-unit-weight basis [@RN2358]<!-- Hammarstrom 2020 -->, with potential global changes also occurring for the mRNA pool, though this remains unknown. The extent to which total RNA, and therefore ribosomal RNA, increases, coincides with the increase in muscle mass [@RN2358<!-- Hammarstrom 2020 -->;
 @RN1755]<!-- Stec -->, underlining its importance for cellular growth but also its inevitable presence as a potential confounding factor in RNA sequencing experiments.

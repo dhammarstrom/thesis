@@ -1,0 +1,14 @@
+# Methodological considerations
+
+## Feasibility of model-based normalization of RT-qPCR-based gene-expression data in a case of human muscle under hypertrophic stress
+
+Quantitative reverse-transcription real-time polymerase chain-reaction (RT-qPCR) is the method of choice for conducting targeted gene-expression studies.
+For accurate interpretation of such data the selection of normalization strategy needs to account for biological as well as non-biological variation.
+Whereas analysis using endogenous control genes is the most commonly adopted approach, model-based strategies using estimates of technical variation from multiple genes could offer increased sensitivity and accuracy.  
+Here, we compare the feasibility gene-specific and model-based normalization strategies for analyzing the effect of two resistance-training programs on abundance of IGF-1 and myostatin mRNA in humans. As for gene-specific normalization, neither of the eleven commonly utilized endogenous control genes investigated exhibited stability suggesting that the use of endogenous internal controls for normalization may affect interpretation. In contrast, using mixed-effects models utilized to estimate technical variation between samples without relying on endogenous controls proved to be feasible. 
+Simulations further showed that model-based strategies were computationally robust and had higher power than traditional analysis.
+
+
+## Increased relevance of RNA-seq data through data-driven selection of 
+
+

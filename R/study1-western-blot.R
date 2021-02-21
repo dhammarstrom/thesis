@@ -564,5 +564,50 @@ saveRDS(western_fig, "./figures/results/study1-western-blot.RDS")
 
 
 
+####################################### Correlation with RT induced growth #########
+
+# Using S6K1 p70
+
+
+p70 <- west.acute %>%
+  filter(target == "p.p70") %>%
+  group_by(subject, sets, timepoint) %>%
+  summarise(expression = mean(expression)) %>%
+  pivot_wider(names_from = timepoint, 
+              values_from = expression) %>%
+  mutate(fc = w2post / w2pre) %>%
+  print()
+
+# getting mr data 
+
+# Total RNA analysis #
+# loads include and condition data
+include <- read.csv("./data/study-1/oneThreeSetLeg.csv", sep=";") %>%
+  gather(sets,leg, multiple:single) %>%
+  mutate(leg) %>%
+  dplyr::select(subject, sex, include, leg, sets) %>%
+  filter(include == "incl")
+
+
+# mr data 
+source("./R/study-1/mr-and-dxa-data.R")
+
+p70_csa <-  mr.results %>%
+  inner_join(include) %>%
+  dplyr::select(subject,  sets, timepoint,  CSA.avg) %>%
+  pivot_wider(names_from = timepoint, values_from = CSA.avg) %>%
+  mutate(change = 100 * ((post/pre-1))) %>%
+  mutate(sets = factor(sets, levels = c("single", "multiple"))) %>%
+
+  inner_join(p70) %>%
+  print()
+  
+saveRDS(p70_csa, "./data/derivedData/study1-western-blot/csa_p70.RDS")
+
+
+
+
+
+
 
 
