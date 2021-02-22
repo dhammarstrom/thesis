@@ -15,14 +15,14 @@ source("./R/themes.R")
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-## Study protocols and participants
+## Study overview and participants
 
 Study I was designed to examine effects of low- (single-set per exercise) and moderate-volume (three sets per exercise, multiple-sets) on
 responses to acute exercise and long-term training within participants.
 A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
 Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).
 Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session as well as after the intervention (Figure \@ref(fig:study1-overview)).
-Assessments of muscle strength (isokinetic and isometric knee extension torque as well as one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
+Assessments of muscle strength (unilateral isokinetic and isometric knee extension torque as well as unilateral knee extension and leg press one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
 Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
 
 ```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.  ", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
@@ -161,7 +161,7 @@ data.frame(x = c(-8, 13),
 Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
 Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
 An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
-Baseline muscle strength (isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
+Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
 Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
 Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
 The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
@@ -179,8 +179,8 @@ data.frame(x = c(-8, 16),
      ## Group labels
         
         annotate("richtext", 
-                 x = -3, 
-                 y = c(0.55, 0.05), 
+                 x = -2, 
+                 y = c(0.6, 0.02), 
                  label = c("<b>Experimental group</b>", 
                            "<b>Control group</b>"), 
                  
@@ -223,7 +223,7 @@ data.frame(x = c(-8, 16),
                        rep(0.42, 3)), 
                  x = c(0, 1.5, 4.5, 5.5, 8.5, 9.5, 12.5, 14.5, 
                        -0.2, 12.5, 14.5, 
-                       -0.5, 13.5, 14.9), 
+                       -0.5, 12.9, 14.9), 
                  
                  label.padding = grid::unit(0, "pt"),
                  fill = NA, 
@@ -292,7 +292,7 @@ data.frame(x = c(-8, 16),
                  yend = c(0.1, rep(0.09, 12))) +        
         annotate("text", 
                  x = c(1, 6, 12, 6), 
-                 y = c(rep(0.07, 3), 0.05),  
+                 y = c(rep(0.07, 3), 0.025),  
                  label = c(1, 6, 12, "Session"), 
                  size = text.size) +
         
@@ -300,15 +300,50 @@ data.frame(x = c(-8, 16),
         # Control group
         
         
+  annotate("richtext", x = -1.5, 
+                 y = c(-0.05,
+                       -0.1, 
+                       - .15),
+                 label = c("Biopsy sample", 
+                           "Muscle thickness assessment", 
+                           "Strength assessment"), 
+                 
+                 label.padding = grid::unit(0, "pt"),
+                 fill = NA, 
+                 label.color = NA,
+                 label.margin = unit(0, "lines"),
+                 label.size = 0,
+                 size = text.size,
+                 
+                 hjust = 1) +
+  # Annotations
+     annotate("richtext", 
+                 y = c(rep(-0.05, 3), 
+                       rep(-0.1, 2), 
+                       rep(-0.15, 2)), 
+                 x = c(0, 1.5,  12.5,
+                       -0.2, 12.5, 
+                       -0.5, 12.9), 
+                 
+                 label.padding = grid::unit(0, "pt"),
+                 fill = NA, 
+                 label.color = NA,
+                 label.margin = unit(0, "lines"),
+                 label.size = 0,
+                 size = text.size,
+                 
+                 label = c(rep("&dagger;", 3), 
+                           rep("&Dagger;", 2), 
+                           rep("\U2051", 2))) +
         
         annotate("segment", 
-                 x =    c(1, 1, 12), 
-                 xend = c(12, 1, 12), 
-                 y =    c(-0.35, -0.35, -0.35),
-                 yend = c(-0.35, -0.37, -0.37)) +        
+                 x =    c(1.5, 1.5, 12), 
+                 xend = c(12, 1.5, 12), 
+                 y =    c(-0.3, -0.3, -0.3),
+                 yend = c(-0.3, -0.31, -0.31)) +        
         annotate("text", 
-                 x = c(6), 
-                 y = c(-0.39),  
+                 x = c(6.25), 
+                 y = c(-0.34),  
                  label = c("2-4 weeks"), 
                  size = text.size) +
         
@@ -542,17 +577,17 @@ rbind(studyI, studyII) %>%
 
 ## Resistance training interventions
 
-Each training session started with a light, standardized warm-up (5 min
-ergometer cycling and 10 repetitions each of push-ups, sit-ups,
-back-extensions and squats). Before each exercise in the main program,
-one set of 10 repetitions were performed in the specific exercise with
-approximately 50% of 1RM.
-
 Studies were fully or partially performed as within-participant studies
 as each participant had their legs assigned to different training
 conditions (not including the control group in Study II). Allocation was
 performed after enrollment where each participant had their legs
 randomized to either low- or moderate volume (Study I, see Figure \@ref(fig:study1-overview)), or variable or constant volume (Study II).
+
+Each training session started with a light, standardized warm-up (5 min
+ergometer cycling and 10 repetitions each of push-ups, sit-ups,
+back-extensions and squats). Before each exercise in the main program,
+one set of 10 repetitions were performed in the specific exercise with
+approximately 50% of 1RM.
 
 In Study I, the low-volume protocol consisted of a single set of each
 exercise and the moderate-volume consisted of three sets per exercise.
@@ -561,12 +596,7 @@ extension). The moderate volume-leg commenced all sessions and the low
 volume-leg performed a single set of each exercise in the rest between
 second and third set of the moderate volume training protocol.
 
-In Study II, only unilateral knee-extension was performed in an effort
-to concentrate the stimulus to the quadriceps
-muscles.<!-- Check this --> The constant-volume leg performed six sets
-of 10RM throughout the study and variable leg performed six sets in
-session one to four, three sets in session five to eight and nine sets
-in session nine to twelve with same relative intensity (see Figure \@ref(fig:study2-overview)).
+In Study II, only unilateral knee-extension was performed. The constant-volume leg performed six sets of 10RM throughout the study and variable leg performed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelve with same relative intensity (see Figure \@ref(fig:study2-overview)).
 
 
 ## Muscle strength assessments
