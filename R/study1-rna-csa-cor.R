@@ -97,9 +97,8 @@ temp <- tot.rna %>%
         pivot_wider(names_from = timepoint, 
                     values_from = rna) %>%
   
+  mutate(sets = factor(sets, levels = c("single", "multiple")))
   
- 
-        print()
         
         
 tot.rna %>%
@@ -108,17 +107,15 @@ tot.rna %>%
         facet_wrap(~ timepoint) + 
         geom_smooth(method = "lm")
 
-m.scaled0 <- lme(change ~  scale(w0) +  scale(w2pre) + scale(w12), 
-                random = list(subject = ~ 1, 
-                              leg = ~ 1), 
+m.scaled0 <- lme(change ~  sets + scale(w0) +  scale(w2pre) + scale(w12), 
+                random = list(subject = ~ 1), 
                 data = temp, 
                 na.action = na.omit)
 
 plot(m.scaled0) # signs of heterogeneity, check if varExp helps
 
-m.scaled <- lme(change ~   scale(w0) + scale(w2pre) + scale(w12), 
-                    random = list(subject = ~ 1, 
-                                  leg = ~ 1), 
+m.scaled <- lme(change ~   sets +  scale(w0) + scale(w2pre) + scale(w12), 
+                    random = list(subject = ~ 1), 
                     weights = varExp(form = ~ fitted(.)), 
                     data = temp, 
                     na.action = na.omit)
@@ -137,9 +134,8 @@ car::vif(m.scaled)
 
 
 # Unscaled estimates for the regression table
-m.unscaled <- lme(change ~  w0 +  w2pre + w12, 
-                         random = list(subject = ~ 1, 
-                                       leg = ~ 1), 
+m.unscaled <- lme(change ~  sets + w0 +  w2pre + w12, 
+                         random = list(subject = ~ 1), 
                          weights = varExp(form = ~ fitted(.)), 
                  data = temp, 
                  na.action = na.omit)
@@ -176,19 +172,19 @@ saveRDS(rna_csa_change_models, "./data/derivedData/study1-rna-csa-cor/regression
 
 ## For plotting, individual time/RNA must be unscaled, but other scaled (to simplify plotting) 
 # Refitting...
-w0.unscaled <- lme(change ~   w0 +  scale(w2pre) + scale(w12), 
+w0.unscaled <- lme(change ~  w0 +  scale(w2pre) + scale(w12) + sets, 
                 random = list(subject = ~ 1), 
                 weights = varExp(form = ~ fitted(.)), 
                 data = temp, 
                 na.action = na.omit)
 
-w2pre.unscaled <- lme(change ~   scale(w0) +  w2pre + scale(w12), 
+w2pre.unscaled <- lme(change ~    scale(w0) +  w2pre + scale(w12) + sets, 
                    random = list(subject = ~ 1), 
                    weights = varExp(form = ~ fitted(.)), 
                    data = temp, 
                    na.action = na.omit)
 
-w12.unscaled <- lme(change ~   scale(w0) +  scale(w2pre) + w12, 
+w12.unscaled <- lme(change ~  scale(w0) +  scale(w2pre) + w12 + sets, 
                       random = list(subject = ~ 1), 
                       weights = varExp(form = ~ fitted(.)), 
                       data = temp, 
@@ -223,7 +219,7 @@ week0 <- tot.rna %>%
                           labels = c("", 300, 400, 500, 600, "")) +
         labs(x = "", 
              y = "CSA change (%)", 
-             title = "Week 2") +
+             title = "Week 0") +
         
         
         theme_bw() +

@@ -616,6 +616,8 @@ Stec and collegues observed increased ribosomal RNA and total RNA abundance only
 [@RN1755].<!-- Stec 2016 only high responders have increased total RNA and rRNA abundance after short training -->
 Similarly, Mobley *et al.* found larger increases in total RNA in participants classified as high- vs. low-responders to 12 week resistance training (34% vs. 8% increase in total RNA) together with a correlation between total RNA increases and muscle growth over the same time period
 [@RN2055].<!-- Mobley weak correlation r = 0.28 p = 0.026  and no cluster * time interaction effect but increases in total RNA 34% in high responders vs 8% in low -->
+Finally, Reidy *et al.* reported a correlation between changes in total RNA content and muscle growth
+[@RN1897]<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->
 Together these studies underlines the importance of ribosomal biogenesis and translational capacity in resistance training-induced muscle hypertrophy.
 It should be noted however, that protein synthesis and cellular growth may occur in the absence of ribosomal biogenesis.
 In cultured myotubes stimulated with IGF-1, inhibition of ribosomal RNA transcription led to reduced RNA content but not myotube size compared to non-inhibited controls
@@ -642,7 +644,7 @@ and repeated bouts lead to accumulation of rRNA/total RNA and thus presumably fu
 @RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
 @RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
 @RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-@RN1897<!-- 11% 36 sessions young -->].
+@RN1897<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->].
 However, a time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unstudied.
 Only a few studies have investigated exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
 For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout

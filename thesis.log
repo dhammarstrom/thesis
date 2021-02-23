@@ -1,0 +1,3853 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.23)  23 FEB 2021 18:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (./gihclass.cls
+Document Class: gihclass 2019/01/05 GIH thesis class
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr
+.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb
+.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.s
+ty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\FV@CodeLineNo=\count188
+\FV@InFile=\read2
+\FV@TabBox=\box47
+\c@FancyVerbLine=\count189
+\FV@StepNumber=\count190
+\FV@OutFile=\write3
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/mathptmx.s
+ty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/courier.st
+y
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/blindtext/blindte
+xt.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count191
+\c@Blindtext=\count192
+\c@blind@countparstart=\count193
+\blind@countxx=\count194
+\blindtext@numBlindtext=\count195
+\blind@countyy=\count196
+\c@blindlist=\count197
+\c@blindlistlevel=\count198
+\c@blindlist@level=\count199
+\blind@listitem=\count266
+\c@blind@listcount=\count267
+\c@blind@levelcount=\count268
+\blind@mathformula=\count269
+\blind@Mathformula=\count270
+\c@blind@randomcount=\count271
+\c@blind@randommax=\count272
+\c@blind@pangramcount=\count273
+\c@blind@pangrammax=\count274
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec
+.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box48
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen139
+\ttl@minus=\dimen140
+\ttl@toksa=\toks16
+\titlewidth=\dimen141
+\titlewidthlast=\dimen142
+\titlewidthfirst=\dimen143
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe.sty
+Package: microtype 2020/12/07 v2.8 Micro-typographical refinements (RS)
+\MT@toks=\toks17
+\MT@count=\count275
+LaTeX Info: Redefining \textls on input line 788.
+\MT@outer@kern=\dimen144
+LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
+\MT@listname@count=\count276
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe-pdftex.def
+File: microtype-pdftex.def 2020/12/07 v2.8 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip60
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe.cfg
+File: microtype.cfg 2020/12/07 v2.8 microtype main configuration file (RS)
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry
+.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.st
+y
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks18
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.
+sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts
+.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.s
+ty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip61
+For additional information on amsmath, use the `?' option.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.s
+ty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.st
+y
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen153
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.st
+y
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count280
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count281
+\leftroot@=\count282
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count283
+\DOTSCASE@=\count284
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count285
+\c@MaxMatrixCols=\count286
+\dotsspace@=\muskip16
+\c@parentequation=\count287
+\dspbrk@lvl=\count288
+\tag@help=\toks21
+\row@=\count289
+\column@=\count290
+\maxfields@=\count291
+\andhelp@=\toks22
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks23
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx
+.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics
+.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdft
+ex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
+opdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kv
+definekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptio
+ns.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds
+.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvset
+keys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdft
+excmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
+opdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epsto
+pdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.s
+ty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.
+sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen164
+\captionmargin@=\dimen165
+\captionwidth=\dimen166
+\caption@tempdima=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count292
+\c@continuedfloat=\count293
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.st
+y
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count294
+\U@D=\dimen171
+\l@babelnohyphens=\language3
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.
+def)
+\bbl@readstream=\read3
+)
+\bbl@dirlevel=\count295
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-english/e
+nglish.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.st
+y
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam
+.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc
+.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks25
+\footnotemargin=\dimen172
+\c@pp@next@reset=\count296
+\c@@fnserial=\count297
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/enumerate.s
+ty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks26
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip64
+\bibsep=\skip65
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count298
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.st
+y
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count299
+\mult@box=\box51
+\multicol@leftmargin=\dimen173
+\c@unbalance=\count300
+\c@collectmore=\count301
+\doublecol@number=\count302
+\multicoltolerance=\count303
+\multicolpretolerance=\count304
+\full@width=\dimen174
+\page@free=\dimen175
+\premulticols=\dimen176
+\postmulticols=\dimen177
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen178
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@gfirstbox=\box56
+\mult@firstbox=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count305
+\c@columnbadness=\count306
+\c@finalcolumnbadness=\count307
+\last@try=\dimen179
+\multicolovershoot=\dimen180
+\multicolundershoot=\dimen181
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count308
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tocbibind/tocbibi
+nd.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+2.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fundus-calligra/c
+alligra.sty
+Package: calligra 2012/04/10 v1.9 LaTeX package calligra
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textpos/textpos.s
+ty
+Package: textpos 2020/09/26 v1.10
+Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
+Package textpos Info: choosing support for LaTeX3 on input line 61.
+\TP@textbox=\box97
+\TPHorizModule=\dimen182
+\TPVertModule=\dimen183
+\TP@margin=\dimen184
+\TP@absmargin=\dimen185
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
+\TPboxrulesize=\dimen186
+\TP@tbargs=\toks27
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/changepage/change
+page.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count309
+\cp@tempcnt=\count310
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 89
+.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 15.2999pt on input line 89.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/nomencl/nomencl.s
+ty
+Package: nomencl 2020/12/29 v5.5 Nomenclature package
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.s
+ty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval
+.tex
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutil
+s.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+)
+\XKV@depth=\count311
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/tocba
+sic.sty
+Package: tocbasic 2020/09/21 v3.32 KOMA-Script package (handling toc-files)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrba
+se.sty
+Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlf
+ile.sty
+Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlf
+ile-hook.sty
+Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
+
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlo
+go.sty
+Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
+))))
+\scr@dte@tocline@numberwidth=\skip68
+\scr@dte@tocline@numbox=\box98
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 187.
+Package tocbasic Info: setting babel extension for `nls' on input line 188.
+\nomlabelwidth=\dimen187
+\nom@tempdim=\dimen188
+\nomitemsep=\skip69
+)
+\@nomenclaturefile=\write4
+\openout4 = `thesis.nlo'.
+
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 108.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip70
+\thm@postskip=\skip71
+\thm@headsep=\skip72
+\dth@everypar=\toks35
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
+ty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count312
+\LTcapwidth=\dimen189
+\LT@head=\box99
+\LT@firsthead=\box100
+\LT@foot=\box101
+\LT@lastfoot=\box102
+\LT@cols=\count313
+\LT@rows=\count314
+\c@LT@tables=\count315
+\c@LT@chunks=\count316
+\LT@p@ftn=\toks36
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs
+.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen190
+\lightrulewidth=\dimen191
+\cmidrulewidth=\dimen192
+\belowrulesep=\dimen193
+\belowbottomsep=\dimen194
+\aboverulesep=\dimen195
+\abovetopsep=\dimen196
+\cmidrulesep=\dimen197
+\cmidrulekern=\dimen198
+\defaultaddspace=\dimen199
+\@cmidla=\count317
+\@cmidlb=\count318
+\@aboverulesep=\dimen256
+\@belowrulesep=\dimen257
+\@thisruleclass=\count319
+\@lastruleclass=\count320
+\@thisrulewidth=\dimen258
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace
+.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (./chemarr.sty
+Package: chemarr 2001/06/22 v1.1 Chemical reaction arrows (HO)
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref
+.sty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfes
+cape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.s
+ty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letlt
+xmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.s
+ty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen259
+\Hy@linkcounter=\count321
+\Hy@pagecounter=\count322
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.d
+ef
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref
+-langpatches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+nguages
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc
+.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcm
+ds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count323
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.de
+f
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count324
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen260
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.s
+ty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigi
+ntcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count325
+\Field@Width=\dimen261
+\Fld@charsize=\dimen262
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx
+.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count326
+\c@Item=\count327
+\c@Hfootnote=\count328
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.
+def
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-lt
+x.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count329
+\c@bookmark@seq@number=\count330
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/re
+runfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/u
+niquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip77
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 45.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ztmcm/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ztmcm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/ztmcm/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/ztmcm/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ztmcm/m/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ztmcm/m/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/ztmcm/m/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/ztmcm/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count331
+\float@exts=\toks37
+\float@box=\box103
+\@float@everytoks=\toks38
+\@floatcapt=\box104
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/rotating
+.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count332
+\rotFPtop=\skip78
+\rotFPbot=\skip79
+\rot@float@box=\box105
+\rot@mess@toks=\toks39
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine
+.sty
+File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/minifp/minifp.s
+ty
+Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
+-based programing language.
+\MFP@loopctr=\count333
+)
+\c@DefaultLines=\count334
+\c@DefaultDepth=\count335
+\DefaultFindent=\dimen263
+\DefaultNindent=\dimen264
+\DefaultSlope=\dimen265
+\DiscardVskip=\dimen266
+\L@lbox=\box106
+\L@tbox=\box107
+\c@L@lines=\count336
+\c@L@depth=\count337
+\L@Pindent=\dimen267
+\L@Findent=\dimen268
+\L@Nindent=\dimen269
+\L@lraise=\dimen270
+\L@first=\dimen271
+\L@next=\dimen272
+\L@slope=\dimen273
+\L@height=\dimen274
+\L@novskip=\dimen275
+\L@target@ht=\dimen276
+\L@target@dp=\dimen277
+\L@target@tht=\dimen278
+\LettrineWidth=\dimen279
+\LettrineHeight=\dimen280
+\LettrineDepth=\dimen281
+\Llist@everypar=\toks40
+Loading lettrine.cfg
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine
+.cfg)) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/arra
+y.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen282
+\ar@mcellbox=\box108
+\extrarowheight=\dimen283
+\NC@list=\toks41
+\extratabsurround=\skip80
+\backup@length=\skip81
+\ar@cellbox=\box109
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
+.sty
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
+\multirow@colwidth=\skip82
+\multirow@cntb=\count338
+\multirow@dima=\skip83
+\bigstrutjot=\dimen284
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
+ty
+\wrapoverhang=\dimen285
+\WF@size=\dimen286
+\c@WF@wrappedlines=\count339
+\WF@box=\box110
+\WF@everypar=\toks42
+Package: wrapfig 2003/01/31  v 3.6
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl
+.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks43
+\minrowclearance=\skip84
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsca
+pe.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.s
+ty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth
+.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box111
+\sift@deathcycles=\count340
+\@vwid@loff=\dimen287
+\@vwid@roff=\dimen288
+)
+\c@taburow=\count341
+\tabu@nbcols=\count342
+\tabu@cnt=\count343
+\tabu@Xcol=\count344
+\tabu@alloc=\count345
+\tabu@nested=\count346
+\tabu@target=\dimen289
+\tabu@spreadtarget=\dimen290
+\tabu@naturalX=\dimen291
+\tabucolX=\dimen292
+\tabu@Xsum=\dimen293
+\extrarowdepth=\dimen294
+\abovetabulinesep=\dimen295
+\belowtabulinesep=\dimen296
+\tabustrutrule=\dimen297
+\tabu@thebody=\toks44
+\tabu@footnotes=\toks45
+\tabu@box=\box112
+\tabu@arstrutbox=\box113
+\tabu@hleads=\box114
+\tabu@vleads=\box115
+\tabu@cellskip=\skip85
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
+reeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box116
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/t
+hreeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.s
+ty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimsp
+aces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip86
+) (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box117
+\UL@hyphenbox=\box118
+\UL@skip=\skip87
+\UL@hook=\toks46
+\UL@height=\dimen298
+\UL@pe=\count347
+\UL@pixel=\dimen299
+\ULC@box=\box119
+Package: ulem 2019/11/18
+\ULdepth=\dimen300
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
+.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen301
+\c@nlinenum=\count348
+\TeXr@lab=\toks47
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.s
+ty
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.st
+y
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count349
+\l__pdf_internal_box=\box120
+))
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse
+/xparse.sty
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse
+/xparse-2020-10-01.sty
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse
+/xparse-generic.tex)))
+Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys
+2e/l3keys2e.sty
+Package: l3keys2e 2021-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box121
+\l__siunitx_tmp_dim=\dimen302
+\l__siunitx_tmp_int=\count350
+\l__siunitx_number_mantissa_length_int=\count351
+\l__siunitx_number_uncert_length_int=\count352
+\l__siunitx_round_int=\count353
+\l__siunitx_process_decimal_int=\count354
+\l__siunitx_process_uncertainty_int=\count355
+\l__siunitx_process_fixed_int=\count356
+\l__siunitx_process_integer_min_int=\count357
+\l__siunitx_process_precision_int=\count358
+\l__siunitx_group_min_int=\count359
+\l__siunitx_angle_marker_box=\box122
+\l__siunitx_angle_unit_box=\box123
+\l__siunitx_angle_marker_dim=\dimen303
+\l__siunitx_angle_unit_dim=\dimen304
+\l__siunitx_unit_int=\count360
+\l__siunitx_unit_denominator_int=\count361
+\l__siunitx_unit_numerator_int=\count362
+\l__siunitx_unit_prefix_int=\count363
+\l__siunitx_unit_prefix_base_int=\count364
+\l__siunitx_unit_prefix_gram_int=\count365
+\l__siunitx_number_product_int=\count366
+\c__siunitx_one_fill_skip=\skip88
+\l__siunitx_table_unit_align_skip=\skip89
+\l__siunitx_table_exponent_dim=\dimen305
+\l__siunitx_table_integer_dim=\dimen306
+\l__siunitx_table_mantissa_dim=\dimen307
+\l__siunitx_table_marker_dim=\dimen308
+\l__siunitx_table_result_dim=\dimen309
+\l__siunitx_table_uncert_dim=\dimen310
+\l__siunitx_table_fill_pre_dim=\dimen311
+\l__siunitx_table_fill_post_dim=\dimen312
+\l__siunitx_table_fill_mid_dim=\dimen313
+\l__siunitx_table_pre_box=\box124
+\l__siunitx_table_post_box=\box125
+\l__siunitx_table_mantissa_box=\box126
+\l__siunitx_table_result_box=\box127
+\l__siunitx_table_number_align_skip=\skip90
+\l__siunitx_table_text_align_skip=\skip91
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/transl
+ator.sty
+Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
+))
+\cslhangindent=\skip92
+\csllabelwidth=\skip93
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count367
+\calc@Bcount=\count368
+\calc@Adimen=\dimen314
+\calc@Bdimen=\dimen315
+\calc@Askip=\skip94
+\calc@Bskip=\skip95
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count369
+\calc@Cskip=\skip96
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
+1.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Info: Redefining \microtypecontext on input line 211.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 211.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.
+cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(64.01869pt, 355.65945pt, 64.01869pt)
+* v-part:(T,H,B)=(64.01869pt, 554.82875pt, 64.01869pt)
+* \paperwidth=483.69684pt
+* \paperheight=682.86613pt
+* \textwidth=355.65945pt
+* \textheight=554.82875pt
+* \oddsidemargin=-8.2513pt
+* \evensidemargin=-8.2513pt
+* \topmargin=-38.31879pt
+* \headheight=22.49pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen316
+\caption@adjustwidth@linewidth=\dimen317
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption
+.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 211.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
+sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount
+.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/
+gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count370
+)
+LaTeX Info: Redefining \ref on input line 211.
+LaTeX Info: Redefining \pageref on input line 211.
+LaTeX Info: Redefining \nameref on input line 211.
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
+
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx-a
+bbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/transl
+ator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+11.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+11.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+211.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+211.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 211.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.4> on input line 211.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 211.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+11.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.
+cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 211.
+
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.
+cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.
+cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 21
+1.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+211.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+211.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 222.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 222.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 222.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 222.
+[1
+Non-PDF special ignored!
+<special> !% Reed College LaTeX Thesis Class 2001/12/04 SN
+Non-PDF special ignored!
+<special> rawpostscript % Reed College LaTeX Thesis Class 2001/12/04 SN
+
+
+
+
+{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map}] [2
+
+]
+Package epstopdf Info: Source file: <artwork//eng_logoGIH_tryck.eps>
+(epstopdf)                    date: 2020-06-05 14:12:19
+(epstopdf)                    size: 415044 bytes
+(epstopdf)             Output file: <artwork//eng_logoGIH_tryck-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2020-06-05 14:12:19
+(epstopdf)                    size: 25458 bytes
+(epstopdf)             Command: <repstopdf --outfile=artwork//eng_logoGIH_tryck
+-eps-converted-to.pdf artwork//eng_logoGIH_tryck.eps>
+(epstopdf)             \includegraphics on input line 222.
+Package epstopdf Info: Output file is already uptodate.
+<artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=179, 675.52374pt x 191.716
+25pt>
+File: artwork//eng_logoGIH_tryck-eps-converted-to.pdf Graphic file (type pdf)
+<use artwork//eng_logoGIH_tryck-eps-converted-to.pdf>
+Package pdftex.def Info: artwork//eng_logoGIH_tryck-eps-converted-to.pdf  used 
+on input line 222.
+(pdftex.def)             Requested size: 170.71652pt x 48.44965pt.
+
+Underfull \hbox (badness 4353) in paragraph at lines 222--222
+\T1/lmr/m/n/24.88 (+20) Determinants of intra-individual
+ []
+
+[3 <./artwork//eng_logoGIH_tryck-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+22.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--256
+
+ []
+
+[6
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
+58.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[7
+
+
+] [8
+
+
+] [9] [10
+
+
+] (./thesis.toc [11])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+[12] (./thesis.lot)
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+[13
+
+] [14
+
+] (./thesis.lof)
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
+
+[15] [16
+
+]
+Chapter 1.
+Package lettrine.sty Info: Targeted height = 35.26949pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 35.26964pt (S);
+(lettrine.sty)             reported on input line 296.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[1
+
+] [2]
+Chapter 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 356.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 356.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 356.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 356.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[3
+
+]
+Underfull \vbox (badness 2856) has occurred while \output is active []
+
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[5] [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[8]
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+[9] [10] [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12] [13]
+<thesis_files/figure-latex/Millward1973-1.pdf, id=403, 180.675pt x 180.675pt>
+File: thesis_files/figure-latex/Millward1973-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/Millward1973-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/Millward1973-1.pdf  used on 
+input line 681.
+(pdftex.def)             Requested size: 180.67455pt x 180.67455pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 685--685
+[] [] 
+ []
+
+[14 <./thesis_files/figure-latex/Millward1973-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16] [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22]
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+[23] [24]
+Chapter 3.
+[25
+
+] [26
+
+]
+Chapter 4.
+<thesis_files/figure-latex/study1-overview-1.pdf, id=484, 340.27126pt x 201.753
+75pt>
+File: thesis_files/figure-latex/study1-overview-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/study1-overview-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study1-overview-1.pdf  used 
+on input line 1035.
+(pdftex.def)             Requested size: 340.27042pt x 201.75325pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1039--1039
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[27]
+<thesis_files/figure-latex/study2-overview-1.pdf, id=491, 340.27126pt x 230.862
+5pt>
+File: thesis_files/figure-latex/study2-overview-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/study2-overview-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study2-overview-1.pdf  used 
+on input line 1043.
+(pdftex.def)             Requested size: 340.27042pt x 230.86192pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1047--1047
+[] [] 
+ []
+
+[28 <./thesis_files/figure-latex/study1-overview-1.pdf> <./thesis_files/figure-
+latex/study2-overview-1.pdf>]
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1060--1060
+[] [] 
+ []
+
+
+Overfull \hbox (47.39523pt too wide) in paragraph at lines 1063--1086
+ [][] 
+ []
+
+[29] [30] [31] [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33] [34] [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36] [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[38] [39]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+313.
+(c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[40]
+<thesis_files/figure-latex/unnamed-chunk-1-1.pdf, id=581, 469.755pt x 325.215pt
+>
+File: thesis_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/unnamed-chunk-1-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-1-1.pdf  used 
+on input line 1329.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Overfull \hbox (114.0944pt too wide) in paragraph at lines 1329--1330
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41 <./thesis_files/figure-latex/unnamed-chunk-1-1.pdf>] [42] [43] [44
+
+]
+Chapter 5.
+
+Underfull \hbox (badness 2401) in paragraph at lines 1395--1395
+[]\T1/lmr/m/n/14.4 (+20) Within-session train-ing vol-ume af-fects training-
+ []
+
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1406--1406
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[45] [46]
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=624, 340.27126pt x 433.62pt>
+File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/comb-fig-s1-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
+nput line 1487.
+(pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1491--1491
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (22.49pt): 
+(fancyhdr)                Make it at least 34.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
+
+[47 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[48]
+<thesis_files/figure-latex/mtor-fig-1.pdf, id=644, 340.27126pt x 252.945pt>
+File: thesis_files/figure-latex/mtor-fig-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/mtor-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/mtor-fig-1.pdf  used on inpu
+t line 1525.
+(pdftex.def)             Requested size: 340.27042pt x 252.94438pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1529--1529
+[] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (22.49pt): 
+(fancyhdr)                Make it at least 34.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
+
+[49 <./thesis_files/figure-latex/mtor-fig-1.pdf>]
+<thesis_files/figure-latex/rrna-fig-1.pdf, id=662, 340.27126pt x 180.675pt>
+File: thesis_files/figure-latex/rrna-fig-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/rrna-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/rrna-fig-1.pdf  used on inpu
+t line 1551.
+(pdftex.def)             Requested size: 340.27042pt x 180.67455pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1555--1555
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[50]
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1571--1571
+[] [] 
+ []
+
+
+Overfull \hbox (49.05486pt too wide) in paragraph at lines 1574--1590
+ [][] 
+ []
+
+<thesis_files/figure-latex/rrna-csa-fig-1.pdf, id=669, 340.27126pt x 113.42375p
+t>
+File: thesis_files/figure-latex/rrna-csa-fig-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/rrna-csa-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/rrna-csa-fig-1.pdf  used on 
+input line 1593.
+(pdftex.def)             Requested size: 340.27042pt x 113.42346pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1597--1597
+[] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (22.49pt): 
+(fancyhdr)                Make it at least 34.48878pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.48878pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
+
+[51 <./thesis_files/figure-latex/rrna-fig-1.pdf>] [52 <./thesis_files/figure-la
+tex/rrna-csa-fig-1.pdf>]
+Chapter 6.
+[53
+
+] [54
+
+] [55] [56
+
+] [57
+
+]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1645--1647
+[][] []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
+[]\T1/lmr/m/n/8 (+20) García-Hermoso A, Cavero-Redondo I,
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 1650--1650
+\T1/lmr/m/n/8 (+20) of all-cause mor-tal-ity in an ap-par-ently
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 1650--1650
+\T1/lmr/m/n/8 (+20) and meta-analysis of data from ap-prox-i-
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 1650--1650
+\T1/lmr/m/n/8 (+20) of Phys-i-cal Medicine and Re-ha-bil-i-ta-tion
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1648--1651
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1652--1655
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1656--1659
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1660--1663
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1664--1667
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1668--1671
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1672--1675
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1676--1679
+[][][] []  
+ []
+
+
+Overfull \hbox (0.59076pt too wide) in paragraph at lines 1682--1682
+\T1/lmr/m/n/8 (-20) based es-ti-mate. Cal-cif Tis-sue Int 2019;104:137--
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1680--1683
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1684--1687
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 1690--1690
+\T1/lmr/m/n/8 (+20) 81. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1359 / j
+bmr . 1997 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1688--1691
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1692--1695
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 1698--1698
+\T1/lmr/m/n/8 (+20) ero-gene-ity in re-sis-tance training-induced
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 1698--1698
+\T1/lmr/m/n/8 (+20) mus-cle strength and mass re-sponses in
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1698--1698
+\T1/lmr/m/n/8 (+20) (Dordr) 2016;38:10. []$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1696--1699
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1700--1703
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[58
+
+]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1704--1707
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 1710--1710
+\T1/lmr/m/n/8 (+20) Pro-gres-sion mod-els in re-sis-tance train-ing
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1708--1711
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1712--1715
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1716--1719
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1720--1723
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1724--1727
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1728--1731
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1732--1735
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 1738--1738
+\T1/lmr/m/n/8 (+20) A meta-analysis. J Strength Cond Res
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1736--1739
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1740--1743
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1744--1747
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1748--1751
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 1754--1754
+\T1/lmr/m/n/8 (+20) 7. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1007 / s4
+0279 -[] 018 -[]
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1752--1755
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 1758--1758
+[]\T1/lmr/m/n/8 (+20) Tipton CM. The his-tory of "ex-er-cise is
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1756--1759
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1760--1763
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1764--1767
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[59]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1768--1771
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1772--1775
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1776--1779
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1780--1783
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1784--1787
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 1790--1790
+[]\T1/lmr/m/n/8 (+20) Chui E. The ef-fect of sys-tem-atic weight
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 1790--1790
+\T1/lmr/m/n/8 (+20) 94. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1080 / 1
+0671188 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1788--1791
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1792--1795
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 1798--1798
+[]\T1/lmr/m/n/8 (+20) Hettinger T, Müller EA. Muskelleis-tung
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 1798--1798
+\T1/lmr/m/n/8 (+20) und muskel-train-ing. Ar-beit-sphys-i-olo-gie
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1796--1799
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1800--1803
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1804--1807
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1808--1811
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1812--1815
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1816--1819
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1820--1823
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1824--1827
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1828--1831
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1832--1835
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1836--1839
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1840--1843
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 1846--1846
+\T1/lmr/m/n/8 (+20) 74. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1844--1847
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1848--1851
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[60]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1852--1855
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 1858--1858
+[]\T1/lmr/m/n/8 (+20) Pescatello LS, De-vaney JM, Hubal MJ,
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 1858--1858
+\T1/lmr/m/n/8 (+20) the func-tional sin-gle nu-cleotide poly-mor-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1856--1859
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1860--1863
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1864--1867
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1868--1871
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1872--1875
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1876--1879
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1880--1883
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1884--1887
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1888--1891
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1892--1895
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1896--1899
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1900--1903
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1904--1907
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1908--1911
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1912--1915
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[61]
+Underfull \hbox (badness 1127) in paragraph at lines 1918--1918
+[]\T1/lmr/m/n/8 (+20) Morton RW, Mur-phy KT, McKel-lar SR,
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1916--1919
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1920--1923
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1924--1927
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1928--1931
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1932--1935
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1936--1939
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 1942--1942
+\T1/lmr/m/n/8 (+20) trac-tion. Cold Spring Harb Per-spect
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1942--1942
+\T1/lmr/m/n/8 (+20) Biol 2018;10. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 
+. 1101 /
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1940--1943
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1944--1947
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1948--1951
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1952--1955
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1956--1959
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1960--1963
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1964--1967
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 1970--1970
+\T1/lmr/m/n/8 (+20) tween strength and hy-per-tro-phy de-pends
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1968--1971
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1972--1975
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[62]
+Underfull \hbox (badness 2173) in paragraph at lines 1978--1978
+\T1/lmr/m/n/8 (+20) lat-eral strength train-ing: Ev-i-dence and
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 1978--1978
+\T1/lmr/m/n/8 (+20) pos-si-ble mech-a-nisms. J Appl Phys-iol
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1976--1979
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1980--1983
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1984--1987
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1988--1991
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 1994--1994
+\T1/lmr/m/n/8 (+20) J Appl Phys-iol (1985) 2006;101:1228--36.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
+[]$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1152 / japplphysiol .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1992--1995
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 1998--1998
+\T1/lmr/m/n/8 (+20) mam-malian skele-tal mus-cles. Phys-iol
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 1996--1999
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2000--2003
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2004--2007
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2008--2011
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2012--2015
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2016--2019
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2020--2023
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2024--2027
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2028--2031
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2032--2035
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2036--2039
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2040--2043
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[63]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2044--2047
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2048--2051
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2052--2055
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2056--2059
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2060--2063
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2064--2067
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2068--2071
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2072--2075
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 2078--2078
+\T1/lmr/m/n/8 (+20) Flier E, Le-brasseur NK, et al. Skele-
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 2078--2078
+\T1/lmr/m/n/8 (+20) tol-er-ance, and my-opa-thy in PGC-1alpha
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2076--2079
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2080--2083
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 2086--2086
+\T1/lmr/m/n/8 (+20) Kjaer M. Hu-man ten-don be-haviour and
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 2086--2086
+\T1/lmr/m/n/8 (+20) 81. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1113 / j
+physiol .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2084--2087
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2088--2091
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2092--2095
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2096--2099
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2100--2103
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 2106--2106
+\T1/lmr/m/n/8 (+20) adap-ta-tion of ten-don and skele-tal mus-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2104--2107
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[64]
+Underfull \hbox (badness 1205) in paragraph at lines 2110--2110
+[]\T1/lmr/m/n/8 (+20) Miller BF, Ole-sen JL, Hansen M, Døss-
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 2110--2110
+\T1/lmr/m/n/8 (+20) ing S, Crameri RM, Welling RJ, et al.
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 2110--2110
+\T1/lmr/m/n/8 (+20) Co-or-di-nated col-la-gen and mus-cle pro-tein
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 2110--2110
+\T1/lmr/m/n/8 (+20) syn-the-sis in hu-man patella ten-don and
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2108--2111
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2112--2115
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2116--2119
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2120--2123
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2124--2127
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2128--2131
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2132--2135
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2136--2139
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2140--2143
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2144--2147
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2148--2151
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2152--2155
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2156--2159
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[65]
+Underfull \hbox (badness 1173) in paragraph at lines 2162--2162
+\T1/lmr/m/n/8 (+20) JS. The ef-fect of weekly set vol-ume on
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2160--2163
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 2166--2166
+[]\T1/lmr/m/n/8 (+20) Baz-Valle E, Fontes-Villalba M, Santos-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2164--2167
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2168--2171
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2172--2175
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 2178--2178
+\T1/lmr/m/n/8 (+20) Jour-nal of Sports Medicine 2004;38:240--
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 2178--2178
+\T1/lmr/m/n/8 (+20) 2. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1136 / bj
+sm . 2003 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2176--2179
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2180--2183
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2184--2187
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2188--2191
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2192--2195
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 2198--2198
+\T1/lmr/m/n/8 (+20) A, Bot-taro M, Brown LE, et al. Ef-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2196--2199
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2200--2203
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2204--2207
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 2210--2210
+\T1/lmr/m/n/8 (+20) Mur-phy PW, Lyt-tle AD. The ef-fect of
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2208--2211
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2212--2215
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[66]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2216--2219
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2220--2223
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2224--2227
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2228--2231
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2232--2235
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2236--2239
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2240--2243
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2244--2247
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2248--2251
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2252--2255
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 2258--2258
+[]\T1/lmr/m/n/8 (+20) Phillips SM, Tip-ton KD, Fer-rando AA,
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 2258--2258
+\T1/lmr/m/n/8 (+20) acute exercise-induced in-crease in mus-
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 2258--2258
+\T1/lmr/m/n/8 (+20) cle pro-tein turnover. Am J Phys-iol
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 2258--2258
+\T1/lmr/m/n/8 (+20) 1999;276:E118--24. []$\T1/lmtt/m/n/8 https : / / doi . org 
+/ 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2256--2259
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2260--2263
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 2266--2266
+\T1/lmr/m/n/8 (+20) Jr D., Wolfe RR. Pos-tex-er-cise net pro-
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 2266--2266
+\T1/lmr/m/n/8 (+20) ad-min-is-tered amino acids. Am J Phys-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2264--2267
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2268--2271
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2272--2275
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2276--2279
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[67]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2280--2283
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2284--2287
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2288--2291
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 2294--2294
+[]\T1/lmr/m/n/8 (+20) Young VR. CHAP-TER 40 - the role
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 2294--2294
+\T1/lmr/m/n/8 (+20) of skele-tal and car-diac mus-cle in the
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 2294--2294
+\T1/lmr/m/n/8 (+20) reg-u-la-tion of pro-tein metabolism. In:
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 2294--2294
+\T1/lmr/m/n/8 (+20) 674. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . or
+g / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2292--2295
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 2298--2298
+[]\T1/lmr/m/n/8 (+20) Millward DJ, Gar-lick PJ, James WPT,
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2296--2299
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2300--2303
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2304--2307
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2308--2311
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2312--2315
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 2318--2318
+\T1/lmr/m/n/8 (+20) the contraction-induced in-crease in skele-
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 2318--2318
+\T1/lmr/m/n/8 (+20) tal mus-cle pro-tein syn-the-sis. J Phys-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2316--2319
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2320--2323
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2324--2327
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2328--2331
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 5893) in paragraph at lines 2334--2334
+\T1/lmr/m/n/8 (+20) reg-u-lates basal and re-sis-tance exercise-
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 2334--2334
+\T1/lmr/m/n/8 (+20) j 2018:fj201701422R. []$\T1/lmtt/m/n/8 https : / / doi . or
+g / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2332--2335
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[68]
+Underfull \hbox (badness 2012) in paragraph at lines 2338--2338
+\T1/lmr/m/n/8 (+20) 701. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1113 / 
+jphysiol .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2336--2339
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2340--2343
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2344--2347
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2348--2351
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2352--2355
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2356--2359
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2360--2363
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2364--2367
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2370--2370
+\T1/lmr/m/n/8 (+20) 63. []$\T1/lmtt/m/n/8 https : / / doi . org / 10 . 1146 / a
+nnurev .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2368--2371
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2372--2375
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2376--2379
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2380--2383
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2384--2387
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2388--2391
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 2394--2394
+\T1/lmr/m/n/8 (+20) is re-quired for in-creas-ing skele-tal mus-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 2394--2394
+\T1/lmr/m/n/8 (+20) cle force dur-ing hy-per-tro-phy. Cell Rep
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2392--2395
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[69]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2396--2399
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2400--2403
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2404--2407
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2408--2411
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2412--2415
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2416--2419
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2420--2423
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2424--2427
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2428--2431
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2432--2435
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2436--2439
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2440--2443
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2444--2447
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2448--2451
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[70]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2452--2455
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 2458--2458
+\T1/lmr/m/n/8 (+20) gene ex-pres-sion dur-ing hu-man skele-tal
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 2458--2458
+\T1/lmr/m/n/8 (+20) mus-cle hy-per-tro-phy. J Appl Phys-iol
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2456--2459
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2460--2463
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 2466--2466
+[]\T1/lmr/m/n/8 (+20) Warner JR. The eco-nomics of ri-bo-some
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2464--2467
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2468--2471
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2472--2475
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2476--2479
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2480--2483
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 2486--2486
+[]\T1/lmr/m/n/8 (+20) Nader GA, McLough-lin TJ, Esser KA.
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2484--2487
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2488--2491
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2492--2495
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 2498--2498
+[]\T1/lmr/m/n/8 (+20) Walden F von, Casagrande V, Ostlund
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 2498--2498
+\T1/lmr/m/n/8 (+20) per-tro-phy. Am J Phys-iol Cell Phys-iol
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 2498--2498
+\T1/lmr/m/n/8 (+20) 2012;302:C1523--30. []$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2496--2499
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 2502--2502
+[]\T1/lmr/m/n/8 (+20) Stefanovsky VY, Pel-letier G, Han-nan R,
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 2502--2502
+\T1/lmr/m/n/8 (+20) 73. https://doi.org/[]$\T1/lmtt/m/n/8 https : / / doi . org
+ / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2500--2503
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2504--2507
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[71]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2508--2511
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2512--2515
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2516--2519
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2520--2523
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2524--2527
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2528--2531
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2532--2535
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 2538--2538
+[]\T1/lmr/m/n/8 (+20) McKay BR, Og-born DI, Bel-lamy LM,
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2536--2539
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2540--2543
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2544--2547
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 2550--2550
+\T1/lmr/m/n/8 (+20) The ef-fects of heavy re-sis-tance train-ing
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2548--2551
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2552--2555
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 2558--2558
+[]\T1/lmr/m/n/8 (+20) Damas F, Libardi CA, Ugri-now-itsch C,
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 2558--2558
+\T1/lmr/m/n/8 (+20) sis-tance train-ing in young men. PLoS
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2556--2559
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2560--2563
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[72]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2564--2567
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2568--2571
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2572--2575
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2576--2579
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 2582--2582
+\T1/lmr/m/n/8 (+20) ray anal-y-sis. J Appl Phys-iol (1985)
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2580--2583
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2584--2587
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2588--2591
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2592--2595
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2596--2599
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2600--2603
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 2606--2606
+[]\T1/lmr/m/n/8 (+20) Phillips BE, Williams JP, Gustafs-son T,
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2604--2607
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2608--2611
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2612--2615
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[73]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2616--2619
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2620--2623
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2624--2627
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2628--2631
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2632--2635
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2636--2639
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2640--2643
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2644--2647
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2648--2651
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2652--2655
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 2658--2658
+\T1/lmr/m/n/8 (+20) docrinol-ogy 2018;9. []$\T1/lmtt/m/n/8 https : / / doi . or
+g / 10 .
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2656--2659
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2660--2663
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 2666--2666
+\T1/lmr/m/n/8 (+20) and growth fac-tors. Scand J Med Sci
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2664--2667
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2668--2671
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2672--2675
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74]
+Underfull \hbox (badness 1360) in paragraph at lines 2678--2678
+\T1/lmr/m/n/8 (+20) Scand J Med Sci Sports 2017;27:458--61.
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2676--2679
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2680--2683
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2684--2687
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 2690--2690
+\T1/lmr/m/n/8 (+20) hu-man skele-tal muscle--a method-olog-i-cal
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2688--2691
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2694
+[]\T1/lmr/m/n/8 (+20) Chomczynski P, Sac-chi N. Single-step
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2694
+\T1/lmr/m/n/8 (+20) dinium thiocyanate-phenol-chloroform
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2694
+\T1/lmr/m/n/8 (+20) ex-trac-tion. An-a-lyt-i-cal Bio-chem-istry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2694
+\T1/lmr/m/n/8 (+20) 1987;162:156--9. https://doi.org/[]$\T1/lmtt/m/n/8 https :
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2692--2695
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 2698--2698
+\T1/lmr/m/n/8 (+20) Sarre C, Legrand A, Mol-let LM. Mul-ti-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2696--2699
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2700--2703
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2704--2707
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 2710--2710
+\T1/lmr/m/n/8 (+20) mal-iza-tion of real-time re-verse tran-scrip-
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2708--2711
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2712--2715
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2716--2719
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2720--2723
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2724--2727
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2728--2731
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[75]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2732--2735
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2736--2739
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2740--2743
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2744--2747
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2748--2751
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2752--2755
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2756--2759
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2760--2763
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2764--2767
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2768--2771
+[][][] []  
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 2774--2774
+\T1/lmr/m/n/8 (+20) of ri-bo-some bio-gen-e-sis in skele-tal mus-
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 2774--2774
+\T1/lmr/m/n/8 (+20) cle hy-per-tro-phy. Phys-i-ol-ogy (Bethesda)
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2772--2775
+[][][] []  
+ []
+
+[76] (./thesis.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.33597pt have occurred.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D60BA082047C275FFE0AF3E43E5743EE;11300.
+ ) 
+Here is how much of TeX's memory you used:
+ 22823 strings out of 480971
+ 389017 string characters out of 5906168
+ 814259 words of memory out of 5000000
+ 38585 multiletter control sequences out of 15000+600000
+ 609947 words of font info for 402 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 128i,14n,130p,2469b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
+enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-r
+m.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm
+-mathit.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
+/lm/lm-mathsy.enc}{c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
+/dvips/lm/lm-ts1.enc}<c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmbx10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmbx6.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmbx7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/Users/706194/AppData/Roaming/Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/706194/AppData/Roaming
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/Users/706194/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/706194/Ap
+pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/7061
+94/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users
+/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/
+Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr1
+7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm
+/lmr5.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publi
+c/lm/lmr6.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
+ublic/lm/lmr7.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
+e1/public/lm/lmr8.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts
+/type1/public/lm/lmr9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/f
+onts/type1/public/lm/lmri10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmri8.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/Users/706194/AppData/Roaming/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/706194/AppData/Roami
+ng/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/Users/706194/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/706194/Ap
+pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on thesis.pdf (92 pages, 1121830 bytes).
+PDF statistics:
+ 1768 PDF objects out of 2073 (max. 8388607)
+ 1613 compressed objects within 17 object streams
+ 479 named destinations out of 1000 (max. 500000)
+ 132470 words of extra memory for PDF output out of 154059 (max. 10000000)
+
