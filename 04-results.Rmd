@@ -8,7 +8,7 @@ library(nlme); library(kableExtra)
 ```
 
 
-## Effects of different training volume on changes in muscle size and function
+## Within-session training volume affects 
 
 ```{r comparing-avg-strength-csa, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -405,8 +405,6 @@ sum.stats <- cbind(per.session %>%
 
 ```
 
-
-
 In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
 [@RN2007;<!-- Wernbom 2007 -->
 @RN1741],<!-- Ahtiainen  -->
@@ -440,7 +438,46 @@ sum.stats %>%
 
 ```
 
-```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=2.6, fig.width=4.72, fig.align='center'}
+The multiple-sets (moderate-volume) condition consistently showed favorable adaptations when compared to the single-set (low-volume) condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)a).
+This was in general agreement with previous meta-analyses indicating that an increased training volume will lead to more favorable outcomes, both in terms of muscle mass
+[@RN1767;<!-- Schenfeld  2016--> 
+@RN789]<!-- Krieger 2010 -->
+and strength
+[@RN2492;<!-- Ralston --> 
+@RN793].<!-- Krieger 2009 -->
+
+
+```{r meta-analyses-descriptive, warning=FALSE, message=FALSE, echo=FALSE}
+
+summary_table_meta <- readRDS( "./data/derivedData/meta/naive_models.RDS")
+
+
+summary_table_meta <- summary_table_meta %>%
+  mutate(stat = paste0(sprintf("%.3f", median), 
+                       " [",
+                       sprintf("%.3f", cri.lwr), 
+                       ", ",
+                       sprintf("%.3f", cri.upr), 
+                       "]"))
+
+
+```
+
+
+Since publication of the most recent meta-analyses [@RN1767;@RN2492]<!-- Schenfeld  2016 / Ralston 2107 --> 
+additional studies have been published investigating the effect of training volume on muscle mass *and* muscle strength. Based on studies included in the meta-analysis perfomed by Schoenfeld *et al.* [@RN1767] additional studies were coded based on a systematic literature search among newly published studies (from January 2015 to June 2020). Compared to e.g. Schoenfeld *et al.* [@RN1767], an additional 10 studies were included in the analyses.
+Subsequently, effect sizes were coded from 25 studies, both for muscle mass and strength and meta-regression models were used to investigate the effect of weekly number of sets on training-induced changes in these outcomes.
+In basic models with the weekly number of sets as the only explanatory variable, both muscle mass and strength were shown to be robustly affected by an increased training volume.
+For every additional weekly set, the effect size measure increased by
+`r summary_table_meta[1, 5]` and `r summary_table_meta[2, 5]`
+for muscle mass (Figure \@ref(fig:comb-fig-s1)b)
+and strength (Figure \@ref(fig:comb-fig-s1)c),
+respectively.
+
+
+\pagebreak
+
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training induced relative changes in muscle mass and strength measures. Estimates are derived from ANCOVA models controling for baseline values.", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I", fig.height=6, fig.width=4.72, fig.align='center'}
 
 library(ggplot2); library(ggtext)
 
@@ -450,42 +487,112 @@ muscle_strength_fig <- readRDS("./data/derivedData/study1_muscle-strength-size/m
 muscle_strength_fig
 ```
 
-The multiple-sets (moderate-volume) condition consistently showed favorable adaptations when compared to the single-set (low-volume) condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)).
+\pagebreak
 
-In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers with known influence on adaptations to resistance training were investigated for volume-dependency.
-First, acute activation of signaling along the mechanosensitive mTORC1-pathway has previously been shown to correlate with training-induced muscle growth
-[@RN866;<!-- Baar Esser correlation in rats  -->
-@RN785;<!--Terzis et al., 2008-->
-@RN788].<!-- Mitchell et al., 2013-->
-
+Together these data underlines the dose-dependnace of within-session training volume on both muscle mass and strength. In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers with known influence on adaptations to resistance training were investigated for volume-dependency.
+First, acute activation of signaling along the mechanosensitive mTORC1-pathway was measured in before and after the fifth training session in Study I.
 A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig)a).
 In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
+Together these observations indicates larger perturbations along the mTORC1 signaling axis which confirms previous observations showing exercise-volume dependency of mTORC1 related signaling in the acute phase (< 5 hours) after exercise with the low volume condition doing at least three sets activationg the muscle under study
+[@RN2716;<!-- Kumar 2012 -->
+@RN1837;<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
+@RN784].<!-- Terzis volume affect activation -->
 It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
 [@RN2309] (Figure \@ref(fig:mtor-fig) a).<!-- Figueriedo mTOR and ser2448 signalling review -->
 It is also recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and extracellular signal-regulated kinases (ERK)-signalling converges here
 [@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
-Together these observations indicates larger perturbations along the mTORC1 signaling axis which confirms previous observations showing exercise-volume dependency of mTORC1 related signaling  
-[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
-@RN784;<!-- Terzis volume affect activation -->
-@RN1837].<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
-Interestingly, albeit with limited resolution, Terzis et al., did not find any clear volume dependency in exercise induced activation of either ERK 1/2 nor p38
-[@RN785]<!--Terzis et al., 2008-->
-suggesting that the relative contribution of different pathways to activation of downstream effectors may differ depending on mechanical stimuli.
+
+Interestingly, albeit with limited resolution, Terzis *et al.* and Ahtiainen *et al.* did not report any clear volume dependency in exercise-induced activation of ERK 1/2
+[@RN785;<!--Terzis et al., 2008-->
+@RN1837], 
+suggesting that any volume-dependent regulation of this pathway outside the time-frame of these studies. However, it might also suggest that volume selectively modulates specific pathways in the acute phase after resistance exercise.
 It should however be noted that the present, and previous studies are limited in their temopral resolution and different patterns over time in different volume conditions cannot be ruled out.
 
 The importance of mTORC1 signalling in protein synthesis in the acute phase after resistance exercise is well established.
 In humans, administration of rapamycin, a selective inhibitor of mTORC1, prior to resistance exercise leads to delayed or blunted activation of mTORC1 effectors such as
-S6K1\textsuperscript{Thr\textsuperscript{389}},
-S6K1\textsuperscript{Thr\textsuperscript{421}/Ser\textsuperscript{424}}, 
-rpS6\textsuperscript{Ser\textsuperscript{235/236}} and
-rpS6\textsuperscript{Ser\textsuperscript{240/244}} as well as
-unchanged levels of phopshorylation of 4E-BP1 and eEF2
+S6K1 and rpS6 as well as unchanged levels of phopshorylation of 4E-BP1 and eEF2
 concomitantly with abolished exercise-induced increase in protein synthesis
 [@RN780].<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
 Volume dependent increase in mTORC1 signalling also coincide with larger protein synthesis rates
-[@RN791].<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+[@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
+@RN2716]<!-- Kumar volume affects protein synthesis -->
 As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume can be regarded as leading to an increased potential for protein synthesis in the acute-phase after exercise.
-However, an increased signalling through this pathway could also be interpreted as indicative for increased ribosomal biogenesis. 
+
+Previous studies has indirectly linked mTORC1-related signaling to muscle growth as acute pertubation along this pathway has been correlated with muscle growth
+[@RN785;<!--Terzis et al., 2008-->
+@RN788].<!-- Mitchell et al., 2013-->
+However, this is not a consistent other findings in the literature 
+[@RN834;<!-- Mitchell et al., 2012-->
+@RN2171],<!-- Phillips et al., 2017-->
+```{r p70-csa-correlation-data, warning=FALSE, message=FALSE, echo=FALSE}
+
+### Check association with 
+
+p70_csa <- readRDS("./data/derivedData/study1-western-blot/csa_p70.RDS")
+
+### Calculate raw correlations
+cor_est_p70 <- p70_csa %>%
+  group_by(sets) %>%
+   summarise(p70.fc.cor = cor.test(fc, change, method = "spearman")$estimate, 
+            p85.fc.cor = cor.test(fc.p85, change, method = "spearman")$estimate, 
+            p70.fc.cor.p = cor.test(fc, change, method = "spearman")$p.value, 
+            p85.fc.cor.p = cor.test(fc.p85, change, method = "spearman")$p.value)  %>%
+  data.frame()
+
+p70.m <- lme(change ~ w2pre + scale(fc) + sets, 
+             random = list(subject = ~ 1), 
+             weights = varExp(),
+             data = p70_csa)
+
+p85.m <- lme(change ~  w2pre.p85 + scale(fc.p85)  + sets , 
+             random = list(subject = ~ 1),
+             weights = varExp(),
+             data = p70_csa)
+
+# plot(p70.m)
+# plot(p85.m)
+
+
+p70.mod <- paste0(sprintf("%.2f", data.frame(intervals(p70.m)$fixed)[3, 2]), 
+                  " [", 
+                  sprintf("%.2f", data.frame(intervals(p70.m)$fixed)[3, 1]),
+                  ", ",
+                  sprintf("%.2f", data.frame(intervals(p70.m)$fixed)[3, 3]), 
+                  "]")
+
+p85.mod <- paste0(sprintf("%.2f", data.frame(intervals(p85.m)$fixed)[3, 2]), 
+                  " [", 
+                  sprintf("%.2f", data.frame(intervals(p85.m)$fixed)[3, 1]),
+                  ", ",
+                  sprintf("%.2f", data.frame(intervals(p85.m)$fixed)[3, 3]), 
+                  "]")
+
+corr_est_p70 <- paste0(sprintf("%.3f",min(c(cor_est_p70[,2],cor_est_p70[,3]))), 
+       " - ", 
+       sprintf("%.3f",max(c(cor_est_p70[,2],cor_est_p70[,3])))) 
+
+```
+nor is it consistent with results in the present study as acute activation of S6K1 in response to the fifth session was not associated with training-induced changes in muscle mass.^[Raw Spearman's correlations between exercise induced change in S6K1 phosphorylation and change in muscle mass (measured with MRI) indicated weak (insignificant) associations ($\rho=$ `r corr_est_p70`) depedning on the isoform measured (p70 or p85) and number of sets. More elaborate modeling confirmed weak relationships between degree of phsophorylation and muscle mass change. When controlling for baseline values in degree of phsophorylation (as this influence the calculation of fold-change) and number of sets, standardized estimates for the effect of phosphorylation were (increase in %-muscle mass change for every 1SD change in fold-change phsophorylation, with [95% CI])  $\beta=$ `r p70.mod` for p70 S6K1-p70\textsuperscript{Thr389} and $\beta=$ `r p85.mod` for S6K1-p85\textsuperscript{Thr412}.].
+Although mTORC1 signaling most certainly contributes to protein synthesis in the acute recovery phase after resistance exercise [@RN780],<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
+its use as a predictor of training induced muscle hypertrophy is complicated by a number of reasons.
+First, measuring its activity is not straight forward for biological reasons including pathway cross-talk and negative feedback as well as technical aspects
+[@RN1949;<!-- Figueriedo, mTOR feedback -->
+@RN2311;<!-- Cross talk with erk -->
+@RN1942].<!--  Bass technical considerations in western blotting -->
+Secondly, mTORC1 signaling is not a stable phenomenon as repeated bouts of resistance exercise leads to diminished activity along its pathway
+[@RN1809;<!-- mTOR signal lost after three weeks -->
+@RN1871].
+Thirdly, mTORC1 readily integrate multiple signals but also convey these to multiple downstream processes
+[@RN2320].
+As such, mTORC1 activity represent an early, transient response to mechanical stress with its signaling contributing to accumulative responses.
+One such downstream process is ribosomal biogenesis
+[@RN1632;<!-- Nader mTOR regulates ribo biogenthrough cell cycle regulators -->
+@RN1810;<!-- von Walden 2012 mTOR regulates myotube... -->  
+@RN1828;<!-- von Walden 2016 -->
+@RN2321],<!-- Chauvin S6K controls RiBi transcriptional program -->
+ultimately leading to accumulation of ribosomal RNA, a response typically seen in connection with to resistance training
+
+
 
 ```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95\\% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
 

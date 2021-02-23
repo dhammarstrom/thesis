@@ -568,6 +568,19 @@ saveRDS(western_fig, "./figures/results/study1-western-blot.RDS")
 
 # Using S6K1 p70
 
+p.85 <- wb.raw.acute %>%
+  filter(target == "p.p85") %>%
+  group_by(subject, sets, timepoint) %>%
+  summarise(expression = mean(expression, na.rm = TRUE)) %>%
+  pivot_wider(names_from = timepoint, 
+              values_from = expression) %>%
+  mutate(fc.p85 = w2post / w2pre, 
+         w2post.p85 = w2post, 
+         w2pre.p85 = w2pre) %>%
+  dplyr::select(subject:sets, fc.p85:w2pre.p85) %>%
+  print()
+
+
 
 p70 <- west.acute %>%
   filter(target == "p.p70") %>%
@@ -600,8 +613,10 @@ p70_csa <-  mr.results %>%
   mutate(sets = factor(sets, levels = c("single", "multiple"))) %>%
 
   inner_join(p70) %>%
+  inner_join(p.85) %>%
   print()
   
+
 saveRDS(p70_csa, "./data/derivedData/study1-western-blot/csa_p70.RDS")
 
 

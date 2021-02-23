@@ -25,6 +25,16 @@ Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes aft
 Assessments of muscle strength (unilateral isokinetic and isometric knee extension torque as well as unilateral knee extension and leg press one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
 Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
 
+Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
+Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
+An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
+Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
+Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
+Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
+The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
+Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
+
+
 ```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.  ", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
 
 
@@ -158,14 +168,8 @@ data.frame(x = c(-8, 13),
 
 ```
 
-Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
-Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
-An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
-Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
-Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
-Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
-The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
-Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
+
+
 
 ```{r study2-overview, fig.cap="Schematic representation of Study II, see text for details.  ", fig.scap="Study II, schematic overview", fig.height=3.2, fig.width=4.72, fig.align = "center"}
 
@@ -180,7 +184,7 @@ data.frame(x = c(-8, 16),
         
         annotate("richtext", 
                  x = -2, 
-                 y = c(0.6, 0.02), 
+                 y = c(0.6, 0.0125), 
                  label = c("<b>Experimental group</b>", 
                            "<b>Control group</b>"), 
                  
@@ -301,9 +305,9 @@ data.frame(x = c(-8, 16),
         
         
   annotate("richtext", x = -1.5, 
-                 y = c(-0.05,
-                       -0.1, 
-                       - .15),
+                 y = c(-0.075,
+                       -0.125, 
+                       - .175),
                  label = c("Biopsy sample", 
                            "Muscle thickness assessment", 
                            "Strength assessment"), 
@@ -318,9 +322,9 @@ data.frame(x = c(-8, 16),
                  hjust = 1) +
   # Annotations
      annotate("richtext", 
-                 y = c(rep(-0.05, 3), 
-                       rep(-0.1, 2), 
-                       rep(-0.15, 2)), 
+                 y = c(rep(-0.075, 3), 
+                       rep(-0.125, 2), 
+                       rep(-0.175, 2)), 
                  x = c(0, 1.5,  12.5,
                        -0.2, 12.5, 
                        -0.5, 12.9), 
@@ -339,8 +343,8 @@ data.frame(x = c(-8, 16),
         annotate("segment", 
                  x =    c(1.5, 1.5, 12), 
                  xend = c(12, 1.5, 12), 
-                 y =    c(-0.3, -0.3, -0.3),
-                 yend = c(-0.3, -0.31, -0.31)) +        
+                 y =    c(-0.25, -0.25, -0.25),
+                 yend = c(-0.25, -0.26, -0.26)) +        
         annotate("text", 
                  x = c(6.25), 
                  y = c(-0.34),  
@@ -412,13 +416,7 @@ To be eligible for participation in both studies, participants had to be young (
 Participant characteristics for both studies are shown in Table
 \@ref(tab:characteristics-table).
 
-Forty-one healthy individuals were recruited and 34 of these completed
-at least 85% of the prescribed sessions and were thus included in
-subsequent data analyses. Reasons for not completing the trial included
-injury not related to the study (*n =* 1), pain or discomfort during
-exercises (*n =* 5) and non-adherence to the study protocol. There were
-no systematic differences in characteristics between participants included in or
-excluded from data analysis in Study I.
+Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5) and non-adherence to the study protocol. There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I.
 
 Prior to the study, all participants reported that they previously had been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week.  
 

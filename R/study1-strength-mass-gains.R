@@ -217,7 +217,8 @@ comd.df <- rbind(
 muscle_strength_fig <- comd.df %>%
         filter(coef == "setsmultiple") %>%
         
-        mutate(variable = factor(variable, 
+        mutate(variable_group = if_else(variable %in% c("MR", "DXA"), "muscle", "strength"),
+               variable = factor(variable, 
                                  levels = c("MR", 
                                             "DXA", 
                                             "legext", 
@@ -237,28 +238,184 @@ muscle_strength_fig <- comd.df %>%
                variable = fct_rev(variable)) %>%
         
         
-        ggplot(aes(estimate, variable)) + 
+        ggplot(aes(estimate, variable, fill = variable_group)) + 
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
         
         geom_errorbarh(aes(xmin = lwr, xmax = upr), height = 0, size = line.size) +
-        geom_point(shape = 21, fill = group.study.color[5]) +
+        geom_point(shape = 21, size = 2.5) +
         scale_x_continuous(limits = c(-2.5, 15), 
                            expand = c(0, 0),
                            breaks = c(-2.5, 0, 2.5, 5, 7.5, 10, 12.5, 15), 
                            labels = c("", 0, "", 5, "", 10, "", 15)) +
         labs(x = "Difference between volume conditions<br>(%-gain Multiple-sets - %-gain Single-set &#x00B1;95%CI)") +
         
-        
+        scale_fill_manual(values = c(group.study.color[4], group.study.color[3])) +
         
         dissertation_theme() +
         theme(axis.text.y = element_markdown(size = 7), 
-              
+              legend.position = "none",
               axis.title.y = element_blank(), 
               axis.title.x = element_markdown())
 
 
-saveRDS(muscle_strength_fig, "./data/derivedData/study1_muscle-strength-size/muscle-strength-fig.RDS")
+
+
+############# Meta analysis figures 
+
+
+library(tidybayes)
+library(brms)
+
+# muscle mass model
+m1 <- readRDS("./data/meta-volume/models/muscle_size_full_data.RDS")
+
+# strength model
+s1 <- readRDS("./data/meta-volume/models/strength_full_data.RDS")
+
+summary(s1)
+
+mods1 <- rbind(s1 %>%
+                       spread_draws(b_weekly_sets, r_study[study,weekly_sets]) %>%
+                       filter(weekly_sets != "Intercept") %>%
+                       # add the grand mean to the group-specific deviations
+                       mutate(mu = b_weekly_sets + r_study) %>%
+                       ungroup() %>%
+                       mutate(Study = paste0(gsub("[0-9]", "", study), 
+                                             " et al. (", 
+                                             gsub("[A-ø]", "", study), 
+                                             ")"), 
+                              type = "strength"),
+               m1 %>%
+                       spread_draws(b_weekly_sets, r_study[study,weekly_sets]) %>%
+                       filter(weekly_sets != "Intercept") %>%
+                       # add the grand mean to the group-specific deviations
+                       mutate(mu = b_weekly_sets + r_study) %>%
+                       ungroup() %>%
+                       mutate(Study = paste0(gsub("[0-9]", "", study), 
+                                             " et al. (", 
+                                             gsub("[A-ø]", "", study), 
+                                             ")"), 
+                              type = "mass")) 
+
+## get fixed effects
+
+s_fx <- s1 %>%
+        spread_draws(b_weekly_sets) %>%
+        mutate(mu = b_weekly_sets, 
+               Study = "Summary") %>%
+        dplyr::select(mu, Study) %>%
+        print()
+
+m_fx <- m1 %>%
+        spread_draws(b_weekly_sets) %>%
+        mutate(mu = b_weekly_sets, 
+               Study = "Summary") %>%
+        dplyr::select(mu, Study) %>%
+        print()
+
+
+
+summary_table <- bind_rows(s_fx %>%
+        mutate(type = "strength"), 
+        m_fx %>%
+                mutate(type = "mass")) %>%
+        group_by(type) %>%
+        summarise(median = median(mu), 
+                  cri.lwr = quantile(mu, 0.025), 
+                  cri.upr = quantile(mu, 0.975))
+        
+
+saveRDS(summary_table, "./data/derivedData/meta/naive_models.RDS")
+
+
+mass_fig_1 <- mods1 %>%
+        filter(type == "mass") %>%
+        dplyr::select(mu, Study) %>%
+        rbind(m_fx) %>%
+        
+        mutate(Study = reorder(Study, mu, .fun = 'median'), 
+               Study = fct_relevel(Study, "Summary")) %>%
+        
+        ggplot(aes(x = mu, y = Study)) +
+        
+        geom_vline(xintercept = 0, lty = 2, color = "gray50") +
+        
+        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[4]) +
+        labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
+             y = NULL) +
+        
+        dissertation_theme() +
+        
+        theme(panel.grid   = element_blank(),
+              panel.background = element_rect(fill = "gray98",
+                                              colour = "gray98"),
+              
+              axis.title.x = element_markdown(size = 7),
+              axis.ticks.y = element_blank(),
+              axis.text.y  = element_text(hjust = 0)) 
+
+
+
+### Strength model 1
+
+
+strength_fig_1 <- mods1 %>%
+        filter(type == "strength") %>%
+        dplyr::select(mu, Study) %>%
+        rbind(s_fx) %>%
+        
+        mutate(Study = reorder(Study, mu, .fun = 'median'), 
+               Study = fct_relevel(Study, "Summary")) %>%
+        
+        ggplot(aes(x = mu, y = Study)) +
+        
+        geom_vline(xintercept = 0, lty = 2, color = "gray50") +
+        
+        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[3]) +
+        labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
+             y = NULL) +
+        
+        dissertation_theme() +
+        
+        theme(panel.grid   = element_blank(),
+              panel.background = element_rect(fill = "gray98",
+                                              colour = "gray98"),
+              
+              axis.title.x = element_markdown(size = 7),
+              axis.ticks.y = element_blank(),
+              axis.text.y  = element_text(hjust = 0)) 
+
+
+
+
+
+
+## Combine figure 
+
+muscle_strength_fig_comb  <- plot_grid(muscle_strength_fig, 
+                                       NULL,
+          plot_grid(mass_fig_1, strength_fig_1, ncol = 2), 
+          ncol = 1, 
+          rel_heights = c(0.4,0.02, 0.6)) + 
+       
+        draw_plot_label(label=c("a", "b", "c"),
+                        x = c(0.02, 0.02, 0.5), 
+                        y = c(0.99, 0.59, 0.59),
+                        hjust=.5, vjust=.5, size = 12)
+
+
+
+
+
+
+
+
+
+
+
+
+saveRDS(muscle_strength_fig_comb, "./data/derivedData/study1_muscle-strength-size/muscle-strength-fig.RDS")
 
 
 
