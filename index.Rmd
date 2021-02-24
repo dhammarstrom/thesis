@@ -29,7 +29,7 @@ abstract: |
 listofpapers: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-listofpapers.Rmd"), collapse = '\n  ')`
 dedication: |
-  You can have a dedication here if you wish. 
+  To Tage. 
 # preface: | # If you wish to add a preface, remove comments on these lines
 #   This is an example of a thesis setup to use the reed thesis document class
 #   (for LaTeX) and the R bookdown package, in general.

@@ -693,7 +693,7 @@ rna_csa_change_models %>%
 
 
 
-```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent 'naive' relationship, solid line represent adjusted reliationship as seen in \@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
+```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent naive relationship, solid line represent adjusted reliationship as seen in \\@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
 
 rna_csa_fig <- readRDS("./figures/results/study1-rna-csa.RDS")
 
@@ -702,7 +702,51 @@ rna_csa_fig
 
 ```
 
-## 
+## Volume-dependent remodeling of muscle fiber-type composition
+
+In muscle tissue, multiple-set training led to more pronounced conversion of Type IIX fibres into Type IIA fibres from week zero to twelve than single-set training, measured as both cell counts using immunohistochemistry . Surprisingly, at week two, the relationship between training volume and fibre conversion was the opposite, with single-set legs showing greater IIX to IIA transition. This volume-dependent effect was accompanied by a difference in the abundance of IIX/IIA hybrid fibres at week two, with multiple-set condition showing higher levels (Figure 3C). Notably, from baseline to week two, a pronounced decrease was seen in MYH1 gene expression (coding for the Type IIX myosin-heavy chain transcript) and more so in response to multiple-set training than to single-set training. This change was partly reversed in week twelve (Figure 3D).
+
+To our knowledge, this is the first study to show that muscle fibre transitions from Type IIX to IIA depend on resistance training volume. Moderate volume resulted in %-point greater reductions in Type IIX fibre expression from baseline to post intervention compared to low volume, presumably driven by more pronounced reductions in mRNA expression of the MYH1 
+Previous studies have not compared this transition directly between volume protocols. However, Pareja-Blanco *et al.* [-@RN2217] observed blunted IIX $\rightarrow$ IIA transitions in response to non-exhaustive high-load resistance training compared to load-matched training to volatile failure. Together with our data, this makes exercise volume and subsequent metabolic stress and dosage of neuromuscular activity plausible candidates for regulation of IIX $\rightarrow$ IIA reprogramming, as opposed to mechanical stimuli.
+Indeed, in rodents, mechanical load does not affect fibre-type transitions
+[@RN2104]<!-- Eftestol -->, which is instead linked to neural activation. Interestingly, after two weeks of training, the volume effect on IIX $\rightarrow$ IIA transitions was opposite to our main finding after twelve weeks, with low-volume resistance training resulting in more pronounced decreases in IIX on the cellular level, accompanied by lower abundances of IIX/IIA hybrid fibres. This seemingly early benefit of single-set training on overall IIX levels was not observed at the mRNA level, with MYH1 being more heavily suppressed in the moderate volume condition. Instead, at week two, there seemed to be a disconnection between MYH1 mRNA and IIX protein adaptations in the multiple-set leg compared to the single-set leg. Whether this phenomenon was caused by increased need for tissue-repair in the moderate-volume condition at this time-point
+[@RN1521;<!--Kim 2005 -->
+@RN2144]<!-- Damas 2016 -->
+or other causalities, rather than myofibril-specific adaptations remains unclear. Regardless of causality, these data underline the importance of optimising exercise volume to achieve optimal training progression, such as making use of progressive volume protocols. Although such protocols remain largely unexplored, previously untrained individuals will likely benefit from careful calibration of training volume during early phases of resistance training. Too large or too small a training volume may lead to suboptimal adaptations.
+
+\pagebreak
+
+```{r myhc-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent naive relationship, solid line represent adjusted reliationship as seen in \\@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=7, fig.width=4.72, fig.align='center'}
+
+# load fiber typing figure
+img <- ggdraw() + draw_image("./data/study-1/immuno/immuno_control_image2.png")
+
+# load figures
+myhc_fig_comps <- readRDS( "./data/derivedData/study1-myhc-composition/myhc_fig.RDS")
+
+
+## Combine figure directly in manuscript as saving the png takes some space 
+
+myhc_fig <- plot_grid(plot_grid(img, myhc_fig_comps$overall_type2x, 
+                    rel_widths = c(0.72, 0.25), 
+                    ncol = 2),
+               plot_grid(
+                       plot_grid(myhc_fig_comps$myhc2x_mrna_means, 
+                                 myhc_fig_comps$diff_2x_mRNA, 
+                                 ncol = 1, 
+                                 align = "v",
+                                 rel_heights = c(0.4, 0.6)), 
+                       myhc_fig_comps$fiber_type_insets, 
+                       ncol = 2, 
+                       rel_widths = c(0.5, 0.7)), 
+          ncol = 1, 
+          rel_heights = c(0.6, 0.4))
+   
+myhc_fig
+
+```
+
+\pagebreak
 
 
 
