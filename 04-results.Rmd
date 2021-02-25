@@ -8,7 +8,7 @@ library(nlme); library(kableExtra)
 ```
 
 
-## Within-session training volume affects training-induced changes in muscle mass and strength and molecular determinants of muscle hypertrophy 
+## Within-session training volume affects training-induced changes in muscle mass and strength and molecular determinants of muscle hypertrophy {#muscle-mass-growth}
 
 ```{r comparing-avg-strength-csa, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -765,7 +765,7 @@ Regardless of causality, the more rapid early adaptation seen in response to a l
 
 \pagebreak
 
-```{r myhc-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Representative muscle cross-sections stained for myosin-heavy chain isoforms are shown in (a). Using antibodies for Type I (MyHC Slow) and all but Type IIX (BF-35) enabeled separating Type I fibres from other fibres (red stain, a lower panel). Type IIX fibers were indentified as unstained, and weak brown staining was analysed as Type IIX/IIA hybrids (a, upper panel). Resistance training led to a reduction in Type IIX and IIX/IIA hybrids, (b) shows participant-average Type IIX and IIX/IIA percentages. Training led to reduction in *MYH1* gene expression, and more so in the moderate-volume condition, evident from pairwise comparisons in (fold-differences with 95\\% CI, c). Differeces in protein expression of Type IIX fiber (counted as pure IIX + 0.5 $\\times$ IIX/IIA hybrids) reversed throught the study as the moderate-volume condition showed greater proprtions of IIX fibers at Week 2 but lesser expression at Week 12 (d).", fig.scap = "Fiber-type composition in Study I", fig.height=6, fig.width=4.72, fig.align='center'}
+```{r myhc-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Representative muscle cross-sections stained for myosin-heavy chain isoforms are shown in (a). Using antibodies for Type I (MyHC Slow) and all but Type IIX (BF-35) enabeled separating Type I fibres from other fibres (red stain, a lower panel). Type IIX fibers were indentified as unstained, and weak brown staining was analysed as Type IIX/IIA hybrids (a, upper panel). Resistance training led to a reduction in Type IIX and IIX/IIA hybrids, (b) shows participant-average Type IIX and IIX/IIA percentages. Training led to reduction in \\textit{MYH1} gene expression, and more so in the moderate-volume condition, evident from pairwise comparisons in (fold-differences with 95\\% CI, c). Differeces in protein expression of Type IIX fiber (counted as pure IIX + 0.5 $\\times$ IIX/IIA hybrids) reversed throught the study as the moderate-volume condition showed greater proprtions of IIX fibers at Week 2 but lesser expression at Week 12 (d).", fig.scap = "Fiber-type composition in Study I", fig.height=6, fig.width=4.72, fig.align='center'}
 
 # load fiber typing figure
 img <- ggdraw() + draw_image("./data/study-1/immuno/immuno_control_image2.png")
@@ -803,11 +803,69 @@ myhc_fig
 
 \pagebreak
 
-## Volume-dependent 
+## Transcriptome
+
+As already [discussed](#muscle-mass-growth), resistance training in Study I led to an increase in RNA per unit tissue weight. Furthermore, the magnitude of this increase was different between volume conditions (see Figure \@ref(ribo-markers). As gene expression analyses performed using e.g. qPCR or RNA sequencing comes with the assumption that an equal amount of biological material is used in analysis, an equal amount of total RNA is often used to satisfy such an assumption
+[@RN2298;<!-- Damas 2018 -->
+@RN2400; <!-- Robinson 2017-->
+@RN2401].<!-- Laker 2017.-->
+However, since the ratio of RNA to tissue weight has changed, analysesare derived from a lesser amount of tissue after training. 
 
 
 
 
+```{r, lib-size-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Less muscle tissue was used for cDNA synthesis in the moderat- compared to low-volume condition as a result of total RNA increases per tissue weight (a). Library sizes tended to be greater in the low-volume condition (b), after normalizing library sizes to muscle weight differences were diminished (c). Lower panels shows differences between volume conditions", fig.scap = "Muscle weight and RNA-seq library size", fig.height=3, fig.width=4.72, fig.align='center'}
+
+libsize.fig <- readRDS("./data/derivedData/study1-transcriptome/muscle-weight-lib-size.RDS")
+
+
+libsize.fig +
+  draw_plot_label(x = c(0, 0.33, 0.67), 
+             y = c(1,1,1), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b", "c"))
+
+
+
+
+```
+
+
+
+
+```{r, week2-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 2", fig.height=5, fig.width=4.72, fig.align='center'}
+
+week2_grid <- readRDS("./data/derivedData/study1-transcriptome/week2_volcano_upset.RDS")
+
+week2_grid +
+  draw_plot_label(x = c(0, 0.25), 
+             y = c(1, 0.57), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+
+
+```
+
+
+
+
+```{r, week12-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 12", fig.height=5, fig.width=4.72, fig.align='center'}
+
+week12_grid<- readRDS("./data/derivedData/study1-transcriptome/week12_volcano_upset.RDS")
+
+week12_grid +
+  draw_plot_label(x = c(0, 0.25), 
+             y = c(1, 0.57), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+```
 
 
 
