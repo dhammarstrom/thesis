@@ -26,3 +26,5 @@ library(knitr)
 library(kableExtra)
 library(ggtext)
 library(latex2exp)
+library(ggrepel)
+
