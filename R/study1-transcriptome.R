@@ -135,7 +135,7 @@ muscle_weight_fig <- emmeans(m1, specs = ~"time|sets") %>%
               legend.spacing.y = unit(0.03, "cm"),
               legend.key = element_rect(fill = "white"),
               legend.key.height = unit(0.2, "cm"),
-              legend.position = c(0.5, 0.85))
+              legend.position = c(0.55, 0.85))
 
 
 
