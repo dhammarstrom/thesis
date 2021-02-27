@@ -899,7 +899,7 @@ gene_set_rug
 
 At week 12, differences seen at Week 2 between volume conditions derived from the tissue-offset model were abolished (Figure \@ref(week12-upset-volcano)a). Volume dependent differences were seen in the library-size normalized model, however, these overlapped with the naive model indicating that in-balance in muscle tissue between conditions may have contributed to global shifts in favor of the low-volume condition.  
 
-```{r, week12-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 12", fig.height=5, fig.width=4.72, fig.align='center'}
+```{r week12-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 12", fig.height=5, fig.width=4.72, fig.align='center'}
 
 week12_grid<- readRDS("./data/derivedData/study1-transcriptome/week12_volcano_upset.RDS")
 
@@ -947,5 +947,39 @@ and also shows a clear dependency of time. Indeed, in the present study, the vol
 From a general perspective, this indicates that after prolonged training, the biological state of the muscle may have reached a new equilibrium, with low- and moderate-volume training having led to similar muscle phenotypic traits.
 This would imply that the benefits of higher training volume are restricted to augmented increases in muscle mass, perhaps facilitated by increases in ribosomal biogenesis [@RN2358].
 Notably, this is likely to be an oversimplification. Indeed, at the protein level, in the current study, higher training volume led to a more robust phenotypic switch from type IIX $\rightarrow$ type IIA fiber also after twelve weeks of training [@RN2358]. Taken together, our data provide valuable directions for future research. It suggests that ECM remodeling is volume-dependent, at least during the initial part of a training program. This needs to be confirmed by studies in other populations, and its biological and functional significance needs clarification. Such studies should take advantage of the increased biological resolution of within-subject contralateral models. 
+
+## Determinants of moderate- over low-volume training benefit
+
+```{r csa-str-sets-corr, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="", fig.scap = "", fig.height=2.4, fig.width=4.72, fig.align='center'}
+
+csa_str_cor <- readRDS("./data/derivedData/study-1-determinants/csa_str_cor.RDS")
+
+
+corr <- readRDS("./data/derivedData/study-1-determinants/csa_str_cor_df.RDS")
+
+csa_str_cor
+
+```
+
+
+```{r univariate-benefit-analysis, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="", fig.scap = "", fig.height=3.72, fig.width=4.72, fig.align='center'}
+
+readRDS("./data/derivedData/study-1-benefit-analysis/univariate_regression_results_fig.Rds")
+
+univariate_regression
+
+
+```
+
+
+
+```{r model-reduction-plot, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="", fig.scap = "", fig.height=3.72, fig.width=4.72, fig.align='center'}
+
+model_reduction_plot <- readRDS("./data/derivedData/study-1-determinants/model_reduction_plot.RDS")                    
+
+model_reduction_plot
+
+```
+
 
 
