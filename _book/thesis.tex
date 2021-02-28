@@ -1736,19 +1736,49 @@ Notably, this is likely to be an oversimplification. Indeed, at the protein leve
 
 \hypertarget{determinants-of-moderate--over-low-volume-training-benefit}{%
 \section{Determinants of moderate- over low-volume training benefit}\label{determinants-of-moderate--over-low-volume-training-benefit}}
+
+To explore determinants of additional benefit of moderate-volume training, individual differences in muscle-hypertrophy (CSA) and average muscle strength between the low- and moderate-volume condition were calculated. In primary analyses, difference-scores were dichotomized to \emph{additional benefit of moderate-volume training} or \emph{no additional benefit of moderate-volume training} based on the smallest worthwhile change (SWC) in the direction of moderate-volume. Participants were thus identified as having \emph{additional benefit of moderate-volume training} if the difference in raw change scores were greater than the between-participants baseline SD \(\times\) 0.2 in favor of moderate-volume training.\footnote{Sex-differences were accounted for by mean-centering variables prior to SD estimation. A weighted SWC was calculated for the strength variable to avoid underestimating SD.}
+The choice of using a dichotomized response variable (benefit vs.~no benefit) was made to maintain an individual perspective; irrespective of the magnitude of the individual difference, what determines benefit of moderate- over low-volume training?
 \begin{figure}
 
 {\centering \includegraphics{thesis_files/figure-latex/csa-str-sets-corr-1} 
 
 }
 
+\caption[]{Relationship between individual responses to moderate- and low-volume training. Dashed lines are identity lines ($y = x$) and the distance from identity lines to solid lines represent the smallest worthwhile change (SWC) in each variable.}\label{fig:csa-str-sets-corr}
 \end{figure}
+Identification of participants as belonging to the benefit- or no benefit-group respectively for each variable is visualized in Figure \ref{fig:csa-str-sets-corr}. Responses to either training condition were highly correlated for both muscle CSA (\emph{r} = 0.750, {[}0.552, 0.868{]}) and average strength (\emph{r} = 0.805, {[}0.552, 0.868{]}), but participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \ref{fig:csa-str-sets-corr}).
+
+With the aim to develop a parsimonious model that explained benefit of moderate-volume training in each outcome (muscle CSA and average strength), a set of potential determinants was selected prior to any association analysis. These included blood variables, baseline strength and muscle mass, volume-dependent molecular responses to training and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study, including dietary data were used in an initial screening process of potential variables. As neither pre-study training habits (strength or other type physical training), within-study training characteristics (number of sessions completed and supervised) or dietary data displayed any differences between benefit-classification, they were excluded from further consideration. So were also a set of continuous variables that did not meet the criteria for inclusion based on univariate analysis\\
+{[}298{]}.
+Figure \ref{fig:univariate-benefit-analysis} shows continuous variables used in the initial screening process. Variables were kept for further consideration when the mean difference 80\% CI (thick error bars) did not containing the null-hypothesis of no difference between benefit-classification groups. Based on the variables selected in this first step, 32 participants were included in the subsequent analysis as two participants had missing values in one or more of the selected predictors.
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/univariate-benefit-analysis-1} 
+
+}
+
+\caption[Univariate analysis of potential determinants of benefit to moderat- over low-volume training]{Differences between groups classified as either having benefit or no benefit of moderate-volume training. For the sake of comparison, all variables have been scaled by their SD. Thick errorbars indicate a 80\% CI and thin errorbars indicate the 95\% CI. Transparent points and errorbars indicate that the variables was removed from further modeling. Sex was included as a covariate in all comparisons.}\label{fig:univariate-benefit-analysis}
+\end{figure}
+The choice of a dichotomized response variable (benefit vs.~no benefit) entailed the use of logistic regression. An assumption of this type of regression modeling is linearity of the logit
+{[}298{]}.
+As all variables did not meet this assumption when fitted in logistic regression they were categorized into biologically meaningful categories (Vitamin D insufficient/sufficient), dichotomized based on measurement detection limits (testosterone in females) or sex-specific median values (lean body mass and testosterone in males).
+A step-wise approach was used to remove variables that did not display robust association with the response variables. Figure \ref{fig:model-reduction-plot} shows the model reduction process.
 \begin{figure}
 
 {\centering \includegraphics{thesis_files/figure-latex/model-reduction-plot-1} 
 
 }
 
+\caption[Step-wise variable selection of determinants of moderate- over low-volume training benefit.]{Sequential removal of predictors of moderate-volume benefit. Point estimates for each predictor are displayed with 95\% confidence intervals.}\label{fig:model-reduction-plot}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/total-rna-and-difference-1} 
+
+}
+
+\caption[Association between participant-average total RNA at Week 2 and differences in total RNA between volume conditions]{Association between participant-average total RNA at Week 2 and differences in total RNA between volume conditions. Correlation coefficients with 95\% CI are shown corresponding to each regression line, robust regression was used to account for highly influential data points (red text and regression line).}\label{fig:total-rna-and-difference}
 \end{figure}
 \hypertarget{methodological-considerations}{%
 \chapter{Methodological considerations}\label{methodological-considerations}}
@@ -3031,6 +3061,10 @@ Marie, I'm sorry for all the late nights, early mornings and weekends i did not 
 \leavevmode\hypertarget{ref-RN2358}{}%
 \CSLLeftMargin{{[}297{]} }
 \CSLRightInline{Hammarström D, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, et al. Benefits of higher resistance-training volume are related to ribosome biogenesis. The Journal of Physiology 2020;598:543--65. \url{https://doi.org/10.1113/JP278455}.}
+
+\leavevmode\hypertarget{ref-RN1998}{}%
+\CSLLeftMargin{{[}298{]} }
+\CSLRightInline{Hosmer DW, Lemeshow S, Sturdivant RX. Applied logistic regression. Third edition /. Hoboken, New Jersey: Wiley; 2013.}
 
 \end{CSLReferences}
 

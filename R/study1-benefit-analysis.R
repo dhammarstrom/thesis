@@ -954,7 +954,6 @@ univar_str <- colnames(benefit_strength_complete_cont)[-c(1, 2, 3)]
 ### Creates a result-df for the screening loop
 
 results <- data.frame(variable = rep(NA, length(univar_csa)),
-                      
                       estimate.csa = rep(NA, length(univar_csa)),
                       se.csa = rep(NA, length(univar_csa)), 
                       tval.csa = rep(NA, length(univar_csa)),
@@ -1016,7 +1015,8 @@ results <- data.frame(variable = rep(NA, length(univar_csa)),
                       ciu.b.female.str = rep(NA, length(univar_csa)),
                       m.nb.female.str = rep(NA, length(univar_csa)),
                       cil.nb.female.str = rep(NA, length(univar_csa)),
-                      ciu.nb.female.str = rep(NA, length(univar_csa)))
+                      ciu.nb.female.str = rep(NA, length(univar_csa)), 
+                      n = rep(NA, length(univar_csa)))
 
 
 
@@ -1036,6 +1036,7 @@ for(i in 1:length(univar_csa)) {
         
         model.csa <- lm(formula.csa, data = benefit_csa_complete_cont)
         model.str <- lm(formula.str, data = benefit_strength_complete_cont)
+        
         
         model.csa.inter <- lm(formula.csa.inter, data = benefit_csa_complete_cont)
         model.str.inter <- lm(formula.str.inter, data = benefit_strength_complete_cont)
@@ -1114,6 +1115,7 @@ for(i in 1:length(univar_csa)) {
         results[i, 55] <- str.sex.em[1, 3]
         results[i, 56] <- str.sex.em[1, 6]
         results[i, 57] <- str.sex.em[1, 7]
+        results[i, 58] <- nrow(model.str$model)
         
         
 }

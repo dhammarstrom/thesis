@@ -233,8 +233,8 @@ mr.cor.fig <- mr.cor.data %>%
         dissertation_theme() +
         
         scale_fill_manual(values = c(group.study.color[1], group.study.color[5])) +
-        xlab("Single-set (%-change)")  +
-        ylab("Multiple-set (%-change)") +
+        xlab("Low-volume (%-change)")  +
+        ylab("Moderate-volume (%-change)") +
         
         
         theme(legend.position = "none",
@@ -380,8 +380,8 @@ strength.benefit <- strength_data %>%
         
         scale_fill_manual(values = c(group.study.color[1], group.study.color[5])) +
         
-        xlab(expression(paste("Single-set (%-change)")))  +
-        ylab(expression(paste("Multiple-set (%-change)"))) +
+        xlab(expression(paste("Low-volume (%-change)")))  +
+        ylab(expression(paste("Moderate-volume (%-change)"))) +
         theme(legend.position = "none",
               legend.title = element_blank(),
               axis.text = element_text(size = 8),
@@ -428,6 +428,27 @@ results_univariate <- readRDS("./data/derivedData/study-1-benefit-analysis/univa
 
 # Maka a transformation for log-transformation of negative values
 
+results_univariate <- readRDS("./data/derivedData/study-1-benefit-analysis/univariate_analysis.Rda")
+
+
+
+variables_descriptive <- data.frame(variable = results_univariate[, 1], 
+                                    Variable = c("Total RNA Week 2<br>(% of low-volume)", 
+                                                    "Total RNA Week 12<br>(% of low-volume)",
+                                                    "S6K1<br>(fold of low-volume)", 
+                                                    "Cortisol<br>(mean Weeks 0-2)", 
+                                                    "Testosterone<br>(mean Weeks 0-2)", 
+                                                    "Growth hormone<br>(mean post-exercise Week 2)",
+                                                    "IGF-1<br>(mean pre-exercise Weeks 0-2)", 
+                                                    "IGF-1<br>(mean post-exercise Weeks 0-2)", 
+                                                    "Vitamin D<br>(mean Weeks 0 and 12)",
+                                                    "Average relative strength baseline<br>(kg-1)", 
+                                                    "Average strength baseline<br>(AU)", 
+                                                    "Lean mass<br>(% of body weight)",
+                                                    "Type IIA<br>(% of total fibers)", 
+                                                    "Type IIX<br>(% of total fibers)", 
+                                                    "Type I<br>(% of total fibers)")) 
+
 
 univariate_regression <- results_univariate %>%
         dplyr::select(variable,  
@@ -436,6 +457,8 @@ univariate_regression <- results_univariate %>%
                       estimate.str,
                       str.ci.lwr,  str.ci.upr, str.ci.lwr.80, str.ci.upr.80) %>%
 
+
+    
         unite("csa", estimate.csa:csa.ci.upr.80, sep = "_") %>%
         unite("str", estimate.str:str.ci.upr.80, sep = "_") %>%
 
@@ -449,18 +472,18 @@ univariate_regression <- results_univariate %>%
         
         separate(estimate, into = c("est", "lwr", "upr", "lwr.80", "upr.80"), sep = "_", convert = TRUE) %>%
 
-       # filter(variable != "cortisol.ba") %>%
+    inner_join(variables_descriptive) %>%
         
         mutate(sig = if_else(est > 0 & lwr.80 > 0 | est < 0 & upr.80 < 0, 
                              "sig", "ns"), 
-               variable = fct_reorder(variable, est, mean), 
+               Variable = fct_reorder(Variable, est, mean), 
                type = factor(type, levels = c("csa", "str"), 
                              labels = c("CSA", "Strength"))) %>%
  
         
      #   filter(variable != "cortisol.ba") %>%
         
-        ggplot(aes(est, variable, alpha = sig)) + 
+        ggplot(aes(est, Variable, alpha = sig)) + 
         
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
@@ -488,10 +511,12 @@ univariate_regression <- results_univariate %>%
         
         theme(legend.position = "none",
               legend.title = element_blank(),
-              axis.text = element_text(size = 7),
+              axis.text.y = element_markdown(size = 7),
+              axis.text.x = element_text(size = 7),
               axis.title.x = element_text(size = 7),
               axis.title.y = element_blank(),
               strip.background = element_blank(),
+              strip.text.x = element_text(hjust = 0, size = 8),
               panel.border = element_blank()) 
 
         
@@ -534,7 +559,12 @@ csa_model_reduction <- csa_models %>%
                                         "lean.massb_low",
                                         "testo.ba",
                                         "gh.tr", 
-                                        "type2xlo" ))) %>%
+                                        "type2xlo"), 
+                             labels = c("Week 2 Total RNA<br>(% of low-volume)", 
+                                        "Lean mass<br>(Lower than sex-specific median)",
+                                        "Testosterone<br>(Lower than detection limit (females)<br>or median (males))",
+                                        "Growth hormone<br>(mean post-exercis Week 2)",
+                                        "Type IIX<br>(Below median, 3.7% of total fibers)"))) %>%
 
         ggplot(aes(exp(estimate), term, fill = term)) + 
         
@@ -558,7 +588,8 @@ csa_model_reduction <- csa_models %>%
         
          theme(legend.position = "none",
               legend.title = element_blank(),
-              axis.text = element_text(size = 7),
+              axis.text.y = element_markdown(size = 7),
+              axis.text.x = element_text(size = 7),
               axis.title = element_blank(),
               
               axis.line.y = element_blank(), 
@@ -589,7 +620,10 @@ str_model_reduction <- str_models %>%
        mutate(term = factor(term, 
                             levels = c("rna_w2pre",
                                        "p.p70_w2post",
-                                       "cortisol.ba"))) %>%
+                                       "cortisol.ba"), 
+                            labels = c("Week 2 Total RNA<br>(% of low-volume)", 
+                                       "Week 2 Post-exercise S6K1<sup>Thr389</sup><br>(fold of low-volume)", 
+                                       "Cortisol<br>(mean Weeks 0-2"))) %>%
        
         ggplot(aes(exp(estimate), term, fill = term)) + 
         
@@ -612,11 +646,12 @@ str_model_reduction <- str_models %>%
         scale_fill_manual(values = group.study.color) +
         
         labs(y = "Variable", 
-             x = "Odds-ratio, benefit of moderate-volume training") +
+             x = "Odds-ratio, benefit of moderate- over low-volume training") +
         
         theme(legend.position = "none",
               legend.title = element_blank(),
-              axis.text = element_text(size = 7),
+              axis.text.y = element_markdown(size = 7),
+              axis.text.x = element_text(size = 7),
               axis.title.x = element_text(size = 7, hjust = 0.2),
               
               axis.line.y = element_blank(), 
@@ -637,6 +672,210 @@ model_reduction_plot <- plot_grid(csa_model_reduction,
           ncol = 1, rel_heights = c(0.4, 0.3))
 
 saveRDS(model_reduction_plot, "./data/derivedData/study-1-determinants/model_reduction_plot.RDS")                    
+
+
+
+########### RNA at week 2 vs. differences between volume conditions ##############
+
+
+#### RNA content #####
+
+include <- read.csv("./data/study-1/oneThreeSetLeg.csv", sep = ";") %>%
+    gather(sets, leg, multiple:single) %>%
+    mutate(condition = leg) %>%
+    dplyr::select(subject, sex, include, condition, sets)
+
+# loads sample weight and total RNA concentration in trizol extracts 
+total.rna <- read_excel("./data/study-1/sample_weight.xlsx") %>%
+    dplyr::select(subject, timepoint, leg, weight, conc1.5, elution.volume) %>% # total RNA measured in 1:5 dilution
+    mutate(condition = leg) %>%
+    inner_join(include) %>%
+    filter(include == "incl") %>%
+    mutate(rna = (conc1.5 * 5 * elution.volume) / weight) %>% # estimates of total RNA
+    dplyr::select(subject,
+                  sex,
+                  sets,
+                  timepoint,
+                  rna,
+                  weight,
+                  conc1.5,
+                  elution.volume) %>%
+    mutate(timepoint = factor(timepoint, levels = c("w0", "w2pre", "w2post", "w12")),
+           conc = conc1.5 * 5 * elution.volume)# %>% # scale RNA concentration based on dilution
+#  filter(timepoint !="w2post")
+
+
+
+# Some samples may be underestimated because of sample loss during 
+# sample prep. This was due to loss of RNA in washing steps were piece of 
+# RNA pellet was lost. To estimate deviance from weight to RNA relationship
+# a linear model was constructed log(concentration)~log(weight) and
+# deviance of more than 4 units in standardized residuals from zero meant exclusion
+# from further modeling/plotting
+
+# model for RNA concentration to weight relationship
+l.mod <- lm(log(conc) ~ log(weight), data = total.rna) 
+
+# Calculates standardized residuals
+total.rna$resid<- resid(l.mod)/sd(resid(l.mod))
+# store predicted values for diagnostic plotting
+total.rna$pred<- predict(l.mod)
+
+# plot predicted vs. standardized residuals
+
+# creates a outlier variable
+total.rna <- total.rna%>%
+    mutate(outlier = if_else(resid < -4 | resid > 4 , "out", "in")) # 4 units deviance from zero
+
+
+
+rna.avg.diff <- total.rna %>%
+    filter(outlier != "out") %>%
+    group_by(subject, timepoint, sets) %>%
+    summarise(rna = mean(rna, na.rm = T)) %>%
+    ungroup() %>%
+    filter(timepoint == "w2pre") %>%
+    dplyr::select(subject, sets, rna) %>%
+    pivot_wider(names_from = sets, 
+                values_from = rna) %>%
+    rowwise() %>%
+    
+    mutate(avg.rna = mean(c(multiple, single))) %>%
+    ungroup() %>%
+    mutate(diff = multiple - single) %>%
+    print()
+    
+
+
+### Regression coefficients
+naive.lm <- lm(diff ~ avg.rna, data = rna.avg.diff)
+robust.lm <- rlm(diff ~ avg.rna, data = rna.avg.diff, method = "MM")
+outlier.lm <- lm(diff ~ avg.rna, data = filter(rna.avg.diff, diff < 250))
+
+### Translate to correlation coefficients 
+naive.corr <- lm(scale(diff) ~ scale(avg.rna), data = rna.avg.diff)
+robust.corr <- rlm(scale(diff) ~ scale(avg.rna), data = rna.avg.diff, method = "MM")
+
+
+
+naive.corr.text <- paste0("<i>r</i> = ", sprintf("%.3f", coef(naive.corr)[2]), 
+                          ", [", 
+                          sprintf("%.3f", data.frame(confint.default(naive.corr))[2, 1]),
+                          ", ",
+                          sprintf("%.3f", data.frame(confint.default(naive.corr))[2, 2]),
+                          "]")                
+
+robust.corr.text <- paste0("<i>r</i> = ", sprintf("%.3f", coef(robust.corr)[2]), 
+                          ", [", 
+                          sprintf("%.3f", data.frame(confint.default(robust.corr))[2, 1]),
+                          ", ",
+                          sprintf("%.3f", data.frame(confint.default(robust.corr))[2, 2]),
+                          "]")     
+
+
+
+
+
+total_rna_diff <- rna.avg.diff %>%   
+    ggplot(aes(avg.rna, diff)) + 
+    
+    geom_point(shape = 21, size = 2.5, fill = group.study.color[2]) + 
+    
+    labs(x = "Participant average total RNA Week 2<br>(ng mg<sup>-1</sup>)", 
+         y = "Difference between volume conditions<br>(moderate-volume - low-volume)") +
+    
+    
+    annotate("richtext", 
+             x = c(400), 
+             y = c(200), 
+             label = naive.corr.text, 
+             color = group.study.color[5], 
+             size = 2.5, 
+             label.padding = grid::unit(rep(0, 4), "pt"),
+             fill = NA, label.color = NA) +
+    
+    
+    annotate("richtext", 
+             x = 500, 
+             y = -50, 
+             label = robust.corr.text,
+             color = group.study.color[1], 
+             size = 2.5, 
+             label.padding = grid::unit(rep(0, 4), "pt"),
+             fill = NA, label.color = "white") +
+    
+    
+    
+    annotate("segment", x = 315, xend = 540, 
+             y = coef(naive.lm)[1] + coef(naive.lm)[2] * 315, 
+             yend = coef(naive.lm)[1] + coef(naive.lm)[2] * 540, 
+             color = group.study.color[5]) +
+    
+    annotate("segment", x = 315, xend = 540, 
+             y = coef(robust.lm)[1] + coef(robust.lm)[2] * 315, 
+             yend = coef(robust.lm)[1] + coef(robust.lm)[2] * 540, 
+             color = group.study.color[1]) +
+
+    
+    scale_x_continuous(limits = c(300, 550), 
+                       expand = c(0, 0), 
+                       breaks = c(300, 350, 400, 450, 500, 550)) +
+    
+    scale_y_continuous(limits = c(-100, 400), 
+                       expand = c(0, 0), 
+                       breaks = c(-100, 0, 100, 200, 300, 400)) +
+    
+        dissertation_theme() +
+        
+        theme(legend.position = "none",
+              legend.title = element_blank(),
+              axis.title.y = element_markdown(size = 7),
+              axis.title.x = element_markdown(size = 7),
+             
+
+              strip.background = element_blank(),
+              strip.text = element_text(size = 7, hjust = 0),
+              panel.border = element_blank()) 
+
+
+    
+saveRDS(total_rna_diff , "./data/derivedData/study-1-determinants/total_rna_difference.RDS")
+
+
+
+
+#### Modeling benefit as continuous and keeping all preliminary variables in the model
+
+
+benefit <- readRDS("./data/derivedData/study-1-benefit-analysis/benefit.Rda") 
+str.benefit <- readRDS("./data/derivedData/study-1-benefit-analysis/strbenefit.Rda")
+
+
+benefit_csa_complete_cont <- readRDS("./data/derivedData/study-1-benefit-analysis/benefit_csa_rawdata.Rda")
+benefit_strength_complete_cont <- readRDS("./data/derivedData/study-1-benefit-analysis/benefit_str_rawdata.Rda")
+
+
+## CSA model 
+
+csa_full <- benefit_csa_complete_cont %>%
+    inner_join(benefit) %>%
+    print()
+
+
+
+csa.mod <- lm(diff ~ rna_w2pre, data = csa_full)
+
+summary(csa.mod)
+
+
+
+
+
+
+
+
+
+
 
 
 
