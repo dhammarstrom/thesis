@@ -474,15 +474,15 @@ str.benefit <- total_strength %>%
         group_by(subject) %>%
         mutate(strength.baseline = mean(baseline, na.rm = TRUE)) %>%
         group_by(sex) %>%
-        mutate(strength.baseline = strength.baseline - mean(strength.baseline, na.rm = TRUE)) %>% # center strength baseline per sex
+        mutate(strength.baseline.adj = strength.baseline - mean(strength.baseline, na.rm = TRUE)) %>% # center strength baseline per sex
         ungroup() %>%
-        dplyr::select(subject, sex, sets, strength.baseline, rel_increase) %>%
+        dplyr::select(subject, sex, sets, strength.baseline, strength.baseline.adj, rel_increase) %>%
         spread(sets, rel_increase) %>%
         mutate(cv = as.numeric(strength.error)) %>%
         mutate(strength.diff = multiple - single, 
                benefit.strength = if_else(multiple - single > cv, 1, 0),
                benefit.strength.single = if_else(single - multiple > cv, 1, 0)) %>%
-        dplyr::select(subject, sex, strength.baseline, benefit = benefit.strength, benefit.single = benefit.strength.single, diff = strength.diff) %>%
+        dplyr::select(subject, sex, strength.baseline, strength.baseline.adj, benefit = benefit.strength, benefit.single = benefit.strength.single, diff = strength.diff) %>%
         print()
 
 
@@ -499,16 +499,16 @@ strength <- total_strength %>%
         group_by(subject, sex) %>%
         summarise(rel.strength = mean(rel.strength, na.rm = TRUE)) %>%
         group_by(sex) %>%
-        mutate(rel.strength = rel.strength - mean(rel.strength), 
-               rel.strength.factor =   as.character(cut(rel.strength, quantile(rel.strength, na.rm = TRUE, 
+        mutate(rel.strength.adj = rel.strength - mean(rel.strength), 
+               rel.strength.factor =   as.character(cut(rel.strength.adj, quantile(rel.strength.adj, na.rm = TRUE, 
                                                                                prob = seq(0, 1, by = 0.25),
                                                                                type = 7), include.lowest = TRUE, 
                                                         labels = c("f1", "f2", "f3", "f4")))) %>%
         print()
 
 ### Save data sets in two versions for variable selection
-
-strength.cont <- strength  %>% dplyr::select(subject, sex, rel.strength)
+strength.cont.unadj <- strength  %>% dplyr::select(subject, sex, rel.strength)
+strength.cont <- strength  %>% dplyr::select(subject, sex, rel.strength.adj)
 strength.fact <- strength  %>% dplyr::select(subject, sex, rel.strength.factor)
 
 
@@ -878,8 +878,8 @@ body.comp <- read_excel("./data/study-1/body-composition/bodycomp_DXA.xlsx") %>%
         ungroup() %>%
         mutate(lean.mass = (lean.whole / whole) * 100) %>%
         group_by(sex) %>%
-        mutate(lean.mass = lean.mass - mean(lean.mass)) %>%
-        dplyr::select(subject, sex, lean.mass) %>%
+        mutate(lean.mass.adj = lean.mass - mean(lean.mass)) %>%
+        dplyr::select(subject, sex, lean.mass, lean.mass.adj) %>%
         print()
 
 lean.mass.cont <- body.comp
@@ -912,15 +912,52 @@ saveRDS(list(csa.error = csa.error, strength.cv = strength.error), "./data/deriv
 
 # Continuous data sets #
 
+
+
+benefit_csa_complete_cont_unadjust <- benefit[,c(1,2,3)] %>%
+        inner_join(tot.rna.cont) %>%
+        inner_join(wb.data.cont) %>%
+        inner_join(blood_data.cont) %>%
+        inner_join(strength.cont.unadj) %>%
+        inner_join(str.benefit %>%
+                           dplyr::select(-benefit, -benefit.single, -diff, -strength.baseline.adj)) %>%
+        
+        inner_join(body.comp %>% 
+                           dplyr::select(subject, sex, lean.mass)) %>%
+        inner_join(fibertype.cont) %>%
+        # inner_join(train1) %>%
+        filter(!(subject %in% c("FP15","FP23"))) %>% # Filters complete cases
+        print()
+
+
+benefit_strength_complete_cont_unadjust <- str.benefit[,c(1,2,4)] %>%
+        inner_join(tot.rna.cont) %>%
+        inner_join(wb.data.cont) %>%
+        inner_join(blood_data.cont) %>%
+        inner_join(strength.cont.unadj) %>%
+        inner_join(str.benefit %>%
+                           dplyr::select(-benefit, -benefit.single, -diff, -strength.baseline.adj)) %>%
+        inner_join(body.comp %>% 
+                           dplyr::select(subject, sex, lean.mass)) %>%
+        inner_join(fibertype.cont) %>%
+        # inner_join(train1) %>%
+        filter(!(subject %in% c("FP15", "FP23"))) %>% # Filters complete cases
+        print()
+
+
+
+
+
 benefit_csa_complete_cont <- benefit[,c(1,2,3)] %>%
         inner_join(tot.rna.cont) %>%
         inner_join(wb.data.cont) %>%
         inner_join(blood_data.cont) %>%
         inner_join(strength.cont) %>%
         inner_join(str.benefit %>%
-                           dplyr::select(-benefit, -benefit.single, -diff)) %>%
+                           dplyr::select(-benefit, -benefit.single, -diff, -strength.baseline)) %>%
         
-        inner_join(body.comp) %>%
+        inner_join(body.comp %>% 
+                           dplyr::select(subject, sex, lean.mass.adj)) %>%
         inner_join(fibertype.cont) %>%
         # inner_join(train1) %>%
         filter(!(subject %in% c("FP15","FP23"))) %>% # Filters complete cases
@@ -932,7 +969,7 @@ benefit_strength_complete_cont <- str.benefit[,c(1,2,4)] %>%
         inner_join(blood_data.cont) %>%
         inner_join(strength.cont) %>%
         inner_join(str.benefit %>%
-                           dplyr::select(-benefit, -benefit.single, -diff)) %>%
+                           dplyr::select(-benefit, -benefit.single, -diff, -strength.baseline)) %>%
         inner_join(body.comp) %>%
         inner_join(fibertype.cont) %>%
         # inner_join(train1) %>%
@@ -944,6 +981,11 @@ benefit_strength_complete_cont <- str.benefit[,c(1,2,4)] %>%
 
 saveRDS(benefit_csa_complete_cont, "./data/derivedData/study-1-benefit-analysis/benefit_csa_rawdata.Rda")
 saveRDS(benefit_strength_complete_cont, "./data/derivedData/study-1-benefit-analysis/benefit_str_rawdata.Rda")
+
+saveRDS(benefit_csa_complete_cont_unadjust, "./data/derivedData/study-1-benefit-analysis/benefit_csa_rawdata_unadjust.Rda")
+saveRDS(benefit_strength_complete_cont_unadjust, "./data/derivedData/study-1-benefit-analysis/benefit_str_rawdata_unadjust.Rda")
+
+
 
 
 univar_csa <- colnames(benefit_csa_complete_cont)[-c(1, 2, 3)]
