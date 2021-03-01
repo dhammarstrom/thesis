@@ -950,7 +950,7 @@ Notably, this is likely to be an oversimplification. Indeed, at the protein leve
 
 ## Determinants of moderate- over low-volume training benefit
 
-To explore determinants of additional benefit of moderate-volume training, individual differences in muscle-hypertrophy (CSA) and average muscle strength between the low- and moderate-volume condition were calculated. In primary analyses, difference-scores were dichotomized to *additional benefit of moderate-volume training* or *no additional benefit of moderate-volume training* based on the smallest worthwhile change (SWC) in the direction of moderate-volume. Participants were thus identified as having *additional benefit of moderate-volume training* if the difference in raw change scores were greater than the between-participants baseline SD $\times$ 0.2 in favor of moderate-volume training.^[Sex-differences were accounted for by mean-centering variables prior to SD estimation. A weighted SWC was calculated for the strength variable to avoid underestimating SD.]
+To explore determining factors for additional benefit of moderate-volume training, individual differences in muscle-hypertrophy (CSA) and average muscle strength between the moderate- and low-volume condition were calculated. In primary analyses, difference-scores were dichotomized to *additional benefit of moderate-volume training* or *no additional benefit of moderate-volume training* based on the smallest worthwhile change (SWC) in the direction of moderate-volume. Participants were thus identified as having *additional benefit of moderate-volume training* if the difference in raw change scores were greater than the between-participants baseline SD $\times$ 0.2 in favor of moderate-volume training.^[Sex-differences were accounted for by mean-centering variables prior to SD estimation. A weighted SWC was calculated for the strength variable to avoid underestimating SD.]
 The choice of using a dichotomized response variable (benefit vs. no benefit) was made to maintain an individual perspective; irrespective of the magnitude of the individual difference, what determines benefit of moderate- over low-volume training?
 
 ```{r csa-str-sets-corr, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Relationship between individual responses to moderate- and low-volume training. Dashed lines are identity lines ($y = x$) and the distance from identity lines to solid lines represent the smallest worthwhile change (SWC) in each variable.", fig.scap = "", fig.height=2.4, fig.width=4.72, fig.align='center'}
@@ -978,12 +978,11 @@ csa_str_cor
 
 ```
 
-Identification of participants as belonging to the benefit- or no benefit-group respectively for each variable is visualized in Figure \@ref(fig:csa-str-sets-corr). Responses to either training condition were highly correlated for both muscle CSA (`r csa_cor`) and average strength (`r str_cor`), but participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \@ref(fig:csa-str-sets-corr)).
+Identification of participants as belonging to the benefit- or no benefit-group, respectively, for each outcome variable is visualized in Figure \@ref(fig:csa-str-sets-corr). Responses to either training condition were highly correlated for both muscle CSA (`r csa_cor`) and average strength (`r str_cor`), but participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \@ref(fig:csa-str-sets-corr)).
 
-With the aim to develop a parsimonious model that explained benefit of moderate-volume training in each outcome (muscle CSA and average strength), a set of potential determinants was selected prior to any association analysis. These included blood variables, baseline strength and muscle mass, volume-dependent molecular responses to training and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study, including dietary data were used in an initial screening process of potential variables. As neither pre-study training habits (strength or other type physical training), within-study training characteristics (number of sessions completed and supervised) or dietary data displayed any differences between benefit-classification, they were excluded from further consideration. So were also a set of continuous variables that did not meet the criteria for inclusion based on univariate analysis   
+With the aim to develop parsimonious models that explained benefits of moderate-volume training in each outcome (muscle CSA and average strength), a set of potential determinants was selected prior to any association analysis. These included blood variables, baseline strength and muscle mass, volume-dependent molecular responses to training and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study as well as dietary data were used in an initial screening process of potential variables. As neither pre-study training habits (strength or other type physical training), within-study training characteristics (number of sessions completed and supervised) or dietary data displayed any differences between benefit-classifications, they were excluded from further consideration. So were also a set of continuous variables that did not meet the criteria for inclusion based on preliminary univariate analysis   
 [@RN1998].
 Figure \@ref(fig:univariate-benefit-analysis) shows continuous variables used in the initial screening process. Variables were kept for further consideration when the mean difference 80\% CI (thick error bars) did not containing the null-hypothesis of no difference between benefit-classification groups. Based on the variables selected in this first step, 32 participants were included in the subsequent analysis as two participants had missing values in one or more of the selected predictors.
-
 
 ```{r univariate-benefit-analysis, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Differences between groups classified as either having benefit or no benefit of moderate-volume training. For the sake of comparison, all variables have been scaled by their SD. Thick errorbars indicate a 80\\% CI and thin errorbars indicate the 95\\% CI. Transparent points and errorbars indicate that the variables was removed from further modeling. Sex was included as a covariate in all comparisons.", fig.scap = "Univariate analysis of potential determinants of benefit to moderat- over low-volume training", fig.height=5, fig.width=4, fig.align='center'}
 
@@ -996,7 +995,9 @@ univariate_regression
 The choice of a dichotomized response variable (benefit vs. no benefit) entailed the use of logistic regression. An assumption of this type of regression modeling is linearity of the logit
 [@RN1998].
 As all variables did not meet this assumption when fitted in logistic regression they were categorized into biologically meaningful categories (Vitamin D insufficient/sufficient), dichotomized based on measurement detection limits (testosterone in females) or sex-specific median values (lean body mass and testosterone in males).
-A step-wise approach was used to remove variables that did not display robust association with the response variables. Figure \@ref(fig:model-reduction-plot) shows the model reduction process.
+A stepwise approach was used to remove variables that did not display association with the response variables. Figure \@ref(fig:model-reduction-plot) shows the process of stepwise removal of predictors.
+Additional benefit of moderate- over low-volume training on muscle CSA was predicted by individual differences between volume conditions in Total RNA at Week 2 and baseline lean body mass dichotomized to above or below the sex-specific median.
+For muscle strength, only individual differences between volume conditions in Total RNA at Week 2 remained in the model after variable selection.
 
 ```{r model-reduction-plot, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Sequential removal of predictors of moderate-volume benefit. Point estimates for each predictor are displayed with 95\\% confidence intervals.", fig.scap = "Step-wise variable selection of determinants of moderate- over low-volume training benefit.", fig.height=3.72, fig.width=4.72, fig.align='center'}
 
@@ -1004,6 +1005,17 @@ model_reduction_plot <- readRDS("./data/derivedData/study-1-determinants/model_r
 model_reduction_plot
 
 ```
+
+The rationale for using dichotomized outcomes were, as mentioned above, to specifically explore determinants of *individuals* benefit of additional training volume, regardless of the magnitude of the difference between conditions.
+This choice of analytic approach arose from discussions regarding clinical decision-making, where the potential benefit in each individual should guide the choice of training methods. The primary hypothesis in the study was that the baseline muscle phenotype, specifically a "glycolytic" vs. "aerobic" phenotype (high vs. low type IIX content) would not show relative benefit of moderate-volume training.^[[This hypothesis was included in our clinical trial registration](https://clinicaltrials.gov/ct2/show/NCT02179307?term=lillehammer&draw=2&rank=9)]
+If such a marker would hold any prognostic value it could potentially guide decisions. In analysis, this marker was included togther with many other potential predictors, both pre-training characteristics that could aid in clinical decision making, but also other markers arising from the training it self and thus not available in pre-training guidance. These variables were included with the aim to further our understanding about exercise-volume as a training variable per-se.
+Although linked to the specific study question, the choice of a dichotomized outcome variable could mask other potentially interesting associations in the data due to the loss of information associated with the transformation.
+Another choice made in data analysis was the use of a stepwise procedure for selecting variables, known as purposeful selection
+[@RN]<!-- Hosmer -->
+
+
+
+
 
 
 

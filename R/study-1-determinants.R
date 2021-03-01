@@ -847,6 +847,9 @@ saveRDS(total_rna_diff , "./data/derivedData/study-1-determinants/total_rna_diff
 #### Modeling benefit as continuous and keeping all preliminary variables in the model
 
 
+
+
+
 benefit <- readRDS("./data/derivedData/study-1-benefit-analysis/benefit.Rda") 
 str.benefit <- readRDS("./data/derivedData/study-1-benefit-analysis/strbenefit.Rda")
 
@@ -859,13 +862,251 @@ benefit_strength_complete_cont <- readRDS("./data/derivedData/study-1-benefit-an
 
 csa_full <- benefit_csa_complete_cont %>%
     inner_join(benefit) %>%
-    print()
+    ungroup() %>%
+    
+   group_by(sex) %>%
+   mutate(igf1.tr = igf1.tr - mean(igf1.tr), 
+          igf1.ba = igf1.ba - mean(igf1.ba), 
+          gh.tr = gh.tr - mean(gh.tr), 
+          cortisol.ba = cortisol.ba - mean(cortisol.ba)) %>%
+    ungroup() %>%
+    dplyr::select(diff, rna_w2pre:type2x) %>%
+    filter(complete.cases(.)) %>%
+    
+    data.frame()
+
+m <- bms(csa_full[-19,],  mprior = "fixed", mprior.size = 1, user.int = FALSE)
+
+image(m)
+
+
+data.frame(coef(m, std.coefs = TRUE)) %>%
+    mutate(variable = row.names(.)) %>%
+    
+    ggplot(aes(Post.Mean, variable )) +
+geom_errorbarh(aes(xmin = Post.Mean - Post.SD, 
+               xmax = Post.Mean + Post.SD)) + 
+    geom_point() 
+
+plotModelsize(m)
+
+m <- lm(diff ~ scale(strength.baseline) + scale(rna_w2pre), data = csa_full[-19,])
+
+summary(m)
+
+coef(m)
+image(m)
+
+
+str_full <- benefit_strength_complete_cont %>%
+    inner_join(str.benefit) %>%
+    ungroup() %>%
+
+    group_by(sex) %>%
+    mutate(igf1.tr = igf1.tr - mean(igf1.tr), 
+           igf1.ba = igf1.ba - mean(igf1.ba), 
+           gh.tr = gh.tr - mean(gh.tr), 
+           cortisol.ba = cortisol.ba - mean(cortisol.ba)) %>%
+    ungroup() %>%
+    dplyr::select(diff, rna_w2pre:type2x) %>%
+    data.frame()
+
+
+str_full %>%
+    ggplot(aes(lean.mass, diff)) + geom_point() + geom_smooth(method = "lm")
+
+
+m <- lm(diff ~ scale(cortisol.ba) + scale(rna_w2pre) + scale(lean.mass), data = str_full)
+
+summary(m)
 
 
 
-csa.mod <- lm(diff ~ rna_w2pre, data = csa_full)
+car::vif(m)
 
-summary(csa.mod)
+variables <- colnames(csa_full[,-c(1,2)])
+
+results <- data.frame(variable = rep(NA, length(variables)), 
+                      est.lm =   rep(NA, length(variables)), 
+                      lwr.lm =   rep(NA, length(variables)), 
+                      upr.lm =   rep(NA, length(variables)), 
+                      
+                      est.rlm =  rep(NA, length(variables)),
+                        lwr.rlm =rep(NA, length(variables)), 
+                        upr.rlm =rep(NA, length(variables)))
+
+results.str <- data.frame(variable = rep(NA, length(variables)), 
+                            est.lm = rep(NA, length(variables)), 
+                            lwr.lm = rep(NA, length(variables)), 
+                            upr.lm = rep(NA, length(variables)), 
+                          
+                            est.rlm = rep(NA, length(variables)),
+                            lwr.rlm = rep(NA, length(variables)), 
+                            upr.rlm = rep(NA, length(variables)))
+
+
+
+out_test <- list()
+out_test_str <- list()
+
+
+
+for(i in 1:length(variables)) {
+    
+    # Use quantreg?
+    qr <- FALSE
+    
+    # General formula, calculate correlation coefficients as variables are scaled
+    form <- formula(paste0("diff ~ scale(", variables[i], ")"))
+    
+    
+    m <- lm(form, data = csa_full)
+    m.str <- lm(form, data = str_full)
+    
+    
+    
+    ot <- car::outlierTest(m)
+    ot.str <- car::outlierTest(m.str)
+    
+    
+    out_test[[i]] <- ot
+    out_test_str[[i]] <- ot.str
+    
+    names(out_test)[i] <- variables[i]
+    names(out_test_str)[i] <- variables[i]
+    
+    
+    # If quantile regression is to be used
+    if(qr) {
+        mr <- rq(form, data = csa_full)
+        mr_str <- rq(form, data = str_full)
+        
+      rq.sum <-  summary(mr)
+      mr.lwr <-  rq.sum$coefficients[2, 2]
+      mr.upr <-   rq.sum$coefficients[2, 3]
+      
+      
+      rq.str.sum <-  summary(mr_str)
+      mr.str.lwr <-  rq.str.sum$coefficients[2, 2]
+      mr.str.upr <-   rq.str.sum$coefficients[2, 3]
+      
+ 
+      
+    } else {
+        
+         mr <- rlm(form, data = csa_full[-as.numeric(names(ot$rstudent)),], psi = psi.huber )
+     #   mr <- rlm(form, data = csa_full, psi = psi.huber)
+        
+        mr.lwr <- confint.default(mr)[2,1]
+        mr.upr <- confint.default(mr)[2,2]
+        
+        
+        mr_str <- rlm(form, data = str_full[-as.numeric(names(ot.str$rstudent)),], psi = psi.huber )
+    #   mr_str <- rlm(form, data = str_full, psi = psi.huber )
+        
+        mr.str.lwr <- confint.default(mr_str)[2,1]
+        mr.str.upr <- confint.default(mr_str)[2,2]
+        
+
+    }
+    
+    results[i, 1] <- variables[i]
+    results[i, 2] <- coef(m)[2]
+    results[i, 3] <- confint.default(m)[2,1]
+    results[i, 4] <- confint.default(m)[2, 2]
+    results[i, 5] <- coef(mr)[2]
+    results[i, 6] <- mr.lwr
+    results[i, 7] <- mr.upr
+    
+    
+    results.str[i, 1] <- variables[i]
+    results.str[i, 2] <- coef(m.str)[2]
+    results.str[i, 3] <- confint.default(m.str)[2,1]
+    results.str[i, 4] <- confint.default(m.str)[2, 2]
+    results.str[i, 5] <- coef(mr_str)[2]
+    results.str[i, 6] <- mr.str.lwr
+    results.str[i, 7] <- mr.str.upr
+    
+}
+
+
+
+#### Combine results in a single plot ###################
+
+
+
+rbind(results %>%
+    unite(col = "lm", est.lm:upr.lm, sep = "_") %>%
+    unite(col = "rlm", est.rlm:upr.rlm, sep = "_") %>%
+    dplyr::select(variable, lm, rlm) %>%
+    
+    
+    pivot_longer(names_to = "method", 
+                 values_to = "est", 
+                 cols = lm:rlm) %>%
+    
+    separate(est, into = c("est", "lwr", "upr"), sep = "_", convert = TRUE) %>%
+    mutate(outcome = "csa"), 
+    
+    results.str %>%
+        unite(col = "lm", est.lm:upr.lm, sep = "_") %>%
+        unite(col = "rlm", est.rlm:upr.rlm, sep = "_") %>%
+        dplyr::select(variable, lm, rlm) %>%
+        
+        
+        pivot_longer(names_to = "method", 
+                     values_to = "est", 
+                     cols = lm:rlm) %>%
+        
+        separate(est, into = c("est", "lwr", "upr"), sep = "_", convert = TRUE) %>%
+        mutate(outcome = "strength")) %>%
+    
+    mutate(sig = if_else(est > 0 & lwr > 0 | est < 0 & upr < 0, "sig", "ns")) %>%
+    
+    ggplot(aes(variable, est, group = method, alpha = sig, fill = method)) + 
+    
+    geom_hline(yintercept = 0) +
+    
+    scale_alpha_manual(values = c(0.4, 1)) + 
+    scale_fill_manual(values = c(group.study.color[1], group.study.color[5])) +
+    
+    geom_errorbar(aes(ymin = lwr, ymax = upr), width = 0, 
+                  position = position_dodge(width = 0.2)) + 
+    geom_point(position = position_dodge(width = 0.2), 
+               shape = 21) +
+
+    coord_flip() + 
+    
+    dissertation_theme() + 
+    facet_grid(. ~  outcome)
+    
+    
+
+m <- rlm(diff ~ scale(cortisol.ba), data = csa_full, psi = psi.huber )
+
+summary(m)
+
+
+car::outlierTest(m)
+str_full 
+
+
+car::vif(m)
+
+str_full %>%
+  #  filter(cortisol.ba) %>%
+    ggplot(aes(cortisol.ba, diff)) + geom_point() +
+    geom_smooth(method = "lm")
+    
+    
+    
+
+m <- rlm(diff ~ scale(rna_w2pre), data = csa_full)
+
+
+
+summary(m)
+
 
 
 
