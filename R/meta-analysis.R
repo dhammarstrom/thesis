@@ -123,7 +123,11 @@ es %>%
         dplyr::select(study, group, r, es,es.ub, vd, vd2, se)
 
 es %>%
-        ggplot(aes(r, vd2, color = study)) + geom_point()
+        ggplot(aes(weekly_sets, es.ub, color = training_status)) + 
+        geom_point() + 
+        theme(legend.position = "none") + 
+        geom_smooth(method = "lm") + 
+        facet_grid(training_status ~ muscle_size)
 
 
 ### brms model 1 ##################
@@ -158,9 +162,9 @@ m2 <-  brm(data = es[es$muscle_size == "TRUE",],
            control = list(adapt_delta = 0.95),
            seed = 14)
 
-saveRDS(m2, "./data/derivedData/brms_models/muscle_size_full_data_m2.RDS")
-m2 <- readRDS("./data/derivedData/brms_models/muscle_size_full_data_m2.RDS")
-
+saveRDS(m2, "./data/meta-volume/models/muscle_size_full_data_m2.RDS")
+m2 <- readRDS("./data/meta-volume/models/muscle_size_full_data_m2.RDS")
+pp_check(m2)
 summary(m2)
 
 ## Reduce the model keeping body half ############
