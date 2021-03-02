@@ -492,10 +492,6 @@ abc <- plot_grid(
 saveRDS(abc, "./data/derivedData/study1-transcriptome/muscle-weight-lib-size.RDS")
 
 
-
-#### Volcano plots 
-
-
 #### Volcano plots #################
 
 # Read DE data 
@@ -504,6 +500,32 @@ mm2_2 <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_results
 
 
 mm2_1 <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_results1.RDS")
+
+### Calculate number of genes diff expressed between time points
+# In tissue offset model
+
+
+tissue_offset_ngenes <- mm2_2 %>%
+        filter(model == "tissue_offset_lib_size_normalized", 
+               coef %in% c("timew2pre", "timew12")) %>%
+        group_by(coef) %>%
+        mutate(adj.p = p.adjust(p.val, method = "fdr"), 
+               pthreshold = if_else(adj.p > 0.05, "ns", "s"), 
+               log2fc = estimate/log(2), 
+               fcthreshold = if_else(abs(log2fc) > 0.5, "s", "ns"), 
+               sig = if_else(fcthreshold == "s" & pthreshold == "s", "s", "ns"), 
+               regulation = if_else(sig == "s" & log2fc > 0.5, "up", 
+                                    if_else(sig == "s" & log2fc < -0.5, "down", "ns")), 
+               regulation = factor(regulation, levels = c("ns", "up", "down")))  %>%
+        group_by(coef, regulation) %>%
+        summarise(n = n()) %>%
+        group_by(coef) %>%
+        mutate(percent = n / sum(n)) %>%
+        print()
+
+
+saveRDS(tissue_offset_ngenes, "./data/derivedData/study1-transcriptome/n_genes_regulated_time.RDS")
+
 
 ### Sets comparisons #####
 
@@ -528,6 +550,12 @@ volcano_data <- mm2_1 %>%
                regulation = if_else(sig == "s" & log2fc > 0.5, "up", 
                                     if_else(sig == "s" & log2fc < -0.5, "down", "ns")), 
                regulation = factor(regulation, levels = c("ns", "up", "down"))) 
+
+
+
+
+
+
 
 
 

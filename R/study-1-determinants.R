@@ -746,6 +746,11 @@ rna.avg.diff <- total.rna %>%
     print()
     
 
+########## Is there a correlation between absolute RNA and difference between legs ? #############
+# Possibly use this in further exploratory analyses ##############################################
+
+
+
 
 ### Regression coefficients
 naive.lm <- lm(diff ~ avg.rna, data = rna.avg.diff)
@@ -844,9 +849,8 @@ saveRDS(total_rna_diff , "./data/derivedData/study-1-determinants/total_rna_diff
 
 
 
-#### Modeling benefit as continuous variable
-
-
+#### Modeling benefit as continuous variable #########################
+######################################################################
 
 
 
@@ -876,9 +880,17 @@ ungroup() %>%
         gh.tr = gh.tr - mean(gh.tr)) %>%
 
     dplyr::select(diff,sex, rna_w2pre:type1) %>%
+  data.frame()
 
-    data.frame()
-colnames(str_full)
+temp <- benefit_csa_complete_cont %>%
+  inner_join(benefit[,c(1,5)]) %>%
+  
+  
+  print()
+
+
+
+
 
 
 
@@ -996,7 +1008,7 @@ for(i in 1:length(variables)) {
 
 
 
-rbind(results %>%
+continous_determinants <- rbind(results %>%
     unite(col = "lm", est.lm:upr.lm, sep = "_") %>%
     unite(col = "rlm", est.rlm:upr.rlm, sep = "_") %>%
     dplyr::select(variable, lm, rlm) %>%
@@ -1026,7 +1038,9 @@ rbind(results %>%
   
    inner_join(variables_descriptive ) %>% # See above for definitions, same in all figures now
        mutate(sig = if_else(est > 0 & lwr > 0 | est < 0 & upr < 0, "sig", "ns"), 
-              Variable = fct_reorder(Variable, est)) %>%
+              Variable = fct_reorder(Variable, est), 
+              outcome = factor(outcome, levels = c("csa", "strength"), 
+                               labels = c("CSA", "Strength"))) %>%
   
   filter(method == "rlm") %>%
   
@@ -1041,6 +1055,7 @@ rbind(results %>%
                   position = position_dodge(width = 0.2)) + 
     geom_point(position = position_dodge(width = 0.2), 
                shape = 21, 
+               size = 2.5,
                fill = group.study.color[5]) +
     
  
@@ -1052,7 +1067,9 @@ rbind(results %>%
   theme(axis.text.x = element_markdown(),
         axis.text.y = element_markdown(), 
         axis.title.y = element_blank(), 
-        legend.position  = "none") +
+        legend.position  = "none", 
+        strip.text = element_text(size = 8, hjust = 0), 
+        strip.background = element_blank()) +
   
   
     facet_grid(. ~  outcome)
@@ -1061,13 +1078,90 @@ rbind(results %>%
 
 
 
+csa_diff_rna_fig <- csa_full %>%
+    ggplot(aes(rna_w2pre, diff)) + 
+  geom_smooth(method = "rlm", 
+              color = group.study.color[2], 
+              fill = "gray80") +
+  geom_point(shape = 21, 
+             fill = group.study.color[2], 
+             size = 2.5) +
+  dissertation_theme() + 
+  
+  scale_y_continuous(limits = c(-3.5, 9), 
+                     breaks = c(-3, 0, 3, 6, 9), 
+                     expand = c(0,0)) +
+  
+  scale_x_continuous(limits = c(-20, 90), 
+                     breaks = c(-20, 0, 20, 40, 60, 80), 
+                     expand = c(0,0)) +
+  
+  
+  labs(x = "Total RNA Week 2<br>(% of low-volume)", 
+       y = "Moderate vs. Low-volume<br>difference in CSA (%-points)") +
+  
+  theme(axis.text.x = element_markdown(),
+        axis.text.y = element_markdown(), 
+        axis.title.y = element_markdown(), 
+        axis.title.x = element_markdown(), 
+        legend.position  = "none") 
 
-csa_full %>%
-    ggplot(aes(rna_w2pre, diff)) + geom_point()
+
+str_diff_rna_fig <- str_full %>%
+  ggplot(aes(rna_w2pre, diff)) + 
+  geom_smooth(method = "rlm", 
+              color = group.study.color[2]) +
+  geom_point(shape = 21, 
+             fill = group.study.color[2], 
+             size = 2.5) +
+  dissertation_theme() + 
+  
+  scale_y_continuous(limits = c(-20, 40), 
+                     breaks = c(-20, 0, 20, 40), 
+                     expand = c(0,0)) +
+  
+  scale_x_continuous(limits = c(-20, 90), 
+                     breaks = c(-20, 0, 20, 40, 60, 80), 
+                     expand = c(0,0)) +
+  
+  
+  labs(x = "Total RNA Week 2<br>(% of low-volume)", 
+       y = "Moderate vs. Low-volume<br>difference in CSA (%-points)") +
+  
+  theme(axis.text.x = element_markdown(),
+        axis.text.y = element_markdown(), 
+        axis.title.y = element_markdown(), 
+        axis.title.x = element_markdown(), 
+        legend.position  = "none") 
 
 
-str_full %>%
-   ggplot(aes(rna_w2pre, diff)) + geom_point()
+
+############# save plots
+ 
+continous_determinants_plots <- list(determinants_overview = continous_determinants, 
+                                     csa_scatter = csa_diff_rna_fig, 
+                                     str_scatter = str_diff_rna_fig)
+
+
+saveRDS(continous_determinants_plots , "./data/derivedData/study-1-determinants/continous_determinants.RDS")
+
+
+############ Lean mass analysis ##############
+
+
+
+temp %>%
+  ggplot(aes(as.factor(benefit), lean.mass)) + geom_boxplot() + 
+  facet_wrap(~ sex)
+
+
+m <- lm(lean.mass ~ as.factor(benefit) + sex, data = temp)
+
+lean.mass.regression.table <- cbind(coef(summary(m)), data.frame(confint(m)))
+
+
+saveRDS(lean.mass.regression.table , "./data/derivedData/study-1-determinants/lean_mass_reg_table.RDS")
+
 
 
 
