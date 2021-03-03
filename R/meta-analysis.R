@@ -47,6 +47,7 @@ rstan_options(auto_write = TRUE)
 dat <- read_excel("./data/meta-volume/raw-data.xlsx")
 
 
+
 # Calculate effect sizes
 es <- dat %>%
         # calculate pre sd and post m in Wittke 2017
@@ -113,8 +114,16 @@ es <- dat %>%
                vd = vd * j^2,
                se = sqrt(vd2),
                
-               HI_LO = factor(HI_LO, levels = c("LO", "HI"))) %>%
+               HI_LO = factor(HI_LO, levels = c("LO", "HI")), 
+               muscle_size = if_else(muscle_size == TRUE, "muscle_size", "muscle_strength")) %>%
         print()
+
+
+
+
+### Descriptive statistics
+
+
 
 
 
@@ -133,7 +142,7 @@ es %>%
 ### brms model 1 ##################
 
 
-m1 <- brm(data = es[es$muscle_size == "TRUE",], 
+m1 <- brm(data = es[es$muscle_size == "muscle_size",], 
           family = gaussian,
           es.ub | se(se) ~ weekly_sets + (weekly_sets||study),
           prior = c(prior(normal(0, 1), class = Intercept),
@@ -180,16 +189,16 @@ m3 <-  brm(data = es[es$muscle_size == "TRUE",],
            control = list(adapt_delta = 0.9),
            seed = 14)
 
-saveRDS(m3, "./data/derivedData/brms_models/muscle_size_full_data_m3.RDS")
-m3 <- readRDS("./data/derivedData/brms_models/muscle_size_full_data_m3.RDS")
-
+saveRDS(m3, "./data/meta-volume/models/muscle_size_full_data_m3.RDS")
+m3 <- readRDS("./data/meta-volume/models/muscle_size_full_data_m3.RDS")
+pp_check(m3)
 summary(m3)
 
 ##### Strength models #############
 # Start with a weekly_sets only model
 
 
-s1 <- brm(data = es[es$muscle_size == "FALSE",], 
+s1 <- brm(data = es[es$muscle_size == "muscle_strength",], 
           family = gaussian,
           es.ub | se(se) ~ weekly_sets + (weekly_sets||study),
           prior = c(prior(normal(0, 1), class = Intercept),
@@ -215,12 +224,30 @@ s2 <-  brm(data = es[es$muscle_size == "FALSE",],
            control = list(adapt_delta = 0.9),
            seed = 14)
 
-saveRDS(s2, "./data/derivedData/brms_models/strength_full_data_s2.RDS")
-s2 <- readRDS("./data/derivedData/brms_models/strength_full_data_s2.RDS")
-
+saveRDS(s2, "./data/meta-volume/models/strength_full_data_s2.RDS")
+s2 <- readRDS("./data/meta-volume/models/strength_full_data_s2.RDS")
+pp_check(s2)
 summary(s2)
 
 
+
+### Combined models effect of strength vs muscle_size measure and weekly sets
+
+
+c1 <-  brm(data = es, 
+           family = gaussian,
+           es.ub | se(se) ~ weekly_sets + muscle_size + muscle_size:weekly_sets +
+                   (weekly_sets * muscle_size||study),
+           prior = c(prior(normal(0, 1), class = Intercept),
+                     prior(cauchy(0, 1), class = sd)),
+           iter = 8000, warmup = 2000, cores = 4, chains = 4,
+           control = list(adapt_delta = 0.9),
+           seed = 14)
+
+saveRDS(c1, "./data/meta-volume/models/combined_full_data_c1.RDS")
+c1 <- readRDS("./data/meta-volume/models/combined_full_data_c1.RDS")
+pp_check(c1)
+summary(c1)
 
 
 
@@ -239,8 +266,8 @@ summary(s2)
 
 
 es %>%
-        filter(study == "Rønnestad2007") %>%
-        dplyr::select(study, es, es.ub, vd) %>%
+       group_by(training_status, age_cat, body_half) %>%
+        summarise(n = n())
         print()
 
 

@@ -526,6 +526,32 @@ tissue_offset_ngenes <- mm2_2 %>%
 
 saveRDS(tissue_offset_ngenes, "./data/derivedData/study1-transcriptome/n_genes_regulated_time.RDS")
 
+##### Acute data 
+
+
+acute_time <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_acutemodel_timeonly.RDS")
+acute_interaction <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_acutemodel.RDS")
+
+acute_time_ngenes <- acute_time %>%
+        filter( coef %in% c("timew2post")) %>%
+        group_by(coef) %>%
+        mutate(adj.p = p.adjust(p.val, method = "fdr"), 
+               pthreshold = if_else(adj.p > 0.05, "ns", "s"), 
+               log2fc = estimate/log(2), 
+               fcthreshold = if_else(abs(log2fc) > 0.5, "s", "ns"), 
+               sig = if_else(fcthreshold == "s" & pthreshold == "s", "s", "ns"), 
+               regulation = if_else(sig == "s" & log2fc > 0.5, "up", 
+                                    if_else(sig == "s" & log2fc < -0.5, "down", "ns")), 
+               regulation = factor(regulation, levels = c("ns", "up", "down")))  %>%
+        group_by(coef, regulation) %>%
+        summarise(n = n()) %>%
+        group_by(coef) %>%
+        mutate(percent = n / sum(n)) %>%
+        print()
+
+
+saveRDS(acute_time_ngenes, "./data/derivedData/study1-transcriptome/n_genes_regulated_time_acute.RDS")
+
 
 ### Sets comparisons #####
 
