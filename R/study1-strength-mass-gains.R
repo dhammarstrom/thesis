@@ -261,7 +261,7 @@ muscle_strength_fig <- comd.df %>%
 
 
 
-############# Meta analysis figures 
+############# Meta analysis figures ############################
 
 
 library(tidybayes)
@@ -303,15 +303,17 @@ mods1 <- rbind(s1 %>%
 s_fx <- s1 %>%
         spread_draws(b_weekly_sets) %>%
         mutate(mu = b_weekly_sets, 
-               Study = "Summary") %>%
-        dplyr::select(mu, Study) %>%
+               Study = "Summary", 
+               type = "strength") %>%
+                dplyr::select(mu, Study, type) %>%
         print()
 
 m_fx <- m1 %>%
         spread_draws(b_weekly_sets) %>%
         mutate(mu = b_weekly_sets, 
-               Study = "Summary") %>%
-        dplyr::select(mu, Study) %>%
+               Study = "Summary", 
+               type = "mass") %>%
+        dplyr::select(mu, Study, type) %>%
         print()
 
 
@@ -327,6 +329,42 @@ summary_table <- bind_rows(s_fx %>%
         
 
 saveRDS(summary_table, "./data/derivedData/meta/naive_models.RDS")
+
+
+
+
+meta_fig <- mods1 %>%
+        dplyr::select(mu, Study, type) %>%
+        rbind(m_fx, s_fx) %>%
+        
+        
+        mutate(Study = reorder(Study, mu, .fun = 'mean'), 
+               Study = fct_relevel(Study, "Summary"), 
+               type = factor(type, levels = c("mass", "strength"), 
+                             labels = c("Muscle mass", 
+                             "Muscle strength"))) %>%
+        
+        ggplot(aes(x = mu, y = Study)) +
+        
+        geom_vline(xintercept = 0, lty = 2, color = "gray50") +
+        
+        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[4]) +
+        labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
+             y = NULL) +
+        
+        dissertation_theme() +
+        
+        theme(panel.grid   = element_blank(),
+              panel.background = element_rect(fill = "gray98",
+                                              colour = "gray98"),
+              
+              axis.title.x = element_markdown(size = 7),
+              axis.ticks.y = element_blank(),
+              axis.text.y  = element_text(hjust = 0), 
+              strip.text = element_text(size = 8, hjust = 0),
+              strip.background = element_blank()) +
+        facet_grid(. ~ type)
+
 
 
 mass_fig_1 <- mods1 %>%
@@ -395,13 +433,13 @@ strength_fig_1 <- mods1 %>%
 
 muscle_strength_fig_comb  <- plot_grid(muscle_strength_fig, 
                                        NULL,
-          plot_grid(mass_fig_1, strength_fig_1, ncol = 2), 
+                                       meta_fig, 
           ncol = 1, 
           rel_heights = c(0.4,0.02, 0.6)) + 
        
-        draw_plot_label(label=c("a", "b", "c"),
-                        x = c(0.02, 0.02, 0.5), 
-                        y = c(0.99, 0.59, 0.59),
+        draw_plot_label(label=c("a", "b"),
+                        x = c(0.02, 0.02), 
+                        y = c(0.99, 0.59),
                         hjust=.5, vjust=.5, size = 12)
 
 

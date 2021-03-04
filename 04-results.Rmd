@@ -465,11 +465,11 @@ summary_table_meta <- summary_table_meta %>%
 Since publication of the most recent meta-analyses [@RN1767;@RN2492],<!-- Schenfeld  2016 / Ralston 2107 --> 
 additional studies have been published investigating the effect of resistance training volume on muscle mass and strength. Based on studies included in the meta-analysis performed by Schoenfeld *et al.* [@RN1767], additional results were coded based on a systematic literature search among newly published studies (from January 2015 to June 2020). Compared to Schoenfeld *et al.* [@RN1767], an additional ten studies were included in the present analysis.
 Subsequently, effect sizes were coded from 25 studies, both for muscle mass and strength and meta-regression models were used to investigate the effect of weekly number of sets on training-induced changes in these outcomes.
-In "naive" models, with the weekly number of sets as the only explanatory variable, both muscle mass and strength were shown to be robustly affected by an increased training volume.
+Both muscle mass and strength were shown to be robustly affected by an increased training volume measured as weekly number of sets (after controlling for potential confounding factors^[Models were controlled for age (young, middle age or old), sex (male, female or mixed), length of study (number of weeks), type of measurement (direct or indirect for muscle mass and training-specific or unspecific in strength), training status (trained > 1 year experience with resistance training), body portion (upper, lower or whole)]).
 For every additional weekly set, the effect size measure (Hedges' *g*, [95% credible intervals] (CrI)), increased by
 `r summary_table_meta[1, 5]` and `r summary_table_meta[2, 5]`
-for muscle mass (Figure \@ref(fig:comb-fig-s1)b)
-and strength (Figure \@ref(fig:comb-fig-s1)c),
+for muscle mass)
+and strength (Figure \@ref(fig:comb-fig-s1)b),
 respectively.
 Together these data underlines the training volume dose-dependence of both muscle hypertrophy and strength gains.
 
@@ -1117,12 +1117,128 @@ This likely relates to the fact that traits such as fiber type, or body composit
 @RN2798]
 in addition to influenced by any history of physical activity.
 
-### Determinanats from meta analysis
+### Predictors of additional benefit of added training volume: Meta-analysis
+
+```{r meta-hypoteses, echo = FALSE, message=FALSE, warning=FALSE}
+
+meta_hypotheses <- readRDS("./data/meta-volume/models/meta_hypotheses.RDS")
+
+upper_body_strength <- paste0(round(meta_hypotheses$strength_upper_body_weeklysets$hypothesis[1,2], 3), 
+                    " [", 
+                    round(meta_hypotheses$strength_upper_body_weeklysets$hypothesis[1,4], 3), 
+                    ", ", 
+                    round(meta_hypotheses$strength_upper_body_weeklysets$hypothesis[1,5], 3), 
+                    "]")
+
+upper_body_mass <- paste0(round(meta_hypotheses$muscle_upper_body_weeklysets$hypothesis[1,2], 3), 
+                    " [", 
+                    round(meta_hypotheses$muscle_upper_body_weeklysets$hypothesis[1,4], 3), 
+                    ", ", 
+                    round(meta_hypotheses$muscle_upper_body_weeklysets$hypothesis[1,5], 3), 
+                    "]")
+
+unspecific_strength <- paste0("95% CrI: [", 
+                    round(meta_hypotheses$strength_unspecific$hypothesis[1,4], 3), 
+                    ", ", 
+                    round(meta_hypotheses$strength_unspecific$hypothesis[1,5], 3), "]")
+
+```
 
 
-## Characteristics of training-induced ribosome biogenesis
+To further explore potential factors associated with benefit of added training volume, interactions between study parameters and weekly number of sets were estimated from meta-regression models (previously reported without interactions in Figure \@ref(fig:comb-fig-s1)). 
 
-<!-- re-write -->
+Weekly number of sets did not interact with age, training status or sex for either muscle mass or strength (interaction estimates are shown in Table \@ref(tab:meta-interaction-table)), indicating that the literature currently gives little support for such demographic variables to guide prescription regarding training volume.  
+
+In contrast to what has been previously reported
+[@RN1767],<!-- Schoenfeld meta -->
+the present analysis did not indicate any robust differences between unspecific (e.g. DXA) or specific (e.g. MRI or muscle thickness measured with ultrasound) measures of muscle mass.
+However, specific assessment of muscle strength, e.g. measures of one repetition maximum in exercises used in the training program consistently showed larger positive effects of additional volume (Table \@ref(tab:meta-interaction-table)).
+Unspecific assessments of muscle strength were shown not to reflect additional training volume (effect size change per one weekly additional set `r unspecific_strength`). This may indicate that specific motor learning is a factor influenced by training volume.
+
+A consistent finding between measures of muscle mass and strength was the negative effect seen in upper- compared to the lower-body measures.
+These results suggests that adding a weekly set to upper-body programs will not robustly lead to an increased effect in strength measures (upper-body effect size change for every additional weekly set `r upper_body_strength`).
+The effect of an additional weekly set in the upper-body for measures of muscle mass was still positive (`r  upper_body_mass`) albeit lower when compared to the effect seen in the lower body (Table \@ref(tab:meta-interaction-table)).
+Together this indicate that muscles more active in every day activities will benefit to a greater extent by additional training volume, compared to upper-body muscles.
+Studies examining volume-dependence in molecular determinants to resistance-training adaptations between different muscle groups are limited.
+However, Hanssen *et al.* found different satellite cell activation between volume-conditions in *m. vastus lateralis* but not in *m. trapezius*, coinciding with volume-dependence in outcomes in lower- but not upper-body muscles
+[@RN796;
+@RN776].
+Whether satellite cells *per se* were responsible for this effect or if it represents a general inability of upper-body muscles to differentiate between two relatively strong stimuli remains to be explored.
+
+The length of study interacted differently in muscle mass and strength models were longer training periods seemed to reduce the positive effect of added training volume on muscle mass, albeit likely to negligible degree. However strength outcomes were positively influenced by the length of the training period (Table \@ref(tab:meta-interaction-table)). This may be an effect of different time courses in muscle mass and strength measures in response to resistance training.
+
+
+
+
+
+```{r meta-interaction-table, message=FALSE, warning=FALSE, echo=FALSE}
+
+library(kableExtra)
+
+## Load data from meta_analysis.R
+summary_table_interactions <- readRDS("./data/meta-volume/models/summary_table_interactions.RDS")
+
+
+
+summary_table_interactions %>%
+  cbind(data.frame(Variable = c("30-50 vs. 18-20 years", 
+                                "50- vs. 18-20 years", 
+                                "Mixed ages vs. 18-20 years", 
+                                "Trained (> 1 year RT) vs. untrained", 
+                                "Female vs. male", 
+                                "Mixed sex vs. male", 
+                                "Upper-body vs. lower-body", 
+                                "Whole-body vs. lower-body", 
+                                "Unspecific vs. Specific estimation", 
+                                "Weeks")), .) %>%
+  mutate(m.est = as.character(m.est),
+         s.est = as.character(s.est),
+         m.ci = paste0("[", 
+                       m.lwr, 
+                       ", ", 
+                       m.upr, 
+                       "]"), 
+         s.ci = paste0("[", 
+                       s.lwr, 
+                       ", ", 
+                       s.upr, 
+                       "]") , 
+         s.est = if_else(Variable == "Whole-body vs. lower-body", 
+                                 "", s.est), 
+         s.ci = if_else(Variable == "Whole-body vs. lower-body", 
+                                 "", s.ci)) %>%
+  
+  
+  dplyr::select(Variable, m.est, m.ci, s.est, s.ci) %>%
+
+  kable(col.names = c("Interacting variable", 
+                      "Estimate", 
+                      "95% CrI", 
+                      "Estimate", 
+                      "95% CrI"),
+        escape = TRUE,
+        booktabs = TRUE, 
+        caption = "Interaction between study parameter and weekly number of sets from meta-analyses on muscle mass and strength")  %>%
+  kable_styling(font_size = 7) %>%
+  add_header_above(c(" " = 1, 
+                     "Muscle mass" = 2, 
+                     "Muscle strength" = 2)) %>%
+  pack_rows("Age", 1, 3) %>%
+  pack_rows("Training status", 4, 4) %>%
+  pack_rows("Sex", 5, 6)  %>%
+  pack_rows("Body portion", 7, 8) %>%
+  pack_rows("Measurement technique", 9, 9) %>%
+  pack_rows("Length of study", 10, 10)
+  
+
+
+```
+
+
+
+
+## Characteristics of early-phase training-induced ribosome biogenesis
+
 
 
 Total RNA seems to be a valid proxy marker of ribosomal density, as most of the RNA is assumed to be ribosomal RNA

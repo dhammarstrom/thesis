@@ -15,10 +15,9 @@ source("./R/themes.R")
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-## Study overview and participants
+## Study overview
 
-Study I was designed to examine effects of low- (single-set per exercise) and moderate-volume (three sets per exercise, multiple-sets) on
-responses to acute exercise and long-term training within participants.
+Study I was designed to examine effects of low- (a single-set per exercise) and moderate-volume (three sets per exercise) on responses to acute exercise and long-term training within participants.
 A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
 Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).
 Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session as well as after the intervention (Figure \@ref(fig:study1-overview)).
@@ -26,14 +25,13 @@ Assessments of muscle strength (unilateral isokinetic and isometric knee extensi
 Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
 
 Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
-Participants were therefore recruited to an experimental group (*n =* 11) and a non-training control group (*n =* 8).
+Participants were therefore recruited to an experimental group and a non-training control group.
 An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
 Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
 Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
 Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
 The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
 Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
-
 
 ```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.  ", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
 
@@ -410,16 +408,17 @@ es.min <- round(min(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d
 es.max <- round(max(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d.mitchell.csa)),2)
 ```
 
+## Participants
+
 Recruitment to both studies was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study prior to giving their informed consent.
 
 To be eligible for participation in both studies, participants had to be young (Study I age 18-40; Study II 18-35) and non-smoking. Both men and women were considered for participation. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medications or supplements with known effects on adaptations to training.
 Participant characteristics for both studies are shown in Table
 \@ref(tab:characteristics-table).
 
-Forty-one healthy individuals were recruited and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5) and non-adherence to the study protocol. There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I.
+Forty-one participants were recruited to Study I and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5) and non-adherence to the study protocol (*n =* 1). There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I. Prior to the study, all participants reported that they had previously been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week. 
 
-Prior to the study, all participants reported that they previously had been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week.  
-
+Twenty-two participants were recruited to Study II. Three participants did not complete the intervention due to scheduling difficulties. Participants reported familiarity with physical activity but no current systematic strength training.
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -540,7 +539,10 @@ rbind(studyI, studyII) %>%
         
         group_by(study, group, sex, variable) %>%
         summarise(m = mean(values), 
-                  sd = sd(values)) %>% 
+                  sd = sd(values), 
+                  n = n()) %>% 
+  
+
         ungroup() %>%
         mutate(m.sd = if_else(variable == "age", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
                               if_else(variable == "bmi", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
@@ -550,27 +552,35 @@ rbind(studyI, studyII) %>%
                                                               paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")")))))),
                group = factor(group, levels = c("Included", "Excluded", "experiment", "control"), 
                               labels = c("Included", "Excluded", "Training", "Control"))) %>%
-        dplyr::select(study:variable, m.sd) %>%
+        dplyr::select(study:variable, m.sd, n) %>%
         pivot_wider(names_from = variable, values_from = m.sd) %>%
         arrange(study, group) %>%
-        dplyr::select(study, group, sex, age, height, weight, rel_fat, rel_lean) %>%
+        dplyr::select(study, group, sex, n, age, height, weight, rel_fat, rel_lean) %>%
 
   kable(format = "latex", 
         booktabs = TRUE, 
         caption = "Participant characteristics", 
         escape = FALSE, 
-        col.names = c(" ", " ", "Sex", "Age (years)", "Stature\n(cm)", "Mass (kg)", "Fat mass (\\%)", "Lean mass (\\%)")) %>%
+        col.names = c(" ", " ", "Sex", "n", "Age (years)", "Stature\n(cm)", "Mass (kg)", "Fat mass (\\%)", "Lean mass (\\%)")) %>%
         
         kable_styling(font_size = 7) %>%
         collapse_rows(1:2) %>%
 
   footnote(general = "Data are means and (SD)",
            general_title = "", 
-           footnote_as_chunk = TRUE)
+           footnote_as_chunk = TRUE) %>%
+  landscape()
+  
 
 
 ```
 
+
+### Ethical approvals
+
+Both studies were conducted according to the Declaration of Helsinki
+[@RN1590].
+Studies were approved by the local ethics committee (Study I, no. 2013-11-22:2; Study II, no. 2017-10-23), the Norwegian centre for research data (Study I, 36930/3/LB; Study II, 51549/3/AH) and pre-registered (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, DOI 10.17605/OSF.IO/WA96Y). 
 
 
 ## Resistance training interventions
@@ -588,16 +598,19 @@ one set of 10 repetitions were performed in the specific exercise with
 approximately 50% of 1RM.
 
 In Study I, the low-volume protocol consisted of a single set of each
-exercise and the moderate-volume consisted of three sets per exercise.
+exercise and the moderate-volume program consisted of three sets per exercise.
 Three unilateral leg exercises were used (leg press, leg curl and knee
-extension). The moderate volume-leg commenced all sessions and the low
-volume-leg performed a single set of each exercise in the rest between
+extension). The moderate-volume leg commenced all sessions and the low-volume leg performed a single set of each exercise in the rest between
 second and third set of the moderate volume training protocol.
 
 In Study II, only unilateral knee-extension was performed. The constant-volume leg performed six sets of 10RM throughout the study and variable leg performed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelve with same relative intensity (see Figure \@ref(fig:study2-overview)).
 
+In both studies, participants perfomed leg-exercise as part of a full-body program with upper-body exercise performed with two sets after leg-exercises. Upper-body exercises included bilateral bench-press, pull-down, and either shoulder-press or seated rowing.
 
 ## Muscle strength assessments
+Strength was assessed as one repetition maximum (Study I), isometric and isokinetic torque (Study I and II). In Study I, maximal values from each assessment and time-point were used in statistical analyses including two separate assessments at baseline, separated by at least four days. A combined muscle strength index was calculated as the average of all tests (1RM, isometric and isokinetic), with all test types given equal weight (expressed as $\frac{x_i}{max(x)}$ where x is a strength measure for each leg and time-point ($i$)). Eighteen participants performed strength assessments at week two, five and nine in addition to baseline and post-training assessments. Training sessions were prioritized for the remaining participants when illness or scheduling difficulties prevented both strength assessment and training. 
+
+In Study II, the maximal value from all successful attempts were used in statistical analyses with unsuccessful attempts identified based on obvious misinterpretation of instructions or failure to reach maximal subjective effort. Strength assessments were separated by at least 48 hours from preceding training sessions. 
 
 ### Isokinetic and isometric maximal torque
 Maximal isokinetic and isometric unilateral knee-extension strength was determined by use of a dynamometer (Study I: Cybex 6000, Cybex International, Medway USA; Study II: Humac Norm, CSMi, Stoughton, MA, USA).
@@ -619,20 +632,6 @@ In Study II, the dynamometer allowed for participants to remain seated for asses
 One repetition-maximum (1RM) was assessed in unilateral leg-press and knee-extension in Study I.
 Each exercise was assessed after a specific warm-up (ten, six and three repetitions at $50$, 75 and $85\%$ of the anticipated maximum). Attempts were made with increasing resistance (four to six attempts) and one repetition maximum was defined as the highest resistance successfully lifted through the full range of motion.
 
-### Strength assessment frequency (and statistics)
-
-In Study I, maximal values from each assessment and time-point was used in statistical analyses including two separate assessments at baseline, separated by at least four days. Strength was determined 
-
-
-In Study II, the maximal value from all successful attempts were used in statistical analyses with unsuccessful attempts identified based on obvious misinterpretation of instructions or failure to reach maximal subjective effort.  
-Strength assessments were separated by at least 48 hours from preceding training sessions. 
-
-At baseline, 1RM, isokinetic and isometric strength assessments were performed twice, separated by at least four days. The maximum value achieved for each of the tests was used in subsequent analysis. Strength tests were separated by at least 48 hours from preceeding training sessions. A combined measure of muscle strength was calculated as the average of all tests (1RM, isometric and isokinetic), wherein each test modality was given equal weight. A subset of the participants (n=18) performed strength assessment during the course of the study (at week two, five and nine). For the remaining participants, ordinary training sessions were prioritised when participants missed training or testing due to illness or scheduling difficulties. 
-
-<!-- From TR010 -->
-
-Muscle strength was assessed as maximal voluntary isokinetic (90&deg; sec<sup>-1</sup>) and isometric (60&deg; angle, fully extended leg 0&deg;) knee extension torque. After a brief warm-up (5-min cycling, RPE 12-14), participants were seated and secured in the individually adjusted dynamometer. Participants were instructed to gradually increase their effort during three warm-up repetitions (50, 60 and, 70% of subjective maximal effort). After a 30-sec restitution period participants were instructed to perform three repetitions with maximal effort in the concentric phase. Sixty seconds after the isokinetic test the lever automatically moved to a 60&deg; angle and participants were instructed to push against the lever enough to see feedback from the visual feedback system. After an additional 15-sec restitution period, participants were instructed to push against the lever with maximal effort. Within the same assessment session, participants remained seated in the dynamometer for measurement perfomed on both legs. The first measurement was alternated between legs every other session. For statistical treatment of the data, all successful attempts were used. The last strength assessment at baseline was performed at least seven days prior to the first biopsy sampling. At least one of the baseline strength tests was performed on separate day with two sessions allowed to be perform on the same day with a short rest between assessments. Post training assessments were performed 48 hours and eight days after the last session.
-
 
 ## Measures of muscle mass
 
@@ -651,24 +650,8 @@ investigator blinded for time (pre- and post-training) and condition
 cross-sectional area of the extensor muscles at the same distance from
 the knee-joint.
 
-See figure <!-- @ref(fig:body-comp-measures)-->
-
-<!--Dallin et al. recently estimated the [@RN2541]
-     MRI has shown better agreement with cadaver... see ref in Dallin 
-
-    ## Muscle strength assessments
-
-    Muscle strength was with  -->
-
-In Study II, m. vastus lateralis muscle thickness was measured by B-mode ultrasonography (SmartUs EXT-1M, Telemed, Vilnius, Lithuania) using a 39 mm 12 MHz, linear array probe. At least three images were captured for each leg per time-point. Between each image acquisition the probe was relocated to the same position where on the skin and subsequently marked on a soft transparent plastic sheet superimposed on the thigh.  
-
-Muscle thickness of m. vastus lateralis and m. rectus femoris were measured using  Transverse images were obtained $\sim$ 60 % distally from the trochanter major towards the femoral lateral epicondyle. Landmarks such as moles and scars were also marked on the plastic sheet for relocation of the scanned areas during post-training measurements. During analysis, pre and post images from the same participant were analyzed consecutively using the Fiji software,66 and by two independent researchers. The average muscle thickness of the three images captured per muscle was used for further analyses.
-
-<!-- From tr010 -->
-For determination of body composition participants were scanned using DXA (Lunar Prodigy densitometer, GE Healthcare, Madison, WI, USA) with the standard scanning mode (13-25 cm). Participants were lying supine within the scanning bed reference lines, with a strap secured around the ankles to ensure a standardized body position in each scan. The scans were conducted with participants in a fasted state between 07.00-10.00 AM, with empty bladder and wearing only under-wear. Prior to each scan, a phantom scan was run to prevent baseline drifting from affecting analyses. The same technician was used at each time point. Analyses was performed using GE enCORE version 17.0 software (GE Healthcare). Region of interest was customized for covering upper thigh, marked with a sqaure from pubic symphysis to lateral part of tuberculum major, and distal to art. genu.
-
-Muscle thickness (MT) was measured using a B-mode ultra sound unit (SmartUS EXT-1M, Telemed, Vilnius, Lithuania). Participants lay supine in a relaxed position for 20 min before assessments, with their feet strapped in a standardized position. A mark was set on the line 60% of the distance between Spinia Iliac Anterior Superior and the lateral femur condyle. MT of *m.vastus lateralis* was measured applying a water-soluble transmission gel (Aquasonic 100 Ultrasound Transmission Gel; Parker Laboratories Inc., Fairfield, NJ, USA), and a 39 mm 12 MHz ultrasound probe was placed perpendicular to the site of interest without pressing the skin. When the quality of the image was satisfactory, evident as distinct upper and lower muscle fascia, three images were captured, where the probe was relocated to the same position between each image. Position of the probe was marked on the skin and subsequently marked on a transparent paper to ensure similar probe placement for both the right and left *m.vastus lateralis* at subsequent assessments. Analyses were done in ImageJ Fiji [@RN2561] with images cropped and coded to ensure blinding of the assessor.
-
+In Study II, *m. vastus lateralis* muscle thickness was measured by B-mode ultrasonography (SmartUs EXT-1M, Telemed, Vilnius, Lithuania) using a 39 mm 12 MHz, linear array probe. Between each image acquisition the probe was relocated to the same position. The position was marked on a soft transparent plastic sheet used to relocate the same position in subsequent measurements.
+At least three images were captured and quantified for each leg per time-point with values averaged in analyses. Images were analyzed in ImageJ Fiji [@RN2561] by a single assessor blinded for study conditions and time-points.  
 
 
 ## Muscle tissue sampling and preparations for downstream analyses
@@ -678,8 +661,8 @@ Muscle samples were obtained under local anesthesia (Study I, Xylocaine,
 AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan,
 \SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle
 (12-14 gauge; Universal-plus, Medax, Italy) operated with a
-spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling
-was performed as previously described
+spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway).
+Sampling was performed as previously described
 [@RN824],<!-- Hayot 2005 relible micriboiopsy technique --> with
 modifications. Anesthesia was injected in the subcutaneous tissue with
 care taken not to inject anesthesia into the muscle itself. Following
@@ -733,9 +716,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875499/
 -->
 
 
-
-
-#### Total RNA extraction
+### Total RNA extraction
 ```{r rna-muscle-weight}
 
 # Descriptive data on total RNA extractions from both studies
@@ -842,7 +823,7 @@ Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption 
 As previously mentioned, to minimize discomfort with a larger number of biopsies sampled over a short time, a smaller needle was used for most biopsies in Study II. This generally led to a less tissue used for RNA extractions (Figure XX).  
 
 
-#### Protein extraction immunoblotting 
+### Protein extraction immunoblotting 
 
 <!-- TRaining response -->
 
@@ -882,17 +863,11 @@ Raw fluorescence data was exported from the platform specific software and ampli
 Amplification efficiencies were estimated for every reaction [as described by @RN1934; implemented in @RN1768]. For every primer pair, mean amplification efficiencies ($E$) were utilised to transform data to the linear scale using $E^{-Ct}$. Primer sequences and primer characteristics (i.e. average primer efficiencies and Ct values) are presented in Table 2. Gene expression data was log-transformed prior to statistical analysis. As Ct-values, but not efficiencies are related to RNA integrity [@RN2248], RQI scores were used in the statistical treatment of qPCR data to control for potential degradation effects on a by target basis (see below). 
 
 
-
-
 ### Hormonal measurements
 Hormone analyses were performed on blood samples collected at five time points: alongside muscle biopsies (Figure 1, four sampling events) and 10 minutes after completion of the fifth training session. Samples were drawn from the antecubital vein into serum-separating tubes and kept at room temperature for 30 min before centrifugation (1500 g, 10 min). Serum was immediately aliquoted and stored at -80$^{\circ}$C until further processing. Serum concentrations of total testosterone, cortisol, growth hormone and insulin-like growth-factor 1 (IGF-1) were measured on an Immulite 1000 analyzer, using kits from the Immulite Immunoassay System menu (Siemens Medical Solutions Diagnostics, NY, USA), performed according to manufacturer’s protocols. Serum Vitamin D (S-25-OH-D) levels were measured in samples collected before and after the intervention using a electrochemiluminescence immunoassay (Roche Cobas Vitamin D total assay, Roche Diagnostics GmbH., Mannheim, Germany) using automated instrumentation (Roche Cobas 6000’s module e601, Roche Diagnostics GmbH., Mannheim, Germany). 
 
 
-
-
 ## Statistics and data analysis
-
-
 
 In Study I, an *a priori* sample-size calculations ($\beta=20\%$, $\alpha=5\%$) indicated that 40 participants was sufficient to detect $\sim$ 3\% and 5\%-point differences between volume conditions in primary outcomes, training induced changes in muscle cross-sectional area and maximal voluntary strength respectively. Sample-size calculations were based on assumed differences between volume condition corresponding to effect sizes of `r es.min`-`r es.max`, as estimated from previous studies [@RN834; @RN776].
 
@@ -967,7 +942,7 @@ Studies were further assessed for inclusion based on criteria being; (i)
 participants described as healthy without medications affecting muscle
 metabolism, (ii) interventions lasting at least 6 weeks and (iii) RT
 performed without additional stimuli (e.g. blood flow restriction) at
-intensities above 65% of 1RM or 20RM.
+intensities greater than 65% of 1RM or 20RM.
 
 All available outcome measures of muscle mass and strength gains in
 response to RT were extracted from each study with exception of outcomes
@@ -980,11 +955,12 @@ or strength gains. An intervention average of weekly sessions was used
 when the number of sessions per week differed over the course of the
 intervention. An exercise was assumed to influence an outcome when it
 targeted prime movers also assessed for strength or muscle hypertrophy
-measures. Participant characteristics were coded based on sex (male,
+measures.
+Measures of muscle mass were considered specific if they estimated muscle mass in muscles considered affected directly by exercises. Measures of muscle strength were considered specific when tested in the same exercises as used during training.
+Measures of muscle mass and strength were identified as targeting the upper-, lower- or whole body.
+Participant characteristics were coded based on sex (male,
 female or mixed when a study failed to discern between male and
-females), age (young, middle-aged, old or mixed), body-mass index (BMI,
-calculated from average body mass and height when BMI values were not
-available), training status (trained, \> 1 session per week during the
+females), age (young, 18-20 years; middle-aged, 20-50 years; old 50- years; or mixed), training status (trained, \> 1 session per week during the
 last 6 months leading up to the intervention; untrained \< 1 session).
 Study groups were considered independent also in studies utilizing
 within-participant models.
@@ -999,11 +975,33 @@ were calculated using an average effect size across all outcomes within
 muscle strength or mass, and correlations specific to each measurement
 type (isokinetic-, isometric- or repetition maximum strength tests;
 muscle thickness, magnetic resonance imaging, dual energy X‐ray
-absorptiometry) estimated from previous studies.\
-A correction factor () was applied to both effect sizes and their
-variances.
+absorptiometry) estimated from previous studies.
+A correction factor (Hedges' g) was applied to both effect sizes and their
+variances
+[@RN2888, Ch.4]<!-- Borenstein Ch 4 -->
+
+```{r meta-descriptive, echo = FALSE, warning=FALSE, message=FALSE}
+
+es <- readRDS("./data/meta-volume/models/raw_data_es.RDS")
+
+total_es <- es %>%
+  group_by(muscle_size) %>%
+  summarise(n = n()) %>%
+  data.frame()
+
+n_studies <- es %>%
+  ungroup()  %>%
+  distinct(study) %>%
+  summarise(n = n()) %>%
+  pull(n)
+
+```
+
+From `r n_studies` studies a total of `r total_es[1, 2]` and `r total_es[2, 2]` effect sizes were coded for muscle mass and strength measurements respectively. 
 
 Mixed-effects meta-regression models were used to model the effect of
-weekly number of sets on RT-induced muscle mass and strength gains.
+weekly number of sets on training-induced muscle mass and strength gains.
+Confounding variables (age, sex, study length, training status, body portion and specificity of measurement) were included in all models. Interaction between weekly number of sets and each of the confounding variables were assessed in separate models.
 Models were fitted in a Bayesian framework using the brms-package
-[@RN2562].
+[@RN2562;
+@harrer2019doing].
