@@ -1,4 +1,310 @@
-# Methodological considerations
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Methodological considerations {#methodological-considerations}
+
+
+## Reliability of micro-biopsy sampling
+
+The micro biopsy technique generally produces smaller samples compared to other
+biopsy techniques
+[@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus
+requires several passes to produce sufficient material for multiple
+downstream experiments. However, reports confirms that the micro-biopsy
+technique is comparable to the traditionally used Bergström technique in
+several measures of muscle characteristics at the same time as being
+well tolerated [@RN824; @RN2553].
+Any reported differences in fiber type distributions between sampling techniques have been suggested to be related
+to differences in sampling depth [@RN2553; @RN2552].<!-- Hayot -->
+Thus, reproducibility of any biopsy technique may relate to its ability to obtain sufficient material at similar depths between samplings.
+
+
+```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.heigh = 6, fig.align='center'}
+
+
+source("./R/libraries.R")
+source("./R/themes.R")
+
+
+# Sample set up (included samples)
+legs <- read_csv2("./data/study-1/body-composition/oneThreeSetLeg.csv") %>%
+        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) 
+
+
+# Total number of fibers per sample
+low_fiber_counts <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total = type1 + type2a + type2ax + type2x) %>%
+        mutate(low_count = if_else(total < 200, "low", "acceptable")) %>%
+        group_by(low_count) %>%
+        summarise(n = n()) %>%
+        mutate(percentage = round((n / sum(n)) * 100, 1)) 
+
+ 
+average_n_fibers <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total = type1 + type2a + type2ax + type2x) %>%
+        summarise(n_avg = mean(total, na.rm = TRUE)) %>%
+        pull(n_avg)
+
+
+
+
+between_legs <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+    inner_join(legs) %>%
+    filter(include == "incl") %>%
+    mutate(total  = type1 + type2a + type2ax + type2x, 
+           
+           typeI = (type1 / total)*100,
+           typeII = ((type2a + type2ax +type2x)/total) *100,
+           
+           type1  =(type1 / total)*100, 
+           type2a =(type2a / total)*100, 
+           type2ax=(type2ax / total)*100, 
+           type2x =(type2x / total)*100 ) %>% 
+    
+    filter(total > 300) %>%
+    
+    filter(timepoint %in% c(1)) %>%
+    dplyr::select(subject, timepoint, leg,total, type1:type2x, typeI:typeII) %>%
+    pivot_longer(names_to = "type", values_to = "percentage", cols = c(type1:type2x, typeI:typeII)) %>%
+    mutate(timepoint = paste0("t", timepoint)) %>%
+    pivot_wider(names_from = leg, values_from = c(percentage, total)) %>%
+    
+    mutate(type = factor(type, levels = c("type1", 
+                                          "type2a", 
+                                          "type2ax", 
+                                          "type2x", 
+                                          "typeI", 
+                                          "typeII"), 
+                         labels = c("Type I", 
+                                    "Type IIA", 
+                                    "Type IIAX", 
+                                    "Type IIX", 
+                                    "Type I_tot", 
+                                    "Type II_tot"))) %>%
+     filter(complete.cases(.)) %>%
+        rowwise() %>%
+        mutate(mean.perc = mean(c(percentage_L, percentage_R)), 
+               diff.perc = percentage_L - percentage_R, 
+               diff.sq = (percentage_L - percentage_R)^2,
+               diff.mean.sq = (diff.perc/mean.perc)^2,
+               min.count = min(c(total_L, total_R))) %>%
+        filter(mean.perc > 0) %>%
+        
+        group_by(type) %>%
+        
+        summarise(m = mean(mean.perc), 
+                  S2 = sum(diff.sq)/(2*n()), 
+                  S = sqrt(S2), 
+                  RMS = 100 * sqrt(sum(diff.mean.sq) / (2*n())), 
+                  ws = 100 * (sqrt(sum(diff.perc^2) / (2*n()) ))/m, 
+                  n = n()) %>%
+        mutate(cv  = 100 * (S/m)) 
+     
+
+
+ 
+between_duplicates <-  read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+         inner_join(legs) %>%
+         filter(include == "incl") %>%
+         mutate(total  = type1 + type2a + type2ax + type2x, 
+                type1  =(type1 / total)*100, 
+                type2a =(type2a / total)*100, 
+                type2ax=(type2ax / total)*100, 
+                type2x =(type2x / total)*100) %>%  
+     
+    filter(total > 300) %>%
+         filter(timepoint %in% c(2, 3)) %>%
+         dplyr::select(subject, timepoint, leg,total, type1:type2x) %>%
+         pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2x) %>%
+         mutate(timepoint = paste0("t", timepoint)) %>%
+         pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
+         
+ 
+         mutate(type = factor(type, levels = c("type1", 
+                                               "type2a", 
+                                               "type2ax", 
+                                               "type2x"), 
+                              labels = c("Type I", 
+                                         "Type IIA", 
+                                         "Type IIAX", 
+                                         "Type IIX"))) %>%
+     filter(complete.cases(.)) %>%
+         
+         rowwise() %>%
+         mutate(mean.perc = mean(c(percentage_t2, percentage_t3)), 
+                diff.perc = percentage_t2 - percentage_t3, 
+                diff.sq = (percentage_t2 - percentage_t3)^2,
+                diff.mean.sq = (diff.perc/mean.perc)^2,
+                min.count = min(c(total_t2, total_t3))) %>%
+         filter(mean.perc > 0) %>%  
+     group_by(type) %>%
+     
+     summarise(m = mean(mean.perc), 
+               S2 = sum(diff.sq)/(2*n()), 
+               S = sqrt(S2), 
+               RMS = 100 * sqrt(sum(diff.mean.sq) / (2*n())), 
+               ws = 100 * (sqrt(sum(diff.perc^2) / (2*n()) ))/m, 
+               n = n()) %>%
+     mutate(cv  = 100 * (S/m)) 
+
+
+
+
+
+
+ ############## Figures myhc fiber typing  ######################      
+total_histogram <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total = type1 + type2a + type2ax + type2x) %>%        
+        
+        ggplot(aes(total)) + geom_histogram(binwidth = 30, 
+                                            fill = group.study.color[5], alpha = 0.8) + 
+        dissertation_theme() + 
+        scale_x_continuous(limits = c(0, 1600),
+                           expand = c(0,0),
+                           breaks = c(0, 200, 400, 600, 800, 1000, 1200, 1400, 1600), 
+                           labels = c(0, "", 400, "", 800, "", 1200, "", 1600)) + 
+        scale_y_continuous(limits = c(0, 20), 
+                           breaks = c(0, 5, 10, 15, 20), 
+                           expand = c(0,0)) +
+        
+        labs(x = "Total number of fibers per sample", 
+             y = "Counts") + 
+        theme(axis.text.x = element_text(hjust = c(0, rep(0.5, 7), 1)))
+        
+### Comparison between "duplicate samples" at week 2
+corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total  = type1 + type2a + type2ax + type2x, 
+               type1  =(type1 / total)*100, 
+               type2a =(type2a / total)*100, 
+               type2ax=(type2ax / total)*100, 
+               type2x =(type2x / total)*100) %>%  
+        filter(timepoint %in% c(2, 3)) %>%
+
+        dplyr::select(subject, timepoint, leg,total, type1:type2a) %>%
+        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2a) %>%
+        mutate(timepoint = paste0("t", timepoint)) %>%
+        pivot_wider(names_from = timepoint, values_from = c(percentage, total)) %>%
+        ungroup() %>%
+        mutate(type = factor(type, levels = c("type1", 
+                                              "type2a"), 
+                             labels = c("Type I", 
+                                        "Type IIA"))) %>%
+     
+        ggplot(aes(percentage_t2, percentage_t3)) + 
+        geom_point(shape = 21,
+                   size = 1.8,
+                   alpha = 0.7,
+                   fill = group.study.color[4]) + 
+        
+        facet_wrap(~type, ncol = 2, strip.position = "top")  +
+        
+        scale_x_continuous(limits = c(0, 100), 
+                           expand = c(0,0), 
+                           breaks = c(25, 50 ,75)) + 
+        scale_y_continuous(limits = c(0, 100), 
+                           expand = c(0,0), 
+                           breaks = c(25, 50 ,75)) + 
+        
+        labs(x = "Duplicate 1", 
+             y = "Duplicate 2") +
+        
+        geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
+        dissertation_theme() + 
+        theme(strip.background = element_blank(),
+              strip.text = element_text(size = 8, hjust = 0),
+              panel.border = element_rect(color = "black", fill = NA))
+        
+### Left right at baseline 
+
+baseline_between_legs <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
+        inner_join(legs) %>%
+        filter(include == "incl") %>%
+        mutate(total  = type1 + type2a + type2ax + type2x, 
+               type1  =(type1 / total)*100, 
+               type2a =(type2a / total)*100, 
+               type2ax=(type2ax / total)*100, 
+               type2x =(type2x / total)*100) %>%  
+        filter(timepoint %in% c(1)) %>%
+
+        dplyr::select(subject, timepoint, leg,total, type1:type2a) %>%
+        pivot_longer(names_to = "type", values_to = "percentage", cols = type1:type2a) %>%
+        pivot_wider(names_from = leg, values_from = c(percentage, total)) %>%
+        ungroup() %>%
+        mutate(type = factor(type, levels = c("type1", 
+                                              "type2a"), 
+                             labels = c("Type I", 
+                                        "Type IIA"))) %>%
+     
+        ggplot(aes(percentage_L, percentage_R)) + 
+        geom_point(shape = 21,
+                   size = 1.8,
+                   alpha = 0.7,
+                   fill = group.study.color[2]) + 
+        
+        facet_wrap(~type, ncol = 2, strip.position = "top")  +
+        
+        scale_x_continuous(limits = c(0, 100), 
+                           expand = c(0,0), 
+                           breaks = c(25, 50 ,75)) + 
+        scale_y_continuous(limits = c(0, 100), 
+                           expand = c(0,0), 
+                           breaks = c(25, 50 ,75)) + 
+        
+        labs(x = "Left leg", 
+             y = "Right leg") +
+        
+        geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
+        dissertation_theme() + 
+        theme(strip.background = element_blank(),
+              strip.text = element_text(size = 8, hjust = 0),
+              panel.border = element_rect(color = "black", fill = NA))
+
+
+fiber_type_rel_plot <- plot_grid( plot_grid(NULL, total_histogram, NULL, ncol = 3, rel_widths = c(0.2, 1, 0.2)),
+          corr_plot_fiber_types, 
+          baseline_between_legs,
+          ncol = 1, rel_heights = c(1.5, 2, 2)) + 
+        
+        draw_plot_label(label=c("a", "b", "c"),
+                        x = c(0.02, 0.02, 0.02), 
+                        y = c(0.98, 0.75, 0.35),
+                        hjust=.5, vjust=.5, 
+                        size = label.size)
+
+fiber_type_rel_plot
+```
+
+In Study I, one or several pieces of muscle (total weight
+$\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type
+composition. The average total number of counted fibers per samples was `r round(average_n_fibers, 0)`.
+Only a small percentage (`r low_fiber_counts[2,3]`\%) of samples did not contain enough fibers for representative analysis of fiber type composition (> 200 fibers)
+[@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
+and as many as 1400 fibers were counted in some specimens (\@ref(fig:fiber-methods-fig)a).
+The smaller amount of tissue obtained using the micro-biopsy technique did thus not limit analyses of fiber type composition.
+
+In order to asses the reproducibility of the technique, samples obtained during the same day (separated by $\sim$ 2 hours) were analyzed as duplicate samples. 
+Standard deviations from duplicate measures were calculated as by Blomstrand *et al.* [@RN874]
+
+$$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
+where $d$ is the difference between paired observations and $n$ is the number of pairs.
+The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
+This did only marginally differ from between leg variations (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
+These estimates are slightly lower than those reported by Blomstrand *et al.*, using the Bergström needle
+[@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
+This suggests that the micro-biopsy technique is reproducible in terms of repeated sampling.
+
+
+
 
 ## Feasibility of model-based normalization of RT-qPCR-based gene-expression data in a case of human muscle under hypertrophic stress
 
@@ -10,5 +316,12 @@ Simulations further showed that model-based strategies were computationally robu
 
 
 ## Increased relevance of RNA-seq data through data-driven selection of 
+
+
+
+
+
+
+
 
 
