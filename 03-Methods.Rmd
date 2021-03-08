@@ -1006,6 +1006,25 @@ Effective library sizes were subsequently divided by the median effective librar
 [@RN2366].
 
 
+#### Functional annotation
+Gene ontology gene sets were used in enrichment analyses
+[@RN2889;
+@RN2890],
+performed using three approaches.
+First, A non-directional rank test based on the gene specific lower/upper limit of the 95% confidence interval around the log fold-change. When the log fold-change was greater than 0, the lower limit was used, when the log fold-change was lesser than 0, the negative inverse of the upper 95% CI was used
+[@RN2439; 
+@RN2438;
+@RN2435].
+Second, directional regulation of the gene sets were assessed using gene set enrichment analysis
+[@RN2432;
+@RN2434] with log fold-change as the gene level metric.
+Third, over-representation analysis was performed to assess if genes identified as differentially expressed (|fold-change| > 0.5, false discovery-rate adjusted *P*-values < 0.05) belonged to specific gene sets
+@clusterProfiler].
+The parallell use of a combination of gene set analysis methods utilizing different directionality has previously been proposed as a way to improve interpretability of such analyses
+[@RN2891].
+Gene ontology gene sets (biological process, cellular component, and molecular function) were downloaded from the molecular signature database (version 7.1) [@RN2436].
+
+
 ## Blood variables
 In Study I, blood variables were analyzed in venous samples collected at five time points; prior to muscle biopsy sampling and 10 minutes after completion of the fifth training session. Samples were collected in serum-separating tubes, kept at room temperature for 30 min and centrifugation (1500 g, 10 min). Serum was aliquoted and stored at -80$^{\circ}$C until analysis.
 Total testosterone, cortisol, growth hormone and insulin-like growth-factor 1 (IGF-1) were measured on an Immulite 1000 analyzer (Siemens Medical Solutions Diagnostics, NY, USA). Vitamin D (S-25-OH-D) levels were measured in samples collected before and after the intervention using a immunoassay (Roche Cobas Vitamin D total assay, Roche Diagnostics GmbH., Mannheim, Germany). 

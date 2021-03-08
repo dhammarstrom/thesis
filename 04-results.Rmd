@@ -1239,6 +1239,114 @@ summary_table_interactions %>%
 
 ## Characteristics of early-phase training-induced ribosome biogenesis
 
+Given the apparent importance of early-phase accumulation of total RNA and thus presumably ribosomal biogenesis for responses to resistance training, evident both in analyses between and within-participants, the second intervention aimed to further characterize this process.
+
+The training protocol resulted in increased muscle mass, measured as muscle thickness of *m. vastus lateralis*, compared to the non-training control group (Figure \@ref(fig:study2-muscle-strength-mass)a). This increase coincided with an increase in strength, most pronounced when measured as isokinetic torque (Figure \@ref(fig:study2-muscle-strength-mass)b). The different training protocols (constant vs. variable volume) were analyzed together as they led to similar changes.
+These observations indicate the general efficacy of the training program in inducing changes to the neuromuscular apparatus, specifically with regards to muscle mass.
+
+```{r study2-muscle-strength-mass, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Muscle mass and strength changes in Study II", fig.cap="Training induced changes in muscle mass (a) and strength (b) compared to non-training controls in Study II. Conditions in the experimental group are presented together.", fig.height=4.5, fig.width=3, fig.align='center'}
+
+ultra_sound_strength <- readRDS("./data/derivedData/study2-muscle-mass-strength/ultra_sound_strength.RDS")
+
+
+ultra_sound_strength +
+  
+  draw_plot_label(x = c(0, 0), 
+             y = c(1, 0.5), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+
+```
+
+
+
+
+```{r study2-rrna-vs-ctrl, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "rRNA and total RNA changes in response to resistance training.", fig.cap="Resistance training led to increased rRNA (a) and total RNA (b) abundance per tissue weight. Conditions in the experimental group are presented together.", fig.height=6, fig.width=4.72, fig.align='center'}
+
+
+rrna_totrna_vs_control <- readRDS("./data/derivedData/study2-rrna-analysis/rrna_totrna_vs_control.RDS")
+
+rrna_totrna_vs_control +
+  
+  draw_plot_label(x = c(0.15, 0.025), 
+             y = c(0.98, 0.2), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+```
+
+
+
+
+
+```{r study2-rrna-volume-conditions, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA and ribosomal RNA in variable- and constant-volume training conditions.", fig.cap="Total RNA (a) and rRNA (b) characteristics in response to different volume conditions (constant- vs. variable-volume).", fig.height=6, fig.width=4, fig.align='center'}
+
+rna_abundance_exp_group <- readRDS("./data/derivedData/study2-rrna-analysis/rna_abundance_exp_group.RDS")
+
+
+rna_abundance_exp_group +
+  
+  draw_plot_label(x = c(0.025, 0.53), 
+             y = c(0.73, 0.99), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+
+
+
+```
+
+
+
+
+
+
+```{r study2-ubf-rps6-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "UBF and rpS6 protein in resposne to resistance training in Study II.", fig.cap="Ribosomal protein S6 (rpS6) upstream bindning factor (UBF) protein in response to resistance training in compared to non-training controls", fig.height=5, fig.width=4.72, fig.align='center'}
+
+protein_analyses <- readRDS("./data/derivedData/study2-protein-analyses/protein_analyses.RDS")
+
+reps_west <-  ggdraw() + draw_image("./data/study-2/wetlab/western/representative_img/round2_gel4_annotated.png") 
+
+
+
+
+protein_analyses <- plot_grid(plot_grid(protein_analyses$prot_fold_change, 
+                                        protein_analyses$prot_interaction, 
+                                        ncol = 2, 
+                                        rel_widths = c(0.5, 0.5)), 
+          reps_west, ncol = 1, rel_heights = c(1, 0.7))
+
+
+
+protein_analyses +
+  
+  draw_plot_label(x = c(0.025, 0.15), 
+             y = c(0.99, 0.4), 
+             vjust = 1,
+             hjust = 0,
+             label = c("a", "b"))
+
+
+```
+
+
+
+```{r study2-rna-muscle-thickness, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Relationship between total RNA increase and muscle hypertrophy in Study II", fig.cap="(a)", fig.height=5, fig.width=4.72, fig.align='center'}
+
+tot_rna_muscle_thickness <- readRDS("./data/derivedData/study2-rna-muscle-mass-fig/tot_rna_muscle_thickness.RDS")
+
+tot_rna_muscle_thickness
+
+```
+
+
 
 
 Total RNA seems to be a valid proxy marker of ribosomal density, as most of the RNA is assumed to be ribosomal RNA

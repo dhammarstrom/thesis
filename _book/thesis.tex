@@ -1346,6 +1346,22 @@ Library sizes were expressed as effective library size and calculated as the pro
 Effective library sizes were subsequently divided by the median effective library size, as suggested by Cui \emph{et al.}
 {[}279{]}.
 
+\hypertarget{functional-annotation}{%
+\subsubsection{Functional annotation}\label{functional-annotation}}
+
+Gene ontology gene sets were used in enrichment analyses
+{[}282,283{]},
+performed using three approaches.
+First, A non-directional rank test based on the gene specific lower/upper limit of the 95\% confidence interval around the log fold-change. When the log fold-change was greater than 0, the lower limit was used, when the log fold-change was lesser than 0, the negative inverse of the upper 95\% CI was used
+{[}284--286{]}.
+Second, directional regulation of the gene sets were assessed using gene set enrichment analysis
+{[}287,288{]} with log fold-change as the gene level metric.
+Third, over-representation analysis was performed to assess if genes identified as differentially expressed (\textbar fold-change\textbar{} \textgreater{} 0.5, false discovery-rate adjusted \emph{P}-values \textless{} 0.05) belonged to specific gene sets
+{[}289{]}{]}.
+The parallell use of a combination of gene set analysis methods utilizing different directionality has previously been proposed as a way to improve interpretability of such analyses
+{[}290{]}.
+Gene ontology gene sets (biological process, cellular component, and molecular function) were downloaded from the molecular signature database (version 7.1) {[}291{]}.
+
 \hypertarget{blood-variables}{%
 \section{Blood variables}\label{blood-variables}}
 
@@ -1407,7 +1423,7 @@ muscle thickness, magnetic resonance imaging, dual energy X‐ray
 absorptiometry) estimated from previous studies.
 A correction factor (Hedges' g) was applied to both effect sizes and their
 variances
-{[}282{]}
+{[}292{]}
 
 From 25 studies a total of 151 and 181 effect sizes were coded for muscle mass and strength measurements respectively.
 
@@ -1415,17 +1431,17 @@ Mixed-effects meta-regression models were used to model the effect of
 weekly number of sets on training-induced muscle mass and strength gains.
 Confounding variables (age, sex, study length, training status, body portion and specificity of measurement) were included in all models. Interaction between weekly number of sets and each of the confounding variables were assessed in separate models.
 Models were fitted in a Bayesian framework using the brms-package
-{[}283,284{]}.
+{[}293,294{]}.
 
 \hypertarget{statistics-and-data-analysis}{%
 \section{Statistics and data analysis}\label{statistics-and-data-analysis}}
 
 In Study I, \emph{a priori} sample-size calculations (\(\beta=20\%\), \(\alpha=5\%\)) indicated that 40 participants was sufficient to detect \(\sim\) 3\% and 5\%-point differences between volume conditions in primary outcomes, training induced changes in muscle cross-sectional area and maximal voluntary strength, respectively. Sample-size calculations were based on assumed differences between volume condition corresponding to effect sizes of 0.47-0.51, as estimated from previous studies {[}145,146{]}.
 
-In Study II, an initial sample size calculation was made based on a best case scenario. Data from Brook et al. {[}285{]} indicated that a within-participant differences in RNA per tissue weight of \(15\%\) could be detected with seven participants in the experimental group (e.g.~2.79 (0.65) to 3.21 (0.74) \SI{}{\micro\gram\per\micro\litre}, \(\alpha<0.05\), \(\beta<0.2\), effect size = 1.2). The control group was included in the study as a negative control primarily for the sake of systems validation of experimental procedures regarding measures of e.g.~ribosomal biogenesis. With a balanced design, accounting for drop-outs, eight participants were required in each group. After a preliminary analysis of the experiment (experimental group \emph{n = }7, control group \emph{n = }7){[}286{]}, additional participants (experimental group \emph{n =} 4, control group \emph{n = }1) were recruited to the study to increase the precision of estimates, primarily in analyses within the experimental group.
+In Study II, an initial sample size calculation was made based on a best case scenario. Data from Brook et al. {[}295{]} indicated that a within-participant differences in RNA per tissue weight of \(15\%\) could be detected with seven participants in the experimental group (e.g.~2.79 (0.65) to 3.21 (0.74) \SI{}{\micro\gram\per\micro\litre}, \(\alpha<0.05\), \(\beta<0.2\), effect size = 1.2). The control group was included in the study as a negative control primarily for the sake of systems validation of experimental procedures regarding measures of e.g.~ribosomal biogenesis. With a balanced design, accounting for drop-outs, eight participants were required in each group. After a preliminary analysis of the experiment (experimental group \emph{n = }7, control group \emph{n = }7){[}296{]}, additional participants (experimental group \emph{n =} 4, control group \emph{n = }1) were recruited to the study to increase the precision of estimates, primarily in analyses within the experimental group.
 
 In Study I, pre- to post-intervention measures of muscle mass and strength were analyzed as change-scores, modeled with pre-intervention values entered in models as a covariate together with sex, when appropriate.
-A general model formulation, representing the study design, was used in analyses of volume-dependent effects. It included time and the time by volume-condition interaction, as suggested by Fitzmaurice \emph{et al.} {[}287{]}.
+A general model formulation, representing the study design, was used in analyses of volume-dependent effects. It included time and the time by volume-condition interaction, as suggested by Fitzmaurice \emph{et al.} {[}297{]}.
 The general formulation was used in different models, depending on outcome measure and expected error distributions.
 Linear mixed effects models were used for continuous variables.
 Fiber type distributions were analyzed as a proportion of the total number of fibers/transcripts in each sample and thus bound between 0 and 1. Binomial and beta-binomial models were used to account for this in generalized linear mixed effects models.
@@ -1434,7 +1450,7 @@ Random effects were included when appropriate and any such structure was reduced
 Null-hypotheses of no differences between volume-conditions and no effect of time were tested from model estimates of from linear and generalized mixed effects models.
 
 Within-participant differences between volume conditions in Study I were used to construct binary respons variables representing additional benefit of moderate- over low-volume training in muscle hypertrophy (measured from MRI) and average strength (measured as the weighted average of strength tests). Additional benefit of moderate-volume training was defined as a difference between volume conditions larger than the smallest worthwhile change in the direction of moderate-volume. Smallest worthwhile change was defined as the between-participants SD \(\times\) 0.2. Mean-centered data per sex was used to account for sex differences in CSA and strength measures.\\
-Response variables were related to a wide range of predictors using logistic regression following {[}288{]}. \emph{A priori} selection of relevant predictor variables was done prior to modeling, these included blood variables, baseline strength and muscle mass, volume-dependent measures of total-RNA content and S6K1 phosphorylation expressed as a percentage of low-volume training and baseline fiber-type composition. Additionally, pre-study training characteristics and in-study training variables were assessed.
+Response variables were related to a wide range of predictors using logistic regression following {[}298{]}. \emph{A priori} selection of relevant predictor variables was done prior to modeling, these included blood variables, baseline strength and muscle mass, volume-dependent measures of total-RNA content and S6K1 phosphorylation expressed as a percentage of low-volume training and baseline fiber-type composition. Additionally, pre-study training characteristics and in-study training variables were assessed.
 Each possible predictor was assessed in univariate analysis, controlling for sex, and a non-conservative threshold (\(P < 0.20\)) was used to select variables for further modeling.
 Predictors were sequentially removed from a full model based on significance tests (\(P > 0.1\)) with models refitted after each removal to assess influence on other predictors. After model reduction to, all removed predictors were added to models in order to assess their contribution when controlling for predictors identified in primary model reduction. Predictors were checked for linearity (logit) through design variables visual inspection. Non-linear variables were categorized. Thirty-two participants were included in variable selection as two participants had missing data in some of the pre-selected variables.
 In this text, secondary analyses were performed using continuous difference-scores between volume conditions and univariate analyses performed with robust regression, accounting for sex when appropriate through mean centering of variables.
@@ -1456,14 +1472,14 @@ Model fitting was considered adequate when least four different chains of MCMC s
 \hypertarget{software-code-and-data-avaliability}{%
 \subsection{Software, code and data avaliability}\label{software-code-and-data-avaliability}}
 
-Data analysis was predominantly performed in R {[}289{]}.
+Data analysis was predominantly performed in R {[}299{]}.
 Data wrangling and visualizations were done using packages associated with the
-\texttt{tidyverse} {[}290{]} and \texttt{ggplot2} {[}291{]}.
+\texttt{tidyverse} {[}300{]} and \texttt{ggplot2} {[}301{]}.
 Non-standard statistical models were fitted in
 \texttt{nlme} {[}269{]},
-\texttt{lme4} {[}292{]},
-\texttt{glmmTMB} {[}293{]},
-\texttt{brms} {[}283{]} and
+\texttt{lme4} {[}302{]},
+\texttt{glmmTMB} {[}303{]},
+\texttt{brms} {[}293{]} and
 \texttt{MCMCglmm} {[}270{]}.
 
 For each paper included in this thesis, data and code are hosted on github (paper 1, \href{https://github.com/dhammarstrom/benefits-of-rt-volume}{github.com/dhammarstrom/benefits-of-rt-volume}; paper 2, \href{https://github.com/dhammarstrom/rnaseq-pipeline}{github.com/dhammarstrom/rnaseq-pipeline};
@@ -1477,7 +1493,7 @@ thesis, \href{https://github.com/dhammarstrom/thesis}{github.com/dhammarstrom/th
 \section{Within-session training volume affects training-induced changes in muscle mass and strength and molecular determinants of muscle hypertrophy}\label{muscle-mass-growth}}
 
 In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \ref{tab:csa-str-tab})
-{[}294, 14{]},
+{[}304, 14{]},
 indicating the general efficacy of the training program.
 
 
@@ -1542,7 +1558,7 @@ Sex & Condition & Mean (SD) & Reference\\
 \cmidrule{2-3}
 \hspace{1em}\multirow{-2}{*}{\raggedright\arraybackslash Male} & MOD & 0.87 (0.46) & \multirow{-2}{*}{\raggedright\arraybackslash 0.47 (0.22)b}\\
 \bottomrule
-\multicolumn{4}{l}{\textsuperscript{a} Estimates from Wernbom et al. {[}294{]}}\\
+\multicolumn{4}{l}{\textsuperscript{a} Estimates from Wernbom et al. {[}304{]}}\\
 \multicolumn{4}{l}{\textsuperscript{b} Estimates from Ahtiainen et al. {[}14{]}}\\
 \end{tabular}
 \end{table}
@@ -1581,7 +1597,7 @@ In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{
 Together these observations indicates larger perturbations along the mTORC1 signaling axis which confirms previous studies showing exercise-volume dependency of mTORC1-related signaling in the acute phase (\textless{} 5 hours) after exercise, with the low-volume condition doing at least three sets activating the muscle under study
 {[}250, 22, 21, 20,146{]}.
 It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448} primarily should be regarded as indicative for negative feedback as this site is phosphorylated due to S6K1 activity
-{[}295{]} (Figure \ref{fig:mtor-fig} a).
+{[}305{]} (Figure \ref{fig:mtor-fig} a).
 It is also recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signalling as both mTORC1 and extracellular signal-regulated kinases (ERK)-signalling converges here
 {[}253{]}.
 Interestingly, Terzis \emph{et al.} and Ahtiainen \emph{et al.} did not report any clear volume dependency in exercise-induced activation of ERK 1/2
@@ -1597,9 +1613,9 @@ Volume dependent increase in mTORC1 signalling also coincide with larger protein
 {[}20, 250{]}
 As such, volume dependence of mTORC1-related signalling suggests that higher within-session volume can be regarded as leading to an increased potential for protein synthesis in the acute-phase after exercise.
 Previous studies has indirectly linked mTORC1-related signaling to muscle growth as acute perturbation along this pathway has been correlated with muscle growth
-{[}168, 296{]}.
+{[}168, 306{]}.
 However, this is not a consistent findings in the literature
-{[}146, 297{]},
+{[}146, 307{]},
 nor is it consistent with results in the present study as acute activation of S6K1 in response to the fifth session was not associated with training-induced changes in muscle mass.\footnote{Raw Spearman's correlations between exercise induced change in S6K1 phosphorylation and change in muscle mass (measured with MRI) indicated weak (insignificant) associations (\(\rho=\) -0.044 - 0.190) depedning on the isoform measured (p70 or p85) and number of sets. More elaborate modeling confirmed weak relationships between degree of phsophorylation and muscle mass change. When controlling for baseline values in degree of phsophorylation (as this influence the calculation of fold-change) and number of sets, standardized estimates for the effect of phosphorylation were (increase in \%-muscle mass change for every 1SD change in fold-change phsophorylation, with {[}95\% CI{]}) \(\beta=\) 0.33 {[}-0.53, 1.20{]} for p70 S6K1-p70\textsuperscript{Thr389} and \(\beta=\) 0.43 {[}-0.39, 1.25{]} for S6K1-p85\textsuperscript{Thr412}.}.
 \begin{figure}
 
@@ -1612,7 +1628,7 @@ nor is it consistent with results in the present study as acute activation of S6
 Although mTORC1 signaling most certainly contributes to protein synthesis in the acute recovery phase after resistance exercise {[}169{]},
 its use as a predictor of training induced muscle hypertrophy is complicated by a number of reasons.
 First, measuring its activity is not straight forward for biological reasons including pathway cross-talk and negative feedback as well as technical aspects
-{[}192, 253, 298{]}.
+{[}192, 253, 308{]}.
 Secondly, mTORC1 signaling is not a stable phenomenon either between or within individuals as short- and long-term resistance training leads to diminished activity along its pathway
 {[}193, 194{]}.
 Thirdly, mTORC1 readily integrate multiple signals but also convey these to multiple downstream processes
@@ -1636,7 +1652,7 @@ From baseline to prior to the fifth training session (Week 2), total RNA per mg 
 \caption[Differences between volume conditions total RNA and ribosomal RNA]{Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\% confidence intervals, transparent points and errorbars signifies that the confidence interval contain 1.}\label{fig:rrna-fig}
 \end{figure}
 Analysis of c-Myc mRNA abundance in response to the fifth training session also showed volume-dependent regulation with exercise-induced increases being \(\sim\) 1.5-fold higher in response to the moderate- compared to the low-volume condition (Figure \ref{fig:rrna-fig}b). c-Myc represents a rapamycin-insesitive signaling pathway, paralell to mTORC1, known to also stimulating ribosomal biogenesis
-{[}195, 216,299{]}.
+{[}195, 216,309{]}.
 
 Ribosomal biogenesis is an early adaptation to resistance training with initial increases in total RNA evident before any hypertrophy can be detected
 {[}203, 205, 62, 63{]}.
@@ -1691,7 +1707,7 @@ In Study I, muscle fiber-type compositions were determined based on immunostaini
 When comparing volume conditions, moderate training volume led to more pronounced down regulation of the \emph{MYH1} gene, coding for Type IIX myosin heavy-chain protein, at all time-points during the intervention (Figure \ref{fig:myhc-fig}c). This presumably led to the accumalative effect seen after twelve weeks of training where the proportion of Type IIX fibers was lower in the moderate- compared to the low-volume condition (indicative as an odd-ratio (OR) \textless{} 1, OR {[}95\% CI{]}: 0.54 {[}0.31, 0.94{]}, combined measure of IIX/IIA hybrids and pure IIX fibers, Figure \ref{fig:myhc-fig}d).\\
 This underlines that training volume is an important factor for fiber-type composition remodeling. Although not surprising, similar observations are lacking in the litterateur as previous studies have not compared this transition directly between volume protocols.
 However, when comparing non-exhaustive high-load resistance training to load-matched training to volatile failure, Pareja-Blanco \emph{et al.} observed a blunted IIX \(\rightarrow\) IIA transitions in response to the non-exhaustive protocol
-{[}300{]}.
+{[}310{]}.
 Together these data indicates that increased metabolic stress and/or dosage of neuromuscular activity are plausible candidates for regulation of IIX \(\rightarrow\) IIA reprogramming in humans in response to resistance training.
 This as opposed to a tensile stimuli.
 Based on observations in animal models, neural input might however be considered the primary candidate.
@@ -1706,7 +1722,7 @@ Interestingly, the difference between volume conditions was driven by less Type 
 This indicates that remodeling occurred faster in response to the low-volume condition despite a greater ``transition signal'' in the moderate-volume leg.
 A plausible explanation to this observation could be that the greater damage caused by a greater training stimuli lead to a delayed fiber-type transition.
 This hypothesis is supported by observations indicating that a proportion of the protein synthesis seen early in a resistance-training period can be attributed to tissue repair rather than myofibrilar synthesis
-{[}153, 301{]}.
+{[}153, 311{]}.
 Regardless of causality, the more rapid early adaptation seen in response to a lower training volume suggests that optimized resistance training should include a progressive volume component.
 
 \pagebreak
@@ -1726,7 +1742,7 @@ Regardless of causality, the more rapid early adaptation seen in response to a l
 As already \protect\hyperlink{muscle-mass-growth}{discussed}, resistance training in Study I led to an increase in total RNA per unit tissue weight. Furthermore, the magnitude of this increase was different between volume conditions (see Figure \ref{fig:rrna-fig}).
 Studies of gene expression, using techniques such as qPCR or RNA sequencing, comes with the assumption that an equal amount of biological material is used when evaluating abundance of a single transcript.
 It is therefore common that a normalized amount of total RNA is used in sample preparation to satisfy such an assumption
-{[}119, 240, 302{]}.
+{[}119, 240, 312{]}.
 However, if the ratio of RNA to tissue mass has changed throughout a study, analyses are performed on a different amount of tissue. This may be the case after a resistance-training intervention, or between study conditions, as in Study I.
 Indeed, by calculating the amount of tissue used when preparing samples for RNA sequencing it is obvious that the increased amount of total RNA per-unit-muscle weight results in a situation where samples are prepared from a lesser amount of tissue.
 This effect was more pronounced in response to the moderate- compared to the low-volume condition (Figure \ref{fig:lib-size-fig}a).
@@ -1747,7 +1763,7 @@ Although the observed increase in library sizes suggested a global increase in m
 {[}246, 244{]}.
 Instead, the majority of identified genes were categorized as having unchanged levels per amount of tissue from baseline to Week 2 (73.3\%) and Week 12 (88.4\%). A small fraction of genes were identified as being less abundant (Week 2, 0.51\%; Week 12, 0.01\%) and the remaining genes were identified as more abundant at Week 2 (26.2\%) and 12 (11.6\%), respectively.
 Gene-set enrichment analyses revealed that training-induced changes in gene expression profiles were related to increased abundance of genes related to extracellular matrix remodeling, collagen synthesis and inflammatory processes. Although these observations were made without a proper control to investigate training-induced effects \emph{per se}, they resembles previous (controlled and uncontrolled) studies characterizing skeletal muscle tissue in response to heavy mechanical loading, in the acute phase
-{[}303, 304, 118, 121{]},
+{[}313, 314, 118, 121{]},
 and after prolonged training {[}120, 119{]}.
 \begin{figure}
 
@@ -1798,13 +1814,13 @@ At week 12, differences seen at Week 2 between volume conditions derived from th
 \caption[General patterns of differentially expressed genes at Week 12]{Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)}\label{fig:week12-upset-volcano}
 \end{figure}
 From a general perspective, this analysis underlines the importance of a well considered choice of normalization strategy in studies of gene expression in non-homeostatic conditions
-{[}305, 248, 244{]}.
+{[}315, 248, 244{]}.
 Specifically, in gene expression studies of training-induced muscle hypertrophy, an ill-advised normalization strategy could mask or overestimate differences between experimental conditions as different amount of tissue is being used in sample preparation. This as a consequence of a normalized RNA input between different conditions. Differences in tissue used in sample preparation between volume-conditions in Study I effectively led to an underestimation of genes identified as differentially expressed at Week 2 and led to nonsensible identification of differentially expressed genes at Week 12.
 The choice of normalization strategy ultimately determines the definition of differential expression. By using the tissue offset model we were interested in gene counts per tissue, as opposed to using the the library size as the denominator in analyses, leading to gene counts expressed per transcriptome. Although both strategies may have merit in certain situations, selected genes may be better studied as counts per amount of tissue. It could be argued that one such group of genes are genes related to extracellular matrix remodeling.
-First, extracellular matrix-related genes have been shown to display close association between mRNAs abundances and their respective proteins, including collagen-organization proteins {[}306{]}..
+First, extracellular matrix-related genes have been shown to display close association between mRNAs abundances and their respective proteins, including collagen-organization proteins {[}316{]}..
 This indicates that remodeling on the protein level to a large degree is determined transcriptionally.
 Secondly, selected extracellular-matrix related genes are not expressed in muscle fibers but instead in neighboring cells (e.g.~fibroblasts)
-{[}307, 116{]}.
+{[}317, 116{]}.
 Thus assuming that an increase in total RNA due to increased ribosomal biogenesis would scale to other cell types in muscle tissue might affect the interpretation of such gene expression data.
 Consequently, studies of transcriptional regulation of extracellular matrix remodeling in relation to muscle hypertrophy should account for the amount of tissue used in analyses.
 
@@ -1819,7 +1835,7 @@ These changes were measured as per transcriptome as no changes in the total RNA 
 but instead fluid shifts {[}281{]}
 could be expected in the short time frame affecting the estimate of muscle weight from wet tissue.
 Differentially regulated genes were generally associated with stress responses including inflammation and immune responses as well as extracellular matrix related processes. In contrasts to long term changes, acute exercise led to down-regulation of extracellular matrix-related genes, similarly to what have been found by others {[}120{]}.
-Regarding volume-dependent regulation in the acute phase, only a single gene was found to be differentially expressed between volume-conditions. This gene, \emph{RFT1}, which was found to be down-regulated and more so in response to moderate-volume exercise is associated lipid transport, carbohydrate transport, and endoplasmic reticulum membrane and has previously been found to be decreased in muscle after exercise {[}308{]}.
+Regarding volume-dependent regulation in the acute phase, only a single gene was found to be differentially expressed between volume-conditions. This gene, \emph{RFT1}, which was found to be down-regulated and more so in response to moderate-volume exercise is associated lipid transport, carbohydrate transport, and endoplasmic reticulum membrane and has previously been found to be decreased in muscle after exercise {[}318{]}.
 Further analyses of volume-dependent differences not relying solely on arbitrarily defined differential expression confirmed that no strong differences were evident in transcriptome characteristics in this short time-span.
 It is likely that the timing of the post-exercise biopsy missed more relevant volume-dependent regulation in the acute phase.
 
@@ -1839,7 +1855,7 @@ The choice of using a dichotomized response variable (benefit vs.~no benefit) wa
 Identification of participants as belonging to the benefit- or no benefit-group, respectively, for each outcome variable is visualized in Figure \ref{fig:csa-str-sets-corr}. Responses to either training condition were highly correlated for both muscle CSA (\emph{r} = 0.750, {[}0.552, 0.868{]}) and average strength (\emph{r} = 0.805, {[}0.552, 0.868{]}), but participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \ref{fig:csa-str-sets-corr}).
 
 With the aim to develop parsimonious models that explained benefits of moderate-volume training in each outcome (muscle CSA and average strength), a set of potential determinants was selected prior to any association analysis. These included blood variables, baseline strength and muscle mass, volume-dependent molecular responses to training and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study as well as dietary data were used in an initial screening process of potential variables. As neither pre-study training habits (strength or other type physical training), within-study training characteristics (number of sessions completed and supervised) or dietary data displayed any differences between benefit-classifications, they were excluded from further consideration. So were also a set of continuous variables that did not meet the criteria for inclusion, based on preliminary univariate analysis\\
-{[}288{]}.
+{[}298{]}.
 Figure \ref{fig:univariate-benefit-analysis} shows continuous variables used in the initial screening process. Variables were kept for further consideration when the mean difference 80\% CI (thick error bars) did not containing the null-hypothesis of no difference between benefit-classification groups. Based on the variables selected in this first step, 32 participants were included in the subsequent analysis as two participants had missing values in one or more of the selected predictors.
 \begin{figure}
 
@@ -1850,7 +1866,7 @@ Figure \ref{fig:univariate-benefit-analysis} shows continuous variables used in 
 \caption[Univariate analysis of potential determinants of benefit to moderat- over low-volume training]{Differences between groups classified as either having benefit or no benefit of moderate-volume training. For the sake of comparison, all variables have been scaled by their SD. Thick errorbars indicate a 80\% CI and thin errorbars indicate the 95\% CI. Transparent points and errorbars indicate that the variables was removed from further modeling. Sex was included as a covariate in all comparisons.}\label{fig:univariate-benefit-analysis}
 \end{figure}
 The choice of a dichotomized response variable (benefit vs.~no benefit) entailed the use of logistic regression. An assumption of this type of regression modeling is linearity of the logit
-{[}288{]}.
+{[}298{]}.
 As all variables did not meet this assumption when fitted in logistic regression they were categorized into biologically meaningful categories (Vitamin D insufficient/sufficient), dichotomized based on measurement detection limits (testosterone in females) or sex-specific median values (lean body mass and testosterone in males).
 A stepwise approach was used to remove variables that did not display association with the response variables. Figure \ref{fig:model-reduction-plot} shows the process of stepwise removal of predictors.
 Additional benefit of moderate- over low-volume training on muscle CSA was predicted by individual differences between volume conditions in Total RNA at Week 2 and baseline lean body mass dichotomized to above or below the sex-specific median.
@@ -1866,15 +1882,15 @@ For muscle strength, only individual differences between volume conditions in To
 The rationale for using dichotomized outcomes was, as mentioned above, to specifically explore determinants of \emph{individual} benefit of additional training volume, regardless of the magnitude of the difference between conditions.
 This choice of analytic approach arose from discussions regarding clinical decision-making, where the potential benefit in each individual should guide the choice of training methods.
 Although linked to the specific study question, a dichotomized outcome variable could potentially mask other important associations in the data due to loss of information associated with the transformation
-{[}309{]}.
+{[}319{]}.
 A primary hypothesis in the study was that the baseline muscle phenotype, specifically a ``glycolytic'' vs.~a ``aerobic'' phenotype (measured as high vs.~low type IIX content) would not show relative benefit of moderate-volume training.\footnote{\href{https://clinicaltrials.gov/ct2/show/NCT02179307?term=lillehammer\&draw=2\&rank=9}{As outlined in the Study's pre-registration}}
 If such a marker would hold any prognostic value, it could potentially guide decisions regarding the training process.
 In analysis, the phenotype marker measured as Type IIX counts was included together with other potential predictors of individual benefit of higher training-volume.
 Both pre-training characteristics that could aid in clinical decision making and markers arising from the training itself were included in the analysis.
 In order to select important determinants from this set of potential determinants, a stepwise procedure for variable selection, known as purposeful selection was used
-{[}288{]}.
+{[}298{]}.
 Generally, stepwise variable selection has been criticized for a number of reasons, including arbitrarily searching for a single best model, over-estimation of regression parameters and sensitivity to small changes in the investigated data set
-{[}310, 309{]}.
+{[}320, 319{]}.
 In order to address the above mentioned limitations, the question was slightly rephrased in a secondary analysis presented here to explore the association between potential determinants and individual differences between moderate- and low-volume training.
 As shown in Figure \ref{fig:continuous-determinants}a, only Total RNA content at Week 2 in the moderate-volume leg, expressed as a percentage of the low-volume leg RNA content, positively associated with differences between volume conditions in muscle hypertrophy (CSA) and strength gains. These relationships are plotted in Figure \ref{fig:continuous-determinants}b.
 
@@ -1900,7 +1916,7 @@ When analyzed between benefit categories, participants that displayed benefit of
 Lean body mass did not, however, display a linear relationship with individual differences between volume-conditions.
 This together with the fact that we did not find any robust relationship between pre-training Type IIX fiber proportions and differences in training outcomes between volume conditions underlines that such markers have low prognostic value, even though they are readily adapted to the training regime as such.
 This likely relates to the fact that traits such as fiber type, or body composition are genetically determined
-{[}311, 95{]}
+{[}321, 95{]}
 in addition to influenced by any history of physical activity.
 
 \hypertarget{predictors-of-additional-benefit-of-added-training-volume-meta-analysis}{%
@@ -1965,18 +1981,54 @@ Interacting variable & Estimate & 95\% CrI & Estimate & 95\% CrI\\
 \hypertarget{characteristics-of-early-phase-training-induced-ribosome-biogenesis}{%
 \section{Characteristics of early-phase training-induced ribosome biogenesis}\label{characteristics-of-early-phase-training-induced-ribosome-biogenesis}}
 
+Given the apparent importance of early-phase accumulation of total RNA and thus presumably ribosomal biogenesis for responses to resistance training, evident both in analyses between and within-participants, the second intervention aimed to further characterize this process.
+
+The training protocol resulted in increased muscle mass, measured as muscle thickness of \emph{m. vastus lateralis}, compared to the non-training control group (Figure \ref{fig:study2-muscle-strength-mass}a). This increase coincided with an increase in strength, most pronounced when measured as isokinetic torque (Figure \ref{fig:study2-muscle-strength-mass}b). The different training protocols (constant vs.~variable volume) were analyzed together as they led to similar changes.
+These observations indicate the general efficacy of the training program in inducing changes to the neuromuscular apparatus, specifically with regards to muscle mass.
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/study2-muscle-strength-mass-1} 
+
+}
+
+\caption[Muscle mass and strength changes in Study II]{Training induced changes in muscle mass (a) and strength (b) compared to non-training controls in Study II. Conditions in the experimental group are presented together.}\label{fig:study2-muscle-strength-mass}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/study2-rrna-vs-ctrl-1} 
+
+}
+
+\caption[rRNA and total RNA changes in response to resistance training.]{Resistance training led to increased rRNA (a) and total RNA (b) abundance per tissue weight. Conditions in the experimental group are presented together.}\label{fig:study2-rrna-vs-ctrl}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/study2-rrna-volume-conditions-1} 
+
+}
+
+\caption[Total RNA and ribosomal RNA in variable- and constant-volume training conditions.]{Total RNA (a) and rRNA (b) characteristics in response to different volume conditions (constant- vs. variable-volume).}\label{fig:study2-rrna-volume-conditions}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics{thesis_files/figure-latex/study2-ubf-rps6-fig-1} 
+
+}
+
+\caption[UBF and rpS6 protein in resposne to resistance training in Study II.]{Ribosomal protein S6 (rpS6) upstream bindning factor (UBF) protein in response to resistance training in compared to non-training controls}\label{fig:study2-ubf-rps6-fig}
+\end{figure}
 Total RNA seems to be a valid proxy marker of ribosomal density, as most of the RNA is assumed to be ribosomal RNA
 {[}163{]},
 which in turn is a valid marker of translational capacity
 {[}164{]}.
 Several studies have shown that total RNA content is altered by RT
-{[}312, 313, 203, 205, 314, 196,198, 193, 160{]},
+{[}322, 323, 203, 205, 324, 196,198, 193, 160{]},
 as was also the case in the present data set.
 However, the time course of total RNA/rRNA changes in response to RT has so far remained speculative, with no study investigating responses to prolonged interventions with multiple sampling time points.
 In the present data, RT led to a clear session-to-session increase in total RNA per unit tissue weight in response to the first four session, whereupon the changes gradually leveled out before peaking after the 8\textsuperscript{th} session, with the peak increase from baseline being \(\sim\) 50\%, defining an accumulation phase.
 This corroborates well with previous suggestions of peak values being reached within four to nine sessions in young males and females
-{[}193,314{]}, and may be essential for preparing muscle fibers for subsequent growth
-{[}193, 198, 314{]}.
+{[}193,324{]}, and may be essential for preparing muscle fibers for subsequent growth
+{[}193, 198, 324{]}.
 
 After the 8\textsuperscript{th} session, no meaningful increase or decrease were observed for total RNA/rRNA content within the training period, suggesting a plateau phase with attenuated net synthesis of novel ribosomes. Within this last part of the intervention, synthesis of novel rRNA still seemed to be elevated per weight unit muscle tissue compared to baseline, as suggested by sustained elevation of pre-rRNA transcripts, coinciding with peak values of UBF protein levels. This may indicate that during the plateau phase, the ribosomal concentration is balanced by muscle growth {[}280{]}.
 
@@ -1987,7 +2039,7 @@ This supports the notion that ribosomal biogenesis is an important determinant o
 differs between individuals displaying low vs.~high levels of muscle hypertrophy in response to RT
 {[}196{]}
 an contribute to explain RT volume-dependent changes in muscle mass and strength
-{[}314{]}.
+{[}324{]}.
 In addition, supression of ribosomal biogenesis in \emph{in vitro} models leads to halted muscle cellular growth in some
 {[}211, 195,196{]}
 but not all studies
@@ -2000,16 +2052,16 @@ Whereas aged muscle display higher levels of total RNA at rest
 they show reduced changes in total RNA levels in response to RT
 {[}193{]},
 potentially explaining their alleged poorer overall hypertrophic responses {[}193{]}.
-Whether these cellular characteristics are related to e.g.~differences in fiber type distributions {[}315{]} remains to be determined.
+Whether these cellular characteristics are related to e.g.~differences in fiber type distributions {[}325{]} remains to be determined.
 Together, these results and perspectives emphasizes on the potentially crucial role of RT-induced ribosomal synthesis for adaptations to training, making ribosomal responses to RT an interesting biomarker in relation to manipulation of training loads for specific populations.
 
 In the present study, training induced increases in rRNA and total RNA coincided with increases in rpS6. Changes in total RNA levels and rpS6 in response to de-training did however not correspond as rpS6 protein levels remained elevated after the de-training period. Training induced increases in rpS6 seen in the present study are in agreement to what has previously been reported in young men
-{[}285{]},
+{[}295{]},
 but not in elderly men and women where a decrease was observed in response to training despite increases in total RNA and rRNA
 {[}196{]}.
 Although increases were seen in both rpS6 and and total RNA, rpS6 did not explain variations in total RNA when number of sessions were controlled for. Together with a disconnect after the de-training period, this suggest that regulations of rpS6 expression and ribosomal RNA transcription displays different temporal characteristics in response to RT. Additionally, ribosomal proteins may have extra-ribosomal functions
 affecting their expression
-{[}316{]}.
+{[}326{]}.
 
 UBF levels robustly explained total RNA levels over the entire course of the intervention. These analyses were done with the number of sessions accounted for, allowing unbiased estimates. Unrealistically strong relationships could have been otherwise expected as both the dependent variable (total RNA) and the covariate (UBF levels) varies with the number of sessions.
 From a mechanistic perspective, UBF is an important transcription factor for rDNA transcription as it, in its active state recruits a secondary transcription factor (SL1) to the rDNA promoter and enables transcription by RNA Pol I
@@ -2017,9 +2069,9 @@ From a mechanistic perspective, UBF is an important transcription factor for rDN
 Activation of UBF is controlled by the mechanosensitive mTOR pathway, and rapamycin, a specific mTOR inhibitor, blocks UBF from recruiting SL1 and subsequent rRNA transcription
 {[}211, 212{]}.
 Evidence from human exercise studies confirms training-induced activation of UBF through phosphorylation
-{[}317, 198{]}.
+{[}327, 198{]}.
 In addition to exercise-induced activation of UBF, mechanical loading also leads to increased levels of total UBF
-{[}317, 198{]}. Increases in UBF was determined to be rapamycin insensitive after synergist ablation in mice
+{[}327, 198{]}. Increases in UBF was determined to be rapamycin insensitive after synergist ablation in mice
 {[}167{]}
 pointing to an effect observed in cell models where c-Myc induces UBF mRNA transcription {[}217{]}.
 Interestingly the availability of UBF \emph{per se} has been shown to regulate rRNA transcription
@@ -2031,9 +2083,9 @@ After eight days of de-training, total RNA and rRNA levels per weight unit muscl
 This was likely caused by attenuated rRNA transcription, a notion that was supported by reversal of pre-rRNA abundances and possibly by lowered UBF protein levels, though this was not confirmed as statistically robust.
 This supports the idea that ribosomal biogenesis is a cellular activity on demand, possibly relating to its relative expense {[}206{]} also in muscle tissue.
 Based on this notion, and the fact that RT volume is known to be a potent modulator of molecular mechanisms determining protein synthesis and ribosomal biogenesis including induction of c-Myc expression, mTOR activation
-{[}314, 22, 20{]},
-subsequent total RNA increases {[}314{]} and post exercise protein synthesis {[}20{]}
-and subsequent training outcomes {[}25,314{]}, we hypothesized that fluctuations in training volume would be reflected in markers of ribosomal biogenesis.
+{[}324, 22, 20{]},
+subsequent total RNA increases {[}324{]} and post exercise protein synthesis {[}20{]}
+and subsequent training outcomes {[}25,324{]}, we hypothesized that fluctuations in training volume would be reflected in markers of ribosomal biogenesis.
 When comparing VAR to CONST in the present study we found only one part of the pre-rRNA, 45S ETS, to be differentially expressed and only so after Session 12 in favor of VAR together with a tendency towards rescued UBF levels after de-training in response to increased volume in the VAR but not CONST protocol.
 These observations do not give support to a clear effect of fluctuations in training volume on total RNA levels or rRNA expression within a relatively short and training-intensive intervention, though it should be noted that the time point with increased 45S ETS expression was preceded by a period of increased training volume, suggesting a potential interaction between time and volume.
 Indeed, both training protocols utilized in the present study increased muscle strength and induced muscle hypertrophy to a similar degree.
@@ -2043,13 +2095,13 @@ differences in organization of training loads is likely of minor importance when
 {[}124{]}.
 It is important to note that RT in the current study was performed with the same volume in the first four sessions, something that could have been more than enough to maximize rRNA transcription in previously untrained individuals.
 This is supported by the observation that pre-rRNA increased rapidly initially in both protocols with minimal changes in response to subsequent sessions, regardless of exercise volume.
-The CONST protocol in the present study corresponded to volumes used in the moderate volume condition in a previous study from our lab (three sets in two exercises activating knee extensor muscles) {[}314{]}.
-There, higher levels of total RNA were observed after four sessions in the moderate compared to a low volume protocol {[}314{]}.
+The CONST protocol in the present study corresponded to volumes used in the moderate volume condition in a previous study from our lab (three sets in two exercises activating knee extensor muscles) {[}324{]}.
+There, higher levels of total RNA were observed after four sessions in the moderate compared to a low volume protocol {[}324{]}.
 Interestingly, using a progressive volume protocol in well-trained participants, increases in total RNA have been reported throughout six weeks of training
-{[}312{]}.
+{[}322{]}.
 Altough this observation was done in well-trained participants performing a high volume protocol without a control condition with constant volume, compared to constant volume protocols
 {[}{[}193{]};
-{[}314{]}; and the present study{]},
+{[}324{]}; and the present study{]},
 progressive volume may thus increase ribosomal abundance to a higher degree and provide a measure to avoid the plateau phase seen in the present study.
 
 In conclusion, RT-induced ribosome accumulation reached peak values in the initial phase of RT (8 sessions) and was interconnected with increases in UBF protein levels. The rate of total RNA accumulation predicted RT-induced muscle hypertrophy. Fluctuations in training volume did not transfer to fluctuations in ribosomal biogenesis, but training cessation led to decreased ribosomal content.
@@ -2062,14 +2114,14 @@ In conclusion, RT-induced ribosome accumulation reached peak values in the initi
 
 The micro biopsy technique generally produces smaller samples compared to other
 biopsy techniques
-{[}318{]}, and thus
+{[}328{]}, and thus
 requires several passes to produce sufficient material for multiple
 downstream experiments. However, reports confirms that the micro-biopsy
 technique is comparable to the traditionally used Bergström technique in
 several measures of muscle characteristics at the same time as being
-well tolerated {[}259,319{]}.
+well tolerated {[}259,329{]}.
 Any reported differences in fiber type distributions between sampling techniques have been suggested to be related
-to differences in sampling depth {[}319,320{]}.
+to differences in sampling depth {[}329,330{]}.
 Thus, reproducibility of any biopsy technique may relate to its ability to obtain sufficient material at similar depths between samplings.
 \begin{figure}
 
@@ -2083,19 +2135,19 @@ In Study I, one or several pieces of muscle (total weight
 \(\sim\)\SI{15}{mg}) were chosen per sampling for analysis of fiber type
 composition. The average total number of counted fibers per samples was 539.
 Only a small percentage (5.4\%) of samples did not contain enough fibers for representative analysis of fiber type composition (\textgreater{} 200 fibers)
-{[}321{]}
+{[}331{]}
 and as many as 1400 fibers were counted in some specimens (\ref{fig:fiber-methods-fig}a).
 The smaller amount of tissue obtained using the micro-biopsy technique did thus not limit analyses of fiber type composition.
 
 In order to asses the reproducibility of the technique, samples obtained during the same day (separated by \(\sim\) 2 hours) were analyzed as duplicate samples.
-Standard deviations from duplicate measures were calculated as by Blomstrand \emph{et al.} {[}321{]}
+Standard deviations from duplicate measures were calculated as by Blomstrand \emph{et al.} {[}331{]}
 
 \[SD = \sqrt{\frac{\sum{d^2}}{2n}}\]
 where \(d\) is the difference between paired observations and \(n\) is the number of pairs.
 The variation (SD) between duplicate samples were 5.86 and 5.49 for Type I and IIA fibers, respectively (\ref{fig:fiber-methods-fig}b).
 This did only marginally differ from between leg variations (Type I, 6.31; Type IIA, 6.24; Figure \ref{fig:fiber-methods-fig}c).
 These estimates are slightly lower than those reported by Blomstrand \emph{et al.}, using the Bergström needle
-{[}321{]}.
+{[}331{]}.
 This suggests that the micro-biopsy technique is reproducible in terms of repeated sampling.
 
 \hypertarget{feasibility-of-model-based-normalization-of-rt-qpcr-based-gene-expression-data-in-a-case-of-human-muscle-under-hypertrophic-stress}{%
@@ -3313,164 +3365,204 @@ Marie, I'm sorry for all the late nights, early mornings and weekends i did not 
 \CSLLeftMargin{{[}281{]} }
 \CSLRightInline{Ploutz-Snyder LL, Convertino VA, Dudley GA. Resistance exercise-induced fluid shifts: Change in active muscle size and plasma volume. Am J Physiol 1995;269:R536--43. \url{https://doi.org/10.1152/ajpregu.1995.269.3.R536}.}
 
-\leavevmode\hypertarget{ref-RN2888}{}%
+\leavevmode\hypertarget{ref-RN2889}{}%
 \CSLLeftMargin{{[}282{]} }
+\CSLRightInline{Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et al. Gene ontology: Tool for the unification of biology. The gene ontology consortium. Nat Genet 2000;25:25--9. \url{https://doi.org/10.1038/75556}.}
+
+\leavevmode\hypertarget{ref-RN2890}{}%
+\CSLLeftMargin{{[}283{]} }
+\CSLRightInline{The gene ontology resource: Enriching a GOld mine. Nucleic Acids Res 2021;49:D325--d334. \url{https://doi.org/10.1093/nar/gkaa1113}.}
+
+\leavevmode\hypertarget{ref-RN2439}{}%
+\CSLLeftMargin{{[}284{]} }
+\CSLRightInline{Yamaguchi KD, Ruderman DL, Croze E, Wagner TC, Velichko S, Reder AT, et al. IFN-beta-regulated genes show abnormal expression in therapy-naïve relapsing-remitting MS mononuclear cells: Gene expression analysis employing all reported protein-protein interactions. J Neuroimmunol 2008;195:116--20. \url{https://doi.org/10.1016/j.jneuroim.2007.12.007}.}
+
+\leavevmode\hypertarget{ref-RN2438}{}%
+\CSLLeftMargin{{[}285{]} }
+\CSLRightInline{Zyla J, Marczyk M, Domaszewska T, Kaufmann SHE, Polanska J, Weiner J. Gene set enrichment for reproducible science: Comparison of CERNO and eight other algorithms. Bioinformatics 2019;35:5146--54. \url{https://doi.org/10.1093/bioinformatics/btz447}.}
+
+\leavevmode\hypertarget{ref-RN2435}{}%
+\CSLLeftMargin{{[}286{]} }
+\CSLRightInline{2017;18:256. \url{https://doi.org/10.1186/s12859-017-1674-0}.}
+
+\leavevmode\hypertarget{ref-RN2432}{}%
+\CSLLeftMargin{{[}287{]} }
+\CSLRightInline{Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et al. Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A 2005;102:15545--50. \url{https://doi.org/10.1073/pnas.0506580102}.}
+
+\leavevmode\hypertarget{ref-RN2434}{}%
+\CSLLeftMargin{{[}288{]} }
+\CSLRightInline{Korotkevich G, Sukhov V, Sergushichev A. Fast gene set enrichment analysis. bioRxiv 2019:060012. \url{https://doi.org/10.1101/060012}.}
+
+\leavevmode\hypertarget{ref-clusterProfiler}{}%
+\CSLLeftMargin{{[}289{]} }
+\CSLRightInline{Yu G, Wang L-G, Han Y, He Q-Y. clusterProfiler: An r package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology 2012;16:284--7. \url{https://doi.org/10.1089/omi.2011.0118}.}
+
+\leavevmode\hypertarget{ref-RN2891}{}%
+\CSLLeftMargin{{[}290{]} }
+\CSLRightInline{Väremo L, Nielsen J, Nookaew I. Enriching the gene set analysis of genome-wide data by incorporating directionality of gene expression and combining statistical hypotheses and methods. Nucleic Acids Research 2013;41:4378--91. \url{https://doi.org/10.1093/nar/gkt111}.}
+
+\leavevmode\hypertarget{ref-RN2436}{}%
+\CSLLeftMargin{{[}291{]} }
+\CSLRightInline{Liberzon A, Subramanian A, Pinchback R, Thorvaldsdóttir H, Tamayo P, Mesirov JP. Molecular signatures database (MSigDB) 3.0. Bioinformatics 2011;27:1739--40. \url{https://doi.org/10.1093/bioinformatics/btr260}.}
+
+\leavevmode\hypertarget{ref-RN2888}{}%
+\CSLLeftMargin{{[}292{]} }
 \CSLRightInline{Borenstein M. Introduction to meta-analysis. Chichester, U.K.: John Wiley \& Sons; 2009.}
 
 \leavevmode\hypertarget{ref-RN2562}{}%
-\CSLLeftMargin{{[}283{]} }
+\CSLLeftMargin{{[}293{]} }
 \CSLRightInline{Bürkner P-C. Brms: An r package for bayesian multilevel models using stan. 2017 2017;80:28. \url{https://doi.org/10.18637/jss.v080.i01}.}
 
 \leavevmode\hypertarget{ref-harrer2019doing}{}%
-\CSLLeftMargin{{[}284{]} }
+\CSLLeftMargin{{[}294{]} }
 \CSLRightInline{Harrer M, Cuijpers P, Furukawa T, Ebert D. Doing meta-analysis in r: A hands-on guide. PROTECT Lab Erlangen 2019. \url{https://doi.org/10.5281/zenodo.2551803}.}
 
 \leavevmode\hypertarget{ref-RN1642}{}%
-\CSLLeftMargin{{[}285{]} }
+\CSLLeftMargin{{[}295{]} }
 \CSLRightInline{Brook MS, Wilkinson DJ, Mitchell WK, Lund JN, Szewczyk NJ, Greenhaff PL, et al. Skeletal muscle hypertrophy adaptations predominate in the early stages of resistance exercise training, matching deuterium oxide-derived measures of muscle protein synthesis and mechanistic target of rapamycin complex 1 signaling. FASEB J 2015;29:4485--96. \url{https://doi.org/10.1096/fj.15-273755}.}
 
 \leavevmode\hypertarget{ref-RN2822}{}%
-\CSLLeftMargin{{[}286{]} }
+\CSLLeftMargin{{[}296{]} }
 \CSLRightInline{2019.}
 
 \leavevmode\hypertarget{ref-RN2332}{}%
-\CSLLeftMargin{{[}287{]} }
+\CSLLeftMargin{{[}297{]} }
 \CSLRightInline{Fitzmaurice GM, Laird NM, Ware JH. Applied longitudinal analysis. 2nd ed. Hoboken, N.J.: Wiley; 2011.}
 
 \leavevmode\hypertarget{ref-RN1998}{}%
-\CSLLeftMargin{{[}288{]} }
+\CSLLeftMargin{{[}298{]} }
 \CSLRightInline{Hosmer DW, Lemeshow S, Sturdivant RX. Applied logistic regression. Third edition /. Hoboken, New Jersey: Wiley; 2013.}
 
 \leavevmode\hypertarget{ref-rtats}{}%
-\CSLLeftMargin{{[}289{]} }
+\CSLLeftMargin{{[}299{]} }
 \CSLRightInline{R Core Team. R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2020.}
 
 \leavevmode\hypertarget{ref-tidyverse}{}%
-\CSLLeftMargin{{[}290{]} }
+\CSLLeftMargin{{[}300{]} }
 \CSLRightInline{Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, et al. Welcome to the {tidyverse}. Journal of Open Source Software 2019;4:1686. \url{https://doi.org/10.21105/joss.01686}.}
 
 \leavevmode\hypertarget{ref-ggplot2}{}%
-\CSLLeftMargin{{[}291{]} }
+\CSLLeftMargin{{[}301{]} }
 \CSLRightInline{Wickham H. ggplot2: Elegant graphics for data analysis. Springer-Verlag New York; 2016.}
 
 \leavevmode\hypertarget{ref-RN1819}{}%
-\CSLLeftMargin{{[}292{]} }
+\CSLLeftMargin{{[}302{]} }
 \CSLRightInline{Bates D, Mächler M, Bolker B, Walker S. Fitting linear mixed-effects models using lme4. Journal of Statistical Software 2015;67:48. \url{https://doi.org/10.18637/jss.v067.i01}.}
 
 \leavevmode\hypertarget{ref-RN2626}{}%
-\CSLLeftMargin{{[}293{]} }
+\CSLLeftMargin{{[}303{]} }
 \CSLRightInline{Brooks M, Kristensen K, Benthem KJ van, Magnússon Á, Berg CW, Nielsen A, et al. glmmTMB balances speed and flexibility among packages for zero-inflated generalized linear mixed modeling. R J 2017;9:378.}
 
 \leavevmode\hypertarget{ref-RN2007}{}%
-\CSLLeftMargin{{[}294{]} }
+\CSLLeftMargin{{[}304{]} }
 \CSLRightInline{Bland M. An introduction to medical statistics. Fourth edition. Oxford ; Oxford University Press; 2015.}
 
 \leavevmode\hypertarget{ref-RN2309}{}%
-\CSLLeftMargin{{[}295{]} }
+\CSLLeftMargin{{[}305{]} }
 \CSLRightInline{Figueiredo VC, Markworth JF, Cameron-Smith D. Considerations on mTOR regulation at serine 2448: Implications for muscle metabolism studies. Cell Mol Life Sci 2017;74:2537--45. \url{https://doi.org/10.1007/s00018-017-2481-5}.}
 
 \leavevmode\hypertarget{ref-RN788}{}%
-\CSLLeftMargin{{[}296{]} }
+\CSLLeftMargin{{[}306{]} }
 \CSLRightInline{Mitchell CJ, Churchward-Venne TA, Bellamy L, Parise G, Baker SK, Phillips SM. Muscular and systemic correlates of resistance training-induced muscle hypertrophy. PLoS One 2013;8:e78636. \url{https://doi.org/10.1371/journal.pone.0078636}.}
 
 \leavevmode\hypertarget{ref-RN2171}{}%
-\CSLLeftMargin{{[}297{]} }
+\CSLLeftMargin{{[}307{]} }
 \CSLRightInline{Phillips BE, Williams JP, Greenhaff PL, Smith K, Atherton PJ. Physiological adaptations to resistance exercise as a function of age. JCI Insight 2017;2:e95581. \url{https://doi.org/10.1172/jci.insight.95581}.}
 
 \leavevmode\hypertarget{ref-RN1942}{}%
-\CSLLeftMargin{{[}298{]} }
+\CSLLeftMargin{{[}308{]} }
 \CSLRightInline{Bass JJ, Wilkinson DJ, Rankin D, Phillips BE, Szewczyk NJ, Smith K, et al. An overview of technical considerations for western blotting applications to physiological research. Scand J Med Sci Sports 2017;27:4--25. \url{https://doi.org/10.1111/sms.12702}.}
 
 \leavevmode\hypertarget{ref-RN1832}{}%
-\CSLLeftMargin{{[}299{]} }
+\CSLLeftMargin{{[}309{]} }
 \CSLRightInline{Poortinga G, Wall M, Sanij E, Siwicki K, Ellul J, Brown D, et al. C-MYC coordinately regulates ribosomal gene chromatin remodeling and pol i availability during granulocyte differentiation. Nucleic Acids Res 2011;39:3267--81. \url{https://doi.org/10.1093/nar/gkq1205}.}
 
 \leavevmode\hypertarget{ref-RN2217}{}%
-\CSLLeftMargin{{[}300{]} }
+\CSLLeftMargin{{[}310{]} }
 \CSLRightInline{Pareja-Blanco F, Rodriguez-Rosell D, Sanchez-Medina L, Sanchis-Moysi J, Dorado C, Mora-Custodio R, et al. Effects of velocity loss during resistance training on athletic performance, strength gains and muscle adaptations. Scand J Med Sci Sports 2017;27:724--35. \url{https://doi.org/10.1111/sms.12678}.}
 
 \leavevmode\hypertarget{ref-RN2144}{}%
-\CSLLeftMargin{{[}301{]} }
+\CSLLeftMargin{{[}311{]} }
 \CSLRightInline{Damas F, Phillips SM, Libardi CA, Vechin FC, Lixandrao ME, Jannig PR, et al. Resistance training-induced changes in integrated myofibrillar protein synthesis are related to hypertrophy only after attenuation of muscle damage. The Journal of Physiology 2016;594:5209--22. \url{https://doi.org/10.1113/JP272472}.}
 
 \leavevmode\hypertarget{ref-RN2401}{}%
-\CSLLeftMargin{{[}302{]} }
+\CSLLeftMargin{{[}312{]} }
 \CSLRightInline{Laker RC, Garde C, Camera DM, Smiles WJ, Zierath JR, Hawley JA, et al. Transcriptomic and epigenetic responses to short-term nutrient-exercise stress in humans. Scientific Reports 2017;7:15134. \url{https://doi.org/10.1038/s41598-017-15420-7}.}
 
 \leavevmode\hypertarget{ref-RN2451}{}%
-\CSLLeftMargin{{[}303{]} }
+\CSLLeftMargin{{[}313{]} }
 \CSLRightInline{Wessner B, Liebensteiner M, Nachbauer W, Csapo R. Age-specific response of skeletal muscle extracellular matrix to acute resistance exercise: A pilot study. Eur J Sport Sci 2019;19:354--64. \url{https://doi.org/10.1080/17461391.2018.1526974}.}
 
 \leavevmode\hypertarget{ref-RN2453}{}%
-\CSLLeftMargin{{[}304{]} }
+\CSLLeftMargin{{[}314{]} }
 \CSLRightInline{Mackey AL, Brandstetter S, Schjerling P, Bojsen-Moller J, Qvortrup K, Pedersen MM, et al. Sequenced response of extracellular matrix deadhesion and fibrotic regulators after muscle damage is involved in protection against future injury in human skeletal muscle. Faseb j 2011;25:1943--59. \url{https://doi.org/10.1096/fj.10-176487}.}
 
 \leavevmode\hypertarget{ref-RN2182}{}%
-\CSLLeftMargin{{[}305{]} }
+\CSLLeftMargin{{[}315{]} }
 \CSLRightInline{Kanno J, Aisaki K, Igarashi K, Nakatsu N, Ono A, Kodama Y, et al. "Per cell" normalization method for mRNA measurement by quantitative PCR and microarrays. BMC Genomics 2006;7:64--4. \url{https://doi.org/10.1186/1471-2164-7-64}.}
 
 \leavevmode\hypertarget{ref-RN2448}{}%
-\CSLLeftMargin{{[}306{]} }
+\CSLLeftMargin{{[}316{]} }
 \CSLRightInline{Makhnovskii PA, Zgoda VG, Bokov RO, Shagimardanova EI, Gazizova GR, Gusev OA, et al. Regulation of proteins in human skeletal muscle: The role of transcription. Scientific Reports 2020;10:3514. \url{https://doi.org/10.1038/s41598-020-60578-2}.}
 
 \leavevmode\hypertarget{ref-RN2883}{}%
-\CSLLeftMargin{{[}307{]} }
+\CSLLeftMargin{{[}317{]} }
 \CSLRightInline{Zou Y, Zhang R-Z, Sabatelli P, Chu M-L, Bönnemann CG. Muscle interstitial fibroblasts are the main source of collagen VI synthesis in skeletal muscle: Implications for congenital muscular dystrophy types ullrich and bethlem. Journal of Neuropathology \& Experimental Neurology 2008;67:144--54. \url{https://doi.org/10.1097/nen.0b013e3181634ef7}.}
 
 \leavevmode\hypertarget{ref-RN2360}{}%
-\CSLLeftMargin{{[}308{]} }
+\CSLLeftMargin{{[}318{]} }
 \CSLRightInline{Pillon NJ, Gabriel BM, Dollet L, Smith JAB, Sardón Puig L, Botella J, et al. Transcriptomic profiling of skeletal muscle adaptations to exercise and inactivity. Nature Communications 2020;11:470--0. \url{https://doi.org/10.1038/s41467-019-13869-w}.}
 
 \leavevmode\hypertarget{ref-RN2881}{}%
-\CSLLeftMargin{{[}309{]} }
+\CSLLeftMargin{{[}319{]} }
 \CSLRightInline{Harrell FE. Regression modeling strategies : With applications to linear models, logistic regression, and survival analysis. New York: Springer; 2001.}
 
 \leavevmode\hypertarget{ref-RN2882}{}%
-\CSLLeftMargin{{[}310{]} }
+\CSLLeftMargin{{[}320{]} }
 \CSLRightInline{Whittingham MJ, Stephens PA, Bradbury RB, Freckleton RP. Why do we still use stepwise modelling in ecology and behaviour? Journal of Animal Ecology 2006;75:1182--9. https://doi.org/\url{https://doi.org/10.1111/j.1365-2656.2006.01141.x}.}
 
 \leavevmode\hypertarget{ref-RN2884}{}%
-\CSLLeftMargin{{[}311{]} }
+\CSLLeftMargin{{[}321{]} }
 \CSLRightInline{Arden NK, Spector TD. Genetic influences on muscle strength, lean body mass, and bone mineral density: A twin study. J Bone Miner Res 1997;12:2076--81. \url{https://doi.org/10.1359/jbmr.1997.12.12.2076}.}
 
 \leavevmode\hypertarget{ref-RN2225}{}%
-\CSLLeftMargin{{[}312{]} }
+\CSLLeftMargin{{[}322{]} }
 \CSLRightInline{Haun CT, Vann CG, Mobley CB, Osburn SC, Mumford PW, Roberson PA, et al. Pre-training skeletal muscle fiber size and predominant fiber type best predict hypertrophic responses to 6 weeks of resistance training in previously trained young men. Frontiers in Physiology 2019;10. \url{https://doi.org/10.3389/fphys.2019.00297}.}
 
 \leavevmode\hypertarget{ref-RN2180}{}%
-\CSLLeftMargin{{[}313{]} }
+\CSLLeftMargin{{[}323{]} }
 \CSLRightInline{Haddad F, Baldwin KM, Tesch PA. Pretranslational markers of contractile protein expression in human skeletal muscle: Effect of limb unloading plus resistance exercise. J Appl Physiol (1985) 2005;98:46--52. \url{https://doi.org/10.1152/japplphysiol.00553.2004}.}
 
 \leavevmode\hypertarget{ref-RN2358}{}%
-\CSLLeftMargin{{[}314{]} }
+\CSLLeftMargin{{[}324{]} }
 \CSLRightInline{Hammarström D, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, et al. Benefits of higher resistance-training volume are related to ribosome biogenesis. The Journal of Physiology 2020;598:543--65. \url{https://doi.org/10.1113/JP278455}.}
 
 \leavevmode\hypertarget{ref-RN1707}{}%
-\CSLLeftMargin{{[}315{]} }
+\CSLLeftMargin{{[}325{]} }
 \CSLRightInline{Habets PE, Franco D, Ruijter JM, Sargeant AJ, Pereira JA, Moorman AF. RNA content differs in slow and fast muscle fibers: Implications for interpretation of changes in muscle gene expression. J Histochem Cytochem 1999;47:995--1004.}
 
 \leavevmode\hypertarget{ref-RN2588}{}%
-\CSLLeftMargin{{[}316{]} }
+\CSLLeftMargin{{[}326{]} }
 \CSLRightInline{Warner JR, McIntosh KB. How common are extraribosomal functions of ribosomal proteins? Molecular Cell 2009;34:3--11. \url{https://doi.org/10.1016/j.molcel.2009.03.006}.}
 
 \leavevmode\hypertarget{ref-RN1746}{}%
-\CSLLeftMargin{{[}317{]} }
+\CSLLeftMargin{{[}327{]} }
 \CSLRightInline{Figueiredo VC, Roberts LA, Markworth JF, Barnett MP, Coombes JS, Raastad T, et al. Impact of resistance exercise on ribosome biogenesis is acutely regulated by post-exercise recovery strategies. Physiol Rep 2016;4. \url{https://doi.org/10.14814/phy2.12670}.}
 
 \leavevmode\hypertarget{ref-RN2549}{}%
-\CSLLeftMargin{{[}318{]} }
+\CSLLeftMargin{{[}328{]} }
 \CSLRightInline{Ekblom B. The muscle biopsy technique. Historical and methodological considerations. Scand J Med Sci Sports 2017;27:458--61. \url{https://doi.org/10.1111/sms.12808}.}
 
 \leavevmode\hypertarget{ref-RN2553}{}%
-\CSLLeftMargin{{[}319{]} }
+\CSLLeftMargin{{[}329{]} }
 \CSLRightInline{Bonafiglia JT, Islam H, Preobrazenski N, Drouin P, Ma A, Gerhart A, et al. A comparison of pain responses, hemodynamic reactivity and fibre type composition between bergström and microbiopsy skeletal muscle biopsies. Current Research in Physiology 2020;3:1--0. https://doi.org/\url{https://doi.org/10.1016/j.crphys.2020.05.001}.}
 
 \leavevmode\hypertarget{ref-RN2552}{}%
-\CSLLeftMargin{{[}320{]} }
+\CSLLeftMargin{{[}330{]} }
 \CSLRightInline{Hughes MC, Ramos SV, Turnbull PC, Nejatbakhsh A, Baechler BL, Tahmasebi H, et al. Mitochondrial bioenergetics and fiber type assessments in microbiopsy vs. Bergstrom percutaneous sampling of human skeletal muscle. Frontiers in Physiology 2015;6. \url{https://doi.org/10.3389/fphys.2015.00360}.}
 
 \leavevmode\hypertarget{ref-RN874}{}%
-\CSLLeftMargin{{[}321{]} }
+\CSLLeftMargin{{[}331{]} }
 \CSLRightInline{Blomstrand E, Ekblom B. The needle biopsy technique for fibre type determination in human skeletal muscle--a methodological study. Acta Physiol Scand 1982;116:437--42. \url{https://doi.org/10.1111/j.1748-1716.1982.tb07163.x}.}
 
 \end{CSLReferences}

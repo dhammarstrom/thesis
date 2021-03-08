@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  5 MAR 2021 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  8 MAR 2021 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1573,7 +1573,7 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [12] [13]
-<thesis_files/figure-latex/Millward1973-1.pdf, id=516, 180.675pt x 180.675pt>
+<thesis_files/figure-latex/Millward1973-1.pdf, id=525, 180.675pt x 180.675pt>
 File: thesis_files/figure-latex/Millward1973-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/Millward1973-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/Millward1973-1.pdf  used on 
@@ -1616,7 +1616,7 @@ Chapter 3.
 
 ]
 Chapter 4.
-<thesis_files/figure-latex/study1-overview-1.pdf, id=596, 340.27126pt x 201.753
+<thesis_files/figure-latex/study1-overview-1.pdf, id=606, 340.27126pt x 201.753
 75pt>
 File: thesis_files/figure-latex/study1-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study1-overview-1.pdf>
@@ -1632,7 +1632,7 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1038--1038
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [27]
-<thesis_files/figure-latex/study2-overview-1.pdf, id=603, 340.27126pt x 230.862
+<thesis_files/figure-latex/study2-overview-1.pdf, id=612, 340.27126pt x 230.862
 5pt>
 File: thesis_files/figure-latex/study2-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study2-overview-1.pdf>
@@ -1652,7 +1652,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ] [32] [33] [34]
-<thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf, id=662, 289.08pt x 
+<thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf, id=671, 289.08pt x 
 361.35pt>
 File: thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf Graphic file (t
 ype pdf)
@@ -1692,33 +1692,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39] [40] [41]
-Underfull \vbox (badness 1210) has occurred while \output is active []
+[39] [40]
+Underfull \vbox (badness 1762) has occurred while \output is active []
+
+[41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [42] [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [44]
-Overfull \hbox (15.06418pt too wide) in paragraph at lines 1469--1472
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[45]
+Overfull \hbox (15.06418pt too wide) in paragraph at lines 1485--1488
 []\T1/lmr/m/n/10 (-20) github.com/dhammarstrom/rnaseq-pipeline[]; pa-per 3, []g
 ithub.com/dhammarstrom/ribo-
  []
 
-[45] [46
-
-]
+[46]
 Chapter 5.
 
-Underfull \hbox (badness 2401) in paragraph at lines 1477--1477
+Underfull \hbox (badness 2401) in paragraph at lines 1493--1493
 []\T1/lmr/m/n/14.4 (+20) Within-session train-ing vol-ume af-fects training-
  []
 
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1488--1488
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1504--1504
 [] [] 
  []
 
-[47] [48]
+[47
+
+] [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1730,14 +1736,14 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
 
 [49]
-<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=775, 340.27126pt x 433.62pt>
+<thesis_files/figure-latex/comb-fig-s1-1.pdf, id=786, 340.27126pt x 433.62pt>
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 1569.
+nput line 1585.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1573--1573
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1589--1589
 [] [] 
  []
 
@@ -1745,14 +1751,14 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1573--1573
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [50 <./thesis_files/figure-latex/comb-fig-s1-1.pdf>]
-<thesis_files/figure-latex/mtor-fig-1.pdf, id=791, 340.27126pt x 252.945pt>
+<thesis_files/figure-latex/mtor-fig-1.pdf, id=802, 340.27126pt x 252.945pt>
 File: thesis_files/figure-latex/mtor-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/mtor-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/mtor-fig-1.pdf  used on inpu
-t line 1606.
+t line 1622.
 (pdftex.def)             Requested size: 340.27042pt x 252.94438pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1610--1610
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1626--1626
 [] [] 
  []
 
@@ -1768,14 +1774,14 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
 
 [51] [52 <./thesis_files/figure-latex/mtor-fig-1.pdf>]
-<thesis_files/figure-latex/rrna-fig-1.pdf, id=813, 340.27126pt x 180.675pt>
+<thesis_files/figure-latex/rrna-fig-1.pdf, id=825, 340.27126pt x 180.675pt>
 File: thesis_files/figure-latex/rrna-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/rrna-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rrna-fig-1.pdf  used on inpu
-t line 1632.
+t line 1648.
 (pdftex.def)             Requested size: 340.27042pt x 180.67455pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1636--1636
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1652--1652
 [] [] 
  []
 
@@ -1791,24 +1797,24 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
 
 [53]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1652--1652
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1668--1668
 [] [] 
  []
 
 
-Overfull \hbox (49.05486pt too wide) in paragraph at lines 1655--1671
+Overfull \hbox (49.05486pt too wide) in paragraph at lines 1671--1687
  [][] 
  []
 
-<thesis_files/figure-latex/rrna-csa-fig-1.pdf, id=821, 340.27126pt x 113.42375p
+<thesis_files/figure-latex/rrna-csa-fig-1.pdf, id=832, 340.27126pt x 113.42375p
 t>
 File: thesis_files/figure-latex/rrna-csa-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/rrna-csa-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rrna-csa-fig-1.pdf  used on 
-input line 1674.
+input line 1690.
 (pdftex.def)             Requested size: 340.27042pt x 113.42346pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1678--1678
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1694--1694
 [] [] 
  []
 
@@ -1820,14 +1826,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [57]
-<thesis_files/figure-latex/myhc-fig-1.pdf, id=866, 340.27126pt x 433.62pt>
+<thesis_files/figure-latex/myhc-fig-1.pdf, id=877, 340.27126pt x 433.62pt>
 File: thesis_files/figure-latex/myhc-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/myhc-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/myhc-fig-1.pdf  used on inpu
-t line 1715.
+t line 1731.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1719--1719
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1735--1735
 [] [] 
  []
 
@@ -1835,14 +1841,14 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1719--1719
 Overfull \vbox (9.79019pt too high) has occurred while \output is active []
 
 [58 <./thesis_files/figure-latex/myhc-fig-1.pdf>]
-<thesis_files/figure-latex/lib-size-fig-1.pdf, id=895, 340.27126pt x 216.81pt>
+<thesis_files/figure-latex/lib-size-fig-1.pdf, id=906, 340.27126pt x 216.81pt>
 File: thesis_files/figure-latex/lib-size-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/lib-size-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/lib-size-fig-1.pdf  used on 
-input line 1740.
+input line 1756.
 (pdftex.def)             Requested size: 340.27042pt x 216.80946pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1744--1744
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1760--1760
 [] [] 
  []
 
@@ -1850,16 +1856,16 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1744--1744
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [59]
-<thesis_files/figure-latex/week2-upset-volcano-1.pdf, id=901, 340.27126pt x 361
+<thesis_files/figure-latex/week2-upset-volcano-1.pdf, id=912, 340.27126pt x 361
 .35pt>
 File: thesis_files/figure-latex/week2-upset-volcano-1.pdf Graphic file (type pd
 f)
 <use thesis_files/figure-latex/week2-upset-volcano-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week2-upset-volcano-1.pdf  u
-sed on input line 1754.
+sed on input line 1770.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1758--1758
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1774--1774
 [] [] 
  []
 
@@ -1867,16 +1873,16 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1758--1758
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [60 <./thesis_files/figure-latex/lib-size-fig-1.pdf>]
-<thesis_files/figure-latex/week2-go-analysis-1.pdf, id=916, 340.27126pt x 361.3
+<thesis_files/figure-latex/week2-go-analysis-1.pdf, id=927, 340.27126pt x 361.3
 5pt>
 File: thesis_files/figure-latex/week2-go-analysis-1.pdf Graphic file (type pdf)
 
 <use thesis_files/figure-latex/week2-go-analysis-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week2-go-analysis-1.pdf  use
-d on input line 1776.
+d on input line 1792.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1780--1780
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1796--1796
 [] [] 
  []
 
@@ -1887,14 +1893,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [62]
-<thesis_files/figure-latex/gene-set-rug-1.pdf, id=942, 268.00125pt x 361.35pt>
+<thesis_files/figure-latex/gene-set-rug-1.pdf, id=953, 268.00125pt x 361.35pt>
 File: thesis_files/figure-latex/gene-set-rug-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/gene-set-rug-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/gene-set-rug-1.pdf  used on 
-input line 1785.
+input line 1801.
 (pdftex.def)             Requested size: 268.00058pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1789--1789
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1805--1805
 [] [] 
  []
 
@@ -1904,18 +1910,18 @@ Underfull \vbox (badness 1122) has occurred while \output is active []
 [63 <./thesis_files/figure-latex/week2-go-analysis-1.pdf>]
 
 LaTeX Warning: Reference `week12-upset-volcano' on page 64 undefined on input l
-ine 1791.
+ine 1807.
 
-<thesis_files/figure-latex/week12-upset-volcano-1.pdf, id=958, 340.27126pt x 36
+<thesis_files/figure-latex/week12-upset-volcano-1.pdf, id=969, 340.27126pt x 36
 1.35pt>
 File: thesis_files/figure-latex/week12-upset-volcano-1.pdf Graphic file (type p
 df)
 <use thesis_files/figure-latex/week12-upset-volcano-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week12-upset-volcano-1.pdf  
-used on input line 1794.
+used on input line 1810.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1798--1798
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1814--1814
 [] [] 
  []
 
@@ -1926,16 +1932,16 @@ Underfull \vbox (badness 5217) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [66]
-<thesis_files/figure-latex/csa-str-sets-corr-1.pdf, id=996, 340.27126pt x 172.6
-45pt>
+<thesis_files/figure-latex/csa-str-sets-corr-1.pdf, id=1007, 340.27126pt x 172.
+645pt>
 File: thesis_files/figure-latex/csa-str-sets-corr-1.pdf Graphic file (type pdf)
 
 <use thesis_files/figure-latex/csa-str-sets-corr-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/csa-str-sets-corr-1.pdf  use
-d on input line 1833.
+d on input line 1849.
 (pdftex.def)             Requested size: 340.27042pt x 172.64456pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1837--1837
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1853--1853
 [] [] 
  []
 
@@ -1943,16 +1949,16 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1837--1837
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [67]
-<thesis_files/figure-latex/univariate-benefit-analysis-1.pdf, id=1007, 289.08pt
+<thesis_files/figure-latex/univariate-benefit-analysis-1.pdf, id=1018, 289.08pt
  x 361.35pt>
 File: thesis_files/figure-latex/univariate-benefit-analysis-1.pdf Graphic file 
 (type pdf)
 <use thesis_files/figure-latex/univariate-benefit-analysis-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/univariate-benefit-analysis-
-1.pdf  used on input line 1846.
+1.pdf  used on input line 1862.
 (pdftex.def)             Requested size: 289.07928pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1850--1850
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1866--1866
 [] [] 
  []
 
@@ -1960,16 +1966,16 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 1850--1850
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [68 <./thesis_files/figure-latex/csa-str-sets-corr-1.pdf>]
-<thesis_files/figure-latex/model-reduction-plot-1.pdf, id=1024, 340.27126pt x 2
+<thesis_files/figure-latex/model-reduction-plot-1.pdf, id=1035, 340.27126pt x 2
 68.00125pt>
 File: thesis_files/figure-latex/model-reduction-plot-1.pdf Graphic file (type p
 df)
 <use thesis_files/figure-latex/model-reduction-plot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/model-reduction-plot-1.pdf  
-used on input line 1860.
+used on input line 1876.
 (pdftex.def)             Requested size: 340.27042pt x 268.00058pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1864--1864
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1880--1880
 [] [] 
  []
 
@@ -1979,18 +1985,18 @@ Underfull \vbox (badness 1478) has occurred while \output is active []
 [70 <./thesis_files/figure-latex/model-reduction-plot-1.pdf>]
 
 LaTeX Warning: Reference `fig:rna-csa-fig' on page 71 undefined on input line 1
-884.
+900.
 
-<thesis_files/figure-latex/continuous-determinants-1.pdf, id=1051, 340.27126pt 
+<thesis_files/figure-latex/continuous-determinants-1.pdf, id=1063, 340.27126pt 
 x 433.62pt>
 File: thesis_files/figure-latex/continuous-determinants-1.pdf Graphic file (typ
 e pdf)
 <use thesis_files/figure-latex/continuous-determinants-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/continuous-determinants-1.pd
-f  used on input line 1890.
+f  used on input line 1906.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1894--1894
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1910--1910
 [] [] 
  []
 
@@ -2001,12 +2007,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2990) has occurred while \output is active []
 
 [72 <./thesis_files/figure-latex/continuous-determinants-1.pdf>] [73]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1931--1931
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1947--1947
 [] [] 
  []
 
 
-Overfull \hbox (3.53825pt too wide) in paragraph at lines 1934--1964
+Overfull \hbox (3.53825pt too wide) in paragraph at lines 1950--1980
  [][] 
  []
 
@@ -2014,38 +2020,106 @@ Overfull \hbox (3.53825pt too wide) in paragraph at lines 1934--1964
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [74]
-Underfull \vbox (badness 2229) has occurred while \output is active []
+<thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf, id=1101, 216.81pt
+ x 325.215pt>
+File: thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf Graphic file 
+(type pdf)
+<use thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study2-muscle-strength-mass-
+1.pdf  used on input line 1990.
+(pdftex.def)             Requested size: 216.80946pt x 325.2142pt.
 
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1994--1994
+[] [] 
+ []
 
-[76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf, id=1102, 340.27126pt x 43
+3.62pt>
+File: thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf Graphic file (type pd
+f)
+<use thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf  u
+sed on input line 1998.
+(pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-[77] [78]
-Chapter 6.
-<thesis_files/figure-latex/fiber-methods-fig-1.pdf, id=1105, 252.945pt x 325.21
-5pt>
-File: thesis_files/figure-latex/fiber-methods-fig-1.pdf Graphic file (type pdf)
-
-<use thesis_files/figure-latex/fiber-methods-fig-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/fiber-methods-fig-1.pdf  use
-d on input line 2076.
-(pdftex.def)             Requested size: 252.94438pt x 325.2142pt.
-
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2080--2080
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2002--2002
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[79
+[75]
+<thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf, id=1107, 289.08
+pt x 433.62pt>
+File: thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf Graphic fil
+e (type pdf)
+<use thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study2-rrna-volume-condition
+s-1.pdf  used on input line 2006.
+(pdftex.def)             Requested size: 289.07928pt x 433.61894pt.
 
-]
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2010--2010
+[] [] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[80 <./thesis_files/figure-latex/fiber-methods-fig-1.pdf>]
+[76 <./thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf>]
+<thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf, id=1123, 340.27126pt x 36
+1.35pt>
+File: thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf Graphic file (type pd
+f)
+<use thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf  u
+sed on input line 2014.
+(pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2018--2018
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[77 <./thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[78 <./thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf>] [79 <./t
+hesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[82] [83] [84
+
+]
+Chapter 6.
+<thesis_files/figure-latex/fiber-methods-fig-1.pdf, id=1187, 252.945pt x 325.21
+5pt>
+File: thesis_files/figure-latex/fiber-methods-fig-1.pdf Graphic file (type pdf)
+
+<use thesis_files/figure-latex/fiber-methods-fig-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/fiber-methods-fig-1.pdf  use
+d on input line 2128.
+(pdftex.def)             Requested size: 252.94438pt x 325.2142pt.
+
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2132--2132
+[] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[86 <./thesis_files/figure-latex/fiber-methods-fig-1.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (22.49pt): 
 (fancyhdr)                Make it at least 34.48878pt, for example:
@@ -2054,94 +2128,24 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
 
-[81] [82
+[87] [88
 
-] [83] [84
+] [89] [90
 
 ]
 Chapter 7.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[85] [86]
+[91] [92]
 Chapter 8.
-[87
+[93
 
-] [88
+] [94
 
 ]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2193--2195
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2245--2247
 [][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2196--2199
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2200--2203
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2204--2207
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2208--2211
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2212--2215
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2216--2219
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2220--2223
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2224--2227
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2228--2231
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2232--2235
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2236--2239
-[][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[89
-
-]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2240--2243
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2244--2247
-[][][] []  
  []
 
 
@@ -2200,6 +2204,11 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2288--2291
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[95
+
+]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2292--2295
 [][][] []  
  []
@@ -2220,9 +2229,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2304--2307
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[90]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2308--2311
 [][][] []  
  []
@@ -2288,6 +2294,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2356--2359
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[96]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2360--2363
 [][][] []  
  []
@@ -2323,9 +2332,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2384--2387
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[91]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2388--2391
 [][][] []  
  []
@@ -2391,6 +2397,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2436--2439
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[97]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2440--2443
 [][][] []  
  []
@@ -2406,9 +2415,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2448--2451
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[92]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2452--2455
 [][][] []  
  []
@@ -2474,6 +2480,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2500--2503
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[98]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2504--2507
 [][][] []  
  []
@@ -2484,9 +2493,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2508--2511
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[93]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2512--2515
 [][][] []  
  []
@@ -2552,6 +2558,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2560--2563
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[99]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2564--2567
 [][][] []  
  []
@@ -2567,9 +2576,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2572--2575
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[94]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2576--2579
 [][][] []  
  []
@@ -2635,6 +2641,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2624--2627
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[100]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2628--2631
 [][][] []  
  []
@@ -2650,9 +2659,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2636--2639
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[95]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2640--2643
 [][][] []  
  []
@@ -2718,14 +2724,14 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2688--2691
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[101]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2692--2695
 [][][] []  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[96]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2696--2699
 [][][] []  
  []
@@ -2791,6 +2797,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2744--2747
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2748--2751
 [][][] []  
  []
@@ -2801,9 +2810,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2752--2755
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[97]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2756--2759
 [][][] []  
  []
@@ -2869,6 +2875,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2804--2807
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[103]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2808--2811
 [][][] []  
  []
@@ -2879,9 +2888,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2812--2815
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[98]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2816--2819
 [][][] []  
  []
@@ -2947,6 +2953,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2864--2867
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[104]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2868--2871
 [][][] []  
  []
@@ -2957,9 +2966,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2872--2875
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[99]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2876--2879
 [][][] []  
  []
@@ -3025,6 +3031,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2924--2927
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[105]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2928--2931
 [][][] []  
  []
@@ -3035,9 +3044,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2932--2935
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[100]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2936--2939
 [][][] []  
  []
@@ -3103,14 +3109,14 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2984--2987
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[106]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2988--2991
 [][][] []  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[101]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2992--2995
 [][][] []  
  []
@@ -3176,6 +3182,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3040--3043
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[107]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3044--3047
 [][][] []  
  []
@@ -3186,9 +3195,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3048--3051
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[102]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3052--3055
 [][][] []  
  []
@@ -3254,6 +3260,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3100--3103
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[108]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3104--3107
 [][][] []  
  []
@@ -3264,9 +3273,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3108--3111
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[103]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3112--3115
 [][][] []  
  []
@@ -3334,7 +3340,7 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3160--3163
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[104]
+[109]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3164--3167
 [][][] []  
  []
@@ -3400,6 +3406,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3212--3215
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[110]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3216--3219
 [][][] []  
  []
@@ -3415,9 +3424,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3224--3227
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[105]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3228--3231
 [][][] []  
  []
@@ -3483,6 +3489,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3276--3279
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[111]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3280--3283
 [][][] []  
  []
@@ -3503,9 +3512,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3292--3295
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[106]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3296--3299
 [][][] []  
  []
@@ -3571,6 +3577,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3344--3347
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[112]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3348--3351
 [][][] []  
  []
@@ -3601,9 +3610,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3368--3371
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[107]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3372--3375
 [][][] []  
  []
@@ -3664,6 +3670,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3416--3419
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[113]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3420--3423
 [][][] []  
  []
@@ -3674,9 +3683,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3424--3427
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[108]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3428--3431
 [][][] []  
  []
@@ -3736,7 +3742,128 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3472--3475
 [][][] []  
  []
 
-[109] (./thesis.aux)
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3476--3479
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3480--3483
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3484--3487
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[114]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3488--3491
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3492--3495
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3496--3499
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3500--3503
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3504--3507
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3508--3511
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3512--3515
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3516--3519
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3520--3523
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3524--3527
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3528--3531
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3532--3535
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3536--3539
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3540--3543
+[][][] []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[115]
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3544--3547
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3548--3551
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3552--3555
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3556--3559
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3560--3563
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 3564--3567
+[][][] []  
+ []
+
+[116] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33597pt have occurred.
@@ -3745,14 +3872,14 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2D331E0A13C6CAB5B42478238DA1FEA9;15121.
+(rerunfilecheck)             Checksum: EE96D69297D89CF62415D52ACD86A935;15121.
  ) 
 Here is how much of TeX's memory you used:
- 23138 strings out of 480971
- 396400 string characters out of 5906169
- 801178 words of memory out of 5000000
- 38697 multiletter control sequences out of 15000+600000
- 617880 words of font info for 439 fonts, out of 8000000 for 9000
+ 23196 strings out of 480971
+ 398432 string characters out of 5906169
+ 802677 words of memory out of 5000000
+ 38726 multiletter control sequences out of 15000+600000
+ 617969 words of font info for 440 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,14n,130p,1142b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
@@ -3793,10 +3920,10 @@ b><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lms
 y9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmtt10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
 blic/lm/lmtt8.pfb>
-Output written on thesis.pdf (127 pages, 8918378 bytes).
+Output written on thesis.pdf (134 pages, 9602439 bytes).
 PDF statistics:
- 2205 PDF objects out of 2487 (max. 8388607)
- 1982 compressed objects within 20 object streams
- 598 named destinations out of 1000 (max. 500000)
- 134677 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 2318 PDF objects out of 2487 (max. 8388607)
+ 2077 compressed objects within 21 object streams
+ 621 named destinations out of 1000 (max. 500000)
+ 134697 words of extra memory for PDF output out of 154059 (max. 10000000)
 
