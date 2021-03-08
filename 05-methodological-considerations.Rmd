@@ -20,9 +20,7 @@ Any reported differences in fiber type distributions between sampling techniques
 to differences in sampling depth [@RN2553; @RN2552].<!-- Hayot -->
 Thus, reproducibility of any biopsy technique may relate to its ability to obtain sufficient material at similar depths between samplings.
 
-
-```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.heigh = 6, fig.align='center'}
-
+```{r immuno-data-prep, echo=FALSE, message=FALSE, warning=FALSE}
 
 source("./R/libraries.R")
 source("./R/themes.R")
@@ -158,6 +156,33 @@ between_duplicates <-  read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>
 
 
 
+```
+
+In Study I, one or several pieces of muscle (total weight
+$\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type
+composition. The average total number of counted fibers per samples was `r round(average_n_fibers, 0)`.
+Only a small percentage (`r low_fiber_counts[2,3]`\%) of samples did not contain enough fibers for representative analysis of fiber type composition (> 200 fibers)
+[@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
+and as many as 1400 fibers were counted in some specimens (\@ref(fig:fiber-methods-fig)a).
+The smaller amount of tissue obtained using the micro-biopsy technique did thus not limit analyses of fiber type composition.
+
+In order to asses the reproducibility of the technique, samples obtained during the same day (separated by $\sim$ 2 hours) were analyzed as duplicate samples. 
+Similar to Blomstrand *et al.* [@RN874], standard deviations from duplicate measures were calculated as 
+
+$$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
+where $d$ is the difference between paired observations and $n$ is the number of pairs.
+The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
+This did only marginally differ from between leg variations (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
+These estimates are slightly lower than those reported by Blomstrand *et al.*, using the Bergström needle
+[@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
+This suggests that the micro-biopsy technique is reproducible in terms of repeated sampling.
+
+
+
+```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 6, fig.align='center'}
+
+
+
  ############## Figures myhc fiber typing  ######################      
 total_histogram <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>%
         inner_join(legs) %>%
@@ -284,25 +309,6 @@ fiber_type_rel_plot <- plot_grid( plot_grid(NULL, total_histogram, NULL, ncol = 
 fiber_type_rel_plot
 ```
 
-In Study I, one or several pieces of muscle (total weight
-$\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type
-composition. The average total number of counted fibers per samples was `r round(average_n_fibers, 0)`.
-Only a small percentage (`r low_fiber_counts[2,3]`\%) of samples did not contain enough fibers for representative analysis of fiber type composition (> 200 fibers)
-[@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-and as many as 1400 fibers were counted in some specimens (\@ref(fig:fiber-methods-fig)a).
-The smaller amount of tissue obtained using the micro-biopsy technique did thus not limit analyses of fiber type composition.
-
-In order to asses the reproducibility of the technique, samples obtained during the same day (separated by $\sim$ 2 hours) were analyzed as duplicate samples. 
-Standard deviations from duplicate measures were calculated as by Blomstrand *et al.* [@RN874]
-
-$$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
-where $d$ is the difference between paired observations and $n$ is the number of pairs.
-The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
-This did only marginally differ from between leg variations (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
-These estimates are slightly lower than those reported by Blomstrand *et al.*, using the Bergström needle
-[@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-This suggests that the micro-biopsy technique is reproducible in terms of repeated sampling.
-
 
 
 
@@ -316,6 +322,30 @@ Simulations further showed that model-based strategies were computationally robu
 
 
 ## Increased relevance of RNA-seq data through data-driven selection of 
+
+
+
+```{r rna-seq-myhc-validation, fig.cap="Validation of gene quantification using mRNA to protein correlations of myosin heavy-chain genes", fig.scap="Correlations between gene-family normalized protein and gene data from different mRNA quantification methods.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height=7, fig.align='center'}
+
+myhc_rnaseq_fig <- readRDS("./data/derivedData/study1-myhc-rnaseq-validation/myhc_rnaseq_fig.RDS")
+
+myhc_rnaseq_fig
+
+```
+
+
+
+
+```{r rna-seq-pairwise-validation, fig.cap="Variation pairwise", fig.scap="Within-participant variation between quantification methods.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height=2.5, fig.align='center'}
+
+rna_seq_validation_pairwise <- readRDS("./data/derivedData/study1-pairwise-variation-rnaseq/pairwise_fig.RDS")
+
+
+rna_seq_validation_pairwise
+
+
+```
+
 
 
 
