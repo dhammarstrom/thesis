@@ -137,7 +137,7 @@ comp_panel <- comp_strength %>%
         scale_fill_manual(values = c(group.study.color[2], group.study.color[5])) +
         scale_color_manual(values = c(group.study.color[2], group.study.color[5])) +
         
-        annotate("text", x = 1.45, y = 22, label = "Isokinetic", 
+        annotate("text", x = 1.45, y = 23, label = "Isokinetic", 
                  size = 2.5) +
         
         annotate("curve",
@@ -150,7 +150,7 @@ comp_panel <- comp_strength %>%
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
         
         
-        annotate("text", x = 2.5, y = 21, label = "Isometric", 
+        annotate("text", x = 2.5, y = 22.5, label = "Isometric", 
                  size = 2.5) +
         
         annotate("curve",
@@ -317,7 +317,7 @@ ul_results <- plot_grid(raw_scores, comp_panel, nrow = 2, align = "v")
 
 ultra_sound_strength <- plot_grid(ul_results, 
           strength_results, 
-          ncol = 1, rel_heights = c(1, 1)) 
+          ncol = 2, rel_widths = c(1, 1)) 
 
 
 

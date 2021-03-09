@@ -145,8 +145,12 @@ prediction_slope <- predict_df %>%
              y = "Muscle thickness change (mm)") +
         dissertation_theme() + 
         theme(axis.title.y = element_markdown(size = 7), 
-              legend.position = c(0.2, 0.90), 
-              legend.text = element_text(size = 7))
+              legend.position = c(0.25, 0.95),
+              legend.title = element_blank(),
+              legend.margin = margin(c(0, 1, 0, 0)),
+              legend.key.height = unit(0.2, "cm"),
+              legend.key.width = unit(0.2, "cm"),
+              legend.text = element_text(size = 7, margin = margin(t = 0, b = 0,r = 0,l= 0, unit = "pt")))
 
 
 
@@ -184,7 +188,10 @@ prediction_intercept <- predict_df %>%
                            breaks = c(-3, -2, -1, 0, 1, 2, 3, 4, 5), 
                            labels = c("", -2, "", 0, "", 2, "", 4, "")) +
         dissertation_theme() + 
-        theme(axis.title.y = element_markdown(size = 7), 
+        theme(axis.title.y = element_blank(),
+              axis.ticks.y = element_blank(),
+              axis.line.y = element_blank(),
+              axis.text.y = element_blank(),
               legend.position = "none")
 
 
@@ -245,15 +252,17 @@ rna_to_time_estimates <- combined_df %>%
 
 ### Whole page width 
 tot_rna_muscle_thickness <- plot_grid( 
-        plot_grid(prediction_slope, prediction_intercept, align = "h"), 
-        plot_grid(rna_to_time_estimates, loo_panel, ncol = 2),
+        plot_grid(NULL, prediction_slope, prediction_intercept, align = "h", rel_widths = c(0.02, 1, 1), ncol = 3), 
+        plot_grid(plot_grid(NULL, rna_to_time_estimates, NULL, ncol = 3, rel_widths = c(0.2, 1, 0.2)),
+                  
+                  loo_panel, ncol = 1),
         ncol = 1, 
-        rel_heights = c(1, 1)) +
+        rel_heights = c(1, 1.6)) +
         
         
-        draw_plot_label(label=c("a",  "b",  "c", "d"),
-                        x =   c(0.02, 0.53, 0.02, 0.53), 
-                        y =   c(0.98, 0.98, 0.48, 0.48),
+        draw_plot_label(label=c("a",  "",  "b", "c"),
+                        x =   c(0.01, 0.53, 0.1, 0.02), 
+                        y =   c(0.98, 0.98, 0.6, 0.25),
                         hjust=.5, vjust=.5, size = label.size)
 
 

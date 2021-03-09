@@ -7,6 +7,7 @@ library(latex2exp)
 
 library(emmeans)
 library(lme4)
+library(brms)
 library(nlme)
 library(feather)
 

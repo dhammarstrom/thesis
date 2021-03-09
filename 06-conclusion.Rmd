@@ -1,8 +1,11 @@
-# Conclusion {-}
+# Conclusions
 
-If we don't want Conclusion to have a chapter number next to it, we can add the `{-}` attribute.
 
-**More info**
 
-And here's some other random info: the first paragraph after a chapter title or section head _shouldn't be_ indented, because indents are to tell the reader that you're starting a new paragraph. Since that's obvious after a chapter or section title, proper typesetting doesn't add an indent there.
+- to relate skeletal muscle and systemic characteristics to benefit of moderate- compared to low-volume resistance training;
+- To determine volume-dependence in molecular networks related to muscle growth and remodeling in response to resistance training
+- To determine a time course of markers related to ribosome biogenesis in the early phase of resistance training.
 
+
+
+In conclusion, RT-induced ribosome accumulation reached peak values in the initial phase of RT (8 sessions) and was interconnected with increases in UBF protein levels. The rate of total RNA accumulation predicted RT-induced muscle hypertrophy. Fluctuations in training volume did not transfer to fluctuations in ribosomal biogenesis, but training cessation led to decreased ribosomal content.  

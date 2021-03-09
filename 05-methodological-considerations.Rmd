@@ -8,7 +8,7 @@ editor_options:
 
 ## Reliability of micro-biopsy sampling
 
-The micro biopsy technique generally produces smaller samples compared to other
+The micro biopsy technique used in works presented in this thesis generally produces smaller samples compared to other
 biopsy techniques
 [@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus
 requires several passes to produce sufficient material for multiple
@@ -18,7 +18,7 @@ several measures of muscle characteristics at the same time as being
 well tolerated [@RN824; @RN2553].
 Any reported differences in fiber type distributions between sampling techniques have been suggested to be related
 to differences in sampling depth [@RN2553; @RN2552].<!-- Hayot -->
-Thus, reproducibility of any biopsy technique may relate to its ability to obtain sufficient material at similar depths between samplings.
+Thus, reproducibility of any biopsy technique may relate to its ability to obtain sufficient material at similar depths between samples.
 
 ```{r immuno-data-prep, echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -170,12 +170,13 @@ In order to asses the reproducibility of the technique, samples obtained during 
 Similar to Blomstrand *et al.* [@RN874], standard deviations from duplicate measures were calculated as 
 
 $$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
+
 where $d$ is the difference between paired observations and $n$ is the number of pairs.
 The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
 This did only marginally differ from between leg variations (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
 These estimates are slightly lower than those reported by Blomstrand *et al.*, using the Bergström needle
 [@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-This suggests that the micro-biopsy technique is reproducible in terms of repeated sampling.
+This suggests that the micro-biopsy technique is reproducible in terms fiber type composition.
 
 
 
@@ -323,6 +324,40 @@ Simulations further showed that model-based strategies were computationally robu
 
 ## Increased relevance of RNA-seq data through data-driven selection of 
 
+Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments requires the use of a multitude bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that such tools are validated for specific study conditions [@RN2426]<!-- Conesa 2016 pipelines need to be adopted to study specific conditions-->
+To improve interpretability of the RNA sequancing data obtained from Study I we sought to compare mapping tools for their validity. As a first step, we first utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA levels to protein. Myosin heavy-chain compositions are well suited for this purpose as their mRNA and protein levels are known to correlate
+[@RN2444; <!-- Serrano Correlation between mRNA and prot abundance MyHC -->
+@RN1489; <!-- Ellefsen Reliable determination of myosin heavy chain -->
+@RN2445].<!-- Marx 2002 correlations were observed between the isoform expression of different MyHCs at the protein and mRNA-->
+To avoid concerns with normalization assumptions, both mRNA and protein abundances were expressed relative to the sum of counts for the whole gene- and protein-family 
+[@RN825; <!--Ellefsen Gene family profiling  -->
+@RN1489]. This analysis indicated that transcript-based mapping tools
+(RSEM [@RN2387]<!-- Li Rsem-->,
+kallisto [@RN2389]<!-- Bray kallisto --> and Salmon [@RN2390])
+resulted in stronger correlations between mRNA and protein profiles than genome-based mapping tools
+(STAR [@RN2386]<!-- Dobin STAR -->
+and  HISAT2 [@RN2385]; Figure \@ref(fig:rna-seq-myhc-validation)).
+A second analysis utilized the within-participant design of the study. With the assumption that paired observations between legs, at rest, would result in similar expression profiles if read mapping were more accurate, we determined the pairwise Log\textsubscript{2}-differences of a set of genes with known robust expression across tissues [@RN1759].<!-- Eisenberg housekeeping -->
+An initial observation indicated that genom-based mapping tools 
+
+
+They were also associated with the less technical variation, evident as lower Log2-fold differences in expression for a selection of highly expressed genes between the two legs at baseline [@RN2403]<!-- Tarnopolsky 2007 -->, assuming minimal biological variation between such paired samples. In these analyses, RSEM displayed slightly lower average variation between paired samples, thus outperforming kallisto and Salmon (Figure 1J).
+
+
+To this end, we first sought to select a suitable read-trimming method. This is necessary to provide high-quality downstream alignment and k-mer search in reads [@RN2441].<!-- Del Fabbro commonly used tools include trimmomatic and cutadapt(trimgalore) -->
+Two commonly used algorithms were compared [@RN2382; <!-- Bolger Trimmomatic --->
+@RN2441]. <!-- Del Fabbro commonly used tools include trimmomatic and cutadapt(trimgalore) --> Trimmomatic provided data with higher quality than Trimgalore (Figure 1G), which did not improve quality scores compared to non-filtered data. Second, we compared five mapping tools for performing transcript quantification of trimmed reads: two genome-based mapping tools
+(STAR [@RN2386]<!-- Dobin STAR -->
+and  HISAT2 [@RN2385])<!-- Kim HIsat -->
+and three transcript based mapping tools (RSEM [@RN2387]<!-- Li Rsem-->,
+kallisto [@RN2389]<!-- Bray kallisto --> and Salmon [@RN2390])<!-- Patro Salmon -->.
+Transcript-based mapping tools resulted in stronger correlations between mRNA and protein profiles, measured as relationships between myosin heavy chain mRNA profiles and protein abundances in rested state biopsies [@RN2358] (Figure 2A),<!-- Hammarström et al. -->
+which is known to correlate in resting human skeletal muscle 
+This comparison was performed using gene-/protein-family normalization
+[@RN825; <!--Ellefsen Gene family profiling  -->
+@RN1489],
+allowing the deduction of mRNA-to-protein relationships without the need for other normalization assumptions. Notably, a marked skew was observed in the relationship between *MYH1* proportions and its corresponding Type IIX fiber following the initial part of the training intervention. This coincided with robust changes in *MYH1* expression, as is typically seen in response to mechanical loading in such short time frames [@RN2056]<!-- Andersen Rapid switch off MyHCIIX-->.
+Furthermore, the transcript-based mapping tools (RSEM, kallisto, and Salmon) resulted in transcriptome profiles with an expected bimodal distribution of counts and a larger subset of detected genes compared to genome-based tools (Figure 1H). 
 
 
 ```{r rna-seq-myhc-validation, fig.cap="Validation of gene quantification using mRNA to protein correlations of myosin heavy-chain genes", fig.scap="Correlations between gene-family normalized protein and gene data from different mRNA quantification methods.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height=7, fig.align='center'}

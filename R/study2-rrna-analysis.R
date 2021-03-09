@@ -104,19 +104,19 @@ interaction_effects <- complete_rrna_comp %>%
         ggplot(aes(estimate, 
                    target, color = robust)) + 
         
-        geom_text(data = anno.df %>%
-                          mutate(target = factor(target, levels = c("rRNA18S F2R2",
-                                                                    "rRNA5.8S F2R2",
-                                                                    "rRNA28S F2R2",
-                                                                    "rRNA5S F3R3", 
-                                                                    "rRNA45SITS F12R12",
-                                                                    "rRNA45S F5R5",     
-                                                                    "rRNA47S F1R1"))),
-                  aes(estimate - 2, target,  label = label, color = NULL), 
-                  position = position_nudge(y = 0.25), 
-                  hjust = 0,
-                  size = 2.2) +
-        
+    #   geom_text(data = anno.df %>%
+    #                     mutate(target = factor(target, levels = c("rRNA18S F2R2",
+    #                                                               "rRNA5.8S F2R2",
+    #                                                               "rRNA28S F2R2",
+    #                                                               "rRNA5S F3R3", 
+    #                                                               "rRNA45SITS F12R12",
+    #                                                               "rRNA45S F5R5",     
+    #                                                               "rRNA47S F1R1"))),
+    #             aes(estimate - 2, target,  label = label, color = NULL), 
+    #             position = position_nudge(y = 0.25), 
+    #             hjust = 0,
+    #             size = 2.2) +
+    #   
         
         labs(x = "Fold change compared to Control") +
         
@@ -132,6 +132,8 @@ interaction_effects <- complete_rrna_comp %>%
         theme(strip.background = element_rect(color = "white", fill = "white"), 
               strip.text = element_text(size = 7),
               axis.title.y = element_blank()  , 
+              axis.line.y = element_blank(), 
+              axis.ticks.y = element_blank(),
               axis.text.y = element_blank(), 
               legend.position = "none")
 
@@ -302,11 +304,12 @@ tot_rna_fold_change <- comp_rna %>%
                            expand = c(0, 0)) +
         
         scale_fill_manual(values = c(group.study.color[1], group.study.color[2],group.study.color[5])) +
-        labs(y = "Fold change from Baseline") +
+        labs(y = "Fold change<br>from Baseline") +
         dissertation_theme() +
         
         theme(strip.background = element_blank(), 
               strip.text = element_blank(), 
+              axis.title.y = element_markdown(),
               legend.position = "none", 
               axis.title.x = element_blank()) 
 
@@ -324,9 +327,9 @@ tot_rna <- plot_grid(NULL,
 
 
 
-rrna_totrna_vs_control <- plot_grid(rrna, 
-          tot_rna, ncol = 1, 
-          rel_heights = c(0.8, 0.2))
+rrna_totrna_vs_control <- plot_grid(tot_rna, rrna, 
+          ncol = 1, 
+          rel_heights = c(0.2, 0.8))
 
 
 
