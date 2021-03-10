@@ -2174,48 +2174,26 @@ Simulations further showed that model-based strategies were computationally robu
 \hypertarget{increased-relevance-of-rna-seq-data-through-data-driven-selection-of}{%
 \section{Increased relevance of RNA-seq data through data-driven selection of}\label{increased-relevance-of-rna-seq-data-through-data-driven-selection-of}}
 
-Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments requires the use of a multitude bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that such tools are validated for specific study conditions {[}247{]}
-To improve interpretability of the RNA sequancing data obtained from Study I we sought to compare mapping tools for their validity. As a first step, we first utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA levels to protein. Myosin heavy-chain compositions are well suited for this purpose as their mRNA and protein levels are known to correlate
+Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments, requires the use of a multitude bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that combination of tools are validated for specific study conditions {[}247{]}
+To improve interpretability of the RNA sequencing data obtained from Study I, we sought to compare mapping tools for their validity. As a first step, we utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA counts to protein levels. Myosin heavy-chains are well suited for this purpose as their mRNA and protein levels are known to correlate
 {[}330, 101, 331{]}.
 To avoid concerns with normalization assumptions, both mRNA and protein abundances were expressed relative to the sum of counts for the whole gene- and protein-family
-{[}332, 101{]}. This analysis indicated that transcript-based mapping tools
+{[}332, 101{]}.
+This analysis indicated that transcript-based mapping tools
 (RSEM {[}275{]},
 kallisto {[}277{]} and Salmon {[}278{]})
 resulted in stronger correlations between mRNA and protein profiles than genome-based mapping tools
 (STAR {[}274{]}
 and HISAT2 {[}273{]}; Figure \ref{fig:rna-seq-myhc-validation}).
-A second analysis utilized the within-participant design of the study. With the assumption that paired observations between legs, at rest, would result in similar expression profiles if read mapping were more accurate, we determined the pairwise Log\textsubscript{2}-differences of a set of genes with known robust expression across tissues {[}333{]}.
-An initial observation indicated that genom-based mapping tools
-
-They were also associated with the less technical variation, evident as lower Log2-fold differences in expression for a selection of highly expressed genes between the two legs at baseline {[}334{]}, assuming minimal biological variation between such paired samples. In these analyses, RSEM displayed slightly lower average variation between paired samples, thus outperforming kallisto and Salmon (Figure 1J).
-
-To this end, we first sought to select a suitable read-trimming method. This is necessary to provide high-quality downstream alignment and k-mer search in reads {[}335{]}.
-Two commonly used algorithms were compared {[}272, 335{]}. Trimmomatic provided data with higher quality than Trimgalore (Figure 1G), which did not improve quality scores compared to non-filtered data. Second, we compared five mapping tools for performing transcript quantification of trimmed reads: two genome-based mapping tools
-(STAR {[}274{]}
-and HISAT2 {[}273{]})
-and three transcript based mapping tools (RSEM {[}275{]},
-kallisto {[}277{]} and Salmon {[}278{]}).
-Transcript-based mapping tools resulted in stronger correlations between mRNA and protein profiles, measured as relationships between myosin heavy chain mRNA profiles and protein abundances in rested state biopsies {[}336{]} (Figure 2A),
-which is known to correlate in resting human skeletal muscle
-This comparison was performed using gene-/protein-family normalization
-{[}332, 101{]},
-allowing the deduction of mRNA-to-protein relationships without the need for other normalization assumptions. Notably, a marked skew was observed in the relationship between \emph{MYH1} proportions and its corresponding Type IIX fiber following the initial part of the training intervention. This coincided with robust changes in \emph{MYH1} expression, as is typically seen in response to mechanical loading in such short time frames {[}100{]}.
-Furthermore, the transcript-based mapping tools (RSEM, kallisto, and Salmon) resulted in transcriptome profiles with an expected bimodal distribution of counts and a larger subset of detected genes compared to genome-based tools (Figure 1H).
-\begin{figure}
-
-{\centering \includegraphics{thesis_files/figure-latex/rna-seq-myhc-validation-1} 
-
-}
-
-\caption[Correlations between gene-family normalized protein and gene data from different mRNA quantification methods.]{Validation of gene quantification using mRNA to protein correlations of myosin heavy-chain genes}\label{fig:rna-seq-myhc-validation}
-\end{figure}
+A second analysis utilized the within-participant design of the study. With the assumption that paired observations between legs, prior to the intervention, would result in similar expression profiles if read mappings were more accurate, we determined the pairwise Log\textsubscript{2}-differences of a set of genes with known robust expression across tissues {[}333{]}.
+Across the whole range of transcript abundances (Average Log\textsubscript{2}-count), RSEM displayed smaller differences between pairwise observations, indication less technical variation. RSEM differed marginally to other transcript-based tools, but to a larger degree to genome-based tools (Figure \ref{fig:rna-seq-pairwise-validation}).
 \begin{figure}
 
 {\centering \includegraphics{thesis_files/figure-latex/rna-seq-pairwise-validation-1} 
 
 }
 
-\caption[Within-participant variation between quantification methods.]{Variation pairwise}\label{fig:rna-seq-pairwise-validation}
+\caption[Within-participant variation between RNA sequencing mapping tools.]{Average log-differences across average abundance levels for different mapping tools from paired samples retrieved prior to the intervention in Study I. Less difference indicate lower technical variation, assuming similarities between legs.}\label{fig:rna-seq-pairwise-validation}
 \end{figure}
 \hypertarget{conclusions}{%
 \chapter{Conclusions}\label{conclusions}}
@@ -3630,18 +3608,6 @@ Marie, I'm sorry for all the late nights, early mornings and weekends i did not 
 \leavevmode\hypertarget{ref-RN1759}{}%
 \CSLLeftMargin{{[}333{]} }
 \CSLRightInline{Eisenberg E, Levanon EY. Human housekeeping genes, revisited. Trends Genet 2013;29:569--74. \url{https://doi.org/10.1016/j.tig.2013.05.010}.}
-
-\leavevmode\hypertarget{ref-RN2403}{}%
-\CSLLeftMargin{{[}334{]} }
-\CSLRightInline{Tarnopolsky M, Phillips S, Parise G, Varbanov A, DeMuth J, Stevens P, et al. Gene expression, fiber type, and strength are similar between left and right legs in older adults. The Journals of Gerontology: Series A 2007;62:1088--95. \url{https://doi.org/10.1093/gerona/62.10.1088}.}
-
-\leavevmode\hypertarget{ref-RN2441}{}%
-\CSLLeftMargin{{[}335{]} }
-\CSLRightInline{Del Fabbro C, Scalabrin S, Morgante M, Giorgi FM. An extensive evaluation of read trimming effects on illumina NGS data analysis. PLOS ONE 2013;8:e85024. \url{https://doi.org/10.1371/journal.pone.0085024}.}
-
-\leavevmode\hypertarget{ref-RN2358}{}%
-\CSLLeftMargin{{[}336{]} }
-\CSLRightInline{Hammarström D, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, et al. Benefits of higher resistance-training volume are related to ribosome biogenesis. The Journal of Physiology 2020;598:543--65. \url{https://doi.org/10.1113/JP278455}.}
 
 \end{CSLReferences}
 

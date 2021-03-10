@@ -29,6 +29,8 @@ paired_sd_data <- readRDS(file = "./data/study-1b/data/derivedData/paired_sd_dat
 ## Plot results from analysis ##
 
 sd_a <- paired_sd_data %>%
+        mutate(method = factor(method, levels = c("star", "hisat", "salmon", "kallisto", "rsem"), 
+                               labels = c("STAR", "HISAT2", "Salmon", "kallisto", "RSEM"))) %>%
         filter(hk == TRUE) %>%
         ggplot(aes(A, SD, color = method, fill = method)) + 
         
@@ -43,7 +45,9 @@ sd_a <- paired_sd_data %>%
         
         scale_color_manual(values = group.study.color) +
         scale_fill_manual(values = group.study.color) +
-        theme(legend.position = "none") +
+        theme(legend.position = c(0.6, 0.8), 
+              legend.title = element_blank(), 
+              legend.key.height = unit(0.45, "cm")) +
         labs(y = "Average log2-difference\nbetween replicates", 
              x = "Average log2-count (A)")
 
@@ -140,7 +144,7 @@ rna_seq_validation_pairwise <- plot_grid(n_counts_fig, sd_a, rel_widths = c(0.5,
 
 
 
-saveRDS(rna_seq_validation_pairwise, "./data/derivedData/study1-pairwise-variation-rnaseq/pairwise_fig.RDS")
+saveRDS(sd_a, "./data/derivedData/study1-pairwise-variation-rnaseq/pairwise_fig.RDS")
 
 
 
