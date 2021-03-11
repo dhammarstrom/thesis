@@ -7,6 +7,193 @@ editor_options:
 
 ## Within-participant study designs
 
+The use of unilateral exercise in resistance training studies gives the advantage of a more efficient experiment. When comparisons are made within participants, less participants and resources are needed to estimate differences between two training-conditions with a given precision.
+[@RN1896].<!-- MacInnis 2017 -->
+This increased efficiency is due to the fact that between-participant variation can be removed from estimates of variability that in turn influence inference.
+In such studies, the correlated data structure  
+
+      
+
+
+
+```{r}
+
+library(MASS)
+
+mu <- c(2, 3.5)
+
+co <- 0.7
+
+
+Sigma <- matrix(co, nrow=2, ncol=2) + diag(2)
+ 
+rawvars <- mvrnorm(n=30, mu=mu, Sigma=Sigma, empirical = TRUE)
+?mvrnorm
+
+cor(rawvars[,1], rawvars[,2])
+
+t.test(rawvars[,1], rawvars[,2], paired =)
+
+
+source("./R/libraries.R")
+source("./R/themes.R")
+
+
+
+
+participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", sep=";") %>%
+        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) %>%
+        print()
+
+
+
+# mr data 
+source("./R/study-1/mr-and-dxa-data.R")
+
+mr <- mr.results %>%
+        dplyr::select(subject, leg, timepoint, CSA.avg) %>%
+        inner_join(participants) %>%
+        filter(include == "incl") %>%
+        pivot_wider(names_from = timepoint, values_from = CSA.avg) %>%
+        mutate(change = 100 * ((post/pre-1))) %>%
+        mutate(sets = factor(sets, levels = c("single", "multiple"))) %>%
+        
+        print()
+
+
+set.seed(1)
+ran_var <- rnorm(100, 0, 4)
+
+results <- data.frame(correlation = rep(NA, 1000), 
+                      est_lm = rep(NA, 1000), 
+                      se_lm = rep(NA, 1000), 
+                      tval_lm = rep(NA, 1000), 
+                      est_lmm = rep(NA, 1000), 
+                      se_lmm = rep(NA, 1000), 
+                      tval_lmm = rep(NA, 1000))
+
+
+for(i in 1:100) {
+  
+  temp <- mr %>%
+         mutate(change_mod = if_else(sets == "multiple", 
+                              change + sample(ran_var, 34, replace = FALSE), 
+                              change)) 
+  
+  results[i, 1] <- temp %>% 
+  dplyr::select(subject, sets, change_mod) %>%
+  pivot_wider(names_from = sets, values_from = change_mod) %>%
+  with(., cor(single, multiple))
+
+  
+  lm_mod <- temp %>%
+    lm(change_mod ~ sets, data = .)
+
+  lme_mod <- temp %>%
+    lme(change_mod ~ sets, 
+         random = list(subject= ~ 1), 
+         data = ., 
+         method = "REML")
+  
+  
+  results[i, 2] <- coef(lm_mod)[2] 
+  results[i, 3] <- coef(summary(lm_mod))[2,2] 
+  results[i, 4] <- coef(summary(lm_mod))[2,2] 
+  results[i, 5] <- coef(summary(lme_mod))[2,1] 
+  results[i, 6] <- coef(summary(lme_mod))[2,2] 
+  results[i, 7] <- coef(summary(lme_mod))[2,4] 
+
+
+  
+}
+
+
+
+
+
+within <- mr %>%
+  dplyr::select(subject, sets, change) %>%
+  pivot_wider(names_from = sets, values_from = change) %>%
+  mutate(diff.sq = (multiple - single)^2) %>%
+  summarise(sd = sqrt(sum(diff.sq)/(2*n()))) %>%
+  
+  print()
+
+
+mr %>%
+  dplyr::select(subject, sets, change) %>%
+  pivot_wider(names_from = sets, values_from = change) %>%
+  mutate(diff = multiple - single) %>%
+  with(., t.test(single, multiple, paired = TRUE))
+  
+  
+  lm(diff ~ 1, data = .) %>%
+  summary()
+
+
+
+between <- mr %>%
+  dplyr::select(subject, sets, change) %>%
+  pivot_wider(names_from = sets, values_from = change) %>%
+  rowwise() %>%
+  mutate(avg = mean(c(multiple, single))) %>%
+  ungroup() %>%
+  summarise(sd = sd(avg)) %>%
+  print()
+
+
+m <- lme(change ~ sets, 
+         random = list(subject= ~ 1), 
+         data = mr, 
+         method = "REML")
+
+
+ml <- lm(change ~ sets,
+         data = mr)
+
+plot(m)
+summary(ml)
+summary(m)
+
+sqrt((3.3639^2) / ((3.3639^2) + 33))
+
+
+
+
+
+VarCorr(m)
+
+model <- 5.41765513^2 / 2.15760867^2
+
+hand <- (3.53^2) / (2.16^2)
+
+
+
+temp <- coef(m) %>%
+  data.frame() %>%
+  mutate(subject = rownames(.))
+
+
+mr %>%
+  dplyr::select(subject, sets, change) %>%
+  pivot_wider(names_from = sets, values_from = change) %>%
+  mutate(diff = multiple - single) %>%
+  inner_join(temp) %>%
+  ggplot(aes(setsmultiple, diff)) + geom_point() + geom_abline(intercept = 0, slope = 1) + 
+  scale_x_continuous(limits = c(-3, 9)) +
+  scale_y_continuous(limits = c(-3, 9)) 
+
+
+
+```
+
+
+
+
+
+
+
+
 ## Reliability of micro-biopsy sampling
 
 The micro biopsy technique used in works presented in this thesis generally produces smaller samples compared to other
