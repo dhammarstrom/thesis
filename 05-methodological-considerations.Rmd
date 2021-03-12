@@ -13,187 +13,6 @@ This increased efficiency is due to the fact that between-participant variation 
 In such studies, the correlated data structure  
 
       
-
-
-
-```{r}
-
-library(MASS)
-
-mu <- c(2, 3.5)
-
-co <- 0.7
-
-
-Sigma <- matrix(co, nrow=2, ncol=2) + diag(2)
- 
-rawvars <- mvrnorm(n=30, mu=mu, Sigma=Sigma, empirical = TRUE)
-?mvrnorm
-
-cor(rawvars[,1], rawvars[,2])
-
-t.test(rawvars[,1], rawvars[,2], paired =)
-
-
-source("./R/libraries.R")
-source("./R/themes.R")
-
-
-
-
-participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", sep=";") %>%
-        pivot_longer(names_to = "sets", values_to = "leg", cols = multiple:single) %>%
-        print()
-
-
-
-# mr data 
-source("./R/study-1/mr-and-dxa-data.R")
-
-mr <- mr.results %>%
-        dplyr::select(subject, leg, timepoint, CSA.avg) %>%
-        inner_join(participants) %>%
-        filter(include == "incl") %>%
-        pivot_wider(names_from = timepoint, values_from = CSA.avg) %>%
-        mutate(change = 100 * ((post/pre-1))) %>%
-        mutate(sets = factor(sets, levels = c("single", "multiple"))) %>%
-        
-        print()
-
-
-set.seed(1)
-ran_var <- rnorm(100, 0, 4)
-
-results <- data.frame(correlation = rep(NA, 1000), 
-                      est_lm = rep(NA, 1000), 
-                      se_lm = rep(NA, 1000), 
-                      tval_lm = rep(NA, 1000), 
-                      est_lmm = rep(NA, 1000), 
-                      se_lmm = rep(NA, 1000), 
-                      tval_lmm = rep(NA, 1000))
-
-
-for(i in 1:100) {
-  
-  temp <- mr %>%
-         mutate(change_mod = if_else(sets == "multiple", 
-                              change + sample(ran_var, 34, replace = FALSE), 
-                              change)) 
-  
-  results[i, 1] <- temp %>% 
-  dplyr::select(subject, sets, change_mod) %>%
-  pivot_wider(names_from = sets, values_from = change_mod) %>%
-  with(., cor(single, multiple))
-
-  
-  lm_mod <- temp %>%
-    lm(change_mod ~ sets, data = .)
-
-  lme_mod <- temp %>%
-    lme(change_mod ~ sets, 
-         random = list(subject= ~ 1), 
-         data = ., 
-         method = "REML")
-  
-  
-  results[i, 2] <- coef(lm_mod)[2] 
-  results[i, 3] <- coef(summary(lm_mod))[2,2] 
-  results[i, 4] <- coef(summary(lm_mod))[2,2] 
-  results[i, 5] <- coef(summary(lme_mod))[2,1] 
-  results[i, 6] <- coef(summary(lme_mod))[2,2] 
-  results[i, 7] <- coef(summary(lme_mod))[2,4] 
-
-
-  
-}
-
-
-
-
-
-within <- mr %>%
-  dplyr::select(subject, sets, change) %>%
-  pivot_wider(names_from = sets, values_from = change) %>%
-  mutate(diff.sq = (multiple - single)^2) %>%
-  summarise(sd = sqrt(sum(diff.sq)/(2*n()))) %>%
-  
-  print()
-
-
-mr %>%
-  dplyr::select(subject, sets, change) %>%
-  pivot_wider(names_from = sets, values_from = change) %>%
-  mutate(diff = multiple - single) %>%
-  with(., t.test(single, multiple, paired = TRUE))
-  
-  
-  lm(diff ~ 1, data = .) %>%
-  summary()
-
-
-
-between <- mr %>%
-  dplyr::select(subject, sets, change) %>%
-  pivot_wider(names_from = sets, values_from = change) %>%
-  rowwise() %>%
-  mutate(avg = mean(c(multiple, single))) %>%
-  ungroup() %>%
-  summarise(sd = sd(avg)) %>%
-  print()
-
-
-m <- lme(change ~ sets, 
-         random = list(subject= ~ 1), 
-         data = mr, 
-         method = "REML")
-
-
-ml <- lm(change ~ sets,
-         data = mr)
-
-plot(m)
-summary(ml)
-summary(m)
-
-sqrt((3.3639^2) / ((3.3639^2) + 33))
-
-
-
-
-
-VarCorr(m)
-
-model <- 5.41765513^2 / 2.15760867^2
-
-hand <- (3.53^2) / (2.16^2)
-
-
-
-temp <- coef(m) %>%
-  data.frame() %>%
-  mutate(subject = rownames(.))
-
-
-mr %>%
-  dplyr::select(subject, sets, change) %>%
-  pivot_wider(names_from = sets, values_from = change) %>%
-  mutate(diff = multiple - single) %>%
-  inner_join(temp) %>%
-  ggplot(aes(setsmultiple, diff)) + geom_point() + geom_abline(intercept = 0, slope = 1) + 
-  scale_x_continuous(limits = c(-3, 9)) +
-  scale_y_continuous(limits = c(-3, 9)) 
-
-
-
-```
-
-
-
-
-
-
-
-
 ## Reliability of micro-biopsy sampling
 
 The micro biopsy technique used in works presented in this thesis generally produces smaller samples compared to other
@@ -501,13 +320,226 @@ fiber_type_rel_plot
 
 
 
-## Feasibility of model-based normalization of RT-qPCR-based gene-expression data in a case of human muscle under hypertrophic stress
+## Model-based normalization of qPCR data
 
-Quantitative reverse-transcription real-time polymerase chain-reaction (RT-qPCR) is the method of choice for conducting targeted gene-expression studies.
-For accurate interpretation of such data the selection of normalization strategy needs to account for biological as well as non-biological variation.
-Whereas analysis using endogenous control genes is the most commonly adopted approach, model-based strategies using estimates of technical variation from multiple genes could offer increased sensitivity and accuracy.  
-Here, we compare the feasibility gene-specific and model-based normalization strategies for analyzing the effect of two resistance-training programs on abundance of IGF-1 and myostatin mRNA in humans. As for gene-specific normalization, neither of the eleven commonly utilized endogenous control genes investigated exhibited stability suggesting that the use of endogenous internal controls for normalization may affect interpretation. In contrast, using mixed-effects models utilized to estimate technical variation between samples without relying on endogenous controls proved to be feasible. 
-Simulations further showed that model-based strategies were computationally robust and had higher power than traditional analysis.
+Quantitative reverse-transcription real-time polymerase chain-reaction (qPCR) is the method of choice for conducting targeted gene-expression studies.
+After reverse-transcription of RNA, complementary DNA (cDNA) is amplified in the presence of target-specific primers and a reporter probe or dye that produces fluorescence as the PCR product accumulates over repeated PCR cycles. When enough product has formed, the fluorescent signal rises above background fluorescence and the fractional PCR cycle used for quantification (Cq) can be estimated. The Cq-values is directly proportional to the starting amount of the targeted transcript and thus constitute the primary outcome of qPCR experiments
+[@RN2099].
+qPCR experiments should ideally be designed to account for methodological pitfalls, including amounts of RNA utilized for reverse-transcription, its efficiency and the amount of cDNA used in PCR amplification.
+As traditional statistical treatment of qPCR data accounts for these challenges through the use of a reference-gene [@RN2100; @RN2101], the stable expression of such a gene is an important assumption in the experiment.
+Using an internal control-factor comprised of the geometric average of multiple reference-genes has been shown to increase the validity of this assumption [@RN991].
+However, the stability of potential reference-genes must be determined in each experiment [@RN1983; @RN991] highlighting that qPCR is inevitably challenging specific to the system under study.
+This challenge may be a reason to why many recent investigations into human skeletal muscle in response to exercise reported using a single-reference gene, validated or non-validated for normalization, despite the recommended use of a validated set of reference genes [@RN1985; @RN2083; @RN2084; @RN2086; @RN2087].
+<!-- Recent studies using single reference genes -->
+<!-- Only GAPDH in  [@RN2083] -->
+<!-- only GAPDH in  [@RN2084]  validated in  [@RN2085] -->
+<!-- only GAPDH in (not validated)  [@RN2086] -->
+<!-- only GAPDH (stable across time) [@RN2087] -->
+
+To select a suitable set of references genes, several methods have been proposed, out of which geNorm [@RN991] and Normfinder [@RN1772] are the two most common approaches. 
+The geNorm algorithm assess reference-gene stability through iterative calculation of pairwise expression-ratios where the least stable gene, i.e. the gene that varies the most relative to other genes across all samples is removed in each iteration, resulting in a set of at least two genes that exhibit the least pairwise variation [@RN991].
+As no information about the study design can be incoroprated in geNorm, a potential pitfall is variable expression of potential reference genes across experimental groups or conditions [@RN1772].
+The Normfinder algorithm utilizes a linear model to determine variation in reference-gene expression as deviations from an assumed stable expression.
+Normfinder can be set to include grouping of data, resulting in a stability measure that combines variation within and between groups for each gene.
+This does not, however, relax the assumption of no *systematic* variation across experimental conditions [@RN1772].
+As many experiments performed in the field of exercise-physiology, especially related to muscle, are conducted as repeated measurement studies, where the same participant is investigated over time, the question regarding reference-gene stability may be slightly rephrased. Instead of searching for the most stable gene across the whole data set, we may want to assess the stability within each participant.
+Dai and co-workers [@RN1771] suggested the utilization of a mixed-effects model-based selection algorithm.
+First, the algorithm determines whether variation in expression of a potential set of reference-genes depends on experimental conditions.
+Then, it determines the expression stability of gene-sets through the intra-class correlation within data clusters, e.g. study participants, where gene expression is to be monitored over repeated measures.
+<!--So, this is the correct expression, the study cluster is the participant, not group-->
+Such a mixed-effect model approach accounts for, and take advantage of, correlated measures.
+The proposed algorithm can also capture complex experimental designs and confirm that potential genes are not systematically affected by conditions studied. 
+
+To assess the stability of potential reference genes in Study I, 11 genes were evaluated (Figure \@ref(fig:ref-gene-comp)a). All three selection algorithms suggested different pairs of reference genes (Figure \@ref(fig:ref-gene-comp)b). The mixed-model approach resulted in set of genes that showed the least systematic variation across study conditions. Figure \@ref(fig:ref-gene-comp)c shows coefficients with 95\% CI from mixed models with each normalization factor as the dependent variable. The naive use of a single reference-gene would result in the largest deviation from the assumption of a stable reference over time, as GAPDH is expressed to a lesser degree before exercise at Week 2 compared to baseline. However, when comparing between conditions, normalization factors suggested by geNorm and Normfinder both showed differentiated levels between conditions before exercise at Week 2 (Figure \@ref(fig:ref-gene-comp)c). These results underline that bias can be introduced in qPCR experiments from the choice of normalization factor. The use of a selection algorithm that specifically tests for stability within participants may provide a more robust normalization factor.
+
+
+```{r ref-gene-comp, fig.cap="Variation in normaliation factors determined by mixed-model selection, Normfinder and geNorm as well as comprised of a single-gene (GAPDH) for comparison (a). Estimates from mixed-effects regression-models for each normalization factor (b). Errorbars represent 95\\% confidence intervals.", fig.scap="Reference gene selection in Study I", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height = 6, fig.align='center'}
+
+selection_process <- readRDS("./data/derivedData/study1-reference-gene-stability/selection_process.RDS")
+
+
+gene_descriptive <- readRDS("./data/derivedData/study1-reference-gene-stability/gene_descriptive.RDS")
+
+
+
+ref_set_comp <- readRDS("./data/derivedData/study1-reference-gene-stability/ref_set_comp.RDS")
+
+plot_grid(gene_descriptive, ref_set_comp, ncol = 1, rel_heights = c(0.4, 1)) +
+  draw_plot_label(c("a", "b", "c"), 
+                  x = c(0.0, 0.0, 0.5), 
+                  y = c(0.99, 0.72, 0.72))
+
+
+
+
+
+
+```
+
+The interpretation of qPCR data indirectly relates to the choice of biological input. When e.g. total RNA is extracted and normalized per sample prior to cDNA synthesis, stable reference genes are assumed to be stable per total RNA. This logic also apply when a fixed amount of tissue or mRNA is used as input quantity
+[@RN1984].<!-- Bustin -->
+Internal reference genes will, if they are validated, thus reflect the input quantity. The interpretation in such case is that target gene abundance changes per amount of biological input, e.g. total RNA.
+As such, the validation of a set of reference genes may be redundant as normalization is performed when an equal amount of RNA is subjected to cDNA synthesis.
+Additionally, reference genes are also measured with technical error and biological variation that is inevitable introduced to the analysis.
+Modifications to the design of the qPCR experiment were suggested by Steibel and co-workers [@RN1154] who utilized a linear mixed-effects model framework where the model was specified with a random-effects structure designed to capture variations due to e.g. sample preparation as well as the over-all study design (though fixed-effects).
+Technical variation were modeled as random effect of two or more technical replicates.
+In this approach, all target genes are modeled together as a set and the effect of experimental conditions are evaluated from the model for each gene-of-interest.
+When utilizing a linear mixed-effects model, as suggested by Steibel *et al.* [@RN1154], assumptions are made that errors are normally distributed and variance is equal over the range of the data (homoscedasticity). 
+When dealing with low-abundance genes, this assumption can be problematic as the variation increases when few target molecules are amplified [@RN1964].
+Such model assumptions can be checked and delt with using appropriate statistical methods allowing for heterogenuous variance [@RN1986].
+Further extending the concept described by Steibel *et al.*  [@RN1154], Matz and co-workers proposed modeling transcript abundance with a Poisson-lognormal generalized linear mixed-model [@RN1964], making it possible to account for the specific characteristics of qPCR data where one can anticipate no amplification (zero target molecules) and heteroscedasticity, i.e. larger variance due to low-abundance starting material.
+Matz *et al.*  subsequently suggested that the random-effects structure would provide sufficient within-model normalization [@RN1964].
+
+The use of model-based normalization, as suggested by Steibel *et al.* and Matz *et al.* represents a promising alternative in situations were the appropriate validation of reference genes is not feasible.
+However, the implementation of such analysis comes with a new set of assumptions.
+First, if a study condition systematically leads to lower amounts or quality of cDNA due to e.g. RNA degradation, a random effect structure will not account for this but instead result in estimates of lower expression of all genes in these samples. In such case, the use of internal reference genes will yield different results as the internal control will also be affected by RNA degradation
+[@RN1964].
+This fact leads to the assumption in a model-based normalization strategy that variations in cDNA quantity or quality between samples is randomly distributed.
+Additional assumptions revolve around the choice of statistical model.
+In the basic parameterization of a linear mixed-effects model, homoscedasticity and normal distribution of the residual errors is assumed. 
+As differently expressed genes can be assumed to have different overall variances this would violate the assumption of homoscedasticity. To account for possible heterogeneity among different genes, a variance function
+[@RN1986]
+can be introduced to the model to allow for gene-specific residual variance. This approach can be extended with variance functions that also accounts for higher variation due to the stochastic processes when amplifying small amounts of starting material.
+Such gene-specific residual variance can be modeled taking the observed Cq-value into account.
+Adding variance-functions to the model could be regarded as an analog to the use of a Poisson log-normal model to account for qPCR specific technical variability, as suggested by Matz *et al.*[@RN1964].
+
+Implementations of model-based normalization can be accomplished both in a frequentist and Bayesian framework.
+The `nlme` package provides functions to fit linear mixed-effects models (LMM) with extended variance structures that are able to account for gene-specific residual variance [@RN1986].
+Matz *et al.* [@RN1964] used the `MCMCglmm` [@RN1992] package to fit Bayesian generalized linear mixed models (GLMM) using a Poisson log-normal errors.  
+
+The introduction of more elaborate random effect-structures and variance structures adds parameters to each model that has to be estimated. This may lead to convergence issues in linear mixed-effects models
+[@bates2018parsimonious].
+Analogous to this, in a Bayesian framework, Markov chain Monte Carlo (MCMC) sampling may struggle to converge when models are too complex. 
+Robustness of modeling algorithms may thus represent a limitation in terms of reproducibility of model-based normalization.
+To assess robustness of model-based normalization strategies, all possible gene combinations of sizes 2 and 11 (both n = 78) from a set of 13 genes investigated in Study I were used to fit models using LMM and GLMM approaches.
+The same random effect structure was used in both frameworks.
+The fraction of models that did not converge (LMM) or showed estimation issues (LMM and GLMM) was determined for both modeling strategies. In the LMM approach, non-estimable effects were defined when the algorithm could not approximate the covariance matrix. In the GLMM approach, a Gelman-Rubin convergence criterion > 1.1 from two chains for any estimate was used as a threshold to define estimation issues.
+The analysis showed that the number of models with convergence issues increased as the number of targets increased from two to eleven \@ref(fig:qpcr-model-robustness). To circumvent such convergence issues, simplification of random effect-structures or reducing the number of targets may help in the case of LMM and GLMM. Adding MCMC iterations in the Bayesian framework could improve its perfomance.
+
+
+```{r qpcr-model-robustness, fig.cap = "Increasing the number of targets in gene-set modeling increses the rates of non-convergance and estimation issues in LMM as wells as estimation issues in GLMM. Estimation issues in LMM was defined when variance components were not estimatable, in the GLMM approach the Gelman-Rubin criterion was used to define estimation issues.", fig.scap="Robustness of model-based qPCR normalization", fig.width = 4, fig.height=2.5, fig.align='center'}
+
+robust2genes <- read_rds("./data/study-1/qpcr/reference-gene-selections/robust_2genes.RDS")
+robust11genes <- read_rds("./data/study-1/qpcr/reference-gene-selections/robust_11genes.RDS")
+
+robust2genes <- robust2genes %>%
+  mutate(mcmc.convergance = paste0(mcmc.vcv.convergance, mcmc.sol.convergance) ) %>%
+  dplyr::select(lme.convergance, mcmc.convergance) %>%
+  gather(model, conv, lme.convergance:mcmc.convergance) %>%
+  count(model, conv) %>%
+  mutate(p = (n / 78)*100,
+         ngenes = 2) 
+
+robust11genes <- robust11genes %>%
+  mutate(mcmc.convergance = paste0(mcmc.vcv.convergance, mcmc.sol.convergance) ) %>%
+  dplyr::select(lme.convergance, mcmc.convergance) %>%
+  gather(model, conv, lme.convergance:mcmc.convergance) %>%
+  count(model, conv) %>%
+  mutate(p = (n / 78)*100,
+         ngenes = 11) 
+
+  
+robust <- rbind(robust2genes, robust11genes)
+
+robust_fig <- robust %>%
+  mutate(Performance = if_else(conv == "VCVgoodSolgood" |conv == "Estimate", "Convergance",
+                               if_else(conv == "NoConvergance", "No convergance", "Estimation\nissues"))) %>%
+  mutate(Performance = factor(Performance, levels = c("Convergance", "Estimation\nissues", "No convergance")),
+         model = factor(if_else(model == "lme.convergance", "LMM", "GLMM"), levels = c("LMM", "GLMM")),
+         ngenes = factor(if_else(ngenes == 2, "Two targets", "Eleven targets"), 
+                         levels = c("Two targets", "Eleven targets"))) %>%
+  group_by(model, ngenes, Performance) %>%
+  summarise(p = sum(p)) %>%
+  ggplot(aes(model, p, fill = Performance)) + geom_bar(stat="identity") +
+  scale_fill_manual(values = c("gray90", "gray60", "gray20")) +
+  ylab("Percentage of\n models") + xlab("Modeling strategy")+
+  
+  scale_y_continuous(limits = c(0, 101),
+                     expand = c(0, 0),
+                     breaks = c(0, 25, 50, 75, 100)) +
+  
+  facet_grid(. ~ ngenes) +
+  guides(fill = guide_legend(nrow=3,byrow=TRUE)) +
+  dissertation_theme() +
+  theme(strip.text = element_text(size = 7), 
+        strip.background = element_blank(), 
+        legend.text = element_text(size = 7), 
+        legend.title = element_text(size = 7))
+  
+robust_fig
+
+```
+
+The choice of a model-based normalization approach for qPCR analysis could also be based on statistical efficiency. As measurements of reference genes are associated with both technical error and biological variation, relying on these measurements affects the power of subsequent statistical tests. To explore the effect of model-based vs. reference-gene based normalization on statistical power, a small simulation study was performed.
+First, a simulated data-set of Cq-values for n = 1000 participants and four genes was created, designed to mimic the observed data-set in Study I. Random effects, common to all genes were added trough random sampling from distributions with zero mean and given standard deviations for participant ($\sigma = 0.3$), participants legs ($\sigma = 0.001$) and biological samples within participant ($\sigma = 0.27$). Gene-specific random effects for each participant ($\sigma = 0.25$), leg ($\sigma = 0.0001$) and biological sample ($\sigma = 0.1$) were added. Gene-specific residual error was then added to each replicate where the sampling distributions were set to $\sigma=0.2$ and $\sigma=0.6$ in the genes-of-interest and $\sigma=0.01$ and $\sigma=1$ in the "stable" and "unstable" reference gene respectively. To further mimic the behavior of qPCR data, additional random error was added where the sampling distribution had a standard deviation of $\sigma = 0.2 \times Cq-min(Cq)$, this gave heteroscedasticity within each gene related to the simulated Cq. Together these parameters simulates the randomness of a qPCR data set with gene-specific heteroscedasticity over the range of simulated Cq-values with increased error in genes that were simulated as less abundantly expressed (higher Cq-values).
+All genes where given the same average Cq-value of 20 and two genes where considered genes of interest where fixed-effects of time and interaction effects between time and condition were added representing fold-changes of ~1.15-1.52 (differences in Cq-values of 0.2-0.6). Participants (n = 30) were randomly sampled from the simulated population and gene expression values were assessed either in model-based normalization approaches or a gene-by-gene manner where a single target was normalized to a reference gene and modeled using the same fixed effect structure as in the model-based approach. 
+
+The model-based normalization approaches were comparable and consistently better performing than the gene-by-gene strategy wherein target genes were normalized by reference-genes (Figure \@ref(fig:qpcr-simulations)). Adding random variation to the target gene moved the model-based approach closer to the reference-gene normalization strategy (comparing $\sigma=0.2$ with $\sigma=0.6$). On the other hand, adding random variation to the reference-gene naturally decreased statistical power as seen when comparing the stable versus the unstable reference gene.
+
+In summary, the choice of analytic methods is potentially a source of significant variation in analyses of qPCR data and subsequent inference. 
+These notes underlines that establishing and critically evaluating data-analytic pipelines adopted to specific experimental designs can help to explicitly test assumptions about both biological, technical and statistical aspects of qPCR analysis.
+Although using a model-based normalization approach could prove difficult in terms of model fitting, it is likely more accurate and powerful.
+
+```{r qpcr-simulations, fig.cap = "Statistical power increases with effect-size. Effect sizes were assessed as main effects of time (left panels) or as interaction between time and group (right panels). Gene-specific variation in each target gene was set to $\\sigma=0.2$ (upper panels) and $\\sigma=0.6$ (lower panels).", fig.scap="qPCR power-simulation", fig.width = 3, fig.height=3, fig.align='center'}
+
+
+
+simresults <- bind_rows(read_rds("./data/study-1/qpcr/reference-gene-selections/simresults30.RDS"))
+  
+
+
+simulation_results <- simresults %>%
+filter(coef != "(Intercept)") %>%
+  mutate(pwr = 0,
+         pwr = if_else(coef == "timepointt2" & lwr > 0, 1, pwr),
+         pwr = if_else(coef == "timepointt3" & lwr > 0, 1, pwr),
+         pwr = if_else(coef == "timepointt4" & lwr > 0, 1, pwr),
+         pwr = if_else(coef == "timepointt2:conditionc2" & lwr > 0 | upr < 0, 1, pwr),
+         pwr = if_else(coef == "timepointt3:conditionc2" & upr < 0, 1, pwr),
+         pwr = if_else(coef == "timepointt4:conditionc2" & upr < 0, 1, pwr),
+         pwr = if_else(coef == "conditionc2" & lwr > 0 | upr < 0, 1, pwr),
+         beta = if_else(coef == "timepointt2" & gene %in% c("g1", "g2"), 2^0.3,
+                        if_else(coef == "timepointt3" & gene %in% c("g1", "g2"), 2^0.5,
+                                if_else(coef == "timepointt4" & gene %in% c("g1", "g2"), 2^0.7,
+                                        if_else(coef == "timepointt3:conditionc2" & gene %in% c("g1", "g2"), 2^0.3,
+                                                if_else(coef == "timepointt4:conditionc2" & gene %in% c("g1", "g2"), 2^0.5, 0))))),
+         effect = if_else(coef %in% c("timepointt2", "timepointt3", "timepointt4"), "main", "interaction")) %>%
+  group_by(method, gene, coef, beta, effect) %>%
+  
+  summarise(pwr = sum(pwr)/n()) %>%
+  filter(gene %in% c("g1", "g2") & beta > 0.2) %>%
+  ungroup() %>%
+  mutate(effect = factor(effect, levels = c("main", "interaction"), labels = c("Main", "Interaction")),
+         Strategy = factor(method, levels = c("nlme", "mcmc", "g3", "g4"), 
+                           labels = c("LMM", "GLMM", "Stable\nreference", "Unstable\nreference")),
+         gene = factor(gene, labels = c(expression(paste(sigma," = 0.2")),
+                                        expression(paste(sigma," = 0.6"))))) %>%
+  
+  ggplot(aes(beta, pwr, color = Strategy,shape = Strategy, group = paste0(effect, method))) + 
+  
+  geom_point(size = 2.5, position = position_dodge(width=0.01)) + 
+  
+  geom_line(position = position_dodge(width=0.01)) +
+  
+  facet_grid(gene~effect, labeller = label_parsed) + 
+  
+  ylab(expression(paste("Power (1-",beta," error probability)"))) + xlab("Effect size (Fold-change)") +
+  
+  guides(color=guide_legend(keywidth=0.2, keyheight=0.4, default.unit="inch")) +
+  
+  scale_color_manual(values = group.study.color[c(1, 2, 3, 5)]) +
+  
+  dissertation_theme() + 
+  theme(strip.background = element_blank(), 
+        strip.text.x = element_text(size = 7), 
+        strip.text.y = element_text(size = 7, angle = 0), 
+        legend.position = "bottom", 
+        legend.title = element_blank())
+  
+simulation_results
+
+
+```
 
 
 ## Increased relevance of RNA-seq data through data-driven selection of 
@@ -529,7 +561,7 @@ and  HISAT2 [@RN2385]; Figure \@ref(fig:rna-seq-myhc-validation)).
 A second analysis utilized the within-participant design of the study. With the assumption that paired observations between legs, prior to the intervention, would result in similar expression profiles if read mappings were more accurate, we determined the pairwise Log\textsubscript{2}-differences of a set of genes with known robust expression across tissues [@RN1759].<!-- Eisenberg housekeeping -->
 Across the whole range of transcript abundances (Average Log\textsubscript{2}-count), RSEM displayed smaller differences between pairwise observations, indication less technical variation. RSEM differed marginally to other transcript-based tools, but to a larger degree to genome-based tools (Figure \@ref(fig:rna-seq-pairwise-validation)).
 
-Mapping tools were used with default settings, this  Although each mapping tool may be further optimized, these analyses shows that selection of tools with default settings  
+Mapping tools were used with default settings which leaves room for further optimization of each tool. However, selecting tools with default setting should provide a heuristic solution to the problem of optimizing an analytic pipeline. Taken together these observations highlight that RNA sequencing experiments can be improved in terms of biological validity by systematic evaluation of analytic tools.  
 
 
 ```{r rna-seq-myhc-validation, fig.cap="Validation of mapping tools using mRNA to protein correlations of myosin heavy-chain genes", fig.scap="Correlations between gene-family normalized protein and gene data from different mRNA quantification methods.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height=7, fig.align='center'}

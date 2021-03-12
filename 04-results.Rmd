@@ -1583,3 +1583,34 @@ tot_rna_muscle_thickness
 
 ```
 
+## Limitations
+
+In Study I, a main objective was to determine differences in training outcomes and molecular markers between volume conditions. As such, the study is limited in respect to what conclusions can be drawn from time effects as no non-training control group was included in the study. Conclusions regarding changes over time in e.g. total RNA, gene expression and strictly speaking, muscle growth and strength are thus limited in their strength of evidence. 
+In Study II the use of a control group did strengthen this aspect of the analyses, however, the number of biopsies were limited in the control group. The control group in Study II served the purpose of system validation but did thus not serve as a true control condition for training *per se*.
+
+In Study I, step-wise regression was used to select important variables relating to moderate-volume benefit. In addition to what was already discussed above, the analysis is limited with respect to variables available for selection. Irrespective of technique used for downstream analyses, the conclusion regarding the importance of total RNA is made only in competing with the other available variables. From a cellular perspective, a plethora of potential determinants exists including, but not limited to,
+satellite cells [@RN2080],<!-- Blaauw -->
+Yes-associated protein [@RN1931] and <!-- Goodman  -->
+Myostatin and transforming growth factor-$\beta$ [@RN1619]
+-related signaling. The availability of techniques to investigate these and other potential determinants limited analyses.
+Additionally, the study did not include detailed documentation of out-of-study habitual physical activity and only a limited dietary registration both of which could have influenced the between-participant analysis.
+Lastly, by weighing variables against each other, one implicitly assumes that variables are measured with similar technical variability, something that is likely a very optimistic assumption. 
+
+Muscle biopsy sampling is limited by ethical and practical reasons. In both studies, the choice of biopsy sampling time-points dictates resolution of analyses. Biopsies sampled one hour after the fifth session in Study I likely did not provide reliable information regarding acute changes in gene expression in response to low- and moderate-volume exercise. Similarly, biopsies in rest in Study II limited the investigation in terms of acute signaling events. 
+
+The use of total RNA as a proxy marker of ribosomal abundance is widely accepted. Indeed, we find general agreement between total RNA and targeted analysis of ribosomal RNA, at least in the initial phase of the interventions. However, apparent disconnect between the mRNA and total RNA pool and tendency of discrepancies between volume conditions in total RNA and rRNA abundance after twelve weeks of training in Study I warrants further examination as it suggests that sub-populations of RNA may vary independently from each other. Although the assumption regarding total RNA likely holds, it should have been confirmed in order to strengthen the conclusions from both studies.
+
+## Future directions
+
+The importance of early-phase RNA accumulation was highlighted in both studies presented in this thesis. Future studies that aim to investigate *in vivo* ribosomal biogenesis in response to resistance training should take advantage of the fact that a limited number of training sessions are needed to reach maximal accumulation of total RNA (and thus presumably ribosome abundace). Further use of within-participant designs could also investigate the etiology of inter-individual differences in ribosomal biogenesis. Constant-volume protocols may in this respect represent a fruitful model to investigate such differences. Given that training volume likely is the most important variable with respect to the dose-response of resistance training, within-participant models with differentiated volume allocated to either limb could for example be used to study if age-related anabolic resistance is related to impaired sensitivity to the training stimuli.
+
+Although constant volume protocol may prove useful in controlled mechanistic studies, the use of progressive-volume protocols should be evaluated for their use in clinical settings. Ever since the days of DeLorme (see Background), resistance training has been perfomed with progressive resistance. However, the use of a set training volume could be less effective as to much training volume initially 
+
+
+
+
+
+
+
+
+
