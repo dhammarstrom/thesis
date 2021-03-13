@@ -118,7 +118,7 @@ A key aspect of successful exercise diagnostics would be to take advantage of th
 It is possible that the response to training could be positively affected by adapting an individuals training program based on some prior knowledge about the individual. 
 Observations supporting such notion exists as an individual classified as non-responsive to a specific exercise modality (e.g. endurance training) may be classified as a responder to another (e.g. resistance training)
 [@RN2681].<!-- Changing from end to res training removed non responsiveness --> 
-Even changing training variables within a specific modality have been shown to convert non-responders into responders. When endurance training volume was increased, participants previously unresponsive to training increased thier VO\textsubscript{2max}
+Even changing training variables within a specific modality have been shown to convert non-responders into responders. When endurance training volume was increased, participants previously unresponsive to training increased thier aerobic power
 [@RN2699].<!-- Lundby increasing training volume improved non-responders -->
 
 Although apparent reversal of non-response to exercise training has been observed by manipulating training variables, decisive indications for such manipulations are still lacking.

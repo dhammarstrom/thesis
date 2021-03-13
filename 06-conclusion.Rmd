@@ -1,11 +1,17 @@
 # Conclusions
 
+The main conclusions drawn from the work presented in this thesis are
 
 
-- to relate skeletal muscle and systemic characteristics to benefit of moderate- compared to low-volume resistance training;
-- To determine volume-dependence in molecular networks related to muscle growth and remodeling in response to resistance training
-- To determine a time course of markers related to ribosome biogenesis in the early phase of resistance training.
+\begin{itemize}
+  \item muscle mass and strength are differentially affected by resistance training volume, expressed as the within-sessions number of sets, in a dose-dependent manner.
+  \item Moderate compared to low-volume training leads to greater ribosomal biogenesis and mRNA expression related to extracellular matrix remodeling.
+  \item Moderate compared to low-volume exercise leads to a higher activity of
+mTORC1-related signaling.
+  \item Resistance training-induced shifts in fiber type distributions are sensitive to training volume as moderate compared to low training volumes leads to a greater reduction in Type IIX proportions over twelve weeks of training but less reduction in response to four sessions.
+  \item The ability to differentiate total RNA accumulation in response to different training volumes after four training sessions predicts benefits of moderate compared to low-volume training after twelve weeks.
+  \item Maximal accumulation of total RNA in response to resistance training occurs after eight sessions in previously untrained young individuals.
+  \item Accumulation of total and ribosomal RNA is not affected by variable training volume. However, eight days of de-training training reduced the synthesis of ribosomal precursor RNA and total RNA content.
+  \item Total RNA abundance is positively related to upstream binding factor protein-expression.
+\end{itemize}
 
-
-
-In conclusion, RT-induced ribosome accumulation reached peak values in the initial phase of RT (8 sessions) and was interconnected with increases in UBF protein levels. The rate of total RNA accumulation predicted RT-induced muscle hypertrophy. Fluctuations in training volume did not transfer to fluctuations in ribosomal biogenesis, but training cessation led to decreased ribosomal content.  

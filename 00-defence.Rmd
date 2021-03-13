@@ -3,11 +3,11 @@ THESIS FOR DOCTORAL DEGREE (Ph.D.)
 \
 \
 \
-**The title of your thesis**
+**Determinants of intra-individual variation in adaptability to resistance training of different volumes**
 \
 \
 by  
-**Your name**
+**Daniel Hammarström**
 \
 \
 \
@@ -16,20 +16,19 @@ Thesis for Philosophy of Doctoral Degree in Sport Sciences, at The Swedish Schoo
 \
 \
 **Opponent**  
-Profesor ....
+Associate professor Juha Hulmi, Faculty of Sport and Health Sciences, Neuromuscular Research Center and Gerontology Research Center, Biology of Physical Activity, University of Jyväskylä
 \
 \
 **Principal supervisor**  
-Profesor...
+Profesor Stian Ellefsen, Inland Norway Univeristy of Applied Sciences, Faculty of Social and Health Sciences, Section for Health and Exercise Physiology 
 \
 \
 **Co-supervisor(s)**  
--Professor...  
--Professor...  
--Professor... 
+-Professor Bent R. Rønnestad, Inland Norway Univeristy of Applied Sciences, Faculty of Social and Health Sciences, Section for Health and Exercise Physiology 
+-Professor Eva Blomstrand, The Swedish School of Sport and Health Sciences, Performance and Training Unit
 \
 \
 **Examination board**  
--Associate professor...  
--Professor ...  
--Professor ...  
+-Professor Anna Krook, Karolinska Institutet, Department of Physiology and Pharmacology 
+-Professor Adam Sharples, Norwegian School of Sport Sciences, Department of Physical Performance
+-Professor Abram Katz, The Swedish School of Sport and Health Sciences
