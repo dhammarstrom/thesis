@@ -1,10 +1,10 @@
 ---
 author: 'Daniel Hammarström'
-date: 'May 20xx'
-year: '2019'
+date: 'March 2021'
+year: '2021'
 isbn: 'Provided by the library'
 place: 'Stockholm'
-printedby: 'Printer service, Stockholm, 2019'
+printedby: 'Printer service, Stockholm, 2021'
 coverinfo: ' '
 sernr: '999' # Add number in "Avhandlingsserie" 
 title: 'Determinants of intra-individual variation in adaptability to resistance training of different volumes with special reference to skeletal muscle phenotypes'
@@ -46,7 +46,6 @@ lof: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
 header-includes:
-#- \usepackage[utf8]{inputenc}
 #- \usepackage{erewhon}
 #- \usepackage{lipsum}
 #  \usepackage[utf8]{inputenc}
@@ -55,6 +54,7 @@ header-includes:
 #  \usepackage[svgnames]
 #- \usepackage{GoudyIn}
 #- \usepackage{xcolor}
+  \usepackage[utf8]{inputenc}
   \usepackage{lettrine}
   \usepackage{booktabs}
   \usepackage{longtable}
