@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.9)  13 MAR 2021 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.9)  15 MAR 2021 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2403,6 +2403,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2586--2589
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[110]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2590--2593
 [][][] []  
  []
@@ -2418,9 +2421,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2598--2601
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[110]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2602--2605
 [][][] []  
  []
@@ -2496,6 +2496,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2658--2661
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[111]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2662--2665
 [][][] []  
  []
@@ -2521,9 +2524,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2678--2681
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[111]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2682--2685
 [][][] []  
  []
@@ -2579,6 +2579,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2722--2725
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[112]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2726--2729
 [][][] []  
  []
@@ -2604,9 +2607,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2742--2745
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[112]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2746--2749
 [][][] []  
  []
@@ -2652,6 +2652,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2778--2781
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[113]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2782--2785
 [][][] []  
  []
@@ -2682,9 +2685,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2802--2805
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[113]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2806--2809
 [][][] []  
  []
@@ -2730,6 +2730,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2838--2841
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[114]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2842--2845
 [][][] []  
  []
@@ -2765,9 +2768,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2866--2869
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[114]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2870--2873
 [][][] []  
  []
@@ -2808,6 +2808,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2898--2901
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[115]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2902--2905
 [][][] []  
  []
@@ -2848,9 +2851,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2930--2933
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[115]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2934--2937
 [][][] []  
  []
@@ -2863,6 +2863,12 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2938--2941
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2942--2945
 [][][] []  
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 2948--2948
+\T1/lmr/m/n/8 (+20) me-chan-i-cal load-ing. \T1/lmr/m/it/8 (+20) Phys-iol Rev\T
+1/lmr/m/n/8 (+20) . [On-line] 2004;84(2): 649--698. Avail-able from:
  []
 
 
@@ -2886,6 +2892,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2958--2961
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[116]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2962--2965
 [][][] []  
  []
@@ -2921,9 +2930,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2986--2989
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[116]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2990--2993
 [][][] []  
  []
@@ -2954,6 +2960,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3010--3013
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[117]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3014--3017
 [][][] []  
  []
@@ -2999,9 +3008,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3046--3049
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[117]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3050--3053
 [][][] []  
  []
@@ -3027,6 +3033,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3066--3069
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[118]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3070--3073
 [][][] []  
  []
@@ -3077,9 +3086,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3106--3109
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3110--3113
 [][][] []  
  []
@@ -3100,6 +3106,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3122--3125
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[119]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3126--3129
 [][][] []  
  []
@@ -3155,9 +3164,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3166--3169
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3170--3173
 [][][] []  
  []
@@ -3178,6 +3184,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3182--3185
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[120]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3186--3189
 [][][] []  
  []
@@ -3233,9 +3242,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3226--3229
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[120]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3230--3233
 [][][] []  
  []
@@ -3251,6 +3257,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3238--3241
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[121]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3242--3245
 [][][] []  
  []
@@ -3306,9 +3315,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3282--3285
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[121]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3286--3289
 [][][] []  
  []
@@ -3324,6 +3330,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3294--3297
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[122]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3298--3301
 [][][] []  
  []
@@ -3384,9 +3393,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3342--3345
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[122]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3346--3349
 [][][] []  
  []
@@ -3397,6 +3403,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3350--3353
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[123]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3354--3357
 [][][] []  
  []
@@ -3462,9 +3471,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3402--3405
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[123]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3406--3409
 [][][] []  
  []
@@ -3475,6 +3481,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3410--3413
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[124]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3414--3417
 [][][] []  
  []
@@ -3530,9 +3539,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3454--3457
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[124]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3458--3461
 [][][] []  
  []
@@ -3543,6 +3549,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3462--3465
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[125]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3466--3469
 [][][] []  
  []
@@ -3613,14 +3622,14 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3518--3521
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[125]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3522--3525
 [][][] []  
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[126]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3526--3529
 [][][] []  
  []
@@ -3661,6 +3670,24 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3554--3557
  []
 
 
+Underfull \hbox (badness 1394) in paragraph at lines 3560--3560
+[]\T1/lmr/m/n/8 (+20) Pinheiro JC, Bates DM. \T1/lmr/m/it/8 (+20) Mixed-effects
+ mod-els in s and s-PLUS\T1/lmr/m/n/8 (+20) . [On-line] New York:
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 3560--3560
+\T1/lmr/m/n/8 (+20) Springer; 2000. Avail-able from: []$\T1/lmtt/m/n/8 Publishe
+r % 20description % 20http : / / www . loc . gov /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3560--3560
+\T1/lmtt/m/n/8 catdir / enhancements / fy0816 / 99053566 -[] d . html % 20Table
+ % 20of % 20contents % 20only % 20http :
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3558--3561
 [][][] []  
  []
@@ -3696,14 +3723,14 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3582--3585
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[127]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3586--3589
 [][][] []  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[126]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3590--3593
 [][][] []  
  []
@@ -3716,6 +3743,12 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3594--3597
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3598--3601
 [][][] []  
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 3604--3604
+\T1/lmr/m/n/8 (+20) per-tro-phy. \T1/lmr/m/it/8 (+20) Phys-i-ol-ogy (Bethesda)\
+T1/lmr/m/n/8 (+20) . [On-line] 2019;34(1): 30--42. Avail-able from:
  []
 
 
@@ -3779,6 +3812,39 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3646--3649
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[128]
+Underfull \hbox (badness 1789) in paragraph at lines 3652--3652
+[]\T1/lmr/m/n/8 (+20) Borenstein M. \T1/lmr/m/it/8 (+20) In-tro-duc-tion to met
+a-analysis\T1/lmr/m/n/8 (+20) . [On-line] Chich-ester, U.K.: John Wi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
+\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
+1 & func _ code = DB _ RECORDS & service _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
+\T1/lmtt/m/n/8 type = MEDIA % 20Inhaltsverzeichnis % 0Ahttp : / / bvbr . bib -[
+] bvb . de : 8991 / F ? func = service & doc _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
+\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
+2 & func _ code = DB _ RECORDS & service _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
+\T1/lmtt/m/n/8 type = MEDIA % 20Klappentext % 0AAvailable % 20to % 20Stanford -
+[] affiliated % 20users % 20at :
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3650--3653
 [][][] []  
  []
@@ -3794,9 +3860,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3658--3661
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[127]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3662--3665
 [][][] []  
  []
@@ -3862,6 +3925,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3710--3713
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[129]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3714--3717
 [][][] []  
  []
@@ -3882,9 +3948,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3726--3729
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[128]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3730--3733
 [][][] []  
  []
@@ -3920,6 +3983,18 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3754--3757
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 3760--3760
+[]$\T1/lmtt/m/n/8 Publisher % 20description % 20http : / / www . loc . gov / ca
+tdir / enhancements / fy0816 / 2001020045 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3760--3760
+\T1/lmtt/m/n/8 d . html % 20Table % 20of % 20contents % 20only % 20http : / / w
+ww . loc . gov / catdir / enhancements /
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3758--3761
 [][][] []  
  []
@@ -3930,6 +4005,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3762--3765
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[130]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3766--3769
 [][][] []  
  []
@@ -3955,9 +4033,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3782--3785
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[129]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3786--3789
 [][][] []  
  []
@@ -4008,6 +4083,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3822--3825
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[131]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3826--3829
 [][][] []  
  []
@@ -4038,9 +4116,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3846--3849
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[130]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3850--3853
 [][][] []  
  []
@@ -4081,6 +4156,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3878--3881
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[132]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3882--3885
 [][][] []  
  []
@@ -4105,7 +4183,7 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3898--3901
 [][][] []  
  []
 
-[131] (./thesis.aux)
+[133] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33597pt have occurred.
@@ -4117,11 +4195,11 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 9F0D254CA0E8060EDB98BA2CD597AD03;15541.
  ) 
 Here is how much of TeX's memory you used:
- 23377 strings out of 480971
- 402562 string characters out of 5906169
- 811250 words of memory out of 5000000
+ 23449 strings out of 480971
+ 403318 string characters out of 5906169
+ 800123 words of memory out of 5000000
  38805 multiletter control sequences out of 15000+600000
- 620123 words of font info for 459 fonts, out of 8000000 for 9000
+ 624756 words of font info for 494 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,14n,130p,1342b,912s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
@@ -4162,10 +4240,10 @@ b><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lms
 y9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmtt10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
 blic/lm/lmtt8.pfb>
-Output written on thesis.pdf (151 pages, 9961494 bytes).
+Output written on thesis.pdf (153 pages, 9986137 bytes).
 PDF statistics:
- 2575 PDF objects out of 2984 (max. 8388607)
- 2302 compressed objects within 24 object streams
- 677 named destinations out of 1000 (max. 500000)
+ 2520 PDF objects out of 2984 (max. 8388607)
+ 2246 compressed objects within 23 object streams
+ 679 named destinations out of 1000 (max. 500000)
  136807 words of extra memory for PDF output out of 154059 (max. 10000000)
 
