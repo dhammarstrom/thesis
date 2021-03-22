@@ -19,21 +19,21 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 Study I was designed to examine effects of low- (a single-set per exercise) and moderate-volume (three sets per exercise) on responses to acute exercise and long-term training within participants.
 A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
-Prior to the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).
-Bilateral muscle biopsies were additionally sampled prior to, and 60 minutes after the fifth training session as well as after the intervention (Figure \@ref(fig:study1-overview)).
-Assessments of muscle strength (unilateral isokinetic and isometric knee extension torque as well as unilateral knee extension and leg press one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9 and after the intervention (Figure \@ref(fig:study1-overview)).
+Before the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).
+Bilateral muscle biopsies were also sampled before and 60 minutes after the fifth training session and after the intervention (Figure \@ref(fig:study1-overview)).
+Assessments of muscle strength (unilateral isokinetic and isometric knee extension torque as well as unilateral knee extension and leg press one repetition maximum) were performed twice at baseline and further measured in weeks 3, 5, 9, and after the intervention (Figure \@ref(fig:study1-overview)).
 Body composition measurements (magnetic resonance imaging and dual-energy X-ray absorptiometry) were performed at baseline and after the intervention.
 
 Study II was designed to study the effects of resistance training *per se* and effects of variable compared to constant inter-session volume on selected markers related to ribosome biogenesis.
 Participants were therefore recruited to an experimental group and a non-training control group.
 An overview of Study II can be seen in Figure \@ref(fig:study2-overview).
-Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days prior to the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
-Muscle thickness (*m. vastus lateralis*) was measured bilaterally prior to the study as well as two and eight days after the last training session in the experimental group.
-Muscle biopsies were sampled bilaterally prior to any training, 48 hours after the first, fourth, fifth, eighth, ninth and twelfth session as well as eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
+Baseline muscle strength (unilateral isokinetic and isometric knee-extension torque) was assessed during three initial visits to the laboratory, with the last baseline-assessment performed at least seven days before the first biopsy sampling. Follow-up measures of muscle strength in the experimental group were completed three and nine days after the last training session. 
+Muscle thickness (*m. vastus lateralis*) was measured bilaterally before the study and two and eight days after the last training session in the experimental group.
+Muscle biopsies were sampled bilaterally before any training, 48 hours after the first, fourth, fifth, eighth, ninth, and twelfth session and eight days after the twelfth session (Figure \@ref(fig:study2-overview)).
 The control group in Study II performed the same initial assessments as the experimental group. Muscle thickness was again assessed after a control period of 2-4 weeks.
 Follow-up muscle biopsies were sampled from one leg 48 hours after the first biopsy as well as after the control period. Follow-up strength assessments were performed 24 hours after the last biopsy.
 
-```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.  ", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
+```{r study1-overview, fig.cap="Schematic representation of Study I, see text for details.", fig.scap="Study I, schematic overview", fig.height=2.8, fig.width=4.72, fig.align = "center"}
 
 
 source("./R/themes.R")
@@ -169,7 +169,7 @@ data.frame(x = c(-8, 13),
 
 
 
-```{r study2-overview, fig.cap="Schematic representation of Study II, see text for details.  ", fig.scap="Study II, schematic overview", fig.height=3.2, fig.width=4.72, fig.align = "center"}
+```{r study2-overview, fig.cap="Schematic representation of Study II, see text for details. ", fig.scap="Study II, schematic overview", fig.height=3.2, fig.width=4.72, fig.align = "center"}
 
 
 data.frame(x = c(-8, 16), 
@@ -410,15 +410,15 @@ es.max <- round(max(c(d.ronnestad.isokinetic, d.ronnestad.csa, d.mitchell.mvc, d
 
 ## Participants
 
-Recruitment to both studies was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study prior to giving their informed consent.
+Recruitment to both studies was done through advertising and word of mouth, primarily at Lillehammer University College/Inland University of Applied Sciences. Potential participants were interviewed and matched against inclusion and exclusion criteria. During initial interviews, participants were informed of the study design and time requirements. Participants were also informed about potential risks and sources of discomfort associated with the study before giving their informed consent.
 
-To be eligible for participation in both studies, participants had to be young (Study I age 18-40; Study II 18-35) and non-smoking. Both men and women were considered for participation. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medications or supplements with known effects on adaptations to training.
+Participants had to be young to be eligible for participation in both studies (Study I age 18-40; Study II 18-35) and non-smoking. Both men and women were considered for participation. Exclusion criteria included a training history of more than one weekly session during the last 12 (Study I) or six (Study II) months leading up to the study. Participants were also screened for intolerance to local anesthetic, current or previous injuries affecting their ability to perform resistance training, self-reported symptoms or history of disease, intake of medications or supplements with known effects on adaptations to training.
 Participant characteristics for both studies are shown in Table
 \@ref(tab:characteristics-table).
 
-Forty-one participants were recruited to Study I and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5) and non-adherence to the study protocol (*n =* 1). There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I. Prior to the study, all participants reported that they had previously been engaged in sporting activities. At enrollment, twenty participants reported regular physical activities ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercise at the time of enrollment limited to no more than once a week. 
+Forty-one participants were recruited to Study I, and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the trial included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5), and non-adherence to the study protocol (*n =* 1). There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I. Before the study, all participants reported that they had previously been engaged in sporting activities. Twenty participants reported regular physical activities at enrollment ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercises at enrollment; however, this was limited to no more than once a week. 
 
-Twenty-two participants were recruited to Study II. Three participants did not complete the intervention due to scheduling difficulties. Participants reported familiarity with physical activity but no current systematic strength training.
+Twenty-two participants were recruited to Study II. Three participants did not complete the intervention due to scheduling difficulties. Participants reported familiarity with physical activity but no current systematic resistance training.
 
 ```{r characteristics-table, results = "asis", message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -580,8 +580,7 @@ rbind(studyI, studyII) %>%
 
 Both studies were conducted according to the Declaration of Helsinki
 [@RN1590].
-Studies were approved by the local ethics committee (Study I, no. 2013-11-22:2; Study II, no. 2017-10-23), the Norwegian centre for research data (Study I, 36930/3/LB; Study II, 51549/3/AH) and pre-registered (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, DOI 10.17605/OSF.IO/WA96Y). 
-
+Studies were approved by the local ethics committee (Study I, no. 2013-11-22:2; Study II, no. 2017-10-23), the Norwegian centre for research data (Study I, 36930/3/LB; Study II, 51549/3/AH), and were pre-registered (Study I, ClinicalTrials.gov Identifier: NCT02179307; Study II, DOI 10.17605/OSF.IO/WA96Y). 
 
 ## Resistance training interventions
 
@@ -592,28 +591,28 @@ performed after enrollment where each participant had their legs
 randomized to either low- or moderate volume (Study I, see Figure \@ref(fig:study1-overview)), or variable or constant volume (Study II).
 
 Each training session started with a light, standardized warm-up (5 min
-ergometer cycling and 10 repetitions each of push-ups, sit-ups,
+ergometer cycling and ten repetitions each of push-ups, sit-ups,
 back-extensions and squats). Before each exercise in the main program,
 one set of 10 repetitions were performed in the specific exercise with
 approximately 50% of 1RM.
 
 In Study I, the low-volume protocol consisted of a single set of each
 exercise and the moderate-volume program consisted of three sets per exercise.
-Three unilateral leg exercises were used (leg press, leg curl and knee
-extension). The moderate-volume leg commenced all sessions and the low-volume leg performed a single set of each exercise in the rest between
-second and third set of the moderate volume training protocol.
+Three unilateral leg exercises were used (leg press, leg curl, and knee
+extension). The moderate-volume leg commenced all sessions, and the low-volume leg performed a single set of each exercise in the rest between the second and third set of the moderate volume training protocol.
 
-In Study II, only unilateral knee-extension was performed. The constant-volume leg performed six sets of 10RM throughout the study and variable leg performed six sets in session one to four, three sets in session five to eight and nine sets in session nine to twelve with same relative intensity (see Figure \@ref(fig:study2-overview)).
+In Study II, only unilateral knee-extension was performed. The constant-volume leg performed six sets of 10RM throughout the study. The variable-volume leg performed six sets in session one to four, three sets in session five to eight, and nine sets in session nine to twelve with the same relative intensity (see Figure \@ref(fig:study2-overview)).
 
-In both studies, participants perfomed leg-exercise as part of a full-body program with upper-body exercise performed with two sets after leg-exercises. Upper-body exercises included bilateral bench-press, pull-down, and either shoulder-press or seated rowing.
+In both studies, participants performed leg-exercise as part of a full-body program with upper-body exercise performed with two sets after leg-exercises. Upper-body exercises included bilateral bench-press, pull-down, and either shoulder-press or seated rowing.
+
 
 ## Muscle strength assessments
-Strength was assessed as one repetition maximum (Study I), isometric and isokinetic torque (Study I and II). In Study I, maximal values from each assessment and time-point were used in statistical analyses including two separate assessments at baseline, separated by at least four days. A combined muscle strength index was calculated as the average of all tests (1RM, isometric and isokinetic), with all test types given equal weight (expressed as $\frac{x_i}{max(x)}$ where x is a strength measure for each leg and time-point ($i$)). Eighteen participants performed strength assessments at week two, five and nine in addition to baseline and post-training assessments. Training sessions were prioritized for the remaining participants when illness or scheduling difficulties prevented both strength assessment and training. 
+Strength was assessed as one repetition maximum (Study I), isometric and isokinetic torque (Study I and II). In Study I, maximal values from each assessment and time-point were used in statistical analyses, including two separate assessments at baseline, separated by at least four days. A combined muscle strength index was calculated as the average of all tests (1RM, isometric and isokinetic), with all test types given equal weight (expressed as $\frac{x_i}{max(x)}$ where x is a strength-measure for each leg and time-point ($i$)). Eighteen participants performed strength assessments at week two, five and nine in addition to baseline and post-training assessments. Training sessions were prioritized for the remaining participants when illness or scheduling difficulties prevented both strength assessment and training. 
 
-In Study II, the maximal value from all successful attempts were used in statistical analyses with unsuccessful attempts identified based on obvious misinterpretation of instructions or failure to reach maximal subjective effort. Strength assessments were separated by at least 48 hours from preceding training sessions. 
+In Study II, the maximal value from all successful attempts was used in statistical analyses with unsuccessful attempts identified based on an obvious misinterpretation of instructions or failure to reach maximal subjective effort. Strength assessments were separated by at least 48 hours from preceding training sessions. 
 
 ### Isokinetic and isometric maximal torque
-Maximal isokinetic and isometric unilateral knee-extension strength was determined by use of a dynamometer (Study I: Cybex 6000, Cybex International, Medway USA; Study II: Humac Norm, CSMi, Stoughton, MA, USA).
+Maximal isokinetic and isometric unilateral knee-extension strength was determined by the use of a dynamometer (Study I: Cybex 6000, Cybex International, Medway USA; Study II: Humac Norm, CSMi, Stoughton, MA, USA).
 After a brief warm-up (5 min ergometer cycling, RPE 12-14), participants were secured at the hip and shoulders in the dynamometer with the knee joint aligned to its rotation axis.
 Individual settings were recorded and used in subsequent measurements.
 Participants were familiarized with the test protocol by performing three sub-maximal efforts at each angular speed. 
@@ -621,78 +620,52 @@ In Study I, three angular velocities were used to determine isokinetic torque (6
 In Study I, participants performed two attempts at 60$^{\circ} ~\times$ sec$^{-1}$ and three attempts at 120 and 240$^{\circ}~\times$ sec$^{-1}$.
 In Study II, three attempts were made at the designated angular velocity.
 In both studies, attempts within each angular speed were performed in immediate succession.
-After isokinetic testing, the lever was fixed at 30$^{\circ}$ (full extension $=90^{\circ}$), participants were instructed push with maximal effort for 5 seconds and the maximal isometric torque was recorded.
-Two attempts were made for maximal isometric torque in Study I and a single attempt was made in Study II.
-Sixty seconds of restitution was given between each measurement in both studies with the exception of between isometric contractions in Study I where a 30 second restitution period was used.     
+After isokinetic testing, the lever was fixed at 30$^{\circ}$ (full extension $=90^{\circ}$), participants were instructed to push with maximal effort for 5 seconds, and the maximal isometric torque was recorded.
+Two attempts were made for maximal isometric torque in Study I, and a single attempt was made in Study II.
+Sixty seconds of restitution was given between each measurement in both studies, with the exception of between isometric contractions in Study I, where a 30 second restitution period was used.     
 
 In subsequent assessment sessions, the first measurement was performed on alternate legs.
-In Study II, the dynamometer allowed for participants to remain seated for assessments of both legs. This was not possible in Study I as the measurement system required participants to be re-seated for assessment of the contra-lateral leg.
+In Study II, the dynamometer allowed for participants to remain seated for assessments of both legs. This was not possible in Study I as the measurement system required participants to be re-seated for assessment of the contralateral leg.
 
 ### One-repetition maximum
 One repetition-maximum (1RM) was assessed in unilateral leg-press and knee-extension in Study I.
-Each exercise was assessed after a specific warm-up (ten, six and three repetitions at $50$, 75 and $85\%$ of the anticipated maximum). Attempts were made with increasing resistance (four to six attempts) and one repetition maximum was defined as the highest resistance successfully lifted through the full range of motion.
-
+Each exercise was assessed after a specific warm-up (ten, six, and three repetitions at 50, 75, and 85\% of the anticipated maximum). Attempts were made with increasing resistance (four to six attempts), and the one-repetition maximum was defined as the highest resistance successfully lifted through the full range of motion.
 
 ## Measures of muscle mass
 
-In Study I muscle mass was measured by magnetic resonance imaging (MRI)
-and dual energy X-ray absorptiometry (DXA) prior to and after the
+In Study I, muscle mass was measured by magnetic resonance imaging (MRI)
+and dual-energy X-ray absorptiometry (DXA) before and after the
 intervention. Both MRI and DXA measurements were completed during the
 same visit to the laboratory. Participants were instructed to refrain
 from strenuous physical activity during the last 48 h leading up to the
-measurements. The post-training measurements were completed at least 48
-h after the last strength testing session. Participants were asked to
-refrain from food consumption during 2 h leading up to the measurements.
+measurements. The post-training measurements were completed at least 48 hours after the last strength testing session. Participants were asked to refrain from food consumption for 2 hours leading up to the measurements.
 
 MRI images were obtained from the mid-thigh and analyzed by the same
-investigator blinded for time (pre- and post-training) and condition
-(low- and moderate-volume). Multiple images were used to estimate the
-cross-sectional area of the extensor muscles at the same distance from
+investigator blinded for time (pre- and post-training) and condition (low- and moderate-volume). Multiple images were used to estimate the extensor muscles' cross-sectional area at the same distance from
 the knee-joint.
 
-In Study II, *m. vastus lateralis* muscle thickness was measured by B-mode ultrasonography (SmartUs EXT-1M, Telemed, Vilnius, Lithuania) using a 39 mm 12 MHz, linear array probe. Between each image acquisition the probe was relocated to the same position. The position was marked on a soft transparent plastic sheet used to relocate the same position in subsequent measurements.
-At least three images were captured and quantified for each leg per time-point with values averaged in analyses. Images were analyzed in ImageJ Fiji [@RN2561] by a single assessor blinded for study conditions and time-points.  
+In Study II, *m. vastus lateralis* muscle thickness was measured by B-mode ultrasonography (SmartUs EXT-1M, Telemed, Vilnius, Lithuania) using a 39 mm 12 MHz, linear array probe. Between each image acquisition, the probe was relocated to the same position. The position was marked on a soft transparent plastic sheet used to relocate the same position in subsequent measurements.
+At least three images were captured and quantified for each leg per time-point with values averaged in analyses. Images were analyzed in ImageJ Fiji [@RN2561] by a single assessor, blinded for study conditions and time-points.
 
-
-## Muscle tissue sampling and preparations for downstream analyses
+## Muscle tissue sampling
 
 Muscle samples were obtained under local anesthesia (Study I, Xylocaine,
 \SI{10}{\mg\per\ml} with adrenalin \SI{5}{\micro\gram\per\ml},
-AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan,
-\SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle
-(12-14 gauge; Universal-plus, Medax, Italy) operated with a
-spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway).
-Sampling was performed as previously described
-[@RN824],<!-- Hayot 2005 relible micriboiopsy technique --> with
-modifications. Anesthesia was injected in the subcutaneous tissue with
-care taken not to inject anesthesia into the muscle itself. Following
-pilot experiments we decided not to use an insertion cannula as
-described in [@RN824] as the biopsy needle itself could be used to
-puncture the skin and muscle fascia. This also resulted in less
-discomfort. Several passes through the same skin puncture was made to
-obtain sufficient material for downstream analyses. A smaller needle (14
-vs. 12 gauge) was used to further minimize discomfort in Study II where
-more biopsies were sampled over a shorter time span, with exception from
-when material was used for immunohistochemistry. The first biopsy was
-sampled at one third of the distance between the patella to the
-*anterior superior iliac spinae* with subsequent biopsies sampled
-$\sim$\SI{2}{cm} proximal to previous samples. In Study II, samples
-obtained more than one week apart were sampled with closer proximity and
-distally from previous samples but never at previous sampling sites.
+AstraZeneca, Oslo, Norway; Study II, Lidocaine Mylan, \SI{10}{\mg\per\ml}, Mylan Ireland Ltd, Ireland) with a fine needle (12-14 gauge; Universal-plus, Medax, Italy) operated with a spring-loaded instrument (Bard Magnum, Bard Norway AS, Norway). Sampling was performed as previously described [@RN824],<!-- Hayot 2005 relible micriboiopsy technique --> with modifications. Anesthesia was injected in the subcutaneous tissue, with care taken not to inject anesthesia into the muscle itself. Following pilot experiments, we decided not to use an insertion cannula as described in [@RN824] as the biopsy needle itself could be used to puncture the skin and muscle fascia. This approach also resulted in less discomfort. Several passes through the same skin puncture were made to obtain sufficient material for downstream analyses. A smaller needle (14 vs. 12 gauge) was used to further minimize discomfort in Study II where more biopsies were sampled over a shorter time span, with exception from when material was used for immunohistochemistry (not presented in this thesis). The first biopsy was
+sampled at one-third of the distance between the patella to the *anterior superior iliac spinae* with subsequent biopsies sampled $\sim$\SI{2}{cm} proximal to previous samples. In Study II, samples obtained more than one week apart were sampled with closer proximity and distally from previous samples but never at previous sampling sites.
 
-### Immunohistochemistry
+## Immunohistochemistry
 In Study I, a portion of each sample was selected for immunohistochemistry analysis. Samples were placed in formalin for fixation (2-4 days) and further processed using a Shandon Excelsior ES (2.5 hours, Thermo Scientific, USA). Samples were sectioned in \SI{4}{um} transverse sections. Orientation was confirmed prior to subsequent specific staining. In case of obvious misalignment, samples were re-oriented and sectioned. Muscle fiber types were determined on sections double-stained with BF-35 (\SI{5}{\micro\gram\per\milli\litre}, Developmental Studies Hybridoma Bank, deposited by Schiaffino, S.) targeting all both myosin heavy-chain Type I and Type IIA, and MyHCSlow (1:4000, catalog M8421L, Sigma-Aldrich Norway AS, Oslo, Norway) specifically targeting myosin heavy-chain Type I.
 Antobodies were visualised using BMU UltraView DAB (BF-35) and UltraView Red (MyHCSlow, Ventana Medical Systems, Inc. Tucson, USA). 
 Muscle fibers were counted as Type I (red), Type IIA (brown), Type IIX (unstained) or Type IIA/IIX hybrid fibers (light-brown, see Figure \@ref(fig:myhc-fig)). Hybrid fibers were analyzed as 0.5 $\times$ Type IIA and 0.5 $\times$ Type IIX
 [@RN1489].
 
-
 ### Total RNA extraction
 
-Total-RNA was extracted from frozen muscle samples with weights measured at collection using a protocol modified from
+Total RNA was extracted from frozen muscle samples with weights measured at collection using a protocol modified from
 [@RN2672]<!-- Chomczynski and Sacchi -->
-using Trizol reagent (Life Technologies).
-Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption achieved by Zirconium Oxide Beads (0.5 mm, Next Advance, Inc., New York, USA) and a bead mill (Bullet blender, Next Advance). External, non-mammalian RNA (Lambda PolyA External Standard Kit, Takara Bio Europe, Saint-Germain-en-Laye, France) was added with the initial volume of Trizol to enable per-weight normalization in subsequent analyses. After homogenization, additional Trizol was added to a total volume of \SI{1}{ml}. Phase separation was achieved by centrifugation after addition of chloroform (\SI{200}{ul}). The upper phase (\SI{400}{ul} in Study I; \SI{450}{ul} in Study II) was transferred to a fresh tube and RNA was precipitated using isopropanol (\SI{500}{ul}). After incubation (10 min, room-temperature) and centrifugation (12000 g, 10 min at 4$^{\circ}$C) the resulting RNA pellet was washed three times in chilled 75% ethanol.
+with Trizol reagent (Life Technologies).
+Muscle tissue was homogenized in \SI{300}{ul} Trizol with mechanical disruption achieved by Zirconium Oxide Beads (0.5 mm, Next Advance, Inc., New York, USA) and a bead mill (Bullet blender, Next Advance). External, non-mammalian RNA (Lambda PolyA External Standard Kit, Takara Bio Europe, Saint-Germain-en-Laye, France) was added with the initial volume of Trizol to enable per-weight normalization in subsequent analyses. After homogenization, additional Trizol was added to a total volume of \SI{1}{ml}. Phase separation was achieved by centrifugation after the addition of chloroform (\SI{200}{ul}). The upper phase (\SI{400}{ul} in Study I; \SI{450}{ul} in Study II) was transferred to a fresh tube, and RNA was precipitated using isopropanol (\SI{500}{ul}). After incubation (10 min, room temperature) and centrifugation (12000 g, 10 min at 4$^{\circ}$C), the resulting RNA pellet was washed three times in chilled 75% ethanol.
 
 ```{r rna-muscle-weight-methods, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Characteristics of total RNA extracted per study and relationship with muscle weight (a). Distribution of pre-intervention RNA per tissue weight (ng mg\\textsuperscript{-1}) (b)", fig.scap = "Characteristics of total RNA extracted per study", fig.height=5, fig.width=4, fig.align='center'}
 
@@ -865,29 +838,29 @@ rna_descriptive <-  plot_grid(rna_fig_upper,
 rna_descriptive
 ```
 
-As previously mentioned, to minimize discomfort due to a greater number of biopsies sampled over a short time, a smaller needle was used for most biopsies in Study II. This generally led to a less tissue used for RNA extractions, however, samples from both studies followed the same association between sample weight and Total RNA content (Figure \@ref(fig:rna-muscle-weight-methods)a). Further comparing studies using pre-intervention biopsies indicate comparable RNA per tissue-weight readings across the two studies (Figure \@ref(fig:rna-muscle-weight-methods)b). 
+As previously mentioned, to minimize discomfort due to a greater number of biopsies sampled over a short time, a smaller needle was used for most biopsies in Study II. This generally led to less tissue used for RNA extractions. However, samples from both studies followed the same association between sample weight and Total RNA content (Figure \@ref(fig:rna-muscle-weight-methods)a). Further comparing studies using pre-intervention biopsies indicate comparable RNA per tissue-weight readings across the two studies (Figure \@ref(fig:rna-muscle-weight-methods)b). 
 
 
-### Protein extraction and immunoblotting 
+## Protein extraction and immunoblotting 
 
-In Study I, muscle-tissue ($\sim$ \SI{25}{mg} wet weight) was homogenized using a plastic pestle in ice-cold lysis buffer (2 mM HEPES pH 7.4, 1 mM EDTA, 5 mM EGTA, 10 mM MgCl~2~, 1$\%$ Triton X-100) supplemented with protease and phosphatase inhibitors (Halt, Thermo Fischer Scientific, Life Technologies AS, Oslo Norway). Samples were subsequently incubated at $4^{\circ}$ for 1 hour followed by centrifugation (10 min at 10 000 g and 4$^{\circ}$C). Supernatants were collecetd used for total protein quantification using Bradford reagents (Pierce Detergent Compatible Bradford Assay Reagent, Thermo Fischer Scientific).
+In Study I, muscle-tissue ($\sim$ \SI{25}{mg} wet weight) was homogenized using a plastic pestle in ice-cold lysis buffer (2 mM HEPES pH 7.4, 1 mM EDTA, 5 mM EGTA, 10 mM MgCl~2~, 1$\%$ Triton X-100) supplemented with protease and phosphatase inhibitors (Halt, Thermo Fischer Scientific, Life Technologies AS, Oslo Norway). Samples were subsequently incubated at $4^{\circ}$ for 1 hour followed by centrifugation (10 min at 10 000 g and 4$^{\circ}$C). Supernatants were collected for total protein quantification using Bradford reagents (Pierce Detergent Compatible Bradford Assay Reagent, Thermo Fischer Scientific).
 Samples were normalized in lysis buffer and 4X Laemmli sample buffer (Bio-Rad Laboratories AB, Oslo Norway) containing 2-Mercaptoethanol, heated to 95$^{\circ}$C for 5 min and stored at -20$^{\circ}$C until further processing.
 
-In Study II, protein was extracted from Trizol preparations according following suggestions by Kopec *et al.* [@RN2050]<!-- Kopec trizol protocol -->
-with modifications. After remiving the remaining aqueous phase, DNA was precipitated by addition of \SI{300}{ul} of absolute ethanol and centrifugation (2000 g, 5 min at room temperature). An aliquot of the phenol-ethanol phase, corresponding to $\sim$ \SI{1.75}{mg} of tissue, was transferred to to a fresh tube and at least two volumes of isopropanol were added followed by incubation (10 min at room temperature). After centrifugation, (7500 g, 10 min 4$^{\circ}$C) a pellet formed and was subsequently washed three times in 95\% ethanol. Each wash was separated by centrifugation (5000g, 5 min at room temperature). Following the final wash, all liquid was removed and \SI{45}{ul} of Kopec buffer [@RN2050] was added (5% SDS, 10 mM Tris, 140 mM NaCl and 20 mM EDTA, pH 8; containing protease and phosphatase inhibitors).
-Pellets were incubated three hours at 50$^{\circ}$C after which nearly all samples were dissolved.
+In Study II, protein was extracted from Trizol preparations following suggestions by Kopec *et al.* [@RN2050]<!-- Kopec trizol protocol -->
+with modifications. After removing the remaining aqueous phase, DNA was precipitated by the addition of \SI{300}{ul} of absolute ethanol and centrifugation (2000 g, 5 min at room temperature). An aliquot of the phenol-ethanol phase, corresponding to $\sim$ \SI{1.75}{mg} of tissue, was transferred to a fresh tube and at least two volumes of isopropanol were added followed by incubation (10 min at room temperature). After centrifugation (7500 g, 10 min 4$^{\circ}$C), a pellet formed and was subsequently washed three times in 95\% ethanol. Each wash was separated by centrifugation (5000g, 5 min at room temperature). Following the final wash, all liquid was removed, and \SI{45}{ul} of Kopec buffer [@RN2050] was added (5% SDS, 10 mM Tris, 140 mM NaCl and 20 mM EDTA, pH 8; containing protease and phosphatase inhibitors).
+Pellets were incubated three hours at 50$^{\circ}$C, after which nearly all samples were dissolved.
 Any undissolved material was sedimented by centrifugation (10000 g, 10 min at room temperature).
 Protein concentrations were determined and samples normalized as described for Study I.
 
-In both studies, \SI{20}{ug} total protein per sample was separated by gel eletrophoresis (250-300 V for 30-50 min using 4-20% gels, Criterion TGX, Bio-Rad), and transferred to PVDF membranes (300 mA for 3 h, \SI{0.2}{um} Immun-Blot, Bio-Rad).
+In both studies, \SI{20}{ug} total protein per sample was separated by gel eletrophoresis (250-300 V for 30-50 min using 4-20\% gels, Criterion TGX, Bio-Rad), and transferred to PVDF membranes (300 mA for 3 hours, \SI{0.2}{um} Immun-Blot, Bio-Rad).
 Membranes were stained for total protein using a reversible total protein stain (Pierce Reversible Protein Stain, ThermoFischer Scientific) to ensure transfer and enable protein quantification.
-Membranes were blocked for 2 h in blocking buffer (tris-buffered saline, TBS, 20 mM Tris, 150 mM NaCl) containing $3\%$ bovine serum albumin or 5\% skimmed milk and $0.1\%$ Tween-20.
-Incubation with primary antibodies were done over-night followed by 1-2 hours incubation with secondary antibodies.
-Membranes were washed in TBS containing $0.1\%$ Tween-20 for 3-8 $\times$ 5-10 min after incubation with primary antibody, and for 4-8 $\times$ 5-10 min after incubation with secondary antibodies.
+Membranes were blocked for two hours in blocking buffer (tris-buffered saline, TBS, 20 mM Tris, 150 mM NaCl) containing 3\% bovine serum albumin or 5\% skimmed milk and 0.1\% Tween-20.
+Incubation with primary antibodies was done over-night, followed by 1-2 hours incubation with secondary antibodies.
+Membranes were washed in TBS containing $0.1\%$ Tween-20 for 3-8 $\times$ 5-10 min after incubation with the primary antibody, and for 4-8 $\times$ 5-10 min after incubation with secondary antibodies.
 Chemiluminescent detection was used to quantify relative target protein abundance (SuperSignal™ West Femto Maximum Sensitivity Substrate, ThermoFischer Scientific).
 For selected targets, following chemiluminescent detection, membranes were incubated with hydrogen peroxide (15 min, 37$^{\circ}$C) to inactivate the horseradish peroxidase (HRP), as described by Sennepin *et al.* [@RN1930], enabling detection of other epitopes using antibodies from different hosts (mouse or rabbit).
 Incubation and wash steps were either performed in an automated fashion at $4^{\circ}$C (BlotCycler, Precision Biosystems, Mansfield, MA, USA), or by hand at room temperature with incubations at $4^{\circ}$C.
-Total-protein content, defined as the mean grey value of the whole well was quantified with ImageJ [@RN2259]. Quantification of between-well gray values were subtracted as background. Image Studio Lite (LI-COR Biotechnology, Lincoln, Nebraska USA) was used to quantify chemiluminescence signals. 
+Total-protein content, defined as the mean grey value of the whole well, was quantified with ImageJ [@RN2259]. Quantification of between-well gray values was subtracted as background. Image Studio Lite (LI-COR Biotechnology, Lincoln, Nebraska USA) was used to quantify chemiluminescence signals. Primary antibodies used in both studies are presented in Table \@ref(tab:primary-antibodies-table).
 
 ```{r primary-antibodies-table, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
 
@@ -939,37 +912,37 @@ data.frame(type = c(rep("Primary", 8),
   
 ```
 
-Primary antibodies used in both studies are presented in Table \@ref(tab:primary-antibodies-table).
+
 
 ## RNA analysis
 
 ### Quantitative real-time reverse transcription polymerase chain reaction (qPCR)
 
-Complementary DNA (cDNA) was synthesized in duplicates from \SI{500}{ng} of total RNA using Superscript IV (Thermo Fisher Scientific) was used according to manufacturer's instruction. Random hexemer and anchored Oligo-dT primers (Thermo Fisher Scientific) were used to enable quantification of mRNA and rRNA.
-SYBR-green based master mixes (2X SYBR Select Master Mix or PowerUp™ SYBR™ Green Master Mix, Thermo Fisher) were used together with diluted cDNA (\SI{2}{ul}, 1:25-50 dilution) and target-specific primers (\SI{500}{nanomole}) in \SI{10}{ul} total reaction volumes. Detection of light emitted from PCR reactions were captured with real-time detection system (Applied Biosystems 7500 fast Real-Time PCR Systems or QuantStudio 5 Real-Time PCR System, Thermo Fisher Scientific). Fast cycling over 40 cycles was used adopted to each master-mix. Melt curves and agarose gel electrophoresis confirmed were used to confirm single product amplification, product sizes and no amplification in experiments without template.
+Complementary DNA (cDNA) was synthesized in duplicates from \SI{500}{ng} of total RNA using Superscript IV (Thermo Fisher Scientific) was used according to the manufacturer's instruction. Random hexamer and anchored Oligo-dT primers (Thermo Fisher Scientific) were used to enable quantification of mRNA and rRNA.
+SYBR-green-based master mixes (2X SYBR Select Master Mix or PowerUp™ SYBR™ Green Master Mix, Thermo Fisher) were used together with diluted cDNA (\SI{2}{ul}, 1:25-50 dilution) and target-specific primers (\SI{500}{nanomole}) in \SI{10}{ul} total reaction volumes. Detection of light emitted from PCR reactions was captured with a real-time detection system (Applied Biosystems 7500 fast Real-Time PCR Systems or QuantStudio 5 Real-Time PCR System, Thermo Fisher Scientific). Fast cycling over 40 cycles was used adopted to each master-mix. Melt curves and agarose gel electrophoresis were used to confirm single product amplification, product sizes, and no amplification in experiments without a template.
 In-house, target-specific primers were designed using Primer-BLAST [@RN1815], Primer3Plus [@RN1816]. Primers targeting the external RNA control were supplied with the kit. Several primers per target were designed and subsequently assessed for their performance. Primers with confirmed single-product amplification and with the lowest threshold cycle for each target were used in analyses.
 
-Raw fluorescence data was exported from the real-time detection system and modeled with a best-fit sigmoidal model. 
+Raw fluorescence data were exported from the real-time detection system and modeled with a best-fit sigmoidal model. 
 Wrapper functions for the qpcR-package [@RN1768] was written to streamline the process
 ([github.com/dhammarstrom/qpcrpal](http://www.github.com/dhammarstrom/qpcrpal)).
-Threshold cycles (Cq/Ct) were estimated from the models by the second-derivate maximum method with technical duplicates modeled independently [@RN1768].
+Threshold cycles (Ct) were estimated from the models by the second-derivate maximum method with technical duplicates modeled independently [@RN1768].
 Amplification efficiencies were estimated from every amplification curve
 [@RN1934;
 @RN1768], 
 and the mean amplification efficiency ($E$) per primer was used to transform amplification data to the linear scale ($E^{-Ct}$).
 
-Gene expression data was log-transformed prior to statistical analysis and modeled as per total RNA,
+Gene expression data was log-transformed before statistical analysis and modeled as per total RNA,
 or per tissue weight using the external RNA and tissue weight as the normalization factor.
 In both cases, a random effect per every technical duplicate was used to perform model-based normalization as suggested by Matz *et al.*
-[@RN1964], with slight modifications. In Study I, log-transformed data was fitted to mixed linear models using the `lme` function in the `nlme` package
+[@RN1964], with slight modifications. In Study I, log-transformed data were fitted to mixed linear models using the `lme` function in the `nlme` package
 [@RN1986].
-This allowed for the combined analysis of a set of genes while accounting for per target heterogeneity of residual variance. Residual variance could additionally be modeled with Ct-values as a variance covariate using variance functions
+This allowed for the combined analysis of a set of genes while accounting for per-target heterogeneity of residual variance. The residual variance could additionally be modeled with Ct-values as a variance covariate using variance functions
 [@RN1986],
 accounting for larger errors at higher Ct-values.
 In Study II, a Bayesian analog to this approach was used, more similar to what was described by Matz *et al.* 
 [@RN1964].
-Here qPCR-data was transformed to counts [@RN1964] and modeled in in Poisson generalize mixed linear models using the `MCMCglmm` package
-[@RN1992]. 
+Here qPCR-data was transformed to counts [@RN1964] and modeled in Poisson generalized mixed linear models using the `MCMCglmm` package
+[@RN1992].
 In Study I, RNA integrity was assessed by capillary electrophoresis (Experion Automated Electrophoresis Station using RNA StdSens Assay, Bio-Rad).
 As Ct-values, but not efficiencies are related to RNA integrity [@RN2248],
 integrity scores were incorporated in the statistical treatment of qPCR data as fixed effects to control for potential degradation effects for each target, as suggested by
@@ -983,7 +956,7 @@ mRNA sequencing libraries were prepared from a fixed amount of RNA (typically 10
 
 
 #### Read quantification
-Discarding low-quality reads and trimming of poor-quality bases was done (Trim Galore, version 0.6.5, https://github.com/FelixKrueger/TrimGalore; Trimmomatic, version 0.39 [@RN2382]) using default settings before alignment. Filtered reads were subsequently aligned to the Human genome (GRCh38 release-97) using several methods, including alignment-based methods
+Discarding low-quality reads and trimming of poor-quality bases was done using default settings before alignment (Trim Galore, version 0.6.5, https://github.com/FelixKrueger/TrimGalore; Trimmomatic, version 0.39 [@RN2382]). Filtered reads were subsequently aligned to the human genome (GRCh38 release-97) using several methods, including alignment-based methods
 (HISAT2, version 2.1.0 [@RN2385]; STAR, version 2.7.2 [@RN2386];<!-- Dobin et al., 2012)--> and
 RSEM, version 1.3.1 [@RN2387],<!-- (Li & Dewey, 2011)-->
 used together with Bowtie 2, version 2.3.4.3 [@RN2388]),<!--  Langmead 2012 -->
@@ -994,13 +967,13 @@ The use of several quantification tools enabled customization of the bioinfomati
 #### Modeling of gene counts
 
 Gene counts were modeled in a single statistical framework (negative binomial generalized linear mixed models, GLMM), as suggested by Cui *et al.* [@RN2366].
-Modifications was made to account for the particular study design and three different normalization approaches wherein tissue weight and library size where accounted for. Tissue weight was included as an offset term and library sizes were modeled as a fixed effect.
+Modifications were made to account for the particular study design and three different normalization approaches wherein tissue weight and library size were accounted for. Tissue weight was included as an offset term, and library sizes were modeled as a fixed effect.
 An additional model without any normalization was used for comparisons.
-These models were used in all samples obtained at rest, however, acute phase biopsies (1 hour after the fifth session) were only modeled using the library size as normalization factor. It was not likely that the amount of tissue used in sample preparation would change in this short time span as no large fluctiations in total RNA to tissue weight were to be expected
+These models were used in all samples obtained at rest. However, acute phase biopsies (1 hour after the fifth session) were only modeled using the library size as the normalization factor. It was not likely that the amount of tissue used in sample preparation would change in this short time span as no large fluctuations in total RNA to tissue weight were to be expected
 [@RN2142]<!-- Figueiredo 2019 reulation of ribo bioge in skmus-->.
-We did however suspect that fluid shifts could influence estimation of tissue weights 
+We did, however, suspect that fluid shifts could influence the estimation of tissue weights 
 [@RN2270]<!-- Ploutz-Snyder Fluid shifts 1995 -->.
-Library sizes were expressed as effective library size and calculated as the product of the total library size and the RNA composition normalization factor
+Library sizes were expressed as the effective library size and calculated as the product of the total library size and the RNA composition normalization factor
 [@RN2414].<!-- Robinson -->
 Effective library sizes were subsequently divided by the median effective library size, as suggested by Cui *et al.*
 [@RN2366].
@@ -1011,62 +984,38 @@ Gene ontology gene sets were used in enrichment analyses
 [@RN2889;
 @RN2890],
 performed using three approaches.
-First, A non-directional rank test based on the gene specific lower/upper limit of the 95% confidence interval around the log fold-change. When the log fold-change was greater than 0, the lower limit was used, when the log fold-change was lesser than 0, the negative inverse of the upper 95% CI was used
+First, A non-directional rank test based on the gene-specific lower/upper limit of the 95% confidence interval around the log fold-change. When the log fold-change was greater than 0, the lower limit was used. When the log fold-change was lesser than 0, the negative inverse of the upper 95% CI was used
 [@RN2439; 
 @RN2438;
 @RN2435].
-Second, directional regulation of the gene sets were assessed using gene set enrichment analysis
+Second, directional regulation of the gene sets was assessed using gene-set enrichment analysis
 [@RN2432;
 @RN2434] with log fold-change as the gene level metric.
 Third, over-representation analysis was performed to assess if genes identified as differentially expressed (|fold-change| > 0.5, false discovery-rate adjusted *P*-values < 0.05) belonged to specific gene sets
 @clusterProfiler].
-The parallell use of a combination of gene set analysis methods utilizing different directionality has previously been proposed as a way to improve interpretability of such analyses
+The parallel use of a combination of gene set analysis methods utilizing different directionality has previously been proposed as a way to improve the interpretability of such analyses
 [@RN2891].
 Gene ontology gene sets (biological process, cellular component, and molecular function) were downloaded from the molecular signature database (version 7.1) [@RN2436].
 
 
 ## Blood variables
-In Study I, blood variables were analyzed in venous samples collected at five time points; prior to muscle biopsy sampling and 10 minutes after completion of the fifth training session. Samples were collected in serum-separating tubes, kept at room temperature for 30 min and centrifugation (1500 g, 10 min). Serum was aliquoted and stored at -80$^{\circ}$C until analysis.
-Total testosterone, cortisol, growth hormone and insulin-like growth-factor 1 (IGF-1) were measured on an Immulite 1000 analyzer (Siemens Medical Solutions Diagnostics, NY, USA). Vitamin D (S-25-OH-D) levels were measured in samples collected before and after the intervention using a immunoassay (Roche Cobas Vitamin D total assay, Roche Diagnostics GmbH., Mannheim, Germany). 
+In Study I, blood variables were analyzed in venous samples collected at five time-points; before muscle biopsy sampling and 10 minutes after completing the fifth training session. Samples were collected in serum-separating tubes, kept at room temperature for 30 min followed by centrifugation (1500 g, 10 min). Serum was aliquoted and stored at -80$^{\circ}$C until analysis.
+Total testosterone, cortisol, growth hormone, and insulin-like growth-factor 1 (IGF-1) were measured on an Immulite 1000 analyzer (Siemens Medical Solutions Diagnostics, NY, USA). Vitamin D (S-25-OH-D) levels were measured in samples collected before and after the intervention using an immunoassay (Roche Cobas Vitamin D total assay, Roche Diagnostics GmbH., Mannheim, Germany).
 
 ## Meta-analysis of within-session training volume
 
 ### Literature search, inclusion criteria and coding of studies
 
-A first set of studies were coded based previously published
-meta-analyses [@RN1767; @RN789]. For more recent studies, PubMed, Google
-Scholar and SportDiscuss searches were made with search terms being
-"training volume", "resistance training", "strength training", "set",
-"muscle strength", "muscle hypertrophy" used in different combinations.
-Studies examining the effect of within-session training volume on muscle
-strength and mass, with all other training variables kept constant
-between study groups were considered for inclusion in the meta-analysis.
-Studies were further assessed for inclusion based on criteria being; (i)
-participants described as healthy without medications affecting muscle
-metabolism, (ii) interventions lasting at least 6 weeks and (iii) RT
-performed without additional stimuli (e.g. blood flow restriction) at
-intensities greater than 65% of 1RM or 20RM.
+The first set of studies were coded based on previously published
+meta-analyses [@RN1767; @RN789]. For more recent studies, PubMed, Google Scholar, and SportDiscuss searches were made with search terms being "training volume", "resistance training", "strength training", "set",
+"muscle strength", "muscle hypertrophy" used in different combinations. Studies examining the effect of within-session training volume on muscle strength and mass, with all other training variables kept constant between study groups, were considered for inclusion in the meta-analysis.
+Studies were further assessed for inclusion based on criteria being; (i) participants described as healthy without medications affecting muscle
+metabolism, (ii) interventions lasted at least six weeks, and (iii) resistance training performed without additional stimuli (e.g., blood flow restriction) at intensities greater than 65% of 1RM or 20RM.
 
 All available outcome measures of muscle mass and strength gains in
-response to RT were extracted from each study with exception of outcomes
-reported both as summaries and individual measures (e.g. muscle
-thickness reported as individual muscles and summarized for the whole
-muscle group). In such cases the summary was used as outcome. Weekly
-training volume was calculated as product of weekly sessions, number of
-sets and exercises for each muscle group assessed for muscle hypertrophy
-or strength gains. An intervention average of weekly sessions was used
-when the number of sessions per week differed over the course of the
-intervention. An exercise was assumed to influence an outcome when it
-targeted prime movers also assessed for strength or muscle hypertrophy
-measures.
-Measures of muscle mass were considered specific if they estimated muscle mass in muscles considered affected directly by exercises. Measures of muscle strength were considered specific when tested in the same exercises as used during training.
-Measures of muscle mass and strength were identified as targeting the upper-, lower- or whole body.
-Participant characteristics were coded based on sex (male,
-female or mixed when a study failed to discern between male and
-females), age (young, 18-20 years; middle-aged, 20-50 years; old 50- years; or mixed), training status (trained, \> 1 session per week during the
-last 6 months leading up to the intervention; untrained \< 1 session).
-Study groups were considered independent also in studies utilizing
-within-participant models.
+response to resistance training were extracted from each study with the exception of outcomes reported both as summaries and individual measures (e.g., muscle thickness reported as individual muscles and summarized for the whole muscle group). In such cases, the summary was used as the outcome. Weekly training volume was calculated as product of weekly sessions, number of sets, and exercises for each muscle group assessed for muscle hypertrophy or strength gains. An intervention-average of weekly sessions was used when the number of sessions per week differed over the course of the intervention. An exercise was assumed to influence an outcome when it targeted prime movers also assessed for strength or muscle hypertrophy measures.
+Measures of muscle mass were considered specific if they estimated muscle mass in muscles considered affected directly by exercises. Measures of muscle strength were considered specific when tested in the same exercises as used during training. Measures of muscle mass and strength were identified as targeting the upper-, lower- or whole body.
+Participant characteristics were coded based on sex (male, female or mixed when a study failed to discern between males and females), age (young, 18-20 years; middle-aged, 20-50 years; old 50- years; or mixed), training status (trained, \> 1 session per week during the last six months leading up to the intervention; untrained \< 1 session). Study groups were considered independent also in studies utilizing within-participant models.
 
 ### Calculations of effect sizes and statistical analysis
 
@@ -1077,7 +1026,7 @@ as a pooled SD within outcome and study. Variances of the effect size
 were calculated using an average effect size across all outcomes within
 muscle strength or mass, and correlations specific to each measurement
 type (isokinetic-, isometric- or repetition maximum strength tests;
-muscle thickness, magnetic resonance imaging, dual energy X‐ray
+muscle thickness, magnetic resonance imaging, dual-energy X‐ray
 absorptiometry) estimated from previous studies.
 A correction factor (Hedges' g) was applied to both effect sizes and their
 variances
@@ -1100,11 +1049,10 @@ n_studies <- es %>%
 
 ```
 
-From `r n_studies` studies a total of `r total_es[1, 2]` and `r total_es[2, 2]` effect sizes were coded for muscle mass and strength measurements respectively. 
+From `r n_studies` studies, a total of `r total_es[1, 2]` and `r total_es[2, 2]` effect sizes were coded for muscle mass and strength measurements, respectively. 
 
-Mixed-effects meta-regression models were used to model the effect of
-weekly number of sets on training-induced muscle mass and strength gains.
-Confounding variables (age, sex, study length, training status, body portion and specificity of measurement) were included in all models. Interaction between weekly number of sets and each of the confounding variables were assessed in separate models.
+Mixed-effects meta-regression models were used to model the effect of the weekly number of sets on training-induced muscle mass and strength gains.
+Confounding variables (age, sex, study length, training status, body portion, and specificity of measurement) were included in all models. Interaction between weekly number of sets and each of the confounding variables were assessed in separate models.
 Models were fitted in a Bayesian framework using the brms-package
 [@RN2562;
 @harrer2019doing].
@@ -1112,38 +1060,37 @@ Models were fitted in a Bayesian framework using the brms-package
 
 ## Statistics and data analysis
 
-In Study I, *a priori* sample-size calculations ($\beta=20\%$, $\alpha=5\%$) indicated that 40 participants was sufficient to detect $\sim$ 3\% and 5\%-point differences between volume conditions in primary outcomes, training induced changes in muscle cross-sectional area and maximal voluntary strength, respectively. Sample-size calculations were based on assumed differences between volume condition corresponding to effect sizes of `r es.min`-`r es.max`, as estimated from previous studies [@RN834; @RN776].
+In Study I, *a priori* sample-size calculations ($\beta=20\%$, $\alpha=5\%$) indicated that 40 participants were sufficient to detect $\sim$ 3\% and 5\%-point differences between volume conditions in primary outcomes, training-induced changes in muscle cross-sectional area, and maximal voluntary strength, respectively. Sample-size calculations were based on assumed differences between volume conditions corresponding to effect sizes of `r es.min`-`r es.max`, as estimated from previous studies [@RN834; @RN776].
 
-In Study II, an initial sample size calculation was made based on a best case scenario. Data from Brook et al. [@RN1642] indicated that a within-participant differences in RNA per tissue weight of $15\%$ could be detected with seven participants in the experimental group (e.g. 2.79 (0.65) to 3.21 (0.74) \SI{}{\micro\gram\per\micro\litre}, $\alpha<0.05$, $\beta<0.2$, effect size = 1.2). The control group was included in the study as a negative control primarily for the sake of systems validation of experimental procedures regarding measures of e.g. ribosomal biogenesis. With a balanced design, accounting for drop-outs, eight participants were required in each group. After a preliminary analysis of the experiment (experimental group *n = *7, control group *n = *7)[@RN2822], additional participants (experimental group *n =* 4, control group *n = *1) were recruited to the study to increase the precision of estimates, primarily in analyses within the experimental group.
+In Study II, an initial sample size calculation was made based on a best-case scenario. Data from Brook et al. [@RN1642] indicated that a within-participant differences in RNA per tissue weight of $15\%$ could be detected with seven participants in the experimental group (e.g. 2.79 (0.65) to 3.21 (0.74) \SI{}{\micro\gram\per\micro\litre}, $\alpha<0.05$, $\beta<0.2$, effect size = 1.2). The control group was included in the study as a negative control primarily for systems validation of experimental procedures regarding measures of e.g., ribosomal biogenesis. With a balanced design accounting for drop-outs, eight participants were required in each group. After a preliminary analysis of the experiment (experimental group *n = *7, control group *n = *7)[@RN2822], additional participants (experimental group *n =* 4, control group *n = *1) were recruited to the study to increase the precision of estimates, primarily in analyses within the experimental group.
 
-In Study I, pre- to post-intervention measures of muscle mass and strength were analyzed as change-scores, modeled with pre-intervention values entered in models as a covariate together with sex, when appropriate.
-A general model formulation, representing the study design, was used in analyses of volume-dependent effects. It included time and the time by volume-condition interaction, as suggested by Fitzmaurice *et al.* [@RN2332].
+In Study I, pre- to post-intervention measures of muscle mass and strength were analyzed as change-scores, modeled with pre-intervention values entered in models as a covariate together with sex, when appropriate. A general model formulation representing the study design was used in analyses of volume-dependent effects. It included time and the time by volume-condition interaction, as suggested by Fitzmaurice *et al.* [@RN2332].
 The general formulation was used in different models, depending on outcome measure and expected error distributions.
-Linear mixed effects models were used for continuous variables.
-Fiber type distributions were analyzed as a proportion of the total number of fibers/transcripts in each sample and thus bound between 0 and 1. Binomial and beta-binomial models were used to account for this in generalized linear mixed effects models. 
-The beta-binomial model accounts for the fact that the gene-family based fiber type distribution has an arbitrary denominator.
-Random effects were included when appropriate and any such structure was reduced with aim to retain a parsimonious model. Exclusion of random effects were made based on their contribution to the model using likelihood ratio tests.
-Null-hypotheses of no differences between volume-conditions and no effect of time were tested from model estimates of from linear and generalized mixed effects models.
+Linear mixed-effects models were used for continuous variables.
+Fiber type distributions were analyzed as a proportion of the total number of fibers/transcripts in each sample and thus bound between 0 and 1. Binomial and beta-binomial models were used to account for this in generalized linear mixed-effects models. 
+The beta-binomial model accounts for the fact that the gene-family-based fiber type distribution has an arbitrary denominator.
+Random effects were included when appropriate, and any such structure was reduced to retain a parsimonious model. Exclusion of random effects was made based on their contribution to the model using likelihood ratio tests.
+Null-hypotheses of no differences between volume-conditions and no effect of time were tested from model estimates of from linear and generalized mixed-effects models.
 
-Within-participant differences between volume conditions in Study I were used to construct binary respons variables representing additional benefit of moderate- over low-volume training in muscle hypertrophy (measured from MRI) and average strength (measured as the weighted average of strength tests). Additional benefit of moderate-volume training was defined as a difference between volume conditions larger than the smallest worthwhile change in the direction of moderate-volume. Smallest worthwhile change was defined as the between-participants SD $\times$ 0.2. Mean-centered data per sex was used to account for sex differences in CSA and strength measures.    
-Response variables were related to a wide range of predictors using logistic regression following [@RN1998]. *A priori* selection of relevant predictor variables was done prior to modeling, these included blood variables, baseline strength and muscle mass, volume-dependent measures of total-RNA content and S6K1 phosphorylation expressed as a percentage of low-volume training and baseline fiber-type composition. Additionally, pre-study training characteristics and in-study training variables were assessed. 
+In Study I, within-participant differences between volume conditions were used to construct binary response variables representing additional benefit of moderate- over low-volume training in muscle hypertrophy (measured from MRI) and average strength (measured as the weighted average of strength tests). An additional benefit of moderate-volume training was defined as a difference between volume conditions larger than the smallest worthwhile change in the direction of moderate-volume. The smallest worthwhile change was defined as the between-participants SD $\times$ 0.2. Mean-centered data per sex were used to account for sex differences in CSA and strength measures.    
+Response variables were related to a wide range of predictors using logistic regression following [@RN1998]. *A priori* selection of relevant predictor variables was made before modeling. These included blood variables, baseline strength and muscle mass, volume-dependent measures of total-RNA content, and S6K1 phosphorylation expressed as a percentage of low-volume training and baseline fiber-type composition. Additionally, pre-study training characteristics and in-study training variables were included in analyses. 
 Each possible predictor was assessed in univariate analysis, controlling for sex, and a non-conservative threshold ($P < 0.20$) was used to select variables for further modeling.
-Predictors were sequentially removed from a full model based on significance tests ($P > 0.1$) with models refitted after each removal to assess influence on other predictors. After model reduction to, all removed predictors were added to models in order to assess their contribution when controlling for predictors identified in primary model reduction. Predictors were checked for linearity (logit) through design variables visual inspection. Non-linear variables were categorized. Thirty-two participants were included in variable selection as two participants had missing data in some of the pre-selected variables.
+Predictors were sequentially removed from a full model based on significance tests ($P > 0.1$), with models refitted after each removal to assess its influence on other predictors. After model reduction, all removed predictors were added to models to assess their contribution when controlling for predictors identified in primary model reduction. Predictors were checked for linearity (logit) through design variables visual inspection. Non-linear variables were categorized. Thirty-two participants were included in variable selection as two participants had missing data in some of the pre-selected variables.
 In this text, secondary analyses were performed using continuous difference-scores between volume conditions and univariate analyses performed with robust regression, accounting for sex when appropriate through mean centering of variables. 
 
-In Study II, the effect of training on study outcomes was assessed in linear mixed effects regression models in a Bayesian framework.
+In Study II, the effect of training on study outcomes was assessed in linear mixed-effects regression models, fitted in a Bayesian framework.
 Time and group (training vs. control) were treated as fixed effects in analyses with matching time points (all post-intervention data from the training group was used). 
 Interactions between groups were estimated as $\Delta$ training - $\Delta$ control.
 The effects of different volume-conditions and general time-course patterns were assessed using all observations in the training group.
-Segmented regression models were used to estimate changes over sessions in three segments, session 1-4, 4-8 and 8-12, corresponding to blocks of different volume prescription in the training group. 
+Segmented regression models were used to estimate changes over sessions in three segments, sessions 1-4, 4-8, and 8-12, corresponding to different volume prescription blocks in the training group. 
 Volume-conditions were averaged and presented together when no volume-condition effect was apparent.
-Random effects were entered in all models as legs nested within participant.
+Random effects were entered in all models as legs nested within participants.
 
-Individual data, separated per leg were used to estimate the average increase in total RNA per session over the course of the study. Both the rate of increase and the mean RNA abundance was subsequently regressed on change in muscle thickness using a mixed effects model. Leg nested within participant were used as random effects. Leave-one-out analysis was used to assess the sensitivity of individual observations.
+Individual data, separated per leg, were used to estimate the average increase in total RNA per session throughout the study. Both the rate of increase and the mean RNA abundance was subsequently regressed on change in muscle thickness using a mixed-effects model. Legs nested within participants were used as random effects. Leave-one-out analysis was used to assess the sensitivity of individual observations on associations.
 
 Inference in Study II was drawn based on point estimates and their 95\% credible intervals (CrI). Credible intervals without the null effect were interpreted as robust. Models were fitted with default priors which also makes CI analogous to confidence intervals. Their interpretation differs as the CrI contains the true population value with the specified certainty (95\%), given the data.
 
-Model fitting was considered adequate when least four different chains of MCMC samples converged  (assessed by visual inspection and $\hat{R}\approx 1$). Model performance was assessed from comparing simulated data from each model to observed data graphically using posterior predictive checks.
+Model fitting was considered adequate when at least four different chains of MCMC samples converged  (assessed by visual inspection and $\hat{R}\approx 1$). Model performance was assessed by comparing simulated data from each model to observed data graphically using posterior predictive checks.
 
 ### Software, code and data avaliability
 

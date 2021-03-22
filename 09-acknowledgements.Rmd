@@ -1,6 +1,6 @@
 # Acknowledgements
 
-<!-- -->
+<!-- 
 
 This thesis was primarily realized at Lillehammer University College/Inland University of Applied Sciences and Sykehuset innlandet. Without the help of  
 
@@ -61,6 +61,6 @@ Thanks to my Norwegian family, Torill, Eivind, Stina, Petter, Emil, Anton, Oskar
 
 Marie, I'm sorry for all the late nights, early mornings and weekends i did not spend with you. You have supported me during this time, and we are still together, success! I love you! 
 
-
+-->
 
 

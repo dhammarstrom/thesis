@@ -271,7 +271,7 @@ Such coordinated remodeling can be linked to common molecular mechanisms regulat
 @RN2819].<!-- PGC1a knock out shift from type I to type IIx and reduced endurance capacity -->
 
 
-### Connective tissue
+### Changes in force-transmitting tissues in response to resistance training
 In addition to adaptive changes to the contracting apparatus of single muscle fibers and neural mechanisms regulating their activity, resistance training modulates bone, tendon, and connective tissue.
 From a general perspective, tissues enabling e.g., locomotion by conveying forces produced by contracting muscles and stabilizing body segments adapts in an activity-specific manner
 [@RN2775;<!-- greendale 2003 activity patterns affect bone mineral density, sporting activities more effective than active living home activities -->
@@ -319,7 +319,7 @@ Such remodeling may contribute to increased specific force (force generated per 
 [@RN1504].<!-- Erskine 2011 Hypothesized increased lateral force transfer increase specific tension in vivo in response to strength training in humans as single fiber specific tension nor mhc composition could explain -->
 
 
-## Effects of exercise prescription on muscle mass and strength
+## Effects of acute exercise program variables on muscle mass and strength
 A precise exercise-training prescription should inform on sequential order, intensity and volume of exercises, rest periods between efforts or sessions, and the frequency at which exercise sessions are to be performed
 [@RN789].<!-- Bird designing resistance training programs -->
 By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
@@ -499,7 +499,7 @@ As the RNA pool to a large degree consists of ribosomal RNA
 total RNA can be used as a surrogate measure of ribosomal abundance. 
 
 
-### mTORC1 a multifaceted coordinator of cell growth
+### mTORC1, a multifaceted coordinator of cell growth
 
 The discovery of an organic compound called rapamycin in the 1960s led to the characterization of a rapamycin-sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
 [@RN1049].<!-- Goodman review -->
@@ -593,9 +593,9 @@ Similarly, in well-trained participants accustom to resistance training, acute r
 These studies are limited in their temporal resolution as only signaling events in the early recovery phase were investigated.
 However, they indicate that exercise-induced mTORC1-signaling is sensitive to aspects relating to training status.
 
-### Ribosomal biogenesis and resistance training-induced muscle hypertrophy
+### Ribosomal biogenesis and muscle hypertrophy
 
-The ribosomal abundance's overall role in determining protein synthesis and subsequent cellular and tissue size was briefly mentioned above.
+Ribosomal abundance is a determining factor for protein synthesis and subsequent cellular and tissue size, as was briefly mentioned above.
 In addition to correlations between RNA abundance and protein synthesis in mice 
 [@RN2145]<!-- Millward -->
 and cell culture
@@ -630,7 +630,7 @@ Similarly, when comparing cell culture experiments, a "broader" stimuli induced 
 @RN1810;<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->
 @RN1755].<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->
 
-Synthesis of ribosomes is indeed a hallmark of the early response to resistance training as a single resistance-exercise session leads to increases in precursor rRNA (pre-rRNA 45S)
+Markers of *de novo* synthesis of ribosomes are indeed a hallmark of the early response to resistance training as a single resistance-exercise session leads to increases in precursor rRNA (pre-rRNA 45S)
 [@RN1656<!-- A single session upregulates 45 S 24 h post ex -->;
 @RN1037<!-- Nader 2014 45S up in response to 4 h after acute exercise -->]
 and repeated bouts lead to accumulation of rRNA/total RNA and thus presumably functional ribosomes
@@ -640,97 +640,97 @@ and repeated bouts lead to accumulation of rRNA/total RNA and thus presumably fu
 @RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
 @RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
 @RN1897<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->].
-However, a time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unstudied.
-Only a few studies have investigated exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
+The time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unknown, with only a few studies have investigated exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
 For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout
 [@RN1520]<!-- Total RNA increase 72 h after a second bout -->. 
-Using voluntary contractions, peak values in total RNA were reported after nine sessions, followed by a slight decrease to after 18 sessions [@RN1809].
+Using voluntary contractions, peak values in total RNA were reported after nine sessions, followed by a slight decrease after 18 sessions [@RN1809].
 These data suggest that ribosomes accumulates with some delay from initiation of training, reaches a plateau in the early phase of resistance training (three weeks), and slightly decreases as muscle mass further increases
 [@RN1809;
 @RN1520].
 
-Synthesis of new ribosomes is a complex and energy demanding process. It involves the synthesis of both ribosomal proteins and four mature rRNA species as well as their assembly into functional ribosomal subunits
+The synthesis of new ribosomes is a complex and energy-demanding process, believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by the coordinated assembly of a complex of transcription factors at the rDNA promoter
+[@RN1820].<!-- Moss review -->
+rRNA transcription is coupled with the synthesis of ribosomal proteins and the assembly into functional ribosomal subunits
 [@RN1920;<!-- Warner review yeast -->
 @RN1940;
 @RN1820].<!-- Moss review -->
-All mature rRNA (except rRNA 5S) are derieved from a single pre-rRNA transcript (45S pre-rRNA). After being transcribed from ribosomal DNA (rDNA), the 45S pre-rRNA transcript goes through several "splitting" events ultimately leading to the formation of three rRNA species, 18S, 5.8S and 28S. Coinciding with step-wise splitting of the pre-cursor transcript, modifications to the rRNA structure and assembly with ribosomal proteins into precursor ribosomal subunits occur in the nucleolar compartment
+Three of the four mature rRNA (except rRNA 5S) are derived from a single pre-rRNA transcript (45S pre-rRNA). After being transcribed from ribosomal DNA (rDNA), the 45S pre-rRNA transcript goes through several splicing events, ultimately leading to the formation of three rRNA species, 18S, 5.8S, and 28S. Simultaneously with the splicing of rRNA, modifications to the rRNA structure and assembly with ribosomal proteins into precursor ribosomal subunits occur in the nucleolar compartment
 [@RN1940].<!-- Ribosome biogenesis at a glance -->
 After export to the cytoplasm, additional maturation steps are required in both subunits before they can form functional ribosomes  
 [@RN1940].<!-- Ribosome biogenesis at a glance -->
 
-Ribosomal biogenesis is believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by coordinated assembly of a complex of transcription factors at the rDNA promoter
-[@RN1820].<!-- Moss review -->
-This process is co-regulated with translation as initiation of rDNA transcription is controlled by mTORC1 through multiple mechanisms.
-Activation of the of the upstream binding factor (UBF) through phosphorylation is needed to initiate transcription
+Activation of the upstream binding factor (UBF) through phosphorylation is needed to initiate rRNA transcription
 [@RN2582; <!-- Tuan UBF phosphorylation important for SL1-UBF interaction -->
 @RN2563].<!-- Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
-This activation is partly controlled by mTORC1 activity, with its inhibition being associated with blocked UBF phosphorylation and reduced UBF availability trough de-phosphorylation of retinablastoma protein.
-This in turn leads to reduced availability and ability of UBF to recruit secondary factors to the rDNA promotor and stimulate rRNA transcription
+This activation is partly controlled by mTORC1-activity, with its inhibition being associated with decreased UBF phosphorylation and inhibition through association with retinoblastoma protein
+[@RN2213]<!-- Hannan ubf and rb in complex supress interaction with sl1  -->
+which in turn leads to reduced availability and ability of UBF to recruit secondary factors to the rDNA promoter and stimulate rRNA transcription
 [@RN1632; <!-- Nader rapamycin block UBF availability  -->
 @RN2564].<!-- Hannan mTOR block in postmitotic cardimyocytes -->
-mTORC1 also controls one of these secondary factors, TIF-1A, as rapamycin leads to specific phosphorylation and translocation away from the nuclei
-[@RN2851],<!-- Mayer rapamycin translocates TIF1-A away from rDNA transcription in HeLa cells -->
-in addition to inducing chromatin modulations at the rDNA promotor
-[@RN1828].<!--  von Walden 2012 histone acetylation at the promotor inhibited by rapamycin -->
-
-Parallell to mTORC1 control, specific inhibition of MEK showed that MEK/ERK signaling is important for UBF binding to rDNA
-[@RN2604].<!-- Stefanovsky 2001 MEK specific inhibition under mitogen activation inhibits rRNA transcriptionand UBF phosphorylation at 117 and 201 -->
-Furthermore, the transcription factor c-Myc has also been implicated in ribosomal biogenesis as its inhibition coincides with less UBF activity and rRNA transcription irrespective of mTORC1 signaling
-[@RN1754].<!-- West -->
-c-Myc is also found at the rDNA promotor and is required for rDNA transcription
-[@RN1834;<!--  -->
-@RN1828],<!-- von Walden c-myc is enriched at the cdna promotor  -->
-in addition to its role in transcription of genes imoportant for rRNA transcription, e.g. UBF
-[@RN2565].<!-- c-myc activate transcription of the ubf promoter -->
 Interestingly, the availability of UBF *per se* has also been shown to be a determinant of rRNA transcription
 [@RN2566;<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->
 @RN2564]<!-- mTOR controls UBF availability, rapamycin block serum induced increase in UBF -->
 through control of rDNA gene activity
 [@RN2556].<!-- Sanij, UBF depleting leads to inactivation of rDNA genes -->
+mTORC1 also controls one of these secondary factors, TIF-1A, as rapamycin leads to specific phosphorylation and its translocation away from the nuclei
+[@RN2851],<!-- Mayer rapamycin translocates TIF1-A away from rDNA transcription in HeLa cells -->
+in addition to inducing chromatin modulations at the rDNA promoter
+[@RN1828].<!--  von Walden 2012 histone acetylation at the promoter inhibited by rapamycin -->
 
-In summary, ribosomal biogensis as well as the regulation of translation is under coordinated control of several pathways integrating multiple stressors and environmental cues to regulate cellular protein synthesis. 
+mTORC1 is not the only determinant of rDNA transcription. Specific inhibition of MEK showed that MEK/ERK signaling is essential for UBF binding to rDNA
+[@RN2604].<!-- Stefanovsky 2001 MEK specific inhibition under mitogen activation inhibits rRNA transcriptionand UBF phosphorylation at 117 and 201 -->
+Furthermore, the transcription factor c-Myc has also been implicated in ribosomal biogenesis as its inhibition coincides with less UBF activity and rRNA transcription irrespective of mTORC1 signaling
+[@RN1754].<!-- West -->
+c-Myc is also found at the rDNA promoter and is required for rDNA transcription
+[@RN1834;<!--  -->
+@RN1828],<!-- von Walden c-myc is enriched at the cdna promoter  -->
+in addition to its role in transcription of genes imoportant for rRNA transcription, e.g. UBF
+[@RN2565].<!-- c-myc activate transcription of the ubf promoter -->
 
-### Transcriptional regulation of training-induced muscle tissue remodeling (with analytical challanges) 
+In summary, ribosomal biogenesis and the regulation of translation are under coordinated control of several pathways integrating multiple stressors and environmental cues to regulate cellular protein synthesis. 
 
-Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei which supports its transcriptional requirements. Muscle fiber-specific nuclei (myonuclei) lack the ability to proliferate and are therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity during growth or in response to injury
+### Transcriptional regulation of training-induced muscle tissue remodeling (with analytical challenges) 
+
+Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei, which supports its transcriptional needs. Muscle fiber-specific nuclei (myonuclei) cannot proliferate, and the muscle fiber is therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity during growth or in response to injury
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-Among these cells, satellite cells are the primary source of myonuclear accretion in adult skeletal muscle, however other cell types may also contribute
+Among these cells, satellite cells are the primary source of myonuclear accretion in adult skeletal muscle.
+However other cell types may also contribute
 [@RN2080;<!-- Blaauw 2014 review satellite cells and hypertrophy -->
 @RN2864].<!-- Mccarthy ablation of satellite cells still led to some new myonuclei, suggests other cell types contribute --> 
-Satellite cells can activate, proliferate or differentiate and fuse with the muscle fiber upon specific stimuli such as hormonal activation
+Satellite cells can be activated, proliferate or differentiate and fuse with the muscle fiber upon specific stimuli such as hormonal activation
 [@RN912]<!-- Egner 2013 steroid treatment leads to increased number of myonuclei -->
 or mechanical stress
 [@RN2104],<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
 or return to their quiescent state
 [@RN2080]<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-Satellite cells readily activates in humans in response resistance exercise by exiting their quiescent state to proliferate
+In humans, satellite cells can be readily activated in response to resistance exercise. Activation that leads to them exiting their quiescent state to proliferate
 [@RN2872;<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr -->
 @RN1048;<!-- Snijders 2012 using DLK -->
 @RN2081],<!-- Mackey using Pax7, Ki67 and CD56 -->
-leading to increased number of satellite cells after resistance training
+which in turn leads to an increased number of satellite cells after resistance training
 [@RN2617].
 
 A possible growth limiting role for satellite cells in the context of muscle hypertrophy is to maintain a fixed number of myonuclei per muscle fiber volume through myonuclear accretion, in order to maintain transcriptional capacity (a maintained myonuclear domain)
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-However, human studies are contradicting that such a role would be a determining factor for hypertrophy.
+However, human studies does not necessarily such a role would be a determining factor for hypertrophy.
 Kadi *et al.* reported that although the number of satellite cells increased in response to training, the number of myonuclei did not, 
 suggesting that existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
 [@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
-Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal concomitant enlargement of the myonuclei pool
+Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal increases in the myonuclei pool
 [@RN2112;<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
 @RN2874].
-In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest and non-responders
+In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest, and non-responders
 [@RN2868].<!-- Petrella 2008 larger increase in myonuclei in high responders, confunded with the fact that high responders were to a large extent young males and low responders older women and men, see @RN765 -->
-However, this analysis may have been confounded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained 9 young (20-35 years) but only 2 elderly (60-75 years) male participants whereas the non-responder group contained 1 young man and 6 elderly
+However, this analysis may have been confounded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained nine young (20-35 years) but only two elderly (60-75 years) male participants whereas the non-responder group contained one young man and six elderly
 [@RN765].<!-- description of the age/sex characteristics of clusters in RN2868 -->
-This is of importance as satellite cell responses to exercise are different between young and elderly
+This note is important as satellite cell responses to exercise are different between young and elderly
 [@RN2872].<!-- McKay significant age effects in satellite cell response to exercise and at baseline -->
-Using a similar clustering-approach as performed in [@RN2868] did not result in differences in myonuclear addition between different response-clusters in a homogeneous sample in terms of age (and sex)
+Indeed, in a different study using a similar clustering-approach as in [@RN2868] training did not result in differences in myonuclear addition between different response-clusters in a homogeneous sample in terms of age (and sex)
 [@RN2055].<!-- Mobley increase in numbers of satellite cell content and myonuclei but no differences between responder clusters -->
-A further argument against the idea of a determining role of myonuclear addition in resistance-training induced hypertrophy comes from studies on mice where initial muscle growth induced by synergist ablation is unaffected by specific depletion of satellite cells 
+A further argument against the idea of a determining role of myonuclear acreetion for resistance-training induced hypertrophy comes from studies in mice where initial muscle growth induced by synergist ablation is unaffected by specific depletion of satellite cells 
 [@RN2864].
 
-In humans, addition of myonuclei paralleled with an increase in global transcription rates from existing myonuclei are likely both contributing to accumulation of total RNA seen after resistance training.
+In humans, the addition of myonuclei paralleled with an increase in global transcription rates from existing myonuclei are likely both contributing to accumulation of total RNA seen after resistance training.
 Myonuclear accretion does not, however, seem to be a limiting factor for muscle growth
 [@RN2055;<!-- Mobley evidence for myonuclei addition, not different between responder groups  -->
 @RN2864].<!-- MacCarthy not a limiting factor for increased transcription in the initial phase of resistance training -->
@@ -738,27 +738,27 @@ Existing myonuclei are thus able to maintain transcriptional requirements during
 [@RN2618].<!-- Newlands 1998 Transcriptional activity of myonuclei are not maximised, increase in transcription factors increase the chance of a loci being transcribed... -->
 Indeed, this reserve capacity of existing myonuclei seems sufficient to induce a global shift in transcription in response to mechanical loading, including both mRNA and rRNA transcription
 [@RN2616].<!-- Kirby existing nuclei can increase transcription  -->
-Such a shift in global transcription is indeed a determinant of muscle growth as it sets the limit of ribosomal biogenesis and thus the muscle cells translational capacity (as reviewed above).
+Such a shift in global transcription is indeed a determinant of muscle growth as it sets the limit of ribosomal biogenesis and thus the muscle cells' translational capacity (as reviewed above).
 
-A change in transcription in response to mechanical loading is not only quantitative (RNA per unit of tissue mass) but also qualitative (changed profiles among e.g. mRNA) in nature with multiple transcriptional programs enabling coordinated adaptation to the specific stimuli.
-Such "programming" in muscle tissue affects e.g. muscle fiber type composition where resistance training leads to "shut-down" of *MYH1*, coding for the myosin isoform represented in type IIX fibers
+Transcriptional changes in response to mechanical loading are quantitative (RNA per unit of tissue mass) and qualitative. Activation and de-activation of multiple transcriptional programs that enable coordinated responses to the specific stimuli effectively change the global mRNA profile.
+Such "programming" in muscle tissue affects, e.g. muscle fiber type composition whereby resistance training leads to "shut-down" of *MYH1* expression, which codes for the myosin isoform represented in type IIX fibers
 [@RN2056].<!-- Anderssen  -->
 The changed, relative proportions of transcripts coding for myosin composition will after remodeling reflect the resulting phenotype
 [@RN1489].<!-- Ellefsen -->
 Furthermore, transcriptional remodeling of the extracellular matrix is readily affected by resistance training
 [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN2298].<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9-->
-Revisiting the role of satellite cells, briefly touched upon in a previous paragraph, highlights that transcriptional regulation of muscle remodeling is a shared venture between multiple cell types when it comes to the extracellular matrix.
-If satellite cells are depleted from skeletal muscle of mice subjected to long-term mechanical overload through synergist ablation, a fibrous muscle phenotype is developed with accumulated extracellular matrix components
+Revisiting satellite cells' role, briefly touched upon in a previous paragraph, highlights that the extracellular matrix's remodeling is a shared venture between multiple cell types.
+If satellite cells are depleted from the skeletal muscle of mice subjected to long-term mechanical overload through synergist ablation, a fibrous muscle phenotype is developed with accumulated extracellular matrix components
 [@RN1354].<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
-Balance between muscle satellite cells, their daughter cells and fibroblasts enables coordination between myofiber hypertrophy and extracellular matrix remodeling
+This observation indicates that a balance between muscle satellite cells, their daughter cells, and fibroblasts enables coordination between myofiber hypertrophy and extracellular matrix remodeling
 [@RN1354;<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
 @RN1888;<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
 @RN2421].<!--  Kjaer fibroblast are the main source of collagen biosynthesis-->
 Such coordinated remodeling occurs at least partly through direct exosome transfer of regulating RNA between differentiated satellite cells and fibroblasts
 [@RN1888].<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
 
-In humans, previous studies relating to resistance training and muscle growth/function have investigated a single resistance-exercise session [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
+In humans, previous studies investigating transcriptional responses to resistance training have investigated a single resistance-exercise session [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408], <!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
 repeated bouts
 [@RN2299]<!-- Murton Exercise induced genes with no response in control group-->
@@ -767,16 +767,16 @@ and chronic resistance training [@RN2400;<!-- Robinson 2017 differences on commo
 @RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN774]<!-- Raue 2012. Differential expression  -->
 for changes in transcriptome ("qualitative") characteristics using large-scale techniques (micro-arrays or RNA-seq).
-Generally, these studies show that a bout of resistance exercise in the untrained state results in a transcriptome profile related to structural damage, remodeling and inflammation
+Generally, these studies show that a bout of resistance exercise in the untrained state results in a transcriptome profile related to structural damage, remodeling, and inflammation
 [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408
 @RN2299].<!-- Murton Exercise induced genes with no response in control group-->
-Long term adaptations generally involves extracellular matrix remodeling, changes expression of genes related to energy metabolism  
+Long term adaptations generally involve extracellular matrix remodeling, changes in expression of genes related to energy metabolism
 [@RN2400;<!-- Robinson 2017 differences on common regulation between exercise types in you and old--> 
 @RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> 
 @RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN774].<!-- Raue 2012. Differential expression  -->
-Attempts have also been made to associate transcriptome characteristics and degrees of muscle growth
+In addition to descriptive studies, attempts have also been made to associate transcriptome characteristics and degrees of muscle growth
 [@RN774;<!--Raue 2012. 661 genes regulated by exercise and correlated with muscle size and strength--> 
 @RN826;<!-- Thalacker-Mercer -->
 @RN753],<!-- Phillips 2013 association with  -->
@@ -784,52 +784,52 @@ and muscle function
 [@RN2402;<!-- Hangelbroek 2018 gene cluster predicts 1RM, training induces expression of ECM/collagen -->
 @RN2398].
 
-Although these studies have broaden our understanding of transcriptional regulation during adaptations to resistance training, they also highlight the intrinsic difficulties in studying a dynamic and stochastic process
+Although these studies have broadened our understanding of transcriptional regulation during adaptations to resistance training, they also highlight the intrinsic difficulties of studying a dynamic and stochastic process
 [@RN2618].
-From a methodological point of view, skeletal muscle subjected to e.g. resistance training, concomitant with muscle hypertrophy both exhibit large global scale changes to the RNA pool as well as important *qualitative* changes to RNA sub-populations (mRNA).
-A common assumption in studies of gene expression is the relative stability of most transcripts, as well as stability between sub-populations of RNA (mRNA vs. rRNA)
+From a methodological point of view, skeletal muscle subjected to e.g. resistance training, exhibit large global changes to the RNA pool, and *qualitative* changes to RNA sub-populations (mRNA).
+A common assumption in studies of gene expression is the relative stability of most transcripts, as well as a stability between sub-populations of RNA (mRNA vs. rRNA)
 [@RN2359;<!-- Loven 2012 et al  -->
 @RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
 <!-- Fix this -->
-Such assumptions may not be true in many situations, including during muscle hypertrophy
+Such assumptions may not be valid in many situations, including during muscle hypertrophy
 [@RN2616;<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
 @RN2430;<!-- Lin 2012 c-Myc induced gene amplification through -->
 @RN1755;<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->
 @RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
 @RN1809]. <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-Depending on the technique used for evaluating RNA expression (e.g. qPCR, micro-array or RNA-seq), data normalization during analysis aims to make experimental conditions comparable using some common denominator.
+Depending on the technique used for evaluating RNA expression (e.g., qPCR, micro-array, or RNA-sequencing), data normalization during analysis aims to make experimental conditions comparable using some common denominator.
 In cell culture experiments, cell number was suggested to be this denominator for transcript abundances in order to account for global changes in transcription
 [@RN2359].<!-- Loven 2012 et al  -->
-Despite the fact that some previous investigations, specifically investigating resistance training, have acknowledged a changed total RNA abundance per muscle weight, indicating that a lower amount of tissue being used in analysis in different conditions (trained vs. untrained muscle)
+Despite the fact that some previous investigations, specifically investigating resistance training, have acknowledged a changed total RNA abundance per muscle weight, indicating that a lower amount of tissue is used for analysis from different conditions (trained vs. untrained muscle)
 [@RN2298],<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9-->
 transcript counts are commonly expressed as per transcriptome.
 
-In summary, both quantitative and qualitative changes in transcriptional profiles determines the cellular phenotype. Skeletal muscle hypertrophy may represent a special case in studies of transcriptome characteristics as it is typically associated with global changes in transcription as well as cellular growth. To fully understand such dynamic systems, first steps should include explicit evaluation of underlying assumptions
+In summary, both quantitative and qualitative changes in transcriptional profiles in response to environmental stress are important determinants of the resulting changes in cellular phenotypes. Skeletal muscle hypertrophy may represent a special case, as it is typically associated with global changes in transcription as well as cellular growth. To fully understand such dynamic systems, the first steps should include explicit evaluation of underlying methodological assumptions
 [@RN2426;<!-- Conessa 2016 best practices fom RNA seq-->
 @RN2359;<!-- Loven 2012 et al  -->
 @RN2878]
 
 
 ## Effects of exercise volume on molecular determinants of muscle growth
-Given that exercise-training variables can modify responses to resistance training, it is reasonable to assume that these effects are mediated through determinants of muscle growth.
-Exercise intensity has been evaluated with respect to protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
+Given that exercise-training variables can modify responses to resistance training such as muscle growth, it is reasonable to assume that these effects are mediated through muscle growth determinants, including protein synthesis rates and molecular transducers such as mTORC1.
+Exercise intensity has been evaluated concerning protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
 Kumar *et al.* showed that maximal stimulation of fractional synthetic rate was achieved with intensities greater than 60\% of 1RM, coinciding with signaling events
 [@RN2720].<!-- Kumar 2009 increasing exercise intensities maximises post ex prot synthesis at 75% in young (plateau at 60-90% of 1RM)  -->
-The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal stimulation of protein synthesis (75% of 1RM).
-This analysis revealed a volume-dependent dose-response as six-sets of leg extension led to greater protein synthesis one hour after exercise and sustained S6K1 phsophorylation over up to four hours after exercise
+The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal protein synthesis stimulation (75% of 1RM).
+This analysis revealed a volume-dependent dose-response, as a higher volume of leg extension led to greater protein synthesis one hour after exercise and sustained S6K1 phosphorylation up to four hours after exercise
 [@RN2716].<!-- Kumar 2012 higher protein synthesis after 6 sets compared to 3 sets coinciding with sustained S6K1 phosphorylation -->
-Further extending the time frame, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24 and 29 hour after exercise. Both conditions led to increased myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
-However, volume-dependent regulation of S6K1 was only seen at 29 hours after exercise with earlier events (< 5 hours) possibly missed due to the timing of biopsy sampling.
-No clear volume-dependency was seen in p90RSK1 (downstream of ERK) or rpS6, however eukaryotic initiation factor 2B (eIF2B$\epsilon$) phosphorylation was reduced only in the three set condition at five hours post exercise [@RN791], presumably mediating translation initiation, although its exact role is still unclear
+Further extending the time frame, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24, and 29 hours after exercise. Both conditions led to increased myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
+However, volume-dependent regulation of S6K1 was only seen at 29 hours after exercise, with earlier events (< 5 hours) possibly missed due to biopsy sampling timing.
+No clear volume-dependency was seen in p90RSK1 (downstream of ERK) or rpS6, however eukaryotic initiation factor 2B (eIF2B$\epsilon$) phosphorylation was reduced only in the three-set condition at five hours post-exercise [@RN791], presumably mediating translation initiation, although its exact role is still unclear
 [@RN2853].<!-- Pavit eIF2B review -->
-Volume dependent regulation of S6K1 at Thr389 and rpS6 at Ser235/236 were reported 30 minutes after exercise by Terzis *et al.* as six sets of 6RM bilateral legpress resulted in greater phosphorylation compared to three and one set
+Volume-dependent regulation of S6K1 at Thr389 and rpS6 at Ser235/236 were reported 30 minutes after exercise by Terzis *et al.* as six sets of 6RM bilateral leg press resulted in greater phosphorylation compared to three and one set
 [@RN784].
 No clear differences between volume conditions were seen in Akt at Ser473, mTOR at Ser2448, ERK 1/2 at Thr202/Tyr204, p38 ($\alpha$,$\alpha$ and $\delta$) at Thr180/Tyr182, p38$\gamma$ Thr180/Tyr182 or AMPK at Thr172
 [@RN784].
-Corroborating previous observations regarding exercise volume-dependence of the S6K1-rpS6-axis, Ahtiainen and colleagues also found greater phosphorylation of S6K1 at Thr389, rpS6 at Ser235/236 and Ser240/244 30 minutes after exercise with ten compared to five sets of 10RM legpress.
-Furthermore, ERK1/2 at Thr202/Tyr204 and p38 at Thr180/Tyr182 phosphorylations were not found to be volume dependent
+Corroborating previous observations regarding exercise volume-dependence of the S6K1-rpS6-axis, Ahtiainen and colleagues also found greater phosphorylation of S6K1 at Thr389, rpS6 at Ser235/236 and Ser240/244 30 minutes after exercise with ten compared to five sets of 10RM leg press.
+Furthermore, ERK1/2 at Thr202/Tyr204 and p38 at Thr180/Tyr182 phosphorylations were not found to be volume-dependent
 [@RN1837].
-However, in contrast to Terzis *et al.*, they reported volume-dependence in exercise-induced phsophorylation of AMPK$\alpha$ at Thr172, this together with AS160 at Thr642, IRS-I Ser636/639 and Akt at Ser473 together with a tendency in LKB1 at Ser428, all related to cellular energy status, glucose uptake and metabolism
+However, in contrast to Terzis *et al.*, they reported volume-dependence in exercise-induced phosphorylation of AMPK$\alpha$ at Thr172, this together with AS160 at Thr642, IRS-I Ser636/639 and Akt at Ser473 together with a tendency in LKB1 at Ser428, all related to cellular energy status, glucose uptake and metabolism
 [@RN1837;
 @RN2856]<!-- Sano 2003 when unable to phosphorylate AS160 glut4 translocation to membrane is inhibited in  
 with relatively high exercise volumes.-->
@@ -841,10 +841,10 @@ Increased S6K1 phosophorylation coincides with rpS6\textsuperscript{Ser235/236} 
 [@RN784; @RN1837] but not in the late phase (29 hours) [@RN791].
 Although rpS6\textsuperscript{Ser235/236} is a known substrate for both S6K1 and ERK1/2 and p90RSK1
 [@RN2311],
-ERK1/2\textsuperscript{Thr202/Tyr204} was not been found to be volume-sensitive in the acute phase
+ERK1/2\textsuperscript{Thr202/Tyr204} was not found to be volume-sensitive in the acute phase
 [@RN784; @RN1837],
 nor was P90RSK1\textsuperscript{Thr573} in the late phase [@RN791]
-suggesting that signaling along the mTORC1-S6K1-rpS6-axis is more sensitive to variable volume than the parallell MEK/ERK-axis.
+suggesting that signaling along the mTORC1-S6K1-rpS6-axis is more sensitive to variable volume than the parallel MEK/ERK-axis.
 The above signaling events suggest exercise volume-dependent activation of the translational machinery, and increased volume indeed leads to increased muscle protein synthesis
 [@RN791; @RN2716].
 However, relatively high exercise volumes may lead to signaling events inhibiting protein synthesis as AMPK\textsuperscript{Thr172} showed volume dependency, presumably relating to cellular energy stress and glucose metabolism
@@ -856,9 +856,9 @@ Interestingly, an increased AMPK-related signaling may be related to an accumula
 [@RN2857].<!--McKendry 2016 short interset rest leads to increased AMPK and coincides with reduced protein synthesis 0-5 h post exercise -->
 
 In addition to the signaling events described above, training-induced satellite cell activation has been shown to be volume dependent.
-Hanssen *et al.* found that training with three sets compared to a single-set per exercise led to more pronounced increase in cells positive for the satellite cell marker CD56 in *m. vastus lateralis* at two and twelve weeks of resistance training [@RN796]. 
-This coincided with a greater number of myonuclei after 12 weeks of training, however with no clear differences between volume conditions.
-In the same muscle specimen, no clear volume-dependent effect was seen on muscle fiber CSA, however on the muscle level a positive effect of three- compared to one-set was seen for muscle hypertrophy.
+Hanssen *et al.* found that training with three sets compared to a single-set per exercise led to a more pronounced increase in cells positive for the satellite cell marker CD56 in *m. vastus lateralis* at two and twelve weeks of resistance training [@RN796]. 
+This coincided with a greater number of myonuclei after 12 weeks of training, although without apparent differences between volume conditions.
+In the same muscle specimen, no clear volume-dependent effect was seen on muscle fiber CSA. However, on the muscle level, a positive effect of three- compared to one-set was seen for muscle hypertrophy.
 [@RN796;
 @RN776]
 
