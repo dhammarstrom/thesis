@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.9)  15 MAR 2021 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.9)  22 MAR 2021 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,39 +1185,39 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count369
 \calc@Cskip=\skip96
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
-2.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
+8.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Info: Redefining \microtypecontext on input line 232.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Info: Redefining \microtypecontext on input line 228.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 232.
+LaTeX Info: Redefining \showhyphens on input line 228.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1277,7 +1277,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 232.
+Package hyperref Info: Link coloring OFF on input line 228.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -1293,9 +1293,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 232.
-LaTeX Info: Redefining \pageref on input line 232.
-LaTeX Info: Redefining \nameref on input line 232.
+LaTeX Info: Redefining \ref on input line 228.
+LaTeX Info: Redefining \pageref on input line 228.
+LaTeX Info: Redefining \nameref on input line 228.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1310,47 +1310,47 @@ ator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-32.
+28.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-32.
+28.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-232.
+228.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-232.
+228.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 232.
+(Font)              <10> on input line 228.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 232.
+(Font)              <7.4> on input line 228.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 232.
+(Font)              <6> on input line 228.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-32.
+28.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.
 cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.
 cfg
@@ -1360,13 +1360,13 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 23
-2.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
+8.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-232.
+228.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1375,7 +1375,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-232.
+228.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1384,17 +1384,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 243.
+(Font)              <12> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 243.
+(Font)              <9> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 243.
+(Font)              <7> on input line 239.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
 [1
 Non-PDF special ignored!
 <special> !% Reed College LaTeX Thesis Class 2001/12/04 SN
@@ -1417,78 +1417,78 @@ o.pdf>
 (epstopdf)                    size: 25458 bytes
 (epstopdf)             Command: <repstopdf --outfile=artwork//eng_logoGIH_tryck
 -eps-converted-to.pdf artwork//eng_logoGIH_tryck.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 <artwork//eng_logoGIH_tryck-eps-converted-to.pdf, id=248, 675.52374pt x 191.716
 25pt>
 File: artwork//eng_logoGIH_tryck-eps-converted-to.pdf Graphic file (type pdf)
 <use artwork//eng_logoGIH_tryck-eps-converted-to.pdf>
 Package pdftex.def Info: artwork//eng_logoGIH_tryck-eps-converted-to.pdf  used 
-on input line 243.
+on input line 239.
 (pdftex.def)             Requested size: 170.71652pt x 48.44965pt.
 
-Underfull \hbox (badness 4353) in paragraph at lines 243--243
+Underfull \hbox (badness 4353) in paragraph at lines 239--239
 \T1/lmr/m/n/24.88 (+20) Determinants of intra-individual
  []
 
 [3 <./artwork//eng_logoGIH_tryck-eps-converted-to.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-43.
+39.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 250--276
+Underfull \hbox (badness 1237) in paragraph at lines 246--272
 \T1/lmr/bx/n/10 (+20) Determinants of intra-individual vari-a-tion in adapt-abi
 l-ity to re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--272
 
  []
 
@@ -1496,7 +1496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--276
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-78.
+74.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1546,7 +1546,7 @@ Chapter 1.
 Package lettrine.sty Info: Targeted height = 35.26949pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 35.26964pt (S);
-(lettrine.sty)             reported on input line 337.
+(lettrine.sty)             reported on input line 329.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1556,13 +1556,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [2]
 Chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 397.
+(Font)              <8> on input line 389.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 397.
+(Font)              <5> on input line 389.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 397.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 397.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 389.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1577,7 +1577,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [5] [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7] [8]
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[8]
 Underfull \vbox (badness 1210) has occurred while \output is active []
 
 [9] [10] [11]
@@ -1588,10 +1591,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/Millward1973-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/Millward1973-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/Millward1973-1.pdf  used on 
-input line 722.
+input line 707.
 (pdftex.def)             Requested size: 180.67455pt x 180.67455pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 726--726
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 711--711
 [] [] 
  []
 
@@ -1604,17 +1607,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [16] [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18]
+[18] [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19] [20]
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21]
+[21] [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[22]
-Underfull \vbox (badness 2229) has occurred while \output is active []
 
 [23] [24]
 Chapter 3.
@@ -1629,10 +1629,10 @@ Chapter 4.
 File: thesis_files/figure-latex/study1-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study1-overview-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study1-overview-1.pdf  used 
-on input line 1075.
+on input line 1063.
 (pdftex.def)             Requested size: 340.27042pt x 201.75325pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1079--1079
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1067--1067
 [] [] 
  []
 
@@ -1645,10 +1645,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/study2-overview-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/study2-overview-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-overview-1.pdf  used 
-on input line 1083.
+on input line 1071.
 (pdftex.def)             Requested size: 340.27042pt x 230.86192pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1087--1087
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1075--1075
 [] [] 
  []
 
@@ -1666,10 +1666,10 @@ File: thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf Graphic file (t
 ype pdf)
 <use thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rna-muscle-weight-methods-1.
-pdf  used on input line 1259.
+pdf  used on input line 1247.
 (pdftex.def)             Requested size: 289.07928pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1263--1263
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1251--1251
 [] [] 
  []
 
@@ -1680,7 +1680,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [36 <./thesis_files/figure-latex/rna-muscle-weight-methods-1.pdf>]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1290--1290
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1278--1278
 [] [] 
  []
 
@@ -1689,7 +1689,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [37] [38]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-342.
+330.
 (c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1713,7 +1713,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [45]
-Overfull \hbox (15.06418pt too wide) in paragraph at lines 1526--1529
+Overfull \hbox (15.06418pt too wide) in paragraph at lines 1514--1517
 []\T1/lmr/m/n/10 (-20) github.com/dhammarstrom/rnaseq-pipeline[]; pa-per 3, []g
 ithub.com/dhammarstrom/ribo-
  []
@@ -1721,12 +1721,12 @@ ithub.com/dhammarstrom/ribo-
 [46]
 Chapter 5.
 
-Underfull \hbox (badness 2401) in paragraph at lines 1534--1534
+Underfull \hbox (badness 2401) in paragraph at lines 1522--1522
 []\T1/lmr/m/n/14.4 (+20) Within-session train-ing vol-ume af-fects training-
  []
 
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1545--1545
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1533--1533
 [] [] 
  []
 
@@ -1748,10 +1748,10 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 File: thesis_files/figure-latex/comb-fig-s1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/comb-fig-s1-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/comb-fig-s1-1.pdf  used on i
-nput line 1626.
+nput line 1614.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1630--1630
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1618--1618
 [] [] 
  []
 
@@ -1763,10 +1763,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/mtor-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/mtor-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/mtor-fig-1.pdf  used on inpu
-t line 1663.
+t line 1651.
 (pdftex.def)             Requested size: 340.27042pt x 252.94438pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1667--1667
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1655--1655
 [] [] 
  []
 
@@ -1786,10 +1786,10 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 File: thesis_files/figure-latex/rrna-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/rrna-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rrna-fig-1.pdf  used on inpu
-t line 1689.
+t line 1677.
 (pdftex.def)             Requested size: 340.27042pt x 180.67455pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1693--1693
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1681--1681
 [] [] 
  []
 
@@ -1805,12 +1805,12 @@ Package fancyhdr Warning: \headheight is too small (22.49pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.99878pt}.
 
 [53]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1709--1709
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1697--1697
 [] [] 
  []
 
 
-Overfull \hbox (49.05486pt too wide) in paragraph at lines 1712--1728
+Overfull \hbox (49.05486pt too wide) in paragraph at lines 1700--1716
  [][] 
  []
 
@@ -1819,10 +1819,10 @@ t>
 File: thesis_files/figure-latex/rrna-csa-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/rrna-csa-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rrna-csa-fig-1.pdf  used on 
-input line 1731.
+input line 1719.
 (pdftex.def)             Requested size: 340.27042pt x 113.42346pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1735--1735
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1723--1723
 [] [] 
  []
 
@@ -1838,10 +1838,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/myhc-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/myhc-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/myhc-fig-1.pdf  used on inpu
-t line 1772.
+t line 1760.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1776--1776
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1764--1764
 [] [] 
  []
 
@@ -1853,10 +1853,10 @@ Overfull \vbox (9.79019pt too high) has occurred while \output is active []
 File: thesis_files/figure-latex/lib-size-fig-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/lib-size-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/lib-size-fig-1.pdf  used on 
-input line 1797.
+input line 1785.
 (pdftex.def)             Requested size: 340.27042pt x 216.80946pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1801--1801
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1789--1789
 [] [] 
  []
 
@@ -1870,10 +1870,10 @@ File: thesis_files/figure-latex/week2-upset-volcano-1.pdf Graphic file (type pd
 f)
 <use thesis_files/figure-latex/week2-upset-volcano-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week2-upset-volcano-1.pdf  u
-sed on input line 1811.
+sed on input line 1799.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1815--1815
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1803--1803
 [] [] 
  []
 
@@ -1887,10 +1887,10 @@ File: thesis_files/figure-latex/week2-go-analysis-1.pdf Graphic file (type pdf)
 
 <use thesis_files/figure-latex/week2-go-analysis-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week2-go-analysis-1.pdf  use
-d on input line 1833.
+d on input line 1821.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1837--1837
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1825--1825
 [] [] 
  []
 
@@ -1905,10 +1905,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/gene-set-rug-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/gene-set-rug-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/gene-set-rug-1.pdf  used on 
-input line 1842.
+input line 1830.
 (pdftex.def)             Requested size: 268.00058pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1846--1846
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1834--1834
 [] [] 
  []
 
@@ -1918,7 +1918,7 @@ Underfull \vbox (badness 1122) has occurred while \output is active []
 [63 <./thesis_files/figure-latex/week2-go-analysis-1.pdf>]
 
 LaTeX Warning: Reference `week12-upset-volcano' on page 64 undefined on input l
-ine 1848.
+ine 1836.
 
 <thesis_files/figure-latex/week12-upset-volcano-1.pdf, id=1014, 340.27126pt x 3
 61.35pt>
@@ -1926,10 +1926,10 @@ File: thesis_files/figure-latex/week12-upset-volcano-1.pdf Graphic file (type p
 df)
 <use thesis_files/figure-latex/week12-upset-volcano-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/week12-upset-volcano-1.pdf  
-used on input line 1851.
+used on input line 1839.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1855--1855
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1843--1843
 [] [] 
  []
 
@@ -1946,10 +1946,10 @@ File: thesis_files/figure-latex/csa-str-sets-corr-1.pdf Graphic file (type pdf)
 
 <use thesis_files/figure-latex/csa-str-sets-corr-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/csa-str-sets-corr-1.pdf  use
-d on input line 1890.
+d on input line 1878.
 (pdftex.def)             Requested size: 340.27042pt x 172.64456pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1894--1894
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1882--1882
 [] [] 
  []
 
@@ -1963,10 +1963,10 @@ File: thesis_files/figure-latex/univariate-benefit-analysis-1.pdf Graphic file
 (type pdf)
 <use thesis_files/figure-latex/univariate-benefit-analysis-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/univariate-benefit-analysis-
-1.pdf  used on input line 1903.
+1.pdf  used on input line 1891.
 (pdftex.def)             Requested size: 289.07928pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1907--1907
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1895--1895
 [] [] 
  []
 
@@ -1980,10 +1980,10 @@ File: thesis_files/figure-latex/model-reduction-plot-1.pdf Graphic file (type p
 df)
 <use thesis_files/figure-latex/model-reduction-plot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/model-reduction-plot-1.pdf  
-used on input line 1917.
+used on input line 1905.
 (pdftex.def)             Requested size: 340.27042pt x 268.00058pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1921--1921
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1909--1909
 [] [] 
  []
 
@@ -1993,7 +1993,7 @@ Underfull \vbox (badness 1478) has occurred while \output is active []
 [70 <./thesis_files/figure-latex/model-reduction-plot-1.pdf>]
 
 LaTeX Warning: Reference `fig:rna-csa-fig' on page 71 undefined on input line 1
-941.
+929.
 
 <thesis_files/figure-latex/continuous-determinants-1.pdf, id=1108, 340.27126pt 
 x 433.62pt>
@@ -2001,10 +2001,10 @@ File: thesis_files/figure-latex/continuous-determinants-1.pdf Graphic file (typ
 e pdf)
 <use thesis_files/figure-latex/continuous-determinants-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/continuous-determinants-1.pd
-f  used on input line 1947.
+f  used on input line 1935.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1951--1951
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1939--1939
 [] [] 
  []
 
@@ -2015,12 +2015,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2990) has occurred while \output is active []
 
 [72 <./thesis_files/figure-latex/continuous-determinants-1.pdf>] [73]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 1988--1988
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 1976--1976
 [] [] 
  []
 
 
-Overfull \hbox (3.53825pt too wide) in paragraph at lines 1991--2021
+Overfull \hbox (3.53825pt too wide) in paragraph at lines 1979--2009
  [][] 
  []
 
@@ -2030,10 +2030,10 @@ File: thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf Graphic file
 (type pdf)
 <use thesis_files/figure-latex/study2-muscle-strength-mass-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-muscle-strength-mass-
-1.pdf  used on input line 2030.
+1.pdf  used on input line 2018.
 (pdftex.def)             Requested size: 340.27042pt x 216.80946pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2034--2034
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2022--2022
 [] [] 
  []
 
@@ -2047,10 +2047,10 @@ File: thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf Graphic file (type pd
 f)
 <use thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf  u
-sed on input line 2050.
+sed on input line 2038.
 (pdftex.def)             Requested size: 340.27042pt x 469.75386pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2054--2054
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2042--2042
 [] [] 
  []
 
@@ -2067,10 +2067,10 @@ File: thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf Graphic fil
 e (type pdf)
 <use thesis_files/figure-latex/study2-rrna-volume-conditions-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-rrna-volume-condition
-s-1.pdf  used on input line 2065.
+s-1.pdf  used on input line 2053.
 (pdftex.def)             Requested size: 289.07928pt x 469.75386pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2069--2069
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2057--2057
 [] [] 
  []
 
@@ -2078,7 +2078,7 @@ Overfull \hbox (2.84528pt too wide) in paragraph at lines 2069--2069
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [78 <./thesis_files/figure-latex/study2-rrna-vs-ctrl-1.pdf>]
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2061--2061
 [] [] 
  []
 
@@ -2088,7 +2088,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [79]
 
 LaTeX Warning: Reference `teb:ubf-rps6-regression-table' on page 80 undefined o
-n input line 2115.
+n input line 2103.
 
 <thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf, id=1196, 340.27126pt x 36
 1.35pt>
@@ -2096,10 +2096,10 @@ File: thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf Graphic file (type pd
 f)
 <use thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-ubf-rps6-fig-1.pdf  u
-sed on input line 2118.
+sed on input line 2106.
 (pdftex.def)             Requested size: 340.27042pt x 361.34912pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2122--2122
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2110--2110
 [] [] 
  []
 
@@ -2116,10 +2116,10 @@ File: thesis_files/figure-latex/study2-rna-muscle-thickness-1.pdf Graphic file
 (type pdf)
 <use thesis_files/figure-latex/study2-rna-muscle-thickness-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/study2-rna-muscle-thickness-
-1.pdf  used on input line 2155.
+1.pdf  used on input line 2143.
 (pdftex.def)             Requested size: 340.27042pt x 505.88875pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2159--2159
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2147--2147
 [] [] 
  []
 
@@ -2143,10 +2143,10 @@ File: thesis_files/figure-latex/fiber-methods-fig-1.pdf Graphic file (type pdf)
 
 <use thesis_files/figure-latex/fiber-methods-fig-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/fiber-methods-fig-1.pdf  use
-d on input line 2235.
+d on input line 2223.
 (pdftex.def)             Requested size: 252.94438pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2239--2239
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2227--2227
 [] [] 
  []
 
@@ -2162,10 +2162,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/ref-gene-comp-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/ref-gene-comp-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/ref-gene-comp-1.pdf  used on
- input line 2269.
+ input line 2257.
 (pdftex.def)             Requested size: 340.27042pt x 433.61894pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2273--2273
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2261--2261
 [] [] 
  []
 
@@ -2185,10 +2185,10 @@ File: thesis_files/figure-latex/qpcr-model-robustness-1.pdf Graphic file (type
 pdf)
 <use thesis_files/figure-latex/qpcr-model-robustness-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/qpcr-model-robustness-1.pdf 
- used on input line 2316.
+ used on input line 2304.
 (pdftex.def)             Requested size: 289.07928pt x 180.67455pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2320--2320
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2308--2308
 [] [] 
  []
 
@@ -2201,10 +2201,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: thesis_files/figure-latex/qpcr-simulations-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/qpcr-simulations-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/qpcr-simulations-1.pdf  used
- on input line 2333.
+ on input line 2321.
 (pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2337--2337
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2325--2325
 [] [] 
  []
 
@@ -2218,10 +2218,10 @@ File: thesis_files/figure-latex/rna-seq-myhc-validation-1.pdf Graphic file (typ
 e pdf)
 <use thesis_files/figure-latex/rna-seq-myhc-validation-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rna-seq-myhc-validation-1.pd
-f  used on input line 2359.
+f  used on input line 2347.
 (pdftex.def)             Requested size: 340.27042pt x 505.88875pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2363--2363
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2351--2351
 [] [] 
  []
 
@@ -2231,10 +2231,10 @@ File: thesis_files/figure-latex/rna-seq-pairwise-validation-1.pdf Graphic file
 (type pdf)
 <use thesis_files/figure-latex/rna-seq-pairwise-validation-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/rna-seq-pairwise-validation-
-1.pdf  used on input line 2367.
+1.pdf  used on input line 2355.
 (pdftex.def)             Requested size: 180.67455pt x 180.67455pt.
 
-Overfull \hbox (2.84528pt too wide) in paragraph at lines 2371--2371
+Overfull \hbox (2.84528pt too wide) in paragraph at lines 2359--2359
 [] [] 
  []
 
@@ -2267,8 +2267,23 @@ Chapter 9.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [107] [108]
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 2487--2489
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2475--2477
 [][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2478--2481
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2482--2485
+[][][] []  
+ []
+
+
+Overfull \hbox (61.88892pt too wide) in paragraph at lines 2486--2489
+[][][] []  
  []
 
 
@@ -2312,6 +2327,12 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2518--2521
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[109
+
+
+]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2522--2525
 [][][] []  
  []
@@ -2327,12 +2348,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2530--2533
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[109
-
-
-]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2534--2537
 [][][] []  
  []
@@ -2388,6 +2403,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2574--2577
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[110]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2578--2581
 [][][] []  
  []
@@ -2403,9 +2421,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2586--2589
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[110]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2590--2593
 [][][] []  
  []
@@ -2481,6 +2496,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2646--2649
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[111]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2650--2653
 [][][] []  
  []
@@ -2496,9 +2514,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2658--2661
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[111]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2662--2665
 [][][] []  
  []
@@ -2564,6 +2579,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2710--2713
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[112]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2714--2717
 [][][] []  
  []
@@ -2579,9 +2597,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2722--2725
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[112]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2726--2729
 [][][] []  
  []
@@ -2637,6 +2652,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2766--2769
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[113]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2770--2773
 [][][] []  
  []
@@ -2652,9 +2670,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2778--2781
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[113]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2782--2785
 [][][] []  
  []
@@ -2715,6 +2730,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2826--2829
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[114]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2830--2833
 [][][] []  
  []
@@ -2730,9 +2748,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2838--2841
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[114]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2842--2845
 [][][] []  
  []
@@ -2793,6 +2808,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2886--2889
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[115]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2890--2893
 [][][] []  
  []
@@ -2808,9 +2826,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2898--2901
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[115]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2902--2905
 [][][] []  
  []
@@ -2851,6 +2866,12 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2930--2933
  []
 
 
+Underfull \hbox (badness 1831) in paragraph at lines 2936--2936
+\T1/lmr/m/n/8 (+20) me-chan-i-cal load-ing. \T1/lmr/m/it/8 (+20) Phys-iol Rev\T
+1/lmr/m/n/8 (+20) . [On-line] 2004;84(2): 649--698. Avail-able from:
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2934--2937
 [][][] []  
  []
@@ -2866,17 +2887,14 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2942--2945
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 2948--2948
-\T1/lmr/m/n/8 (+20) me-chan-i-cal load-ing. \T1/lmr/m/it/8 (+20) Phys-iol Rev\T
-1/lmr/m/n/8 (+20) . [On-line] 2004;84(2): 649--698. Avail-able from:
- []
-
-
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2946--2949
 [][][] []  
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[116]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2950--2953
 [][][] []  
  []
@@ -2892,9 +2910,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2958--2961
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[116]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 2962--2965
 [][][] []  
  []
@@ -2945,6 +2960,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 2998--3001
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[117]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3002--3005
 [][][] []  
  []
@@ -2960,9 +2978,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3010--3013
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[117]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3014--3017
 [][][] []  
  []
@@ -3018,6 +3033,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3054--3057
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[118]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3058--3061
 [][][] []  
  []
@@ -3033,9 +3051,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3066--3069
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3070--3073
 [][][] []  
  []
@@ -3091,6 +3106,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3110--3113
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[119]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3114--3117
 [][][] []  
  []
@@ -3106,9 +3124,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3122--3125
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3126--3129
 [][][] []  
  []
@@ -3164,6 +3179,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3166--3169
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[120]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3170--3173
 [][][] []  
  []
@@ -3184,9 +3202,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3182--3185
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[120]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3186--3189
 [][][] []  
  []
@@ -3237,6 +3252,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3222--3225
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[121]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3226--3229
 [][][] []  
  []
@@ -3257,9 +3275,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3238--3241
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[121]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3242--3245
 [][][] []  
  []
@@ -3310,6 +3325,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3278--3281
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[122]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3282--3285
 [][][] []  
  []
@@ -3330,9 +3348,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3294--3297
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[122]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3298--3301
 [][][] []  
  []
@@ -3383,6 +3398,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3334--3337
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[123]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3338--3341
 [][][] []  
  []
@@ -3403,9 +3421,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3350--3353
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[123]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3354--3357
 [][][] []  
  []
@@ -3461,6 +3476,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3394--3397
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[124]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3398--3401
 [][][] []  
  []
@@ -3481,9 +3499,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3410--3413
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[124]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3414--3417
 [][][] []  
  []
@@ -3529,6 +3544,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3446--3449
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[125]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3450--3453
 [][][] []  
  []
@@ -3549,9 +3567,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3462--3465
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[125]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3466--3469
 [][][] []  
  []
@@ -3607,6 +3622,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3506--3509
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[126]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3510--3513
 [][][] []  
  []
@@ -3627,9 +3645,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3522--3525
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[126]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3526--3529
 [][][] []  
  []
@@ -3647,6 +3662,24 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3534--3537
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3538--3541
 [][][] []  
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 3544--3544
+[]\T1/lmr/m/n/8 (+20) Pinheiro JC, Bates DM. \T1/lmr/m/it/8 (+20) Mixed-effects
+ mod-els in s and s-PLUS\T1/lmr/m/n/8 (+20) . [On-line] New York:
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 3544--3544
+\T1/lmr/m/n/8 (+20) Springer; 2000. Avail-able from: []$\T1/lmtt/m/n/8 Publishe
+r % 20description % 20http : / / www . loc . gov /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3544--3544
+\T1/lmtt/m/n/8 catdir / enhancements / fy0816 / 99053566 -[] d . html % 20Table
+ % 20of % 20contents % 20only % 20http :
  []
 
 
@@ -3670,24 +3703,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3554--3557
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 3560--3560
-[]\T1/lmr/m/n/8 (+20) Pinheiro JC, Bates DM. \T1/lmr/m/it/8 (+20) Mixed-effects
- mod-els in s and s-PLUS\T1/lmr/m/n/8 (+20) . [On-line] New York:
- []
-
-
-Underfull \hbox (badness 7012) in paragraph at lines 3560--3560
-\T1/lmr/m/n/8 (+20) Springer; 2000. Avail-able from: []$\T1/lmtt/m/n/8 Publishe
-r % 20description % 20http : / / www . loc . gov /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3560--3560
-\T1/lmtt/m/n/8 catdir / enhancements / fy0816 / 99053566 -[] d . html % 20Table
- % 20of % 20contents % 20only % 20http :
- []
-
-
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3558--3561
 [][][] []  
  []
@@ -3703,6 +3718,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3566--3569
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[127]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3570--3573
 [][][] []  
  []
@@ -3723,9 +3741,12 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3582--3585
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 2837) in paragraph at lines 3588--3588
+\T1/lmr/m/n/8 (+20) per-tro-phy. \T1/lmr/m/it/8 (+20) Phys-i-ol-ogy (Bethesda)\
+T1/lmr/m/n/8 (+20) . [On-line] 2019;34(1): 30--42. Avail-able from:
+ []
 
-[127]
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3586--3589
 [][][] []  
  []
@@ -3743,12 +3764,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3594--3597
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3598--3601
 [][][] []  
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 3604--3604
-\T1/lmr/m/n/8 (+20) per-tro-phy. \T1/lmr/m/it/8 (+20) Phys-i-ol-ogy (Bethesda)\
-T1/lmr/m/n/8 (+20) . [On-line] 2019;34(1): 30--42. Avail-able from:
  []
 
 
@@ -3792,6 +3807,39 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3630--3633
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[128]
+Underfull \hbox (badness 1789) in paragraph at lines 3636--3636
+[]\T1/lmr/m/n/8 (+20) Borenstein M. \T1/lmr/m/it/8 (+20) In-tro-duc-tion to met
+a-analysis\T1/lmr/m/n/8 (+20) . [On-line] Chich-ester, U.K.: John Wi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3636--3636
+\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
+1 & func _ code = DB _ RECORDS & service _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3636--3636
+\T1/lmtt/m/n/8 type = MEDIA % 20Inhaltsverzeichnis % 0Ahttp : / / bvbr . bib -[
+] bvb . de : 8991 / F ? func = service & doc _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3636--3636
+\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
+2 & func _ code = DB _ RECORDS & service _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3636--3636
+\T1/lmtt/m/n/8 type = MEDIA % 20Klappentext % 0AAvailable % 20to % 20Stanford -
+[] affiliated % 20users % 20at :
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3634--3637
 [][][] []  
  []
@@ -3809,39 +3857,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3642--3645
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3646--3649
 [][][] []  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[128]
-Underfull \hbox (badness 1789) in paragraph at lines 3652--3652
-[]\T1/lmr/m/n/8 (+20) Borenstein M. \T1/lmr/m/it/8 (+20) In-tro-duc-tion to met
-a-analysis\T1/lmr/m/n/8 (+20) . [On-line] Chich-ester, U.K.: John Wi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
-\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
-1 & func _ code = DB _ RECORDS & service _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
-\T1/lmtt/m/n/8 type = MEDIA % 20Inhaltsverzeichnis % 0Ahttp : / / bvbr . bib -[
-] bvb . de : 8991 / F ? func = service & doc _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
-\T1/lmtt/m/n/8 library = BVB01 & doc _ number = 016824939 & line _ number = 000
-2 & func _ code = DB _ RECORDS & service _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3652--3652
-\T1/lmtt/m/n/8 type = MEDIA % 20Klappentext % 0AAvailable % 20to % 20Stanford -
-[] affiliated % 20users % 20at :
  []
 
 
@@ -3905,6 +3920,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3694--3697
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[129]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3698--3701
 [][][] []  
  []
@@ -3925,9 +3943,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3710--3713
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[129]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3714--3717
 [][][] []  
  []
@@ -3963,6 +3978,18 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3738--3741
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 3744--3744
+[]$\T1/lmtt/m/n/8 Publisher % 20description % 20http : / / www . loc . gov / ca
+tdir / enhancements / fy0816 / 2001020045 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3744--3744
+\T1/lmtt/m/n/8 d . html % 20Table % 20of % 20contents % 20only % 20http : / / w
+ww . loc . gov / catdir / enhancements /
+ []
+
+
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3742--3745
 [][][] []  
  []
@@ -3973,6 +4000,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3746--3749
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[130]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3750--3753
 [][][] []  
  []
@@ -3980,18 +4010,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3750--3753
 
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3754--3757
 [][][] []  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3760--3760
-[]$\T1/lmtt/m/n/8 Publisher % 20description % 20http : / / www . loc . gov / ca
-tdir / enhancements / fy0816 / 2001020045 -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3760--3760
-\T1/lmtt/m/n/8 d . html % 20Table % 20of % 20contents % 20only % 20http : / / w
-ww . loc . gov / catdir / enhancements /
  []
 
 
@@ -4005,9 +4023,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3762--3765
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[130]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3766--3769
 [][][] []  
  []
@@ -4063,6 +4078,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3806--3809
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[131]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3810--3813
 [][][] []  
  []
@@ -4083,9 +4101,6 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3822--3825
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[131]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3826--3829
 [][][] []  
  []
@@ -4136,6 +4151,9 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3862--3865
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[132]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3866--3869
 [][][] []  
  []
@@ -4156,30 +4174,7 @@ Overfull \hbox (61.88892pt too wide) in paragraph at lines 3878--3881
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[132]
 Overfull \hbox (61.88892pt too wide) in paragraph at lines 3882--3885
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 3886--3889
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 3890--3893
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 3894--3897
-[][][] []  
- []
-
-
-Overfull \hbox (61.88892pt too wide) in paragraph at lines 3898--3901
 [][][] []  
  []
 
@@ -4192,12 +4187,12 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9F0D254CA0E8060EDB98BA2CD597AD03;15541.
+(rerunfilecheck)             Checksum: 9B31B9026B9460E4DDE011E435FFABD4;15543.
  ) 
 Here is how much of TeX's memory you used:
- 23449 strings out of 480971
- 403318 string characters out of 5906169
- 800123 words of memory out of 5000000
+ 23448 strings out of 480971
+ 403308 string characters out of 5906169
+ 798697 words of memory out of 5000000
  38805 multiletter control sequences out of 15000+600000
  624756 words of font info for 494 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -4240,10 +4235,10 @@ b><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lms
 y9.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmtt10.pfb><c:/Users/706194/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
 blic/lm/lmtt8.pfb>
-Output written on thesis.pdf (153 pages, 9986137 bytes).
+Output written on thesis.pdf (153 pages, 9984240 bytes).
 PDF statistics:
- 2520 PDF objects out of 2984 (max. 8388607)
- 2246 compressed objects within 23 object streams
- 679 named destinations out of 1000 (max. 500000)
+ 2517 PDF objects out of 2984 (max. 8388607)
+ 2243 compressed objects within 23 object streams
+ 678 named destinations out of 1000 (max. 500000)
  136807 words of extra memory for PDF output out of 154059 (max. 10000000)
 
