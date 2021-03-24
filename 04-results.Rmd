@@ -8,7 +8,7 @@ library(nlme); library(kableExtra)
 ```
 
 
-## Within-session training volume affects training-induced changes in muscle mass and strength and molecular determinants of muscle hypertrophy {#muscle-mass-growth}
+## Training volume affects training-induced changes in muscle mass and strength and molecular determinants of muscle hypertrophy {#muscle-mass-growth}
 
 ```{r comparing-avg-strength-csa, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -405,11 +405,10 @@ sum.stats <- cbind(per.session %>%
 
 ```
 
-In Study I, the average increases in muscle strength and mass in each volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
+In Study I, the average increases in muscle strength and mass irrespective of volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
 [@RN2007;<!-- Wernbom 2007 -->
 @RN1741],<!-- Ahtiainen  -->
 indicating the general efficacy of the training program.
-
 
 (ref:wernbom-citation) @RN2007
 
@@ -438,8 +437,8 @@ sum.stats %>%
 
 ```
 
-The moderate-volume condition consistently showed favorable adaptations when compared to the low-volume condition in measures of muscle hypertrophy and strength gains (Figure \@ref(fig:comb-fig-s1)a).
-These patterns were in general agreement with previous meta-analyses indicating that an increased training volume will lead to more favorable outcomes, both in terms of muscle mass
+For muscle hypertrophy and strength gains, the moderate-volume condition consistently showed greater adaptations when compared to the low-volume condition (Figure \@ref(fig:comb-fig-s1)a).
+These patterns were in general agreement with previous meta-analyses indicating that increased training volume leads to more favorable outcomes, both in terms of muscle mass
 [@RN1767;<!-- Schenfeld  2016--> 
 @RN789]<!-- Krieger 2010 -->
 and strength
@@ -462,10 +461,10 @@ summary_table_meta <- summary_table_meta %>%
 
 ```
 
-Since the publication of the most recent meta-analyses [@RN1767;@RN2492],<!-- Schenfeld  2016 / Ralston 2107 --> 
-additional studies have been published investigating the effect of resistance training volume on muscle mass and strength. Based on studies included in the meta-analysis performed by Schoenfeld *et al.* [@RN1767], additional results were coded based on a systematic literature search among newly published studies (from January 2015 to June 2020). Compared to Schoenfeld *et al.* [@RN1767], an additional ten studies were included in the present analysis.
-Subsequently, effect sizes were coded from 25 studies, both for muscle mass and strength, and meta-regression models were used to investigate the effect of the weekly number of sets on training-induced changes in these outcomes.
-Both muscle mass and strength were shown to be robustly affected by an increased training volume measured as a weekly sets (after controlling for potential confounding factors^[Models were controlled for age (young, middle age or old), sex (male, female or mixed), length of study (number of weeks), type of measurement (direct or indirect for muscle mass and training-specific or unspecific in strength), training status (trained > six months experience with resistance training), body portion (upper, lower or whole)]).
+Since publication of the most recent meta-analyses [@RN1767;@RN2492],<!-- Schenfeld  2016 / Ralston 2107 --> 
+additional studies have been published investigating the effect of resistance training volume on muscle mass and strength. Based on studies included in the meta-analysis performed by Schoenfeld *et al.* [@RN1767], additional results were extracted from studies gathered through a systematic literature search among newly published studies (from January 2015 to June 2020). Compared to Schoenfeld *et al.* [@RN1767], an additional ten studies were included in the present analysis.
+Subsequently, effect sizes were extracted from 25 studies, both for muscle mass and strength, and meta-regression models were used to investigate the effect of the weekly number of sets on training-induced changes in these outcomes.
+Both muscle mass and strength were shown to be robustly affected by an increased training volume measured as an increase in weekly training sets (after controlling for potential confounding factors^[Models were controlled for age (young, middle age or old), sex (male, female or mixed), length of study (number of weeks), type of measurement (direct or indirect for muscle mass and training-specific or unspecific in strength), training status (trained > six months experience with resistance training), body portion (upper, lower or whole)]).
 For every additional weekly set, the effect size measure (Hedges' *g*, [95% credible intervals] (CrI)), increased by
 `r summary_table_meta[1, 5]` and `r summary_table_meta[2, 5]`
 for muscle mass)
@@ -473,9 +472,7 @@ and strength (Figure \@ref(fig:comb-fig-s1)b),
 respectively.
 Together these data underline the training volume dose-dependence of both muscle hypertrophy and strength gains.
 
-\pagebreak
-
-```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training-induced relative changes in muscle-mass and strength (a). Estimates are derived from ANCOVA models controling for baseline values. Estimates from meta-regression models examining the effect of weekly number of sets per muscle group on muscle hypertrophy (b) and strength gains (c). Estimates are effect size measures (Hedges g) with 95\\% credible intervals (CrI).", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I and weekly training volume meta-regression.", fig.height=6.5, fig.width=4.72, fig.align='center'}
+```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training-induced relative changes in muscle-mass and strength in Study I with estimates derived from ANCOVA models controling for baseline values (a). Estimates from meta-regression models examining the effect of weekly number of sets per muscle group on muscle hypertrophy (b) and strength gains (c). Estimates are effect size measures (Hedges g) with 95\\% credible intervals (CrI).", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I and weekly training volume meta-regression.", fig.height=6.5, fig.width=4.72, fig.align='center'}
 
 library(ggplot2); library(ggtext)
 
@@ -486,13 +483,11 @@ muscle_strength_fig
 
 ```
 
-\pagebreak
-
-In an attempt to explain differences in training outcomes between volume-conditions, selected molecular markers known to influence adaptations to resistance training were investigated for volume-dependency.
+In an attempt to explain differences in training outcomes between volume conditions, selected molecular markers known to influence adaptations to resistance training were investigated for volume-dependency.
 First, acute activation of signaling along the mechanosensitive mTORC1-pathway was measured before and after the fifth training session in Study I.
-A commonly used readout of mTORC1-signaling is the phosphorylation of S6-kinase (S6K1) at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of ribosomal protein S6 (rpS6, see Figure \@ref(fig:mtor-fig)a).
-In the present study, exercise-induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
-Together these observations indicate larger perturbations along the mTORC1 signaling axis which confirms previous studies showing an exercise-volume dependency of mTORC1-related signaling in the acute phase (< 5 hours) after exercise, with the low-volume condition doing at least three sets activating the muscle under study
+A commonly used readout of mTORC1-signaling is the phosphorylation of S6K1 at Thr\textsuperscript{389}/Thr\textsuperscript{412} which in turn precedes phosphorylation of rpS6 (see Figure \@ref(fig:mtor-fig)a).
+In the present study, exercise induced S6K1\textsuperscript{Thr\textsuperscript{389}/Thr\textsuperscript{412}} phosphorylation was indeed shown to be volume dependent along with phosphorylation of rpS6\textsuperscript{Ser\textsuperscript{235/236}} and mTOR\textsuperscript{Ser\textsuperscript{2448}} (Figure \@ref(fig:mtor-fig) b).
+Together these observations indicate larger perturbations along the mTORC1 signaling axis which confirms previous studies showing an exercise-volume dependency of mTORC1-related signaling in the acute phase (< 5 hours) after exercise when the low-volume condition consists of at least three sets
 [@RN2716;<!-- Kumar 2012 -->
 @RN1837;<!-- Ahtiainen 5 vs 10 sets p70 and s6 different -->
 @RN784;<!-- Terzis volume affect activation -->
@@ -502,11 +497,13 @@ It is recognized that phosphorylation of mTOR itself at Ser\textsuperscript{2448
 [@RN2309] (Figure \@ref(fig:mtor-fig) a).<!-- Figueriedo mTOR and ser2448 signalling review -->
 It is also recognized that the phosphorylation status of rpS6 at Ser\textsuperscript{235/236} is not solely due to mTORC1 signaling as both mTORC1 and extracellular signal-regulated kinases (ERK)-signaling converges here
 [@RN2311].<!-- Roux S6 phopshorylation at ser 235 236 promoted by ras/erk -->
-Interestingly, Terzis *et al.* and Ahtiainen *et al.* did not report any clear volume dependency in exercise-induced activation of ERK 1/2
-[@RN785;<!--Terzis et al., 2008-->
-@RN1837], 
-suggesting that any volume-dependent regulation of this pathway was outside the time-frame of these studies. However, it might also suggest that volume selectively modulates specific pathways in the acute phase after resistance exercise.
-However, it should be noted that the present and previous studies are limited in their temporal resolution, and different patterns over time in relation to exercise-volume cannot be ruled out.
+Interestingly, Terzis *et al.*
+[@RN785]<!--Terzis et al., 2008-->
+and Ahtiainen *et al.*
+[@RN1837]
+did not report any clear volume dependency in exercise-induced activation of ERK 1/2.
+While this may suggest that any volume-dependent regulation of this pathway was outside the timeframe of these studies, it may also suggest that volume selectively modulates specific pathways in the acute phase after resistance exercise.
+It should be noted that the present and previous studies are limited in their temporal resolution, and different patterns over time in relation to exercise-volume cannot be ruled out.
 
 ```{r p70-csa-correlation-data, warning=FALSE, message=FALSE, echo=FALSE}
 
@@ -559,21 +556,21 @@ corr_est_p70 <- paste0(sprintf("%.3f",min(c(cor_est_p70[,2],cor_est_p70[,3]))),
 
 The importance of mTORC1 signaling for protein synthesis in the acute phase after resistance exercise is well established.
 In humans, administration of rapamycin, a selective inhibitor of mTORC1, before resistance exercise leads to delayed or blunted activation of mTORC1 effectors such as
-S6K1 and rpS6 as well as unchanged levels of phosphorylation of 4E-BP1 and eEF2 concomitantly with an abolished exercise-induced increase in protein synthesis
+S6K1 and rpS6, as well as unchanged levels of phosphorylation of 4E-BP1 and eEF2 resulting in abolished exercise-induced increase in protein synthesis
 [@RN780].<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
-Volume dependent increase in mTORC1 signaling also coincide with larger protein synthesis rates
+Volume-dependent increase in mTORC1 signaling also coincide with larger protein synthesis rates
 [@RN791;<!-- Burd in single session single and multiple sets phosphorylation p70   -->
 @RN2716]<!-- Kumar volume affects protein synthesis -->
-As such, volume dependence of mTORC1-related signaling suggests that higher within-session volume can be regarded as leading to an increased potential for protein synthesis in the acute-phase after exercise.
+suggesting that higher exercise volume can be regarded as leading to an increased potential for protein synthesis in the acute-phase after exercise.
 Previous studies have indirectly linked mTORC1-related signaling to muscle growth as acute perturbation along this pathway has been correlated with muscle growth
 [@RN785;<!--Terzis et al., 2008-->
 @RN788].<!-- Mitchell et al., 2013-->
 However, this is not a consistent finding in the literature 
 [@RN834;<!-- Mitchell et al., 2012-->
 @RN2171],<!-- Phillips et al., 2017-->
-nor is it consistent with the results in the present study as acute activation of S6K1 in response to the fifth session was not associated with training-induced muscle mass changes.^[Raw Spearman's correlations between exercise-induced change in S6K1 phosphorylation and change in muscle mass (measured with MRI) indicated weak (insignificant) associations ($\rho=$ `r corr_est_p70`) depending on the isoform measured (p70 or p85) and the number of sets. More elaborate modeling confirmed weak relationships between the degree of phosphorylation and muscle mass change. When controlling for baseline values in degree of phosphorylation (as this influence the calculation of fold-change) and number of sets, standardized estimates for the effect of phosphorylation were (increase in %-muscle mass change for every 1SD change in fold-change phosphorylation, with [95% CI])  $\beta=$ `r p70.mod` for p70 S6K1-p70\textsuperscript{Thr389} and $\beta=$ `r p85.mod` for S6K1-p85\textsuperscript{Thr412}.].
+nor is it consistent with the results in the present study as acute activation of S6K1 in response to the fifth session was not associated with training-induced muscle mass changes.^[Raw Spearman's correlations between exercise-induced change in S6K1 phosphorylation and change in muscle mass (measured with MRI) indicated weak (insignificant) associations ($\rho=$ `r corr_est_p70`) depending on the isoform measured (p70 or p85) and the number of sets. More elaborate modeling confirmed weak relationships between the degree of phosphorylation and muscle mass change. When controlling for baseline values in degree of phosphorylation (as this influence the calculation of fold-change) and number of sets, standardized estimates for the effect of phosphorylation were (increase in %-muscle mass change for every 1SD change in fold-change phosphorylation, with [95% CI])  $\beta=$ `r p70.mod` for p70 S6K1-p70\textsuperscript{Thr389} and $\beta=$ `r p85.mod` for S6K1-p85\textsuperscript{Thr412}.]
 
-```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates are derived from ANCOVA models controling for baseline values. Values in b are point estimates with 95\\% confidence intervals.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates in b are derived from ANCOVA models controling for baseline values presented as point estimates with 95\\% confidence intervals. Dots in a represents up-stream regulators.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
 
 western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
 western_fig
@@ -581,7 +578,7 @@ western_fig
 ```
 
 Although mTORC1 signaling most certainly contributes to protein synthesis in the acute recovery phase after resistance exercise [@RN780],<!-- Drummond rapamycin treatment and acute phase recovery (2 hours) -->
-several reasons complicate its use as a predictor of training-induced muscle hypertrophy.
+several aspects complicate its applicability as a predictor of training-induced muscle hypertrophy.
 First, measuring its activity is not straight forward for biological reasons, including pathway cross-talk and negative feedback as well as technical aspects
 [@RN1949;<!-- Figueriedo, mTOR feedback -->
 @RN2311;<!-- Cross talk with erk -->
@@ -593,15 +590,9 @@ Thirdly, mTORC1 readily integrate multiple signals but also convey these to mult
 [@RN2320].
 As such, mTORC1 activity represents an early, transient response to resistance exercise, with its signaling contributing to accumulative responses.
 One such downstream target of mTORC1 is ribosomal biogenesis
-[@RN1632;<!-- Nader mTOR regulates ribo biogenthrough cell cycle regulators -->
-@RN1810;<!-- von Walden 2012 mTOR regulates myotube... -->  
-@RN1828;<!-- von Walden 2016 -->
-@RN2321],<!-- Chauvin S6K controls RiBi transcriptional program -->
+[@RN1632;<!-- Nader mTOR regulates ribo biogenthrough cell cycle regulators -->@RN1810;<!-- von Walden 2012 mTOR regulates myotube... -->@RN1828;<!-- von Walden 2016 -->@RN2321],<!-- Chauvin S6K controls RiBi transcriptional program -->
 ultimately leading to accumulation of ribosomal RNA, a response typically seen in connection with to resistance training
-[@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
-@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
-@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-@RN1897<!-- 11% 36 sessions young -->].
+[@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->@RN1809;<!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->@RN1897<!-- 11% 36 sessions young -->].
 
 ```{r ribo-markers}
 
@@ -616,11 +607,14 @@ rrna <- descriptive_ribo_markers %>%
 ```
 
 As ribosomal RNA is the most abundant constituent of muscle RNA, it provides an estimate of muscle ribosomal abundance when expressed per unit tissue weight
-[@RN2054;<!-- Zak 1967 in heart muscle 85% of RNA is ribosomal RNA -->
-@RN2145].<!-- Young -->
-From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the single-set and multiple-sets condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, single-set $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; multiple-sets $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA using qPCR (single-set increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; multiple-sets $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in the multiple-sets condition at Week 2 (Figure \@ref(fig:rrna-fig)a). At Week 12 differences between volume conditions  were in total RNA less clear and ribosomal RNA 28S showing higher levels in the single-set leg (Figure \@ref(fig:rrna-fig)a).
+[@RN2054;<!-- Zak 1967 in heart muscle 85% of RNA is ribosomal RNA -->@RN2145].<!-- Young -->
+From baseline to prior to the fifth training session (Week 2), total RNA per mg tissue increased by $\sim$ `r round(descriptive_ribo_markers[9,2], 0)` and `r round(descriptive_ribo_markers[10,2], 0)`% in the low- and moderate-volume condition, respectively. Total RNA levels were still elevated above baseline after the intervention (Week 12, low-volume $\sim$ `r round(descriptive_ribo_markers[9,3], 0)`; moderate-volume $\sim$ `r round(descriptive_ribo_markers[10,3], 0)`%). Similar patterns were seen in target analysis of ribosomal RNA species using qPCR (low-volume increase from baseline to Week 2 $\sim$ `r rrna[1,2]`-`r rrna[1,3]`% and Week 12 $\sim$ `r rrna[1,4]`-`r rrna[1,5]`%; moderate-volume $\sim$ `r rrna[2,2]`-`r rrna[2,3]`% and Week 12 $\sim$ `r rrna[2,4]`-`r rrna[2,5]`%). Comparing volume conditions revealed higher levels of total RNA and mature ribosomal RNA species in the moderate-volume condition at Week 2 (Figure \@ref(fig:rrna-fig)a). At Week 12, between-volume-condition differences in total RNA were less clear and ribosomal RNA 28S even showed higher levels in the low-volume leg (Figure \@ref(fig:rrna-fig)a).
+Analysis of c-Myc mRNA abundance in response to the fifth training session also showed volume-dependent regulation with exercise-induced increases being $\sim$ 1.5-fold higher in response to the moderate- compared to the low-volume condition (Figure \@ref(fig:rrna-fig)b). c-Myc represents a rapamycin-insensitive signaling pathway, parallel to mTORC1, known to also stimulating ribosomal biogenesis 
+[@RN1754;<!-- West -->
+@RN1834;
+@RN1832].<!-- cMyc driver of ribosomal biogenesis -->
 
-```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest during the course of Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and errorbars signifies that the confidence interval contain 1.", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
+```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest at Weeks 0, 2 and 12 in Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and errorbars signifies that the confidence interval contain 1.", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
 
 ribo_markers_fig <- readRDS("./figures/results/study1-ribo-markers.RDS")
 
@@ -628,26 +622,16 @@ ribo_markers_fig
 
 ```
 
-Analysis of c-Myc mRNA abundance in response to the fifth training session also showed volume-dependent regulation with exercise-induced increases being $\sim$ 1.5-fold higher in response to the moderate- compared to the low-volume condition (Figure \@ref(fig:rrna-fig)b). c-Myc represents a rapamycin-insensitive signaling pathway, parallel to mTORC1, known to also stimulating ribosomal biogenesis 
-[@RN1754;<!-- West -->
-@RN1834;
-@RN1832].<!-- cMyc driver of ribosomal biogenesis -->
 
 Ribosomal biogenesis is an early adaptation to resistance training with initial increases in total RNA evident before any hypertrophy can be detected
-[@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->
-@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr-->
-@RN1596;<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training -->
-@RN2113].<!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions-->
-The increase in ribosomal RNA represents an accumulation of ribosomes and an increased translational capacity. This improved translational capacity contributes to protein accretion resulting in muscle hypertrophy, reflected in associations between measures of ribosome abundance (typically total RNA) and muscle hypertrophy
-[@RN1644;<!-- Figueriedo 2015 correlation between delta csa and fold change of total RNA -->
-@RN1755;<!-- Stec 2016 only high responders have increased total RNA and rRNA abundance after short training -->
-@RN2055;<!-- Mobley weak correlation r = 0.28 p = 0.026  and no cluster * time interaction effect but increases in total RNA 34% in high responders vs 8% in low -->
-@RN1897].<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->
+[@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->@RN1520;<!-- Bickel 2005 Two boutselectric stimulation, young ~ 30% incr-->@RN1596;<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training -->@RN2113].<!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions-->
+The increase seen in total RNA serves as a marker of ribosomal accumulation and thus increased translational capacity. This improved translational capacity contributes to protein accretion resulting in muscle hypertrophy, reflected in associations between measures of ribosome abundance (typically total RNA) and muscle hypertrophy
+[@RN1644;<!-- Figueriedo 2015 correlation between delta csa and fold change of total RNA -->@RN1755;<!-- Stec 2016 only high responders have increased total RNA and rRNA abundance after short training -->@RN2055;<!-- Mobley weak correlation r = 0.28 p = 0.026  and no cluster * time interaction effect but increases in total RNA 34% in high responders vs 8% in low -->@RN1897].<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->
 Due to the sequential nature of these events (increased translational capacity before muscle hypertrophy), early increases in total RNA would possibly better reflect training-induced changes in muscle hypertrophy.
 Any increase in muscle mass would also contribute to a dilution of the RNA pool
 [@RN2142]<!-- figueriedo description of dilution effect -->
 possibly masking their causal relationship.
-Comparing the relationships between RNA abundance and muscle hypertrophy at different time-points supported this view as the amount of RNA at Week 2 showed the most robust relationship with the resulting muscle growth (Figure \@ref(fig:rrna-csa-fig), \@table(rna-csa-tab)). This indicates that translational capacity, affected by exercise, early in the training program determines training-induced changes in muscle mass. 
+Indeed, comparing the relationships between RNA abundance and muscle hypertrophy at different time-points supported this view as the amount of RNA at Week 2 showed the most robust relationship with the resulting muscle growth (Figure \@ref(fig:rrna-csa-fig), \@ref(tab:rna-csa-tab)). This indicates that translational capacity, affected by exercise, early in the training program determines training-induced changes in muscle mass. 
 
 ```{r rna-csa-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
 
@@ -691,7 +675,7 @@ rna_csa_change_models %>%
 
 ```
 
-```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional area (CSA) as measured by MRI. Dashed line represent naive relationship, solid line represent adjusted reliationship as seen in \\@ref(table:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
+```{r rrna-csa-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Relationship between total RNA and training induced change in thigh cross sectional-area (CSA) as measured by MRI. Dashed line represent naive relationship, solid line represent adjusted reliationship as seen in \\@ref(tab:rna-csa-tab).", fig.scap = "Relationship between total RNA and training induced muscle growth", fig.height=4.72/3, fig.width=4.72, fig.align='center'}
 
 rna_csa_fig <- readRDS("./figures/results/study1-rna-csa.RDS")
 
@@ -723,24 +707,21 @@ or.week12 <- paste0(sprintf('%#.2f', exp(mx.summary[6, 1])),
 
 ```
 
-Resistance training readily leads to remodeling of the muscle, and this includes qualitative changes related to fiber type transitions through changes in the myosin heavy-chain protein composition
-[@RN2220;<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining -->
-@RN2799;<!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa -->
-@RN819;<!-- Schiaffino review, other protein families also different between fiber types-->
-@RN1489].<!-- Ellefsen 2014, training induced switch from 2A to 2X -->
-Resistance-training induced changes in fiber-types identified by myosin heavy-chain expression occurs primarily as a IIX $\rightarrow$ IIA transition, which results in a more fatigue-resistant phenotype
+Resistance training readily leads to remodeling of the muscle, including qualitative changes in fiber type composition through changes in the myosin heavy-chain protein composition
+[@RN2220;<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining -->@RN2799;<!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa -->@RN819;<!-- Schiaffino review, other protein families also different between fiber types-->@RN1489].<!-- Ellefsen 2014, training induced switch from 2A to 2X -->
+Resistance training-induced changes in fiber-types identified by myosin heavy-chain expression occurs primarily as a IIX $\rightarrow$ IIA transition, which results in a more fatigue-resistant phenotype
 [@RN819;<!-- Schiaffino review, other protein families also different between fiber types-->
 @RN2056;<!-- Andersen, primarily transitions fiber in 2x to 2a direction minimal 2 to 1 trans -->
 @RN2801]<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
-and thus represent an important aspect of the adaptive response to resistance training by reversing effects of inactivity and disuse
-[@RN2057;<!-- Andersen 2x overshoot after de training -->
-@RN2108].<!-- Bed rest increases type IIx -->
-In Study I, muscle fiber-type compositions were determined based on myosin heavy-chain protein's immunostaining in muscle cross-sections. The staining protocol allowed for the identification of Type I (red), Type IIA (brown), Type IIX (unstained), and Type IIA/IIX hybrids (light brown, Figure \@ref(fig:myhc-fig)a). Throughout the study, a general reduction in Type IIX fibers was seen as pure Type IIX was replaced with Type IIA/IIX hybrids at Week 2, and these, in turn, were measured at lower proportions at Week 12 (Figure \@ref(fig:myhc-fig)b).
+and thus represents an important aspect of the adaptive response to resistance training by reversing effects of inactivity and disuse
+[@RN2057;<!-- Andersen 2x overshoot after de training -->@RN2108].<!-- Bed rest increases type IIx -->
+In Study I, muscle fiber-type composition was primarily determined based on myosin heavy-chain protein's immunostaining in muscle cross-sections. The staining protocol allowed for the identification of Type I (red), Type IIA (brown), Type IIX (unstained), and Type IIA/IIX hybrids (light brown, Figure \@ref(fig:myhc-fig)a). Throughout the study, a general reduction in Type IIX fibers was seen as pure Type IIX was replaced with Type IIA/IIX hybrids at Week 2, and these, in turn, were measured at lower proportions at Week 12 (Figure \@ref(fig:myhc-fig)b).
 
-When comparing volume conditions, moderate training volume led to more pronounced down-regulation of the *MYH1* gene, coding for Type IIX myosin heavy-chain protein, at all time-points during the intervention (Figure \@ref(fig:myhc-fig)c). This presumably led to the accumalative effect seen after twelve weeks of training where the proportion of Type IIX fibers was lower in the moderate- compared to the low-volume condition (indicative as an odd-ratio (OR) < 1, OR [95% CI]: `r or.week12`, combined measure of IIX/IIA hybrids and pure IIX fibers, Figure \@ref(fig:myhc-fig)d).  
-This observation underlines that training volume is an important factor for fiber-type composition remodeling. Although not surprising, similar observations are lacking in the litterateur as previous studies have not compared this transition directly between volume protocols.
-However, when comparing non-exhaustive high-load resistance training to load-matched training to volatile failure, Pareja-Blanco *et al.* observed a blunted IIX $\rightarrow$ IIA transitions in response to the non-exhaustive protocol 
-[@RN2217].
+After twelve weeks of training, the proportion of Type IIX fibers was lower in the moderate- compared to the low-volume condition (indicative as an odd-ratio (OR) < 1, OR [95% CI]: `r or.week12`, combined measure of IIX/IIA hybrids and pure IIX fibers, Figure \@ref(fig:myhc-fig)d). Reductions seen in Type IIX myosin heavy-chain expression were reflected on the gene level as moderate-volume training led to more pronounced down-regulation of the *MYH1* gene, coding for Type IIX myosin heavy-chain protein, at all time-points during the intervention (Figure \@ref(fig:myhc-fig)c).
+This observation underlines that training volume is an important factor for fiber-type composition remodeling. Although not surprising, similar observations are lacking in the literature as previous studies have not compared this transition directly between volume protocols.
+However, when comparing non-exhaustive high-load resistance training to load-matched training to volatile failure, Pareja-Blanco *et al.*
+[@RN2217]
+observed a blunted IIX $\rightarrow$ IIA transitions in response to the non-exhaustive protocol.
 Together these data indicate that increased metabolic stress and/or dosage of neuromuscular activity are plausible candidates for regulating IIX $\rightarrow$ IIA reprogramming in humans in response to resistance training.
 This as opposed to tensile stimuli.
 Based on observations in animal models, neural input might, however, be considered the primary candidate.
@@ -748,12 +729,11 @@ For example, in a rat model of resistance training, the force did not affect fas
 [@RN2104].<!-- Eftestol -->
 
 At Week 2, a more pronounced reduction in *MYH1* gene abundance in the moderate-volume condition did not translate to the protein level. Instead, a greater number of fibers were classified as IIX in the moderate-volume condition compared to the low-volume condition (OR: `r or.week2`).
-The moderate-volume condition thus showed an even greater mismatch between gene and protein levels.
-Such mismatch is seen after resistance-exercise and is indicative for the early transition of muscle fibers
+The moderate-volume condition thus showed a greater mismatch between gene and protein levels compared to the low-volume condition.
+Such mismatch is seen after resistance-exercise and is indicative for the early transition of muscle fibers reflecting the sequential order of events, whereby changes at the RNA level do not immediately translate into changes at the protein level
 [@RN2056].<!-- Andersen mismatch between  -->
-Interestingly, the difference between volume conditions was driven by less Type IIX protein expression in the low-volume condition.
 This indicated that remodeling occurred faster in response to the low-volume condition despite a greater "transition signal" in the moderate-volume leg.
-A plausible explanation for this observation could be that the greater damage caused by a greater training stimulus lead to a delayed fiber-type transition. 
+A plausible explanation for this observation could be that the likely more pronounced cellular repair after damage caused by a greater training stimulus leads to a delayed fiber-type transition. 
 This hypothesis is supported by observations indicating that a proportion of the protein synthesis seen early in a resistance-training period can be attributed to tissue repair rather than myofibrillar synthesis
 [@RN1521;<!--Kim 2005 -->
 @RN2144].<!-- Damas 2016 -->
@@ -803,20 +783,19 @@ myhc_fig
 
 ## Volume-dependent effects on transcriptome characteristics
 
-As already [discussed](#muscle-mass-growth), resistance training in Study I led to an increase in total RNA per unit tissue weight. Furthermore, the magnitude of this increase was different between volume conditions (see Figure \@ref(fig:rrna-fig)).
-Studies of gene expression using qPCR or RNA sequencing techniques assume that an equal amount of biological material is used when evaluating the abundance of single transcripts.
-It is therefore common that a normalized amount of total RNA is used in sample preparation to satisfy such an assumption
-[@RN2298;<!-- Damas 2018 -->
-@RN2400; <!-- Robinson 2017-->
-@RN2401].<!-- Laker 2017.-->
-However, if the ratio of RNA to tissue mass has changed throughout a study, analyses are performed on a different amount of tissue. This may be the case after a resistance-training intervention, or between study conditions, as in Study I.
-Indeed, by calculating the amount of tissue used when preparing samples for RNA sequencing, it was evident that the increased amount of total RNA per-unit-muscle weight results in a situation where samples are prepared from a lesser amount of tissue.
+As already [discussed](#muscle-mass-growth), resistance training in Study I led to an increase in total RNA per unit tissue weight. The magnitude of this increase was different between volume conditions (see Figure \@ref(fig:rrna-fig)).
+Studies of gene expression using qPCR and RNA sequencing techniques assume that equal amounts of biological material are used when evaluating the abundance of single transcripts.
+It is therefore common to use a set amount of total RNA during sample preparation to satisfy such an assumption
+[@RN2298;<!-- Damas 2018 -->@RN2400; <!-- Robinson 2017-->@RN2401].<!-- Laker 2017.-->
+However, if the ratio of RNA to tissue mass for some reason changes throughout the course of a study, this would mean that analyses are performed on different amounts of tissue. This may be the case after a resistance-training intervention, and may even be differentially affected by different resistance training modalities, such as in Study I.
+Indeed, in Study I, the resistance training protocol resulted in a situation where samples were prepared from a lesser amount of tissue as a fixed amount of RNA was used during sample preparation.
 This effect was more pronounced in response to the moderate- compared to the low-volume condition (Figure \@ref(fig:lib-size-fig)a).
-Total library sizes were quantified from RNA sequencing as the total number of quantified gene counts. This revealed a general increase in library sizes in response to resistance training. However, the increase was more apparent in the low-volume condition
+
+Despite the fixed amount of total RNA being used during sample preparation, the total abundance of mRNA increased, evident as increases in total library sizes, quantified from RNA sequencing as the total number of quantified gene counts. The average increase in total library size was more apparent in the low-volume condition
 (Figure \@ref(fig:lib-size-fig)b).
 When library sizes were normalized to the amount of tissue used in sample preparation, differences between conditions were diminished
 (Figure \@ref(fig:lib-size-fig)c).
-This suggests that resistance-training leads to an increased global mRNA expression per-unit-muscle weight (43-53\% in the present study). However, this increase was not different between volume-conditions, suggesting that a volume-dependent global RNA transcription regulation primarily relates to transcription of RNA-fractions other than mRNA (likely rRNA, see Figure \@ref(fig:rrna-fig)). 
+This suggests that resistance-training lead to increased global mRNA expression per-unit-muscle weight (43-53\% in the present study). This increase was not different between volume-conditions, suggesting that the volume-dependent regulation of RNA transcription primarily relates to transcription of RNA-fractions such as rRNA rather than mRNA (see Figure \@ref(fig:rrna-fig)). 
 
 ```{r, lib-size-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Less muscle tissue was used for cDNA synthesis in the moderat- compared to low-volume condition as a result of total RNA increases per tissue weight (a). Library sizes tended to be greater in the low-volume condition (b), after normalizing library sizes to muscle weight differences were diminished (c). Lower panels shows differences between volume conditions", fig.scap = "Muscle weight and RNA-seq library size", fig.height=3, fig.width=4.72, fig.align='center'}
 
@@ -832,17 +811,18 @@ libsize.fig +
 
 
 tissue_offset_ngenes <- readRDS("./data/derivedData/study1-transcriptome/n_genes_regulated_time.RDS") %>%
-  data.frame()
+  data.frame() %>%
+  filter(model == "tissue")
 
 
-w2pre_unchanged<- sprintf("%.1f", tissue_offset_ngenes[4,4] * 100)
-w12_unchanged<- sprintf("%.1f", tissue_offset_ngenes[1,4] * 100)
+w2pre_unchanged <- sprintf("%.1f", tissue_offset_ngenes[4,5] * 100)
+w12_unchanged <- sprintf("%.1f", tissue_offset_ngenes[1,5] * 100)
 
-w2pre_up<- sprintf("%.1f", tissue_offset_ngenes[5,4] * 100)
-w12_up<- sprintf("%.1f", tissue_offset_ngenes[2,4] * 100)
+w2pre_up<- sprintf("%.1f", tissue_offset_ngenes[5,5] * 100)
+w12_up<- sprintf("%.1f", tissue_offset_ngenes[2,5] * 100)
 
-w2pre_down<- sprintf("%.2f", tissue_offset_ngenes[6,4] * 100)
-w12_down<- sprintf("%.2f", tissue_offset_ngenes[3,4] * 100)
+w2pre_down<- sprintf("%.2f", tissue_offset_ngenes[6,5] * 100)
+w12_down<- sprintf("%.2f", tissue_offset_ngenes[3,5] * 100)
 
 
 ```
@@ -858,17 +838,14 @@ w12_down<- sprintf("%.2f", tissue_offset_ngenes[3,4] * 100)
 Interestingly, rRNA levels are found to be higher in slow vs. fast muscle fibers with selected mRNA found to scale with total RNA indicating that also mRNA levels are greater in more glytolytic fibers
 [@RN1707].<!-- Habets 1999 in rat higher 28S RNA and total rna in slow compared to fast fibers, unchanged myhc mRNA/RNA between fibers   -->
 <!--This could thus indicate that elevated mRNA levels precedes muscle remodeling to a more-->
-Although the observed increase in library sizes suggested a global increase in mRNA transcription, it did not resemble global gene amplification seen in models with experimentally manipulated c-Myc protein expression
-[@RN2430;<!-- Lin 2012 increased cmyc leads to increased expression of all active genes -->
-@RN2359].<!-- Loven global amplification in the light of gene expression studies  -->
-Instead, the majority of identified genes were categorized as having unchanged levels per amount of tissue from baseline to Week 2 (`r w2pre_unchanged`\%) and Week 12 (`r w12_unchanged`\%). A small fraction of genes were identified as being less abundant (Week 2, `r w2pre_down`\%; Week 12, `r w12_down`\%) and the remaining genes were identified as more abundant at Week 2 (`r w2pre_up`\%) and 12 (`r w12_up`\%), respectively.
-Gene-set enrichment analyses revealed that training-induced changes in gene expression profiles were related to increased abundance of genes related to extracellular matrix remodeling, collagen synthesis and inflammatory processes. Although these observations were made without a proper control to investigate training-induced effects *per se*, they resemble previous (controlled and uncontrolled) studies characterizing skeletal muscle tissue in response to heavy mechanical loading in the acute phase
-[@RN2451; <!-- Wessner acute exercise gives different regulation of metalloproteinase -->
-@RN2453;<!-- Mackey  repeated bout effect 30 days -->
-@RN2454;<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load --> 
-@RN2457]<!-- Moore 2005 collagen synthesis rates not affected by ecc vs. conc -->,
-and after prolonged training [@RN774; <!-- Raue, upregulation of ECM after long term exercise --> 
-@RN2298].<!-- Damas long term training ECM up gene-->
+Although the observed increase in library sizes suggests global increases in mRNA transcription, it did not resemble global gene amplification seen in models with experimentally manipulated c-Myc protein expression
+[@RN2430;<!-- Lin 2012 increased cmyc leads to increased expression of all active genes -->@RN2359]<!-- Loven global amplification in the light of gene expression studies  -->
+as a considerable fraction of genes were unchanged by training.
+When expressing gene abundance per the amount of tissue used in sample preparation, `r w2pre_unchanged`\% and `r w12_unchanged`\% of identified genes were classified^[Up- and down-regulated genes were classified based on log\textsubscript{2}-fold change > 0.5 and < -0.5 together with FDR-corrected *P*-values < 0.05] as unchanged from baseline to Week 2 and 12, respectively. A small fraction of genes were identified as being less abundant at Week 2 (`r w2pre_down`\%) and Week 12 (`r w12_down`\%). The majority of genes were classified as up-regulated from baseline to Week 2 (`r w2pre_up`\%) and Week 12 (`r w12_up`\%).
+
+Gene-set enrichment analyses revealed that training-induced changes in gene expression profiles were related to increased abundance of genes associated with extracellular matrix remodeling, collagen synthesis and inflammatory processes. Although these observations were made without a proper control to investigate training-induced effects *per se*, they resemble previous (controlled and uncontrolled) studies characterizing skeletal muscle tissue in response to heavy mechanical loading in the acute phase
+[@RN2451; <!-- Wessner acute exercise gives different regulation of metalloproteinase -->@RN2453;<!-- Mackey  repeated bout effect 30 days -->@RN2454;<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load -->@RN2457]<!-- Moore 2005 collagen synthesis rates not affected by ecc vs. conc -->,
+and after prolonged training [@RN774; <!-- Raue, upregulation of ECM after long term exercise -->@RN2298].<!-- Damas long term training ECM up gene-->
 
 ```{r, week2-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Genes identified as differentially expressed (log2 fold-change > |0.5|, FDR < 0.05) are highlighted in a.  Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 2", fig.height=5, fig.width=4.72, fig.align='center'}
 
@@ -884,20 +861,22 @@ week2_grid +
 
 ```
 
-As we observed volume-dependent differences in the ratio of total RNA to tissue weight, leading to differences in biological input in sample preparation, we used three different normalization strategies to characterize volume-dependence in transcriptome characteristics.
+To be able to account for differences in the amount of tissue used in sample preparation due to volume-dependent differences in the ratio of total RNA to tissue weight, three different normalization strategies were used to determine volume-dependence in transcriptome characteristics.
 By implementing each normalization strategy as variations of generalized linear mixed models (GLMM), we could compare outcomes related to conceptually different normalization techniques using the same statistical framework.
 The use of GLMM also had the benefit of accounting for the study design, which included correlated data (within participants)
 [@RN2366].<!-- Cui et al what if we ignore random effects -->
-The model with most parameters included an offset term expressing gene counts per tissue weight. This term was combined with library size, included as a fixed effect in the model together with study conditions, time, and volume-conditions (tissue offset-model).
-In a second model, the offset term was removed. Thus only the library size was used to normalize the gene counts, as suggested by Cui *et al.*
+In the first model, an offset term expressing gene counts per tissue weight was included. This term was combined with the effective library size, included as a fixed effect in the model together with study conditions, time, and exercise volume (tissue offset-model).
+In a second model, the offset term was removed. Thus only the effective library size was used to normalize the gene counts, as suggested by Cui *et al.*
 [@RN2366] (effective library-size model).<!-- Cui et al what if we ignore random effects -->
 For comparison, a naive model containing no normalization-parameters was also included in analyses.
+
 At Week 2, tissue-offset normalization (modeling mRNA counts per-mg-muscle weight) revealed a general shift of mRNA counts towards the moderate-volume condition (Figure \@ref(fig:week2-upset-volcano)a).
-This was in contrast to patterns found when using library-size and naive models resulting in a pattern where the "conventional" normalization strategy, accounting only for library sizes, more resembled the non-normalized naive model as there was an overlap of genes identified as differentially expressed between the models (Figure \@ref(fig:week2-upset-volcano)b).
+This contrasted patterns found using "conventional" library-size normalization that in turn more resembled the non-normalized naive model, seen as an overlap of genes identified as differentially expressed between the models (Figure \@ref(fig:week2-upset-volcano)b).
 Gene-set enrichment analyzes revealed that genes related to extracellular matrix remodeling and collagen synthesis were driving the difference in transcriptome profiles between volume-conditions at Week 2
 (Figure \@ref(fig:week2-go-analysis)a).
-This was apparent using both the tissue offset model and the library-size normalized model. However, volume-dependent effects were more pronounced in the tissue-offset model
+This was apparent using both the tissue offset model and the library-size normalized model. However, the volume-dependent effects were more pronounced in the tissue-offset model
 (Figure \@ref(fig:week2-go-analysis)b).
+Differences in normalization models led to global shifts of estimates of differences between volume conditions. Figure \@ref(fig:gene-set-rug) shows this global shift as density curves representing all fold-changes between volume conditions. Accounting for the amount of muscle mass in sample preparations also shifted specific gene-sets towards greater differences between volume conditions. This is exemplified in Figure \@ref(fig:gene-set-rug) by the gene set "Collagen containing extracellular matrix".
 
 ```{r week2-go-analysis, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Gene-set enrichment analysis based on gene-ontology gene sets and estimates from the tissue-offset model (a). Adjusted \\textit{P}-values and Normalized enrichment scores are retrieved from analysis of directional rank-based tests (GSEA), labeling of points indicate if gene-sets were also identified from differentially expressed genes (Log2 fold-change >|0.5|, FDR < 0.05). In (b) comparison between the tissue-offset and library size normalization models are shown in rank-based (non-directional, cerno-test) analysis of gene ontology gene sets.", fig.scap = "Gene-set enrichment analysis at Week 2", fig.height=5, fig.width=4.72, fig.align='center'}
 
@@ -915,7 +894,7 @@ go_analysis_week2 +
 
 ```
 
-Differences in normalization models led to global shifts of estimates of differences between volume conditions. Figure \@ref(fig:gene-set-rug) shows this global shift as density curves representing all fold-changes between volume conditions. Accounting for the amount of muscle mass in sample preparations also shifted specific gene-sets towards greater differences between volume conditions. This is exemplified in Figure \@ref(fig:gene-set-rug) by the gene set "Collagen containing extracellular matrix".
+
 
 ```{r gene-set-rug, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Differences between volume conditions at Week 2 as seen using different normalization models. Shifts in the full distribution of Log2-fold change values between volume conditions were seen between on normalization models (density curves). As an example, genes associated with the \\textit{Collagen containing extracellular matrix} gene set are highlighted (black bars), differentially expressed genes are identified with gene symbols in each method.", fig.scap = "Global shifts in volume-dependent fold change as an effect of normalization methods at Week 2", fig.height=5, fig.width=3.72, fig.align='center'}
 
@@ -925,7 +904,7 @@ gene_set_rug
 
 ```
 
-At week 12, differences seen at Week 2 between volume conditions derived from the tissue-offset model were abolished (Figure \@ref(week12-upset-volcano)a). Volume-dependent differences were seen in the library-size normalized model. However, these overlapped with the naive model indicating that imbalance in muscle tissue between conditions may have contributed to global shifts in favor of the low-volume condition. This indicates that after initial perturbations related to different training volumes, the muscle may have reached a new transcriptional equilibrium.
+At week 12, differences seen at Week 2 between volume conditions derived from the tissue-offset model were abolished (Figure \@ref(fig:week12-upset-volcano)a). In contrast, volume-dependent differences were seen in the library-size normalized model with genes identified as having higher expression in the low-volume condition. However, these overlapped with the naive model, indicating that imbalance in muscle tissue between conditions may have contributed to global shifts in favor of the low-volume condition. This indicates that towards the end of the training intervention, the muscle tissue may have reached a new transcriptional equilibrium.
 
 ```{r week12-upset-volcano, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Volume dependent differences in gene expression in different models (a) either accounting for the amount of tissue used in cDNA synthesis (Tissue offset), library sizes or un-normalized (Naive). Overlap in differentially expressed genes between models are shown in (b)", fig.scap = "General patterns of differentially expressed genes at Week 12", fig.height=5, fig.width=4.72, fig.align='center'}
 
@@ -944,20 +923,20 @@ week12_grid +
 From a general perspective, this analysis underlines the importance of a well-considered choice of normalization strategy in studies of gene expression in non-homeostatic conditions
 [@RN2182;<!-- Normalization per cell radically changes the view of increased or decreased global gene expression -->@RN2878;<!-- Evans discusses mRNA per cell or per transcriptome  -->
 @RN2359].<!-- Loven 2012 in the case of gene amplification, gene expression changes might be over/underestimated between conditions -->
-Specifically, in gene expression studies of training-induced muscle hypertrophy, an ill-advised normalization strategy could mask or overestimate differences between experimental conditions as different amount of tissue is being used in sample preparation. This, as a consequence of a normalized RNA input between different conditions. Differences in the amount of tissue used in sample preparation between volume-conditions in Study I effectively led to underestimating genes identified as differentially expressed at Week 2 and led to nonsensible identification of differentially expressed genes at Week 12.
+Specifically, in gene expression studies of training-induced muscle hypertrophy, an ill-advised normalization strategy will mask or overestimate differences between experimental conditions as different amount of tissue is being used in sample preparation. This, as a consequence of a normalized RNA input between different conditions. Differences in the amount of tissue used in sample preparation between volume-conditions in Study I effectively led to underestimating genes identified as differentially expressed at Week 2 and led to nonsensible identification of differentially expressed genes at Week 12.
 The choice of normalization strategy ultimately determines the definition of differential expression. By using the tissue offset model, we were interested in gene counts per tissue, as opposed to using the the library size as the denominator in analyses, leading to gene counts expressed per transcriptome. Although both strategies may have merit in certain situations, selected genes may be better studied as counts per amount of tissue. It could be argued that one such group of genes are genes related to extracellular matrix remodeling.
-First, extracellular matrix-related genes have been shown to display close association between mRNAs abundances and their respective proteins, including collagen-organization proteins [@RN2448].<!-- Makhnovskii cycling exercise, mRNA and protein scales for ECM -->.
-This indicates that remodeling on the protein level to a large degree is determined transcriptionally.
-Secondly, selected extracellular-matrix related genes are not expressed in muscle fibers but instead in neighboring cells (e.g. fibroblasts)
+First, extracellular matrix-related genes have been shown to display close association between mRNAs abundances and their respective proteins, including collagen-organization proteins [@RN2448].<!-- Makhnovskii cycling exercise, mRNA and protein scales for ECM -->
+This indicates that remodeling on the protein level is primarily determined by transcriptional regulation.
+Second, selected extracellular-matrix related genes are primarily expressed in other cells than muscle fibers (e.g. fibroblasts)
 [@RN2883;<!-- Zou muscle fibroblast but not myogeneic cells express Col6a1  -->
 @RN2421].<!-- Kjaer genral review on ECM with collagen synthesis in fibroblast highlighted -->
-Thus assuming that an increase in total RNA due to increased ribosomal biogenesis would scale to other cell types in muscle tissue might affect the interpretation of such gene expression data.
+Thus assuming that an increase in total RNA due to increased ribosomal biogenesis would scale to other cell types in muscle tissue might introduce bias to such gene expression data.
 Consequently, studies of transcriptional regulation of extracellular matrix remodeling concerning muscle hypertrophy should account for the amount of tissue used in analyses.
 
-Previous studies have generally not found extracellular matrix remodeling to be affected by different exercise variables. Instead, when comparing low- and high-load, Holm *et al.* found similar responses measured as collagen synthesis [@RN2454].<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load -->.
-Similarly, eccentric versus concentric resistance exercise did not affect muscle collagen synthesis differently
+Extracellular matrix remodeling have not been found to be affected by different exercise variables. Instead, when comparing low- and high-load, Holm *et al.* found similar responses measured as collagen synthesis [@RN2454].<!-- Holm 2010 Contraction mode.. No diff between fasted/fed nor heavy/light load -->.
+Similarly, a comparison of concenctric and eccentric resistance training did not reveal differential effects on muscle collagen synthesis
 [@RN2457].<!-- Moore 2005 collagen synthesis rates not affected by ecc vs. conc -->
-Although it should be noted that the measurement of collagen synthesis and expression of genes related to extracellular matrix are targeting different aspects of extracellular matrix remodeling. Volume-dependent regulation of these target genes implicates this remodeling as paralleled with muscle growth.
+Although it should be noted that the measures of collagen synthesis and measures of gene expression related to extracellular matrix target different facets of extracellular matrix remodeling, volume-dependent regulation of these target genes implicates this remodeling as paralleled with muscle growth.
 
 ```{r, echo = FALSE, warning=FALSE, message=FALSE}
 
@@ -975,21 +954,23 @@ w2post_down<- sprintf("%.1f", acute_time_ngenes[3,4] * 100)
 
 ```
 
+### Transcriptome responses to acute exercise
 
-In response to acute exercise, `r w2post_up` and `r w2post_down`\% of identified genes were categorized as up and down-regulated 1 hour after exercise.
-These changes were measured as per transcriptome as no changes in the total RNA per tissue weight
-[@RN2142],<!-- Figueriedo No change in total rna increase in short time frames -->
-but instead fluid shifts [@RN2270]<!-- Ploutz-Snyder Fluid shifts 1995 --> 
-could be expected in the short time frame affecting the estimate of muscle weight from wet tissue.
-Differentially regulated genes were generally associated with stress responses, including inflammation and immune responses and extracellular matrix-related processes. In contrast to long-term changes, acute exercise led to down-regulation of extracellular matrix-related genes, similar to what has been found by others [@RN774]<!-- Raue, upregulation of ECM after long term exercise -->.
-Regarding volume-dependent regulation in the acute phase, only a single gene was found to be differentially expressed between volume-conditions. This gene, *RFT1*, which was found to be down-regulated and more so in response to moderate-volume exercise, is associated with lipid transport, carbohydrate transport, and endoplasmic reticulum membrane and has previously been found to be decreased in muscle after exercise [@RN2360]<!-- Pillon -->.
+In Week 2, in response to acute exercise, `r w2post_up` and `r w2post_down`\% of identified genes were categorized as up and down-regulated 1 hour after exercise.
+These changes were measured as per transcriptome as no change in the total RNA per tissue weight was expected
+[@RN2142].<!-- Figueriedo No change in total rna increase in short time frames -->
+Instead, fluid shifts [@RN2270]<!-- Ploutz-Snyder Fluid shifts 1995 --> 
+could be expected to affect analyses in the short timeframe through a biased estimation of wet muscle weight.
+The differentially regulated genes were generally associated with stress responses, including inflammation and immune responses and extracellular matrix-related processes. In contrast to the observed changes in response to prolonged resistance training, acute exercise led to down-regulation of extracellular matrix-related genes, similar to what has been found by others [@RN774]<!-- Raue, upregulation of ECM after long term exercise -->.
+
+Regarding volume-dependent regulation in the acute phase, only a single gene was found to be differentially expressed between volume-conditions. This gene, *RFT1*, was found to be down-regulated and more so in response to moderate-volume exercise. It is associated with lipid transport, carbohydrate transport, and endoplasmic reticulum membrane and has previously been found to decrease in muscle after exercise [@RN2360]<!-- Pillon -->.
 Further analyses of volume-dependent differences not relying solely on arbitrarily defined differential expression confirmed that no robust differences were evident in transcriptome characteristics in this short time-span.
 The timing of the post-exercise biopsy likely missed more relevant volume-dependent regulation in the acute phase.
 
 ## Determinants of moderate- over low-volume training benefit {#determinants}
 
-To explore determining factors for the additional benefit of moderate- over low-volume training, individual differences in muscle-hypertrophy (CSA) and average muscle strength between the moderate- and low-volume conditions were calculated. In primary analyses, difference-scores were dichotomized to *additional benefit of moderate-volume training* or *no additional benefit of moderate-volume training* based on the smallest worthwhile change (SWC) in the direction of moderate-volume. Participants were thus identified as having *additional benefit of moderate-volume training* if the difference in raw change scores were greater than the between-participants baseline SD $\times$ 0.2 in favor of moderate-volume training.^[Sex-differences were accounted for by mean-centering variables prior to SD estimation. A weighted SWC was calculated for the strength variable to avoid underestimating SD.]
-The choice of using a dichotomized response variable (benefit vs. no benefit) was made to maintain an individual perspective; irrespective of the magnitude of the individual difference, what determines the benefit of moderate- over low-volume training?
+To explore determining factors for the additional benefit of moderate- over low-volume training, individual differences in muscle-hypertrophy (CSA) and average muscle strength between the moderate- and low-volume conditions were calculated. In primary analyses, difference scores were dichotomized to *benefit of moderate-volume training* or *no benefit of moderate-volume training* based on the smallest worthwhile change (SWC) in the direction of moderate volume. Participants were thus identified as having *benefit of moderate-volume training* if the difference in raw change scores were greater than the between-participants baseline SD $\times$ 0.2 in favor of moderate-volume training.^[Sex-differences were accounted for by mean-centering variables prior to SD estimation. A weighted SWC was calculated for the strength variable to avoid underestimating SD.]
+The choice of using a dichotomized response variable (benefit vs. no benefit) was made to maintain an individual perspective, i.e., irrespective of the magnitude of the individual difference, what determines the benefit of moderate- over low-volume training?
 
 ```{r csa-str-sets-corr, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Relationship between individual responses to moderate- and low-volume training. Dashed lines are identity lines ($y = x$) and the distance from identity lines to solid lines represent the smallest worthwhile change (SWC) in each variable.", fig.scap = "Relationship between individual responses to moderate- and low-volume training", fig.height=2.4, fig.width=4.72, fig.align='center'}
 
@@ -1016,11 +997,10 @@ csa_str_cor
 
 ```
 
-Identification of participants as belonging to the benefit- or no benefit-group, respectively, for each outcome variable, is visualized in Figure \@ref(fig:csa-str-sets-corr). Responses to either training condition were highly correlated for both muscle CSA (`r csa_cor`) and average strength (`r str_cor`), but participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \@ref(fig:csa-str-sets-corr)).
+For each outcome variable, grouping of participants into belonging to the benefit or no benefit group, respectively, is visualized in Figure \@ref(fig:csa-str-sets-corr). Responses to either training condition, allocated in a contralateral fashion were highly correlated for both muscle CSA (`r csa_cor`) and average strength (`r str_cor`). Participants identified as having benefit of moderate-volume training were identified across the whole range of responses (Figure \@ref(fig:csa-str-sets-corr)).
 
-To develop parsimonious models that explained additional benefits of moderate-volume training in each outcome (muscle CSA and average strength), a set of potential determinants was selected before any association analysis. These included blood variables, baseline strength, muscle mass, volume-dependent molecular responses to training, and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study and dietary data were used in an initial screening process of potential variables. As neither pre-study training habits (strength or other types of physical training), within-study training characteristics (number of sessions completed and supervised), or dietary data displayed any differences between benefit-classifications, they were excluded from further consideration. So was also a set of continuous variables that did not meet the criteria for inclusion, based on preliminary univariate analysis   
-[@RN1998].
-Figure \@ref(fig:univariate-benefit-analysis) shows continuous variables used in the initial screening process. Variables were kept for further consideration when the mean difference 80\% CI (thick error bars) did not contain the null-hypothesis of no difference between benefit-classification groups. Based on the variables selected in this first step, 32 participants were included in the subsequent analysis as two participants had missing values in one or more of the selected predictors.
+To develop parsimonious models that could explain additional benefits of moderate-volume training for each outcome (muscle CSA and average strength), a set of potential determinants was selected before any association analysis. These included blood variables, baseline strength, muscle mass, volume-dependent molecular responses to training, and baseline fiber-type composition. Additionally, pre-study training habits and training characteristics during the study and dietary data were used in an initial screening process of potential variables. However, as neither pre-study training habits (strength or other types of physical training), within-study training characteristics (number of sessions completed and supervised), nor dietary data displayed any differences between benefit-classifications, they were excluded from further consideration. So was also a set of continuous variables that did not meet the criteria for inclusion, based on preliminary univariate analysis [@RN1998]. 
+Continuous variables used in the initial screening process are shown in Figure \@ref(fig:univariate-benefit-analysis). Variables were kept for further consideration when the mean difference 80\% CI (thick error bars) did not contain the null-hypothesis of no difference between benefit-classification groups. Based on the variables selected during this first step, 32 participants were included in the subsequent analysis as two participants had missing values for one or more of the selected predictors.
 
 ```{r univariate-benefit-analysis, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Differences between groups classified as either having benefit or no benefit of moderate-volume training. For the sake of comparison, all variables have been scaled by their SD. Thick errorbars indicate a 80\\% CI and thin errorbars indicate the 95\\% CI. Transparent points and errorbars indicate that the variables was removed from further modeling. Sex was included as a covariate in all comparisons.", fig.scap = "Univariate analysis of potential determinants of benefit to moderat- over low-volume training", fig.height=5, fig.width=4, fig.align='center'}
 
@@ -1030,11 +1010,11 @@ univariate_regression
 
 ```
 
-The choice of a dichotomized response variable (benefit vs. no benefit) entailed the use of logistic regression. An assumption of this type of regression modeling is linearity of the logit
+The choice of a dichotomized response variable (benefit vs. no benefit) entailed the use of logistic regression. An assumption of this type of regression modeling is the linearity of the logit
 [@RN1998].
 As all variables did not meet this assumption when fitted in logistic regression, they were categorized into biologically meaningful categories (Vitamin D insufficient/sufficient), dichotomized based on measurement detection limits (testosterone in females), or sex-specific median values (lean body mass and testosterone in males).
-A stepwise approach was used to remove variables that did not display association with the response variables. Figure \@ref(fig:model-reduction-plot) shows the process of stepwise removal of predictors.
-Additional benefit of moderate- over low-volume training on muscle CSA was predicted by individual differences between volume conditions in Total RNA at Week 2 and baseline lean body mass dichotomized to above or below the sex-specific median.
+A stepwise approach was used to remove variables that did not display association with the response variables. The process of stepwise removal of predictors are visualized in Figure \@ref(fig:model-reduction-plot).
+Additional benefit of moderate- over low-volume training for changes in muscle cross sectional-area was predicted by individual differences between volume conditions in Total RNA at Week 2 and baseline lean body mass dichotomized to above or below the sex-specific median.
 Only individual differences between volume conditions in Total RNA at Week 2 remained in the model after variable selection for muscle strength.
 
 ```{r model-reduction-plot, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Sequential removal of predictors of moderate-volume benefit. Point estimates for each predictor are displayed with 95\\% confidence intervals.", fig.scap = "Step-wise variable selection of determinants of moderate- over low-volume training benefit.", fig.height=3.72, fig.width=4.72, fig.align='center'}
@@ -1066,9 +1046,9 @@ Together with previous studies
 @RN1644;<!--Figueiredo correlation between fold change total RNA and delta CSA 8 weeks of training--> 
 @RN2055],<!--Mobley larger RNA increases in responders compared to low resp.-->
 as well as the direct correlation between RNA content and muscle hypertrophy presented earlier in this text
-(Figure \@ref(fig:rna-csa-fig)),
-the identification of volume-dependent total RNA regulation as a predictor of moderate-volume benefit in muscle mass and strength underlines the importance of early-phase ribosomal accumulation as a determining factor for muscle hypertrophy and strength. 
-Participants showing greater increases in ribosomal content in response to higher training volume also displayed greater relative benefit of the higher volume.
+(Figure \@ref(fig:rrna-csa-fig)),
+the identification of volume-dependent total RNA regulation as a predictor of moderate-volume benefit in muscle mass and strength suggests an important role for early-phase ribosomal accumulation as a determining factor for muscle hypertrophy and strength. 
+Participants showing greater increases in ribosomal content in response to higher training volume at Week 2 also displayed greater relative benefit of the higher volume.
 This likely acts through an increased translational capacity and confirms observations regarding volume-dependence in regulation of total RNA, mature rRNA species (rRNA 18S, 28S and 5.8S) and subsequent muscle hypertrophy (and strength gains).
 
 ```{r continuous-determinants, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Determinanats of moderate- over low-volume benefit", fig.cap="Analysis of association between potential predictors and individual differences between moderate- and low-volume training in muscle cross-sectional area and muscle strength as the dependent variable (a).", fig.cap = "Predictors of differences in outcomes between moderate- and low-volume training. Values in (a) are standardized regression coefficients with 95\\% CI from univariate robust regression. Positive estimates indicate a positive association. Variables related to blood parameters, body composition and muscle strength was mean centered per sex.", fig.height=6, fig.width=4.72, fig.align='center'}
@@ -1104,7 +1084,7 @@ lean_mass_diff <- paste0(sprintf("%.1f", lean_mass_reg_table[2, 1]),
 
 ```
 
-In primary analyses, the percentage of lean body-mass was identified as a predictor of additional benefit of moderate-volume training on muscle hypertrophy. 
+In primary analyses, the percentage of lean body-mass was identified as a predictor of additional benefit of moderate-volume training for muscle hypertrophy. 
 Albeit associated with a large degree of uncertainty, this indication was in line with current prescription guidelines recommending greater training volume for experienced individuals
 [@RN1].
 When analyzed between benefit categories, participants who displayed benefit of moderate- over low-volume training had a `r lean_mass_diff` higher lean body mass than participants in the no benefit-group.
@@ -1115,9 +1095,9 @@ This likely relates to the fact that traits such as fiber type, or body composit
 @RN2798]
 in addition to influenced by any history of physical activity.
 
-Resting average cortisol levels sampled during the first two weeks showed a negative association with benefit of moderate- over low-volume training. This association was not found in muscle hypertrophy, indicating that factors other than muscle mass drove this relationship. Although speculative, higher levels of cortisol may represent the novelty of the training regime
+In strength analyses, resting average cortisol levels sampled during the first two weeks showed a negative association with benefit of moderate- over low-volume training. This association was not found in muscle hypertrophy, indicating that factors other than muscle mass drove this relationship. Although speculative, higher levels of cortisol may be a response to the novelty of the training regime
 [@RN166].<!-- Kraemer, cortisol drops after short term resistance training -->
-Whether this translates to motor learning or other components of the neuromuscular response to different training volumes remains to be determined.
+Whether this translates in motor learning or other components of the neuromuscular response to different training volumes remains to be determined.
 
 
 ## Predictors of additional benefit of added training volume: Meta-analysis
@@ -1148,7 +1128,7 @@ unspecific_strength <- paste0("95% CrI: [",
 ```
 
 
-To further explore potential factors associated with benefit of added training volume, interactions between study parameters and weekly number of sets were estimated from meta-regression models (previously reported without interactions in Figure \@ref(fig:comb-fig-s1)). 
+A meta-analysis was conducted to further explore potential factors associated with benefit of added training volume, interactions between study parameters such as age, sex, body-half,  and weekly number of sets (previously reported without interactions in Figure \@ref(fig:comb-fig-s1)). 
 
 The weekly number of sets did not interact with age, training status, or sex for either muscle mass or strength (interaction estimates are shown in Table \@ref(tab:meta-interaction-table)), indicating that the literature currently gives little support for such demographic variables to guide prescription regarding training volume.  
 

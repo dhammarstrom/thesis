@@ -246,7 +246,7 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
                            breaks = c(0.5, 0.75, 1, 1.25, 1.5), 
                            labels = c(0.5, "", 1, "", 1.5)) +
 
-        labs(y = "Multiple-sets / Single-set") + 
+        labs(y = "Moderate-volume / Low-volume") + 
         theme_bw() +
         theme(panel.grid = element_blank(), 
               panel.border = element_blank(), 
@@ -270,9 +270,9 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
                        5.05,
                        4.7), 
                        
-                 y =  c(0.8, 
+                 y =  c(0.7, 
                         1.35, 
-                        1.3),
+                        1.32),
                  label = c("Week 0",
                          "Week 2",
                          "Week 12"), 
@@ -282,9 +282,9 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
         # Legend arrow week 2
         annotate("curve",
                  x = 5.1,
-                 xend = 5.05,
+                 xend = 5.08,
                  y = 1.25,
-                 yend = 1.15,
+                 yend = 1.17,
                  curvature = 0.2,
                  color = "gray50",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
@@ -292,15 +292,15 @@ training_ribo_markers  <- rbind(data.frame(intervals(rna.m0)$fixed) %>%
         annotate("curve",
                  x = 5.1,
                  xend =  5.12,
-                 y =  0.86,
-                 yend =  0.97,
+                 y =  0.74,
+                 yend =  0.87,
                  curvature = 0.2,
                  color = "gray50",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
         # legend arraw week 12
         annotate("curve",
-                 x =  4.65,
-                 xend =  4.75,
+                 x =  4.6,
+                 xend =  4.7,
                  y = 1.2,
                  yend = 1.07,
                  curvature = -0.2,
@@ -376,14 +376,14 @@ myc_acute <- acute_qpcr %>%
 rrna45_acute <- acute_qpcr %>%
         filter(gene == "rRNA45S") %>%
         mutate(sets = factor(sets, levels = c("single", "multiple"), 
-                             labels = c("Single-set", 
-                                        "Multiple-sets"))) %>%
+                             labels = c("Low-volume", 
+                                        "Moderate-volume"))) %>%
         
         ggplot(aes(sets, w2post, fill = sets)) + 
         geom_bar(stat = "identity", 
                  width = 0.2) +
         
-        annotate("richtext", label = "pre-rRNA 45S", 
+        annotate("richtext", label = "rRNA 45S", 
                  y = (2/100) * 90, x = 0.5, hjust = 0, 
                  size = text_size_label,
                  label.color = NA, 
@@ -436,7 +436,7 @@ acute_estimates <- qpcr.model.estimates.acute %>%
         geom_vline(xintercept = 1, lty = 2, color = "gray80") +
         geom_errorbarh(aes(xmin = exp(lower), xmax = exp(upper)), height = 0) +
         geom_point(fill = group.study.color[2], size = 3, shape = 21) +
-        labs(x = expression(paste(Delta, "Multiple-sets / ", Delta, "Single-set"))) +
+        labs(x = expression(paste(Delta, "Moderate / ", Delta, "Low"))) +
         scale_x_continuous(limits = c(0.5, 2.5), 
                            breaks = c(0.5, 1, 1.5, 2, 2.5), 
                            labels = c(0.5, 1, 1.5, 2, 2.5), 

@@ -501,12 +501,21 @@ mm2_2 <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_results
 
 mm2_1 <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel2_results1.RDS")
 
+# A new set of models were done in order to only account for tissue amounts
+# time-only model with tissue offset
+
+ref_gene_models <- readRDS(file = "./data/study-1b/data/derivedData/DE/mixedmodel_reference_genes_time.RDS")
+
 ### Calculate number of genes diff expressed between time points
 # In tissue offset model
 
 
+
+
 tissue_offset_ngenes <- mm2_2 %>%
-        filter(model == "tissue_offset_lib_size_normalized", 
+        dplyr::select(-poisson.test) %>%
+        rbind(ref_gene_models) %>%
+        filter(model %in% c("tissue","rna"), 
                coef %in% c("timew2pre", "timew12")) %>%
         group_by(coef) %>%
         mutate(adj.p = p.adjust(p.val, method = "fdr"), 
@@ -517,9 +526,9 @@ tissue_offset_ngenes <- mm2_2 %>%
                regulation = if_else(sig == "s" & log2fc > 0.5, "up", 
                                     if_else(sig == "s" & log2fc < -0.5, "down", "ns")), 
                regulation = factor(regulation, levels = c("ns", "up", "down")))  %>%
-        group_by(coef, regulation) %>%
+        group_by(coef, regulation, model) %>%
         summarise(n = n()) %>%
-        group_by(coef) %>%
+        group_by(coef, model) %>%
         mutate(percent = n / sum(n)) %>%
         print()
 

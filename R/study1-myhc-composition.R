@@ -211,15 +211,15 @@ myhc2x_mrna_means <-  data.frame(qpcr.means.estimates.full) %>%
                            labels = c("Week 0", "Week 2", "Week 12")) +
         
         # Annotations 
-        annotate("text", x = c(11, 11), y = c(-13, -15.2), 
+        annotate("text", x = c(9, 9), y = c(-13, -15.4), 
                  label = c("Low-volume", "Moderate-volume"), 
                  size = 2.7) +
         # From moderate volume to point
         annotate("curve",
                  x = 11.4,
                  xend = 11.9,
-                 y = -14.9,
-                 yend = -14.4,
+                 y = -15,
+                 yend = -14.5,
                  curvature = 0.2,
                  color = "gray50",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
@@ -239,7 +239,7 @@ myhc2x_mrna_means <-  data.frame(qpcr.means.estimates.full) %>%
         dissertation_theme() +
         
 
-        ylab("Log-abundance") + 
+        ylab("<i>MYH</i><br>Log-abundance") + 
         theme(axis.title.x = element_blank(),
               axis.title.y = element_markdown(size = 7),
               axis.text.y = element_text(size = 7),
@@ -324,8 +324,8 @@ stacked_fibertypes_fig <- stacked_fibertypes_data %>%
                  size = 2.5) +
 
         annotate("text", 
-                 x = c(1.68, 2.32), 
-                 y = 0.8, 
+                 x = c(1.67, 2.33), 
+                 y = 0.65, 
                  label = c("Low-volume", "Moderate-volume"), 
                  size = 2.5,
                  angle = c(90, -90)) +
@@ -390,7 +390,7 @@ paired_plot_2x <- fib.trans %>%
                            expand = c(0, 0), 
                            breaks = c(0, 5, 10, 20, 30, 40), 
                            position = "right") +
-        labs(y = "% of total fibers") +
+        labs(y = "Type IIX % of total fibers") +
         
 
         dissertation_theme() +
@@ -418,16 +418,17 @@ back_plot <- data.frame(x = c(0, 1), y = c(0, 1)) %>%
 
 fiber_type_insets <- ggdraw(back_plot) + 
         draw_plot(stacked_fibertypes_fig, 0, 0, 0.5, 1) + 
-        annotate("polygon", x = c(0.485, 0.485, 0.58, 0.58), y = c(0.09, 0.45, 0.95, 0.17), 
+        annotate("polygon", x = c(0.485, 0.485, 0.58, 0.58), y = c(0.1, 0.45, 0.95, 0.17), 
                  alpha = 0.1) +
           draw_plot(paired_plot_2x, 0.58, 0.15, 0.4, 0.8) +
         annotate("text", 
-                 x = c(0.66,0.75), y = c(0.46,0.52), 
+                 x = c(0.73,0.77), y = c(0.13,0.13), 
                  label = c("Low-\nvolume", 
                            "Moderate-\nvolume"), 
-                 color = c(group.study.color[4], group.study.color[5]),
+                 color = c("black"),
+                 
                  size = 2.5, 
-                 hjust = 0) 
+                 hjust = c(1,0 )) 
         
       
 

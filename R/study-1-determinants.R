@@ -572,8 +572,8 @@ csa_model_reduction <- csa_models %>%
                   size = 0.4) +
         
         geom_text(aes(x = exp(estimate), y = term, label = ci), 
-                  size = 2.5, 
-                  position = position_nudge(y = -0.22, x = 0.25)) +
+                  size = 1.9, 
+                  position = position_nudge(y = -0.24, x = 0.25)) +
 
         geom_point(shape = 21, size = 2) +
         
@@ -631,8 +631,8 @@ str_model_reduction <- str_models %>%
                    size = 0.4) +
         
         geom_text(aes(x = exp(estimate), y = term, label = ci), 
-                  size = 2.5, 
-                  position = position_nudge(y = -0.22, x = 0.25)) +
+                  size = 1.9, 
+                  position = position_nudge(y = -0.23, x = 0.25)) +
         
         geom_point(shape = 21, size = 2) +
         

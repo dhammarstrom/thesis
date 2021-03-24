@@ -100,7 +100,7 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 
 
 # Introduction
-\lettrine{S}keletal muscle health is essential for physical independence. From a lifespan perspective, measures of muscle mass and strength are inversely associated with mortality
+\lettrine{S}keletal muscle health is essential for physical independence. From a lifespan perspective, muscle mass and strength measures are inversely associated with mortality
 [@RN2512;<!-- Ran 2018 Low muscle strength was independently associated with all cause mortality -->@RN2808;<!-- Muscular strength and mortality meta analysis higher levels of strength lower risk of death -->@RN2513;<!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality-->@RN2514;<!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2 -->
 @RN2809;<!-- Ruiz n ~ 8000, strength inversely related to all cause and cancer  mortality in men -->@RN2515;<!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly -->@RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
 and disability
@@ -115,7 +115,7 @@ This connection highlights that interventions designed to increase muscle mass a
 Although a large degree of the observed variations in lean mass and strength are attributed to non-modifiable components 
 [@RN2526; <!-- Arden genetic factors explain leg extensor strength (60%), lean body mass (52%) and grip strength (36%) -->
 @RN2527],<!-- Roth review, > 50% genetic component in muscle mass -->
-environmental factors also contribute, leaving a window of opportunity for increasing muscle mass and functional capacity. Among factors affecting muscle mass and functioning are nutrition and pharmacological agents. However, physical activity and specifically systematic resistance training of sufficient volume, intensity, and frequency provides a stimulus that promote morphological and functional changes to the human neuromuscular system without adverse side-effects. Irrespective of age, resistance training generally leads to increased muscle mass and strength
+environmental factors also contribute, leaving a window of opportunity for increasing muscle mass and functional capacity. Among factors affecting muscle mass and functioning are nutrition and pharmacological agents. However, physical activity and specifically systematic resistance training of sufficient volume, intensity, and frequency provides a stimulus that promote morphological and functional changes to the human neuromuscular system without adverse side effects. Irrespective of age, resistance training generally leads to increased muscle mass and strength
 [@RN1741;<!-- Ahtiainen 2016 pooled analysis including controls   -->
 @RN2534]<!-- Grgic 2020 > 75 of age increase strength and muscle mass relative to control and training is safe -->
 and is considered safe when performed in a well-organized manner
@@ -139,14 +139,14 @@ Such effects are believed to facilitate long-term training effects as training p
 @RN1767]. <!-- Shoenfeld 2016 weekly number of sets related to gains in muscle mass  -->
 A consequence of a more extensive training program is the increased time required to complete such a program. As time constraints have been reported as a limiting factor for engaging in physical activity
 [@RN2063]<!-- Time constraints limits participation in physical activity -->
-some merit can be given to arguments against guidlines suggesting higher volume in resistance training prescription 
+some merit can be given to arguments against guidelines suggesting higher volume in resistance training prescription 
 [@RN794;<!-- Carpinelli argues that single set programs are as effective as multiple set programs -->
 @RN2538].<!-- Feigenbaum, argues that more volume does not outweigh the time cost -->
 From an individual perspective, a training prescription that balances time-requirement with training efficacy presumably increases the likelihood of participation in physical activity [@RN2063]<!-- Choi time-constrains and expectations of outcomes are related to participation -->.
 From a more general perspective, increased knowledge about mechanisms governing responses to physical training could improve training prescription also for individuals and populations that experience an attenuated benefit of resistance training
 [@RN2547]. <!-- Pickering 2019, non-responders might not exists, changing training prescription could increase efficacy -->
 <!-- Add "Individualized prescrioption is needed -->
-The overreaching goal of the present thesis is to contribute to understanding individualized training loads. To this end, training volume was used to study the effects of variable training<!-- Change this? --> stimulus in within-participant models of exercise-training.   
+The overreaching goal of the present thesis is to contribute to understanding individualized training loads. To this end, training volume was used to study the effects of variable training<!-- Change this? --> stimulus in within-participant models of exercise training.   
 
 
 

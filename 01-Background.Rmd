@@ -19,15 +19,15 @@ The system served to prepare men to fight for the developing nation and to estab
 Ling gymnastics shared common origins with German Turnen and also served as a system of military preparation.
 However, Ling also established systems for medical, pedagogical, and aesthetic gymnastics.
 Ling's medical-gymnastics was especially important for the development of modern exercise prescription as it was scientifically oriented, based on the physiological and medical understanding of that time [@RN2663].
-The medical-gymnastics of the nineteenth century is referenced in twentieth-century texts on therapeutic exercise prescription
+The medical-gymnastic of the nineteenth century is referenced in twentieth-century texts on therapeutic exercise prescription
 [@RN2634].<!-- Nicoll 1943 Dosage of exercise therapy "never exercised against more than 25% of their all out efficiency" with increased exercise periods and decreased rest periods as progression -->
 
-With the introduction of "heavy resistance exercises" as a means for developing muscle strength and mass after injury, DeLorme outlined the system on which modern resistance-exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM -->
+With the introduction of "heavy resistance exercises" as a means for developing muscle strength and mass after injury, DeLorme outlined the system on which modern resistance exercise prescription is based [@RN2633].<!-- DeLorme 1945 case reports of systematic resistance training for restoration of muscle power and mass. First mention of RM -->
 DeLorme published his system shortly after the Second World War [@RN2633]
 during which he, as a newly graduated physician, had been working with war injury rehabilitation
 [@RN2639]<!-- Todd 2012 DeLorme biography -->.
 Inspired by practitioners of weight training [@RN2639],<!-- Todd 2012 DeLorme biography --> 
-DeLorme specifically emphasized high-resistance, low-repetition exercises where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendations of endurance-like exercise where progression was achieved through an increased number of repetitions
+DeLorme specifically emphasized high resistance, low-repetition exercises where progression was achieved with increased resistance [@RN2633] as opposed to previous recommendations of endurance-like exercise where progression was achieved through an increased number of repetitions
 [@RN2634].<!-- Nicoll 1943 -->
 DeLorme initially used the term "heavy resistance exercises" to avoid confusion with low-resistance exercises [@RN2633], but as this could be perceived as exercises performed only with heavy weights, the system was renamed *progressive resistance exercise* to reflect the method better
 [@RN2641]
@@ -67,29 +67,29 @@ The introduction of resistance training as part of the ACSM recommendation also 
 [@RN2666, Ch. 2].<!-- Physical Activity and Health: A Report of the Surgeon General provides an overview of recommendation guidelines evolution  -->
 Consequently, informed by epidemiological data, the most recent general guidelines for physical activity include resistance training [@RN2667].<!-- WHO guidelines -->
 
-The above account reflects the fact that common understandings of *why* and *how to* exercise are influenced by societal norms and historical events such as the search of national identity in the nineteenth century or treatment of war injuries in the twentieth century
+The above reflects that common understandings of *why* and *how to* exercise are influenced by societal norms and historical events such as the search for national identity in the nineteenth century or treatment of war injuries in the twentieth century
 [@RN2663;
 @RN2639].
 In attempting to outline contemporary influences on exercise prescription, one could argue that the development of techniques to collect a large amount of biological data is one such influence. The continuously decreasing cost for obtaining information about the human genome
 [@RN2696] serves as an example of this development.<!-- Wetterstrand webpage genome sequence costs -->
-Such molecular techniques have enabled the description of mechanisms by which exercise training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of an extensive scale effort, explicitly initiated to develop personalized exercise recommendations and to identify molecular targets through which effects of exercise may be mimicked
+Such molecular techniques have enabled the description of mechanisms by which exercise training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of an extensive scale effort, explicitly initiated to develop personalized exercise recommendations and identify molecular targets through which effects of exercise may be mimicked
 [@RN2678].<!-- MToPAC explicitly stating diagnostics is a goal --> 
 Advances in biomedical technologies are enablers of this enterprise, and the quest to *individualize* exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
 [@RN2678;<!-- MToPAC explicitly stating diagnostics is a goal -->
 @RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
-Ccontemporary scientific research into exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
+Contemporary scientific research into exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
 
-A challenge facing this program is to describe etiologies of response heterogeneity associated with physical training accurately. A wide variation of individual responses are commonly observed after standardized resistance-training programs where changes in muscle strength varies from -32 to +250\% and changes in muscle size varies from negative to (-11\%) to impressively large (+59\%)
+A challenge facing this program is to describe etiologies of response heterogeneity associated with physical training accurately. A wide variation of individual responses is commonly observed after standardized resistance-training programs where changes in muscle strength vary from -32 to +250\% and changes in muscle size vary from negative to (-11\%) to impressively large (+59\%)
 [@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
 @RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
 By relating such variations to the individual genome (DNA)
-[@RN1263],<!-- Pescatello review of the famuss data set -->
+[@RN1263]<!-- Pescatello review of the famuss data set -->
 and messenger RNA (mRNA) profiles
 [@RN826;<!-- Thalacker-Mercer, Cluster analysis, non-responders pro-inflammatory mRNA profile at baseline -->
-@RN2684]<!-- Stokes co-relation between mRNA profiles and LMM changes  -->
+@RN2684],<!-- Stokes co-relation between mRNA profiles and LMM changes  -->
 we are beginning to gain knowledge about the genetic influence on training responses.
 A common strategy has been to dichotomize responses into "responders" and "non-responders" to exercise training in such studies.
-From a public health perspective, this is probably fruitful when *non-response* is defined as the absence of meaningful health-related adaptations, or even adverse effects in response to a given training regime
+From a public health perspective, this is probably fruitful when *non-response* is defined as the absence of meaningful health-related adaptations or even adverse effects in response to a given training regime
 [@RN2677;<!-- Sparks 2017 response heterogeneity -->
 @RN2698].<!-- Roth viewpoint 3 scenarios for genomic screening -->
 The existence of non-responders would have considerable implications regarding exercise prescription on the population scale
@@ -129,7 +129,7 @@ Although apparent reversal of non-response to exercise training has been observe
 ### Muscle hypertrophy and strength
 Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health (e.g., increased amino acid storage, physical independence) and athletic performance are conveyed. 
 Muscle growth is a well-characterized response to resistance training.
-Healthy untrained individuals can be expected to increase their muscle mass by $\sim$ 5-20\% when training is conducted over two weeks to 6 months
+Healthy untrained individuals can be expected to increase their muscle mass by $\sim$ 5-20\% when training is conducted over a period of up to 6 months
 [@RN1741; <!-- Ahtianen -->
 @RN346;<!-- Wernbom  -->
 @RN764].<!-- Hubal 2005 elbow flexor 18.9% increase -->
@@ -173,17 +173,17 @@ The muscle cell is to a large degree occupied by myofibrils
 (about 80% of the cell volume 
 [@RN2731]<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->),
 which in turn contain sarcomeres, arranged in series.
-Upon neural activation and subsequent Ca\textsuperscript{2+} release, contraction is initiated, and the sarcomere shortens through interacting myosin and actin, resulting in force generation
-[@RN2756].<!-- Sweenney review on muscle contraction -->
+<!-- Upon neural activation and subsequent Ca\textsuperscript{2+} release, contraction is initiated, and the sarcomere shortens through interacting myosin and actin, resulting in force generation
+[@RN2756]. Sweenney review on muscle contraction -->
 With resistance training, the number of parallel myofibrils increases with the growth of individual fibers
 [@RN2669]<!-- Straight 2020 muscle fiber size increases with RT, in midlle age old, age inversely related to training effects -->
 leading to a greater force-generating capacity of the whole muscle
 [@RN2731].<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->
 
-Measures of whole muscle size correspond well with strength, particularly when they reflect the muscles cross-sectional area
+Measures of whole muscle size correspond well with maximal strength, particularly when they reflect the muscles' cross-sectional area
 [@RN2758;<!-- Bamman 2000 Anatomical and estimates physiological cross section better prediction for strength on whole muscle level in vivo in humans -->
 @RN1142].<!-- Erskin 2013 muscle volume and CSA to strength r = 0.812 and 0.806  -->
-However, in response to resistance training, increases in strength are typically greater in magnitude than muscle growth
+However, in response to resistance training, increases in maximal strength are typically greater in magnitude than muscle growth
 [@RN2629;<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
 @RN2737;<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
 @RN2736;<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
@@ -200,7 +200,7 @@ In accordance with this, different experimental models have shown that muscle st
 Together these observations indirectly point to the central nervous system and motor learning as important factors for strength gains.
 First, getting acquainted with the actual strength test through repeated training of maximal performance produces similar gains in strength without apparent hypertrophy 
 [@RN2760].<!-- Mattocks 2017 Practicing 1RM leads to similar strength increases as RT  -->
-Second, if resistance training is performed unilaterally and the contralateral limb act as a control, strength gains are typically also seen here
+Second, if resistance training is performed unilaterally, strength gains are typically also seen in the contralateral control limb
 [@RN2219;<!-- Carroll 2006 contralateral effects review -->
 @RN2766].<!-- Green 2018 training has contralateral effects both for strength and skill -->
 Additionally, systematic imagery training without muscle activation produces greater strength gains than control and low-intensity training conditions 
@@ -229,7 +229,7 @@ Importantly, *in vitro* assays performed at physiological temperatures shows tha
 In addition to contractile characteristics, fiber types identified based on their myosin heavy-chain content also differs in metabolic profiles.
 Type I fibers are characterized as having lower glycolytic but higher oxidative potential compared to type II fibers
 [@RN1885].<!-- Essen 1975 Type II fibers lower oxidative potential compared to type I assumed from activity of oxidative enzymes -->
-Differences in metabolic profiles translate into fatigue resistance, whereby type I fibers can maintain power output and ATP levels during intense exercise, but type II fibers and primarily type IIX fibers fail to do so 
+Differences in metabolic profiles translate into fatigue resistance, whereby type I fibers can maintain power output and ATP levels during intense exercise but type II fibers and primarily type IIX fibers fail to do so 
 [@RN819;<!-- -->
 @RN2801].<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
 
@@ -253,7 +253,8 @@ In contrast, reduced activity or inactivity readily increases the proportion of 
 @RN2108].<!-- Bed rest increases type IIx -->
 
 Concomitant with muscle hypertrophy and fiber type switch, resistance training also alters the mitochondrial density of the muscle, evident as a decreased relative abundance as myofibrillar protein fractions increases, as shown in electron microscopy examination
-[@RN2731].<!-- Lüthi  -->
+[@RN2731;<!-- Lüthi  -->
+@RN2732].<!-- MacDougall 1979 -->
 In contrast to this notion, a single session of resistance training, albeit with low resistance (30\% of 1RM), has been shown to increase the synthesis of mitochondrial, as well as myofibrillar and sarcoplasmic protein fractions. When exercise was performed with slower movement speeds (longer time under tension), the increase in mitochondrial protein synthesis was shown to be greater
 [@RN1505].<!-- Burd 2012 A single session of resistance exercise (30%1RM) increases mitochondrial protein synthesis, more so with higher metabolic stress (6s repetitions compared to 1s reps). -->
 This indicates that the magnitude of metabolic stress induced by resistance training affects the subsequent mitochondrial remodeling.
@@ -278,13 +279,14 @@ From a general perspective, tissues enabling e.g., locomotion by conveying force
 @RN2771].<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
 Specifically, short term resistance training leads to changes in mechanical properties of bone without increasing bone mineral content or density, suggesting qualitative changes
 [@RN2774].<!-- Miller 2009 rt increases tibial bending stiffness without changes in bobne mineral content 20 weeks, 3 sessions/week con and ecc, females 18-26 years-->
-Similarly, tendons respond to short-term resistance training by increasing stiffness at exposure to high levels of mechanical stress without increasing cross-sectional area
-[@RN2772].<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group -->
-Interestingly, these adaptations seem to reach a plateau, as no additional change in this characteristic is seen in individuals who have exercised over four years as opposed to twelve weeks
+Similarly, tendons respond to short-term resistance training by increasing stiffness when exposed to high levels of mechanical stress with or without increasing cross-sectional area
+[@RN2772;<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group -->
+@RN2895]<!-- Rønnestad, recreational trained increase tendon CSA -->
+Interestingly, tendon adaptations seem to reach a plateau, as no additional change in this characteristic is seen in individuals who have exercised over four years as opposed to twelve weeks
 [@RN2772].
 <!--However increased stiffness at lower mechanical stress levels has been documented
 @RN2771]. Magnusson 2008 review tendon CSA increase with endurance training -->
-Changes in tendon properties in response to resistance training may thus primarily be associated with qualitative changes
+Changes in tendon properties in response to resistance training may thus primarily be associated with qualitative changes after initial adaptations to increased loading
 [@RN2771]<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
 potentially related to increased turnover of collagen, indicating remodeling
 [@RN2771;<!-- Magnusson review -->
@@ -319,11 +321,11 @@ Such remodeling may contribute to increased specific force (force generated per 
 [@RN1504].<!-- Erskine 2011 Hypothesized increased lateral force transfer increase specific tension in vivo in response to strength training in humans as single fiber specific tension nor mhc composition could explain -->
 
 
-## Effects of acute exercise program variables on muscle mass and strength
+## Effects of exercise program variables on muscle mass and strength
 A precise exercise-training prescription should inform on sequential order, intensity and volume of exercises, rest periods between efforts or sessions, and the frequency at which exercise sessions are to be performed
 [@RN789].<!-- Bird designing resistance training programs -->
 By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
-The relative importance of exercise-training variables for training outcomes has been examined in numerous studies, including (but not limited to) the overall organization of exercise sessions,
+The relative importance of resistance exercise-training variables for training outcomes has been examined in numerous studies, including (but not limited to) the overall organization of exercise sessions,
 [@RN2575;<!-- Evans mini review on periodization --> 
 @RN2572]<!-- Grgic 2017 No effect of linear and daily unduluting periodization on muscle hypertrophy -->
 training frequency 
@@ -353,7 +355,8 @@ In 1962, Berger conducted an early study concerning effects of resistance exerci
 @RN2538].<!-- Feigenbaum -->
 Reviewing the study by Berger and others, Carpinelli and Otto concluded that there was "insufficient evidence to support the prevalent belief that a greater volume of exercise (through multiple sets) will elicit superior muscular strength or hypertrophy" [@RN794]. This stand has since been repeatedly put forward as a criticism of higher volume training programs 
 [@RN2568; 
-@RN2201] and sparked considerable scientific activity. The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant results in single studies [@RN2568; @RN2538]. 
+@RN2201] and sparked considerable scientific activity.
+The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant superiority in single studies [@RN2568; @RN2538]. 
 Indeed, individual studies do not generally agree on dose-dependent effects of training volume on muscle mass and strength gains
 [@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
 @RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
@@ -370,16 +373,16 @@ Indeed, individual studies do not generally agree on dose-dependent effects of t
 including studies performed with comparisons between volume conditions within participants, where different training volumes are allocated to either extremity 
 [@RN834;<!-- Mitchell 2012 young men no sig difference in strength or mass gains between 1 and 3 sets knee extension -->
 @RN1607].<!-- Sooneste 2013 young men p=0.076 on strength gains in favor of three sets, CSA increased more in 3 sets leg exercise -->
-For example, differences in strength development between volume conditions were found in older individuals 
+For example, differences in strength development between volume conditions were found in older individuals
 [@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
 @RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
 @RN1472] <!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
-but was not confirmed in another study
+but were not confirmed in another study
 [@RN1518].<!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains -->
 Moreover, studies have shown that higher volume does not lead to increased muscle mass gains in young individuals
 [@RN1384; <!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->
 @RN1456;<!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains -->
-@RN2463]<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
+@RN2463],<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
 a conclusion challenged by others 
 [@RN776;<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
 @RN1570]. <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
@@ -407,7 +410,7 @@ Sooneste *et al.* compared strength outcomes in response to three- and one-set e
 Results showed a benefit of three- over one-set training for muscle hypertrophy and tended to do so for strength gains [@RN1607].
 No attempts were made to relate baseline characteristics to the magnitude of differences between volume conditions, presumably due to the small sample size (*n* = 8).
 Mitchell *et al.* compared muscle hypertrophy and strength gains in response to three- and one-set of knee-extension exercise performed three times per week for ten weeks.
-The study contained an additional training condition (low intensity, 30% of 1RM performed with three sets) with participants' legs assigned to either of the three conditions in a random fashion.
+The study contained an additional training condition (low intensity, 30% of 1RM performed with three sets) with participants' legs assigned to one of the three conditions in a random fashion.
 No significant differences were reported between volume conditions for muscle mass or strength gains [@RN834].
 However, the analyses were performed without considering the correlation between individuals due to the mixed design [@RN834].
 No attempts were made to relate any measured characteristic to differences in responses.
@@ -421,7 +424,7 @@ over resting levels for up to 48 hours post-exercise
 @RN786;<!-- Phillips 1997 fasted state, FSR and FBR both increased but FBR to a lesser extent giving increase in net balance. Fasted state -->
 @RN2712;<!-- Biolo 1995, fasted state ex increase both breakdown and synthesis FSR/FBR at 3h net balance increase but not positive -->
 @RN2717;<!-- Increase in FSR over control at 4 and 24 h post ex in biceps, no change in RNA -->
-@RN1521],<!-- Kim, increase after exercise in mixed and myofibrillar prot synth in trained and untrained state, lower mixed after training, higher basal protein synt rate after training period 8 weeks 2-4set 8RM 8 weeks biopsy 12 h after ex Same absolute intensity -->
+@RN1521]<!-- Kim, increase after exercise in mixed and myofibrillar prot synth in trained and untrained state, lower mixed after training, higher basal protein synt rate after training period 8 weeks 2-4set 8RM 8 weeks biopsy 12 h after ex Same absolute intensity -->
 after being blunted during exercise
 [@RN2710].<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex -->
 Muscle protein synthesis and breakdown rates are highly correlated
@@ -438,7 +441,7 @@ When resistance training is performed under such favorable conditions, in the fe
 [@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 @RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
 
-The ribosome is indispensable for protein synthesis as it functions as a cellular machine capable of translating genetic information in the form of messenger RNA (mRNA) to proteins.
+The ribosome is indispensable for protein synthesis as it functions as a cellular machine capable of translating genetic information in the form of mRNA to proteins.
 A functional ribosome consists of four ribosomal RNA species (rRNA 18S, 5.8S, 28S, and 5S) and about 80 proteins constructing two ribosomal subunits. Translation of mRNA occurs at the ribosomal core, as ribosomal RNA catalyzes the binding of amino acids to translate from the ribosome-bound mRNA sequence to a corresponding polypeptide chain.
 Specific stimuli can modify the rate of translation per ribosome (i.e. translational efficiency).
 Mechanical stress (such as resistance exercise) and amino acid availability (as increased after ingestion of dietary protein) stimulate protein synthesis through increased translational efficiency.
@@ -538,7 +541,7 @@ The enzyme primarily responsible for mechanically induced increases of phosphati
 [@RN1728].<!-- You 2014,   -->
 In the context of muscle growth in response to resistance training, adequate supplementation of dietary protein augments responses
 [@RN2199].<!-- Morton 2018 meta, ~ 1.6g/kg/day maximizes fat free mass gains in response to RT -->
-Mechanistically, dietary protein intake increase the availability of amino acids in muscle cells, and these, in turn, stimulate protein synthesis through mTORC1 by multiple mechanisms
+Mechanistically, dietary protein intake increases the availability of amino acids in muscle cells, and these, in turn, stimulate protein synthesis through mTORC1 by multiple mechanisms
 [@RN2848].<!-- Goberdhan cell metabolism perspective, amino acids are sensed through multiple mechanisms by mTORC1 -->
 mTORC1 capabilities to fine-tune its response based on cellular status can be exemplified from studies examining responses to different amino acid compositions. 
 Providing a mixture of essential amino acids potentiated mTORC1 signaling in response to resistance exercise more than the provision of essential amino acids without leucine or leucine alone
@@ -615,7 +618,7 @@ Finally, Reidy *et al.* reported a correlation between changes in total RNA cont
 [@RN1897]<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->
 Together these studies underline the importance of ribosomal biogenesis and translational capacity in resistance training-induced muscle hypertrophy.
 However, it should be noted that protein synthesis and cellular growth may occur in the absence of ribosomal biogenesis.
-In cultured myotubes stimulated with IGF-1, inhibition of ribosomal RNA transcription led to reduced RNA content but not myotube size compared to non-inhibited controls
+In cultured myotubes stimulated with IGF-1, inhibition of ribosomal RNA transcription led to reduced RNA content but not reduced myotube size compared to non-inhibited controls
 [@RN1929].<!-- Crossland inhibition of Pol 1 upon stimulation of IGF-1 does not inhibit growth -->
 In aged male participants, three sessions of resistance training did not lead to increased levels of RNA but a 30% increase in protein synthesis rates
 [@RN2155].<!-- Welle three sessions over a seven day period no change in RNA but prot synth -->
@@ -640,11 +643,11 @@ and repeated bouts lead to accumulation of rRNA/total RNA and thus presumably fu
 @RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
 @RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
 @RN1897<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->].
-The time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unknown, with only a few studies have investigated exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
+The time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unknown, with only a few studies investigating exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
 For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout
 [@RN1520]<!-- Total RNA increase 72 h after a second bout -->. 
 Using voluntary contractions, peak values in total RNA were reported after nine sessions, followed by a slight decrease after 18 sessions [@RN1809].
-These data suggest that ribosomes accumulates with some delay from initiation of training, reaches a plateau in the early phase of resistance training (three weeks), and slightly decreases as muscle mass further increases
+These data suggest that ribosomes accumulate with some delay from initiation of training, reaches a plateau in the early phase of resistance training (three weeks), and slightly decreases as muscle mass further increases
 [@RN1809;
 @RN1520].
 
@@ -702,7 +705,7 @@ Satellite cells can be activated, proliferate or differentiate and fuse with the
 or mechanical stress
 [@RN2104],<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
 or return to their quiescent state
-[@RN2080]<!-- Blaauw 2014 review satellite cells and hypertrophy -->
+[@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
 In humans, satellite cells can be readily activated in response to resistance exercise. Activation that leads to them exiting their quiescent state to proliferate
 [@RN2872;<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr -->
 @RN1048;<!-- Snijders 2012 using DLK -->
@@ -712,8 +715,8 @@ which in turn leads to an increased number of satellite cells after resistance t
 
 A possible growth limiting role for satellite cells in the context of muscle hypertrophy is to maintain a fixed number of myonuclei per muscle fiber volume through myonuclear accretion, in order to maintain transcriptional capacity (a maintained myonuclear domain)
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-However, human studies does not necessarily such a role would be a determining factor for hypertrophy.
-Kadi *et al.* reported that although the number of satellite cells increased in response to training, the number of myonuclei did not, 
+However, human studies do not necessarily show that such a role would determine hypertrophy.
+Kadi *et al.* reported that although the number of satellite cells increased by resistance training, the number of myonuclei did not, 
 suggesting that existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
 [@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
 Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal increases in the myonuclei pool
@@ -727,7 +730,7 @@ This note is important as satellite cell responses to exercise are different bet
 [@RN2872].<!-- McKay significant age effects in satellite cell response to exercise and at baseline -->
 Indeed, in a different study using a similar clustering-approach as in [@RN2868] training did not result in differences in myonuclear addition between different response-clusters in a homogeneous sample in terms of age (and sex)
 [@RN2055].<!-- Mobley increase in numbers of satellite cell content and myonuclei but no differences between responder clusters -->
-A further argument against the idea of a determining role of myonuclear acreetion for resistance-training induced hypertrophy comes from studies in mice where initial muscle growth induced by synergist ablation is unaffected by specific depletion of satellite cells 
+A further argument against the idea of a determining role of myonuclear accretion for resistance-training induced hypertrophy comes from studies in mice where initial muscle growth induced by synergist ablation is unaffected by specific depletion of satellite cells 
 [@RN2864].
 
 In humans, the addition of myonuclei paralleled with an increase in global transcription rates from existing myonuclei are likely both contributing to accumulation of total RNA seen after resistance training.
@@ -771,7 +774,7 @@ Generally, these studies show that a bout of resistance exercise in the untraine
 [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
 @RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408
 @RN2299].<!-- Murton Exercise induced genes with no response in control group-->
-Long term adaptations generally involve extracellular matrix remodeling, changes in expression of genes related to energy metabolism
+Long-term adaptations generally involve extracellular matrix remodeling, changes in expression of genes related to energy metabolism
 [@RN2400;<!-- Robinson 2017 differences on common regulation between exercise types in you and old--> 
 @RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> 
 @RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
@@ -786,7 +789,7 @@ and muscle function
 
 Although these studies have broadened our understanding of transcriptional regulation during adaptations to resistance training, they also highlight the intrinsic difficulties of studying a dynamic and stochastic process
 [@RN2618].
-From a methodological point of view, skeletal muscle subjected to e.g. resistance training, exhibit large global changes to the RNA pool, and *qualitative* changes to RNA sub-populations (mRNA).
+From a methodological point of view, skeletal muscle subjected to resistance training, exhibit large global changes to the RNA pool, and *qualitative* changes to RNA sub-populations (mRNA).
 A common assumption in studies of gene expression is the relative stability of most transcripts, as well as a stability between sub-populations of RNA (mRNA vs. rRNA)
 [@RN2359;<!-- Loven 2012 et al  -->
 @RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
@@ -810,9 +813,9 @@ In summary, both quantitative and qualitative changes in transcriptional profile
 @RN2878]
 
 
-## Effects of exercise volume on molecular determinants of muscle growth
-Given that exercise-training variables can modify responses to resistance training such as muscle growth, it is reasonable to assume that these effects are mediated through muscle growth determinants, including protein synthesis rates and molecular transducers such as mTORC1.
-Exercise intensity has been evaluated concerning protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
+## Effects of resistance exercise volume on molecular determinants of muscle growth
+Given that resistance exercise variables can modify training responses such as muscle growth, it is reasonable to assume that these effects are mediated through muscle growth determinants, including protein synthesis rates and molecular transducers such as mTORC1.
+Resistance exercise intensity has been evaluated concerning protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
 Kumar *et al.* showed that maximal stimulation of fractional synthetic rate was achieved with intensities greater than 60\% of 1RM, coinciding with signaling events
 [@RN2720].<!-- Kumar 2009 increasing exercise intensities maximises post ex prot synthesis at 75% in young (plateau at 60-90% of 1RM)  -->
 The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal protein synthesis stimulation (75% of 1RM).
@@ -856,7 +859,7 @@ Interestingly, an increased AMPK-related signaling may be related to an accumula
 [@RN2857].<!--McKendry 2016 short interset rest leads to increased AMPK and coincides with reduced protein synthesis 0-5 h post exercise -->
 
 In addition to the signaling events described above, training-induced satellite cell activation has been shown to be volume dependent.
-Hanssen *et al.* found that training with three sets compared to a single-set per exercise led to a more pronounced increase in cells positive for the satellite cell marker CD56 in *m. vastus lateralis* at two and twelve weeks of resistance training [@RN796]. 
+Hanssen *et al.* found that training with three sets compared to a single set per exercise led to a more pronounced increase in cells positive for the satellite cell marker CD56 in *m. vastus lateralis* at two and twelve weeks of resistance training [@RN796]. 
 This coincided with a greater number of myonuclei after 12 weeks of training, although without apparent differences between volume conditions.
 In the same muscle specimen, no clear volume-dependent effect was seen on muscle fiber CSA. However, on the muscle level, a positive effect of three- compared to one-set was seen for muscle hypertrophy.
 [@RN796;

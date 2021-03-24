@@ -19,6 +19,51 @@
 #
 ## ------------------------------------
 
+source("./R/libraries.R")
+source("./R/themes.R")
+
+
+
+new_line_fun <- function(x){
+  
+  l <- sapply(strsplit(x, " "), length)
+  
+  if(l > 2){
+    
+    paste(paste(strsplit(x, " ")[[1]][1:2], collapse = " "), 
+          "<br>", 
+          paste(strsplit(x, " ")[[1]][3:l], collapse = " "), 
+          collaspe = "")
+    
+  } else {
+    x
+  }
+  
+}
+
+new_line_fun_n <- function(x){
+  
+  l <- sapply(strsplit(x, " "), length)
+  
+  if(l > 2){
+    
+    paste(paste(strsplit(x, " ")[[1]][1:2], collapse = " "), 
+          "\n", 
+          paste(strsplit(x, " ")[[1]][3:l], collapse = " "), 
+          collaspe = "")
+    
+  } else {
+    x
+  }
+  
+}
+
+
+firstup <- function(x) {
+  substr(x, 1, 1) <- toupper(substr(x, 1, 1))
+  x
+}
+
 
 
 ########### Gene set enrichement analysis ###############################
@@ -113,7 +158,7 @@ comb_data_w2pre <- comb_gsea %>%
         filter(cerno.p < 0.000001) %>%   ### Strict filter for plotting
         rowwise() %>%
         mutate(name = firstup(name), 
-               name = new_line_fun(name)) %>%
+               name = new_line_fun_n(name)) %>%
         ungroup() %>%
         mutate(ora = if_else(ID %in% ORAID, "Identified\nin ORA", "Not identified\nin ORA")) %>%
         mutate(go.cat = factor(go.cat, levels = c("bp", "cc", "mf"), 
@@ -131,7 +176,7 @@ comb_data_w2pre <- comb_gsea %>%
 sets_select <- comb_gsea %>%
         filter(coef == "timew2pre:setsmultiple", 
                model == "tissue_offset_lib_size_normalized",
-               cerno.p < 0.000000000000001) %>%
+               cerno.p < 0.0000000000000001) %>%
         pull(name)
 
 
@@ -156,7 +201,7 @@ top_go_week2 <- comb_gsea %>%
                                                 "tissue_offset_lib_size_normalized"), 
                               labels = c("Effective library size", 
                                          "Tissue offset"))) %>%
-        
+
         
         ggplot(aes(-log10(cerno.padj), reorder(name, -log10(cerno.padj)),
                    fill = model)) + 
@@ -166,7 +211,7 @@ top_go_week2 <- comb_gsea %>%
         
         labs(x = "Rank based enrichment test<br>(-Log<sub>10</sub> <i>P</i>-values)") +
         
-        geom_point(size = 4, shape = 21)  +
+        geom_point(size = 3, shape = 21)  +
         theme_bw() +
         theme(panel.grid = element_blank(), 
               panel.border = element_blank(), 
@@ -216,7 +261,7 @@ w2pre_tissue_bubble <-  comb_data_w2pre %>%
               legend.spacing.x = unit(0.2, 'cm'),
               legend.spacing.y = unit(0.3, 'cm'),
               legend.key.size = unit(0.2, "cm"),
-              strip.text.x = element_markdown(size = 8, face = "bold"),
+              strip.text.x = element_markdown(size = 7),
              legend.direction  = "horizontal",
              #legend.box = "horizontal",
              #legend.margin = margin(t = -0.5,r = -0.2,  b = 0, l = -0.3, unit = "pt"),

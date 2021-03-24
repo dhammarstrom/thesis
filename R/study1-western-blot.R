@@ -356,7 +356,7 @@ p.s6.fcfig <-  sets.fc %>%
          filter(target == "p.s6.tp") %>%
         
         mutate(sets = factor(sets,  levels = c("single", "multiple"), 
-                             labels = c("Single-set", "Multiple-sets"))) %>%
+                             labels = c("Low-volume", "Moderate-volume"))) %>%
         
          ggplot(aes(sets, fold.change, fill = sets)) + 
          geom_bar(stat = "identity", 
@@ -375,7 +375,7 @@ p.s6.fcfig <-  sets.fc %>%
          
          scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
          
-        labs(x = "Sets per exercise") +
+        labs(x = "") +
         
         
          theme_bw() +
@@ -517,7 +517,7 @@ fold_change_fig <- fold_changes_diffs %>%
 
         
 
-        labs(y = expression(paste(Delta, "Multiple-sets / ", Delta,  "Single-sets"))) + 
+        labs(y = expression(paste(Delta, "Moderate / ", Delta,  "Low"))) + 
         theme_bw() +
         theme(panel.grid = element_blank(), 
               panel.border = element_blank(), 
@@ -556,7 +556,7 @@ west.img <- ggdraw() + draw_image("./data/study-1/westernImages/signalling_conte
 
 western_fig <- plot_grid(west.img, fc_plot, 
                          labels = "auto", 
-                         rel_widths = c(0.8, 1))
+                         rel_widths = c(0.6, 1))
 
 
 
