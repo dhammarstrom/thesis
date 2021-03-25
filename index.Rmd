@@ -4,9 +4,9 @@ date: 'March 2021'
 year: '2021'
 isbn: 'Provided by the library'
 place: 'Stockholm'
-printedby: 'Printer service, Stockholm, 2021'
+printedby: 'Universitetsservice US-AB, Stockholm, 2021'
 coverinfo: ' '
-sernr: '999' # Add number in "Avhandlingsserie" 
+sernr: '18' # Add number in "Avhandlingsserie" 
 title: 'Determinants of intra-individual variation in adaptability to resistance training of different volumes'
 subtitle: 'Subtitle of my thesis' # currently not in use ##
 knit: "bookdown::render_book"

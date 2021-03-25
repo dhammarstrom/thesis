@@ -418,11 +418,16 @@ back_plot <- data.frame(x = c(0, 1), y = c(0, 1)) %>%
 
 fiber_type_insets <- ggdraw(back_plot) + 
         draw_plot(stacked_fibertypes_fig, 0, 0, 0.5, 1) + 
-        annotate("polygon", x = c(0.485, 0.485, 0.58, 0.58), y = c(0.1, 0.45, 0.95, 0.17), 
+        annotate("polygon", x = c(0.484, 0.484, 0.58, 0.58), y = c(0.12, 0.46, 0.95, 0.2), 
                  alpha = 0.1) +
           draw_plot(paired_plot_2x, 0.58, 0.15, 0.4, 0.8) +
+  
+  annotate("segment", 
+           x = c(0.727,0.769), xend = c(0.727,0.769), y = 0.21, yend = 0.16) +
+  
         annotate("text", 
-                 x = c(0.73,0.77), y = c(0.13,0.13), 
+                 x = c(0.73,0.77), y = c(0.11,0.11), 
+                 lineheight = 0.75,
                  label = c("Low-\nvolume", 
                            "Moderate-\nvolume"), 
                  color = c("black"),

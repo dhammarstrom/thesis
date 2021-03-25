@@ -121,8 +121,10 @@ interaction_effects <- complete_rrna_comp %>%
         labs(x = "Fold change compared to Control") +
         
         geom_vline(xintercept = 1, color = "gray85", lty = 2) +
-                geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0) + 
-        geom_point(shape = 24, fill = group.study.color[3]) +
+        
+    geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0, size = 0.3) + 
+        
+    geom_point(shape = 24, fill = group.study.color[3]) +
 
         facet_wrap(  comparison ~ .) +
         
@@ -180,7 +182,8 @@ fold_changes <- complete_rrna_comp %>%
         geom_errorbar(aes(ymin = lower.CL, 
                           ymax = upper.CL), 
                       position = position_dodge(width = 0.3), 
-                      width = 0) + 
+                      width = 0, 
+                      size = 0.3) + 
         
         geom_point(position = position_dodge(width = 0.3), shape = 21) +
         
@@ -195,13 +198,13 @@ fold_changes <- complete_rrna_comp %>%
         
         theme(strip.background = element_blank(), 
               strip.text = element_blank(), 
-              legend.position = "left", 
+              legend.position = "top", 
               legend.title = element_blank(),
               legend.text = element_text(size = 7, margin = margin(t = 1, b= 1,r = 0.1,l = 0.1, unit = "pt")),
               legend.key.size = unit(0, "cm"),
               legend.margin = margin(0.5, 0, 0.5, 0, "cm"),
               legend.spacing.x = unit(0.1, 'cm'),
-              legend.direction = "vertical",
+              legend.direction = "horizontal",
               axis.title.x = element_blank()) +
         
         facet_grid(target ~ .)
@@ -212,8 +215,8 @@ fold_changes <- complete_rrna_comp %>%
 
 
 
-rrna <- plot_grid(plot_grid(NULL, fold_changes, NULL, ncol = 1, rel_heights = c(0.05, 1, 0.065)),
-          interaction_effects, 
+rrna <- plot_grid(plot_grid(NULL, fold_changes, NULL, ncol = 1, rel_heights = c(0, 1, 0.065)),
+          plot_grid(NULL, interaction_effects, NULL, ncol = 1, rel_heights = c(0.1, 1, 0.01)),
           ncol = 2, rel_widths = c(0.5, 0.4))
 
 
@@ -249,7 +252,7 @@ tot_rna_interaction <- comp_rna %>%
         labs(x = "Fold change compared to Control") +
         
         geom_vline(xintercept = 1, color = "gray85", lty = 2) +
-         geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0) + 
+         geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0, size = 0.3) + 
         geom_point(shape = 24, fill = group.study.color[3]) +
        
         facet_wrap(  comparison ~ .) +
@@ -294,6 +297,7 @@ tot_rna_fold_change <- comp_rna %>%
         geom_errorbar(aes(ymin = lower.CL, 
                           ymax = upper.CL), 
                       position = position_dodge(width = 0.3), 
+                          size = 0.3,
                       width = 0) + 
         
         geom_point(position = position_dodge(width = 0.3), shape = 21) +
@@ -320,7 +324,7 @@ tot_rna <- plot_grid(NULL,
           
           tot_rna_interaction, 
           
-          ncol = 3, rel_widths = c(0.05, 0.5, 0.4))
+          ncol = 3, rel_widths = c(0.05, 0.4, 0.4))
 
 
 ### Combine all plots in training vs. control ###########

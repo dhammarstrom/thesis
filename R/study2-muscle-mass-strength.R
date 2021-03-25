@@ -113,7 +113,7 @@ comp_panel <- comp_strength %>%
                                    levels = c("post_con", 
                                               "post_int", 
                                               "post1w_int"), 
-                                   labels =c("Control-group", "Training-group\nS12", "Training-group\nDe-train")), 
+                                   labels =c("Control-\ngroup", "Training-\ngroup\nS12", "Training-\ngroup\nDe-train")), 
                type = factor(type, levels = c("isok", "isom"), 
                              labels = c("Isokinetic",
                                         "Isometric"))) %>%
@@ -162,7 +162,7 @@ comp_panel <- comp_strength %>%
                  color = "gray50",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
 
-        labs(y = expression(Delta*"Training - "*Delta*"Control")) +
+        labs(y = expression(atop("Torque", paste(Delta*"Training - "*Delta*"Control")))) +
         
        dissertation_theme() +
         
@@ -284,14 +284,14 @@ comp_panel <- comp_us %>%
                                    levels = c("post_con", 
                                               "post_int", 
                                               "post1w_int"), 
-                                   labels = c("Control-group", "Training-group\nS12", "Training-group\nDe-train"))) %>% 
+                                   labels =c("Control-\ngroup", "Training-\ngroup\nS12", "Training-\ngroup\nDe-train"))) %>% 
         
         ggplot(aes(time_group, estimate)) + 
         
         
         geom_hline(yintercept = 0, color = "gray90") +
         
-        geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0) + 
+        geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0, size = 0.4) + 
         geom_point(size = 2, shape = 24, fill = group.study.color[1]) + 
         
         scale_y_continuous(limits = c(-0.5, 2.5), 
@@ -299,7 +299,7 @@ comp_panel <- comp_us %>%
                            labels = c("",   0,  "", 1,  "", 2,  ""), 
                            expand = c(0, 0)) +
         
-        labs(y = expression(Delta*"Training - "*Delta*"Control")) +
+        labs(y = expression(atop("Muscle thickness", paste(Delta*"Training - "*Delta*"Control")))) +
         
         dissertation_theme() +
         

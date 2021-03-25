@@ -762,14 +762,14 @@ myhc_fig <- plot_grid(plot_grid(NULL, img, NULL, ncol = 3, rel_widths = c(0.2, 1
                                                     ncol = 1, 
                                                     align = "v",
                                                     rel_heights = c(0.5, 0.5)),
-                                          ncol = 3, rel_widths = c(0.4,0.05, 0.5)),
+                                          ncol = 3, rel_widths = c(0.5,0.05, 0.5)),
                   
                        myhc_fig_comps$fiber_type_insets, 
           ncol = 1, 
           rel_heights = c(0.6, 0.6, 0.6)) + 
   draw_plot_label(x = c(0.25,
-                   0.005, 0.45, 
-                   0.005), 
+                   0, 0.45, 
+                   0), 
              y = c(0.98, 
                    0.67, 0.67, 
                    0.36), 
@@ -1128,30 +1128,12 @@ unspecific_strength <- paste0("95% CrI: [",
 ```
 
 
-A meta-analysis was conducted to further explore potential factors associated with benefit of added training volume, interactions between study parameters such as age, sex, body-half,  and weekly number of sets (previously reported without interactions in Figure \@ref(fig:comb-fig-s1)). 
-
-The weekly number of sets did not interact with age, training status, or sex for either muscle mass or strength (interaction estimates are shown in Table \@ref(tab:meta-interaction-table)), indicating that the literature currently gives little support for such demographic variables to guide prescription regarding training volume.  
-
-In contrast to what has been previously reported
+A meta-analysis was conducted to further examine potential factors interacting with benefit of added training volume (previously reported without interactions in Figure \@ref(fig:comb-fig-s1)). Study parameters age, training status, sex, body portion, measurement technique and length of study were sequentially assessed for their interaction with training volume. The weekly number of sets did not interact with age, training status, or sex for either muscle mass or strength (interaction estimates are shown in Table \@ref(tab:meta-interaction-table)), indicating that the literature currently gives little support for such demographic variables to guide prescription of training volume.  
+For measures of muscle mass, in contrast to what has been previously reported
 [@RN1767],<!-- Schoenfeld meta -->
-the present analysis did not indicate any robust differences between unspecific (e.g. DXA) or specific (e.g. MRI or muscle thickness measured with ultrasound) muscle hypertrophy measures.
-However, specific assessment of muscle strength, e.g., measures of one repetition maximum in exercises used in the training program, consistently showed larger positive effects of additional volume (Table \@ref(tab:meta-interaction-table)).
-Unspecific assessments of muscle strength were shown not to reflect additional training volume (effect size change per one weekly additional set `r unspecific_strength`). This may indicate that specific motor learning is a factor influenced by training volume.
-
-A consistent finding between muscle mass and strength measures was the negative effect seen in upper- compared to the lower-body measures.
-These results suggest that adding a weekly set to upper-body programs will not robustly lead to increased strength measures (upper-body effect size change for every additional weekly set `r upper_body_strength`).
-The effect of an additional weekly set in the upper-body for measures of muscle mass was still positive (`r  upper_body_mass`) albeit lower when compared to the effect seen in the lower body (Table \@ref(tab:meta-interaction-table)).
-Together this indicates that muscles more active in every day activities will benefit to a greater extent by additional training volume, compared to upper-body muscles.
-Studies examining volume-dependence in molecular determinants to resistance-training adaptations between different muscle groups are limited.
-However, Hanssen *et al.* found different satellite cell activation between volume-conditions in *m. vastus lateralis* but not in *m. trapezius*, coinciding with volume-dependence in outcomes in lower- but not upper-body muscles
-[@RN796;
-@RN776].
-Whether satellite cells *per se* were responsible for this effect or if it represents a general inability of upper-body muscles to differentiate between two relatively strong stimuli remains to be explored.
-
-The study's length interacted differently in muscle mass and strength models where more extended training periods seemed to reduce the positive effect of added training volume on muscle mass, albeit likely to a negligible degree. However, strength outcomes were positively influenced by the training period's length (Table \@ref(tab:meta-interaction-table)). This may be an effect of different time courses in muscle mass and strength measures in response to resistance training.
-
-
-
+the present meta-analysis did not indicate any robust differences between unspecific (e.g. DXA) or specific (e.g. MRI or muscle thickness measured with ultrasound) muscle hypertrophy measures, indicated by an interaction effect containing the null-hypothesis (Table \@ref(tab:meta-interaction-table)).
+However, specific assessment of muscle strength, e.g., measures of one repetition maximum in exercises used in the training program, consistently gave greater benefit of additional volume (Table \@ref(tab:meta-interaction-table)).
+In fact, muscle strength assessed in exercises that were not used in training interventions (unspecific assessment), were shown not to reflect additional training volume (effect size change per one weekly additional set `r unspecific_strength` in unspecific exercises). This may indicate that specific motor learning is a factor influenced by training volume.
 
 ```{r meta-interaction-table, message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -1171,7 +1153,7 @@ summary_table_interactions %>%
                                 "Mixed sex vs. male", 
                                 "Upper-body vs. lower-body", 
                                 "Whole-body vs. lower-body", 
-                                "Unspecific vs. Specific estimation", 
+                                "Unspecific vs. Specific assessment", 
                                 "Weeks")), .) %>%
   mutate(m.est = as.character(m.est),
          s.est = as.character(s.est),
@@ -1216,13 +1198,28 @@ summary_table_interactions %>%
 
 ```
 
+A consistent finding between muscle mass and strength measures was the negative effect seen in upper- compared to the lower-body measures.
+These results suggest that adding a weekly set to upper-body programs will not robustly lead to increased strength measures (upper-body effect size change for every additional weekly set `r upper_body_strength`).
+The effect of an additional weekly set in the upper-body for measures of muscle mass was still positive (`r  upper_body_mass`) albeit lower when compared to the effect seen in the lower body (Table \@ref(tab:meta-interaction-table)).
+Together this indicates that there are differences between muscle groups. Muscles more active in every day activities, i.e. muscles in the lower extremities, will benefit to a greater extent from additional training volume, compared to upper-body muscles.
+Studies examining volume-dependence in molecular determinants to resistance-training adaptations between different muscle groups are limited.
+However, Hanssen *et al.* found different satellite cell activation between volume-conditions in *m. vastus lateralis* but not in *m. trapezius*, coinciding with volume-dependence in outcomes in lower- but not upper-body muscles
+[@RN796;
+@RN776].
+Whether satellite cells *per se* were responsible for this effect or if it represents a general inability of upper-body muscles to differentiate between two relatively strong stimuli remains to be explored.
+
+The duration of interventions interacted differently in measures of muscle mass and strength. More extended training periods seemed to reduce the positive effect of added training volume on muscle mass, albeit likely to a negligible degree. However, strength outcomes were positively influenced by the training period's length (Table \@ref(tab:meta-interaction-table)). This may be an effect of different time courses in muscle mass and strength measures in response to resistance training.
+
+
 
 
 
 ## Characteristics of early-phase training-induced ribosome biogenesis
 
-Study II aimed to further characterize early-phase total RNA accumulation in response to resistance training given its importance for subsequent adaptations, evident from analyses between- and within-participants.
-By utilizing a mixed design, Study II assessed the effect of resistance training *per se* when comparing a control group to a training group and variations in training volume in participants with different volume-protocols allocated to either leg (see figure \@ref(fig:study2-overview) for an overview). The training protocol resulted in increased muscle mass, measured as *m. vastus lateralis* muscle thickness, compared to the non-training control group (Figure \@ref(fig:study2-muscle-strength-mass)a). This increase coincided with an increase in strength, most pronounced when measured as isokinetic torque (Figure \@ref(fig:study2-muscle-strength-mass)b). The different training protocols (constant vs. variable volume) were analyzed together concerning muscle mass and strength increases, as they led to similar changes.
+Study II aimed to further characterize early-phase total RNA accumulation in muscle tissue in response to resistance training, given its likely importance for subsequent hypertrophy and muscle strength adaptations.
+By utilizing a mixed design, Study II assessed the effect of resistance training *per se* by comparing muscular responses in a training group with responses in a non-training negative control group. In the training group, variations in training volume were examined in participants with different volume-protocols allocated to either leg (see figure \@ref(fig:study2-overview) for an overview). Overall, the training protocol resulted in increased muscle mass, irrespective of volume condition, measured as *m. vastus lateralis* muscle thickness, compared to the non-training control group (Figure \@ref(fig:study2-muscle-strength-mass)a). This coincided with increased muscle strength, most pronounced when measured as isokinetic torque, but also evident in isometric torque (Figure \@ref(fig:study2-muscle-strength-mass)b).
+After the de-training period, muscle thickness and isokinetic strength changes in the training group were still greater than the control group but isometric strength was not robustly greater than the control condition.
+The different training protocols (constant vs. variable volume) led to similar changes across the whole study.
 These observations indicated the training program's efficacy in inducing changes to the neuro-muscular apparatus, specifically concerning muscle mass.
 
 ```{r study2-muscle-strength-mass, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Muscle mass and strength changes in Study II", fig.cap="Training induced changes in muscle mass (a) and strength (b) compared to non-training controls in Study II. Values in the training group are averaged over volume-conditions.", fig.height=3, fig.width=4.72, fig.align='center'}
@@ -1230,13 +1227,15 @@ These observations indicated the training program's efficacy in inducing changes
 ultra_sound_strength <- readRDS("./data/derivedData/study2-muscle-mass-strength/ultra_sound_strength.RDS")
 
 
+
 ultra_sound_strength +
   
-  draw_plot_label(x = c(0, 0), 
-             y = c(1, 0.5), 
+  draw_plot_label(x = c(0, 0.5), 
+             y = c(1, 1), 
              vjust = 1,
              hjust = 0,
              label = c("a", "b"))
+
 
 
 
@@ -1323,36 +1322,29 @@ twelth.session <- paste0(sprintf("%.1f", 100 * (exp(sessions$hypothesis[3,2]) - 
 
 ```
 
-Changes in muscle mass and strength were accompanied by a training-induced increase in total RNA per-unit-muscle weight. Compared to the control group, this was evident after twelve sessions (post-training, Figure \@ref(fig:study2-rrna-vs-ctrl)a).
-After the de-training period, total RNA decreased compared to after the twelfth session (`r detrain_rna`), although still on average elevated compared to baseline, it was not robustly different to the control group (de-training in Figure \@ref(fig:study2-rrna-vs-ctrl)a).
-The initial session induced rRNA transcription as 45/47S pre-rRNA increased compared to non-training controls (Session 1, Figure \@ref(fig:study2-rrna-vs-ctrl)b). This increase was still apparent after twelve sessions and then accompanied by greater mature rRNA levels (28S and 18S, Figure \@ref(fig:study2-rrna-vs-ctrl)b). After the period of de-training, pre-rRNA levels returned towards levels seen in the control group, but mature transcripts were still elevated in the training group compared to controls, suggesting a decreased *de novo* rRNA transcription (Post-training + de-training, Figure \@ref(fig:study2-rrna-vs-ctrl)b).
+In the training group, twelve resistance training sessions led to increases in total RNA per-unit-muscle weight. Compared to the control group, this was evident after twelve sessions (post-training, Figure \@ref(fig:study2-rrna-vs-ctrl)a).
+Increases were partially reversed after the de-training period (`r detrain_rna`), although still on average elevated compared to baseline, it was no longer robustly different to the control group (de-training in Figure \@ref(fig:study2-rrna-vs-ctrl)a).
+In line with the observed change in total RNA, the initial session induced rRNA transcription as 45/47S pre-rRNA increased compared to non-training controls (Session 1, Figure \@ref(fig:study2-rrna-vs-ctrl)b). This increase was still apparent after twelve sessions and then accompanied by greater mature rRNA levels (28S and 18S, Figure \@ref(fig:study2-rrna-vs-ctrl)b). After the period of de-training, pre-rRNA levels returned towards levels seen in the control group, but mature transcripts were still elevated in the training group compared to controls, suggesting a decreased *de novo* rRNA transcription (Post-training + de-training, Figure \@ref(fig:study2-rrna-vs-ctrl)b).
 
 Together with Study I and several others,
 <!--@RN2266<  Hortobagyi 2000 NO change in RNA per wet weight after immobilization or 12 weeks retraining low N-->
-[@RN2225;<!-- Haun 2019 used a progressive volume troughout a six week study study RNA increased during six weeks (12% week 3; 27% week 6 -->
-@RN2180;<!-- Haddad 2005 Unloading through limb suspension leads to lowered total RNA levels, resistance training increased --> 
-@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->
-@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr-->
-<!-- @RN2358;  Four sessions ~29 and 18 % in mod vs. low volume|31 sessions 18/12% young-->
-@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
-@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
-@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-@RN1897<!-- 11% 36 sessions young -->],
-Study II confirms that resistance training leads to RNA accumulation, following an increased *de novo* transcription and subsequent rRNA accumulation. After the eight-day de-training period, pre-rRNA levels' apparent normalization indicates that ribosomal biogenesis is coupled with up-stream stresses, such as resistance training. Such coupling is possibly due to the relative cellular expense associated with ribosomal biogenesis [@RN1920].
-To further test the hypothesis that ribosome biogenesis would reflect reduced/increased training stress, training volume was manipulated in one leg and held constant in the other in participants recruited to the training group.
-After four sessions performed with the same volume (six sets), the variable-volume leg trained four sessions with reduced volume (three sets) followed by four sessions with increased volume (nine sets). Small differences between volume conditions in 45S pre-rRNA levels at 48 hours after session twelve indicated that rRNA transcription was affected by the increased volume in the last block. However, this did not manifest in differences between volume conditions in total RNA or rRNA as they increased similarly in both conditions (Figure \@ref(fig:study2-rrna-volume-conditions)a and b). Together this indicates that although ribosomal biogenesis to some degree is controlled in an on-demand manner, fluctuations in training volume over a relatively short period ($\sim$ 1-2 weeks) after initial training performed with similar volume does not influence ribosomal accumulation to any meaningful extent.
+[@RN2225;<!-- Haun 2019 used a progressive volume troughout a six week study study RNA increased during six weeks (12% week 3; 27% week 6 -->@RN2180;<!-- Haddad 2005 Unloading through limb suspension leads to lowered total RNA levels, resistance training increased -->@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr--><!-- @RN2358;  Four sessions ~29 and 18 % in mod vs. low volume|31 sessions 18/12% young-->@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->@RN1897<!-- 11% 36 sessions young -->],
+Study II confirms that resistance training leads to RNA accumulation, likely driven by *de novo* transcription of rRNA. After the eight-day de-training period, the apparent normalization of pre-rRNA levels indicate that ribosomal biogenesis is coupled with up-stream stresses, such as resistance training. Such coupling is possibly due to the relative cellular expense associated with ribosomal biogenesis [@RN1920].
+To further test the hypothesis that ribosome biogenesis would be reflected by the degree of training-induced stress, training volume was manipulated in fluctuating manner in one leg and held constant in the other leg in participants in the training group.
+After the initial four sessions, which were conducted with the same volume (six sets), the variable-volume leg conducted four sessions with reduced volume (three sets), followed by four sessions with increased volume (nine sets). For 45S pre-rRNA this led to small differences between volume conditions at 48 hours after session twelve, indicating that rRNA transcription was affected by the increased volume in the last block.
+However, for total RNA and rRNA spices, this did not lead to differences between volume conditions as they increased similarly in both conditions (Figure \@ref(fig:study2-rrna-volume-conditions)a and b). Together this indicates that although ribosomal biogenesis to some degree is controlled in an on-demand manner, fluctuations in training volume over a relatively short period ($\sim$ 1-2 weeks) following an initial training period with similar volume does not influence ribosomal accumulation to any meaningful extent.
 However, it may also indicate that untrained individuals maximize rRNA transcription and RNA accumulation during initial sessions during a training program.
-Indeed, the training-associated increase in total RNA abundance occurred primarily during the first part of the intervention. In sessions, one to four, total RNA increased by `r slope0_4` per session, followed by attenuated accumulation from sessions four to eight (`r slope4_8` increase per session) and eight to twelve (`r slope8_12` increase per session). This increase corresponded to increases from baseline to 48 hours after session four, eight, and twelve, respectively, of `r fourth.session`, `r eight.session` and `r twelth.session`.
+Indeed, the training-associated increase in total RNA abundance occurred primarily during the first part of the intervention. In sessions one to four, when averaged over volume-conditions, total RNA increased by `r slope0_4` per session, followed by attenuated accumulation from sessions four to eight (`r slope4_8` increase per session) and eight to twelve (`r slope8_12` increase per session). This increase corresponded to relative increases from baseline to 48 hours after session four, eight, and twelve, respectively, of `r fourth.session`, `r eight.session` and `r twelth.session`.
 
-```{r study2-rrna-vs-ctrl, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "rRNA and total RNA changes in response to resistance training.", fig.cap="Resistance training led to increased rRNA (a) and total RNA (b) abundance per tissue weight. Conditions in the experimental group are presented together.", fig.height=6.5, fig.width=4.72, fig.align='center'}
+```{r study2-rrna-vs-ctrl, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA and rRNA changes in response to resistance training in Study II.", fig.cap="Resistance training led to increased total RNA (a) and rRNA (b) abundance per tissue weight measured after Sessions 1 and 12 and after eight days of de-training. Comparisons with the control group are presented in right panels. Values in the training group are averaged over volume conditions. Point estimates are displaed with 95\\% CrI.", fig.height=7, fig.width=4.72, fig.align='center'}
 
 
 rrna_totrna_vs_control <- readRDS("./data/derivedData/study2-rrna-analysis/rrna_totrna_vs_control.RDS")
 
 rrna_totrna_vs_control +
   
-  draw_plot_label(x = c(0.02, 0.1), 
-             y = c(0.99, 0.75), 
+  draw_plot_label(x = c(0.02, 0.02), 
+             y = c(0.99, 0.7), 
              vjust = 1,
              hjust = 0,
              label = c("a", "b"))
@@ -1360,15 +1352,18 @@ rrna_totrna_vs_control +
 
 ```
 
-Although ribosomal biogenesis is a well-known characteristic of resistance training, its true time-course has been speculative.
+Although ribosomal biogenesis is a well-known characteristic of resistance training, the time-course of rRNA accumulation after onset of such training has not been properly studied.
 Study II indicates that relatively few training sessions are needed to maximize total RNA per unit tissue weight.
-Together with Study I and others that have performed repeated biopsy sampling [@RN1809], this suggests that young males and females will reach peak training-induced values within four to nine sessions, followed by a plateau.
-Since the plateau phase occurred without a concomitant reduction in pre-rRNA levels, it may represent a dilution effect rather than decreased rRNA transcription. With increased muscle growth and cellular protein accretion, the ribosomal concentration is effectively balanced
+Together with data from Study I and other studies that have performed repeated biopsy sampling during a relatively short timeframe [@RN1809], this suggests that young males and females will reach peak training-induced values within four to nine sessions, followed by a plateau.
+Since the plateau phase occurred without a concomitant reduction in pre-rRNA levels, it may represent a dilution effect rather than decreased rRNA transcription, whereby ribosomal content is essentially stabilized by concomitant cellular growth and protein accretion
 [@RN2142]<!-- Figueiredo review details the concept of rna -->  
-Possibly, a progressive increase in training volume could abolish such a plateau-effect. Haun *et al.* induced increases in total RNA throughout six weeks of training in well-trained participants, presumably by continuously increasing training volume (from 2-4 to 8-12 sets per exercise). This observation suggests that a progressive volume may increase ribosomal abundance to a higher degree than constant-volume protocols.
+Possibly, a progressive increase in training volume could abolish such a plateau-effect.
+Indeed, Haun *et al.*
+[@RN2225]
+observed progressive increases in total RNA content in muscle throughout six weeks of resistance training in well-trained participants, presumably due to a continuous increase in training volume (from 2-4 to 8-12 sets per exercise). This observation suggests that a progressive increase in volume may increase ribosomal abundance to a higher degree than constant-volume protocols.
 However, the lack of a relevant control condition warrants more research.
 
-```{r study2-rrna-volume-conditions, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA (a) and rRNA (b) abundance in response to resistance training in variable- and constant-volume training conditions. Asterisk indicate robust difference between volume conditions.", fig.cap="Total RNA and rRNA abundance in response to training in Study II.", fig.height=6.5, fig.width=4, fig.align='center'}
+```{r study2-rrna-volume-conditions, echo=FALSE, warning=FALSE, message=FALSE, fig.cap = "Total RNA (a) and rRNA (b) abundance in response to resistance training in variable- and constant-volume training conditions. Asterisk indicate robust difference between volume conditions.", fig.scap="Total RNA and rRNA abundance in response to training in Study II.", fig.height=6.5, fig.width=4, fig.align='center'}
 
 rna_abundance_exp_group <- readRDS("./data/derivedData/study2-rrna-analysis/rna_abundance_exp_group.RDS")
 
@@ -1407,6 +1402,8 @@ comb.s6.m1 <- readRDS("./data/study-2/ubf-tot-rna-model/comb_m1_s6.RDS")
 
 
 comb.m1 <- readRDS("./data/study-2/ubf-tot-rna-model/comb_m1.RDS")
+
+
 
 comb.m1 <- summary(comb.m1)
 comb.s6.m1 <- summary(comb.s6.m1)
@@ -1478,25 +1475,25 @@ reg_results_s6 <-
   
 ```
 
-The general patterns seen in total RNA and mature rRNA in response to resistance training were also seen in ribosomal protein S6 (rpS6) and upstream binding factor (UBF) protein levels which both displayed increases after twelve training sessions, compared to non-training controls. After the de-training period, rpS6 levels were still elevated although not robustly greater than controls. However, UBF levels were measured above control levels
+The general patterns seen for total RNA and mature rRNA responses to resistance training in the present study coincided with pattern seen for rpS6 and upstream binding factor (UBF) protein levels. This was evident as increases of rpS6 and UBF after twelve training sessions compared to non-training controls, followed by partial reversal of rpS6 but maintained UBF levels after the de-training period
 (Figure \@ref(fig:study2-ubf-rps6-fig)a).
 Together, this indicates general coordination between training-induced synthesis of rpS6 and rRNA transcription and a potential role of increased UBF levels in maintaining an increased rRNA transcription.
-The associations between total RNA, rpS6, and UBF protein levels were analyzed to explore such coordination further. When controlling for time, UBF levels positively predicted RNA levels in the training group. For every unit increase in UBF (standard deviations), total RNA increased by `r ubf_cor_tot_rna`. No such relationship was found between RNA levels and rpS6 (Table \@ref(teb:ubf-rps6-regression-table)).
+The associations between total RNA, rpS6, and UBF protein levels were analyzed to explore such coordination further. When controlling for time, UBF levels positively predicted RNA levels in the training group. For every unit increase in UBF (standard deviations), total RNA increased by `r ubf_cor_tot_rna`. No such relationship was found between RNA levels and rpS6 (Table \@ref(tab:ubf-rps6-regression-table)).
 
 
-```{r study2-ubf-rps6-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "UBF and rpS6 protein in resposne to resistance training in Study II.", fig.cap="Ribosomal protein S6 (rpS6) upstream bindning factor (UBF) protein in response to resistance training in compared to non-training controls", fig.height=5, fig.width=4.72, fig.align='center'}
+```{r study2-ubf-rps6-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "UBF and rpS6 protein in resposne to resistance training in Study II.", fig.cap="Ribosomal protein S6 (rpS6) upstream bindning factor (UBF) protein in response to resistance training in compared to non-training controls (a). Values are estimated means with 95\\% CrI. A representative blot is shown in b.", fig.height=5, fig.width=4.72, fig.align='center'}
 
-protein_analyses <- readRDS("./data/derivedData/study2-protein-analyses/protein_analyses.RDS")
+protein_analyses_raw <- readRDS("./data/derivedData/study2-protein-analyses/protein_analyses.RDS")
 
 reps_west <-  ggdraw() + draw_image("./data/study-2/wetlab/western/representative_img/round2_gel4_annotated.png") 
 
 
 
 
-protein_analyses <- plot_grid(plot_grid(protein_analyses$prot_fold_change, 
-                                        protein_analyses$prot_interaction, 
+protein_analyses <- plot_grid(plot_grid(protein_analyses_raw$prot_fold_change, 
+                                        protein_analyses_raw$prot_interaction, 
                                         ncol = 2, 
-                                        rel_widths = c(0.5, 0.5)), 
+                                        rel_widths = c(0.7, 0.5)), 
           reps_west, ncol = 1, rel_heights = c(1, 0.7))
 
 
@@ -1513,40 +1510,42 @@ protein_analyses +
 ```
 
 
-Although resistance training led to a general increase in both rRNA and rpS6, the apparent disconnect in regression analyses suggests that regulation of rpS6 expression and ribosomal RNA transcription displays different temporal characteristics. Such disconnect may relate to different stability of ribosomal components or ribosomal proteins having extra-ribosomal functions affecting their expression
-[@RN2588].<!-- Warner 2009 General description of   -->  
-The relationship between UBF levels and total RNA underlines an essential role of UBF in ribosomal biogenesis. Mechanistically, UBF is needed for rRNA transcription, acting by recruiting secondary factors to the rDNA promoter and thereby enabling RNA Pol I controlled transcription
+Although resistance training led to a general increase in both rRNA and rpS6, the apparent disconnect in regression analyses suggests that regulation of rpS6 expression and ribosomal RNA transcription displays different temporal characteristics. This may relate to differing half-life among ribosomal components or ribosomal proteins having extra-ribosomal functions which in turn regulates their abundance
+[@RN2588].<!-- Warner 2009 General description of   -->
+The relationship between UBF levels and total RNA indicate that UBF abundance drives rRNA transcription and thus regulates ribosome biogenesis.
+Mechanistically, UBF is needed for rRNA transcription, acting by recruiting secondary factors to the rDNA promoter and thereby enabling RNA Pol-I controlled transcription
 [@RN2563].<!--Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
-mTORC1 controls activation and availability of UBF as its inhibition blocks rRNA transcription
-[@RN1632; <!-- Nader rapamycin block UBF availability  -->
-@RN2564].<!-- Hannan 2003 -->
-<!-- Hannan 2003 10.1128/MCB.23.23.8862-8877.2003 mTOR is believed to play a role in phosphorylating UBF leading to recruitment of SL-1. The effect of blockage of mTOR through rapamycin is not rescued by hypophosphorylated UBF -->
-In response to acute exercise, UBF activates through phosphorylation
-[@RN1746; <!-- Figueiredo 2016 cold water inhibits UBF activation and increase rRNA increase -->
-@RN1644].<!-- Figueriedo ubf increase total and active form (ser388) --> 
-However, mechanical loading also leads to increased levels of total UBF, an effect shown to be insensitive to mTORC1 inhibition 
+
+In line with data from the present study, mechanical loading has previously been shown to lead to increased levels of UBF protein, an effect believed to occur in a mTORC1-independent manner 
 [@RN1746; <!-- Figueiredo 2016 cold water inhibits UBF activation and increase rRNA increase -->
 @RN1644;
 @RN1072],<!-- Goodman 2011 UBF increase due to synergist ablation is rapamycin insensitive https://doi.org/10.1113/jphysiol.2011.218255 --> 
-but instead mediated by increased c-Myc-induced UBF mRNA transcription [@RN2565].<!-- Pootinga 2004 MAD1 and c-Myc controls UBF transcription UBF is required for c-Myc induced rDNA transcription -->
-In cell models, the availability of UBF *per se* has been shown to regulate rRNA transcription
-[@RN2566]<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->  by stimulating rDNA transcription
-[@RN2556].<!-- Sanij, UBF depleting leads to inactivation of rDNA genes -->
-Together with observations made in Study II, this suggests that training-induced increases in UBF contribute to rRNA accumulation *in vivo*.
+but instead mediated by increased c-Myc-induced UBF mRNA transcription [@RN2565].<!-- Pootinga 2004 MAD1 and -->
+Further corroborating data from the present study, the availability of UBF *per se* has been shown to regulate rRNA transcription in cell models by stimulating rDNA transcription
+[@RN2566;<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->@RN2556].<!-- Sanij, UBF depleting leads to inactivation of rDNA genes -->
+Together, this suggests that training-induced increases in UBF may contribute to rRNA accumulation *in vivo*.
+It should however be noted that UBF availability and activation is controlled partly through mTORC1, as its inhibition blocks rRNA transcription
+[@RN1632; <!-- Nader rapamycin block UBF availability  -->
+@RN2564].<!-- Hannan 2003 -->
+<!-- Hannan 2003 10.1128/MCB.23.23.8862-8877.2003 mTOR is believed to play a role in phosphorylating UBF leading to recruitment of SL-1. The effect of blockage of mTOR through rapamycin is not rescued by hypophosphorylated UBF -->
+Indeed, after acute exercise, UBF activates through phosphorylation
+[@RN1746; <!-- Figueiredo 2016 cold water inhibits UBF activation and increase rRNA increase -->
+@RN1644],<!-- Figueriedo ubf increase total and active form (ser388) -->
+indicating that acute exercise also modulates its activity.
 
 
 ### Resistance-training induced increase in total RNA predicts muscle growth
 
-As indicated in Study I, and previous studies, ribosome biogenesis is a determining process for resistance training-induced muscle growth
-[@RN1644;<!-- Figueriedo  -->
-@RN1897;
-@RN1755;
-@RN2055],<!-- Mobely Three groups, no clear group * time in RNA incrinteraction but 32 vs 8 % increase in high vs low responders, although correlation RNA incr with MT incr -->
+As indicated in Study I, and previous studies
+[@RN1644;<!-- Figueriedo  -->@RN1897;@RN1755;@RN2055],<!-- Mobely Three groups, no clear group * time in RNA incrinteraction but 32 vs 8 % increase in high vs low responders, although correlation RNA incr with MT incr -->
 <!-- Reidy correlation between total RNA and muscle hypertrophy-->
-To further explore this relationship, changes in total RNA abundance over the training period were estimated from each participant's leg (Figure \@ref(fig:study2-rna-muscle-thickness)c) and used to model muscle growth measured as increases in *m. vastus lateralis* thickness. There was a positive association between the magnitude of total RNA increase per session and muscle growth  (Figure \@ref(fig:study2-rna-muscle-thickness)a). This association was apparent when controlling for the average RNA abundance, expressed as the RNA level at Session 6 (estimated as the intercept-term in individual models). Conversely, when controlling for the increase in total RNA, total RNA abundance at Session 6 was negatively associated with muscle growth  (Figure \@ref(fig:study2-rna-muscle-thickness)b).
-The association between total RNA increase and muscle growth was robust as no single measurement within-participant nor any single participant changed the conclusion from the analysis (Figure \@ref(fig:study2-rna-muscle-thickness)d). Removing single observations or participants from the analysis did, however, lead to overlap between the 95\% CrI and the null-hypothesis (Figure \@ref(fig:study2-rna-muscle-thickness)d).
+ribosome biogenesis is a determining process for resistance training-induced muscle growth.
+To further explore this relationship in the data set of Study II, changes in total RNA abundance over the training period were estimated from each participant's leg (Figure \@ref(fig:study2-rna-muscle-thickness)c) and used for modeling muscle growth measured as increases in *m. vastus lateralis* thickness.
+There was a positive association between the magnitude of total RNA increase per session and muscle growth  (Figure \@ref(fig:study2-rna-muscle-thickness)a).
+This association was apparent after controlling for the estimated RNA content in muscle tissue, expressed as the RNA level at Session 6 (estimated as the intercept-term in individual models). Conversely, when controlling for the increase in total RNA, total RNA abundance at Session 6 was negatively associated with muscle growth  (Figure \@ref(fig:study2-rna-muscle-thickness)b).
+The association between total RNA increases and muscle growth was robust as no single measurement within-participant nor any single participant changed the conclusion from the analysis (Figure \@ref(fig:study2-rna-muscle-thickness)d). Removing single observations or participants from the analysis did, however, lead to overlap between the 95\% CrI and the null-hypothesis (Figure \@ref(fig:study2-rna-muscle-thickness)d).
 
-This analysis supports the view of ribosomal biogenesis as an determining factor for resistance training-induced muscle growth
+This analysis supports the view that ribosomal biogenesis is an determining factor behind resistance training-induced muscle growth
 [@RN1644;<!-- Figueriedo  -->
 @RN1897;
 @RN2055;<!-- Mobely Three groups, no clear group * time in RNA incrinteraction but 32 vs 8 % increase in high vs low responders, although correlation RNA incr with MT incr -->
@@ -1556,7 +1555,7 @@ However, the analysis suggests that the increase *per se* and not a fixed amount
 A higher level of total RNA mid-training was instead associated with lowered muscle growth when controlling for the increase in RNA.
 
 
-```{r study2-rna-muscle-thickness, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Relationship between total RNA and muscle hypertrophy in Study II", fig.cap="Muscle thickness increase predicted by total RNA increases and average total RNA abundance (a). Individual plots of estimates total RNA increases over time are shown in b together with results from leave-one-out analysis (c). Leave-one-out analysis shows the effect of removing a single participant (black point and error-bars) and individual values from the total RNA per time estimates where light-blue points represents bounds of the 95\\% CI and blue points represents mean estimates.", fig.height=7, fig.width=4.72, fig.align='center'}
+```{r study2-rna-muscle-thickness, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Relationship between total RNA and muscle hypertrophy in Study II", fig.cap="Muscle thickness increase in response to twelve sessions predicted by total RNA increases per session and average total RNA abundance at Session 6 (a). Individual plots of estimates total RNA increases per session are shown in b together with results from leave-one-out analyses (c). Leave-one-out analyses shows the effect of removing a single participant (black point and error-bars) and individual values from the total RNA per session estimates where light-blue points represents bounds of the 95\\% CI and blue points represents mean estimates.", fig.height=7, fig.width=4.72, fig.align='center'}
 
 tot_rna_muscle_thickness <- readRDS("./data/derivedData/study2-rna-muscle-mass-fig/tot_rna_muscle_thickness.RDS")
 
@@ -1564,33 +1563,30 @@ tot_rna_muscle_thickness
 
 ```
 
-## Limitations
+## Study limitations
 
 In Study I, a main objective was to determine differences in training outcomes and molecular markers between volume conditions. Therefore, the study is limited with respect to what conclusions can be drawn from time effects alone, as no non-training control group was included in the study. Conclusions regarding changes over time in, e.g., total RNA, gene expression, and strictly speaking, muscle growth and strength are limited in their strength of evidence. 
 In Study II, the use of a control group strengthens this aspect of the analyses. However, the number of biopsies was limited in the control group. The control group in Study II served the purpose of system validation but did not serve as a true control condition for training *per se*.
 
-In Study I, step-wise regression was used to select important variables relating to moderate-volume benefit. In addition to what was already discussed in previous sections, the analysis is limited concerning variables available for selection. Irrespective of the technique used for statistical analyses, the conclusion regarding the importance of total RNA is drawn when competing with the other available variables. From a cellular perspective, a plethora of potential determinants exists including, but not limited to,
+In Study I, step-wise regression was used to select important variables relating to moderate-volume benefit. In addition to what has been discussed in previous sections, this analysis was limited by the mere selection of variables. Irrespective of the technique used for statistical analyses, the conclusion regarding the importance of total RNA is drawn when competing with the other available variables. Thus, it cannot be excluded that other unmeasured variables would prove even more important.
+From a cellular perspective, a plethora of potential determinants exists, including, but not limited to,
 satellite cells [@RN2080],<!-- Blaauw -->
 Yes-associated protein [@RN1931] and <!-- Goodman  -->
-Myostatin and transforming growth factor-$\beta$ [@RN1619]
--related signaling. The availability of techniques in our lab to investigate these and other potential determinants limited analyses.
-Additionally, the study did not include detailed documentation of out-of-study habitual physical activity, and only a limited dietary registration was performed, both of which could have influenced the between-participant analysis.
+Myostatin- and transforming growth factor-$\beta$ [@RN1619]-related signaling. The limited availability of techniques in our lab for investigating these and other potential determinants limited analyses.
+Additionally, the study did not include detailed documentation of out-of-study lifestyle habits such as habitual physical activity and diet, both of which could have influenced the between-participant analysis.
 Lastly, by weighing variables against each other, one implicitly assumes that variables are measured with similar technical variability, which is likely a very optimistic assumption. 
 
-Ethical and practical reasons limit muscle biopsy sampling. In both studies, the choice of biopsy sampling time-points dictates the resolution of analyses. Biopsies sampled one hour after the fifth session in Study I likely did not provide reliable information regarding acute changes in gene expression in response to low- and moderate-volume exercise. Similarly, biopsies obtained at rest in Study II limited the investigation in terms of acute signaling events. 
+For ethical and practical reasons, the number of biopsy sampling events were minimized. In both studies, the choice of biopsy sampling time-points dictates the resolution of analyses. In Study I, biopsies sampled one hour after the fifth session in Study I likely did not provide reliable information regarding acute changes in gene expression in response to low- and moderate-volume exercise. Similarly, in Study II, biopsies obtained at rest limited the investigation in terms of acute signaling events such as related to mTORC1 or UBF activation. 
 
 The use of total RNA as a proxy marker of ribosomal abundance is widely accepted
-[@RN2142;
-@RN1757;
-@RN1654;
-@RN2150].
-Indeed, we find general agreement between total RNA and targeted analysis of ribosomal RNA using qPCR, at least in the initial phase of the interventions. However, the apparent disconnect between mRNA and total-RNA pools and the tendency of discrepancies between volume conditions in total RNA and rRNA abundance after twelve weeks of training in Study I warrants further examination as it suggests that sub-populations of RNA may vary independently from each other. Although the assumption regarding total RNA likely holds in the initial phase of the programs examined, it should have been confirmed to strengthen conclusions from both studies.
+[@RN2142;@RN1757;@RN1654;@RN2150].
+Indeed, the present data reveal agreement between total RNA and targeted analysis of ribosomal RNA using qPCR, at least during the initial phase of the interventions. However, the apparent disconnect between mRNA and total-RNA pools and the tendency of discrepancies between volume conditions in total RNA and rRNA abundance after twelve weeks of training in Study I warrants further examination, as it suggests that sub-populations of RNA may vary independently from each other. Although the assumption that total RNA represents ribosomal abundance likely holds in the initial phase of the programs examined, it should have been confirmed to strengthen conclusions from both studies.
 
 ## Future directions
 
-The importance of early-phase RNA accumulation was highlighted in both studies presented in this thesis. Future studies that aim to investigate *in vivo* ribosomal biogenesis in response to resistance training should take advantage of the fact that a limited number of training sessions are needed to reach maximal accumulation of total RNA (and thus presumably ribosome abundance). Further use of within-participant designs could also investigate the etiology of inter-individual differences in ribosomal biogenesis. Constant-volume protocols may, in this respect, represent a fruitful model to investigate such differences. Given that training volume likely is the most important variable concerning resistance training dose-response, within-participant models with differentiated volume allocated to either limb could be used to study if, e.g., age-related anabolic resistance is related to impaired sensitivity to the training stimuli.
+The importance of early-phase RNA accumulation for training-induced muscle hypertrophy and strength gains was highlighted in both studies presented in this thesis. Future studies that aim to investigate *in vivo* ribosomal biogenesis in response to resistance training should take advantage of the fact that a limited number of training sessions are needed to reach maximal accumulation of total RNA (and thus presumably ribosome abundance). Further use of within-participant designs is also advisable, as it allows investigation of the etiology of inter-individual differences in ribosomal biogenesis. Constant-volume protocols may, in this respect, represent a fruitful model to investigate such differences. Given that training volume likely is the most important exercise variable, governing resistance training dose-response, within-participant models with differentiated volume allocated to either limb could be used to study if, e.g., age-related anabolic resistance is related to impaired sensitivity to the training stimuli.
 
-Although constant volume protocol may prove useful in controlled mechanistic studies, the use of progressive-volume protocols should be evaluated for their use in clinical settings. Ever since the days of DeLorme (see Background), progressive resistance training has been progressive with regard to absolute intensity. However, the use of a fixed training volume could be less effective as too much training volume initially may interfere with adaptations. Additionally, since there is little support for any diagnostic criteria for selecting initial training volume, evident from both Study I and the meta-analysis, progression of volume in short-term (1-3 months) training interventions could circumvent this issue.
+Although constant volume protocol may prove useful in controlled mechanistic studies, the use of progressive-volume protocols should be evaluated for their use in clinical settings. Ever since the days of DeLorme (see Background), progressive resistance training has been progressive with regard to absolute intensity. However, the use of a fixed training volume could be less effective, as too much training volume during the initial phase of the training period may interfere with adaptations. Additionally, since there is little support for any diagnostic criteria for selecting an individualized training volume, evident from both Study I and the meta-analysis, progression of volume in short-term (1-3 months) training interventions could circumvent this issue.
 
 
 

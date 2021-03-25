@@ -4,22 +4,14 @@ editor_options:
   chunk_output_type: console
 ---
 # Methodological considerations {#methodological-considerations}
-<!--
-## Within-participant study designs
 
-The use of unilateral exercise in resistance training studies gives the advantage of a more efficient experiment. When comparisons are made within participants, less participants and resources are needed to estimate differences between two training-conditions with a given precision
-[@RN1896].<!-- MacInnis 2017 -->
-This increased efficiency is due to the fact that between-participant variation can be removed from estimates of variability that in turn influence inference.
-The contralateral model can be extended by utilizing a mixed design where additional conditions are allocated to  participants   
--->
-      
 ## Reliability of micro-biopsy sampling
 
-The micro biopsy technique used in works presented in this thesis generally produces smaller samples than other biopsy techniques [@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus
+The micro biopsy technique used in the studies presented in this thesis generally produces smaller samples than other biopsy techniques [@RN2549]<!--Ekblom describes the Bergström and conchotome -->, and thus
 requires several passes to produce sufficient material for multiple
 downstream experiments. However, reports confirms that the micro-biopsy
 technique is comparable to the traditionally used Bergström technique in
-several measures of muscle characteristics at the same time as being
+several measures of muscle characteristics at the same time as being much less invasive and
 well-tolerated [@RN824; @RN2553].
 Any reported differences in fiber type distributions between sampling techniques have been suggested to be related to differences in sampling depth [@RN2553; @RN2552].<!-- Hayot -->
 Thus, any biopsy technique's reproducibility may relate to its ability to obtain sufficient material at similar depths between samples.
@@ -163,25 +155,21 @@ between_duplicates <-  read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>
 ```
 
 In Study I, one or several pieces of muscle (total weight
-$\sim$\SI{15}{mg}) were chosen per sampling for analysis of fiber type
-composition. The average total number of counted fibers per sample was `r round(average_n_fibers, 0)`.
+$\sim$\SI{15}{mg}) were chosen for analyses of muscle fiber type composition per musce biopsy sampling event. The average total number of counted fibers per sample was `r round(average_n_fibers, 0)`.
 Only a small percentage (`r low_fiber_counts[2,3]`\%) of samples did not contain enough fibers for representative analysis of fiber type composition (> 200 fibers),
 [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
-and as many as 1400 fibers were counted in some specimens (\@ref(fig:fiber-methods-fig)a).
+and as many as in some specimen 1400 fibers were counted (\@ref(fig:fiber-methods-fig)a).
 The smaller amount of tissue obtained using the micro-biopsy technique did not limit fiber type composition analyses.
 
 In order to assess the reproducibility of the technique, samples obtained during the same day (separated by $\sim$ 2 hours) were analyzed as duplicate samples. 
-Similar to Blomstrand *et al.* [@RN874], standard deviations from duplicate measures were calculated as 
-
+Similar to Blomstrand *et al.* [@RN874], standard deviations from duplicate measures were calculated as:
 $$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
-
 Where $d$ is the difference between paired observations and $n$ is the number of pairs.
 The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
-This did only marginally differ from between leg variations (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
-These estimates are slightly lower than those reported by Blomstrand *et al.*, using the Bergström needle
-[@RN874].<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions --> This suggests that the micro-biopsy technique is reproducible in terms fiber type composition.
+This resembled variations between leg (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
+These estimates of variation are slightly lower than those reported by Blomstrand *et al.* [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->, using the Bergström needle, and suggest that the micro-biopsy technique provides reproducible in analyses of fiber type composition in young adults.
 
-```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 6, fig.align='center'}
+```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 5, fig.align='center'}
 
 
 
@@ -311,19 +299,16 @@ fiber_type_rel_plot <- plot_grid( plot_grid(NULL, total_histogram, NULL, ncol = 
 fiber_type_rel_plot
 ```
 
-
-
-
 ## Model-based normalization of qPCR data
 
 Quantitative reverse-transcription real-time polymerase chain-reaction (qPCR) is the method of choice for conducting targeted gene-expression studies.
-After reverse-transcription of RNA, complementary DNA (cDNA) is amplified in the presence of target-specific primers and a reporter probe or dye that produces fluorescence as the PCR product accumulates over repeated PCR cycles. When enough product has formed, the fluorescent signal rises above background fluorescence, and the fractional PCR cycle used for quantification (Cq) can be estimated. The Cq-values is directly proportional to the starting amount of the targeted transcript and thus constitute the primary outcome of qPCR experiments
+After reverse-transcription of RNA, complementary DNA (cDNA) is amplified in the presence of target-specific primers and a reporter probe or dye that produces fluorescence as the PCR product accumulates over repeated PCR cycles. When sufficient amounts of product has formed, the fluorescent signal rises above the background fluorescence, and the fractional PCR cycle used for quantification (Cq) can be estimated. The Cq-values is directly proportional to the starting amount of the targeted transcript and thus constitute the primary outcome of qPCR experiments
 [@RN2099].
-qPCR experiments should ideally be designed to account for methodological pitfalls, including amounts of RNA utilized for reverse-transcription, its efficiency, and the amount of cDNA used in PCR amplification.
-As traditional statistical treatment of qPCR data accounts for these challenges through the use of a reference-gene [@RN2100; @RN2101], the stable expression of such a gene is an important assumption in the experiment.
-Using an internal control-factor comprised of the geometric average of multiple reference-genes has been shown to increase this assumption's validity [@RN991].
-However, the stability of potential reference genes must be determined in each experiment [@RN1983; @RN991], highlighting that qPCR is inevitably challenging, specific to the system under study.
-This challenge may be why many recent investigations into human skeletal muscle in response to exercise reported using a single-reference gene, validated or non-validated for normalization, despite the recommended use of a validated set of reference genes [@RN1985; @RN2083; @RN2084; @RN2086; @RN2087].
+qPCR experiments should ideally be designed to account for methodological pitfalls, including amounts of RNA utilized for reverse-transcription, the efficiency of cDNA synthesis, and the amount of cDNA used in PCR amplification.
+As traditional statistical treatment of qPCR data accounts for these challenges through the use of reference genes [@RN2100; @RN2101], the stable expression of such a gene is an important assumption in the experiment.
+Using an internal control-factor comprised of the geometric average of multiple reference-genes has been shown to increase the validity of this assumption [@RN991].
+However, the stability of potential reference genes must be determined in each experiment [@RN1983; @RN991], highlighting that qPCR is inevitably challenging, with specific challanges being posed by the biological system under study.
+Despite this, recent investigation of human skeletal muscle in responses to exercise reported using a single-reference gene, validated or non-validated for normalization, despite the recommended use of a validated set of reference genes [@RN1985; @RN2083; @RN2084; @RN2086; @RN2087].
 <!-- Recent studies using single reference genes -->
 <!-- Only GAPDH in  [@RN2083] -->
 <!-- only GAPDH in  [@RN2084]  validated in  [@RN2085] -->
@@ -333,19 +318,19 @@ This challenge may be why many recent investigations into human skeletal muscle 
 
 Several methods have been proposed to select a suitable set of references genes, out of which geNorm [@RN991] and Normfinder [@RN1772] are the two most common approaches. 
 The geNorm algorithm assesses reference-gene stability through an iterative calculation of pairwise expression-ratios where the least stable gene, i.e., the gene that varies the most relative to other genes across all samples, is removed in each iteration, resulting in a set of at least two genes that exhibit the least pairwise variation [@RN991].
-As no information about the study design can be incorporated in geNorm, a potential pitfall is a variable expression of potential reference genes across experimental groups or conditions [@RN1772].
+As no information about the study design can be incorporated into geNorm, a potential pitfall is a variable expression of potential reference genes across experimental groups or conditions [@RN1772].
 The Normfinder algorithm utilizes a linear model to determine variation in reference-gene expression as deviations from an assumed stable expression.
-Normfinder can include a grouping factor, resulting in a stability measure that combines variation within and between groups for each gene.
+During Normfinder analyses a grouping factor can be included, resulting in a stability measure that combines variation within and between groups for each gene.
 This inclusion does not, however, relax the assumption of no *systematic* variation across experimental conditions [@RN1772].
 
-As many experiments performed in exercise-physiology, especially related to muscle, are conducted as repeated measurement studies, where the same participants are investigated over time, the question regarding reference-gene stability may be slightly rephrased. Instead of searching for the most stable gene across the whole data set, we may want to assess a set of genes' stability within each participant.
+As many experiments performed in exercise physiology, especially related to muscle, are conducted as repeated measurement studies, where the same participants are investigated over time, the question regarding reference-gene stability may be slightly rephrased. Instead of searching for the most stable gene across the whole data set, we may want to assess a set of genes' stability within each participant.
 Dai and co-workers [@RN1771] suggested the utilization of a mixed-effects model-based selection algorithm.
 First, the algorithm determines whether variation in expression of a potential set of reference-genes depends on experimental conditions.
 Then, it determines the expression stability of gene-sets through the intra-class correlation within data clusters, e.g., study participants, where gene expression is to be monitored over repeated measures.
 Such a mixed-effect model approach accounts for and takes advantage of correlated measures.
 The proposed algorithm can also capture complex experimental designs and confirm that potential genes are not systematically affected by conditions studied. 
 
-To assess the stability of potential reference genes in Study I, 11 genes were evaluated (Figure \@ref(fig:ref-gene-comp)a). All three selection algorithms suggested different reference genes (Figure \@ref(fig:ref-gene-comp)b). The mixed-model approach resulted in a set of genes that showed the least systematic variation across study conditions. Figure \@ref(fig:ref-gene-comp)c shows coefficients with 95\% CI from mixed models with each normalization factor as the dependent variable. The naive use of a single reference-gene would result in the largest deviation from the assumption of a stable reference over time, as GAPDH is expressed to a lesser degree before exercise at Week 2 compared to baseline. However, when comparing between conditions, normalization factors suggested by geNorm and Normfinder both showed differentiated levels between conditions before exercise at Week 2 (Figure \@ref(fig:ref-gene-comp)c). These results underline that bias can be introduced in qPCR experiments from the choice of normalization factor. The use of a selection algorithm that tests explicitly for stability within participants may provide a more robust normalization factor.
+In Study I, to assess the stability of potential reference genes, 11 genes were evaluated (Figure \@ref(fig:ref-gene-comp)a). All three selection algorithms suggested different reference genes (Figure \@ref(fig:ref-gene-comp)b). The mixed-model approach resulted in a set of genes that showed the least systematic variation across study conditions. Figure \@ref(fig:ref-gene-comp)c shows coefficients with 95\% CI from mixed models with each normalization factor as the dependent variable. The naive use of the commonly utilized GAPDH as a single reference gene would result in the largest deviation from the assumption of a stable reference over time, as it was expressed to a lesser degree before exercise at Week 2 compared to baseline. However, when comparing between conditions, normalization factors suggested by geNorm and Normfinder both showed differentiated levels between conditions before exercise at Week 2 indicating that they were unsuited for use as reference (Figure \@ref(fig:ref-gene-comp)c). These results underline that bias can be introduced in qPCR experiments from the choice of normalization factor. The use of a selection algorithm that tests explicitly for stability within participants may provide a more robust normalization factor.
 
 
 ```{r ref-gene-comp, fig.cap="Variation in normaliation factors determined by mixed-model selection, Normfinder and geNorm as well as comprised of a single-gene (GAPDH) for comparison (a). Estimates from mixed-effects regression-models for each normalization factor (b). Errorbars represent 95\\% confidence intervals.", fig.scap="Reference gene selection in Study I", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height = 6, fig.align='center'}
@@ -380,14 +365,14 @@ Modifications to the design of the qPCR experiment were suggested by Steibel and
 Technical variation was modeled as random effects of two or more technical replicates.
 In this approach, all target genes are modeled together as a set, and the effect of experimental conditions are evaluated from the model for each gene-of-interest.
 When utilizing a linear mixed-effects model, as suggested by Steibel *et al.* [@RN1154], assumptions are made that errors are normally distributed, and variance is equal over the range of the data (homoscedasticity). 
-This assumption can be problematic when dealing with low-abundance genes as the variation increases when few target molecules are amplified [@RN1964].
+This assumption can be problematic when dealing with low-abundance genes, as the variation increases when few target molecules are amplified [@RN1964].
 Such model assumptions can be checked and delt with using appropriate statistical methods allowing for heterogeneous variance [@RN1986].
-Further extending the concept described by Steibel *et al.*  [@RN1154], Matz and co-workers proposed modeling transcript abundance with a Poisson-lognormal generalized linear mixed-model [@RN1964]. This model enables one to account for the specific characteristics of qPCR data, including no amplification (zero target molecules) and heteroscedasticity, i.e., larger variance due to low-abundance starting material.
+Further extending the concept described by Steibel *et al.*  [@RN1154], Matz and co-workers [@RN1964] proposed modeling transcript abundance with a Poisson-lognormal generalized linear mixed-model. This model enables one to account for the specific characteristics of qPCR data, including no amplification (zero target molecules) and heteroscedasticity, i.e., larger variance due to low-abundance starting material.
 Matz *et al.*  also suggested that the random-effects structure would provide sufficient within-model normalization [@RN1964].
 
 As suggested by Steibel *et al.* and Matz *et al.*, the use of model-based normalization represents a promising alternative in situations where the appropriate validation of reference genes is not feasible.
 However, the implementation of such analysis comes with a new set of assumptions.
-First, if a study condition systematically leads to lower amounts or quality of cDNA due to, e.g., RNA degradation, a random effect structure will not account for this but instead result in estimates of lower expression of all genes in these samples. In such case, the use of internal reference genes will yield different results as the internal control will also be affected by RNA degradation
+First, if a study condition systematically leads to lower amounts or quality of cDNA due to e.g. RNA degradation, a random effect structure will not account for this but instead result in estimates of lower expression for all genes in such samples. In such case, the use of internal reference genes will yield different results as the internal control will also be affected by RNA degradation
 [@RN1964].
 This fact leads to the assumption in a model-based normalization strategy that variations in cDNA quantity or quality between samples are randomly distributed.
 Additional assumptions revolve around the choice of statistical model.
@@ -537,10 +522,10 @@ simulation_results
 ```
 
 
-## Increased relevance of RNA-seq data through data-driven selection of 
+## Increased relevance of RNA-sequencing data through data-driven selection of analysis tools 
 
 Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments requires the use of a multitude of bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that a combination of tools are validated for specific study conditions [@RN2426]<!-- Conesa 2016 pipelines need to be adopted to study specific conditions-->
-To improve the interpretability of the RNA sequencing data obtained from Study I, we sought to compare mapping tools for their validity. As a first step, we utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA counts to protein levels. Myosin heavy-chains are well suited for this purpose as their mRNA and protein levels are known to correlate
+To improve the interpretability of the RNA sequencing data obtained from Study I, we sought to compare mapping tools for their validity. As a first step, we utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA counts to protein levels. Myosin heavy-chains are well suited for this purpose as their mRNA and protein levels are known to correlate in steady state conditions
 [@RN2444; <!-- Serrano Correlation between mRNA and prot abundance MyHC -->
 @RN1489; <!-- Ellefsen Reliable determination of myosin heavy chain -->
 @RN2445].<!-- Marx 2002 correlations were observed between the isoform expression of different MyHCs at the protein and mRNA-->
@@ -553,11 +538,6 @@ kallisto [@RN2389]<!-- Bray kallisto --> and Salmon [@RN2390])
 resulted in stronger correlations between mRNA and protein profiles than genome-based mapping tools
 (STAR [@RN2386]<!-- Dobin STAR -->
 and  HISAT2 [@RN2385]; Figure \@ref(fig:rna-seq-myhc-validation)).
-A second analysis utilized the within-participant design of the study. With the assumption that paired observations between legs, before the intervention would result in similar expression profiles if read mappings were more accurate, we determined the pairwise Log\textsubscript{2}-differences of a set of genes with known robust expression across tissues [@RN1759].<!-- Eisenberg housekeeping -->
-Across the whole range of transcript abundances (Average Log\textsubscript{2}-count), RSEM displayed smaller differences between pairwise observations, indicating less technical variation. RSEM differed marginally from other transcript-based tools but to a larger degree to genome-based tools (Figure \@ref(fig:rna-seq-pairwise-validation)).
-
-Mapping tools were used with default settings which leaves room for further optimization of each tool. However, selecting tools with default settings should provide a heuristic solution to the problem of optimizing an analytic pipeline. Taken together, these observations highlight that RNA sequencing experiments can be improved in terms of biological validity by systematic evaluation of analytic tools.  
-
 
 ```{r rna-seq-myhc-validation, fig.cap="Validation of mapping tools using mRNA to protein correlations of myosin heavy-chain genes", fig.scap="Correlations between gene-family normalized protein and gene data from different mRNA quantification methods.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height=7, fig.align='center'}
 
@@ -566,6 +546,11 @@ myhc_rnaseq_fig <- readRDS("./data/derivedData/study1-myhc-rnaseq-validation/myh
 myhc_rnaseq_fig
 
 ```
+
+A second analysis took advantage of the within-participant design of the study, whereby the assumption was that paired observations between legs, measured before the intervention would result in similar expression profiles if read mappings were more accurate. The pairwise Log\textsubscript{2}-differences were determined of a set of genes with known robust expression across tissues [@RN1759].<!-- Eisenberg housekeeping -->
+Across the whole range of transcript abundances (Average Log\textsubscript{2}-count), RSEM displayed smaller differences between pairwise observations, indicating less technical variation. RSEM differed marginally from other transcript-based tools but to a larger degree to genome-based tools (Figure \@ref(fig:rna-seq-pairwise-validation)).
+
+Mapping tools were used with default settings, which leaves room for further optimization of each tool. However, selecting tools with default settings should provide a heuristic solution to the problem of optimizing an analytic pipeline. Taken together, these observations highlight that RNA sequencing experiments can be improved in terms of biological validity by systematic evaluation of analytic tools.  
 
 
 

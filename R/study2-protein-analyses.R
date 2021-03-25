@@ -87,7 +87,7 @@ prot_fold_change <- tx_results_western %>%
                                                 "int_train", 
                                                 "int_detrain"), 
                               labels = c("Control", "Training", 
-                                         "Training + de-training"))) %>%
+                                         "Training\n+de-training"))) %>%
         
         ggplot(aes(time, Estimate, fill = group)) + 
         
@@ -95,7 +95,8 @@ prot_fold_change <- tx_results_western %>%
         geom_hline(yintercept = 1, lty = 2, color = "gray80") +
         
         geom_errorbar(aes(ymin = CI.Lower, ymax = CI.Upper), 
-                      position = position_dodge(width = 0.2), 
+                      position = position_dodge(width = 0.2),
+                      size = 0.3,
                       width = 0) +
         geom_point(position = position_dodge(width = 0.2), shape = 21) + 
         
@@ -139,7 +140,7 @@ prot_interaction <- tx_results_western %>%
         labs(x = "Fold change\ncompared to Control") +
         
         geom_vline(xintercept = 1, color = "gray50", lty = 2) +
-                geom_errorbarh(aes(xmin = CI.Lower, xmax = CI.Upper), height = 0.2) + 
+        geom_errorbarh(aes(xmin = CI.Lower, xmax = CI.Upper), height = 0, size = 0.3) + 
         geom_point(shape = 24, fill = group.study.color[3]) +
 
         facet_wrap( ~ target, ncol = 1, strip.position = "top") +
@@ -159,8 +160,6 @@ prot_interaction <- tx_results_western %>%
 
 
 ### Insert image of western blotting  
-
-
 
 
 

@@ -356,7 +356,7 @@
 \@restonecolfalse
 \fi
 \chapter*{Preface}
-\fontsize{12}{14}\selectfont
+\fontsize{10}{12}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 % End of CII add
 
