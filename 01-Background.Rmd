@@ -40,23 +40,16 @@ DeLorme initially prescribed sessions of up to 100 repetitions performed in sets
 [@RN2641]. <!-- DeLorme 1948 Technics of progressive resistance exercise -->
 
 Scientific inquiries into the prescription of resistance training from the first part of the twentieth century were mainly focused on its therapeutic use
-[e.g. @RN2633;<!-- DeLorme case report -->
-@RN2646],<!-- DeLorme controlled trial of RT vs. traditional conservative (low-resistance) treatment -->
+[e.g. @RN2633;@RN2646],<!-- DeLorme case report --><!-- DeLorme controlled trial of RT vs. traditional conservative (low-resistance) treatment -->
 but were also evaluated in the context of improving strength and physical performance in healthy populations
 [e.g. @RN2632;<!-- 1946 Houtz 16 untrained females increased strength over 4 weeks follwing DeLormes system -->
 @RN2644; <!-- Chui 1950 Effect of strength training vs. control on physical performance in college stud -->
 @RN2642]. <!-- Capen 1950 Effect of strength training in college stud.   -->
 Scientific contributions soon moved from questions regarding the effectiveness of resistance training *per se* to comparing outcomes of different modes of resistance training 
-[@RN2645;<!-- Hettinger 1953 comparing different loading patterns for isometric RT--> 
-@RN1477;<!-- Capen 1956 Four different variations on the DeLorme system -->
-@RN1472;<!-- Berger 1962 effect of varied weight training program on strength -->
-@RN2659;<!-- Berger 1965 Increased %of 1RM increases strength gains -->
-@RN2658;<!-- Berger 1967 Supra-maximal efforts (max of each rep) more efficient than 10RM loads   -->
-@RN2656].<!-- O'Shea 1966 3 sets of 10, 5 or 3 reps on muscle strength and girth squat -->
+[@RN2645;@RN1477;@RN1472;@RN2659;@RN2658;@RN2656].<!-- Hettinger 1953 comparing different loading patterns for isometric RT--><!-- Capen 1956 Four different variations on the DeLorme system --><!-- Berger 1962 effect of varied weight training program on strength --><!-- Berger 1965 Increased %of 1RM increases strength gains --><!-- Berger 1967 Supra-maximal efforts (max of each rep) more efficient than 10RM loads   --><!-- O'Shea 1966 3 sets of 10, 5 or 3 reps on muscle strength and girth squat -->
 A vocabulary for progressive resistance exercise-training developed through these investigations, with
 the introduction of repetition maximum by DeLorme being one example. These concepts established as modern definitions of exercise variables enabling precise prescription of training loads for a variety of populations and training goals
-[@RN2537<!-- Fleck & Kraemer 2014 Textbook ch 5 : based on a needs analysis acute variables are selected   -->
-@RN798].<!-- Bird 2005: Acute training variables leads to different training outcomes -->
+[@RN2537;@RN798].<!-- Fleck & Kraemer 2014 Textbook ch 5 : based on a needs analysis acute variables are selected   --><!-- Bird 2005: Acute training variables leads to different training outcomes -->
 
 Although this development started after the Second World War, resistance training was not part of general exercise guidelines until much later.
 The American College of Sports Medicine (ACSM) position statement on exercise for healthy individuals from 1978 primarily dealt with physical fitness in terms of cardiorespiratory fitness
@@ -68,30 +61,25 @@ The introduction of resistance training as part of the ACSM recommendation also 
 Consequently, informed by epidemiological data, the most recent general guidelines for physical activity include resistance training [@RN2667].<!-- WHO guidelines -->
 
 The above reflects that common understandings of *why* and *how to* exercise are influenced by societal norms and historical events such as the search for national identity in the nineteenth century or treatment of war injuries in the twentieth century
-[@RN2663;
-@RN2639].
+[@RN2663;@RN2639].
 In attempting to outline contemporary influences on exercise prescription, one could argue that the development of techniques to collect a large amount of biological data is one such influence. The continuously decreasing cost for obtaining information about the human genome
 [@RN2696] serves as an example of this development.<!-- Wetterstrand webpage genome sequence costs -->
 Such molecular techniques have enabled the description of mechanisms by which exercise training induce favorable adaptations. The newly established Molecular Transducers of Physical Activity Consortium is an example of an extensive scale effort, explicitly initiated to develop personalized exercise recommendations and identify molecular targets through which effects of exercise may be mimicked
 [@RN2678].<!-- MToPAC explicitly stating diagnostics is a goal --> 
 Advances in biomedical technologies are enablers of this enterprise, and the quest to *individualize* exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
-[@RN2678;<!-- MToPAC explicitly stating diagnostics is a goal -->
-@RN2677].<!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
+[@RN2678;@RN2677].<!-- MToPAC explicitly stating diagnostics is a goal --><!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
 Contemporary scientific research into exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
 
 A challenge facing this program is to describe etiologies of response heterogeneity associated with physical training accurately. A wide variation of individual responses is commonly observed after standardized resistance-training programs where changes in muscle strength vary from -32 to +250\% and changes in muscle size vary from negative to (-11\%) to impressively large (+59\%)
-[@RN764;<!-- Hubal wide range of responses to standardized exercise  -->
-@RN1741].<!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
+[@RN764;@RN1741].<!-- Hubal wide range of responses to standardized exercise  --><!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
 By relating such variations to the individual genome (DNA)
 [@RN1263]<!-- Pescatello review of the famuss data set -->
 and messenger RNA (mRNA) profiles
-[@RN826;<!-- Thalacker-Mercer, Cluster analysis, non-responders pro-inflammatory mRNA profile at baseline -->
-@RN2684],<!-- Stokes co-relation between mRNA profiles and LMM changes  -->
+[@RN826;@RN2684],<!-- Thalacker-Mercer, Cluster analysis, non-responders pro-inflammatory mRNA profile at baseline --><!-- Stokes co-relation between mRNA profiles and LMM changes  -->
 we are beginning to gain knowledge about the genetic influence on training responses.
 A common strategy has been to dichotomize responses into "responders" and "non-responders" to exercise training in such studies.
 From a public health perspective, this is probably fruitful when *non-response* is defined as the absence of meaningful health-related adaptations or even adverse effects in response to a given training regime
-[@RN2677;<!-- Sparks 2017 response heterogeneity -->
-@RN2698].<!-- Roth viewpoint 3 scenarios for genomic screening -->
+[@RN2677;@RN2698].<!-- Sparks 2017 response heterogeneity --><!-- Roth viewpoint 3 scenarios for genomic screening -->
 The existence of non-responders would have considerable implications regarding exercise prescription on the population scale
 [@RN758].<!-- Timmons 2011  -->
 Furthermore, if diagnosed correctly in the case of any given individual, it would guide clinical decision-making.
@@ -130,22 +118,16 @@ Although apparent reversal of non-response to exercise training has been observe
 Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health (e.g., increased amino acid storage, physical independence) and athletic performance are conveyed. 
 Muscle growth is a well-characterized response to resistance training.
 Healthy untrained individuals can be expected to increase their muscle mass by $\sim$ 5-20\% when training is conducted over a period of up to 6 months
-[@RN1741; <!-- Ahtianen -->
-@RN346;<!-- Wernbom  -->
-@RN764].<!-- Hubal 2005 elbow flexor 18.9% increase -->
+[@RN1741;@RN346;@RN764].<!-- Ahtianen --><!-- Wernbom  --><!-- Hubal 2005 elbow flexor 18.9% increase -->
 Over this period, muscle growth is approximately linear with time
-[@RN1596;<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training -->
-@RN2113;<!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions -->
-@RN2736]<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
+[@RN1596;@RN2113;@RN2736]<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training --><!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions --><!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
 <!-- Although some of the early increase muscle mass can be attributed muscle damage-induced edema
 [@RN2746],Damas 2016 increased echo intensity indicating muscle edema at 3 weeks -->
 and can be detected as early as 3-4 weeks after training initiation, without apparent muscle edema 
-[@RN1596;<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training -->
-@RN2113].<!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions -->
+[@RN1596;@RN2113].<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training --><!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions -->
 
 Relative muscle growth can be expected to be more pronounced in upper- compared to lower-body muscles when loading patterns are similar
-[@RN346;<!-- Wernbom  -->
-@RN2739].<!-- Welle 1996 larger incr in csa in upper body -->
+[@RN346;@RN2739].<!-- Wernbom  --><!-- Welle 1996 larger incr in csa in upper body -->
 This discrepancy possibly relates to the greater every-day activation of lower-body muscles, requiring larger stimuli for adaptation
 [@RN767].<!-- Folland review -->
 Small but detectable differences in muscle growth is typically seen between sexes for training-induced muscle growth in the upper-body
@@ -153,8 +135,7 @@ Small but detectable differences in muscle growth is typically seen between sexe
 but not for lower-body muscles
 [@RN2740].<!-- Roberts 2020, meta analysis when all muscles combined no diff between sexes in within sex effects sizes -->
 Furthermore, hypertrophic responses can be expected to be reduced with increasing age 
-[@RN2739; <!-- Welle 1996 larger incr in csa in upper body --> 
-@RN752]<!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
+[@RN2739;@RN752]<!-- Welle 1996 larger incr in csa in upper body --><!-- Peterson 2011 Meta analysis, age (negatively) and training volume (positively) affects rt outcomes  -->
 but increased with sufficient addition of dietary protein
 [@RN2199].<!-- Morton meta Dietary protein supplementation significantly enhanced changes in muscle strength and size during prolonged RET in healthy adults. Increasing age reduces and training experience increases the efficacy of protein supplementation during RET. -->
 Additionally, training variables such as intensity, volume, frequency (reviewed below) together with other training aids, e.g., manipulation of blood flow through pressure cuffs

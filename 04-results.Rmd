@@ -1182,7 +1182,7 @@ summary_table_interactions %>%
                       "95% CrI"),
         escape = TRUE,
         booktabs = TRUE, 
-        caption = "Interaction between study parameter and weekly number of sets from meta-analyses on muscle mass and strength")  %>%
+        caption = "Interaction between study parameter and weekly number of sets from meta-regression models")  %>%
   kable_styling(font_size = 7) %>%
   add_header_above(c(" " = 1, 
                      "Muscle mass" = 2, 
@@ -1200,7 +1200,7 @@ summary_table_interactions %>%
 
 A consistent finding between muscle mass and strength measures was the negative effect seen in upper- compared to the lower-body measures.
 These results suggest that adding a weekly set to upper-body programs will not robustly lead to increased strength measures (upper-body effect size change for every additional weekly set `r upper_body_strength`).
-The effect of an additional weekly set in the upper-body for measures of muscle mass was still positive (`r  upper_body_mass`) albeit lower when compared to the effect seen in the lower body (Table \@ref(tab:meta-interaction-table)).
+The effect of an additional weekly set in the upper body for measures of muscle mass was still positive (`r  upper_body_mass`) albeit lower when compared to the effect seen in the lower body (Table \@ref(tab:meta-interaction-table)).
 Together this indicates that there are differences between muscle groups. Muscles more active in every day activities, i.e. muscles in the lower extremities, will benefit to a greater extent from additional training volume, compared to upper-body muscles.
 Studies examining volume-dependence in molecular determinants to resistance-training adaptations between different muscle groups are limited.
 However, Hanssen *et al.* found different satellite cell activation between volume-conditions in *m. vastus lateralis* but not in *m. trapezius*, coinciding with volume-dependence in outcomes in lower- but not upper-body muscles
@@ -1356,8 +1356,8 @@ Although ribosomal biogenesis is a well-known characteristic of resistance train
 Study II indicates that relatively few training sessions are needed to maximize total RNA per unit tissue weight.
 Together with data from Study I and other studies that have performed repeated biopsy sampling during a relatively short timeframe [@RN1809], this suggests that young males and females will reach peak training-induced values within four to nine sessions, followed by a plateau.
 Since the plateau phase occurred without a concomitant reduction in pre-rRNA levels, it may represent a dilution effect rather than decreased rRNA transcription, whereby ribosomal content is essentially stabilized by concomitant cellular growth and protein accretion
-[@RN2142]<!-- Figueiredo review details the concept of rna -->  
-Possibly, a progressive increase in training volume could abolish such a plateau-effect.
+[@RN2142]<!-- Figueiredo review details the concept of rna -->
+Possibly, a progressive increase in training volume could abolish such a plateau effect.
 Indeed, Haun *et al.*
 [@RN2225]
 observed progressive increases in total RNA content in muscle throughout six weeks of resistance training in well-trained participants, presumably due to a continuous increase in training volume (from 2-4 to 8-12 sets per exercise). This observation suggests that a progressive increase in volume may increase ribosomal abundance to a higher degree than constant-volume protocols.
