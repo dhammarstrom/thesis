@@ -4,13 +4,13 @@ The main conclusions drawn from the work presented in this thesis are:
 
 
 \begin{itemize}
-  \item Training-induced muscle mass and strength increases are sensitive to resistance training volume, expressed as the within-sessions number of sets, in a dose-dependent manner (Study I.
-  \item Moderate-volume training leads to greater ribosome accumulation and mRNA expression related to extracellular matrix remodeling compared to low-volume training.
-  \item Moderate-volume training compared to low-volume exercise leads to a higher activity of mTORC1-related signaling.
-  \item Resistance training-induced shifts in fiber type distributions are sensitive to training volume as moderate compared to low training volumes leads to a greater reduction in Type IIX proportions over twelve weeks of training but less reduction in response to four sessions.
-  \item The ability to differentiate total RNA accumulation in response to different training volumes after four training sessions predicts benefits of moderate compared to low-volume training after twelve weeks.
-  \item Maximal accumulation of total RNA in response to resistance training occurs after eight sessions in previously untrained young individuals.
-  \item Accumulation of total and ribosomal RNA is not affected by variable training volume. However, eight days of de-training training reduced the synthesis of ribosomal precursor RNA and total RNA content.
-  \item Total RNA abundance is positively related to upstream binding factor protein-expression.
+  \item Training-induced muscle mass and strength increases are sensitive to resistance training volume, expressed as the within-sessions number of sets, in a dose-dependent manner (Study I).
+  \item Moderate-volume training leads to greater ribosome accumulation and mRNA expression of genes related to extracellular matrix remodeling compared to low-volume training (Study I).
+  \item Moderate-volume training compared to low-volume exercise leads to a higher stimulation of mTORC1 signaling (Study I).
+  \item Resistance training-induced shifts in fiber type distributions is sensitive to training volume. Moderate compared to low training volumes leads to a greater reduction in the proportions of Type IIX fibers after twelve weeks of training (Study I).
+  \item The ability to differentiate total RNA accumulation in response to different training volumes after four training sessions predicts benefits of moderate compared to low-volume training after twelve weeks (Study I).
+  \item Maximal accumulation of total RNA in response to resistance training occurs after eight sessions in previously untrained young individuals (Study II).
+  \item Accumulation of total and ribosomal RNA is not affected by variable training volume. However, eight days of de-training reduced ribosomal precursor RNA and total RNA content (Study II).
+  \item Total RNA abundance is positively related to upstream binding factor protein-expression (Study II).
 \end{itemize}
 

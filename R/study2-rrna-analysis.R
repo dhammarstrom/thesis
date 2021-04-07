@@ -73,7 +73,7 @@ anno.df <- data.frame(target = unique(complete_rrna_comp$target),
                comparison = factor(comparison, levels = c("S1", "post", "post1w"), 
                                    labels = c("Session 1", 
                                               "Post-training", 
-                                              "Post-trainin \n+ De-training")),
+                                              "Post-training \n+ De-training")),
                target = fct_rev(target))
 
 
@@ -95,7 +95,7 @@ interaction_effects <- complete_rrna_comp %>%
                comparison = factor(comparison, levels = c("S1", "post", "post1w"), 
                                    labels = c("Session 1", 
                                               "Post-training", 
-                                              "Post-trainin \n+ De-training")),
+                                              "Post-training \n+ De-training")),
                estimate = exp(estimate), 
                lower.CL = exp(lower.CL), 
                upper.CL = exp(upper.CL), 

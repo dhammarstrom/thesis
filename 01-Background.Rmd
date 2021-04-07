@@ -10,7 +10,7 @@ source("./R/libraries.R"); source("./R/themes.R")
 ```
 
 ## Resistance-exercise prescription, a historical note, and current challenges
-Recommendations of systematic physical exercise with the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian, and Greek civilizations
+Recommendations regarding physical exercise with the purpose of improving health or physical performance has long been part of human culture, evident from records dating back to ancient Chinese, Indian, and Greek civilizations
 [@RN2640].<!-- Tipton Ancient China India and greek/roman written records on exercise precription -->
 Today's exercise-training prescription still bear traces of ideas from these eras, further developed during the renaissance and formalized in systems like German Turnen and Ling gymnastics during the nineteenth century 
 [@RN2663].<!-- Pfister 2003 describes differences and common ancestry of gymnastics and sports during 1700-1800 -->
@@ -56,9 +56,9 @@ The American College of Sports Medicine (ACSM) position statement on exercise fo
 [@RN2655]<!-- ACSM 1978 guidelines -->.
 With the updated 1990 ACSM statement, resistance training became a recommended part of a sensible, general training program
 [@RN2654].<!-- ACSM 1990 guidelines --> 
-The introduction of resistance training as part of the ACSM recommendation also coincides with specific recommendations on resistance training being part of other consensus statements
+The introduction of resistance training as part of the ACSM recommendation also coincides with specific recommendations on resistance training being part of additional consensus statements
 [@RN2666, Ch. 2].<!-- Physical Activity and Health: A Report of the Surgeon General provides an overview of recommendation guidelines evolution  -->
-Consequently, informed by epidemiological data, the most recent general guidelines for physical activity include resistance training [@RN2667].<!-- WHO guidelines -->
+Consequently, based on evidence from epidemiological studies, the most recent general guidelines for physical activity include resistance training [@RN2667].<!-- WHO guidelines -->
 
 The above reflects that common understandings of *why* and *how to* exercise are influenced by societal norms and historical events such as the search for national identity in the nineteenth century or treatment of war injuries in the twentieth century
 [@RN2663;@RN2639].
@@ -68,9 +68,9 @@ Such molecular techniques have enabled the description of mechanisms by which ex
 [@RN2678].<!-- MToPAC explicitly stating diagnostics is a goal --> 
 Advances in biomedical technologies are enablers of this enterprise, and the quest to *individualize* exercise based on molecular diagnostics can be seen as a motivation for modern exercise science
 [@RN2678;@RN2677].<!-- MToPAC explicitly stating diagnostics is a goal --><!-- Sparks 2017, exercise response heterogenity, goal to test appropriate exercise dosa based on e.g. DNA -->
-Contemporary scientific research into exercise prescription can thus be understood as a part of the era of *personalized medicine*. 
+Contemporary scientific research into exercise prescription can thus be understood as a part of the era of *personalized medicine* wherein individualization of treatments is believed to improve its efficacy.
 
-A challenge facing this program is to describe etiologies of response heterogeneity associated with physical training accurately. A wide variation of individual responses is commonly observed after standardized resistance-training programs where changes in muscle strength vary from -32 to +250\% and changes in muscle size vary from negative to (-11\%) to impressively large (+59\%)
+A challenge facing this program is to accurately describe etiologies of heterogeneous responses associated with physical training. A wide variation of individual responses is commonly observed after standardized resistance-training programs where changes in muscle strength vary from -32 to +250\% and changes in muscle size vary from negative to (-11\%) to impressively large (+59\%)
 [@RN764;@RN1741].<!-- Hubal wide range of responses to standardized exercise  --><!-- Ahtiainen 2016 7% (strength) and 29% (muscle size) categorized as non responders (accounting for controls)  -->
 By relating such variations to the individual genome (DNA)
 [@RN1263]<!-- Pescatello review of the famuss data set -->
@@ -110,12 +110,12 @@ Observations supporting such notion exists as an individual classified as non-re
 Even changing training variables within a specific modality have been shown to convert non-responders into responders. When endurance training volume was increased, participants previously unresponsive to training increased their aerobic power
 [@RN2699].<!-- Lundby increasing training volume improved non-responders -->
 
-Although apparent reversal of non-response to exercise training has been observed by manipulating training variables, strong indications for such manipulations are still lacking.
+Although apparent reversal of non-responders has been observed by manipulating training variables, evidence for such manipulations are still lacking.
 
 ## Adaptations to resistance training
 
 ### Muscle hypertrophy and strength
-Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health (e.g., increased amino acid storage, physical independence) and athletic performance are conveyed. 
+Systematic resistance training typically increases muscle mass and strength, adaptations through which many beneficial effects on health and athletic performance are conveyed. 
 Muscle growth is a well-characterized response to resistance training.
 Healthy untrained individuals can be expected to increase their muscle mass by $\sim$ 5-20\% when training is conducted over a period of up to 6 months
 [@RN1741;@RN346;@RN764].<!-- Ahtianen --><!-- Wernbom  --><!-- Hubal 2005 elbow flexor 18.9% increase -->
@@ -126,7 +126,7 @@ Over this period, muscle growth is approximately linear with time
 and can be detected as early as 3-4 weeks after training initiation, without apparent muscle edema 
 [@RN1596;@RN2113].<!-- Defreitas 2011 approx Linear increase in muscle mass and strength in response to 8 wk str training --><!-- Stock 2017 Concentric training only for arms muscle thickness and lean mass gains after 6 and 7 sessions -->
 
-Relative muscle growth can be expected to be more pronounced in upper- compared to lower-body muscles when loading patterns are similar
+Relative muscle growth can be expected to be more pronounced in upper compared to lower-body muscles when loading patterns are similar
 [@RN346;@RN2739].<!-- Wernbom  --><!-- Welle 1996 larger incr in csa in upper body -->
 This discrepancy possibly relates to the greater every-day activation of lower-body muscles, requiring larger stimuli for adaptation
 [@RN767].<!-- Folland review -->
@@ -144,7 +144,7 @@ can effectively modulate resistance-training induced hypertrophy.
 Together, this underlines that both non-modifiable (e.g., sexual dimorphism and age) and modifiable factors (e.g., training variables and protein supplementation) affect resistance training-induced muscle hypertrophy.
 
 Whole muscle growth in response to short-term (weeks to months) resistance training occurs primarily through the growth of existing muscle fibers (muscle cells or myofibers).
-This can be assumed as a training-induced splitting of existing fibers or formation of new muscle cells are likely to slow processes, and an increase in the number of fibers by such mechanisms would only represent a small addition to the whole muscle mass
+Training-induced splitting of existing fibers or formation of new muscle cells are slow processes, and an increase in the number of fibers by such mechanisms would only represent a small addition to the whole muscle mass
 [@RN2741;<!-- Murach 2019 review on hyperplasia  -->
 @RN2742; <!-- Sjöström 1991 Increase in left/right tibialis anterior -->
 @RN2754;<!-- MacDougall no diff between body builders and untrained in number of fibers, equal relative amounts of collagen -->
@@ -161,34 +161,28 @@ With resistance training, the number of parallel myofibrils increases with the g
 leading to a greater force-generating capacity of the whole muscle
 [@RN2731].<!-- Lüthi 1986 Myofibrils occupie more space in the mucsle fiber after resistance training mitochondria occupie less. No sign increase in fiber CSA with strength training no control group -->
 
-Measures of whole muscle size correspond well with maximal strength, particularly when they reflect the muscles' cross-sectional area
-[@RN2758;<!-- Bamman 2000 Anatomical and estimates physiological cross section better prediction for strength on whole muscle level in vivo in humans -->
-@RN1142].<!-- Erskin 2013 muscle volume and CSA to strength r = 0.812 and 0.806  -->
+Measures of whole muscle size correspond well with maximal strength, particularly when they reflect the cross-sectional area of the muscle
+[@RN2758;@RN1142].<!-- Bamman 2000 Anatomical and estimates physiological cross section better prediction for strength on whole muscle level in vivo in humans --><!-- Erskin 2013 muscle volume and CSA to strength r = 0.812 and 0.806  -->
 However, in response to resistance training, increases in maximal strength are typically greater in magnitude than muscle growth
-[@RN2629;<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr -->
-@RN2737;<!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT -->
-@RN2736;<!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   -->
-@RN2735].<!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->
-When relationships between resistance training-induced change in muscle size and strength in previously untrained individuals are analyzed, only a portion of the variation in muscle strength can be accounted for by changes in muscle size ($\sim$ 2.5-28\%)
-[@RN1142;<!-- Erskine 2013 23% and 28% muscle volume and mvf/1rm  -->
-@RN1741;<!-- Ahtiainen r = 0.157, r2 = 0.025 -->
-@RN2158]<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
+[@RN2629;@RN2737;@RN2736;@RN2735].<!-- Ikai 1970 Arm flexor training within-subject protocol, trained arm 23% increase in CSA and 90 % strength 100 days of 6 days/week training. Control arm 30% str incr, 5% CSA incr --><!-- Young 1983 diproportional higher strength gains than CSA, increase in CSA with ultrasound in response to RT --><!-- Narici 1989 Increase in CSA (MRI, linearly ~ 0.14%/day total 8.5%) and MVC (total 20.8%) no change in untrained control in CSA, numerical increases occured in untrained in EMG/MVC   --><!-- Narici 1996 Local changes in whole muscle CSA after 6 months of RT, no stat sig increase in fiber CSA at a site with low MR based increase in CSA -->
+When relationships between resistance training-induced change in muscle size and strength in previously untrained individuals are analyzed, only a portion of the variation in muscle strength gains can be accounted for by changes in muscle size ($\sim$ 2.5-28\%)
+[@RN1142;@RN1741;@RN2158]<!-- Erskine 2013 23% and 28% muscle volume and mvf/1rm  --><!-- Ahtiainen r = 0.157, r2 = 0.025 --><!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
 depending on the type of measurements and the statistical model used
 [@RN2158].<!-- Vigotsky 2018 within subject model 12-18% accounted for, smaller when between subjects -->
 This underlines that muscle hypertrophy contributes to muscle strength gains, but so do other factors.
 
 In accordance with this, different experimental models have shown that muscle strength can increase without concomitant muscle hypertrophy.
 Together these observations indirectly point to the central nervous system and motor learning as important factors for strength gains.
-First, getting acquainted with the actual strength test through repeated training of maximal performance produces similar gains in strength without apparent hypertrophy 
+First, by getting acquainted with the strength test through repeated training of one repetition maximum, maximal strength has been shown to increase without apparent hypertrophy 
 [@RN2760].<!-- Mattocks 2017 Practicing 1RM leads to similar strength increases as RT  -->
 Second, if resistance training is performed unilaterally, strength gains are typically also seen in the contralateral control limb
 [@RN2219;<!-- Carroll 2006 contralateral effects review -->
 @RN2766].<!-- Green 2018 training has contralateral effects both for strength and skill -->
 Additionally, systematic imagery training without muscle activation produces greater strength gains than control and low-intensity training conditions 
 [@RN2767].<!-- Plantar flexion imaginary more effective than control in strength gains -->
-In addition to effects that mainly can be attributed to motor learning, resistance training leads to changed behavior of motor units, estimated from surface electromyograms 
+In addition to the above described effects that mainly can be attributed to motor learning, resistance training leads to changed behavior of motor units, estimated from surface electromyograms 
 [@RN2763].<!-- Del Vechchio 2019 rt changes fiering rates in motor units   -->
-Such changes could be attributed to morphological and functional changes of motorneurons
+Such changes could be attributed to morphological and functional changes of motor neurons
 [@RN2764].<!-- Gardiner aplha motorneuron changes with RT -->
 
 
@@ -210,22 +204,15 @@ Importantly, *in vitro* assays performed at physiological temperatures shows tha
 In addition to contractile characteristics, fiber types identified based on their myosin heavy-chain content also differs in metabolic profiles.
 Type I fibers are characterized as having lower glycolytic but higher oxidative potential compared to type II fibers
 [@RN1885].<!-- Essen 1975 Type II fibers lower oxidative potential compared to type I assumed from activity of oxidative enzymes -->
-Differences in metabolic profiles translate into fatigue resistance, whereby type I fibers can maintain power output and ATP levels during intense exercise but type II fibers and primarily type IIX fibers fail to do so 
-[@RN819;<!-- -->
-@RN2801].<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
+Differences in metabolic profiles translate into fatigue resistance, where type I fibers can maintain power output and ATP levels during intense exercise but type II fibers and primarily type IIX fibers fail to do so 
+[@RN819;@RN2801].<!-- Karatzaferi 2001 Drop in ATP most pronounced in type 2x fibers in response to acute exercise -->
 
 Fiber type characteristics effectively modulate the muscle's ability to perform specific activities. Differences in fiber type composition between different muscles within individuals reflect this as anti-gravity muscle of the lower body typically express more type I fibers compared to upper-body muscles
-[@RN819;<!-- -->
-@RN846].<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
+[@RN819;@RN846].<!-- Harridge 1996 specific contraction characteristics in different fiber types determined by myosin heavy chain-->
 Differences in fiber type composition between individuals and sexes are to some degree genetically determined
-[@RN2798;<!-- Simoneau 1995 40% variation in type I fibers can be attributed to genetic factors, 15% to sampling error and 45 to environment -->
-@RN2795;<!-- Differences between men and women more type i in women -->
-@RN285].<!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
+[@RN2798;@RN2795;@RN285],<!-- Simoneau 1995 40% variation in type I fibers can be attributed to genetic factors, 15% to sampling error and 45 to environment --><!-- Differences between men and women more type i in women --><!-- Fiber types in yopung men and women, high percentage of 2X (b) fibers ~ 20%-->
 however, non-genetic factors such as resistance training also influence fiber-type composition. Short term resistance training, designed for muscle hypertrophy and strength gains, specifically converts type IIX fibers to more fatigue-resistant type IIA fibers with unaltered type I fiber proportions
-[@RN2220;<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining -->
-@RN2799;<!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa -->
-@RN2056;<!-- Andersen 2018 type IIx to 2a most prominent switch-->
-@RN1489].<!-- Ellefsen 2014, training induced switch from 2A to 2X -->
+[@RN2220;@RN2799;@RN2056;@RN1489].<!-- Adams Down regulation of MyHc 2x content in training group both myhc isoform sds page and atpase staining --><!-- Williamsson less IIx dominant hybrid fibers with training conversion towards IIa --><!-- Andersen 2018 type IIx to 2a most prominent switch--><!-- Ellefsen 2014, training induced switch from 2A to 2X -->
 Such conversion is apparent both when measured on the protein and mRNA level
 [@RN1489;<!-- Ellefsen  -->
 @RN2056].<!-- 2x gene swithoff Anderssen --> 
@@ -234,9 +221,8 @@ In contrast, reduced activity or inactivity readily increases the proportion of 
 @RN2108].<!-- Bed rest increases type IIx -->
 
 Concomitant with muscle hypertrophy and fiber type switch, resistance training also alters the mitochondrial density of the muscle, evident as a decreased relative abundance as myofibrillar protein fractions increases, as shown in electron microscopy examination
-[@RN2731;<!-- Lüthi  -->
-@RN2732].<!-- MacDougall 1979 -->
-In contrast to this notion, a single session of resistance training, albeit with low resistance (30\% of 1RM), has been shown to increase the synthesis of mitochondrial, as well as myofibrillar and sarcoplasmic protein fractions. When exercise was performed with slower movement speeds (longer time under tension), the increase in mitochondrial protein synthesis was shown to be greater
+[@RN2731;@RN2732].<!-- Lüthi  --><!-- MacDougall 1979 -->
+In contrast to this notion, a single session of resistance training, albeit with low resistance (30\% of 1RM), has been shown to increase the synthesis of mitochondrial, as well as myofibrillar and sarcoplasmic protein fractions. When exercise was performed with slower movement speeds (longer time under tension), the increase in mitochondrial protein synthesis was shown to be greater than when exercise was performed with shorter time under tension 
 [@RN1505].<!-- Burd 2012 A single session of resistance exercise (30%1RM) increases mitochondrial protein synthesis, more so with higher metabolic stress (6s repetitions compared to 1s reps). -->
 This indicates that the magnitude of metabolic stress induced by resistance training affects the subsequent mitochondrial remodeling.
 Such remodeling could explain the improved mitochondrial function, measured as mitochondrial respiration in response to 12-weeks of resistance training with less pronounced changes seen in mitochondrial proteins
@@ -254,15 +240,13 @@ Such coordinated remodeling can be linked to common molecular mechanisms regulat
 
 
 ### Changes in force-transmitting tissues in response to resistance training
-In addition to adaptive changes to the contracting apparatus of single muscle fibers and neural mechanisms regulating their activity, resistance training modulates bone, tendon, and connective tissue.
+In addition to adaptive changes to the contractile apparatus of single muscle fibers and neural mechanisms regulating their activity, resistance training modulates bone, tendon, and connective tissue.
 From a general perspective, tissues enabling e.g., locomotion by conveying forces produced by contracting muscles and stabilizing body segments adapts in an activity-specific manner
-[@RN2775;<!-- greendale 2003 activity patterns affect bone mineral density, sporting activities more effective than active living home activities -->
-@RN2771].<!-- Magnusson 2008 review tendon CSA increase with endurance training -->
+[@RN2775;@RN2771].<!-- greendale 2003 activity patterns affect bone mineral density, sporting activities more effective than active living home activities --><!-- Magnusson 2008 review tendon CSA increase with endurance training -->
 Specifically, short term resistance training leads to changes in mechanical properties of bone without increasing bone mineral content or density, suggesting qualitative changes
 [@RN2774].<!-- Miller 2009 rt increases tibial bending stiffness without changes in bobne mineral content 20 weeks, 3 sessions/week con and ecc, females 18-26 years-->
-Similarly, tendons respond to short-term resistance training by increasing stiffness when exposed to high levels of mechanical stress with or without increasing cross-sectional area
-[@RN2772;<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group -->
-@RN2895]<!-- Rønnestad, recreational trained increase tendon CSA -->
+Similarly, tendons respond to short-term resistance training by increasing stiffness when exposed to high levels of mechanical stress with or without increasing cross sectional area
+[@RN2772;@RN2895]<!-- Massey 2017 short term (12 weeks) rt increase patellar tendon stiffness at high stress to a similar degree as long (4 years) compared to controls. Long term training led to increase stiffness at low stress . No increase in tendon CSA in any training group --><!-- Rønnestad, recreational trained increase tendon CSA -->
 Interestingly, tendon adaptations seem to reach a plateau, as no additional change in this characteristic is seen in individuals who have exercised over four years as opposed to twelve weeks
 [@RN2772].
 <!--However increased stiffness at lower mechanical stress levels has been documented
@@ -275,13 +259,13 @@ potentially related to increased turnover of collagen, indicating remodeling
 
 Muscle fibers are embedded in connective tissue surrounding the whole muscle (epimysium), muscle fascicles (perimysium) and muscle fibers (endomysium)
 [@RN2783].<!-- Borg Rat skeletal muscle electron micropscopy  -->
-Connective tissue structures constituting the endomysium connects muscle fibers to adjacent fibers, capillaries, and nerves, which together with higher-order structures make up the extracellular matrix, enabeling mechanical and biochemical interaction between cell types
+Connective tissue structures constituting the endomysium connects muscle fibers to adjacent fibers, capillaries, and nerves, which together with higher-order structures make up the extracellular matrix, enabling mechanical and biochemical interaction between cell types
 [@RN2783;<!-- Rat skeletal muscle  -->
 @RN2421].<!-- Kjaer review -->
-Together with the myotendinous junction, intramuscular structures (primarily perimysium) transmits forces originating from contracting muscle fibers to tendon and bone and act as an elastic energy storage during e.g. locomotion
+Together with the myotendinous junction, intramuscular structures (primarily perimysium) transmit forces originating from contracting muscle fibers to tendon and bone and act as an elastic energy storage during e.g. locomotion
 [@RN2421].<!-- Kjaer review -->
 
-The extracellular matrix's mechanical properties also allow mechanical stimuli to be converted to biochemical signaling, initiating e.g., responses to exercise.
+The extracellular matrix's mechanical properties also allow mechanical stimuli to be converted to biochemical signaling, initiating, e.g., responses to exercise.
 There is general coordination between connective tissue and muscle-cell remodeling in response to loading, evident from coordinated responses of different cell types in response to exercise
 [@RN2421].<!-- Kjaer review -->
 The principal constituent of the extracellular matrix is collagen, produced in fibroblasts.
@@ -307,8 +291,7 @@ A precise exercise-training prescription should inform on sequential order, inte
 [@RN789].<!-- Bird designing resistance training programs -->
 By manipulating these variables, resistance training programs can be tailored to better fit goals and starting points of any individual. 
 The relative importance of resistance exercise-training variables for training outcomes has been examined in numerous studies, including (but not limited to) the overall organization of exercise sessions,
-[@RN2575;<!-- Evans mini review on periodization --> 
-@RN2572]<!-- Grgic 2017 No effect of linear and daily unduluting periodization on muscle hypertrophy -->
+[@RN2575;@RN2572]<!-- Evans mini review on periodization --> <!-- Grgic 2017 No effect of linear and daily unduluting periodization on muscle hypertrophy -->
 training frequency 
 [@RN2571]<!-- Schoenfeld 2016 training frequency twice per week better in volume equated studies for hypertrophy -->,
 <!-- Higher frequencies gives higher gains in strength but not when volume equated -->
@@ -316,71 +299,44 @@ and intensity
 [@RN2569].<!-- Schoenfeld, no difference between high vs low load strength training in hypertrophy but 1rm favors high loads -->
 It could be argued that training volume is of particular importance for muscle growth.
 Indeed, when this variable is held constant, manipulation of other variables has little or no effect on hypertrophy
-[@RN1612;<!-- Schoenfeld 2014 7*3Rm vs 3*10RM equal muscle hypertrophy but dissimilar strength -->
-@RN2569].<!-- Meta analysis high vs low resistance has little effect on muscle mass gains but strength is affected positively with higher intensities. --> 
+[@RN1612;@RN2569].<!-- Schoenfeld 2014 7*3Rm vs 3*10RM equal muscle hypertrophy but dissimilar strength --><!-- Meta analysis high vs low resistance has little effect on muscle mass gains but strength is affected positively with higher intensities. --> 
 For the development of strength, factors such as intensity and within-session organization of exercises are also of importance
-[@RN2570;<!-- Frequency has little effect on strength when volume is equated -->
-@RN2591].<!-- Exercise order influences strength but not hypertrophy -->
-However, when other factors are held constant, increasing training volume generally leads to increased strength
-[@RN2570;
-@RN2492;<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
-@RN793],
-similarly to effects of training volume on muscle growth
-[@RN1767;
-@RN789].
+[@RN2570;@RN2591].<!-- Frequency has little effect on strength when volume is equated --><!-- Exercise order influences strength but not hypertrophy -->
+However, when other factors are held constant, increasing the training volume generally leads to increased strength
+[@RN2570;@RN2492;@RN793],<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
+similarly to the effect of training volume on muscle growth
+[@RN1767;@RN789].
 
 ### Effects of resistance exercise volume on muscle strength and mass
 Resistance exercise volume can be manipulated as the number of sets performed per muscle group within-session. This unit is practical as it is comparable between individuals and muscle groups [@RN2130].<!-- Baz-Valle 2018 sets per exercise better than mechanical load times rep or total work -->
 In 1962, Berger conducted an early study concerning effects of resistance exercise volume to determine what method would most efficiently produce strength gains (in healthy young males) [@RN1476]. He compared one, two, and three sets performed with two, six, or ten repetition maximum (RM) in the bench press, three times per week, over twelve weeks. As the combined effect of three sets per session was superior regardless of the number of repetitions performed, Berger concluded in favor of three sets. This conclusion was later challenged based on data interpretation
-[@RN794;<!-- Carpenelli and Otto questions the analysis-->
-@RN2538].<!-- Feigenbaum -->
+[@RN794;@RN2538].<!-- Carpenelli and Otto questions the analysis--><!-- Feigenbaum -->
 Reviewing the study by Berger and others, Carpinelli and Otto concluded that there was "insufficient evidence to support the prevalent belief that a greater volume of exercise (through multiple sets) will elicit superior muscular strength or hypertrophy" [@RN794]. This stand has since been repeatedly put forward as a criticism of higher volume training programs 
 [@RN2568; 
 @RN2201] and sparked considerable scientific activity.
 The main argument against the recommendation of additional volume in strength training programs has been the lack of statistically significant superiority in single studies [@RN2568; @RN2538]. 
 Indeed, individual studies do not generally agree on dose-dependent effects of training volume on muscle mass and strength gains
-[@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
-@RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
-@RN2463;<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
-@RN1570; <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
-@RN1518;<!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains -->
-@RN1474;<!-- McBride 1474 Men and women DXA no diff but strength increase more in multiple sets -->
-@RN1472; <!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
-@RN1456;<!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains -->
-@RN1454;<!-- Ostrowski 1997 trained young med, low volume decrease from previous levels no difference between groups -->
-@RN1384; <!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->
-@RN1382; <!-- Cannon 2010, Older women and younger women, muscle volume and strength increased similarly irrespective of age or training volume and without interaction -->
-@RN776],<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
+[@RN2465;@RN2464;@RN2463;@RN1570;@RN1518;@RN1474;@RN1472;@RN1456;@RN1454;@RN1384;@RN1382;@RN776]
+<!-- Ribiero 2015 Strength but not body composition change with dose dep older women --><!-- Correa 2015 older women, increase muscle thickness and strength with volume  --><!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength --><!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise --><!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains --><!-- McBride 1474 Men and women DXA no diff but strength increase more in multiple sets --><!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  --><!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains --><!-- Ostrowski 1997 trained young med, low volume decrease from previous levels no difference between groups --><!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->,<!-- Cannon 2010, Older women and younger women, muscle volume and strength increased similarly irrespective of age or training volume and without interaction --><!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
 including studies performed with comparisons between volume conditions within participants, where different training volumes are allocated to either extremity 
-[@RN834;<!-- Mitchell 2012 young men no sig difference in strength or mass gains between 1 and 3 sets knee extension -->
-@RN1607].<!-- Sooneste 2013 young men p=0.076 on strength gains in favor of three sets, CSA increased more in 3 sets leg exercise -->
+[@RN834;@RN1607].<!-- Mitchell 2012 young men no sig difference in strength or mass gains between 1 and 3 sets knee extension --><!-- Sooneste 2013 young men p=0.076 on strength gains in favor of three sets, CSA increased more in 3 sets leg exercise -->
 For example, differences in strength development between volume conditions were found in older individuals
-[@RN2465; <!-- Ribiero 2015 Strength but not body composition change with dose dep older women -->
-@RN2464;<!-- Correa 2015 older women, increase muscle thickness and strength with volume  -->
-@RN1472] <!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
+[@RN2465;@RN2464;@RN1472]<!-- Ribiero 2015 Strength but not body composition change with dose dep older women --> <!-- Correa 2015 older women, increase muscle thickness and strength with volume  --><!-- Galvao 2005 Older adults, no diff in body comp DXA, but increase in strength  -->
 but were not confirmed in another study
 [@RN1518].<!-- Radaelli 2014 older women no diff between volume groups in muscle thickness or strength gains -->
 Moreover, studies have shown that higher volume does not lead to increased muscle mass gains in young individuals
-[@RN1384; <!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set -->
-@RN1456;<!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains -->
-@RN2463],<!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
+[@RN1384;@RN1456;@RN2463],<!-- Rhea 2002 young men bod pod no diff in body comp changes but diff in strength gains in favour of multi set --><!-- Starkey 1996 young male and female no diff in strength or muscle thickenss gains --><!-- Bottaro 2011 untrained young male similar results in muscle thickness and strength -->
 a conclusion challenged by others 
-[@RN776;<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body -->
-@RN1570]. <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
+[@RN776;@RN1570].<!-- Rønnestad, three set more effectiv in increaseing strength and muscle mass in lower body compared to upper body --> <!-- Radaelli 2014 1 vs 3vs 5 sets, 5 sets most effective in muscle thickness and some strength exercise -->
 
 As previously noted, combining the above results and additional studies, meta-analyses concluded that training volume dose-dependency exists for the development of muscle mass and strength
-[@RN2570;
-@RN2492;<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
-@RN793;
-@RN1767;
-@RN789].
+[@RN2570;@RN2492;@RN793;@RN1767;@RN789].<!-- Ralston 2017 meta analysis medium to high volume more effective strength gains -->
 A second argument against additional volume in resistance training recommendation has been the cost/benefit relationship of adding training volume without meaningful or substantial additional gains
-[@RN2538;<!-- Feigenbaum 1999 questions the analysis and the practical utility of volume -->
-@RN2568],<!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
+[@RN2538;@RN2568],<!-- Feigenbaum 1999 questions the analysis and the practical utility of volume --><!-- Carpinelli Berger in retrospect questions the practical significance of 1.8 kg diff in maximal strength -->
 with the following question being, who would benefit from greater volumes and who would not?
 Schoenfeld *et al.* combined data from published studies to explore if participant characteristics of the above-mentioned studies interacted with training volume in explaining study outcomes. Neither sex, muscle groups, nor age interacted with volume prescription, indicating that no such factor would be able to refine training prescription guidelines
 [@RN1767].<!-- Schoenfeld 2016 meta-->
-As the number of studies used to synthesize the meta-analysis was relatively low (*n* = 15), and the studies were heterogeneous in terms of e.g., outcome measurements, it may have lacked in power to detect any meaningful interactions. Additionally, included studies may not have been reporting relevant characteristics for such analysis.
+As the number of studies used to synthesize the meta-analysis was relatively low (*n* = 15), and the studies were heterogeneous in terms of e.g., outcome measurements, it may have lacked in power to detect any meaningful interactions. Additionally, the included studies may not have been reporting relevant characteristics for such analysis.
 
 Collectively, the available evidence suggests an overlap between training outcomes resulting from different volumes.
 The overlap cannot, with available data, be explained by general population characteristics such as age or sex.
@@ -400,35 +356,24 @@ No attempts were made to relate any measured characteristic to differences in re
 Muscle mass fluctuates as a consequence of the balance between muscle protein synthesis and breakdown. When a net-positive balance is achieved, muscle protein accumulates, and muscle mass increases.
 Following a single bout of resistance exercise, muscle protein synthesis increases
 over resting levels for up to 48 hours post-exercise 
-[@RN2710;<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex -->
-@RN2711;<!-- McDougall 1995 Highest values at 24h after ex, at 36 not sig higher than ctrl -->
-@RN786;<!-- Phillips 1997 fasted state, FSR and FBR both increased but FBR to a lesser extent giving increase in net balance. Fasted state -->
-@RN2712;<!-- Biolo 1995, fasted state ex increase both breakdown and synthesis FSR/FBR at 3h net balance increase but not positive -->
-@RN2717;<!-- Increase in FSR over control at 4 and 24 h post ex in biceps, no change in RNA -->
-@RN1521]<!-- Kim, increase after exercise in mixed and myofibrillar prot synth in trained and untrained state, lower mixed after training, higher basal protein synt rate after training period 8 weeks 2-4set 8RM 8 weeks biopsy 12 h after ex Same absolute intensity -->
+[@RN2710;@RN2711;@RN786;@RN2712;@RN2717;@RN1521]<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex --><!-- McDougall 1995 Highest values at 24h after ex, at 36 not sig higher than ctrl --><!-- Phillips 1997 fasted state, FSR and FBR both increased but FBR to a lesser extent giving increase in net balance. Fasted state --><!-- Biolo 1995, fasted state ex increase both breakdown and synthesis FSR/FBR at 3h net balance increase but not positive --><!-- Increase in FSR over control at 4 and 24 h post ex in biceps, no change in RNA --><!-- Kim, increase after exercise in mixed and myofibrillar prot synth in trained and untrained state, lower mixed after training, higher basal protein synt rate after training period 8 weeks 2-4set 8RM 8 weeks biopsy 12 h after ex Same absolute intensity -->
 after being blunted during exercise
 [@RN2710].<!-- Dreyer 2006, blunting of protein synthesis during ex, increase post ex -->
 Muscle protein synthesis and breakdown rates are highly correlated
-[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-@RN786]<!-- Phillips 1997, correlation between fbr and fsr-->
+[@RN2713;@RN786]<!-- Phillips 1999, training alters both breakdown and synthesis --> <!-- Phillips 1997, correlation between fbr and fsr-->
 indicating that these processes are mechanistically coupled and fluctuates together.
 While acute resistance exercise thus also stimulates to the breakdown of muscle protein, it does so to a lesser extent, leading to an increase in the net protein balance from baseline under favorable conditions
-[@RN2713;<!-- Phillips 1999, training alters both breakdown and synthesis --> 
-@RN786;<!-- Phillips 1997, correlation between fbr and fsr-->
-@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
-@RN2715].
+[@RN2713;@RN786;@RN2714;@RN2715].<!-- Phillips 1999, training alters both breakdown and synthesis --> <!-- Phillips 1997, correlation between fbr and fsr--><!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
 <!--[@RN1908] Millward 1979 Muscle protein mass is regulated primarily through alterations in protein synthesis in all except emergency conditions. --> 
 When resistance training is performed under such favorable conditions, in the fed state with dietary amino acids available, a net positive protein balance can be expected after exercise
-[@RN2714;<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids -->
-@RN2715].<!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
+[@RN2714;@RN2715].<!-- Børsheim 2002 Post ex prot synthesis increased with ingestion of essential amiono acids --><!-- Tipton 1999, post-exercise net balance is increased when amino acids are administrated -->
 
 The ribosome is indispensable for protein synthesis as it functions as a cellular machine capable of translating genetic information in the form of mRNA to proteins.
 A functional ribosome consists of four ribosomal RNA species (rRNA 18S, 5.8S, 28S, and 5S) and about 80 proteins constructing two ribosomal subunits. Translation of mRNA occurs at the ribosomal core, as ribosomal RNA catalyzes the binding of amino acids to translate from the ribosome-bound mRNA sequence to a corresponding polypeptide chain.
 Specific stimuli can modify the rate of translation per ribosome (i.e. translational efficiency).
 Mechanical stress (such as resistance exercise) and amino acid availability (as increased after ingestion of dietary protein) stimulate protein synthesis through increased translational efficiency.
 This effect can be observed as the formation of polysomes, as functional ribosomes bind to mRNA in response to e.g., mechanical stress
-[@RN866;<!-- Baar/esser increased formation of polysomes after resistance exercise in rats  -->
-@RN860].<!-- Kubica formation of polysomes in response to resistance exercise are abolished with rapamycin in rats -->
+[@RN866;@RN860].<!-- Baar/esser increased formation of polysomes after resistance exercise in rats  --><!-- Kubica formation of polysomes in response to resistance exercise are abolished with rapamycin in rats -->
 Data from Millward [@RN2145] can illustrate the concept of translational efficiency together with translational capacity,
 wherein RNA concentrations and its association with protein synthesis rates were measured in rats starved or fed a protein-rich diet.
 Protein feeding increased the rate of protein synthesis, but the relationship to RNA (ribosomal) abundance was largely unchanged (Figure \@ref(fig:Millward1973)). This underlines the fundamental importance of ribosomal abundance and activity in determining protein synthesis. 
@@ -470,43 +415,36 @@ millward %>%
 ```
 
 The available data from acute studies on protein synthesis in humans suggests that resistance training leads to muscle hypertrophy through the accumulative effect of repeated bouts of anabolic stimuli. In recent years, this view has been supplemented by evidence suggesting that chronic resistance training also leads to increased rates of protein synthesis at rest
-[@RN1521;<!-- Kim 2005 Fasted state skeletal muscle PS altered with training  --> 
-@RN1866;<!-- Wilkingson 2008 -->
-@RN1897],<!-- Reidy 2017 Increased rested state protein synthesis -->
-which has been postulated to be associated with an accumulation of ribosomes, i.e. an increased translational capacity
-[@RN1897;<!-- Reidy 2017 -->
-@RN1912]<!-- Figueiredo 2017 Ribosome biogenesis review -->.
+[@RN1521;@RN1866;@RN1897],<!-- Kim 2005 Fasted state skeletal muscle PS altered with training  --><!-- Wilkingson 2008 --><!-- Reidy 2017 Increased rested state protein synthesis -->
+which has been postulated to be associated with an accumulation of ribosomes, i.e., an increased translational capacity
+[@RN1897;@RN1912]<!-- Reidy 2017 --><!-- Figueiredo 2017 Ribosome biogenesis review -->.
 Training-induced increases in muscle RNA abundance support this notion.
 As the RNA pool to a large degree consists of ribosomal RNA
-[@RN2054;<!-- Zak 1967 85% of RNA is rRNA in heart muscle -->
-@RN2223]<!-- Young Ch 40 ~ 85% of RNA is ribosomal in rat skeletal muscle -->,
+[@RN2054;@RN2223]<!-- Zak 1967 85% of RNA is rRNA in heart muscle --><!-- Young Ch 40 ~ 85% of RNA is ribosomal in rat skeletal muscle -->,
 total RNA can be used as a surrogate measure of ribosomal abundance. 
 
 
 ### mTORC1, a multifaceted coordinator of cell growth
 
-The discovery of an organic compound called rapamycin in the 1960s led to the characterization of a rapamycin-sensitive protein involved in cell growth. The protein was later named mechanistic target for rapamycin (mTOR)
+The discovery of an organic compound called rapamycin in the 1960s led to the characterization of a rapamycin-sensitive protein involved in cell growth. The protein was later named mechanistic target of rapamycin (mTOR)
 [@RN1049].<!-- Goodman review -->
 mTOR is found in two protein complexes (mTOR complex 1, mTORC1; mTOR complex 2, mTORC2) where primarily mTORC1 is sensitive to rapamycin treatment
 [@RN1049].<!-- Goodman review -->
 Bodine *et al.* performed a comprehensive characterization of mTORC1-mediated skeletal muscle hypertrophy using rodent models, showing that mTORC1 activation was essential for load-induced hypertrophy. Additionally, using transfection techniques, they showed that constitutively activated signaling upstream of mTORC1 (Akt) led to hypertrophy in a mTORC1-dependent manner
 [@RN782].<!-- Bodine 2001 -->
-Further utilizing rapamycin in genetically modified mice where mTOR was made rapamycin-resistant, specifically in skeletal muscle cells, confirmed that muscle-fiber specific rapamycin-sensitive mTORC1 signaling was needed to induce muscle hypertrophy in response to mechanical loading
+Using genetically modified mice where mTOR was made rapamycin-resistant, specifically in skeletal muscle cells, confirmed that muscle fiber specific rapamycin-sensitive mTORC1 signaling was needed to induce muscle hypertrophy in response to mechanical loading
 [@RN1072].<!-- Goodman transgenic muscle-specific rapamycin insensitive mice confirm that skeletal muscle mTORC1 is responsible for the effect of rapamycin   -->
 These mechanistic studies support previous observational evidence connecting mTORC1 signaling to muscle growth in rats
 [@RN866],<!-- Baar Esser -->
 and more recently, in humans
-[@RN791;<!-- Burd Correlation in single session between p70 and  -->
-@RN785].<!-- Terzis correlation between p70S6K and hypertrophy-->
+[@RN791;@RN785].<!-- Burd Correlation in single session between p70 and  --><!-- Terzis correlation between p70S6K and hypertrophy-->
 Administration of rapamycin in humans has also confirmed that mTORC1 signaling is essential for protein synthesis in the acute phase after resistance training (2 hours) and in response to protein ingestion
-[@RN780;<!-- Drummond administration of rapamycin blocks protein synthesis induced by res ex -->
-@RN781].
+[@RN780;@RN781].<!-- Drummond administration of rapamycin blocks protein synthesis induced by res ex -->
 However, extending the time-frame (up to 24 hours), differences in responses to resistance exercise between rapamycin treatment and control conditions were less pronounced
 [@RN2826].
 This attenuated effect could be explained by the lower dosage of rapamycin administered in humans than in animals.
 It could also indicate rapamycin-insensitive mechanisms controlling translational efficiency
-[@RN2839;<!-- Choo 2008 mTOR/raptor is needed but 4E-BP1 phosphorylation is recovered in spite of rapamycin treatment -->
-@RN2836].<!-- Ogasawara 2018 rapamycin is mTORC1/S6K1 specific in inhibition, additional inhibiton of mTOR kinase (both mTORC1 and 2) also leads to complete downregulation of 4E-BP1 -->
+[@RN2839;@RN2836].<!-- Choo 2008 mTOR/raptor is needed but 4E-BP1 phosphorylation is recovered in spite of rapamycin treatment --><!-- Ogasawara 2018 rapamycin is mTORC1/S6K1 specific in inhibition, additional inhibiton of mTOR kinase (both mTORC1 and 2) also leads to complete downregulation of 4E-BP1 -->
 
 mTORC1 functions as a signaling hub by integrating multiple environmental cues to regulate cellular growth. Among such cues is mechanical stimulation, which leads to the accumulation of phosphatidic acid in muscle cells
 [@RN2844].<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
@@ -514,8 +452,8 @@ Such accumulation was shown to be independent of regulators upstream of mTORC1
 [@RN2844;<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
 @RN2119]<!-- ERK inhibition not inhibiting PA induced mTORC1 activation -->
 but still readily led to mTORC1 activation
-[@RN2844;<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
-@RN2119], indicating direct stimulation of mTORC1 by phosphaticic acid.<!-- ERK inhibition not inhibiting PA induced mTORC1 activation -->
+[@RN2844;@RN2119],<!-- O Neil 2009 Increase in phosphatidic acid and mTORC1 activity, not affected by PI3K/Akt inhibiton -->
+indicating direct stimulation of mTORC1 by phosphatidic acid.<!-- ERK inhibition not inhibiting PA induced mTORC1 activation -->
 In cellular models, phosphatidic acid has been shown to interact with mTORC1 on the same site targeted by rapamycin 
 [@RN2126].<!-- Fang PA leads to activation of mTOR, PA binds to FRB domain (same as rapamycin) -->
 The enzyme primarily responsible for mechanically induced increases of phosphatidic acid is diacylglycerol kinase $\zeta$
@@ -530,23 +468,21 @@ Providing a mixture of essential amino acids potentiated mTORC1 signaling in res
 In addition to mechanical stimuli and amino acids, mTORC1 integrates several environmental cues related to growth factors, energy, and oxygen status, with downstream signaling differing depending on upstream signaling and cellular characteristics
 [@RN2139].<!-- Laplante mTOR signaling different between tissues and input -->
 
-Two well-characterized downstream targets of mTORC1 relay much of its information related to translational control, eIF-4E (eukaryotic translation initiation factor 4E)-binding protein 1 (4E-BP1) and S6 kinase 1 (S6K1).
+Two well-characterized downstream targets of mTORC1 enable much of its activity related to translational control, eIF-4E (eukaryotic translation initiation factor 4E)-binding protein 1 (4E-BP1) and S6 kinase 1 (S6K1).
 Upon activation, 4E-BP1 releases eIF-4E
 [@RN2837]<!-- Akt dependent phosphorylation of 4e-bp1, upon activation eIF-4E no longer associated with 4E bp1 -->
 which enables the formation of a preinitiation complex and subsequent recruitment of the small ribosomal subunit to mRNA
 [@RN2838].<!-- Gingras review 43S recruitment to mRNA is the rate limiting step in translation initiation mediated by eIF4E and thus 4E-BP1 -->
-eEIF-4E-dependent initiation of translation is believed to be rate-limiting and thus a control point for protein synthesis.
-Interestingly, the formation of the preinitiation complex, induced by the mTORC1-4E-BP1-mediated release of eIF-4E, results in enhanced translation of a special class of mRNAs, containing a 5' structures that do not permit efficient translation
-[@RN2838;
-@RN2840].
+eEIF-4E-dependent initiation of translation is believed to be rate-limiting and thus a control point for protein synthesis
+[@RN2838].<!-- Gingras review 43S recruitment to mRNA is the rate limiting step in translation initiation mediated by eIF4E and thus 4E-BP1 -->
+Interestingly, the formation of the preinitiation complex, induced by the mTORC1-4E-BP1-mediated release of eIF-4E, results in enhanced translation of a special class of mRNAs, containing 5' structures that do not permit efficient translation
+[@RN2838;@RN2840].
 Among the resulting gene products from such mRNA are growth factors, cell cycle regulators such as cyclin D1 and c-Myc, and ribosomal proteins
-[@RN2838;
-@RN1049].<!-- Goodman review --->
+[@RN2838;@RN1049].<!-- Goodman review --->
 Parallel to 4E-BP1 is S6K1 which was named after its ability to phosphorylate ribosomal protein S6 but has since been shown to have multiple roles related to both translational efficiency and indirectly to translational capacity
 [@RN1049].<!-- Goodman review --->
 The importance of S6K1 in control of muscle mass is apparent from S6K1 depletion in mice, which results in reduced muscle growth. Conversely, constitutively active S6K1 results in increased myotube growth in cell cultures
-[@RN2828;<!-- Ohanna  -->
-@RN783].<!-- Rommel 2001 Cell culture, constituvely active s6k1 leads to increased  -->
+[@RN2828;@RN783].<!-- Ohanna  --><!-- Rommel 2001 Cell culture, constituvely active s6k1 leads to increased  -->
 This reduced growth could be related to S6K1 deficient mice being unable to induce transcription of genes related to ribosomal biogenesis
 [@RN2321].<!-- Chauvin S6K1/S6K2 null mice does not respond with ribosomal biogenesis transcription after feeding -->
 Upon activation of Akt, such mice fail to respond by increasing ribosomal biogenesis, evident as failure to accumulate total RNA and rRNA
@@ -563,7 +499,7 @@ Interestingly, mice depleted of S6K1 showed reduced specific force compared to w
 Together these observations point to fine-tuning mechanisms in the S6K1-rpS6-axis, balancing protein synthesis, protein quality, and energy wastage
 [@RN2849;<!-- Marabita 2016 S6K1 null mice compensatory 4EBP1 activity leads to hypertrophy but abolished ribosomal biogenesis and less strength -->
 @RN2824].<!-- Ruvinsky 2006 review of rpS6 -->
-Fine-tuning may also exist within the mTORC1-S6K1 axis as S6K1 stimulates mTOR phosphorylation at Ser\textsuperscript{2448}
+Fine-tuning may also exist within the mTORC1-S6K1-axis as S6K1 inhibits mTOR through phosphorylation of mTOR at Ser\textsuperscript{2448}
 [@RN1902],
 a commonly used read-out for mTORC1 activity
 [@RN1949].
@@ -572,7 +508,7 @@ Additionally, mTORC1 signaling is sensitive to training status evident from chan
 @RN1809].<!-- Brook abolished mTORC1 induction after 3 and 6 weeks of training -->
 After three and six weeks of training, the acute exercise-induced response (60-90 minutes post-exercise) in mTORC1-related signaling is practically abolished in young males
 [@RN1809].
-Similarly, in well-trained participants accustom to resistance training, acute resistance-exercise does not lead to perturbations along the Akt-mTORC1-axis in comparison to endurance-trained participants
+Similarly, in well-trained participants accustomed to resistance training, acute resistance-exercise does not lead to perturbations along the Akt-mTORC1-axis in comparison to endurance-trained participants
 [@RN1871].
 These studies are limited in their temporal resolution as only signaling events in the early recovery phase were investigated.
 However, they indicate that exercise-induced mTORC1-signaling is sensitive to aspects relating to training status.
@@ -585,9 +521,7 @@ In addition to correlations between RNA abundance and protein synthesis in mice
 and cell culture
 [@RN1754], <!-- West correlation in cell culture -->
 inhibition of ribosomal RNA (rRNA) transcription or inhibition of upstream transcription factors act to diminish muscle cell growth upon stimulation
-[@RN1755<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->;
-@RN1754<!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS-->;
-@RN1810].<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->
+[@RN1755;@RN1754;@RN1810].<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty --><!-- West 2016 Inhibition of c-Myc (through inibitor) reduces RNA and MPS--><!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->
 In the context of resistance training-induced muscle growth, observational evidence from human studies further supports a determining role of ribosomal biogenesis to achieve increased translational capacity and enable hypertrophy.
 Figueiredo *et al.* observed a correlation between the changes in RNA abundance and magnitude of muscle growth over eight weeks of resistance training
 [@RN1644].<!-- Figueriedo 2015 correlation between delta csa and fold change of total RNA -->
@@ -605,55 +539,41 @@ In aged male participants, three sessions of resistance training did not lead to
 [@RN2155].<!-- Welle three sessions over a seven day period no change in RNA but prot synth -->
 Furthermore, in response to a higher number of training sessions, absence or reduced ribosomal biogenesis is observed in selected individuals, but muscle growth may still be detected
 [@RN1809].<!-- Brook -->
-However, when comparing aged and young skeletal muscle, aged muscle typically respond with reduced hypertrophy after mechanical stimuli, coinciding with reduced ribosomal biogenesis
-[@RN1809;
-@RN1631],
+However, when comparing aged and young skeletal muscle, aged muscle typically responds with reduced hypertrophy after mechanical stimuli, coinciding with reduced ribosomal biogenesis
+[@RN1809;@RN1631],
 indicating that potent ribosomal biogenesis is needed to support greater hypertrophy.
 Similarly, when comparing cell culture experiments, a "broader" stimuli induced by serum compared to a single growth factor could induce greater cellular growth that subsequently requires the support of an increased translational capacity
-[@RN1929;<!-- Crossland -->
-@RN1810;<!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth -->
-@RN1755].<!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->
+[@RN1929;@RN1810;@RN1755].<!-- Crossland --><!-- von Walden 2016 Inhibition of Pol 1 rDNA tracsription and myotube growth --><!-- Stec 2016 Pol I-specific inhibition leads to GF induced myotube hypertrophty -->
 
 Markers of *de novo* synthesis of ribosomes are indeed a hallmark of the early response to resistance training as a single resistance-exercise session leads to increases in precursor rRNA (pre-rRNA 45S)
 [@RN1656<!-- A single session upregulates 45 S 24 h post ex -->;
 @RN1037<!-- Nader 2014 45S up in response to 4 h after acute exercise -->]
 and repeated bouts lead to accumulation of rRNA/total RNA and thus presumably functional ribosomes
-[@RN1656;<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old -->
-@RN1520;<!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr-->
-@RN1755<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->;
-@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
-@RN1809; <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
-@RN1897<!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->].
+[@RN1656;@RN1520;@RN1755;@RN1644;@RN1809;@RN1897].<!-- Stec2015 A single session ns ~ 9% increase in young, -4% in old --><!-- Bickel 2005 Two bouts electric stimulation, young ~ 30% incr--><!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD--><!-- Figuieredo 2015 16 sessions 49% increase young --><!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young--><!-- Riedy 11% increase and correlation with muscle thickness delta 36 sessions young -->
 The time course of ribosomal transcription and accumulation in response to resistance training in humans remains largely unknown, with only a few studies investigating exercise- or training-induced changes in markers of ribosomal abundance over multiple time-points.
-For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hrs after the second bout
+For example, two consecutive bouts of electrically evoked muscle contractions were associated with increased levels of total RNA, with peak values being observed 72 hours after the second bout
 [@RN1520]<!-- Total RNA increase 72 h after a second bout -->. 
 Using voluntary contractions, peak values in total RNA were reported after nine sessions, followed by a slight decrease after 18 sessions [@RN1809].
 These data suggest that ribosomes accumulate with some delay from initiation of training, reaches a plateau in the early phase of resistance training (three weeks), and slightly decreases as muscle mass further increases
-[@RN1809;
-@RN1520].
+[@RN1809;@RN1520].
 
 The synthesis of new ribosomes is a complex and energy-demanding process, believed to be determined by the rates of pre-rRNA transcription by RNA polymerase I (Pol I), which in turn is regulated by the coordinated assembly of a complex of transcription factors at the rDNA promoter
 [@RN1820].<!-- Moss review -->
 rRNA transcription is coupled with the synthesis of ribosomal proteins and the assembly into functional ribosomal subunits
-[@RN1920;<!-- Warner review yeast -->
-@RN1940;
-@RN1820].<!-- Moss review -->
+[@RN1920;@RN1940;@RN1820].<!-- Warner review yeast --><!-- Moss review -->
 Three of the four mature rRNA (except rRNA 5S) are derived from a single pre-rRNA transcript (45S pre-rRNA). After being transcribed from ribosomal DNA (rDNA), the 45S pre-rRNA transcript goes through several splicing events, ultimately leading to the formation of three rRNA species, 18S, 5.8S, and 28S. Simultaneously with the splicing of rRNA, modifications to the rRNA structure and assembly with ribosomal proteins into precursor ribosomal subunits occur in the nucleolar compartment
 [@RN1940].<!-- Ribosome biogenesis at a glance -->
 After export to the cytoplasm, additional maturation steps are required in both subunits before they can form functional ribosomes  
 [@RN1940].<!-- Ribosome biogenesis at a glance -->
 
 Activation of the upstream binding factor (UBF) through phosphorylation is needed to initiate rRNA transcription
-[@RN2582; <!-- Tuan UBF phosphorylation important for SL1-UBF interaction -->
-@RN2563].<!-- Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
+[@RN2582;@RN2563].<!-- Tuan UBF phosphorylation important for SL1-UBF interaction --><!-- Lin 2007 phospho of UBF shows it has a role in recruioting SL1 to the rDNA promoter -->
 This activation is partly controlled by mTORC1-activity, with its inhibition being associated with decreased UBF phosphorylation and inhibition through association with retinoblastoma protein
 [@RN2213]<!-- Hannan ubf and rb in complex supress interaction with sl1  -->
 which in turn leads to reduced availability and ability of UBF to recruit secondary factors to the rDNA promoter and stimulate rRNA transcription
-[@RN1632; <!-- Nader rapamycin block UBF availability  -->
-@RN2564].<!-- Hannan mTOR block in postmitotic cardimyocytes -->
+[@RN1632;@RN2564].<!-- Nader rapamycin block UBF availability  --><!-- Hannan mTOR block in postmitotic cardimyocytes -->
 Interestingly, the availability of UBF *per se* has also been shown to be a determinant of rRNA transcription
-[@RN2566;<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes -->
-@RN2564]<!-- mTOR controls UBF availability, rapamycin block serum induced increase in UBF -->
+[@RN2566;@RN2564]<!-- Hannan 1996 over expression of UBF leads to rRNA transcription in cardiomyocytes --><!-- mTOR controls UBF availability, rapamycin block serum induced increase in UBF -->
 through control of rDNA gene activity
 [@RN2556].<!-- Sanij, UBF depleting leads to inactivation of rDNA genes -->
 mTORC1 also controls one of these secondary factors, TIF-1A, as rapamycin leads to specific phosphorylation and its translocation away from the nuclei
@@ -668,29 +588,26 @@ Furthermore, the transcription factor c-Myc has also been implicated in ribosoma
 c-Myc is also found at the rDNA promoter and is required for rDNA transcription
 [@RN1834;<!--  -->
 @RN1828],<!-- von Walden c-myc is enriched at the cdna promoter  -->
-in addition to its role in transcription of genes imoportant for rRNA transcription, e.g. UBF
+in addition to its role in transcription of genes important for rRNA transcription, e.g. UBF
 [@RN2565].<!-- c-myc activate transcription of the ubf promoter -->
 
 In summary, ribosomal biogenesis and the regulation of translation are under coordinated control of several pathways integrating multiple stressors and environmental cues to regulate cellular protein synthesis. 
 
-### Transcriptional regulation of training-induced muscle tissue remodeling (with analytical challenges) 
+### Transcriptional regulation of training-induced muscle tissue remodeling
 
 Skeletal muscle fibers are polynuclear cells. Each fiber contains multiple nuclei, which supports its transcriptional needs. Muscle fiber-specific nuclei (myonuclei) cannot proliferate, and the muscle fiber is therefore relying on dormant cell populations located in muscle tissue to activate and supply the fiber with transcriptional capacity during growth or in response to injury
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
 Among these cells, satellite cells are the primary source of myonuclear accretion in adult skeletal muscle.
 However other cell types may also contribute
-[@RN2080;<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-@RN2864].<!-- Mccarthy ablation of satellite cells still led to some new myonuclei, suggests other cell types contribute --> 
+[@RN2080;@RN2864].<!-- Blaauw 2014 review satellite cells and hypertrophy --><!-- Mccarthy ablation of satellite cells still led to some new myonuclei, suggests other cell types contribute --> 
 Satellite cells can be activated, proliferate or differentiate and fuse with the muscle fiber upon specific stimuli such as hormonal activation
 [@RN912]<!-- Egner 2013 steroid treatment leads to increased number of myonuclei -->
 or mechanical stress
 [@RN2104],<!-- Eftestøl 2016 activation of satellite cells is dependent on mechanical strain isometric force or 50-60% of maximal force -->
 or return to their quiescent state
 [@RN2080].<!-- Blaauw 2014 review satellite cells and hypertrophy -->
-In humans, satellite cells can be readily activated in response to resistance exercise. Activation that leads to them exiting their quiescent state to proliferate
-[@RN2872;<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr -->
-@RN1048;<!-- Snijders 2012 using DLK -->
-@RN2081],<!-- Mackey using Pax7, Ki67 and CD56 -->
+In humans, satellite cells can be readily activated in response to resistance exercise, which leads them to exit their quiescent state to proliferate,
+[@RN2872;@RN1048;@RN2081],<!-- McKay in young G2/M phase increase ~ 70%, G0/G1 ~ 81%, s phase 100% total number of pax7+ cells ~ 83% incr --><!-- Snijders 2012 using DLK --><!-- Mackey using Pax7, Ki67 and CD56 -->
 which in turn leads to an increased number of satellite cells after resistance training
 [@RN2617].
 
@@ -701,8 +618,7 @@ Kadi *et al.* reported that although the number of satellite cells increased by 
 suggesting that existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
 [@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
 Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal increases in the myonuclei pool
-[@RN2112;<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
-@RN2874].
+[@RN2112;@RN2874].<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
 In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest, and non-responders
 [@RN2868].<!-- Petrella 2008 larger increase in myonuclei in high responders, confunded with the fact that high responders were to a large extent young males and low responders older women and men, see @RN765 -->
 However, this analysis may have been confounded by the fact that the clustering did not account for age or sex. For example, the extreme-responder group contained nine young (20-35 years) but only two elderly (60-75 years) male participants whereas the non-responder group contained one young man and six elderly
@@ -725,62 +641,44 @@ Indeed, this reserve capacity of existing myonuclei seems sufficient to induce a
 Such a shift in global transcription is indeed a determinant of muscle growth as it sets the limit of ribosomal biogenesis and thus the muscle cells' translational capacity (as reviewed above).
 
 Transcriptional changes in response to mechanical loading are quantitative (RNA per unit of tissue mass) and qualitative. Activation and de-activation of multiple transcriptional programs that enable coordinated responses to the specific stimuli effectively change the global mRNA profile.
-Such "programming" in muscle tissue affects, e.g. muscle fiber type composition whereby resistance training leads to "shut-down" of *MYH1* expression, which codes for the myosin isoform represented in type IIX fibers
+Such "programming" in muscle tissue affects, e.g., muscle fiber type composition whereby resistance training leads to "shut-down" of *MYH1* expression, which codes for the myosin isoform represented in type IIX fibers
 [@RN2056].<!-- Anderssen  -->
 The changed, relative proportions of transcripts coding for myosin composition will after remodeling reflect the resulting phenotype
 [@RN1489].<!-- Ellefsen -->
 Furthermore, transcriptional remodeling of the extracellular matrix is readily affected by resistance training
-[@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN2298].<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9-->
+[@RN1825;@RN2298].<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)--><!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9-->
 Revisiting satellite cells' role, briefly touched upon in a previous paragraph, highlights that the extracellular matrix's remodeling is a shared venture between multiple cell types.
 If satellite cells are depleted from the skeletal muscle of mice subjected to long-term mechanical overload through synergist ablation, a fibrous muscle phenotype is developed with accumulated extracellular matrix components
 [@RN1354].<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
 This observation indicates that a balance between muscle satellite cells, their daughter cells, and fibroblasts enables coordination between myofiber hypertrophy and extracellular matrix remodeling
-[@RN1354;<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  -->
-@RN1888;<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
-@RN2421].<!--  Kjaer fibroblast are the main source of collagen biosynthesis-->
+[@RN1354;@RN1888;@RN2421].<!-- Fry depleting satellite cells results in ECM accumulation, lower specific force (but not single fiber)  --><!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts --><!--  Kjaer fibroblast are the main source of collagen biosynthesis-->
 Such coordinated remodeling occurs at least partly through direct exosome transfer of regulating RNA between differentiated satellite cells and fibroblasts
 [@RN1888].<!-- Fry muscle satellite cells -> myocytes express mir 206 which in turn downregulate collagen synthesis in fibroblasts -->
 
-In humans, previous studies investigating transcriptional responses to resistance training have investigated a single resistance-exercise session [@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408], <!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
+In humans, previous studies investigating transcriptional responses to resistance training have investigated a single resistance-exercise session
+[@RN1825;@RN2298;@RN2408],<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)--><!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--><!-- Hyldahl 2011 acute activation in reponse to 100 eccentric contractions-->
 repeated bouts
 [@RN2299]<!-- Murton Exercise induced genes with no response in control group-->
-and chronic resistance training [@RN2400;<!-- Robinson 2017 differences on common regulation between exercise types in you and old--> 
-@RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> 
-@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN774]<!-- Raue 2012. Differential expression  -->
+and chronic resistance training
+[@RN2400;@RN2298;@RN1825;@RN774]<!-- Robinson 2017 differences on common regulation between exercise types in you and old--><!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> <!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)--><!-- Raue 2012. Differential expression  -->
 for changes in transcriptome ("qualitative") characteristics using large-scale techniques (micro-arrays or RNA-seq).
 Generally, these studies show that a bout of resistance exercise in the untrained state results in a transcriptome profile related to structural damage, remodeling, and inflammation
-[@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN2298;<!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> @RN2408
-@RN2299].<!-- Murton Exercise induced genes with no response in control group-->
+[@RN1825;@RN2298;@RN2408@RN2299].<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)--><!-- Damas regulation in rested state pre post 10 w training and pre post ex before and after training n = 9--><!-- Murton Exercise induced genes with no response in control group-->
 Long-term adaptations generally involve extracellular matrix remodeling, changes in expression of genes related to energy metabolism
-[@RN2400;<!-- Robinson 2017 differences on common regulation between exercise types in you and old--> 
-@RN2298;<!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> 
-@RN1825;<!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)-->
-@RN774].<!-- Raue 2012. Differential expression  -->
+[@RN2400;@RN2298;@RN1825;@RN774].<!-- Robinson 2017 differences on common regulation between exercise types in you and old--><!-- Damas reghulation in rested state pre post 10 w training and pre post ex before and after training n = 9--> <!-- Gordon 2012 Diff expr after acute exercise in trained vs. untrained (identifies ECM as higher in trained)--><!-- Raue 2012. Differential expression  -->
 In addition to descriptive studies, attempts have also been made to associate transcriptome characteristics and degrees of muscle growth
-[@RN774;<!--Raue 2012. 661 genes regulated by exercise and correlated with muscle size and strength--> 
-@RN826;<!-- Thalacker-Mercer -->
-@RN753],<!-- Phillips 2013 association with  -->
+[@RN774;@RN826;@RN753],<!--Raue 2012. 661 genes regulated by exercise and correlated with muscle size and strength--> <!-- Thalacker-Mercer --><!-- Phillips 2013 association with  -->
 and muscle function
-[@RN2402;<!-- Hangelbroek 2018 gene cluster predicts 1RM, training induces expression of ECM/collagen -->
-@RN2398].
+[@RN2402;@RN2398].<!-- Hangelbroek 2018 gene cluster predicts 1RM, training induces expression of ECM/collagen -->
 
 Although these studies have broadened our understanding of transcriptional regulation during adaptations to resistance training, they also highlight the intrinsic difficulties of studying a dynamic and stochastic process
 [@RN2618].
 From a methodological point of view, skeletal muscle subjected to resistance training, exhibit large global changes to the RNA pool, and *qualitative* changes to RNA sub-populations (mRNA).
 A common assumption in studies of gene expression is the relative stability of most transcripts, as well as a stability between sub-populations of RNA (mRNA vs. rRNA)
-[@RN2359;<!-- Loven 2012 et al  -->
-@RN2414].<!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
+[@RN2359;@RN2414].<!-- Loven 2012 et al  --><!-- Robinson 2010 TMM method normalization assumes most genes not affected by treatment-->
 <!-- Fix this -->
 Such assumptions may not be valid in many situations, including during muscle hypertrophy
-[@RN2616;<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool -->
-@RN2430;<!-- Lin 2012 c-Myc induced gene amplification through -->
-@RN1755;<!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD-->
-@RN1644;<!-- Figuieredo 2015 16 sessions 49% increase young -->
-@RN1809]. <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
+[@RN2616;@RN2430;@RN1755;@RN1644;@RN1809].<!-- Kirby 2016 nascent RNA is detected in myonuclei after SA (mice) 47S is detected in EU labeled RNA pool --><!-- Lin 2012 c-Myc induced gene amplification through --><!-- Stec 2016 12 sessions 26, 9 and 6% increase in high, mod and low responders OLD--><!-- Figuieredo 2015 16 sessions 49% increase young --> <!-- Brook 18 sessions 8 and 40% (9 sessions) and 15,22% (18 sessions) old and young-->
 Depending on the technique used for evaluating RNA expression (e.g., qPCR, micro-array, or RNA-sequencing), data normalization during analysis aims to make experimental conditions comparable using some common denominator.
 In cell culture experiments, cell number was suggested to be this denominator for transcript abundances in order to account for global changes in transcription
 [@RN2359].<!-- Loven 2012 et al  -->
@@ -789,9 +687,7 @@ Despite the fact that some previous investigations, specifically investigating r
 transcript counts are commonly expressed as per transcriptome.
 
 In summary, both quantitative and qualitative changes in transcriptional profiles in response to environmental stress are important determinants of the resulting changes in cellular phenotypes. Skeletal muscle hypertrophy may represent a special case, as it is typically associated with global changes in transcription as well as cellular growth. To fully understand such dynamic systems, the first steps should include explicit evaluation of underlying methodological assumptions
-[@RN2426;<!-- Conessa 2016 best practices fom RNA seq-->
-@RN2359;<!-- Loven 2012 et al  -->
-@RN2878]
+[@RN2426;@RN2359;@RN2878]<!-- Conessa 2016 best practices fom RNA seq--><!-- Loven 2012 et al  -->
 
 
 ## Effects of resistance exercise volume on molecular determinants of muscle growth
@@ -799,29 +695,28 @@ Given that resistance exercise variables can modify training responses such as m
 Resistance exercise intensity has been evaluated concerning protein synthesis and activation of targets downstream of mTORC1 (4E-BP1 and S6K1).
 Kumar *et al.* showed that maximal stimulation of fractional synthetic rate was achieved with intensities greater than 60\% of 1RM, coinciding with signaling events
 [@RN2720].<!-- Kumar 2009 increasing exercise intensities maximises post ex prot synthesis at 75% in young (plateau at 60-90% of 1RM)  -->
-The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal protein synthesis stimulation (75% of 1RM).
-This analysis revealed a volume-dependent dose-response, as a higher volume of leg extension led to greater protein synthesis one hour after exercise and sustained S6K1 phosphorylation up to four hours after exercise
+The same group subsequently investigated the effect of training volume at an intensity presumably leading to maximal stimulation of the rate of protein synthesis (75% of 1RM).
+This analysis revealed a volume-dependent dose-response, as a higher volume of leg extension led to greater protein synthesis rate one hour after exercise and sustained S6K1 phosphorylation up to four hours after exercise
 [@RN2716].<!-- Kumar 2012 higher protein synthesis after 6 sets compared to 3 sets coinciding with sustained S6K1 phosphorylation -->
-Further extending the time frame, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24, and 29 hours after exercise. Both conditions led to increased myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
+Further extending the time frame, Burd and colleagues evaluated a single session consisting of either one or three sets with biopsies sampled 5, 24, and 29 hours after exercise. Both conditions led to increased rate of myofibrillar protein synthesis five and 29 hours after exercise, but to a larger extent in response to three sets.
 However, volume-dependent regulation of S6K1 was only seen at 29 hours after exercise, with earlier events (< 5 hours) possibly missed due to biopsy sampling timing.
 No clear volume-dependency was seen in p90RSK1 (downstream of ERK) or rpS6, however eukaryotic initiation factor 2B (eIF2B$\epsilon$) phosphorylation was reduced only in the three-set condition at five hours post-exercise [@RN791], presumably mediating translation initiation, although its exact role is still unclear
 [@RN2853].<!-- Pavit eIF2B review -->
-Volume-dependent regulation of S6K1 at Thr389 and rpS6 at Ser235/236 were reported 30 minutes after exercise by Terzis *et al.* as six sets of 6RM bilateral leg press resulted in greater phosphorylation compared to three and one set
+Volume-dependent regulation of S6K1 at Thr389 and rpS6 at Ser235/236 was reported 30 minutes after exercise by Terzis *et al.* as six sets of 6RM bilateral leg press resulted in greater phosphorylation compared to three and one set
 [@RN784].
 No clear differences between volume conditions were seen in Akt at Ser473, mTOR at Ser2448, ERK 1/2 at Thr202/Tyr204, p38 ($\alpha$,$\alpha$ and $\delta$) at Thr180/Tyr182, p38$\gamma$ Thr180/Tyr182 or AMPK at Thr172
 [@RN784].
 Corroborating previous observations regarding exercise volume-dependence of the S6K1-rpS6-axis, Ahtiainen and colleagues also found greater phosphorylation of S6K1 at Thr389, rpS6 at Ser235/236 and Ser240/244 30 minutes after exercise with ten compared to five sets of 10RM leg press.
-Furthermore, ERK1/2 at Thr202/Tyr204 and p38 at Thr180/Tyr182 phosphorylations were not found to be volume-dependent
+Furthermore, ERK1/2 at Thr202/Tyr204 and p38 at Thr180/Tyr182 phosphorylation were not found to be volume-dependent
 [@RN1837].
 However, in contrast to Terzis *et al.*, they reported volume-dependence in exercise-induced phosphorylation of AMPK$\alpha$ at Thr172, this together with AS160 at Thr642, IRS-I Ser636/639 and Akt at Ser473 together with a tendency in LKB1 at Ser428, all related to cellular energy status, glucose uptake and metabolism
-[@RN1837;
-@RN2856]<!-- Sano 2003 when unable to phosphorylate AS160 glut4 translocation to membrane is inhibited in  
+[@RN1837;@RN2856].<!-- Sano 2003 when unable to phosphorylate AS160 glut4 translocation to membrane is inhibited in  
 with relatively high exercise volumes.-->
 
-Collectively, although limited in precision due to small sample sizes (n = 8-19) and temporal resolution and 
+Collectively, although limited with regard to sample sizes (n = 8-19) and temporal resolution, 
 <!-- Mitchell n = 18, Burd n = 8, kumar n = 12, Ahtiainen n = 19, Terzis = 8 --> these studies points to volume dependency in exercise-induced S6K1\textsuperscript{Thr389} phosphorylation, potentially further augmented when increased number of sets are examined in the acute phase 
 (> 3 sets, < 5 hours; [@RN834; @RN791] vs. [@RN1837; @RN784; @RN2716]).
-Increased S6K1 phosophorylation coincides with rpS6\textsuperscript{Ser235/236} and \textsuperscript{Ser240/244} in the acute phase (< 5 hours) after exercise
+Increased S6K1 phosphorylation coincides with rpS6\textsuperscript{Ser235/236} and \textsuperscript{Ser240/244} in the acute phase (< 5 hours) after exercise
 [@RN784; @RN1837] but not in the late phase (29 hours) [@RN791].
 Although rpS6\textsuperscript{Ser235/236} is a known substrate for both S6K1 and ERK1/2 and p90RSK1
 [@RN2311],
@@ -842,9 +737,8 @@ Interestingly, an increased AMPK-related signaling may be related to an accumula
 In addition to the signaling events described above, training-induced satellite cell activation has been shown to be volume dependent.
 Hanssen *et al.* found that training with three sets compared to a single set per exercise led to a more pronounced increase in cells positive for the satellite cell marker CD56 in *m. vastus lateralis* at two and twelve weeks of resistance training [@RN796]. 
 This coincided with a greater number of myonuclei after 12 weeks of training, although without apparent differences between volume conditions.
-In the same muscle specimen, no clear volume-dependent effect was seen on muscle fiber CSA. However, on the muscle level, a positive effect of three- compared to one-set was seen for muscle hypertrophy.
-[@RN796;
-@RN776]
+In the same muscle specimen, no clear volume-dependent effect was seen on muscle fiber CSA. However, on the muscle level, a positive effect of three- compared to one-set was seen for muscle hypertrophy
+[@RN796;@RN776].
 
 
 

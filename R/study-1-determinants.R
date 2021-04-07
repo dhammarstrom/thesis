@@ -563,7 +563,7 @@ csa_model_reduction <- csa_models %>%
                              labels = c("Week 2 Total RNA<br>(% of low-volume)", 
                                         "Lean mass<br>(Lower than sex-specific median)",
                                         "Testosterone<br>(Lower than detection limit (females)<br>or median (males))",
-                                        "Growth hormone<br>(mean post-exercis Week 2)",
+                                        "Growth hormone<br>(mean post-exercise Week 2)",
                                         "Type IIX<br>(Below median, 3.7% of total fibers)"))) %>%
 
         ggplot(aes(exp(estimate), term, fill = term)) + 
@@ -1098,7 +1098,7 @@ csa_diff_rna_fig <- csa_full %>%
   
   
   labs(x = "Total RNA Week 2<br>(% of low-volume)", 
-       y = "Moderate vs. Low-volume<br>difference in CSA (%-points)") +
+       y = "Moderate vs. Low-volume<br>difference in CSA gains (%-points)") +
   
   theme(axis.text.x = element_markdown(),
         axis.text.y = element_markdown(), 
@@ -1126,7 +1126,7 @@ str_diff_rna_fig <- str_full %>%
   
   
   labs(x = "Total RNA Week 2<br>(% of low-volume)", 
-       y = "Moderate vs. Low-volume<br>difference in CSA (%-points)") +
+       y = "Moderate vs. Low-volume<br>difference in strength gains (%-points)") +
   
   theme(axis.text.x = element_markdown(),
         axis.text.y = element_markdown(), 

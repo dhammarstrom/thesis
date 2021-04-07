@@ -16,7 +16,6 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ## Study overview
-
 Study I was designed to examine effects of low- (a single-set per exercise) and moderate-volume (three sets per exercise) on responses to acute exercise and long-term training within participants.
 A schematic overview of Study I can be seen in Figure \@ref(fig:study1-overview).
 Before the training intervention, participants reported to the laboratory for bilateral baseline muscle biopsies (*m. vastus lateralis*).

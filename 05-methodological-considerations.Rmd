@@ -155,21 +155,21 @@ between_duplicates <-  read_excel("./data/study-1/fiber-type/fibertype.xlsx") %>
 ```
 
 In Study I, one or several pieces of muscle (total weight
-$\sim$\SI{15}{mg}) were chosen for analyses of muscle fiber type composition per musce biopsy sampling event. The average total number of counted fibers per sample was `r round(average_n_fibers, 0)`.
+$\sim$\SI{15}{mg}) were chosen for analyses of muscle fiber type composition per muscle biopsy sampling event. The average total number of counted fibers per sample was `r round(average_n_fibers, 0)`.
 Only a small percentage (`r low_fiber_counts[2,3]`\%) of samples did not contain enough fibers for representative analysis of fiber type composition (> 200 fibers),
 [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->
 and as many as in some specimen 1400 fibers were counted (\@ref(fig:fiber-methods-fig)a).
 The smaller amount of tissue obtained using the micro-biopsy technique did not limit fiber type composition analyses.
 
 In order to assess the reproducibility of the technique, samples obtained during the same day (separated by $\sim$ 2 hours) were analyzed as duplicate samples. 
-Similar to Blomstrand *et al.* [@RN874], standard deviations from duplicate measures were calculated as:
-$$SD = \sqrt{\frac{\sum{d^2}}{2n}}$$
+Similar to Blomstrand *et al.* [@RN874], variations from duplicate measures were calculated as:
+$$S = \sqrt{\frac{\sum{d^2}}{2n}}$$
 Where $d$ is the difference between paired observations and $n$ is the number of pairs.
-The variation (SD) between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)` for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
+The variation between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)`%-points for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
 This resembled variations between leg (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
-These estimates of variation are slightly lower than those reported by Blomstrand *et al.* [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->, using the Bergström needle, and suggest that the micro-biopsy technique provides reproducible in analyses of fiber type composition in young adults.
+These estimates of variation are slightly lower than those reported by Blomstrand *et al.* [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->, using the Bergström needle, and suggest that the micro-biopsy technique provides reproducible results of fiber type composition in young adults.
 
-```{r fiber-methods-fig, fig.cap="Number of fibres in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 5, fig.align='center'}
+```{r fiber-methods-fig, fig.cap="Number of fibers in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 5, fig.align='center'}
 
 
 
@@ -230,8 +230,8 @@ corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
                            expand = c(0,0), 
                            breaks = c(25, 50 ,75)) + 
         
-        labs(x = "Duplicate 1", 
-             y = "Duplicate 2") +
+        labs(x = "Duplicate 1 (% of total fibers)", 
+             y = "Duplicate 2\n(% of total fibers)") +
         
         geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
         dissertation_theme() + 
@@ -275,8 +275,8 @@ baseline_between_legs <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
                            expand = c(0,0), 
                            breaks = c(25, 50 ,75)) + 
         
-        labs(x = "Left leg", 
-             y = "Right leg") +
+        labs(x = "Left leg (% of total fibers)", 
+             y = "Right leg\n(% of total fibers)") +
         
         geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
         dissertation_theme() + 
@@ -302,13 +302,13 @@ fiber_type_rel_plot
 ## Model-based normalization of qPCR data
 
 Quantitative reverse-transcription real-time polymerase chain-reaction (qPCR) is the method of choice for conducting targeted gene-expression studies.
-After reverse-transcription of RNA, complementary DNA (cDNA) is amplified in the presence of target-specific primers and a reporter probe or dye that produces fluorescence as the PCR product accumulates over repeated PCR cycles. When sufficient amounts of product has formed, the fluorescent signal rises above the background fluorescence, and the fractional PCR cycle used for quantification (Cq) can be estimated. The Cq-values is directly proportional to the starting amount of the targeted transcript and thus constitute the primary outcome of qPCR experiments
+After reverse-transcription of RNA, complementary DNA (cDNA) is amplified in the presence of target-specific primers and a reporter probe or dye that produces fluorescence as the PCR product accumulates over repeated PCR cycles. When sufficient amounts of product is formed, the fluorescent signal rises above the background fluorescence, and the fractional PCR cycle used for quantification (Cq) can be estimated. The Cq-values is directly proportional to the starting amount of the targeted transcript and thus constitute the primary outcome of qPCR experiments
 [@RN2099].
 qPCR experiments should ideally be designed to account for methodological pitfalls, including amounts of RNA utilized for reverse-transcription, the efficiency of cDNA synthesis, and the amount of cDNA used in PCR amplification.
 As traditional statistical treatment of qPCR data accounts for these challenges through the use of reference genes [@RN2100; @RN2101], the stable expression of such a gene is an important assumption in the experiment.
 Using an internal control-factor comprised of the geometric average of multiple reference-genes has been shown to increase the validity of this assumption [@RN991].
-However, the stability of potential reference genes must be determined in each experiment [@RN1983; @RN991], highlighting that qPCR is inevitably challenging, with specific challanges being posed by the biological system under study.
-Despite this, recent investigation of human skeletal muscle in responses to exercise reported using a single-reference gene, validated or non-validated for normalization, despite the recommended use of a validated set of reference genes [@RN1985; @RN2083; @RN2084; @RN2086; @RN2087].
+However, the stability of potential reference genes must be determined in each experiment [@RN1983; @RN991], highlighting that qPCR is inevitably challenging, with specific challenges being posed by the biological system under study.
+Despite this, recent investigations of human skeletal muscle in response to exercise, reported using a single-reference gene, validated or non-validated for normalization, despite the recommended use of a validated set of reference genes [@RN1985; @RN2083; @RN2084; @RN2086; @RN2087].
 <!-- Recent studies using single reference genes -->
 <!-- Only GAPDH in  [@RN2083] -->
 <!-- only GAPDH in  [@RN2084]  validated in  [@RN2085] -->
@@ -333,7 +333,7 @@ The proposed algorithm can also capture complex experimental designs and confirm
 In Study I, to assess the stability of potential reference genes, 11 genes were evaluated (Figure \@ref(fig:ref-gene-comp)a). All three selection algorithms suggested different reference genes (Figure \@ref(fig:ref-gene-comp)b). The mixed-model approach resulted in a set of genes that showed the least systematic variation across study conditions. Figure \@ref(fig:ref-gene-comp)c shows coefficients with 95\% CI from mixed models with each normalization factor as the dependent variable. The naive use of the commonly utilized GAPDH as a single reference gene would result in the largest deviation from the assumption of a stable reference over time, as it was expressed to a lesser degree before exercise at Week 2 compared to baseline. However, when comparing between conditions, normalization factors suggested by geNorm and Normfinder both showed differentiated levels between conditions before exercise at Week 2 indicating that they were unsuited for use as reference (Figure \@ref(fig:ref-gene-comp)c). These results underline that bias can be introduced in qPCR experiments from the choice of normalization factor. The use of a selection algorithm that tests explicitly for stability within participants may provide a more robust normalization factor.
 
 
-```{r ref-gene-comp, fig.cap="Variation in normaliation factors determined by mixed-model selection, Normfinder and geNorm as well as comprised of a single-gene (GAPDH) for comparison (a). Estimates from mixed-effects regression-models for each normalization factor (b). Errorbars represent 95\\% confidence intervals.", fig.scap="Reference gene selection in Study I", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height = 6, fig.align='center'}
+```{r ref-gene-comp, fig.cap="Variation in normalization factors determined by mixed-model selection, Normfinder and geNorm as well as comprised of a single-gene (GAPDH) for comparison (a). Estimates from mixed-effects regression-models for each normalization factor (b). Error bars represent 95\\% confidence intervals.", fig.scap="Reference gene selection in Study I", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 4.72, fig.height = 6, fig.align='center'}
 
 selection_process <- readRDS("./data/derivedData/study1-reference-gene-stability/selection_process.RDS")
 
@@ -397,7 +397,7 @@ The fraction of models that did not converge (LMM) or showed estimation issues (
 The analysis showed that the number of models with convergence issues increased as the number of targets increased from two to eleven \@ref(fig:qpcr-model-robustness). To circumvent such convergence issues, simplification of random effect-structures or reducing the number of targets may help LMM and GLMM. Adding MCMC iterations in the Bayesian framework could improve its performance.
 
 
-```{r qpcr-model-robustness, fig.cap = "Increasing the number of targets in gene-set modeling increses the rates of non-convergance and estimation issues in LMM as wells as estimation issues in GLMM. Estimation issues in LMM was defined when variance components were not estimatable, in the GLMM approach the Gelman-Rubin criterion was used to define estimation issues.", fig.scap="Robustness of model-based qPCR normalization", fig.width = 4, fig.height=2.5, fig.align='center'}
+```{r qpcr-model-robustness, fig.cap = "Increasing the number of targets in gene-set modeling increases the rates of non-convergence and estimation issues in LMM as wells as estimation issues in GLMM. Estimation issues in LMM was defined when variance components were not estimable, in the GLMM approach the Gelman-Rubin criterion was used to define estimation issues.", fig.scap="Robustness of model-based qPCR normalization", fig.width = 4, fig.height=2.5, fig.align='center'}
 
 robust2genes <- read_rds("./data/study-1/qpcr/reference-gene-selections/robust_2genes.RDS")
 robust11genes <- read_rds("./data/study-1/qpcr/reference-gene-selections/robust_11genes.RDS")
@@ -422,9 +422,9 @@ robust11genes <- robust11genes %>%
 robust <- rbind(robust2genes, robust11genes)
 
 robust_fig <- robust %>%
-  mutate(Performance = if_else(conv == "VCVgoodSolgood" |conv == "Estimate", "Convergance",
-                               if_else(conv == "NoConvergance", "No convergance", "Estimation\nissues"))) %>%
-  mutate(Performance = factor(Performance, levels = c("Convergance", "Estimation\nissues", "No convergance")),
+  mutate(Performance = if_else(conv == "VCVgoodSolgood" |conv == "Estimate", "Convergence",
+                               if_else(conv == "NoConvergance", "No convergence", "Estimation\nissues"))) %>%
+  mutate(Performance = factor(Performance, levels = c("Convergence", "Estimation\nissues", "No convergence")),
          model = factor(if_else(model == "lme.convergance", "LMM", "GLMM"), levels = c("LMM", "GLMM")),
          ngenes = factor(if_else(ngenes == 2, "Two targets", "Eleven targets"), 
                          levels = c("Two targets", "Eleven targets"))) %>%
@@ -524,7 +524,7 @@ simulation_results
 
 ## Increased relevance of RNA-sequencing data through data-driven selection of analysis tools 
 
-Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments requires the use of a multitude of bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that a combination of tools are validated for specific study conditions [@RN2426]<!-- Conesa 2016 pipelines need to be adopted to study specific conditions-->
+Analysis of high-dimensional data such as those retrieved from RNA sequencing experiments requires the use of a multitude of bioinformatic and statistical tools. Such tools are continuously being developed and optimized for different tasks. This continuing development requires that a combination of tools is validated for specific study conditions [@RN2426]<!-- Conesa 2016 pipelines need to be adopted to study specific conditions-->
 To improve the interpretability of the RNA sequencing data obtained from Study I, we sought to compare mapping tools for their validity. As a first step, we utilized myosin heavy-chain compositions determined by immunohistochemistry to relate mRNA counts to protein levels. Myosin heavy-chains are well suited for this purpose as their mRNA and protein levels are known to correlate in steady state conditions
 [@RN2444; <!-- Serrano Correlation between mRNA and prot abundance MyHC -->
 @RN1489; <!-- Ellefsen Reliable determination of myosin heavy chain -->

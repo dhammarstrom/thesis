@@ -367,21 +367,21 @@ paired_plot_2x <- fib.trans %>%
         ggplot(aes(sets, percentage, group = subject)) + 
         
         geom_line(color = group.study.color[1], size = 0.5) +
-        
+ 
        
         geom_point(data = filter(fib.sum.avg, sets == "single", fibertype == "type2x"), 
                            position = position_nudge(x = -0.1), 
                            aes(group = NULL), 
                    size = 2.5, 
                    shape = 21, 
-                   fill = group.study.color[4]) +
+                   fill = group.study.color[5]) +
         
         geom_point(data = filter(fib.sum.avg, sets == "multiple",  fibertype == "type2x"), 
                    position = position_nudge(x = 0.1), 
                    aes(group = NULL), 
                    size = 2.5, 
                    shape = 21, 
-                   fill = group.study.color[5]) +
+                   fill = group.study.color[2]) +
 
         facet_wrap(~ time) +
         

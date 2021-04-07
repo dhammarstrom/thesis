@@ -2,11 +2,11 @@
 author: 'Daniel Hammarström'
 date: 'March 2021'
 year: '2021'
-isbn: 'Provided by the library'
+isbn: '978-91-986490-2-4'
 place: 'Stockholm'
 printedby: 'Universitetsservice US-AB, Stockholm, 2021'
 coverinfo: ' '
-sernr: '18' # Add number in "Avhandlingsserie" 
+sernr: '21' # Add number in "Avhandlingsserie" 
 title: 'Determinants of intra-individual variation in adaptability to resistance training of different volumes'
 subtitle: 'Subtitle of my thesis' # currently not in use ##
 knit: "bookdown::render_book"
@@ -100,7 +100,7 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 
 
 # Introduction
-\lettrine{S}keletal muscle health is essential for physical independence. From a lifespan perspective, muscle mass and strength measures are inversely associated with mortality
+\lettrine{S}keletal muscle health is essential for physical independence. From a lifespan perspective, muscle mass and strength are inversely associated with mortality
 [@RN2512;@RN2808;@RN2513;@RN2514;@RN2809;@RN2515;@RN2516]
 <!--[@RN2512; Ran 2018 Low muscle strength was independently associated with all cause mortality @RN2808;<!-- Muscular strength and mortality meta analysis higher levels of strength lower risk of death @RN2513;<!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality@RN2514;<!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2
 @RN2809;<!-- Ruiz n ~ 8000, strength inversely related to all cause and cancer  mortality in men @RN2515;<!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly @RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
@@ -134,11 +134,12 @@ some merit can be given to arguments against guidelines suggesting higher volume
 From an individual perspective, a training prescription that balances time-requirement with training efficacy presumably increases the likelihood of participation in physical activity
 [@RN2063]<!-- Choi time-constrains and expectations of outcomes are related to participation -->.
 From a more general perspective, increased knowledge about mechanisms governing responses to physical training could improve training prescription also for individuals and populations that experience an attenuated benefit of resistance training
-[@RN2547]. <!-- Pickering 2019, non-responders might not exists, changing training prescription could increase efficacy -->
-<!-- Add "Individualized prescrioption is needed -->
+[@RN2547].<!-- Pickering 2019, non-responders might not exists, changing training prescription could increase efficacy -->
 
 The overreaching goal of the present thesis is to contribute to the understanding of individualized training loads. To this end, training volume was used to study the effects of variable training<!-- Change this? --> stimulus in within-participant models of exercise training.   
 
+## Structure of the thesis
+Following this general introduction, the Background presents an outline of the thesis's context regarding training prescription and adaptations to resistance training. Data from two interventions are presented under Methods and Results and Discussion, referred to as Study I and Study II. Results from Study I have been published as Paper I and II, and results from Study II are presented in Paper III. In addition to experimental results, a meta-analysis examining the effects of resistance training volume on muscle mass and strength gains is presented under Results and Discussion. Under Methodological Considerations, selected topics related to the experimental data used in the thesis are discussed. 
 
 
 

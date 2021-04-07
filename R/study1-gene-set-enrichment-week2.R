@@ -238,7 +238,7 @@ w2pre_tissue_bubble <-  comb_data_w2pre %>%
         
         ggplot(aes(-log10(fgsea.padj), NES, label = name, fill = ora)) +
         geom_point(alpha = 0.4, shape = 21, size = 3) + 
-        geom_text_repel(data = comb_data_w2pre[-log10(comb_data_w2pre$cerno.padj) > 10,], 
+        geom_text_repel(data = comb_data_w2pre[-log10(comb_data_w2pre$cerno.padj) > 14,], 
                         size = 2.5, 
                         lineheight = 0.8) +
         facet_wrap(~ go.cat, ncol = 1) +
