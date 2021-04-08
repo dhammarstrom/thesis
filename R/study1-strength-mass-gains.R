@@ -344,32 +344,34 @@ meta_fig <- mods1 %>%
                              labels = c("Muscle mass", 
                              "Muscle strength"))) %>%
         
-        ggplot(aes(x = mu, y = Study)) +
+        ggplot(aes(x = mu, y = Study, fill = type)) +
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
         
-        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[4]) +
-        labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
+        stat_cdfinterval(.width = c(.95),
+                        
+                         size = 0.1) +
+        labs(x = "Increased ES per weekly number of sets<br>(Hedges' <i>g</i>, 95% CrI)",
              y = NULL) +
-        
+        scale_color_manual(values = c(group.study.color[4], group.study.color[2])) +
+        scale_fill_manual(values = c(group.study.color[4], group.study.color[2])) +
+ 
         dissertation_theme() +
         
         theme(panel.grid   = element_blank(),
-              panel.background = element_rect(fill = "gray98",
-                                              colour = "gray98"),
-              
+              legend.position = "none",
               axis.title.x = element_markdown(size = 7),
               axis.ticks.y = element_blank(),
               axis.text.y  = element_text(hjust = 0), 
               strip.text = element_text(size = 8, hjust = 0),
               strip.background = element_blank()) +
-        facet_grid(. ~ type)
+        facet_grid(. ~ type, scales = "free")
 
 
 
 mass_fig_1 <- mods1 %>%
         filter(type == "mass") %>%
-        dplyr::select(mu, Study) %>%
+        dplyr::select(mu, Study, type) %>%
         rbind(m_fx) %>%
         
         mutate(Study = reorder(Study, mu, .fun = 'median'), 
@@ -379,16 +381,17 @@ mass_fig_1 <- mods1 %>%
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
         
-        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[4]) +
+        stat_halfeye(.width = .95, 
+                     size = 0.5, 
+                     shape = 21,
+                     fill = group.study.color[4]) +
+        
         labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
              y = NULL) +
         
         dissertation_theme() +
         
         theme(panel.grid   = element_blank(),
-              panel.background = element_rect(fill = "gray98",
-                                              colour = "gray98"),
-              
               axis.title.x = element_markdown(size = 7),
               axis.ticks.y = element_blank(),
               axis.text.y  = element_text(hjust = 0)) 
@@ -400,7 +403,7 @@ mass_fig_1 <- mods1 %>%
 
 strength_fig_1 <- mods1 %>%
         filter(type == "strength") %>%
-        dplyr::select(mu, Study) %>%
+        dplyr::select(mu, Study, type) %>%
         rbind(s_fx) %>%
         
         mutate(Study = reorder(Study, mu, .fun = 'median'), 
@@ -410,16 +413,16 @@ strength_fig_1 <- mods1 %>%
         
         geom_vline(xintercept = 0, lty = 2, color = "gray50") +
         
-        stat_halfeye(.width = .95, size = 0.5, fill = group.study.color[3]) +
+        stat_halfeye(.width = .95, 
+                     shape = 21,
+                     size = 0.5, 
+                     fill = group.study.color[3]) +
         labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
              y = NULL) +
         
         dissertation_theme() +
         
         theme(panel.grid   = element_blank(),
-              panel.background = element_rect(fill = "gray98",
-                                              colour = "gray98"),
-              
               axis.title.x = element_markdown(size = 7),
               axis.ticks.y = element_blank(),
               axis.text.y  = element_text(hjust = 0)) 

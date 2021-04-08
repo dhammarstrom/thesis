@@ -166,7 +166,7 @@ Similar to Blomstrand *et al.* [@RN874], variations from duplicate measures were
 $$S = \sqrt{\frac{\sum{d^2}}{2n}}$$
 Where $d$ is the difference between paired observations and $n$ is the number of pairs.
 The variation between duplicate samples were `r round(between_duplicates[1,4],2)` and `r round(between_duplicates[2,4],2)`%-points for Type I and IIA fibers, respectively (\@ref(fig:fiber-methods-fig)b).
-This resembled variations between leg (Type I, `r round(between_legs[1,4],2)`; Type IIA, `r round(between_legs[2,4],2)`; Figure \@ref(fig:fiber-methods-fig)c).
+This resembled variations between leg (Type I, `r round(between_legs[1,4],2)`%-points; Type IIA, `r round(between_legs[2,4],2)`%-points; Figure \@ref(fig:fiber-methods-fig)c).
 These estimates of variation are slightly lower than those reported by Blomstrand *et al.* [@RN874]<!--Blomstrand suggests duplicate samples and at least 200 fibres for determination of fiber distributions -->, using the Bergström needle, and suggest that the micro-biopsy technique provides reproducible results of fiber type composition in young adults.
 
 ```{r fiber-methods-fig, fig.cap="Number of fibers in immunohistochemistry analyses (a), correlation between duplicate samples from the same leg (separated by 2 hours) (b) and correlations between samples from left and right leg pre-intervention.", fig.scap="Characteristics of biopsy samples used in immunohistochemistry analyses.", warning=FALSE, echo = FALSE, warning=FALSE, fig.width = 3.5, fig.height = 5, fig.align='center'}
