@@ -1,66 +1,70 @@
 # Acknowledgements
 
-<!-- 
+I would first like to express my appreciation for the support from Lillehammer University College/Inland University of Applied Sciences and Sykehuset Innlandet in pursuing my doctoral degree. Thanks also to The Swedish School of Sport and Health Sciences (GIH) for enabling my doctoral education.
 
-This thesis was primarily realized at Lillehammer University College/Inland University of Applied Sciences and Sykehuset innlandet. Without the help of  
+\
+\
+Several individuals have shaped the process resulting in this thesis.
+\
+\
 
-Stian Ellefsen, my main supervisor during these years, I would not have been the same scientist without your enthusiasm. You have thought me that science is fun, and serious, bust mostly fun, but also serious business.  
+*Stian Ellefsen*, my main supervisor during these years, I would not have been the same scientist without your enthusiasm. Thank you for your support, confidence, and friendship.
 
-Bent R. Rønnestad, my co-supervisor
+*Bent R. Rønnestad*, my co-supervisor, thank you for your never-ending passion and dedication to sports science research; you are an inspiration.  
 
-Eva Blomstrand, my co-supervisor at GIH, thank you for taking me on board and for all your support. 
+*Eva Blomstrand*, my co-supervisor at GIH, thank you for taking me on board and for all your support. Your eye for detail has helped me develop as a scientist. 
+\
+\
 
-I am grateful for the support from The Swedish School of Sport and Health
-Sciences, GIH, especially Kent Sahlin who created a spot for me in your doctorate program and Camilla Norrbin and Bim O’Reilly for keeping track on me during these years. I regret not spending more time at GIH during these years, I always felt at home Lidingövägen 1.
+During these years in Lillehammer, I've had the opportunity to work with a bunch of great people. 
 
-This thesis would not have been possible without the  Jon Elling Whist
+*Sjur J. Øfsteng*, co-author and office mate, thank you for your friendship and support. 
 
+*Olav Vikmoen* was my first office mate at Lillehammer. He speaks a peculiar dialect native to southern parts of Gudbrandsdalen, not making my Swedish-Norweigian transition easier. Thank you for your effort to integrate me into Norwegian society.
 
+*Joar Hansen*, *Eirik Grindaker*, and *Håvard Nygaard* further facilitated my integration into Norwegian society. 
 
+Thank you for your inclusive attitude and friendship, on and off work.
+Thanks to *Heidi Bråten*, *Christian Magelssen*, *Anne Mette Rustaden*, *Nicki W. Almquist* and *Geir Vegge* for being such great co-workers.
 
-Sjur J. Øfsteng was my second office mate at Lillehammer and 
+Thanks to *Gunnar Slettaløkken* for your support and friendship and for showing me where to catch my first Norwegian trout.
 
-Olav Vikmoen was my first office mate at Lillehammer, he speaks an peculiar dialect native to southern parts of Gudbrandsdalen. This was  
+Thank you, *Knut Sindre Mølmen* and *Håvard Hamarsland*, for including me in your work and giving structure to my chaotic schedule.
 
+Thank you, *Rafi Ahmad*, for providing opportunities for me to dive into the world of bioinformatics.
 
+Thank you, *Yusuf Khan*, for your patience and expertise.
+\
 
-Anne Grete Mathisen, help with blood sampling during training study (knitting a shirt to grandkids between sampling)
-Jostein, Caroline, Anne Cecilie  (study I)
-to Johanne Seeberg, Stine Dahl, Marianne Bratlien, Martin Nordseth, Erlend Hakestad, Ole-Martin Hveem and Mari Skifjeld  (study II)
-Jon Elling Whist, Marita Hanestadhaugen, Lise Koll
-Bente Malerbakken, Jostein Flata (R-sykehuset)
+I regret not spending more time at GIH during these years. I always felt at home Lidingövägen 1.
+Thank you, *Kent Sahlin*, who created a spot for me in the doctorate program at GIH, and *Camilla Norrbin* and *Bim O'Reilly* for keeping track of me during these years.
+*William Apro* taught me everything I know about western blotting. Thank you for being a great mentor and meeting me at the Åstrand laboratory at 5:45 in the morning.
+\
 
+This thesis would not have been possible without the medical and scientific expertise provided by *Jon Elling Whist*, thank you!
+Thank you, *Marita Hanestadhaugen* and *Lise Koll* for your endless patience with us and for your technical expertise.
+Thanks for the help with body composition measurements, *Jostein Flata*, *Bente Malerbakken* and *Ivana Hollan*.
+\
 
-Knut Sindre Mølmen 
+Without the dedicated help with data collection during training interventions, this thesis would not have been possible. Thank you, *Anne Grete Mathisen*, *Jostein Stabell*, *Anne Cecilie Lian*, *Johanne Seeberg*, *Stine Dahl*, *Marianne Bratlien*, *Martin Nordseth*, *Erlend Hakestad*, *Ole-Martin Hveem*, *Mari Skifjeld*, *Christian Dahlseng*, *Stian Sønsteli*, *Nicolai Jacobsen*, *Krister Flobergseter*, *Mia Strand*, *Mia Wist*, *Ola Evensen* and *Karoline Nilsen*. 
+\
 
-Nicke W. Almquist
+*And thanks to all heavy-lifting participants!*
+\
 
-Joar Hansen
-Eirik Grindaker
-Håvard Nygaard
+While working on this thesis, I have been fortunate to teach at our bachelor- and master-program in sport science. I would like to thank all devoted students trying to learn Swedish while I was talking about cross-country skiing, strength testing, or data science. You have undoubtedly taught me more than I have managed to accomplish in the opposite direction.
+\
 
+Thanks to all my old colleagues at Dalarna University, I hope you have not forgotten about me! Especially thanks to *Emma Hawke* for advice on life in general, science and the English language in particular. 
+\
 
-William Apro thaught everything I know about western blotting! Thank you for being a great mentor and meeting me at the Åstrand laboratory at 5:45 in the morning. 
+Thanks to *Göran* for providing a place to sleep in Stockholm and, more importantly, for discussions regarding truly important things in life, like Hot Rats, Zoot Allures, or Penguins in Bondage. 
+\
 
+Thanks to my Norwegian family, *Torill*, *Eivind*, *Stina*, *Petter*, *Emil*, *Anton*, *Oskar*, *Ida*, *Bent*, *Elvira*, *Olava* and *Ingrid* for supporting me and Marie during these years.
+\
 
+Thank you, *Mom* and *Dad* for your endless support and love. 
+\
 
-
-While working with this thesis I have been fortunate to teach at our bachelor- and master-program in sport science. I would like to thank all devoted students trying to learn Swedish while I was talking about cross-country skiing, strength testing or data science. You have undoubtedly thought me more than I have managed to accomplish in the opposite direction.
-
-
-
-Jostein Flata, Bente Malerbakken
-
-During my years at Lillehammer university college (later Inland University of Applied Sciences)^[I do not know who came up with this name, the abbreviation does not read well in English] we planned three different labs and built one. 
-
-
-Thanks to all my old colleagues at Dalarna University (Anders, Tomas, Magnus, Frej, Michail, ), I hope you have not forgotten about me! Thanks to Emma Hawke for advice on life in general, science and the English language in particular. 
-
-
-Thanks to my Norwegian family, Torill, Eivind, Stina, Petter, Emil, Anton, Oskar, Ida, Bent, Elvira, Olava and Ingrid for supporting me and Marie during these years.
-
-Marie, I'm sorry for all the late nights, early mornings and weekends i did not spend with you. You have supported me during this time, and we are still together, success! I love you! 
-
--->
-
-
+*Marie*, I'm sorry for all the late nights, early mornings, and weekends i did not spend with you. You have supported me during this time, and we are still together, success! I love you! 

@@ -356,7 +356,7 @@ p.s6.fcfig <-  sets.fc %>%
          filter(target == "p.s6.tp") %>%
         
         mutate(sets = factor(sets,  levels = c("single", "multiple"), 
-                             labels = c("Low-volume", "Moderate-volume"))) %>%
+                             labels = c("Low-\nvolume", "Moderate-\nvolume"))) %>%
         
          ggplot(aes(sets, fold.change, fill = sets)) + 
          geom_bar(stat = "identity", 
@@ -416,13 +416,9 @@ fold_change_plot <- plot_grid(y_axis_label,
           p.mtor.fcfig,
           p.s6.fcfig, 
           nrow = 4, 
-          rel_heights = c(1, 1, 1, 1.7)), 
+          rel_heights = c(1, 1, 1, 1.9)), 
         rel_widths = c(0.2, 1), 
         nrow = 1)
-
-
-
-
 
 
 
@@ -541,8 +537,8 @@ fold_change_fig <- fold_changes_diffs %>%
 
 
 fc_plot <- plot_grid(fold_change_plot, 
-          plot_grid(fold_change_fig, NULL, nrow = 2, rel_heights = c(1, 0.07)),  
-          nrow = 1, rel_widths = c(0.7, 1))
+          plot_grid(fold_change_fig, NULL, nrow = 2, rel_heights = c(1, 0.12)),  
+          nrow = 1, rel_widths = c(1, 1))
           
 
 

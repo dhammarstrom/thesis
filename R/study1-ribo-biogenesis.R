@@ -376,8 +376,8 @@ myc_acute <- acute_qpcr %>%
 rrna45_acute <- acute_qpcr %>%
         filter(gene == "rRNA45S") %>%
         mutate(sets = factor(sets, levels = c("single", "multiple"), 
-                             labels = c("Low-volume", 
-                                        "Moderate-volume"))) %>%
+                             labels = c("Low-\nvolume", 
+                                        "Moderate-\nvolume"))) %>%
         
         ggplot(aes(sets, w2post, fill = sets)) + 
         geom_bar(stat = "identity", 
@@ -408,7 +408,7 @@ rrna45_acute <- acute_qpcr %>%
               # Individual plots settings
               axis.title.y = element_blank(),
               axis.text.x =  element_text(color = "black", size = 7, angle = 45, 
-                                          hjust = 1), 
+                                          hjust = 1, lineheight = 0.6), 
               axis.title.x = element_blank(),
               legend.title = element_blank(), 
               legend.background = element_rect(fill = "white"),
@@ -483,7 +483,7 @@ ribo_markers_fig <- plot_grid(training_ribo_markers,
                  nrow = 1, rel_widths = c(0.1, 1)), 
            
            acute_estimates, 
-          rel_widths = c(0.7, 1)), 
+          rel_widths = c(1, 1)), 
         rel_widths = c(1, 0.8), 
         nrow = 1, 
         labels = "auto")

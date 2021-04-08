@@ -46,6 +46,7 @@ sd_a <- paired_sd_data %>%
         scale_color_manual(values = group.study.color) +
         scale_fill_manual(values = group.study.color) +
         theme(legend.position = c(0.6, 0.8), 
+              legend.text = element_text(size = 7),
               legend.title = element_blank(), 
               legend.key.height = unit(0.45, "cm")) +
         labs(y = "Average log2-difference\nbetween replicates", 

@@ -415,7 +415,7 @@ Participants had to be young to be eligible for participation in both studies (S
 Participant characteristics for both studies are shown in Table
 \@ref(tab:characteristics-table).
 
-Forty-one participants were recruited to Study I, and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the intervention included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5), and non-adherence to the study protocol (*n =* 1). There were no systematic differences in characteristics between participants included in or excluded from data analysis in Study I. Before the study, all participants reported that they had previously been engaged in sporting activities. Twenty participants reported regular physical activities at enrollment ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercises at enrollment; however, this was limited to no more than once a week. 
+Forty-one participants were recruited to Study I, and 34 of these completed at least 85% of the prescribed sessions and were thus included in subsequent data analyses. Reasons for not completing the intervention included injury not related to the study (*n =* 1), pain or discomfort during exercises (*n =* 5), and non-adherence to the study protocol (*n =* 1). Based on RNA quality (see below), a subset of participants included in primary analyses in Study I were included in analysis of RNA-sequencing data. There were no systematic differences in characteristics between participants included in or excluded from data analysis, nor between participants included or excluded from RNA-sequencing analyses in Study I. Before the study, all participants reported that they had previously been engaged in sporting activities. Twenty participants reported regular physical activities at enrollment ranging from once every other week to four times per week. Ten participants reported performing resistance-type exercises at enrollment; however, this was limited to no more than once a week. 
 
 Twenty-two participants were recruited to Study II. Three participants did not complete the intervention due to scheduling difficulties. Participants reported familiarity with physical activity but no current systematic resistance training.
 
@@ -425,6 +425,12 @@ Twenty-two participants were recruited to Study II. Three participants did not c
 characteristics <- read_excel("./data/study-1/body-composition/bodycomp_DXA.xlsx") 
 participants <- read.csv("./data/study-1/body-composition/oneThreeSetLeg.csv", sep=";")
 load("./data/study-1/strength/cybex.rda")
+
+## Participnats included in RNAseq
+participants_rna <- read.csv("./data/study-1b/data/oneThreeSetLeg.csv", sep=";")
+
+
+
 
 library(knitr); library(kableExtra)
 
@@ -454,6 +460,30 @@ studyI <- participants %>%
                       fat.whole, 
                       lean.whole,
                       BMC.whole) 
+
+
+studyIb <- participants_rna %>%
+  inner_join(characteristics) %>%
+  filter(subject!="FP10") %>% # removes participant excluded prior to comecing the study
+  filter(timepoint=="pre") %>%
+  inner_join(cybex.temp) %>%
+  dplyr::select(subject, sex, rnaseq_include, age, height, weight, fat.whole, lean.whole,BMC.whole, trq)%>%
+  mutate(fat=((fat.whole/1000)/weight)*100,
+         trq.lean=trq/(lean.whole/1000)) %>%
+  inner_join(participants) %>%
+        mutate(group = if_else(rnaseq_include == "incl", "RNA-seq", "Excluded"), 
+               sex = factor(sex, levels = c("female", "male"), 
+                            labels = c("Female", "Male")), 
+               study = "Study I", 
+               bmi = weight/(height/100)^2) %>%
+  filter(group == "RNA-seq") %>%
+        dplyr::select(participant = subject, 
+                      study,
+                      sex,group, age, height, weight,bmi,
+                      fat.whole, 
+                      lean.whole,
+                      BMC.whole) 
+
 
 # 
 # age.m1 <- lme(age ~ include + sex, random = list(subject = ~1), data = characteristicsStats)
@@ -528,7 +558,7 @@ studyII <- read_excel("./data/study-2/body-composition/tr010_age_participant.xls
         
 
 # Combine both studies and make table
-rbind(studyI, studyII) %>%
+rbind(studyI, studyIb, studyII) %>%
 
         mutate(rel_lean = ((lean.whole/1000) / weight) * 100, 
                rel_fat =  ((fat.whole/1000) / weight) * 100) %>%
@@ -549,8 +579,8 @@ rbind(studyI, studyII) %>%
                                               if_else(variable == "rel_fat", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
                                                       if_else(variable == "rel_lean", paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")"), 
                                                               paste0(sprintf("%.1f", m), " (", sprintf("%.1f", sd), ")")))))),
-               group = factor(group, levels = c("Included", "Excluded", "experiment", "control"), 
-                              labels = c("Included", "Excluded", "Training", "Control"))) %>%
+               group = factor(group, levels = c("Included", "Excluded","RNA-seq", "experiment", "control"), 
+                              labels = c("Included", "Excluded","RNA-seq", "Training", "Control"))) %>%
         dplyr::select(study:variable, m.sd, n) %>%
         pivot_wider(names_from = variable, values_from = m.sd) %>%
         arrange(study, group) %>%
@@ -565,7 +595,7 @@ rbind(studyI, studyII) %>%
         kable_styling(font_size = 7) %>%
         collapse_rows(1:2) %>%
 
-  footnote(general = "Data are means and (SD)",
+  footnote(general = "Data are means and (SD). A subset of participants recruited for Study I were included in RNA-sequencing experiments referred to as RNA-seq.",
            general_title = "", 
            footnote_as_chunk = TRUE) %>%
   landscape()
@@ -1091,8 +1121,8 @@ Non-standard statistical models were fitted in
 `brms` [@RN2562] and 
 `MCMCglmm` [@RN1992].
 
-For each paper included in this thesis, data and code are hosted on github (paper 1, [github.com/dhammarstrom/benefits-of-rt-volume](https://github.com/dhammarstrom/benefits-of-rt-volume); paper 2, [github.com/dhammarstrom/rnaseq-pipeline](https://github.com/dhammarstrom/rnaseq-pipeline);
-paper 3, [github.com/dhammarstrom/ribo-accum-paper](https://github.com/dhammarstrom/ribo-accum-paper);
+For each paper included in this thesis, data and code are hosted on github (Paper I, [github.com/dhammarstrom/benefits-of-rt-volume](https://github.com/dhammarstrom/benefits-of-rt-volume); Paper II, [github.com/dhammarstrom/rnaseq-pipeline](https://github.com/dhammarstrom/rnaseq-pipeline);
+Paper III, [github.com/dhammarstrom/ribo-accum-paper](https://github.com/dhammarstrom/ribo-accum-paper);
 thesis, [github.com/dhammarstrom/thesis](https://github.com/dhammarstrom/thesis)).
 
 

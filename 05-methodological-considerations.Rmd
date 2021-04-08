@@ -514,6 +514,7 @@ filter(coef != "(Intercept)") %>%
         strip.text.x = element_text(size = 7), 
         strip.text.y = element_text(size = 7, angle = 0), 
         legend.position = "bottom", 
+        legend.text  = element_text(size = 7),
         legend.title = element_blank())
   
 simulation_results

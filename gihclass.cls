@@ -331,7 +331,7 @@
 \else
 \@restonecolfalse
 \fi
-\fontsize{10}{12}\selectfont
+\fontsize{8}{10}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
 

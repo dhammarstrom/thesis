@@ -396,45 +396,13 @@ sum.stats <- cbind(per.session %>%
 
 # Wernbom increase per day in quadriceps CSA per day was 0.06%
 
-
-
-
-
-
-
 ```
+
 
 In Study I, the average increases in muscle strength and mass regardless of volume condition corresponded to what could be expected based on previous research in young, healthy participants (Table \@ref(tab:csa-str-tab)) 
-[@RN2007;<!-- Wernbom 2007 -->
+[@RN346;<!-- Wernbom 2007 -->
 @RN1741],<!-- Ahtiainen  -->
 indicating the general efficacy of the training program.
-
-(ref:wernbom-citation) @RN2007
-
-(ref:ahtiainen-citation) @RN1741
-
-```{r csa-str-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
-
-sum.stats %>%
-        arrange(variable, sex, sets) %>%
-  dplyr::select(-variable) %>%
-        kable(format = "latex", booktabs = TRUE, linesep = "",
-              col.names = c("Sex", "Condition", "Mean (SD)", "Reference"), 
-              caption = "Training induced changes in muscle CSA and average strength in Study I")  %>%
-        collapse_rows(c(1, 4))  %>%
-        kable_styling(font_size = 7) %>%
-          
-          pack_rows("CSA %-change", 1, 4) %>%
-        pack_rows("CSA %-change per day", 5, 8) %>%
-          pack_rows("CSA %-change per session", 9, 12) %>%
-          pack_rows("Average strength %-change", 13, 16) %>%
-          pack_rows("Average strength %-change per session", 17, 20) %>%
-  
-        add_footnote(label = c(paste0("Estimates from Wernbom et al. ", "(ref:wernbom-citation)"),
-                               paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation)")), 
-                     notation = "alphabet")
-
-```
 
 For muscle hypertrophy and strength gains, the moderate-volume condition consistently showed greater adaptations when compared to the low-volume condition (Figure \@ref(fig:comb-fig-s1)a).
 These patterns were in general agreement with previous meta-analyses indicating that increased training volume leads to more favorable outcomes, both in terms of muscle mass
@@ -470,6 +438,35 @@ for muscle mass)
 and strength (Figure \@ref(fig:comb-fig-s1)b),
 respectively.
 Together these data underline the training volume dose-dependence of both muscle hypertrophy and strength gains.
+
+(ref:wernbom-citation) @RN346
+
+(ref:ahtiainen-citation) @RN1741
+
+```{r csa-str-tab, warning=FALSE, message=FALSE, echo=FALSE, results = "asis"}
+
+sum.stats %>%
+        arrange(variable, sex, sets) %>%
+  dplyr::select(-variable) %>%
+        kable(format = "latex", booktabs = TRUE, linesep = "",
+              position = "!b",
+              col.names = c("Sex", "Condition", "Mean (SD)", "Reference"), 
+              caption = "Training induced changes in muscle CSA and average strength in Study I")  %>%
+        collapse_rows(c(1, 4))  %>%
+        kable_styling(font_size = 7) %>%
+          
+          pack_rows("CSA %-change", 1, 4) %>%
+        pack_rows("CSA %-change per day", 5, 8) %>%
+          pack_rows("CSA %-change per session", 9, 12) %>%
+          pack_rows("Average strength %-change", 13, 16) %>%
+          pack_rows("Average strength %-change per session", 17, 20) %>%
+  
+        add_footnote(label = c(paste0("Estimates from Wernbom et al. ", "(ref:wernbom-citation)"),
+                               paste0("Estimates from Ahtiainen et al. ", "(ref:ahtiainen-citation)")), 
+                     notation = "alphabet")
+
+```
+
 
 ```{r comb-fig-s1, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences in training-induced relative changes in muscle-mass and strength in Study I with estimates derived from ANCOVA models controling for baseline values (a). Estimates from meta-regression models examining the effect of weekly number of sets per muscle group on muscle hypertrophy (b) and strength gains (c). Estimates are effect size measures (Hedges g) with 95\\% credible intervals (CrI).", fig.scap = "Differences in training induced changes to muscle mass and strength measures between volume conditions in Study I and weekly training volume meta-regression.", fig.height=6.5, fig.width=4.72, fig.align='center'}
 
@@ -565,7 +562,7 @@ However, this is not a consistent finding in the literature
 @RN2171],<!-- Phillips et al., 2017-->
 nor is it consistent with the results in the present study as acute activation of S6K1 in response to the fifth session was not associated with training-induced muscle mass changes.^[Raw Spearman's correlations between exercise-induced change in S6K1 phosphorylation and change in muscle mass (measured with MRI) indicated weak (insignificant) associations ($\rho=$ `r corr_est_p70`) depending on the isoform measured (p70 or p85) and the number of sets. More elaborate modeling confirmed weak relationships between the degree of phosphorylation and muscle mass change. When controlling for baseline values in degree of phosphorylation (as this influence the calculation of fold-change) and number of sets, standardized estimates for the effect of phosphorylation were (increase in %-muscle mass change for every 1SD change in fold-change phosphorylation, with [95% CI])  $\beta=$ `r p70.mod` for p70 S6K1-p70\textsuperscript{Thr389} and $\beta=$ `r p85.mod` for S6K1-p85\textsuperscript{Thr412}.]
 
-```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates in b are derived from ANCOVA models controlling for baseline values presented as point estimates with 95\\% confidence intervals. Dots in a represents up-stream regulators.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
+```{r mtor-fig, warning=FALSE, message=FALSE, echo=FALSE, fig.cap="Measured phosphorylation sites in context (a) and differences between volume conditions in phosphorylation status of S6K1 at Thr \\textsuperscript{389} (p70) Thr \\textsuperscript{412} (p85), rpS6 at Ser \\textsuperscript{235 236} and mTOR at Ser \\textsuperscript{2448} induced by acute exercise and expressed as fold-changes (b). Estimates in b are derived from ANCOVA models controlling for baseline values and presented as point estimates with 95\\% confidence intervals. Dots in a represents up-stream regulators.", fig.scap = "Differences between volume conditions in exercise induced phosphorylation of proteins related to mTORC1 signaling", fig.height=3.5, fig.width=4.72, fig.align='center'}
 
 western_fig <- readRDS("./figures/results/study1-western-blot.RDS")
 western_fig
@@ -657,10 +654,10 @@ rna_csa_change_models %>%
         escape = FALSE,
         caption = "Influence of RNA abundance on training-induced muscle growth measured with MRI", 
         col.names = c("", "Estimate", "SE", "df", "\\textit{t}-value", "95\\% CI", "Estimate [95\\% CI]")) %>%
-  add_header_above(c(" " = 6, "Standardized coefficients" = 1), 
+  add_header_above(c(" " = 6, "Standardized coef." = 1), 
                    escape = FALSE) %>%
   pack_rows("RNA abundance (ng mg\\textsuperscript{-1})", 3, 5, escape = FALSE) %>%
-  kable_styling(font_size = 8) %>%
+  kable_styling(font_size = 7) %>%
   add_footnote("Standardized coefficients scaled by its SD")
 
 
@@ -1036,7 +1033,7 @@ the identification of volume-dependent total RNA regulation as a predictor of mo
 Participants showing greater increases in ribosomal content in response to higher training volume at Week 2 also displayed greater relative benefit of the higher volume.
 This likely acts through an increased translational capacity and confirms observations regarding volume-dependence in regulation of total RNA, mature rRNA species (rRNA 18S, 28S and 5.8S) and subsequent muscle hypertrophy (and strength gains).
 
-```{r continuous-determinants, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Determinanats of moderate- over low-volume benefit", fig.cap = "Predictors of differences in outcomes between moderate- and low-volume training. Values in (a) are standardized regression coefficients with 95\\% CI from univariate robust regression. Positive estimates indicate a positive association. Variables related to blood parameters, body composition and muscle strength was mean centered per sex. Association between differences in Total RNA between volume-conditions and differences in muscle mass and strength gains between volume-conditions are plotted in (b). The linear trends are displayed with 95\\% CI, derived from robust regression analysis.", fig.height=6, fig.width=4.72, fig.align='center'}
+```{r continuous-determinants, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Determinanats of moderate- over low-volume benefit", fig.cap = "Predictors of differences in outcomes between moderate- and low-volume training. Values in (a) are standardized regression coefficients with 95\\% CI from univariate robust regression. Positive estimates indicate a positive association. Variables related to blood parameters, body composition and muscle strength was mean centered per sex. Association between differences in Total RNA between volume-conditions and differences in muscle mass and strength gains between volume-conditions are plotted in (b). The linear trends are displayed with 95\\% CI, derived from robust regression analysis.", fig.height=6.5, fig.width=4.72, fig.align='center'}
 
 # 
 
@@ -1456,13 +1453,23 @@ reg_results_s6 <-
   
 ```
 
+```{r study2-ubf-rps6-rna-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA levels prediucted by UBF and rpS6 protein in Study II.", fig.cap="Upstream binding factor (UBF) (a) and ribosomal protein S6 (rpS6) (b) protein levels predicting Total RNA abundance. Estimates are derived from models presented in Table 5.4. Values are estimated means with 95\\% CrI.", fig.height=2.5, fig.width=4.72, fig.align='center'}
+
+
+ubf_rps6_fig <- readRDS("./data/derivedData/study2-ubf-rps6-rna/ubf-rps6-rna-fig.RDS")
+
+
+ubf_rps6_fig
+
+```
+
 The general patterns seen for total RNA and mature rRNA responses to resistance training in the present study coincided with pattern seen for rpS6 and upstream binding factor (UBF) protein levels. This was evident as increases of rpS6 and UBF after twelve training sessions compared to non-training controls, followed by partial reversal of rpS6 but maintained UBF levels after the de-training period
 (Figure \@ref(fig:study2-ubf-rps6-fig)a).
 Together, this indicates general coordination between training induced synthesis of rpS6 and rRNA transcription and a potential role of increased UBF levels in maintaining an increased rRNA transcription.
-The associations between total RNA, rpS6, and UBF protein levels were analyzed to explore such coordination further. When controlling for time, UBF levels positively predicted RNA levels in the training group. For every unit increase in UBF (standard deviations), total RNA increased by `r ubf_cor_tot_rna`. No such relationship was found between RNA levels and rpS6 (Table \@ref(tab:ubf-rps6-regression-table)).
+The associations between total RNA, rpS6, and UBF protein levels were analyzed to explore such coordination further. When controlling for time, UBF levels positively predicted RNA levels in the training group. For every unit increase in UBF (standard deviations), total RNA increased by `r ubf_cor_tot_rna`. No such relationship was found between RNA levels and rpS6 (Table \@ref(tab:ubf-rps6-regression-table), Figure \@ref(fig:study2-ubf-rps6-rna-fig)).
 
 
-```{r study2-ubf-rps6-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "UBF and rpS6 protein in resposne to resistance training in Study II.", fig.cap="Ribosomal protein S6 (rpS6) upstream binding factor (UBF) protein in response to resistance training in compared to non-training controls (a). Values are estimated means with 95\\% CrI. A representative blot is shown in b.", fig.height=5, fig.width=4.72, fig.align='center'}
+```{r study2-ubf-rps6-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "UBF and rpS6 protein in response to resistance training in Study II.", fig.cap="Ribosomal protein S6 (rpS6) upstream binding factor (UBF) protein in response to resistance training in compared to non-training controls (a). Values are estimated means with 95\\% CrI. A representative blot is shown in b.", fig.height=4.8, fig.width=4.72, fig.align='center'}
 
 protein_analyses_raw <- readRDS("./data/derivedData/study2-protein-analyses/protein_analyses.RDS")
 

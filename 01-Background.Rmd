@@ -616,7 +616,7 @@ A possible growth limiting role for satellite cells in the context of muscle hyp
 However, human studies do not necessarily show that such a role would determine hypertrophy.
 Kadi *et al.* reported that although the number of satellite cells increased by resistance training, the number of myonuclei did not, 
 suggesting that existing myonuclei were sufficient to provide transcriptional capacity in hypertrophied muscle
-[@RN2004].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
+[@RN2617].<!-- Kadi increase in satellite cells, not in myonuclei, more csa per nuclei -->
 Similarly, other studies have reported increases in muscle fiber cross-sectional area, without or with minimal increases in the myonuclei pool
 [@RN2112;@RN2874].<!-- Damas, no increase in myonuclei in response to resistance training, although 16% increase in type II csa, correlation with mps at tenth week ok training... -->
 In contrast, Petrella and colleagues reported that extreme responders to 16 weeks of resistance training also increased their myonuclear number more than modest, and non-responders

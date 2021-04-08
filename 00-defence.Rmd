@@ -1,17 +1,19 @@
-[comment]: <> (Edit this document to produce information about the defence, remember to knit it!)
+<!--[comment]: <> (Edit this document to produce information about the defence, remember to knit it!)
 THESIS FOR DOCTORAL DEGREE (Ph.D.)
 \
 \
 **Determinants of intra-individual variation in adaptability to resistance training of different volumes**
 \
-by  
-**Daniel Hammarström**
 \
-Thesis for Philosophy of Doctoral Degree in Sport Sciences, at The Swedish School of Sport and Health Sciences (GIH), which, according to the decision of the dean, will be publicly defended on *DATE*. The thesis defense will be held at the auditorium at The Swedish School of Sport and Health Sciences (GIH), Stockholm.
+by  
+**Daniel HammarstrÃ¶m**
+\
+\
+Thesis for Philosophy of Doctoral Degree in Sport Sciences, at The Swedish School of Sport and Health Sciences (GIH), which, according to the decision of the dean, will be publicly defended on Monday, June 14, 2021 at 09:00. The thesis defense will be held at the auditorium at The Swedish School of Sport and Health Sciences (GIH), Stockholm.
 \
 \
 **Opponent**  
-Associate professor Juha Hulmi, Faculty of Sport and Health Sciences, Neuromuscular Research Center and Gerontology Research Center, Biology of Physical Activity, University of Jyväskylä
+Associate professor Juha Hulmi, Faculty of Sport and Health Sciences, Neuromuscular Research Center and Gerontology Research Center, Biology of Physical Activity, University of JyvÃ¤skylÃ¤
 \
 \
 **Principal supervisor**  
@@ -19,7 +21,7 @@ Professor Stian Ellefsen, Section for Health and Exercise Physiology, Faculty of
 \
 **Co-supervisors**  
 
-- Professor Bent R. Rønnestad, Section for Health and Exercise Physiology, Faculty of Social and Health Sciences, Inland Norway University of Applied Sciences 
+- Professor Bent R. R?nnestad, Section for Health and Exercise Physiology, Faculty of Social and Health Sciences, Inland Norway University of Applied Sciences 
 
 - Professor Eva Blomstrand, Department of Physiology, Nutrition and Biomechanics, The Swedish School of Sport and Health Sciences
 \
@@ -30,4 +32,4 @@ Professor Stian Ellefsen, Section for Health and Exercise Physiology, Faculty of
 
 - Professor Adam Sharples, Department of Physical Performance, Norwegian School of Sport Sciences
 
-- Professor Abram Katz, Department of Physiology, Nutrition and Biomechanics, The Swedish School of Sport and Health Sciences
+- Professor Abram Katz, Department of Physiology, Nutrition and Biomechanics, The Swedish School of Sport and Health Sciences -->
