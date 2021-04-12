@@ -602,7 +602,7 @@ From baseline to prior to the fifth training session (Week 2), total RNA per mg 
 Analysis of c-Myc mRNA abundance in response to the fifth training session also showed volume-dependent regulation with exercise-induced increases being $\sim$ 1.5-fold higher in response to the moderate- compared to the low-volume condition (Figure \@ref(fig:rrna-fig)b). c-Myc represents a rapamycin-insensitive signaling pathway, parallel to mTORC1, known to also stimulate ribosomal biogenesis 
 [@RN1754;@RN1834;@RN1832].<!-- West --><!-- cMyc driver of ribosomal biogenesis -->
 
-```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest at Weeks 0, 2 and 12 in Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and error bars signifies that the confidence interval contain 1 (the null hypothesis).", fig.scap = "Differences between volume conditions total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
+```{r rrna-fig, warning=FALSE,message=FALSE, echo=FALSE, fig.cap="Differences between volume conditions in total RNA and ribosomal RNA-species (pre-rRNA 45S, rRNA 18S, rRNA 5.8S and rRNA 28S) measured at rest at Weeks 0, 2 and 12 in Study I (a). Acute changes in abundance of c-Myc mRNA and pre-rRNA 45S in response to acute exercise in Week 2 and differences between volume conditions (b). Errorbars represents 95\\% confidence intervals, transparent points and error bars signifies that the confidence interval contain 1 (the null hypothesis).", fig.scap = "Differences between volume conditions in total RNA and ribosomal RNA", fig.height=2.5, fig.width=4.72, fig.align='center'}
 
 ribo_markers_fig <- readRDS("./figures/results/study1-ribo-markers.RDS")
 
@@ -783,7 +783,7 @@ When library sizes were normalized to the amount of tissue used in sample prepar
 (Figure \@ref(fig:lib-size-fig)c).
 This suggests that resistance-training lead to increased global mRNA expression per-unit-muscle weight (43-53\% in the present study). This increase was not different between volume-conditions, suggesting that the volume-dependent regulation of RNA transcription primarily relates to transcription of RNA-fractions such as rRNA rather than mRNA (see Figure \@ref(fig:rrna-fig)). 
 
-```{r lib-size-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Less muscle tissue was used for cDNA synthesis in the moderate- compared to low-volume condition as a result of total RNA increases per tissue weight (a). Library sizes tended to be greater in the low-volume condition (b), after normalizing library sizes to muscle weight differences were diminished (c). Lower panels show differences between volume conditions.", fig.scap = "Muscle weight and RNA-seq library size", fig.height=3, fig.width=4.72, fig.align='center'}
+```{r lib-size-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Less muscle tissue was used for cDNA synthesis in the moderate- compared to low-volume condition as a result of total RNA increases per tissue weight (a). Library sizes tended to be greater in the low-volume condition (b), after normalizing library sizes to muscle weight differences were diminished (c). Lower panels show differences between volume conditions.", fig.scap = "Muscle weight in RNA-sequencing library preparation", fig.height=3, fig.width=4.72, fig.align='center'}
 
 libsize.fig <- readRDS("./data/derivedData/study1-transcriptome/muscle-weight-lib-size.RDS")
 
@@ -1033,7 +1033,7 @@ the identification of volume-dependent total RNA regulation as a predictor of mo
 Participants showing greater increases in ribosomal content in response to higher training volume at Week 2 also displayed greater relative benefit of the higher volume.
 This likely acts through an increased translational capacity and confirms observations regarding volume-dependence in regulation of total RNA, mature rRNA species (rRNA 18S, 28S and 5.8S) and subsequent muscle hypertrophy (and strength gains).
 
-```{r continuous-determinants, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Determinanats of moderate- over low-volume benefit", fig.cap = "Predictors of differences in outcomes between moderate- and low-volume training. Values in \\textit{a} are standardized regression coefficients with 95\\% CI from univariate robust regression. Positive estimates indicate a positive association. Variables related to blood parameters, body composition and muscle strength were mean centered per sex. Association between differences in Total RNA between volume-conditions and differences in muscle mass and strength gains between volume-conditions are plotted in \\textit{b}. The linear trends are displayed with 95\\% CI, derived from robust regression analysis.", fig.height=6.5, fig.width=4.72, fig.align='center'}
+```{r continuous-determinants, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Determinanats of moderate- over low-volume training benefit", fig.cap = "Predictors of differences in outcomes between moderate- and low-volume training. Values in \\textit{a} are standardized regression coefficients with 95\\% CI from univariate robust regression. Positive estimates indicate a positive association. Variables related to blood parameters, body composition and muscle strength were mean centered per sex. Association between differences in Total RNA between volume-conditions and differences in muscle mass and strength gains between volume-conditions are plotted in \\textit{b}. The linear trends are displayed with 95\\% CI, derived from robust regression analysis.", fig.height=6.5, fig.width=4.72, fig.align='center'}
 
 # 
 
@@ -1453,7 +1453,7 @@ reg_results_s6 <-
   
 ```
 
-```{r study2-ubf-rps6-rna-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA levels prediucted by UBF and rpS6 protein in Study II.", fig.cap="Upstream binding factor (UBF) (a) and ribosomal protein S6 (rpS6) (b) protein levels predicting Total RNA abundance. Estimates are derived from models presented in Table 5.4 and with 95\\% CrI. Points represent underlying observations.", fig.height=2.5, fig.width=4.72, fig.align='center'}
+```{r study2-ubf-rps6-rna-fig, echo=FALSE, warning=FALSE, message=FALSE, fig.scap = "Total RNA levels predicted by UBF and rpS6 protein in Study II.", fig.cap="Upstream binding factor (UBF) (a) and ribosomal protein S6 (rpS6) (b) protein levels predicting Total RNA abundance. Estimates are derived from models presented in Table 5.4 with 95\\% CrI. Points represent underlying observations.", fig.height=2.5, fig.width=4.72, fig.align='center'}
 
 
 ubf_rps6_fig <- readRDS("./data/derivedData/study2-ubf-rps6-rna/ubf-rps6-rna-fig.RDS")
