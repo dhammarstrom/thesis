@@ -16,8 +16,6 @@ The thesis also include additional unpublished data.
 \
 \
 \
-
-
 \footnotesize
 **Paper I** and **Paper II** are licensed under Creative Commons CC BY, permitting unrestricted use, distribution, and reproduction in any medium when the original work is properly cited.
 

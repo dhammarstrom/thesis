@@ -100,7 +100,7 @@ knitr::write_bib(c("base", "qpcR"), "./bib/packages.bib") ### This creates a bib
 
 
 # Introduction
-\lettrine{S}keletal muscle health is essential for physical independence. From a lifespan perspective, muscle mass and strength are inversely associated with mortality
+Skeletal muscle health is essential for physical independence. From a lifespan perspective, muscle mass and strength are inversely associated with mortality
 [@RN2512;@RN2808;@RN2513;@RN2514;@RN2809;@RN2515;@RN2516]
 <!--[@RN2512; Ran 2018 Low muscle strength was independently associated with all cause mortality @RN2808;<!-- Muscular strength and mortality meta analysis higher levels of strength lower risk of death @RN2513;<!-- Fukasawa 2016 81 hemodialysis patients, low thigh muscle mass associated with all cause and cv mortality@RN2514;<!-- Miyake 2019 Low muscle mass associated with ACM in type 2 diabetes, SMI = appendicular skeletal muscle mass kg / height m^2
 @RN2809;<!-- Ruiz n ~ 8000, strength inversely related to all cause and cancer  mortality in men @RN2515;<!-- Szulc 2010 715 men Loss of appendicular muscle mass predicts all cause mortality in elderly @RN2516]<!-- Abramowitz 2018 Higher ASMI was independently associated with lower mortality -->
