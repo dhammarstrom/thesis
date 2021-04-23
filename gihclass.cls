@@ -437,12 +437,12 @@
 
 \begin{textblock*}{\paperwidth}(\fromleft{0cm},\fromtop{4cm})
 \centering
-\lsstyle\normalsize{Avhandlingsserie f\"{o}r \\ Gymnastik- och idrottsh\"{o}gskolan}
+\fontfamily{ptm}\lsstyle\normalsize{Avhandlingsserie f\"{o}r \\ Gymnastik- och idrottsh\"{o}gskolan}
 \end{textblock*}
 
 
 \begin{textblock*}{\paperwidth}(\fromleft{0cm},\fromtop{6cm})
-\centering
+\fontfamily{ptm}\centering
 Nr~\@sernr
 \end{textblock*}
 
@@ -452,7 +452,7 @@ Nr~\@sernr
 
 \begin{adjustwidth}{1.5cm}{1.5cm}
 \centering
-\large\MakeUppercase{\@title}
+\fontfamily{ptm}\large\MakeUppercase{\@title}
 \end{adjustwidth}
 \end{textblock*}
 
@@ -464,10 +464,10 @@ Nr~\@sernr
     \renewcommand{\footnoterule}{\relax}
    % \thispagestyle{empty}
 {\large \vspace*{0mm} \hspace*{-5mm} {{\@crest} \par} } %Move the logo
-    { \fontsize{22pt}{18pt}\selectfont \vspace*{30mm}{\noindent}{\@title} \par \vspace*{8mm}}
+    { \fontsize{20pt}{16pt}\fontfamily{ptm}\selectfont \vspace*{30mm}{\noindent}{\@title} \par \vspace*{8mm}}
     \bigskip
     \bigskip
-    {{\LARGE {\noindent}\@author} \par}
+    {\fontsize{16pt}{16pt}\fontfamily{ptm}\selectfont{\LARGE {\noindent}\@author} \par}
   \null\vfill
 
 
