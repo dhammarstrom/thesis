@@ -240,7 +240,7 @@ data.frame(x = c(-8, 16),
         
         # Training volume
         annotate("rect", 
-                 fill = group.study.color[4],
+                 fill = group.study.color[6],
                  xmin = seq(0.8, 11.8), 
                  xmax = seq(0.95, 11.95), 
                  ymin = rep(0.2, 12), 

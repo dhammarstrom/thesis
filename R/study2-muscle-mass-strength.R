@@ -64,7 +64,7 @@ strength <- read_excel("./data/study-2/tr010_humac.xlsx") %>%
 raw_scores <- strength %>%
         ggplot(aes(time_group, change, fill = type)) + 
         
-        geom_hline(yintercept = 0, color = "gray50", lty = 2) +
+        geom_hline(yintercept = 0, color = "gray40", lty = 2) +
         
         geom_point(position = position_jitterdodge(jitter.width = 0.05, dodge.width = 0.25), 
                    shape = 21, size = 1.2, alpha = 0.4) + 
@@ -120,7 +120,7 @@ comp_panel <- comp_strength %>%
         
         ggplot(aes(time_group, estimate, fill = type)) + 
         
-        geom_hline(yintercept = 0, color = "gray90") +
+        geom_hline(yintercept = 0, lty = 2, color = "gray40") +
         
         geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL, color = type), width = 0, 
                       position = position_dodge(width = 0.25)) + 
@@ -146,7 +146,7 @@ comp_panel <- comp_strength %>%
                  y = 18,
                  yend = 14,
                  curvature = 0.2,
-                 color = "gray50",
+                 color = "gray40",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
         
         
@@ -159,7 +159,7 @@ comp_panel <- comp_strength %>%
                  y = 18,
                  yend = 15,
                  curvature = -0.2,
-                 color = "gray50",
+                 color = "gray40",
                  arrow = arrow(length=unit(0.1,"cm"), type = "closed")) +
 
         labs(y = expression(atop("Torque", paste(Delta*"Training - "*Delta*"Control")))) +
@@ -250,7 +250,7 @@ us_temp <- us_data %>%
 raw_scores <- us_temp %>%
         ggplot(aes(time_group, change)) + 
         
-        geom_hline(yintercept = 0, color = "gray50", lty = 2) +
+        geom_hline(yintercept = 0, color = "gray40", lty = 2) +
         
         geom_jitter(width = 0.05, size = 1.5, alpha = 0.4, 
                     shape = 21,

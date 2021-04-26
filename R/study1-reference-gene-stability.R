@@ -224,7 +224,7 @@ mm <- lme(nf ~ timepoint + timepoint:sets,
 
 nf <- lme(nf ~ timepoint + timepoint:sets, 
           random = list(subject = ~ 1, sample = ~ 1),
-           data = normalization.factors[normalization.factors$nf.id == "gn",])
+           data = normalization.factors[normalization.factors$nf.id == "nf",])
 
 
 coefs <- rbind(intervals(nf)$fixed %>%
@@ -278,17 +278,17 @@ coefs <- rbind(intervals(nf)$fixed %>%
                        width = 0, 
                       position = position_dodge(width = 0.5)) +
         
-        scale_color_manual(values = group.study.color[c(1, 2, 3, 5)]) + 
-        scale_fill_manual(values = group.study.color[c(1, 2, 3, 5)]) + 
+        scale_color_manual(values = group.study.color[c(1, 6, 2, 5)]) + 
+        scale_fill_manual(values = group.study.color[c(1, 6, 2, 5)]) + 
         scale_shape_manual(values = c(21, 22, 23, 24)) +
         scale_y_continuous(limits = c(0.85, 1.15), 
                            breaks = c(0.9, 0.95, 1, 1.05, 1.1)) +
         dissertation_theme() +
         
         annotate("text", 
-                         x = c(7.35, 7.25, 7, 6.7), 
-                 y = c(0.95, 1.02, 1.02, 1.06),
-                 color = group.study.color[c(5, 3, 2, 1)],
+                         x = c(7.36, 7.24, 7.1, 6.7), 
+                 y = c(0.92, 1.01, 1.03, 1.02),
+                 color = group.study.color[c(5, 2, 6, 1)],
                  hjust = 0,
                  label = c("GAPDH", "geNorm", "Normfinder", "Mixed-model"), 
                  size = 2.5) +
@@ -314,7 +314,7 @@ nf.summary <- normalization.factors %>%
         mutate(timepoint = factor(timepoint, levels=c("w0", "w2pre", "w2post", "w12"), 
                                   labels = c("Week 0", "Week 2 \n Pre", "Week 2 \n Post", "Week 12")),
                sets = factor(sets, levels = c("single", "multiple"), 
-                             labels = c("Low-volume", "Moderate-volume")),
+                             labels = c("Low-<br>volume", "Moderate-<br>volume")),
                normalization = factor(nf.id, levels = c("mm", "nf", "gn", "gapdh"), 
                                       labels = c("Mixed-model selection:<br>B2m + CHMP2A", 
                                                  "Normfinder:<br>B2m + RPL32", 
@@ -335,7 +335,7 @@ reference_genes <- normalization.factors %>%
         mutate(timepoint = factor(timepoint, levels=c("w0", "w2pre", "w2post", "w12"), 
                                   labels = c("Week 0", "Week 2 \n Pre", "Week 2 \n Post", "Week 12")),
                sets = factor(sets, levels = c("single", "multiple"), 
-                             labels = c("Low-volume", "Moderate-volume")),
+                             labels = c("Low-<br>volume", "Moderate-<br>volume")),
                normalization = factor(nf.id, levels = c("mm", "nf", "gn", "gapdh"), 
                                       labels = c("Mixed-model selection:<br>B2m + CHMP2A", 
                                                  "Normfinder:<br>B2m + RPL32", 

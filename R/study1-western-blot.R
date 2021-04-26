@@ -256,7 +256,7 @@ text_size_label <- 2.5
                             expand = c(0,0), 
                             breaks = c(0, 5, 10)) +
          
-         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
          
          theme_bw() +
          theme(panel.grid = element_blank(), 
@@ -293,7 +293,7 @@ text_size_label <- 2.5
                             expand = c(0,0), 
                             breaks = c(0, 1, 2)) +
          
-         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
          
          theme_bw() +
          theme(panel.grid = element_blank(), 
@@ -330,7 +330,7 @@ text_size_label <- 2.5
                             expand = c(0,0), 
                             breaks = c(0, 1, 2)) +
          
-         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
          
          theme_bw() +
          theme(panel.grid = element_blank(), 
@@ -373,7 +373,7 @@ p.s6.fcfig <-  sets.fc %>%
                             expand = c(0,0), 
                             breaks = c(0, 3, 6)) +
          
-         scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+         scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
          
         labs(x = "") +
         
@@ -416,6 +416,7 @@ fold_change_plot <- plot_grid(y_axis_label,
           p.mtor.fcfig,
           p.s6.fcfig, 
           nrow = 4, 
+          align = "v",
           rel_heights = c(1, 1, 1, 1.9)), 
         rel_widths = c(0.2, 1), 
         nrow = 1)

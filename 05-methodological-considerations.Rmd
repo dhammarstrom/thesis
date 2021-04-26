@@ -216,7 +216,9 @@ corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
                                         "Type IIA"))) %>%
      
         ggplot(aes(percentage_t2, percentage_t3)) + 
-        geom_point(shape = 21,
+       
+          geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
+      geom_point(shape = 21,
                    size = 1.8,
                    alpha = 0.7,
                    fill = group.study.color[4]) + 
@@ -233,7 +235,7 @@ corr_plot_fiber_types <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
         labs(x = "Duplicate 1 (% of total fibers)", 
              y = "Duplicate 2\n(% of total fibers)") +
         
-        geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
+
         dissertation_theme() + 
         theme(strip.background = element_blank(),
               strip.text = element_text(size = 8, hjust = 0),
@@ -261,7 +263,10 @@ baseline_between_legs <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
                                         "Type IIA"))) %>%
      
         ggplot(aes(percentage_L, percentage_R)) + 
-        geom_point(shape = 21,
+  
+      geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") +       
+  
+  geom_point(shape = 21,
                    size = 1.8,
                    alpha = 0.7,
                    fill = group.study.color[2]) + 
@@ -278,7 +283,7 @@ baseline_between_legs <- read_excel("./data/study-1/fiber-type/fibertype.xlsx") 
         labs(x = "Left leg (% of total fibers)", 
              y = "Right leg\n(% of total fibers)") +
         
-        geom_abline(intercept = 0, slope = 1, lty = 2, color = "gray50") + 
+    
         dissertation_theme() + 
         theme(strip.background = element_blank(),
               strip.text = element_text(size = 8, hjust = 0),
@@ -431,7 +436,7 @@ robust_fig <- robust %>%
   group_by(model, ngenes, Performance) %>%
   summarise(p = sum(p)) %>%
   ggplot(aes(model, p, fill = Performance)) + geom_bar(stat="identity") +
-  scale_fill_manual(values = c("gray90", "gray60", "gray20")) +
+  scale_fill_manual(values = c(group.study.color[c(2,3,6)])) +
   ylab("Percentage of\n models") + xlab("Modeling strategy")+
   
   scale_y_continuous(limits = c(0, 101),
@@ -497,7 +502,7 @@ filter(coef != "(Intercept)") %>%
   
   ggplot(aes(beta, pwr, color = Strategy,shape = Strategy, group = paste0(effect, method))) + 
   
-  geom_point(size = 2.5, position = position_dodge(width=0.01)) + 
+  geom_point(size = 2, position = position_dodge(width=0.01)) + 
   
   geom_line(position = position_dodge(width=0.01)) +
   
@@ -507,7 +512,7 @@ filter(coef != "(Intercept)") %>%
   
   guides(color=guide_legend(keywidth=0.2, keyheight=0.4, default.unit="inch")) +
   
-  scale_color_manual(values = group.study.color[c(1, 2, 3, 5)]) +
+  scale_color_manual(values = group.study.color[c(1, 6, 5, 2)]) +
   
   dissertation_theme() + 
   theme(strip.background = element_blank(), 

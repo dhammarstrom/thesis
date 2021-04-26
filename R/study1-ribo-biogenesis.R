@@ -352,7 +352,7 @@ myc_acute <- acute_qpcr %>%
                            expand = c(0,0), 
                            breaks = c(0, 5, 10)) +
         
-        scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
         
         theme_bw() +
         theme(panel.grid = element_blank(), 
@@ -394,7 +394,7 @@ rrna45_acute <- acute_qpcr %>%
                            breaks = c(0, 1, 2)) +
         
 
-        scale_fill_manual(values = c(group.study.color[3], group.study.color[4])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[6])) +
         
         theme_bw() +
         theme(panel.grid = element_blank(), 
@@ -435,7 +435,7 @@ acute_estimates <- qpcr.model.estimates.acute %>%
         ggplot(aes(exp(estimate), gene, alpha = gene)) +
         geom_vline(xintercept = 1, lty = 2, color = "gray80") +
         geom_errorbarh(aes(xmin = exp(lower), xmax = exp(upper)), height = 0) +
-        geom_point(fill = group.study.color[2], size = 3, shape = 21) +
+        geom_point(fill = group.study.color[5], size = 3, shape = 21) +
         labs(x = expression(paste(Delta, "Moderate / ", Delta, "Low"))) +
         scale_x_continuous(limits = c(0.5, 2.5), 
                            breaks = c(0.5, 1, 1.5, 2, 2.5), 

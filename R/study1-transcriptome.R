@@ -105,7 +105,7 @@ muscle_weight_fig <- emmeans(m1, specs = ~"time|sets") %>%
                    shape = 21, 
                    size = 2.5) +
         
-        scale_fill_manual(values = c(group.study.color[1], group.study.color[2])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[5])) +
         scale_y_continuous(limits = c(2, 4), 
                            breaks = c(2, 2.5, 3,3.5, 4), 
                            labels = c(2,  "", 3, "", 4),
@@ -242,7 +242,7 @@ per.rna <- emmeans(lib.m1, specs = ~ "time|sets") %>%
         geom_point(position = position_dodge(width = 0.35), 
                    shape = 21, 
                    size = 2.5) +
-        scale_fill_manual(values = c(group.study.color[1], group.study.color[2])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[5])) +
         scale_y_continuous(limits = c(8, 16), 
                            breaks = c(8, 10, 12, 14, 16), 
                            labels = c(8, "", 12, "", 16),
@@ -285,7 +285,7 @@ per.tissue <- emmeans(lt.m1, specs = ~ "time|sets") %>%
                    shape = 21, 
                    size = 2.5) +
         
-        scale_fill_manual(values = c(group.study.color[1], group.study.color[2])) +
+        scale_fill_manual(values = c(group.study.color[2], group.study.color[5])) +
         scale_y_continuous(limits = c(2, 6), 
                            breaks = c(2, 3, 4, 5, 6), 
                            labels = c(2, "", 4, "", 6),
@@ -598,7 +598,7 @@ volcano_data <- mm2_1 %>%
 
 ## Color themes in figure source 
 # using volcano.regulation.color
-volcano.regulation.color <- c("gray30", group.study.color[2], group.study.color[4])
+volcano.regulation.color <- c("gray30", group.study.color[2], group.study.color[5])
 ## Sizes volcano plots
 
 volcano_size <- c(1.2, 1.9, 1.9)
@@ -796,7 +796,7 @@ upset.list.w2 <- modified_upset(list.up = venn_list_up[1:3],
                                 legend.labels = c("Moderate-volume > Low-volume", "Moderate-volume < Low-volume"),
                                 legend.title = "Gene regulation Week 2",
                                 line.size = 0.4, # size of lines in figures (may be changed later)
-                                regulation.col = c(group.study.color[2], group.study.color[4]), # Regulation coloring (up vs. down) 
+                                regulation.col = c(group.study.color[2], group.study.color[5]), # Regulation coloring (up vs. down) 
                                 bar.width = 0.4, # Width of bars in bar plots
                                 text.size = 7, # text size in all figures
                                 point.size = 3)  # point size in intersection matrix )
@@ -812,7 +812,7 @@ upset.list.w12 <- modified_upset(list.up = venn_list_up[4:6],
                                  legend.labels = c("Moderate-volume > Low-volume", "Moderate-volume < Low-volume"),
                                  legend.title = "Gene regulation Week 12",
                                  line.size = 0.4, # size of lines in figures (may be changed later)
-                                 regulation.col = c(group.study.color[2], group.study.color[4]), # Regulation coloring (up vs. down) 
+                                 regulation.col = c(group.study.color[2], group.study.color[5]), # Regulation coloring (up vs. down) 
                                  bar.width = 0.4, # Width of bars in bar plots
                                  text.size = 7, # text size in all figures
                                  point.size = 3)  # point size in intersection matrix )

@@ -250,7 +250,7 @@ muscle_strength_fig <- comd.df %>%
                            labels = c("", 0, "", 5, "", 10, "", 15)) +
         labs(x = "Difference between volume conditions<br>(%-gain Multiple-sets - %-gain Single-set &#x00B1;95%CI)") +
         
-        scale_fill_manual(values = c(group.study.color[4], group.study.color[3])) +
+        scale_fill_manual(values = c(group.study.color[5], group.study.color[3])) +
         
         dissertation_theme() +
         theme(axis.text.y = element_markdown(size = 7), 
@@ -353,8 +353,8 @@ meta_fig <- mods1 %>%
                          size = 0.1) +
         labs(x = "Increased ES per weekly number of sets<br>(Hedges' <i>g</i>, 95% CrI)",
              y = NULL) +
-        scale_color_manual(values = c(group.study.color[4], group.study.color[2])) +
-        scale_fill_manual(values = c(group.study.color[4], group.study.color[2])) +
+        scale_color_manual(values = c(group.study.color[5], group.study.color[2])) +
+        scale_fill_manual(values = c(group.study.color[5], group.study.color[2])) +
  
         dissertation_theme() +
         
@@ -384,7 +384,7 @@ mass_fig_1 <- mods1 %>%
         stat_halfeye(.width = .95, 
                      size = 0.5, 
                      shape = 21,
-                     fill = group.study.color[4]) +
+                     fill = group.study.color[5]) +
         
         labs(x = "Increased ES per weekly number<br>of sets (Hedges' <i>g</i>, 95% CrI)",
              y = NULL) +

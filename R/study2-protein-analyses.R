@@ -92,7 +92,7 @@ prot_fold_change <- tx_results_western %>%
         ggplot(aes(time, Estimate, fill = group)) + 
         
         
-        geom_hline(yintercept = 1, lty = 2, color = "gray80") +
+        geom_hline(yintercept = 1, lty = 2, color = "gray40") +
         
         geom_errorbar(aes(ymin = CI.Lower, ymax = CI.Upper), 
                       position = position_dodge(width = 0.2),
@@ -139,7 +139,7 @@ prot_interaction <- tx_results_western %>%
         ggplot(aes(Estimate, comparison, alpha = robust)) + 
         labs(x = "Fold change\ncompared to Control") +
         
-        geom_vline(xintercept = 1, color = "gray50", lty = 2) +
+        geom_vline(xintercept = 1, color = "gray40", lty = 2) +
         geom_errorbarh(aes(xmin = CI.Lower, xmax = CI.Upper), height = 0, size = 0.3) + 
         geom_point(shape = 24, fill = group.study.color[3]) +
 

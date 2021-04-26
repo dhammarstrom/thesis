@@ -163,9 +163,9 @@ myh_cor_points <- myh_combined %>%
                            limits = c(-2,102), 
                            expand = c(0,0)) +
         
-        scale_fill_manual(values = group.study.color) +
+        scale_fill_manual(values = group.study.color[c(1,5,6)]) +
         
-        scale_color_manual(values = group.study.color) +
+        scale_color_manual(values = group.study.color[c(1,5,6)]) +
         
         
         labs(x = "RNA-seq gene-family percentage", 
@@ -206,9 +206,9 @@ myh_cor_coef <- myh_combined %>%
                            limits = c(-0.2, 1), 
                            expand = c(0,0)) + 
         
-        scale_fill_manual(values = group.study.color) +
+        scale_fill_manual(values = group.study.color[c(1,5,6)]) +
         
-        scale_color_manual(values = group.study.color) +
+        scale_color_manual(values = group.study.color[c(1,5,6)]) +
         
         labs(y = "Correlation coeficient \U00B1 95% CI") +
         

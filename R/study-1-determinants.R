@@ -1081,8 +1081,8 @@ continous_determinants <- rbind(results %>%
 csa_diff_rna_fig <- csa_full %>%
     ggplot(aes(rna_w2pre, diff)) + 
   geom_smooth(method = "rlm", 
-              color = group.study.color[2], 
-              fill = "gray80") +
+              fill = "gray75", 
+              color = group.study.color[2]) +
   geom_point(shape = 21, 
              fill = group.study.color[2], 
              size = 2.5) +
@@ -1110,6 +1110,7 @@ csa_diff_rna_fig <- csa_full %>%
 str_diff_rna_fig <- str_full %>%
   ggplot(aes(rna_w2pre, diff)) + 
   geom_smooth(method = "rlm", 
+              fill = "gray70",
               color = group.study.color[2]) +
   geom_point(shape = 21, 
              fill = group.study.color[2], 

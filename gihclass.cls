@@ -45,9 +45,8 @@
 
 
 %:-------------------------- packages for fancy things -----------------------
-\usepackage{mathptmx}
 \usepackage[scaled=.90]{helvet}
-\usepackage{courier}
+%\usepackage{courier}
 % Default font for dissertations is Times.
 %\usepackage{fourier} % If mathematics don't display well using Times, then use Fourier.
 \usepackage{blindtext}
@@ -56,7 +55,8 @@
 \usepackage[letterspace=150]{microtype}
 \usepackage{geometry}
 \usepackage{amssymb}
-\usepackage{amsmath}
+\let\Bbbk\relax
+%\usepackage{amsmath}
 \usepackage{amsbsy}
 %\usepackage{graphics} 
 \usepackage[pdftex]{graphicx} % for improved inclusion of graphics
@@ -80,7 +80,7 @@
 % For text positioning 
 \usepackage{textpos}
 \usepackage{changepage}
-
+\usepackage{newtxtext,newtxmath}
 
 
 
@@ -404,10 +404,10 @@
 
 \ifx\@pdfoutput\@undefined
 \newcommand{\RTpercent}{\@percentchar\space}
-\AtBeginDvi{\special{!\RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
-\AtBeginDvi{\special{rawpostscript \RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
+\AtBeginDvi{\special{!\RTpercent GIH LaTeX template}}
+\AtBeginDvi{\special{rawpostscript \RTpercent GIH LaTeX template}}
 \else
-\AtEndDocument{\pdfinfo{/Creator	(Reed College LaTeX Thesis Class 2001/12/04 SN)}}
+\AtEndDocument{\pdfinfo{/Creator	(GIH LaTeX template)}}
 \fi
 
 % I hacked the title page to all be the same font size

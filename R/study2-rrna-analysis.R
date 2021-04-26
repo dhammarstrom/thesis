@@ -120,7 +120,7 @@ interaction_effects <- complete_rrna_comp %>%
         
         labs(x = "Fold change compared to Control") +
         
-        geom_vline(xintercept = 1, color = "gray85", lty = 2) +
+        geom_vline(xintercept = 1, color = "gray40", lty = 2) +
         
     geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0, size = 0.3) + 
         
@@ -176,7 +176,7 @@ fold_changes <- complete_rrna_comp %>%
                   position = position_nudge(x = -0.5), 
                   hjust = 0,
                   size = 2.2) +
-        geom_hline(yintercept = 1, lty = 2, color = "gray80") +
+        geom_hline(yintercept = 1, lty = 2, color = "gray40") +
         
         # geom_bar(stat = "identity", position = position_dodge(width = 0.3), width = 0.15) + 
         geom_errorbar(aes(ymin = lower.CL, 
@@ -251,7 +251,7 @@ tot_rna_interaction <- comp_rna %>%
         
         labs(x = "Fold change compared to Control") +
         
-        geom_vline(xintercept = 1, color = "gray85", lty = 2) +
+        geom_vline(xintercept = 1, color = "gray40", lty = 2) +
          geom_errorbarh(aes(xmin = lower.CL, xmax = upper.CL), height = 0, size = 0.3) + 
         geom_point(shape = 24, fill = group.study.color[3]) +
        
@@ -291,7 +291,7 @@ tot_rna_fold_change <- comp_rna %>%
         
         ggplot(aes(time, estimate, fill = group)) + 
         
-        geom_hline(yintercept = 1, lty = 2, color = "gray80") +
+        geom_hline(yintercept = 1, lty = 2, color = "gray40") +
         
         # geom_bar(stat = "identity", position = position_dodge(width = 0.3), width = 0.15) + 
         geom_errorbar(aes(ymin = lower.CL, 
